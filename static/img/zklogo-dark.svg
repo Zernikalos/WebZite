@@ -1,10 +1,10 @@
 <svg data-v-423bf9ae="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1154.118095375432 1392" class="iconAbove">
     <defs data-v-423bf9ae="">
         <linearGradient data-v-423bf9ae="" gradientTransform="rotate(25)" id="zkSvgBodyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop data-v-423bf9ae="" offset="0%" style="stop-color: #06d9ff; stop-opacity: 1;">
+            <stop data-v-423bf9ae="" offset="0%" style="stop-color:rgb(4, 7, 7); stop-opacity: 1;">
 
             </stop>
-            <stop data-v-423bf9ae="" offset="100%" style="stop-color: #daf9fe; stop-opacity: 1;">
+            <stop data-v-423bf9ae="" offset="100%" style="stop-color:rgb(4, 7, 7); stop-opacity: 1;">
 
             </stop>
         </linearGradient>

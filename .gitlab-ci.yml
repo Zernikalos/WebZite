@@ -1,0 +1,17 @@
+image: node:20-alpine
+
+cache:
+  paths:
+    - node_modules/
+
+pages:
+  stage: deploy
+  script:
+    - npm ci
+    - npm run build
+    - mv build public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

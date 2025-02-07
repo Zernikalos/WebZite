@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import platformsToIcons from './src/remark/platformsToIcons';
 
 const baseConfig = {
   projectName: 'Zernikalos',
@@ -24,7 +25,7 @@ const config: Config = {
   organizationName: 'Zernikalos', // Usually your GitHub org/user name.
   projectName: 'Zernikalos Engine', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -43,9 +44,16 @@ const config: Config = {
     }
   },
 
+  scripts: [
+    {
+      src: '/data-toggle.js',
+      async: true,
+    },
+  ],
+
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
@@ -53,6 +61,9 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+
+          //remarkPlugins: [platformsToIcons],
+
         },
         blog: {
           showReadingTime: true,
@@ -62,7 +73,15 @@ const config: Config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            './src/css/custom.css',
+            './src/css/main.css',
+            './src/css/style.css',
+            './src/css/prism.css',
+            //'./src/css/ui-kit.min.css',
+            './src/css/zk-docs-styles.css'
+          ],
+        
         },
       } satisfies Preset.Options,
     ],
@@ -74,8 +93,9 @@ const config: Config = {
     navbar: {
       title: 'Zernikalos',
       logo: {
+        srcDark: 'img/zklogo.svg',
         alt: 'Zernikalos Logo',
-        src: 'img/zklogo.svg',
+        src: 'img/zklogo-dark.svg',
       },
       items: [
         {
@@ -84,10 +104,10 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        //{to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/Zernikalos',
-          label: 'GitHub',
+          href: 'https://gitlab.com/zernikalos',
+          label: 'Gitlab',
           position: 'right',
         },
       ],
@@ -108,16 +128,8 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/zernikalos',
             },
           ],
         },
@@ -125,12 +137,12 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'API',
+              to: '/api',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/zernikalos',
+              label: 'Gitlab',
+              href: 'https://gitlab.com/zernikalos',
             },
           ],
         },
@@ -140,7 +152,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-    },
+    }
   } satisfies Preset.ThemeConfig,
 };
 

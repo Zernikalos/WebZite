@@ -11,22 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Batteries included',
+    imgUrl: '/img/batteries.webp',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Packed with powerful development tools: Nest App, the desktop asset generator, 
+        and ZDebugger for seamless debugging integration. Everything you need, right out of the box.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Blazing Fast',
+    imgUrl: '/img/blazing_fast.webp',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Built with a unified core and minimal dependencies, Zernikalos delivers 
+        lightning-fast development and runtime performance across all platforms.
+      </>
+    ),
+  },
+  {
+    title: 'Multiplatform',
+    imgUrl: '/img/multiplatform.webp',
+    description: (
+      <>
+        Want to develop for Android, iOS, and Web? We got you! With Zernikalos engine, 
+        you can build amazing applications using a single unified API across all platforms.
       </>
     ),
   },
@@ -35,8 +45,8 @@ const FeatureList: FeatureItem[] = [
     imgUrl: '/img/zkkotlin.webp',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The Zernikalos engine is implemented with Kotlin Multiplatform, an amazing 
+        technology for both developers and contributors alike.
       </>
     ),
   },
@@ -44,7 +54,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, Svg, imgUrl, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
       <div className="text--center">
         {imgUrl ? 
         (<img className={styles.featureSvg} src={imgUrl}></img>) :

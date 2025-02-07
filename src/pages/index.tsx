@@ -11,34 +11,41 @@ type SvgType = React.ComponentType<React.ComponentProps<'svg'>>
 //const Svg = require('@site/static/img/undraw_docusaurus_mountain.svg').default
 
 import * as SvgModule from '@site/static/img/zklogo.svg'
+import Logo from '../components/Logo';
 const Svg = SvgModule.default
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <div className={styles.titleContainer}>
-          <Svg className={styles.logoSvg} role="img"></Svg>
+    <>
+      <header className={clsx('hero', styles.wipBanner)}>
+        <span>
+          🚧 This project is still in early stages of development, not suitable for production 🚧
+        </span>
+      </header>
+      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+        <div className="container">
+          <div className={styles.titleContainer}>
+            <div className={styles.titleLayout}>
+              <Logo />
+              <Heading as="h1" className="hero__title">
+                {siteConfig.title}
+              </Heading>
+              <p className="hero__subtitle">{siteConfig.tagline}</p>
+            </div>
 
-          <div className={styles.titleLayout}>
-            <Heading as="h1" className="hero__title">
-              {siteConfig.title}
-            </Heading>
-            <p className="hero__subtitle">{siteConfig.tagline}</p>
           </div>
 
+          <div className={styles.buttons}>
+            {/* <Link
+              className="button button--secondary button--lg"
+              to="/docs/intro">
+              Docusaurus Tutorial - 5min ⏱️
+            </Link> */}
+          </div>
         </div>
-
-        <div className={styles.buttons}>
-          {/* <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link> */}
-        </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 }
 

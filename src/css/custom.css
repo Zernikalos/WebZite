@@ -28,3 +28,68 @@
   --ifm-color-primary-lightest: #B8F1F8;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.platform-hinted {
+  display: block;
+  flex: auto
+}
+
+.platform-hinted>.platform-bookmarks-row,
+.tabs-section {
+    margin-left: -8px;
+    margin-right: -8px
+}
+
+.platform-hinted>.platform-bookmarks-row>.platform-bookmark,
+.section-tab {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--inactive-tab-border-color);
+    color: var(--inactive-section-color);
+    cursor: pointer;
+    font-size: var(--default-font-size);
+    margin: 0 8px;
+    outline: none;
+    padding: 11px 3px
+}
+
+.platform-hinted>.platform-bookmarks-row {
+    margin-bottom: 16px;
+    margin-bottom: var(--size-s3)
+}
+
+.no-js .platform-bookmarks-row+.sourceset-dependent-content {
+    margin-top: 8px;
+    margin-top: var(--size-s2)
+}
+
+.no-js .platform-bookmarks-row+.sourceset-dependent-content:last-of-type {
+    margin-top: 0
+}
+
+.platform-hinted>.platform-bookmarks-row>.platform-bookmark {
+  align-self: flex-start;
+  background: inherit;
+  flex: none;
+  min-width: 64px;
+  min-width: var(--size-l1);
+  order: 5
+}
+
+.platform-hinted>.platform-bookmarks-row>.platform-bookmark:hover {
+  border-bottom: 2px solid var(--default-font-color);
+  color: var(--default-font-color)
+}
+
+.platform-hinted>.platform-bookmarks-row>.platform-bookmark[data-active=""] {
+  border-bottom: 2px solid var(--active-tab-border-color);
+  color: var(--active-section-color)
+}
+
+.js .platform-hinted>.content:not([data-active]),
+.js .tabs-section-body [data-togglable]:not([data-active]),
+.main-content[data-page-type=package] .tabs-section-body h2,
+.no-js .platform-bookmarks-row,
+.no-js .tabs-section {
+  display: none
+}

@@ -28,6 +28,10 @@
   flex-shrink: 0;
 }
 
+.customGradient linearGradient stop {
+  stop-color: rgb(8, 12, 13) !important;
+}
+
 .titleContainer {
   align-items: center;
   display: flex;
@@ -38,4 +42,15 @@
   margin: 0 auto;
   text-align: center;
   flex-grow: 1;
+}
+
+.wipBanner {
+  padding: 1rem 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
 }
