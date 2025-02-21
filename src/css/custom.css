@@ -93,3 +93,7 @@
 .no-js .tabs-section {
   display: none
 }
+
+.markdown li + li {
+  margin-top: 0px !important;
+}

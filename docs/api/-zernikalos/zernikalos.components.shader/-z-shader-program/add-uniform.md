@@ -1,0 +1,9 @@
+---
+slug: "add-uniform"
+---
+# addUniform
+<div class="main-content" data-page-type="member" id="content" pageids="Zernikalos::zernikalos.components.shader/ZShaderProgram/addUniform/#kotlin.String#zernikalos.components.shader.ZUniform/PointingToDeclaration//1558683979">
+
+
+<div class="platform-hinted" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-uniform"><span class="token function">addUniform</span></a><span class="token punctuation">(</span><span class="parameters"><span class="parameter">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index">String</a><span class="token punctuation">, </span></span><span class="parameter">uniform<span class="token operator">: </span><a href="../-z-uniform/index">ZUniform</a></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://gitlab.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L47">source</a>)</span></span></div></div></div>
+</div>

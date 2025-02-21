@@ -1,0 +1,9 @@
+---
+slug: "on-resize"
+---
+# onResize
+<div class="main-content" data-page-type="member" id="content" pageids="Zernikalos::zernikalos.ui/ZSurfaceViewEventHandler/onResize/#kotlin.Int#kotlin.Int/PointingToDeclaration//1558683979">
+
+
+<div class="platform-hinted" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="on-resize"><span class="token function">onResize</span></a><span class="token punctuation">(</span><span class="parameters"><span class="parameter">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index">Int</a><span class="token punctuation">, </span></span><span class="parameter">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index">Int</a></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://gitlab.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ui/ZSurfaceViewEventHandler.kt#L20">source</a>)</span></span></div></div></div>
+</div>

@@ -56,21 +56,13 @@ const config: Config = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: 'docs/quick-start',
+          routeBasePath: 'quickstart',
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
 
-          //remarkPlugins: [platformsToIcons],
-
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          
         },
         theme: {
           customCss: [
@@ -87,6 +79,34 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'api',
+        path: 'docs/api',
+        routeBasePath: 'api',
+        sidebarPath: './sidebars.ts',
+        // Puedes mantener la misma configuración de sidebarItemsGenerator si lo necesitas
+        sidebarItemsGenerator: function({
+          isCategoryIndex: defaultCategoryIndexMatcher,
+          defaultSidebarItemsGenerator,
+          ...args
+        }) {
+          return defaultSidebarItemsGenerator({
+            ...args,
+            isCategoryIndex(doc) {
+              if (doc.directories.includes('api')) {
+                return doc.fileName.toLowerCase() === 'index'
+              }
+              return defaultCategoryIndexMatcher(doc);
+            },
+          });
+        },
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -100,9 +120,16 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'quickstartSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Quick Start',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'apiSidebar',
+          docsPluginId: 'api',
+          position: 'left',
+          label: 'API',
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
