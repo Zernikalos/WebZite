@@ -3,12 +3,6 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import platformsToIcons from './src/remark/platformsToIcons';
 
-const baseConfig = {
-  projectName: 'Zernikalos',
-  projectUrl: 'https://zernikalos.dev',
-  githubUrl: 'https://github.com/zernikalos'
-}
-
 const config: Config = {
   title: 'Zernikalos Engine',
   tagline: 'The Kotlin 3D Engine',
@@ -75,6 +69,11 @@ const config: Config = {
           ],
         
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          filename: 'sitemap.xml',
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -103,13 +102,20 @@ const config: Config = {
             },
           });
         },
-      },
+      }
     ],
+    [
+      '@docusaurus/plugin-ideal-image', 
+      {}
+    ]
   ],
 
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    metadata: [
+      {name: 'keywords', content: 'zernikalos, engine, game development, kotlin, 3d, graphics'},
+    ],
     navbar: {
       title: 'Zernikalos',
       logo: {
@@ -147,7 +153,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/quickstart',
             },
           ],
         },
