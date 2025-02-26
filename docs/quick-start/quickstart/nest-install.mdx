@@ -22,30 +22,34 @@ git clone https://gitlab.com/zernikalos/nest.git
 ```
 
 ### 2. Build the repositories
+:::warning
+It is recommended to use PNPM package manager for Nest, as npm currently has issues with the defined workspace
+:::
+
 Build the ZkBuilder project
 ```bash
 cd zkbuilder
-npm install
-npm run build
+pnpm install
+pnpm build
 ```
 
 And then perform the very same operation for nest
 ```bash
 cd ../nest
-npm install
-npm run build
+pnpm install
+pnpm build
 ```
 
 ### 3. Launch the Nest application
 
 You can start the app in dev build mode using
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Or using the compiled version (it will take longer to be launched)
 ```bash
-npm run start
+pnpm run start
 ```
 
 If everything has succeeded you will be able to see the Nest App being launched in your desktop

@@ -6,7 +6,7 @@ import platformsToIcons from './src/remark/platformsToIcons';
 const config: Config = {
   title: 'Zernikalos Engine',
   tagline: 'The Kotlin 3D Engine',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/zklogo.svg',
 
   // Set the production url of your site here
   url: 'https://zernikalos.dev',
@@ -86,7 +86,6 @@ const config: Config = {
         path: 'docs/api',
         routeBasePath: 'api',
         sidebarPath: './sidebars.ts',
-        // Puedes mantener la misma configuración de sidebarItemsGenerator si lo necesitas
         sidebarItemsGenerator: function({
           isCategoryIndex: defaultCategoryIndexMatcher,
           defaultSidebarItemsGenerator,
@@ -95,7 +94,7 @@ const config: Config = {
           return defaultSidebarItemsGenerator({
             ...args,
             isCategoryIndex(doc) {
-              if (doc.directories.includes('api')) {
+              if (doc.directories.includes('-zernikalos')) {
                 return doc.fileName.toLowerCase() === 'index'
               }
               return defaultCategoryIndexMatcher(doc);
