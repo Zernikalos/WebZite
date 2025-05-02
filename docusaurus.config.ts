@@ -55,17 +55,14 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-
-          
         },
         theme: {
           customCss: [
+            './src/css/zk-docs-styles.css',
             './src/css/custom.css',
             './src/css/main.css',
             './src/css/style.css',
             './src/css/prism.css',
-            //'./src/css/ui-kit.min.css',
-            './src/css/zk-docs-styles.css'
           ],
         
         },
@@ -79,6 +76,10 @@ const config: Config = {
   ],
 
   plugins: [
+    [
+      "./src/plugins/tailwind-config.ts", 
+      {}
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -179,7 +180,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Zernikalos. Built with Docusaurus.`,
+      copyright: `Copyright ${new Date().getFullYear()} Zernikalos. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
