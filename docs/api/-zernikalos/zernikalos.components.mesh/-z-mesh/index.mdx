@@ -1,0 +1,246 @@
+---
+slug: 'index'
+title: 'ZMesh'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZMesh"
+  namespace="Zernikalos.zernikalos.components.mesh"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.mesh',
+      url: '/docs/api/-zernikalos.zernikalos.components.mesh',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZMesh', url: '#zmesh' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZMesh"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-mesh"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="attributeIds"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="attribute-ids"
+    description=""
+    codeBlocks={[{ code: 'val attributeIds: Set<ZAttributeId>' }]}
+  />
+  <DocumentationItemComponent
+    name="boneIndex"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="bone-index"
+    description=""
+    codeBlocks={[{ code: 'val boneIndex: ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="boneWeight"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="bone-weight"
+    description=""
+    codeBlocks={[{ code: 'val boneWeight: ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="buffers"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="buffers"
+    description="The buffers expressed in a more cohesive way providing key + buffer data in one place"
+    codeBlocks={[{ code: 'val buffers: Map<String, ZBuffer>' }]}
+  />
+  <DocumentationItemComponent
+    name="color"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="color"
+    description=""
+    codeBlocks={[{ code: 'val color: ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="drawMode"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="draw-mode"
+    description=""
+    codeBlocks={[{ code: 'var drawMode: ZDrawMode' }]}
+  />
+  <DocumentationItemComponent
+    name="hasIndexBuffer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="has-index-buffer"
+    description="Indicates whether the given ZMesh has an index buffer or not."
+    codeBlocks={[{ code: 'val hasIndexBuffer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="indexBuffer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="index-buffer"
+    description="Represents an index buffer for a ZMesh."
+    codeBlocks={[{ code: 'val indexBuffer: ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = true' }]}
+  />
+  <DocumentationItemComponent
+    name="normal"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="normal"
+    description=""
+    codeBlocks={[{ code: 'val normal: ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="position"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="position"
+    description=""
+    codeBlocks={[{ code: 'val position: ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/renderer"
+    description=""
+    codeBlocks={[{ code: 'val renderer: ZMeshRenderer' }]}
+  />
+  <DocumentationItemComponent
+    name="uv"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="uv"
+    description=""
+    codeBlocks={[{ code: 'val uv: ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="addBuffer"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-buffer"
+    description="Adds a buffer to the ZMesh."
+    codeBlocks={[{ code: 'fun addBuffer(buffer: ZBuffer)' }]}
+  />
+  <DocumentationItemComponent
+    name="bind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-bindeable/bind"
+    description="Binds the renderer. This method is called to prepare the renderer for drawing."
+    codeBlocks={[{ code: 'open fun bind()' }]}
+  />
+  <DocumentationItemComponent
+    name="contains"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="contains"
+    description=""
+    codeBlocks={[{ code: 'operator fun contains(attrId: ZAttributeId): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="get"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get"
+    description=""
+    codeBlocks={[{ code: 'operator fun get(attrId: ZAttributeId): ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="getBufferById"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-buffer-by-id"
+    description="Gets the buffer by the specified attribute ID."
+    codeBlocks={[{ code: 'fun getBufferById(attrId: ZAttributeId): ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="getBufferByName"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-buffer-by-name"
+    description="Gets the buffer by its name."
+    codeBlocks={[{ code: 'fun getBufferByName(name: String): ZBuffer?' }]}
+  />
+  <DocumentationItemComponent
+    name="hasBuffer"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="has-buffer"
+    description="Checks if a buffer with the given name exists.Checks if a buffer with the given name exists by its ID."
+    codeBlocks={[
+      { code: 'fun hasBuffer(name: String): Boolean' },
+      { code: 'fun hasBuffer(attrId: ZAttributeId): Boolean' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="render"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-renderizable/render"
+    description="Draws the mesh on the screen using its renderer."
+    codeBlocks={[{ code: 'open fun render()' }]}
+  />
+  <DocumentationItemComponent
+    name="unbind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-bindeable/unbind"
+    description="Unbinds the renderer. This method is called after drawing to clean up."
+    codeBlocks={[{ code: 'open fun unbind()' }]}
+  />
+</CodeClassList>

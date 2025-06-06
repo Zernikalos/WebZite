@@ -1,0 +1,79 @@
+---
+slug: 'index'
+title: 'ZBoneData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZBoneData"
+  namespace="Zernikalos.zernikalos.components.skeleton"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.skeleton',
+      url: '/docs/api/-zernikalos.zernikalos.components.skeleton',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZBoneData', url: '#zbonedata' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZBoneData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-bone-data"
+    description=""
+    codeBlocks={[
+      {
+        code: "constructor(id: String = '', name: String = '', transform: ZTransform = ZTransform(), children: ArrayList<ZBone> = arrayListOf())",
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="children"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="children"
+    description=""
+    codeBlocks={[{ code: 'val children: ArrayList<ZBone>' }]}
+  />
+  <DocumentationItemComponent
+    name="id"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="id"
+    description=""
+    codeBlocks={[{ code: 'var id: String' }]}
+  />
+  <DocumentationItemComponent
+    name="name"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="name"
+    description=""
+    codeBlocks={[{ code: 'var name: String' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-component-data/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="transform"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="transform"
+    description=""
+    codeBlocks={[{ code: 'var transform: ZTransform' }]}
+  />
+</CodeClassList>

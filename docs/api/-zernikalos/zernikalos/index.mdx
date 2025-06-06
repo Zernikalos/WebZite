@@ -1,0 +1,118 @@
+---
+slug: 'index'
+title: 'zernikalos'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="zernikalos"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'zernikalos', url: '#zernikalos' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="OglDataTypes"
+    tokenType=""
+    groupType="NONE"
+    url="-ogl-data-types/index"
+    description=""
+    codeBlocks={[{ code: 'actual object OglDataTypes' }, { code: 'expect object OglDataTypes' }]}
+  />
+  <DocumentationItemComponent
+    name="ZBaseType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-base-type/index"
+    description=""
+    codeBlocks={[{ code: 'enum ZBaseType: Enum<ZBaseType>' }]}
+  />
+  <DocumentationItemComponent
+    name="ZDataType"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-data-type/index"
+    description=""
+    codeBlocks={[
+      { code: '@Serializable data class ZDataType(val type: ZBaseType, val format: ZFormatType)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZernikalosLink copied to clipboard"
+    tokenType="class"
+    groupType="TYPE"
+    url="[android]-zernikalos/index"
+    description=""
+    codeBlocks={[
+      { code: 'class Zernikalos: ZernikalosBase' },
+      { code: 'class Zernikalos: ZernikalosBase' },
+      { code: 'class Zernikalos: ZernikalosBase' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZernikalosBase"
+    tokenType="class"
+    groupType="TYPE"
+    url="-zernikalos-base/index"
+    description="Base class for the Zernikalos Engine, providing core functionality for managing surface views, rendering contexts, scene contexts, state handlers, and logging. This class initializes the engine and coordinates the interaction between various components, such as the scene lifecycle, event management, and rendering operations."
+    codeBlocks={[{ code: 'open class ZernikalosBase: ZLoggable' }]}
+  />
+  <DocumentationItemComponent
+    name="ZFormatType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-format-type/index"
+    description=""
+    codeBlocks={[{ code: 'enum ZFormatType: Enum<ZFormatType>' }]}
+  />
+  <DocumentationItemComponent
+    name="ZTypes"
+    tokenType=""
+    groupType="NONE"
+    url="-z-types/index"
+    description=""
+    codeBlocks={[{ code: 'object ZTypes' }]}
+  />
+  <DocumentationItemComponent
+    name="ZVersion"
+    tokenType=""
+    groupType="NONE"
+    url="-z-version/index"
+    description=""
+    codeBlocks={[{ code: 'object ZVersion' }]}
+  />
+  <DocumentationItemComponent
+    name="toOglBaseType"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-ogl-base-type"
+    description=""
+    codeBlocks={[{ code: 'fun toOglBaseType(t: ZDataType): Int' }]}
+  />
+  <DocumentationItemComponent
+    name="toOglType"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-ogl-type"
+    description=""
+    codeBlocks={[{ code: 'fun toOglType(t: ZDataType): Int' }]}
+  />
+  <DocumentationItemComponent
+    name="upToRoot"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="up-to-root"
+    description=""
+    codeBlocks={[{ code: 'fun upToRoot(obj: ZObject): Iterator<ZObject>' }]}
+  />
+</CodeClassList>

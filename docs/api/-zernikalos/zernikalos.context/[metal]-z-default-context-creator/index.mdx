@@ -1,0 +1,69 @@
+---
+slug: 'index'
+title: '[metal]ZDefaultContextCreator'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="[metal]ZDefaultContextCreator"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: '[metal]ZDefaultContextCreator',
+      url: '#[metal]zdefaultcontextcreator',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZDefaultContextCreator"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-default-context-creator"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="createContext"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-z-context-creator/create-context"
+    description=""
+    codeBlocks={[{ code: 'fun createContext(surfaceView: ZSurfaceView): ZContext' }]}
+  />
+  <DocumentationItemComponent
+    name="createRenderingContext"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-rendering-context"
+    description=""
+    codeBlocks={[
+      {
+        code: 'open override fun createRenderingContext(surfaceView: ZSurfaceView): ZRenderingContext',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="createSceneContext"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-scene-context"
+    description=""
+    codeBlocks={[
+      { code: 'open override fun createSceneContext(surfaceView: ZSurfaceView): ZSceneContext' },
+    ]}
+  />
+</CodeClassList>

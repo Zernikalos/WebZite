@@ -1,0 +1,32 @@
+---
+slug: 'index'
+title: 'ZVersion'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZVersion"
+  namespace="Zernikalos.zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos', url: '/docs/api/-zernikalos.zernikalos' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZVersion', url: '#zversion' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="VERSION"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-v-e-r-s-i-o-n"
+    description=""
+    codeBlocks={[{ code: 'const val VERSION: String' }]}
+  />
+</CodeClassList>

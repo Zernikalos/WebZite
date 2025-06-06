@@ -1,0 +1,55 @@
+---
+slug: 'index'
+title: 'ZGlSLShaderSource'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZGlSLShaderSource"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZGlSLShaderSource', url: '#zglslshadersource' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZGlSLShaderSource"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-gl-s-l-shader-source"
+    description=""
+    codeBlocks={[
+      { code: "constructor(vertexShaderSource: String = '', fragmentShaderSource: String = '')" },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="fragmentShaderSource"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="fragment-shader-source"
+    description=""
+    codeBlocks={[{ code: 'var fragmentShaderSource: String' }]}
+  />
+  <DocumentationItemComponent
+    name="vertexShaderSource"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="vertex-shader-source"
+    description=""
+    codeBlocks={[{ code: 'var vertexShaderSource: String' }]}
+  />
+</CodeClassList>

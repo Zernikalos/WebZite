@@ -1,0 +1,35 @@
+---
+slug: 'header'
+title: 'header'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="header"
+  namespace="Zernikalos.zernikalos.loader.ZKo"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.loader.ZKo',
+      url: '/docs/api/-zernikalos.zernikalos.loader.zko',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'header', url: '#header' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="header"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../../index"
+    description=""
+    codeBlocks={[{ code: 'val header: ZkoHeader' }]}
+  />
+</CodeClassList>

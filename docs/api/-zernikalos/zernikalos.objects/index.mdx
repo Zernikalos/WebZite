@@ -1,0 +1,119 @@
+---
+slug: 'index'
+title: 'objects'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="objects"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'zernikalos.objects', url: '#zernikalos.objects' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZCamera"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-camera/index"
+    description="Represents a camera object within the Zernikalos engine."
+    codeBlocks={[{ code: '@Serializable class ZCamera: ZObject' }]}
+  />
+  <DocumentationItemComponent
+    name="ZGroup"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-group/index"
+    description=""
+    codeBlocks={[{ code: "@Serializable @SerialName(value = 'Group')class ZGroup: ZObject" }]}
+  />
+  <DocumentationItemComponent
+    name="ZModel"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-model/index"
+    description=""
+    codeBlocks={[{ code: '@Serializable class ZModel: ZObject' }]}
+  />
+  <DocumentationItemComponent
+    name="ZModelRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-model-renderer/index"
+    description=""
+    codeBlocks={[
+      { code: 'expect class ZModelRenderer(ctx: ZRenderingContext, model: ZModel)' },
+      { code: 'actual class ZModelRenderer(val ctx: ZRenderingContext, val model: ZModel)' },
+      { code: 'actual class ZModelRenderer(val ctx: ZRenderingContext, val model: ZModel)' },
+      { code: 'actual class ZModelRenderer(ctx: ZRenderingContext, model: ZModel)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZObject"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-object/index"
+    description="Represents a generic object within the Zernikalos engine. This abstract class serves as the base for all objects within the engine, providing common properties and functions that are essential for the engine's operation."
+    codeBlocks={[
+      { code: '@Serializable abstract class ZObject: ZRef, ZTreeNode<ZObject>, ZLoggable' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZObjectType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-object-type/index"
+    description=""
+    codeBlocks={[{ code: 'enum ZObjectType: Enum<ZObjectType>' }]}
+  />
+  <DocumentationItemComponent
+    name="ZScene"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-scene/index"
+    description=""
+    codeBlocks={[{ code: '@Serializable class ZScene: ZObject' }]}
+  />
+  <DocumentationItemComponent
+    name="ZSkeleton"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-skeleton/index"
+    description=""
+    codeBlocks={[{ code: '@Serializable class ZSkeleton: ZObject' }]}
+  />
+  <DocumentationItemComponent
+    name="ZSkeletonProtoRef"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-skeleton-proto-ref/index"
+    description=""
+    codeBlocks={[
+      {
+        code: "@Serializable data class ZSkeletonProtoRef(val type: String, val refId: String = '', val isReference: Boolean = false, val data: ZSkeleton? = null)",
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZSkeletonSerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-skeleton-serializer/index"
+    description=""
+    codeBlocks={[
+      { code: 'class ZSkeletonSerializer(loaderContext: ZLoaderContext): KSerializer<ZSkeleton>' },
+    ]}
+  />
+</CodeClassList>

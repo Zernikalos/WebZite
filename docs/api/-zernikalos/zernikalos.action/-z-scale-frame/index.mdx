@@ -1,0 +1,48 @@
+---
+slug: 'index'
+title: 'ZScaleFrame'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZScaleFrame"
+  namespace="Zernikalos.zernikalos.action"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZScaleFrame', url: '#zscaleframe' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZScaleFrame"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-scale-frame"
+    description=""
+    codeBlocks={[{ code: 'constructor(time: Float, scale: ZVector3)' }]}
+  />
+  <DocumentationItemComponent
+    name="scale"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="scale"
+    description=""
+    codeBlocks={[{ code: 'val scale: ZVector3' }]}
+  />
+  <DocumentationItemComponent
+    name="time"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="time"
+    description=""
+    codeBlocks={[{ code: 'open override val time: Float' }]}
+  />
+</CodeClassList>

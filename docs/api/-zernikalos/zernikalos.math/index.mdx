@@ -1,0 +1,130 @@
+---
+slug: 'index'
+title: 'math'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="math"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'zernikalos.math', url: '#zernikalos.math' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZAlgebraObject"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-algebra-object/index"
+    description=""
+    codeBlocks={[{ code: 'interface ZAlgebraObject' }]}
+  />
+  <DocumentationItemComponent
+    name="ZAlgebraObjectCollection"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-algebra-object-collection/index"
+    description="A collection class for managing and storing multiple instances of ZAlgebraObject."
+    codeBlocks={[{ code: 'class ZAlgebraObjectCollection(val dataSize: Int): ZAlgebraObject' }]}
+  />
+  <DocumentationItemComponent
+    name="ZBox2D"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-box2-d/index"
+    description="Represents a 2D box with top, left, width, and height properties."
+    codeBlocks={[
+      {
+        code: '@Serializable class ZBox2D(var top: Int = 0, var left: Int = 0, var width: Int = 0, var height: Int = 0)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZColor"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-color/index"
+    description=""
+    codeBlocks={[
+      { code: '@Serializable(with = ZColorSerializer: : class)class ZColor: ZAlgebraObject' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZEuler"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-euler/index"
+    description=""
+    codeBlocks={[{ code: 'class ZEuler: ZAlgebraObject' }]}
+  />
+  <DocumentationItemComponent
+    name="ZMatrix4"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-matrix4/index"
+    description="A 4x4 matrix implementation."
+    codeBlocks={[{ code: '@Serializable class ZMatrix4: ZAlgebraObject' }]}
+  />
+  <DocumentationItemComponent
+    name="ZQuaternion"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-quaternion/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable(with = ZQuaternionSerializer: : class)class ZQuaternion: ZAlgebraObject',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZTransform"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-transform/index"
+    description=""
+    codeBlocks={[{ code: '@Serializable class ZTransform' }]}
+  />
+  <DocumentationItemComponent
+    name="ZVector2"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-vector2/index"
+    description=""
+    codeBlocks={[
+      { code: '@Serializable(with = ZVector2Serializer: : class)class ZVector2: ZAlgebraObject' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZVector3"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-vector3/index"
+    description=""
+    codeBlocks={[
+      { code: '@Serializable(with = ZVector3Serializer: : class)class ZVector3: ZAlgebraObject' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZVector4"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-vector4/index"
+    description=""
+    codeBlocks={[
+      { code: '@Serializable(with = ZVector4Serializer: : class)class ZVector4: ZAlgebraObject' },
+    ]}
+  />
+</CodeClassList>

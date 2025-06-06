@@ -1,0 +1,82 @@
+---
+slug: 'index'
+title: 'ZKeyFrame'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZKeyFrame"
+  namespace="Zernikalos.zernikalos.action"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZKeyFrame', url: '#zkeyframe' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZKeyFrame"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-key-frame"
+    description=""
+    codeBlocks={[{ code: 'constructor(time: Float)' }]}
+  />
+  <DocumentationItemComponent
+    name="Companion"
+    tokenType=""
+    groupType="NONE"
+    url="-companion/index"
+    description=""
+    codeBlocks={[{ code: 'object Companion' }]}
+  />
+  <DocumentationItemComponent
+    name="pose"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="pose"
+    description=""
+    codeBlocks={[{ code: 'val pose: Map<String, ZBoneFrameTransform>' }]}
+  />
+  <DocumentationItemComponent
+    name="time"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="time"
+    description=""
+    codeBlocks={[{ code: 'var time: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="getBoneTransform"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-bone-transform"
+    description=""
+    codeBlocks={[{ code: 'fun getBoneTransform(boneName: String): ZBoneFrameTransform?' }]}
+  />
+  <DocumentationItemComponent
+    name="hasBone"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="has-bone"
+    description=""
+    codeBlocks={[{ code: 'fun hasBone(boneName: String): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="setBoneTransform"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-bone-transform"
+    description=""
+    codeBlocks={[
+      { code: 'fun setBoneTransform(boneName: String, transform: ZBoneFrameTransform)' },
+    ]}
+  />
+</CodeClassList>

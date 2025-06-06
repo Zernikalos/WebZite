@@ -1,0 +1,56 @@
+---
+slug: 'index'
+title: 'ZTreeNode'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZTreeNode"
+  namespace="Zernikalos.zernikalos.search"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.search', url: '/docs/api/-zernikalos.zernikalos.search' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZTreeNode', url: '#ztreenode' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="children"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="children"
+    description=""
+    codeBlocks={[{ code: 'abstract val children: Array<T>' }]}
+  />
+  <DocumentationItemComponent
+    name="hasParent"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="has-parent"
+    description=""
+    codeBlocks={[{ code: 'open val hasParent: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRoot"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="is-root"
+    description=""
+    codeBlocks={[{ code: 'open val isRoot: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="parent"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="parent"
+    description=""
+    codeBlocks={[{ code: 'abstract val parent: T?' }]}
+  />
+</CodeClassList>

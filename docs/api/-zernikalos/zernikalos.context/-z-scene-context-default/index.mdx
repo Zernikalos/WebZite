@@ -1,0 +1,79 @@
+---
+slug: 'index'
+title: 'ZSceneContextDefault'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSceneContextDefault"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZSceneContextDefault',
+      url: '#zscenecontextdefault',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZSceneContextDefault"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-scene-context-default"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="activeCamera"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="../-z-scene-context/active-camera"
+    description=""
+    codeBlocks={[{ code: 'var activeCamera: ZCamera?' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-scene-context/is-initialized"
+    description=""
+    codeBlocks={[{ code: 'val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="scene"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="../-z-scene-context/scene"
+    description=""
+    codeBlocks={[{ code: 'var scene: ZScene?' }]}
+  />
+  <DocumentationItemComponent
+    name="addUniformGenerator"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-z-scene-context/add-uniform-generator"
+    description=""
+    codeBlocks={[{ code: 'fun addUniformGenerator(key: String, generator: ZUniformGenerator)' }]}
+  />
+  <DocumentationItemComponent
+    name="getUniform"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-z-scene-context/get-uniform"
+    description=""
+    codeBlocks={[{ code: 'fun getUniform(key: String): ZUniformGenerator?' }]}
+  />
+</CodeClassList>

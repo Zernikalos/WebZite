@@ -1,0 +1,68 @@
+---
+slug: 'index'
+title: 'ZkoObjectProto'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZkoObjectProto"
+  namespace="Zernikalos.zernikalos.loader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.loader', url: '/docs/api/-zernikalos.zernikalos.loader' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZkoObjectProto', url: '#zkoobjectproto' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZkoObjectProto"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-zko-object-proto"
+    description=""
+    codeBlocks={[
+      { code: 'constructor(type: String, refId: String, isReference: Boolean, zObject: ZObject)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="isReference"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="is-reference"
+    description=""
+    codeBlocks={[{ code: 'val isReference: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="ref-id"
+    description=""
+    codeBlocks={[{ code: 'val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="type"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="type"
+    description=""
+    codeBlocks={[{ code: 'val type: String' }]}
+  />
+  <DocumentationItemComponent
+    name="zObject"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="z-object"
+    description=""
+    codeBlocks={[{ code: 'val zObject: ZObject' }]}
+  />
+</CodeClassList>

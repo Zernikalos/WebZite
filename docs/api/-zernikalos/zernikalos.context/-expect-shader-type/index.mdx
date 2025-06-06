@@ -1,0 +1,48 @@
+---
+slug: 'index'
+title: 'ExpectShaderType'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ExpectShaderType"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ExpectShaderType', url: '#expectshadertype' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="FRAGMENT_SHADER"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-f-r-a-g-m-e-n-t_-s-h-a-d-e-r"
+    description=""
+    codeBlocks={[
+      { code: 'actual val FRAGMENT_SHADER: Int' },
+      { code: 'expect val FRAGMENT_SHADER: Int' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="VERTEX_SHADER"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-v-e-r-t-e-x_-s-h-a-d-e-r"
+    description=""
+    codeBlocks={[
+      { code: 'actual val VERTEX_SHADER: Int' },
+      { code: 'expect val VERTEX_SHADER: Int' },
+    ]}
+  />
+</CodeClassList>

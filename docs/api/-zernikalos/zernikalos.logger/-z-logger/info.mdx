@@ -1,0 +1,35 @@
+---
+slug: 'info'
+title: 'info'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="info"
+  namespace="Zernikalos.zernikalos.logger.ZLogger"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.logger.ZLogger',
+      url: '/docs/api/-zernikalos.zernikalos.logger.zlogger',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'info', url: '#info' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="info"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../../index"
+    description=""
+    codeBlocks={[{ code: 'fun info(message: String)' }]}
+  />
+</CodeClassList>

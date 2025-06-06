@@ -1,0 +1,51 @@
+---
+slug: 'index'
+title: 'ZMaterialData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZMaterialData"
+  namespace="Zernikalos.zernikalos.components.material"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.material',
+      url: '/docs/api/-zernikalos.zernikalos.components.material',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZMaterialData', url: '#zmaterialdata' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZMaterialData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-material-data"
+    description=""
+    codeBlocks={[{ code: 'constructor(texture: ZTexture? = null)' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-component-data/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="texture"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="texture"
+    description=""
+    codeBlocks={[{ code: 'var texture: ZTexture?' }]}
+  />
+</CodeClassList>

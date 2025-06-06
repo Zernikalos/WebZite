@@ -1,0 +1,115 @@
+---
+slug: 'index'
+title: 'ZViewport'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZViewport"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components',
+      url: '/docs/api/-zernikalos.zernikalos.components',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZViewport', url: '#zviewport' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZViewport"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-viewport"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="clearColor"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="clear-color"
+    description="Represents the clear color used for rendering in a viewport."
+    codeBlocks={[{ code: 'var clearColor: ZColor' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-renderizable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = true' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-renderizable-component/renderer"
+    description=""
+    codeBlocks={[{ code: 'val renderer: ZViewportRenderer' }]}
+  />
+  <DocumentationItemComponent
+    name="viewBox"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="view-box"
+    description="Represents the view box used as viewport for rendering objects. The view box defines the boundaries and dimensions of the viewport."
+    codeBlocks={[{ code: 'var viewBox: ZBox2D' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="onViewportResize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-viewport-resize"
+    description="Notifies the listener when the viewport dimensions change."
+    codeBlocks={[{ code: 'open override fun onViewportResize(width: Int, height: Int)' }]}
+  />
+  <DocumentationItemComponent
+    name="render"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-z-renderizable/render"
+    description="Draws the mesh on the screen using its renderer."
+    codeBlocks={[{ code: 'open fun render()' }]}
+  />
+</CodeClassList>

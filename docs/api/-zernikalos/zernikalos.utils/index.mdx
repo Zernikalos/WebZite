@@ -1,0 +1,103 @@
+---
+slug: 'index'
+title: 'utils'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="utils"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'zernikalos.utils', url: '#zernikalos.utils' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="MapPairJs"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-map-pair-js/index"
+    description=""
+    codeBlocks={[{ code: 'data class MapPairJs(val key: Any, val value: Any)' }]}
+  />
+  <DocumentationItemComponent
+    name="ZSemVer"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-sem-ver/index"
+    description=""
+    codeBlocks={[
+      { code: '@Serializable data class ZSemVer(val major: Int, val minor: Int, val patch: Int)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="crc32"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="crc32"
+    description=""
+    codeBlocks={[{ code: 'fun crc32(bytes: ByteArray): Int' }]}
+  />
+  <DocumentationItemComponent
+    name="crc32FromStr"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="crc32-from-str"
+    description=""
+    codeBlocks={[{ code: 'fun crc32FromStr(s: String): Int' }]}
+  />
+  <DocumentationItemComponent
+    name="genRefId"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="gen-ref-id"
+    description=""
+    codeBlocks={[{ code: 'fun genRefId(): String' }]}
+  />
+  <DocumentationItemComponent
+    name="mapFlatJs"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="map-flat-js"
+    description=""
+    codeBlocks={[{ code: 'fun mapFlatJs(m: Map<*, *>): Array<MapPairJs>' }]}
+  />
+  <DocumentationItemComponent
+    name="randomId"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="random-id"
+    description=""
+    codeBlocks={[{ code: 'fun randomId(): String' }]}
+  />
+  <DocumentationItemComponent
+    name="randomNumId"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="random-num-id"
+    description=""
+    codeBlocks={[{ code: 'fun randomNumId(): Int' }]}
+  />
+  <DocumentationItemComponent
+    name="toByteArray"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-byte-array"
+    description=""
+    codeBlocks={[
+      { code: 'fun FloatArray.toByteArray(): ByteArray' },
+      { code: 'fun ShortArray.toByteArray(): ByteArray' },
+    ]}
+  />
+</CodeClassList>

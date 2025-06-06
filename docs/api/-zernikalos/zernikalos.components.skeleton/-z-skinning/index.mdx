@@ -1,0 +1,99 @@
+---
+slug: 'index'
+title: 'ZSkinning'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSkinning"
+  namespace="Zernikalos.zernikalos.components.skeleton"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.skeleton',
+      url: '/docs/api/-zernikalos.zernikalos.components.skeleton',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZSkinning', url: '#zskinning' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZSkinning"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-skinning"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="boneIds"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="bone-ids"
+    description=""
+    codeBlocks={[{ code: 'val boneIds: Array<String>' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-serializable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = false' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="addBoneId"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-bone-id"
+    description=""
+    codeBlocks={[{ code: 'fun addBoneId(boneId: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="removeBoneId"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="remove-bone-id"
+    description=""
+    codeBlocks={[{ code: 'fun removeBoneId(boneId: String)' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,39 @@
+---
+slug: '-zko-format'
+title: 'ZkoFormat'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZkoFormat"
+  namespace="Zernikalos.zernikalos.loader.ZkoFormat"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.loader.ZkoFormat',
+      url: '/docs/api/-zernikalos.zernikalos.loader.zkoformat',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZkoFormat', url: '#zkoformat' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="headertexturesobjectshierarchyactions"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="../../../index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'constructor(header: ZkoHeader, textures: List<ZTexture>, objects: List<ZkoObjectProto>, hierarchy: ZkoHierarchyNode, actions: List<ZSkeletalAction>? = null)',
+      },
+    ]}
+  />
+</CodeClassList>

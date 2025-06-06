@@ -1,0 +1,71 @@
+---
+slug: 'index'
+title: 'ZAndroidSurfaceView'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZAndroidSurfaceView"
+  namespace="Zernikalos.zernikalos.ui"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.ui', url: '/docs/api/-zernikalos.zernikalos.ui' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZAndroidSurfaceView',
+      url: '#zandroidsurfaceview',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZAndroidSurfaceView"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-android-surface-view"
+    description=""
+    codeBlocks={[{ code: 'constructor(view: GLSurfaceView)' }]}
+  />
+  <DocumentationItemComponent
+    name="eventHandler"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="event-handler"
+    description="Represents an event handler that listens to surface-related events. Such as lifecycle and rendering updates, through ZSurfaceViewEventHandler."
+    codeBlocks={[{ code: 'open override var eventHandler: ZSurfaceViewEventHandler?' }]}
+  />
+  <DocumentationItemComponent
+    name="nativeSurfaceView"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="native-surface-view"
+    description=""
+    codeBlocks={[{ code: 'var nativeSurfaceView: GLSurfaceView' }]}
+  />
+  <DocumentationItemComponent
+    name="surfaceHeight"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="surface-height"
+    description="Represents the height of the rendering surface in logical pixels."
+    codeBlocks={[{ code: 'open override val surfaceHeight: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="surfaceWidth"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="surface-width"
+    description="Represents the width of the rendering surface in logical pixels."
+    codeBlocks={[{ code: 'open override val surfaceWidth: Int' }]}
+  />
+</CodeClassList>

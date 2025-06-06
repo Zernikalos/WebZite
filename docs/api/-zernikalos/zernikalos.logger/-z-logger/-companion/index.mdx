@@ -1,0 +1,35 @@
+---
+slug: 'index'
+title: 'Companion'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="Companion"
+  namespace="Zernikalos.zernikalos.logger.ZLogger"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.logger.ZLogger',
+      url: '/docs/api/-zernikalos.zernikalos.logger.zlogger',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Companion', url: '#companion' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="getLogger"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-logger"
+    description=""
+    codeBlocks={[{ code: 'fun getLogger(clsName: String?, instanceId: Int): ZLogger' }]}
+  />
+</CodeClassList>

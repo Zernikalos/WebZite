@@ -1,0 +1,62 @@
+---
+slug: 'index'
+title: 'ZContextCreator'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZContextCreator"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZContextCreator', url: '#zcontextcreator' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZContextCreator"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-context-creator"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="createContext"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-context"
+    description=""
+    codeBlocks={[{ code: 'fun createContext(surfaceView: ZSurfaceView): ZContext' }]}
+  />
+  <DocumentationItemComponent
+    name="createRenderingContext"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-rendering-context"
+    description=""
+    codeBlocks={[
+      { code: 'abstract fun createRenderingContext(surfaceView: ZSurfaceView): ZRenderingContext' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="createSceneContext"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-scene-context"
+    description=""
+    codeBlocks={[
+      { code: 'abstract fun createSceneContext(surfaceView: ZSurfaceView): ZSceneContext' },
+    ]}
+  />
+</CodeClassList>

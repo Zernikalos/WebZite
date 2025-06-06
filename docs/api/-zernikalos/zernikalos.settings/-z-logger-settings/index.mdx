@@ -1,0 +1,66 @@
+---
+slug: 'index'
+title: 'ZLoggerSettings'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZLoggerSettings"
+  namespace="Zernikalos.zernikalos.settings"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.settings', url: '/docs/api/-zernikalos.zernikalos.settings' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZLoggerSettings', url: '#zloggersettings' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZLoggerSettings"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-logger-settings"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="adapters"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="adapters"
+    description=""
+    codeBlocks={[{ code: 'var adapters: Array<ZLoggerAdapter>' }]}
+  />
+  <DocumentationItemComponent
+    name="debug"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="debug"
+    description=""
+    codeBlocks={[{ code: 'val debug: Boolean = true' }]}
+  />
+  <DocumentationItemComponent
+    name="logLevel"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="log-level"
+    description=""
+    codeBlocks={[{ code: 'var logLevel: ZLogLevel' }]}
+  />
+  <DocumentationItemComponent
+    name="addAdapter"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-adapter"
+    description=""
+    codeBlocks={[{ code: 'fun addAdapter(adapter: ZLoggerAdapter)' }]}
+  />
+</CodeClassList>

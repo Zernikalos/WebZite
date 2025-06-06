@@ -1,0 +1,35 @@
+---
+slug: 'with-queue'
+title: 'withQueue'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="withQueue"
+  namespace="Zernikalos.zernikalos.context.ZWebGPUQueue"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.ZWebGPUQueue',
+      url: '/docs/api/-zernikalos.zernikalos.context.zwebgpuqueue',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'withQueue', url: '#withqueue' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="block"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../../index"
+    description=""
+    codeBlocks={[{ code: 'inline fun <R> withQueue(block: (GPUQueue)-> R): R' }]}
+  />
+</CodeClassList>

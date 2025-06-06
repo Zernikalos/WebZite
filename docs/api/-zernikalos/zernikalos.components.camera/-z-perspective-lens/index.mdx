@@ -1,0 +1,112 @@
+---
+slug: 'index'
+title: 'ZPerspectiveLens'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZPerspectiveLens"
+  namespace="Zernikalos.zernikalos.components.camera"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.camera',
+      url: '/docs/api/-zernikalos.zernikalos.components.camera',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZPerspectiveLens', url: '#zperspectivelens' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZPerspectiveLens"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-perspective-lens"
+    description=""
+    codeBlocks={[
+      { code: 'constructor(near: Float, far: Float, fov: Float)' },
+      { code: 'constructor(near: Float, far: Float, fov: Float, aspectRatio: Float)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="Companion"
+    tokenType=""
+    groupType="NONE"
+    url="-companion/index"
+    description=""
+    codeBlocks={[{ code: 'object Companion' }]}
+  />
+  <DocumentationItemComponent
+    name="fov"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="fov"
+    description="Represents the field of view angle for the lens in a ZPerspectiveLens."
+    codeBlocks={[{ code: 'var fov: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-serializable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = false' }]}
+  />
+  <DocumentationItemComponent
+    name="projectionMatrix"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="projection-matrix"
+    description="The projection matrix for the lens"
+    codeBlocks={[{ code: 'val projectionMatrix: ZMatrix4' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="onViewportResize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-viewport-resize"
+    description="Notifies the listener when the viewport dimensions change."
+    codeBlocks={[{ code: 'open override fun onViewportResize(width: Int, height: Int)' }]}
+  />
+</CodeClassList>

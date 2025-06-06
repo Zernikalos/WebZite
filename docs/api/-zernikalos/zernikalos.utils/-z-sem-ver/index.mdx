@@ -1,0 +1,80 @@
+---
+slug: 'index'
+title: 'ZSemVer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSemVer"
+  namespace="Zernikalos.zernikalos.utils"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.utils', url: '/docs/api/-zernikalos.zernikalos.utils' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZSemVer', url: '#zsemver' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZSemVer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-sem-ver"
+    description=""
+    codeBlocks={[{ code: 'constructor(major: Int, minor: Int, patch: Int)' }]}
+  />
+  <DocumentationItemComponent
+    name="Companion"
+    tokenType=""
+    groupType="NONE"
+    url="-companion/index"
+    description=""
+    codeBlocks={[{ code: 'object Companion' }]}
+  />
+  <DocumentationItemComponent
+    name="major"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="major"
+    description=""
+    codeBlocks={[{ code: 'val major: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="minor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="minor"
+    description=""
+    codeBlocks={[{ code: 'val minor: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="patch"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="patch"
+    description=""
+    codeBlocks={[{ code: 'val patch: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="isCompatibleWith"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="is-compatible-with"
+    description=""
+    codeBlocks={[{ code: 'fun isCompatibleWith(other: ZSemVer): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-string"
+    description=""
+    codeBlocks={[{ code: 'open override fun toString(): String' }]}
+  />
+</CodeClassList>

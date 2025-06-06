@@ -1,0 +1,48 @@
+---
+slug: 'index'
+title: 'ZRendererBase'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZRendererBase"
+  namespace="Zernikalos.zernikalos.renderer"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.renderer', url: '/docs/api/-zernikalos.zernikalos.renderer' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZRendererBase', url: '#zrendererbase' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZRendererBase"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-renderer-base"
+    description=""
+    codeBlocks={[{ code: 'constructor(ctx: ZContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="initialize"
+    description=""
+    codeBlocks={[{ code: 'open fun initialize()' }]}
+  />
+  <DocumentationItemComponent
+    name="onViewportResize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-resizable/on-viewport-resize"
+    description="Notifies the listener when the viewport dimensions change."
+    codeBlocks={[{ code: 'abstract fun onViewportResize(width: Int, height: Int)' }]}
+  />
+</CodeClassList>

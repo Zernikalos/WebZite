@@ -1,0 +1,35 @@
+---
+slug: 'parent'
+title: 'parent'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="parent"
+  namespace="Zernikalos.zernikalos.objects.ZObject"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.objects.ZObject',
+      url: '/docs/api/-zernikalos.zernikalos.objects.zobject',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'parent', url: '#parent' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="parent"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../../index"
+    description=""
+    codeBlocks={[{ code: 'open override val parent: ZObject?' }]}
+  />
+</CodeClassList>

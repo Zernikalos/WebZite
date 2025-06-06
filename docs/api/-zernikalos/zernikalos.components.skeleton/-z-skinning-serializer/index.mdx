@@ -1,0 +1,74 @@
+---
+slug: 'index'
+title: 'ZSkinningSerializer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSkinningSerializer"
+  namespace="Zernikalos.zernikalos.components.skeleton"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.skeleton',
+      url: '/docs/api/-zernikalos.zernikalos.components.skeleton',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZSkinningSerializer',
+      url: '#zskinningserializer',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZSkinningSerializer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-skinning-serializer"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="descriptor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-component-serializer/descriptor"
+    description=""
+    codeBlocks={[{ code: 'open override val descriptor: SerialDescriptor' }]}
+  />
+  <DocumentationItemComponent
+    name="kSerializer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="k-serializer"
+    description=""
+    codeBlocks={[{ code: 'open override val kSerializer: KSerializer<ZSkinningData>' }]}
+  />
+  <DocumentationItemComponent
+    name="deserialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-component-serializer/deserialize"
+    description=""
+    codeBlocks={[{ code: 'open fun deserialize(decoder: Decoder): ZSkinning' }]}
+  />
+  <DocumentationItemComponent
+    name="serialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-component-serializer/serialize"
+    description=""
+    codeBlocks={[{ code: 'open fun serialize(encoder: Encoder, value: ZSkinning)' }]}
+  />
+</CodeClassList>

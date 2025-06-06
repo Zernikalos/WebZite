@@ -1,0 +1,51 @@
+---
+slug: 'index'
+title: 'ZBaseUniform'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZBaseUniform"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZBaseUniform', url: '#zbaseuniform' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="id"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="id"
+    description="Represents the unique identifier for a ZUniform instance. This ID is used to differentiate between different uniform components"
+    codeBlocks={[{ code: 'abstract val id: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="uniformName"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="uniform-name"
+    description="This is the name within the shader source code"
+    codeBlocks={[{ code: 'abstract val uniformName: String' }]}
+  />
+  <DocumentationItemComponent
+    name="value"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="value"
+    description=""
+    codeBlocks={[{ code: 'abstract var value: ZAlgebraObject' }]}
+  />
+</CodeClassList>

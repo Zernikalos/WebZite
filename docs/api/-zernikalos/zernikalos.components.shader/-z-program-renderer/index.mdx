@@ -1,0 +1,85 @@
+---
+slug: 'index'
+title: 'ZProgramRenderer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZProgramRenderer"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZProgramRenderer', url: '#zprogramrenderer' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZProgramRenderer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-program-renderer"
+    description=""
+    codeBlocks={[{ code: 'constructor(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="programId"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="program-id"
+    description=""
+    codeBlocks={[{ code: 'lateinit var programId: GLWrap' }]}
+  />
+  <DocumentationItemComponent
+    name="bind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="bind"
+    description=""
+    codeBlocks={[{ code: 'open override fun bind()' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="initialize"
+    description=""
+    codeBlocks={[{ code: 'open override fun initialize()' }]}
+  />
+  <DocumentationItemComponent
+    name="link"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="link"
+    description=""
+    codeBlocks={[{ code: 'fun link()' }]}
+  />
+  <DocumentationItemComponent
+    name="render"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component-render/render"
+    description=""
+    codeBlocks={[{ code: 'open fun render()' }]}
+  />
+  <DocumentationItemComponent
+    name="unbind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component-render/unbind"
+    description=""
+    codeBlocks={[{ code: 'open fun unbind()' }]}
+  />
+</CodeClassList>

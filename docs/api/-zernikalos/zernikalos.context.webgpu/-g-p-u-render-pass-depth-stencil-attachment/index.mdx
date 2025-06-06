@@ -1,0 +1,66 @@
+---
+slug: 'index'
+title: 'GPURenderPassDepthStencilAttachment'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="GPURenderPassDepthStencilAttachment"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.webgpu',
+      url: '/docs/api/-zernikalos.zernikalos.context.webgpu',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'GPURenderPassDepthStencilAttachment',
+      url: '#gpurenderpassdepthstencilattachment',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="depthClearValue"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="depth-clear-value"
+    description=""
+    codeBlocks={[{ code: 'abstract var depthClearValue: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="depthLoadOp"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="depth-load-op"
+    description=""
+    codeBlocks={[{ code: 'abstract var depthLoadOp: String' }]}
+  />
+  <DocumentationItemComponent
+    name="depthStoreOp"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="depth-store-op"
+    description=""
+    codeBlocks={[{ code: 'abstract var depthStoreOp: String' }]}
+  />
+  <DocumentationItemComponent
+    name="view"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="view"
+    description=""
+    codeBlocks={[{ code: 'abstract var view: GPUTextureView' }]}
+  />
+</CodeClassList>

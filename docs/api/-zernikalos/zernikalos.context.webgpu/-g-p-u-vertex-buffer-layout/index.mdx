@@ -1,0 +1,78 @@
+---
+slug: 'index'
+title: 'GPUVertexBufferLayout'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="GPUVertexBufferLayout"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.webgpu',
+      url: '/docs/api/-zernikalos.zernikalos.context.webgpu',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'GPUVertexBufferLayout',
+      url: '#gpuvertexbufferlayout',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="GPUVertexBufferLayout"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-g-p-u-vertex-buffer-layout"
+    description=""
+    codeBlocks={[
+      {
+        code: 'constructor(arrayStride: Int, stepMode: String? = null, attributes: Array<GPUVertexAttribute>)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="arrayStride"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="array-stride"
+    description=""
+    codeBlocks={[{ code: 'var arrayStride: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="attributes"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="attributes"
+    description=""
+    codeBlocks={[{ code: 'var attributes: Array<GPUVertexAttribute>' }]}
+  />
+  <DocumentationItemComponent
+    name="stepMode"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="step-mode"
+    description=""
+    codeBlocks={[{ code: 'var stepMode: String?' }]}
+  />
+  <DocumentationItemComponent
+    name="toGpu"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-gpu"
+    description=""
+    codeBlocks={[{ code: 'fun toGpu(): dynamic' }]}
+  />
+</CodeClassList>

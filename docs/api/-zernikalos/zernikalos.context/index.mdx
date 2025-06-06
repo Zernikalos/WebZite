@@ -1,0 +1,287 @@
+---
+slug: 'index'
+title: 'context'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="context"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'zernikalos.context', url: '#zernikalos.context' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="BufferBit"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-buffer-bit/index"
+    description=""
+    codeBlocks={[{ code: 'enum BufferBit: Enum<BufferBit>' }]}
+  />
+  <DocumentationItemComponent
+    name="BufferTargetType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-buffer-target-type/index"
+    description=""
+    codeBlocks={[{ code: 'enum BufferTargetType: Enum<BufferTargetType>' }]}
+  />
+  <DocumentationItemComponent
+    name="BufferUsageType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-buffer-usage-type/index"
+    description=""
+    codeBlocks={[{ code: 'enum BufferUsageType: Enum<BufferUsageType>' }]}
+  />
+  <DocumentationItemComponent
+    name="CullModeType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-cull-mode-type/index"
+    description=""
+    codeBlocks={[{ code: 'enum CullModeType: Enum<CullModeType>' }]}
+  />
+  <DocumentationItemComponent
+    name="DrawModes"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-draw-modes/index"
+    description=""
+    codeBlocks={[{ code: 'enum DrawModes: Enum<DrawModes>' }]}
+  />
+  <DocumentationItemComponent
+    name="Enabler"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-enabler/index"
+    description=""
+    codeBlocks={[{ code: 'enum Enabler: Enum<Enabler>' }]}
+  />
+  <DocumentationItemComponent
+    name="ExpectBufferBit"
+    tokenType=""
+    groupType="NONE"
+    url="-expect-buffer-bit/index"
+    description=""
+    codeBlocks={[
+      { code: 'actual object ExpectBufferBit' },
+      { code: 'expect object ExpectBufferBit' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ExpectBufferTargetType"
+    tokenType=""
+    groupType="NONE"
+    url="-expect-buffer-target-type/index"
+    description=""
+    codeBlocks={[
+      { code: 'actual object ExpectBufferTargetType' },
+      { code: 'expect object ExpectBufferTargetType' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ExpectBufferUsageType"
+    tokenType=""
+    groupType="NONE"
+    url="-expect-buffer-usage-type/index"
+    description=""
+    codeBlocks={[
+      { code: 'actual object ExpectBufferUsageType' },
+      { code: 'expect object ExpectBufferUsageType' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ExpectCullModeType"
+    tokenType=""
+    groupType="NONE"
+    url="-expect-cull-mode-type/index"
+    description=""
+    codeBlocks={[
+      { code: 'actual object ExpectCullModeType' },
+      { code: 'expect object ExpectCullModeType' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ExpectDrawModes"
+    tokenType=""
+    groupType="NONE"
+    url="-expect-draw-modes/index"
+    description=""
+    codeBlocks={[
+      { code: 'actual object ExpectDrawModes' },
+      { code: 'expect object ExpectDrawModes' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ExpectEnabler"
+    tokenType=""
+    groupType="NONE"
+    url="-expect-enabler/index"
+    description=""
+    codeBlocks={[{ code: 'actual object ExpectEnabler' }, { code: 'expect object ExpectEnabler' }]}
+  />
+  <DocumentationItemComponent
+    name="ExpectShaderType"
+    tokenType=""
+    groupType="NONE"
+    url="-expect-shader-type/index"
+    description=""
+    codeBlocks={[
+      { code: 'actual object ExpectShaderType' },
+      { code: 'expect object ExpectShaderType' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="GLWrap"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-g-l-wrap/index"
+    description=""
+    codeBlocks={[{ code: 'data class GLWrap(val id: Any? = null)' }]}
+  />
+  <DocumentationItemComponent
+    name="ZContext"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-context/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'class ZContext(val sceneContext: ZSceneContext, val renderingContext: ZRenderingContext)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZContextCreator"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-context-creator/index"
+    description=""
+    codeBlocks={[{ code: 'abstract class ZContextCreator' }]}
+  />
+  <DocumentationItemComponent
+    name="ZDefaultContextCreatorLink copied to clipboard"
+    tokenType="class"
+    groupType="TYPE"
+    url="[metal]-z-default-context-creator/index"
+    description=""
+    codeBlocks={[
+      { code: 'class ZDefaultContextCreator: ZContextCreator' },
+      { code: 'class ZDefaultContextCreator: ZContextCreator' },
+      { code: 'class ZDefaultContextCreator: ZContextCreator' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZGLRenderingContext"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-g-l-rendering-context/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'actual class ZGLRenderingContext(val surfaceView: ZSurfaceView): ZRenderingContext',
+      },
+      { code: 'expect class ZGLRenderingContext(surfaceView: ZSurfaceView): ZRenderingContext' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZMtlRenderingContext"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-mtl-rendering-context/index"
+    description=""
+    codeBlocks={[{ code: 'class ZMtlRenderingContext(view: ZSurfaceView): ZRenderingContext' }]}
+  />
+  <DocumentationItemComponent
+    name="ZRenderingContext"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-rendering-context/index"
+    description=""
+    codeBlocks={[{ code: 'interface ZRenderingContext' }]}
+  />
+  <DocumentationItemComponent
+    name="ZSceneContext"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-scene-context/index"
+    description=""
+    codeBlocks={[{ code: 'open class ZSceneContext' }]}
+  />
+  <DocumentationItemComponent
+    name="ZSceneContextDefault"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-scene-context-default/index"
+    description=""
+    codeBlocks={[{ code: 'class ZSceneContextDefault: ZSceneContext' }]}
+  />
+  <DocumentationItemComponent
+    name="ZWebGPUDevice"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-web-g-p-u-device/index"
+    description=""
+    codeBlocks={[{ code: 'class ZWebGPUDevice(val nativeDevice: GPUDevice)' }]}
+  />
+  <DocumentationItemComponent
+    name="ZWebGPUQueue"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-web-g-p-u-queue/index"
+    description="A wrapper class for GPUQueue to provide additional functionality and type-safe operations in the Zernikalos WebGPU rendering context."
+    codeBlocks={[{ code: 'class ZWebGPUQueue(val queue: GPUQueue)' }]}
+  />
+  <DocumentationItemComponent
+    name="ZWebGPURenderingContext"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-web-g-p-u-rendering-context/index"
+    description=""
+    codeBlocks={[
+      { code: 'class ZWebGPURenderingContext(val surfaceView: ZSurfaceView): ZRenderingContext' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="createDefaultContextCreatorLink copied to clipboard"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="[metal]create-default-context-creator"
+    description=""
+    codeBlocks={[
+      { code: 'fun createDefaultContextCreator(): ZContextCreator' },
+      { code: 'fun createDefaultContextCreator(): ZContextCreator' },
+      { code: 'fun createDefaultContextCreator(): ZContextCreator' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="createDefaultSceneContext"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-default-scene-context"
+    description=""
+    codeBlocks={[{ code: 'fun createDefaultSceneContext(): ZSceneContext' }]}
+  />
+  <DocumentationItemComponent
+    name="createSceneContext"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-scene-context"
+    description=""
+    codeBlocks={[{ code: 'fun createSceneContext(): ZSceneContext' }]}
+  />
+</CodeClassList>

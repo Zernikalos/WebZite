@@ -1,0 +1,40 @@
+---
+slug: 'index'
+title: 'BrowserInfo'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="BrowserInfo"
+  namespace="Zernikalos.zernikalos.stats"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.stats', url: '/docs/api/-zernikalos.zernikalos.stats' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'BrowserInfo', url: '#browserinfo' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="name"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="name"
+    description=""
+    codeBlocks={[{ code: 'abstract val name: String' }]}
+  />
+  <DocumentationItemComponent
+    name="version"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="version"
+    description=""
+    codeBlocks={[{ code: 'abstract val version: String' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,39 @@
+---
+slug: 'index'
+title: 'Companion'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="Companion"
+  namespace="Zernikalos.zernikalos.loader.ZkoHierarchyNode"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.loader.ZkoHierarchyNode',
+      url: '/docs/api/-zernikalos.zernikalos.loader.zkohierarchynode',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Companion', url: '#companion' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="transformHierarchy"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="transform-hierarchy"
+    description="Recursively transforms a hierarchy of ZkoHierarchyNode objects into corresponding ZObject structures, linking child objects to their respective parents."
+    codeBlocks={[
+      {
+        code: 'fun transformHierarchy(hierarchyNode: ZkoHierarchyNode, objects: List<ZkoObjectProto>): ZObject',
+      },
+    ]}
+  />
+</CodeClassList>

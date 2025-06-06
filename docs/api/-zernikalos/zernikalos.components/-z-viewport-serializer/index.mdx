@@ -1,0 +1,74 @@
+---
+slug: 'index'
+title: 'ZViewportSerializer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZViewportSerializer"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components',
+      url: '/docs/api/-zernikalos.zernikalos.components',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZViewportSerializer',
+      url: '#zviewportserializer',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZViewportSerializer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-viewport-serializer"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="descriptor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-component-serializer/descriptor"
+    description=""
+    codeBlocks={[{ code: 'open override val descriptor: SerialDescriptor' }]}
+  />
+  <DocumentationItemComponent
+    name="kSerializer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="k-serializer"
+    description=""
+    codeBlocks={[{ code: 'open override val kSerializer: KSerializer<ZViewportData>' }]}
+  />
+  <DocumentationItemComponent
+    name="deserialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-z-component-serializer/deserialize"
+    description=""
+    codeBlocks={[{ code: 'open fun deserialize(decoder: Decoder): ZViewport' }]}
+  />
+  <DocumentationItemComponent
+    name="serialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-z-component-serializer/serialize"
+    description=""
+    codeBlocks={[{ code: 'open fun serialize(encoder: Encoder, value: ZViewport)' }]}
+  />
+</CodeClassList>

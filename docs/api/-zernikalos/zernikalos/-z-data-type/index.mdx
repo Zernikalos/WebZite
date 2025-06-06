@@ -1,0 +1,64 @@
+---
+slug: 'index'
+title: 'ZDataType'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZDataType"
+  namespace="Zernikalos.zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos', url: '/docs/api/-zernikalos.zernikalos' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZDataType', url: '#zdatatype' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZDataType"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-data-type"
+    description=""
+    codeBlocks={[{ code: 'constructor(type: ZBaseType, format: ZFormatType)' }]}
+  />
+  <DocumentationItemComponent
+    name="byteSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-size"
+    description="Represents the size of the data type in bytes."
+    codeBlocks={[{ code: 'val byteSize: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="format"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="format"
+    description=""
+    codeBlocks={[{ code: 'val format: ZFormatType' }]}
+  />
+  <DocumentationItemComponent
+    name="size"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="size"
+    description="Represents the size of the data type."
+    codeBlocks={[{ code: 'val size: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="type"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="type"
+    description=""
+    codeBlocks={[{ code: 'val type: ZBaseType' }]}
+  />
+</CodeClassList>

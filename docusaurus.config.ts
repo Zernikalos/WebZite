@@ -59,10 +59,10 @@ const config: Config = {
         theme: {
           customCss: [
             './src/css/zk-docs-styles.css',
-            './src/css/custom.css',
-            './src/css/main.css',
-            './src/css/style.css',
-            './src/css/prism.css',
+            // './src/css/custom.css',
+            // './src/css/main.css',
+            //'./src/css/style.css',
+            // './src/css/prism.css',
           ],
         
         },
@@ -116,6 +116,11 @@ const config: Config = {
     metadata: [
       {name: 'keywords', content: 'zernikalos, engine, game development, kotlin, 3d, graphics'},
     ],
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'Zernikalos',
       logo: {
@@ -185,6 +190,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['kotlin'],
     }
   } satisfies Preset.ThemeConfig,
 };

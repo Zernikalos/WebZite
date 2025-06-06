@@ -1,0 +1,35 @@
+---
+slug: 'index'
+title: 'Companion'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="Companion"
+  namespace="Zernikalos.zernikalos.objects.ZCamera"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.objects.ZCamera',
+      url: '/docs/api/-zernikalos.zernikalos.objects.zcamera',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Companion', url: '#companion' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="DefaultPerspectiveCamera"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-default-perspective-camera"
+    description="Represents a default perspective camera. This camera provides a perspective view of the scene."
+    codeBlocks={[{ code: 'val DefaultPerspectiveCamera: ZCamera' }]}
+  />
+</CodeClassList>

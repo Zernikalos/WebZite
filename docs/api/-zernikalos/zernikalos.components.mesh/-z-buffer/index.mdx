@@ -1,0 +1,224 @@
+---
+slug: 'index'
+title: 'ZBuffer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZBuffer"
+  namespace="Zernikalos.zernikalos.components.mesh"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.mesh',
+      url: '/docs/api/-zernikalos.zernikalos.components.mesh',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZBuffer', url: '#zbuffer' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZBuffer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-buffer"
+    description="Initializes a new instance of ZBuffer class. It is used to instantiate a ZBuffer object with default data values.Initializes a ZBuffer object with the given arguments."
+    codeBlocks={[
+      { code: 'constructor()' },
+      {
+        code: 'constructor(id: Int, dataType: ZDataType, name: String, size: Int, count: Int, normalized: Boolean, offset: Int, stride: Int, isIndexBuffer: Boolean, bufferId: Int, dataArray: ByteArray)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="attributeId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="attribute-id"
+    description=""
+    codeBlocks={[{ code: 'val attributeId: ZAttributeId' }]}
+  />
+  <DocumentationItemComponent
+    name="bufferId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="buffer-id"
+    description="Represents the buffer ID associated with the ZBuffer."
+    codeBlocks={[{ code: 'val bufferId: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="count"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="count"
+    description="How many elements of this type are stored. Example: If we store 15 Vec3 elements in the data array the count will have a value of 15."
+    codeBlocks={[{ code: 'val count: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="dataArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="data-array"
+    description="Represents an array of bytes for ZBufferData data."
+    codeBlocks={[{ code: 'val dataArray: ByteArray' }]}
+  />
+  <DocumentationItemComponent
+    name="dataType"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="data-type"
+    description="Type of data stored"
+    codeBlocks={[{ code: 'val dataType: ZDataType' }]}
+  />
+  <DocumentationItemComponent
+    name="enabled"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="enabled"
+    description=""
+    codeBlocks={[{ code: 'var enabled: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="hasData"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="has-data"
+    description="Indicates whether the data has any data."
+    codeBlocks={[{ code: 'val hasData: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="id"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="id"
+    description="ID for this Buffer."
+    codeBlocks={[{ code: 'val id: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="isIndexBuffer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="is-index-buffer"
+    description=""
+    codeBlocks={[{ code: 'val isIndexBuffer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = true' }]}
+  />
+  <DocumentationItemComponent
+    name="name"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="name"
+    description=""
+    codeBlocks={[{ code: 'val name: String' }]}
+  />
+  <DocumentationItemComponent
+    name="normalized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="normalized"
+    description=""
+    codeBlocks={[{ code: 'val normalized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="offset"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="offset"
+    description=""
+    codeBlocks={[{ code: 'val offset: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/renderer"
+    description=""
+    codeBlocks={[{ code: 'val renderer: ZBufferRenderer' }]}
+  />
+  <DocumentationItemComponent
+    name="size"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="size"
+    description="How many elements are stored per data unit. Example: a Vec3 will have size equals to 3 in the same way a Scalar will be 1"
+    codeBlocks={[{ code: 'val size: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="stride"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="stride"
+    description="If the data is tightly represented within the array how many elements it requires to be jumped to the next one Example: We store a Vec3 postion and a Vec3 normal in the very same array, the stride will be 6"
+    codeBlocks={[{ code: 'val stride: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="bind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-bindeable/bind"
+    description="Binds the renderer. This method is called to prepare the renderer for drawing."
+    codeBlocks={[{ code: 'open fun bind()' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-string"
+    description=""
+    codeBlocks={[{ code: 'open override fun toString(): String' }]}
+  />
+  <DocumentationItemComponent
+    name="unbind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-bindeable/unbind"
+    description="Unbinds the renderer. This method is called after drawing to clean up."
+    codeBlocks={[{ code: 'open fun unbind()' }]}
+  />
+</CodeClassList>

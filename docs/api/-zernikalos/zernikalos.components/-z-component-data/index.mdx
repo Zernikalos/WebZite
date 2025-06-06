@@ -1,0 +1,53 @@
+---
+slug: 'index'
+title: 'ZComponentData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZComponentData"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components',
+      url: '/docs/api/-zernikalos.zernikalos.components',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZComponentData', url: '#zcomponentdata' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZComponentData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-component-data"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-string"
+    description=""
+    codeBlocks={[{ code: 'abstract override fun toString(): String' }]}
+  />
+</CodeClassList>

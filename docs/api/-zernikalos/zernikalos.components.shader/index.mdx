@@ -1,0 +1,518 @@
+---
+slug: 'index'
+title: 'components.shader'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="components.shader"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'zernikalos.components.shader',
+      url: '#zernikalos.components.shader',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZAttribute"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-attribute/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable(with = ZAttributeSerializer: : class)class ZAttribute: ZRenderizableComponent<ZAttributeData, ZAttributeRenderer>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZAttributeData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-attribute-data/index"
+    description=""
+    codeBlocks={[
+      {
+        code: "@Serializable data class ZAttributeData(var id: Int = -1, var attributeName: String = ''): ZComponentData",
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZAttributeId"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-attribute-id/index"
+    description=""
+    codeBlocks={[{ code: 'enum ZAttributeId: Enum<ZAttributeId>' }]}
+  />
+  <DocumentationItemComponent
+    name="ZAttributeRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-attribute-renderer/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'expect class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData): ZComponentRender<ZAttributeData>',
+      },
+      {
+        code: 'actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData): ZComponentRender<ZAttributeData>',
+      },
+      {
+        code: 'actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData): ZComponentRender<ZAttributeData>',
+      },
+      {
+        code: 'actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData): ZComponentRender<ZAttributeData>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZAttributeSerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-attribute-serializer/index"
+    description=""
+    codeBlocks={[
+      { code: 'class ZAttributeSerializer: ZComponentSerializer<ZAttribute, ZAttributeData>' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZBaseUniform"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-base-uniform/index"
+    description=""
+    codeBlocks={[{ code: 'interface ZBaseUniform' }]}
+  />
+  <DocumentationItemComponent
+    name="ZGlShaderType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-gl-shader-type/index"
+    description=""
+    codeBlocks={[{ code: 'enum ZGlShaderType: Enum<ZGlShaderType>' }]}
+  />
+  <DocumentationItemComponent
+    name="ZGlSLShaderSource"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-gl-s-l-shader-source/index"
+    description=""
+    codeBlocks={[
+      {
+        code: "@Serializable data class ZGlSLShaderSource(var vertexShaderSource: String = '', var fragmentShaderSource: String = '')",
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZMetalShaderSource"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-metal-shader-source/index"
+    description=""
+    codeBlocks={[
+      { code: "@Serializable data class ZMetalShaderSource(var shaderSource: String = '')" },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZProgram"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-program/index"
+    description=""
+    codeBlocks={[{ code: 'class ZProgram: ZLightComponent<ZProgramRenderer>, ZBindeable' }]}
+  />
+  <DocumentationItemComponent
+    name="ZProgramRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-program-renderer/index"
+    description=""
+    codeBlocks={[{ code: 'class ZProgramRenderer(ctx: ZRenderingContext): ZBaseComponentRender' }]}
+  />
+  <DocumentationItemComponent
+    name="ZShader"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable(with = ZShaderSerializer: : class)class ZShader: ZRenderizableComponent<ZShaderData, ZShaderRenderer>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-shader-data/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable data class ZShaderData(var type: ZShaderType = ZShaderType.VERTEX_SHADER): ZComponentData',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderProgram"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-program/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable(with = ZShaderProgramSerializer: : class)class ZShaderProgram: ZRenderizableComponent<ZShaderProgramData, ZShaderProgramRenderer>, ZBindeable',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderProgramData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-shader-program-data/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable data class ZShaderProgramData(var vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), var fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), var shaderSource: ZShaderSource = ZShaderSource(), val attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), var uniforms: ZUniformCollection = ZUniformCollection()): ZComponentData',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderProgramRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-program-renderer/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'expect class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData): ZComponentRender<ZShaderProgramData>',
+      },
+      {
+        code: 'actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData): ZComponentRender<ZShaderProgramData>',
+      },
+      {
+        code: 'actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData): ZComponentRender<ZShaderProgramData>',
+      },
+      {
+        code: 'actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData): ZComponentRender<ZShaderProgramData>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderProgramSerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-program-serializer/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'class ZShaderProgramSerializer: ZComponentSerializer<ZShaderProgram, ZShaderProgramData>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-renderer/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'expect class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData): ZComponentRender<ZShaderData>',
+      },
+      {
+        code: 'actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData): ZComponentRender<ZShaderData>',
+      },
+      {
+        code: 'actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData): ZComponentRender<ZShaderData>',
+      },
+      {
+        code: 'actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData): ZComponentRender<ZShaderData>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderSerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-serializer/index"
+    description=""
+    codeBlocks={[{ code: 'class ZShaderSerializer: ZComponentSerializer<ZShader, ZShaderData>' }]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderSource"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-source/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable(with = ZShaderSourceSerializer: : class)class ZShaderSource: ZSerializableComponent<ZShaderSourceData>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderSourceData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-shader-source-data/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable data class ZShaderSourceData(var glsl: ZGlSLShaderSource = ZGlSLShaderSource(), var metal: ZMetalShaderSource = ZMetalShaderSource()): ZComponentData',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderSourceSerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-source-serializer/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'class ZShaderSourceSerializer: ZComponentSerializer<ZShaderSource, ZShaderSourceData>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZShaderType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-shader-type/index"
+    description=""
+    codeBlocks={[{ code: 'enum ZShaderType: Enum<ZShaderType>' }]}
+  />
+  <DocumentationItemComponent
+    name="ZUniform"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable(with = ZUniformSerializer: : class)class ZUniform: ZRenderizableComponent<ZUniformData, ZUniformRenderer>, ZBaseUniform',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformBlock"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform-block/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable(with = ZUniformBlockSerializer: : class)class ZUniformBlock: ZRenderizableComponent<ZUniformBlockData, ZUniformBlockRenderer>, ZBaseUniform',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformBlockData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-uniform-block-data/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable data class ZUniformBlockData(val uniformBlockName: String, val uniforms: HashMap<String, ZBaseUniform>): ZComponentData',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformBlockRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform-block-renderer/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'expect class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData): ZComponentRender<ZUniformBlockData>',
+      },
+      {
+        code: 'actual class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData): ZComponentRender<ZUniformBlockData>',
+      },
+      {
+        code: 'actual class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData): ZComponentRender<ZUniformBlockData>',
+      },
+      {
+        code: 'actual class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData): ZComponentRender<ZUniformBlockData>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformBlockSerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform-block-serializer/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'class ZUniformBlockSerializer: ZComponentSerializer<ZUniformBlock, ZUniformBlockData>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformCollection"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform-collection/index"
+    description=""
+    codeBlocks={[{ code: 'class ZUniformCollection: MutableMap<String, ZBaseUniform>' }]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-uniform-data/index"
+    description=""
+    codeBlocks={[
+      {
+        code: "@Serializable data class ZUniformData(var id: Int = -1, var uniformName: String = '', var count: Int = -1, var dataType: ZDataType = ZTypes.NONE): ZComponentData",
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform-renderer/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'expect class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData): ZComponentRender<ZUniformData>',
+      },
+      {
+        code: 'actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData): ZComponentRender<ZUniformData>',
+      },
+      {
+        code: 'actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData): ZComponentRender<ZUniformData>',
+      },
+      {
+        code: 'actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData): ZComponentRender<ZUniformData>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformSerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform-serializer/index"
+    description=""
+    codeBlocks={[
+      { code: 'class ZUniformSerializer: ZComponentSerializer<ZUniform, ZUniformData>' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZBonesMatrixArray"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="-z-bones-matrix-array"
+    description=""
+    codeBlocks={[{ code: 'fun ZBonesMatrixArray(count: Int): ZUniform' }]}
+  />
+  <DocumentationItemComponent
+    name="ZInverseBindMatrixArray"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="-z-inverse-bind-matrix-array"
+    description=""
+    codeBlocks={[{ code: 'fun ZInverseBindMatrixArray(count: Int): ZUniform' }]}
+  />
+  <DocumentationItemComponent
+    name="ZAttrBoneIndices"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-attr-bone-indices"
+    description=""
+    codeBlocks={[{ code: 'val ZAttrBoneIndices: ZAttribute' }]}
+  />
+  <DocumentationItemComponent
+    name="ZAttrBoneWeight"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-attr-bone-weight"
+    description=""
+    codeBlocks={[{ code: 'val ZAttrBoneWeight: ZAttribute' }]}
+  />
+  <DocumentationItemComponent
+    name="ZAttrColor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-attr-color"
+    description=""
+    codeBlocks={[{ code: 'val ZAttrColor: ZAttribute' }]}
+  />
+  <DocumentationItemComponent
+    name="ZAttrIndices"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-attr-indices"
+    description=""
+    codeBlocks={[{ code: 'val ZAttrIndices: ZAttribute' }]}
+  />
+  <DocumentationItemComponent
+    name="ZAttrNormal"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-attr-normal"
+    description=""
+    codeBlocks={[{ code: 'val ZAttrNormal: ZAttribute' }]}
+  />
+  <DocumentationItemComponent
+    name="ZAttrPosition"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-attr-position"
+    description=""
+    codeBlocks={[{ code: 'val ZAttrPosition: ZAttribute' }]}
+  />
+  <DocumentationItemComponent
+    name="ZAttrUv"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-attr-uv"
+    description=""
+    codeBlocks={[{ code: 'val ZAttrUv: ZAttribute' }]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformModelViewProjectionMatrix"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-uniform-model-view-projection-matrix"
+    description=""
+    codeBlocks={[{ code: 'val ZUniformModelViewProjectionMatrix: ZUniform' }]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformProjectionMatrix"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-uniform-projection-matrix"
+    description=""
+    codeBlocks={[{ code: 'val ZUniformProjectionMatrix: ZUniform' }]}
+  />
+  <DocumentationItemComponent
+    name="ZUniformViewMatrix"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-uniform-view-matrix"
+    description=""
+    codeBlocks={[{ code: 'val ZUniformViewMatrix: ZUniform' }]}
+  />
+</CodeClassList>

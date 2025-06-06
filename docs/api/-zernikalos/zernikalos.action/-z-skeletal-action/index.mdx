@@ -1,0 +1,74 @@
+---
+slug: 'index'
+title: 'ZSkeletalAction'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSkeletalAction"
+  namespace="Zernikalos.zernikalos.action"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZSkeletalAction', url: '#zskeletalaction' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZSkeletalAction"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-skeletal-action"
+    description=""
+    codeBlocks={[{ code: 'constructor(name: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="duration"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="duration"
+    description=""
+    codeBlocks={[{ code: 'var duration: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="name"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="name"
+    description=""
+    codeBlocks={[{ code: 'val name: String' }]}
+  />
+  <DocumentationItemComponent
+    name="tracks"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="tracks"
+    description=""
+    codeBlocks={[{ code: 'val tracks: Array<ZBoneTrack>' }]}
+  />
+  <DocumentationItemComponent
+    name="addTrack"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-track"
+    description=""
+    codeBlocks={[{ code: 'fun addTrack(track: ZBoneTrack)' }]}
+  />
+  <DocumentationItemComponent
+    name="getKeyFrame"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-key-frame"
+    description=""
+    codeBlocks={[{ code: 'fun getKeyFrame(time: Float): ZKeyFrame' }]}
+  />
+</CodeClassList>

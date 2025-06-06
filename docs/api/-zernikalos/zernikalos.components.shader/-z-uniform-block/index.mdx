@@ -1,0 +1,118 @@
+---
+slug: 'index'
+title: 'ZUniformBlock'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZUniformBlock"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZUniformBlock', url: '#zuniformblock' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="id"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="id"
+    description="Represents the unique identifier for a ZUniform instance. This ID is used to differentiate between different uniform components"
+    codeBlocks={[{ code: 'open override val id: Int = 0' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = true' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/renderer"
+    description=""
+    codeBlocks={[{ code: 'val renderer: ZUniformBlockRenderer' }]}
+  />
+  <DocumentationItemComponent
+    name="uniformName"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="uniform-name"
+    description="This is the name within the shader source code"
+    codeBlocks={[{ code: 'open override val uniformName: String' }]}
+  />
+  <DocumentationItemComponent
+    name="uniforms"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="uniforms"
+    description=""
+    codeBlocks={[{ code: 'val uniforms: MutableMap<String, ZBaseUniform>' }]}
+  />
+  <DocumentationItemComponent
+    name="value"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="value"
+    description=""
+    codeBlocks={[{ code: 'open override var value: ZAlgebraObject' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="set"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set"
+    description=""
+    codeBlocks={[
+      { code: 'operator fun set(uniformName: String, value: ZBaseUniform)' },
+      { code: 'operator fun set(uniformName: String, value: ZAlgebraObject)' },
+    ]}
+  />
+</CodeClassList>

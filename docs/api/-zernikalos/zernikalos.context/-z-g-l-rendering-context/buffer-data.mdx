@@ -1,0 +1,48 @@
+---
+slug: 'buffer-data'
+title: 'bufferData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="bufferData"
+  namespace="Zernikalos.zernikalos.context.ZGLRenderingContext"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.ZGLRenderingContext',
+      url: '/docs/api/-zernikalos.zernikalos.context.zglrenderingcontext',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'bufferData', url: '#bufferdata' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="bufferData"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../../index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'actual fun bufferData(targetType: BufferTargetType, dataArray: ByteArray, usageType: BufferUsageType)',
+      },
+      {
+        code: 'actual fun bufferData(targetType: BufferTargetType, byteSize: Int, usageType: BufferUsageType)',
+      },
+      {
+        code: 'expect fun bufferData(targetType: BufferTargetType, dataArray: ByteArray, usageType: BufferUsageType)',
+      },
+      {
+        code: 'expect fun bufferData(targetType: BufferTargetType, byteSize: Int, usageType: BufferUsageType)',
+      },
+    ]}
+  />
+</CodeClassList>

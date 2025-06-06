@@ -1,0 +1,58 @@
+---
+slug: 'index'
+title: 'ZLoaderContext'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZLoaderContext"
+  namespace="Zernikalos.zernikalos.loader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.loader', url: '/docs/api/-zernikalos.zernikalos.loader' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZLoaderContext', url: '#zloadercontext' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZLoaderContext"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-loader-context"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="addComponent"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-component"
+    description="Adds a component to the store with the given refId."
+    codeBlocks={[{ code: 'fun addComponent(refId: String, component: ZRef?)' }]}
+  />
+  <DocumentationItemComponent
+    name="getComponent"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-component"
+    description="Retrieves a component from the store with the given refId."
+    codeBlocks={[{ code: 'fun getComponent(refId: String): ZRef?' }]}
+  />
+  <DocumentationItemComponent
+    name="hasComponent"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="has-component"
+    description="Returns true if the component with the given refId has been loaded."
+    codeBlocks={[{ code: 'fun hasComponent(refId: String): Boolean' }]}
+  />
+</CodeClassList>

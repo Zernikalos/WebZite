@@ -1,0 +1,51 @@
+---
+slug: 'index'
+title: 'ZSkinningData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSkinningData"
+  namespace="Zernikalos.zernikalos.components.skeleton"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.skeleton',
+      url: '/docs/api/-zernikalos.zernikalos.components.skeleton',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZSkinningData', url: '#zskinningdata' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZSkinningData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-skinning-data"
+    description=""
+    codeBlocks={[{ code: 'constructor(boneIds: ArrayList<String> = ArrayList())' }]}
+  />
+  <DocumentationItemComponent
+    name="boneIds"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="bone-ids"
+    description=""
+    codeBlocks={[{ code: 'val boneIds: ArrayList<String>' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-component-data/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+  />
+</CodeClassList>

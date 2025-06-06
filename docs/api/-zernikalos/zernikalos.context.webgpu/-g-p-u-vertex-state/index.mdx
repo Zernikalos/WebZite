@@ -1,0 +1,73 @@
+---
+slug: 'index'
+title: 'GPUVertexState'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="GPUVertexState"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.webgpu',
+      url: '/docs/api/-zernikalos.zernikalos.context.webgpu',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'GPUVertexState', url: '#gpuvertexstate' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="GPUVertexState"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-g-p-u-vertex-state"
+    description=""
+    codeBlocks={[
+      {
+        code: 'constructor(module: GPUShaderModule, entryPoint: String, buffers: Array<GPUVertexBufferLayout>? = emptyArray<GPUVertexBufferLayout>())',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="buffers"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="buffers"
+    description=""
+    codeBlocks={[{ code: 'var buffers: Array<GPUVertexBufferLayout>?' }]}
+  />
+  <DocumentationItemComponent
+    name="entryPoint"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="entry-point"
+    description=""
+    codeBlocks={[{ code: 'var entryPoint: String' }]}
+  />
+  <DocumentationItemComponent
+    name="module"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="module"
+    description=""
+    codeBlocks={[{ code: 'var module: GPUShaderModule' }]}
+  />
+  <DocumentationItemComponent
+    name="toGpu"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-gpu"
+    description=""
+    codeBlocks={[{ code: 'fun toGpu(): dynamic' }]}
+  />
+</CodeClassList>

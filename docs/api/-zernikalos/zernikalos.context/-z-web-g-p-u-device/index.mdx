@@ -1,0 +1,120 @@
+---
+slug: 'index'
+title: 'ZWebGPUDevice'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZWebGPUDevice"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZWebGPUDevice', url: '#zwebgpudevice' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZWebGPUDevice"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-web-g-p-u-device"
+    description=""
+    codeBlocks={[{ code: 'constructor(nativeDevice: GPUDevice)' }]}
+  />
+  <DocumentationItemComponent
+    name="nativeDevice"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="native-device"
+    description=""
+    codeBlocks={[{ code: 'val nativeDevice: GPUDevice' }]}
+  />
+  <DocumentationItemComponent
+    name="createBindGroup"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-bind-group"
+    description=""
+    codeBlocks={[{ code: 'fun createBindGroup(descriptor: GPUBindGroupDescriptor): GPUBindGroup' }]}
+  />
+  <DocumentationItemComponent
+    name="createBindGroupLayout"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-bind-group-layout"
+    description=""
+    codeBlocks={[
+      {
+        code: 'fun createBindGroupLayout(descriptor: GPUBindGroupLayoutDescriptor): GPUBindGroupLayout',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="createBuffer"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-buffer"
+    description=""
+    codeBlocks={[
+      {
+        code: 'fun createBuffer(byteSize: Int, usage: GPUBufferUsageFlags, mappedAtCreation: Boolean, label: String? = null): GPUBuffer',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="createCommandEncoder"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-command-encoder"
+    description=""
+    codeBlocks={[{ code: 'fun createCommandEncoder(): GPUCommandEncoder' }]}
+  />
+  <DocumentationItemComponent
+    name="createPipelineLayout"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-pipeline-layout"
+    description=""
+    codeBlocks={[
+      {
+        code: 'fun createPipelineLayout(descriptor: GPUPipelineLayoutDescriptor): GPUPipelineLayout',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="createRenderPipeline"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-render-pipeline"
+    description=""
+    codeBlocks={[
+      {
+        code: 'fun createRenderPipeline(descriptor: GPURenderPipelineDescriptor): GPURenderPipeline',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="createShaderModule"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-shader-module"
+    description=""
+    codeBlocks={[{ code: 'fun createShaderModule(source: String): GPUShaderModule' }]}
+  />
+  <DocumentationItemComponent
+    name="createTexture"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-texture"
+    description=""
+    codeBlocks={[{ code: 'fun createTexture(descriptor: GPUTextureDescriptor): GPUTexture' }]}
+  />
+</CodeClassList>

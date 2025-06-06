@@ -1,0 +1,48 @@
+---
+slug: 'index'
+title: 'ZSettings'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSettings"
+  namespace="Zernikalos.zernikalos.settings"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.settings', url: '/docs/api/-zernikalos.zernikalos.settings' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZSettings', url: '#zsettings' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="Companion"
+    tokenType=""
+    groupType="NONE"
+    url="-companion/index"
+    description=""
+    codeBlocks={[{ code: 'object Companion' }]}
+  />
+  <DocumentationItemComponent
+    name="loggerSettings"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="logger-settings"
+    description=""
+    codeBlocks={[{ code: 'val loggerSettings: ZLoggerSettings' }]}
+  />
+  <DocumentationItemComponent
+    name="logLevel"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="log-level"
+    description=""
+    codeBlocks={[{ code: 'var logLevel: ZLogLevel' }]}
+  />
+</CodeClassList>

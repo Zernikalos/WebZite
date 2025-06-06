@@ -1,0 +1,34 @@
+---
+slug: 'create-lazy-logger'
+title: 'createLazyLogger'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="createLazyLogger"
+  namespace="Zernikalos.zernikalos.logger"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.logger', url: '/docs/api/-zernikalos.zernikalos.logger' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'createLazyLogger', url: '#createlazylogger' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="createLazyLogger"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../index"
+    description=""
+    codeBlocks={[{ code: 'inline fun <T: ZLoggable> T.createLazyLogger(): Lazy<ZLogger>' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,128 @@
+---
+slug: 'index'
+title: 'ZAlgebraObjectCollection'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZAlgebraObjectCollection"
+  namespace="Zernikalos.zernikalos.math"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.math', url: '/docs/api/-zernikalos.zernikalos.math' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZAlgebraObjectCollection',
+      url: '#zalgebraobjectcollection',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZAlgebraObjectCollection"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-algebra-object-collection"
+    description="Initializes a new instance of ZAlgebraObjectCollection with a specified data size.Secondary constructor for the ZAlgebraObjectCollection class that initializes the collection with a specified data type and count of algebraic objects."
+    codeBlocks={[
+      { code: 'constructor(dataSize: Int)' },
+      { code: 'constructor(dataType: ZDataType, count: Int)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="byteArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-array"
+    description=""
+    codeBlocks={[{ code: 'val byteArray: ByteArray' }]}
+  />
+  <DocumentationItemComponent
+    name="byteSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-size"
+    description=""
+    codeBlocks={[{ code: 'val byteSize: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="count"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="count"
+    description="Number of individual instances this object represents"
+    codeBlocks={[{ code: 'open override val count: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="dataSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="data-size"
+    description="The total number of elements allocated in the collection."
+    codeBlocks={[{ code: 'val dataSize: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="dataType"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="data-type"
+    description="The data type stored"
+    codeBlocks={[{ code: 'open override val dataType: ZDataType' }]}
+  />
+  <DocumentationItemComponent
+    name="floatArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="float-array"
+    description=""
+    codeBlocks={[{ code: 'open override val floatArray: FloatArray' }]}
+  />
+  <DocumentationItemComponent
+    name="size"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="size"
+    description="Number of elements contained within the values array with the specific type defined in dataType"
+    codeBlocks={[{ code: 'open override val size: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="copyAll"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="copy-all"
+    description="Copies all values from the specified array of ZAlgebraObject into this collection.Copies all values from the specified list of ZAlgebraObject into this collection."
+    codeBlocks={[
+      { code: 'fun copyAll(values: Array<ZAlgebraObject>)' },
+      { code: 'fun copyAll(values: List<ZAlgebraObject>)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="copyAllFromIndex"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="copy-all-from-index"
+    description="Copies all values from the specified array of ZAlgebraObject starting at the given index into this collection. Each object in the array is copied sequentially into the collection.Copies all values from the specified list of ZAlgebraObject starting at the given index into this collection. Each object in the list is copied sequentially into the collection."
+    codeBlocks={[
+      { code: 'fun copyAllFromIndex(index: Int, values: Array<ZAlgebraObject>)' },
+      { code: 'fun copyAllFromIndex(index: Int, values: List<ZAlgebraObject>)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="copyInto"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="copy-into"
+    description="Copies the values from the specified ZAlgebraObject into the collection starting at the location defined by index."
+    codeBlocks={[{ code: 'fun copyInto(index: Int, value: ZAlgebraObject)' }]}
+  />
+</CodeClassList>

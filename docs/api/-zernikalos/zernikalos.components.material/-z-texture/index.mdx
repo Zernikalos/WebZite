@@ -1,0 +1,152 @@
+---
+slug: 'index'
+title: 'ZTexture'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZTexture"
+  namespace="Zernikalos.zernikalos.components.material"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.material',
+      url: '/docs/api/-zernikalos.zernikalos.components.material',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZTexture', url: '#ztexture' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZTexture"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-texture"
+    description=""
+    codeBlocks={[
+      { code: 'constructor()' },
+      {
+        code: 'constructor(id: String, width: Int, height: Int, flipX: Boolean, flipY: Boolean, dataArray: ByteArray)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="dataArray"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="data-array"
+    description="Represents an array of bytes used for storing the image data."
+    codeBlocks={[{ code: 'var dataArray: ByteArray' }]}
+  />
+  <DocumentationItemComponent
+    name="flipX"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="flip-x"
+    description="Represents whether the texture should be flipped horizontally."
+    codeBlocks={[{ code: 'var flipX: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="flipY"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="flip-y"
+    description="Represents whether the texture should be flipped vertically."
+    codeBlocks={[{ code: 'var flipY: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="height"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="height"
+    description="Represents the height of the texture image"
+    codeBlocks={[{ code: 'var height: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="id"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="id"
+    description=""
+    codeBlocks={[{ code: 'var id: String' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = true' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/renderer"
+    description=""
+    codeBlocks={[{ code: 'val renderer: ZTextureRenderer' }]}
+  />
+  <DocumentationItemComponent
+    name="width"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="width"
+    description="Represents the width of the texture image"
+    codeBlocks={[{ code: 'var width: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="bind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-bindeable/bind"
+    description="Binds the renderer. This method is called to prepare the renderer for drawing."
+    codeBlocks={[{ code: 'open fun bind()' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="unbind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-bindeable/unbind"
+    description="Unbinds the renderer. This method is called after drawing to clean up."
+    codeBlocks={[{ code: 'open fun unbind()' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,35 @@
+---
+slug: 'index'
+title: 'ZRef'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZRef"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components',
+      url: '/docs/api/-zernikalos.zernikalos.components',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZRef', url: '#zref' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'abstract val refId: String' }]}
+  />
+</CodeClassList>

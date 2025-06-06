@@ -1,0 +1,70 @@
+---
+slug: 'index'
+title: 'ZMaterialDataWrapper'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZMaterialDataWrapper"
+  namespace="Zernikalos.zernikalos.components.material"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.material',
+      url: '/docs/api/-zernikalos.zernikalos.components.material',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZMaterialDataWrapper',
+      url: '#zmaterialdatawrapper',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZMaterialDataWrapper"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-material-data-wrapper"
+    description=""
+    codeBlocks={[
+      {
+        code: "constructor(refId: String = '', isReference: Boolean = false, data: ZMaterialData? = null)",
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="data"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="data"
+    description=""
+    codeBlocks={[{ code: 'open override var data: ZMaterialData?' }]}
+  />
+  <DocumentationItemComponent
+    name="isReference"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="is-reference"
+    description=""
+    codeBlocks={[{ code: 'open override var isReference: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="ref-id"
+    description=""
+    codeBlocks={[{ code: 'open override var refId: String' }]}
+  />
+</CodeClassList>

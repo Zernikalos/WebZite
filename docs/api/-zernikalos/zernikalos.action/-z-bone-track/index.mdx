@@ -1,0 +1,88 @@
+---
+slug: 'index'
+title: 'ZBoneTrack'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZBoneTrack"
+  namespace="Zernikalos.zernikalos.action"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZBoneTrack', url: '#zbonetrack' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZBoneTrack"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-bone-track"
+    description=""
+    codeBlocks={[{ code: "constructor(boneName: String = '')" }]}
+  />
+  <DocumentationItemComponent
+    name="boneName"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="bone-name"
+    description=""
+    codeBlocks={[{ code: 'val boneName: String' }]}
+  />
+  <DocumentationItemComponent
+    name="positionTrack"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="position-track"
+    description=""
+    codeBlocks={[{ code: 'val positionTrack: Array<ZPositionFrame>' }]}
+  />
+  <DocumentationItemComponent
+    name="rotationTrack"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="rotation-track"
+    description=""
+    codeBlocks={[{ code: 'val rotationTrack: Array<ZRotationFrame>' }]}
+  />
+  <DocumentationItemComponent
+    name="scaleTrack"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="scale-track"
+    description=""
+    codeBlocks={[{ code: 'val scaleTrack: Array<ZScaleFrame>' }]}
+  />
+  <DocumentationItemComponent
+    name="addPositionFrame"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-position-frame"
+    description=""
+    codeBlocks={[{ code: 'fun addPositionFrame(frame: ZPositionFrame)' }]}
+  />
+  <DocumentationItemComponent
+    name="addRotationFrame"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-rotation-frame"
+    description=""
+    codeBlocks={[{ code: 'fun addRotationFrame(frame: ZRotationFrame)' }]}
+  />
+  <DocumentationItemComponent
+    name="addScaleFrame"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-scale-frame"
+    description=""
+    codeBlocks={[{ code: 'fun addScaleFrame(frame: ZScaleFrame)' }]}
+  />
+</CodeClassList>

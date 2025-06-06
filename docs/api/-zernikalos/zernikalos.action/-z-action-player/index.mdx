@@ -1,0 +1,136 @@
+---
+slug: 'index'
+title: 'ZActionPlayer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZActionPlayer"
+  namespace="Zernikalos.zernikalos.action"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZActionPlayer', url: '#zactionplayer' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZActionPlayer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-action-player"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="getCurrentKeyFrame"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-current-key-frame"
+    description="Gets the current keyframe based on playback time"
+    codeBlocks={[{ code: 'fun getCurrentKeyFrame(): ZKeyFrame?' }]}
+  />
+  <DocumentationItemComponent
+    name="getCurrentTime"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-current-time"
+    description=""
+    codeBlocks={[{ code: 'fun getCurrentTime(): Float' }]}
+  />
+  <DocumentationItemComponent
+    name="getDuration"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-duration"
+    description=""
+    codeBlocks={[{ code: 'fun getDuration(): Float' }]}
+  />
+  <DocumentationItemComponent
+    name="getProgress"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-progress"
+    description=""
+    codeBlocks={[{ code: 'fun getProgress(): Float' }]}
+  />
+  <DocumentationItemComponent
+    name="isPlaying"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="is-playing"
+    description=""
+    codeBlocks={[{ code: 'fun isPlaying(): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="pause"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="pause"
+    description="Pauses playback"
+    codeBlocks={[{ code: 'fun pause()' }]}
+  />
+  <DocumentationItemComponent
+    name="play"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="play"
+    description="Starts playing the action"
+    codeBlocks={[{ code: 'fun play(loop: Boolean = false)' }]}
+  />
+  <DocumentationItemComponent
+    name="resetTimer"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="reset-timer"
+    description="Resets the internal time counter. Useful when a lot of time has passed since the last update and we don't want a large jump in the animation."
+    codeBlocks={[{ code: 'fun resetTimer()' }]}
+  />
+  <DocumentationItemComponent
+    name="seek"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="seek"
+    description="Jumps to a specific point in time"
+    codeBlocks={[{ code: 'fun seek(time: Float)' }]}
+  />
+  <DocumentationItemComponent
+    name="setAction"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-action"
+    description="Sets the action to be played"
+    codeBlocks={[{ code: 'fun setAction(obj: ZModel, action: ZSkeletalAction)' }]}
+  />
+  <DocumentationItemComponent
+    name="setPlaybackSpeed"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-playback-speed"
+    description="Sets the playback speed"
+    codeBlocks={[{ code: 'fun setPlaybackSpeed(speed: Float)' }]}
+  />
+  <DocumentationItemComponent
+    name="stop"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="stop"
+    description="Stops playback and resets the time"
+    codeBlocks={[{ code: 'fun stop()' }]}
+  />
+  <DocumentationItemComponent
+    name="update"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="update"
+    description="Updates the playback state by automatically calculating the time elapsed since the last call."
+    codeBlocks={[{ code: 'fun update()' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,73 @@
+---
+slug: 'index'
+title: 'AndroidNativeRenderer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="AndroidNativeRenderer"
+  namespace="Zernikalos.zernikalos.ui"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.ui', url: '/docs/api/-zernikalos.zernikalos.ui' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'AndroidNativeRenderer',
+      url: '#androidnativerenderer',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="AndroidNativeRenderer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-android-native-renderer"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="eventHandler"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="event-handler"
+    description=""
+    codeBlocks={[{ code: 'var eventHandler: ZSurfaceViewEventHandler?' }]}
+  />
+  <DocumentationItemComponent
+    name="onDrawFrame"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-draw-frame"
+    description=""
+    codeBlocks={[{ code: 'open override fun onDrawFrame(p0: GL10?)' }]}
+  />
+  <DocumentationItemComponent
+    name="onSurfaceChanged"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-surface-changed"
+    description=""
+    codeBlocks={[
+      { code: 'open override fun onSurfaceChanged(p0: GL10?, width: Int, height: Int)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="onSurfaceCreated"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-surface-created"
+    description=""
+    codeBlocks={[{ code: 'open override fun onSurfaceCreated(p0: GL10?, p1: EGLConfig?)' }]}
+  />
+</CodeClassList>

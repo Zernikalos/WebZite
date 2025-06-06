@@ -1,0 +1,73 @@
+---
+slug: 'index'
+title: 'GPUFragmentState'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="GPUFragmentState"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.webgpu',
+      url: '/docs/api/-zernikalos.zernikalos.context.webgpu',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'GPUFragmentState', url: '#gpufragmentstate' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="GPUFragmentState"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-g-p-u-fragment-state"
+    description=""
+    codeBlocks={[
+      {
+        code: 'constructor(module: GPUShaderModule, entryPoint: String, targets: Array<GPUColorTargetState>)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="entryPoint"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="entry-point"
+    description=""
+    codeBlocks={[{ code: 'var entryPoint: String' }]}
+  />
+  <DocumentationItemComponent
+    name="module"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="module"
+    description=""
+    codeBlocks={[{ code: 'var module: GPUShaderModule' }]}
+  />
+  <DocumentationItemComponent
+    name="targets"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="targets"
+    description=""
+    codeBlocks={[{ code: 'var targets: Array<GPUColorTargetState>' }]}
+  />
+  <DocumentationItemComponent
+    name="toGpu"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-gpu"
+    description=""
+    codeBlocks={[{ code: 'fun toGpu(): dynamic' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,90 @@
+---
+slug: 'index'
+title: 'ZContext'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZContext"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZContext', url: '#zcontext' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZContext"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-context"
+    description=""
+    codeBlocks={[
+      { code: 'constructor(sceneContext: ZSceneContext, renderingContext: ZRenderingContext)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="activeCamera"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="active-camera"
+    description=""
+    codeBlocks={[{ code: 'var activeCamera: ZCamera?' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="is-initialized"
+    description=""
+    codeBlocks={[{ code: 'val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="renderingContext"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="rendering-context"
+    description=""
+    codeBlocks={[{ code: 'val renderingContext: ZRenderingContext' }]}
+  />
+  <DocumentationItemComponent
+    name="scene"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="scene"
+    description=""
+    codeBlocks={[{ code: 'var scene: ZScene?' }]}
+  />
+  <DocumentationItemComponent
+    name="sceneContext"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="scene-context"
+    description=""
+    codeBlocks={[{ code: 'val sceneContext: ZSceneContext' }]}
+  />
+  <DocumentationItemComponent
+    name="screenHeight"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="screen-height"
+    description=""
+    codeBlocks={[{ code: 'var screenHeight: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="screenWidth"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="screen-width"
+    description=""
+    codeBlocks={[{ code: 'var screenWidth: Int' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,72 @@
+---
+slug: 'index'
+title: 'ZSceneContext'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSceneContext"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZSceneContext', url: '#zscenecontext' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZSceneContext"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-scene-context"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="activeCamera"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="active-camera"
+    description=""
+    codeBlocks={[{ code: 'var activeCamera: ZCamera?' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="is-initialized"
+    description=""
+    codeBlocks={[{ code: 'val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="scene"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="scene"
+    description=""
+    codeBlocks={[{ code: 'var scene: ZScene?' }]}
+  />
+  <DocumentationItemComponent
+    name="addUniformGenerator"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-uniform-generator"
+    description=""
+    codeBlocks={[{ code: 'fun addUniformGenerator(key: String, generator: ZUniformGenerator)' }]}
+  />
+  <DocumentationItemComponent
+    name="getUniform"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-uniform"
+    description=""
+    codeBlocks={[{ code: 'fun getUniform(key: String): ZUniformGenerator?' }]}
+  />
+</CodeClassList>

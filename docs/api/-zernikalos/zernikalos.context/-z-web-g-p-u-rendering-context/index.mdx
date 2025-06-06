@@ -1,0 +1,87 @@
+---
+slug: 'index'
+title: 'ZWebGPURenderingContext'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZWebGPURenderingContext"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZWebGPURenderingContext',
+      url: '#zwebgpurenderingcontext',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZWebGPURenderingContext"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-web-g-p-u-rendering-context"
+    description=""
+    codeBlocks={[{ code: 'constructor(surfaceView: ZSurfaceView)' }]}
+  />
+  <DocumentationItemComponent
+    name="device"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="device"
+    description=""
+    codeBlocks={[{ code: 'val device: ZWebGPUDevice' }]}
+  />
+  <DocumentationItemComponent
+    name="queue"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="queue"
+    description=""
+    codeBlocks={[{ code: 'val queue: ZWebGPUQueue' }]}
+  />
+  <DocumentationItemComponent
+    name="surfaceView"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="surface-view"
+    description=""
+    codeBlocks={[{ code: 'val surfaceView: ZSurfaceView' }]}
+  />
+  <DocumentationItemComponent
+    name="webGPUContext"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="web-g-p-u-context"
+    description=""
+    codeBlocks={[{ code: 'var webGPUContext: GPUCanvasContext?' }]}
+  />
+  <DocumentationItemComponent
+    name="getPreferredCanvasFormat"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-preferred-canvas-format"
+    description=""
+    codeBlocks={[{ code: 'fun getPreferredCanvasFormat(): GPUTextureFormat' }]}
+  />
+  <DocumentationItemComponent
+    name="initWithSurfaceView"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="init-with-surface-view"
+    description=""
+    codeBlocks={[{ code: 'open override fun initWithSurfaceView(surfaceView: ZSurfaceView)' }]}
+  />
+</CodeClassList>
