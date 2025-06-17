@@ -1,30 +1,16 @@
 ---
-slug: 'index'
-title: 'ZMtlRenderingContext'
+slug: "index"
+title: "ZMtlRenderingContext"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZMtlRenderingContext"
   namespace="Zernikalos.zernikalos.context"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
-  ]}
-  typeInfo={[
-    {
-      type: 'actual',
-      keyword: 'package',
-      name: 'ZMtlRenderingContext',
-      url: '#zmtlrenderingcontext',
-    },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context","url":"/docs/api/-zernikalos.zernikalos.context"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZMtlRenderingContext","url":"#zmtlrenderingcontext"}]}
 />
 
 <CodeClassList>
@@ -34,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-mtl-rendering-context"
     description=""
-    codeBlocks={[{ code: 'constructor(view: ZSurfaceView)' }]}
+    codeBlocks={[{code: "constructor(view: ZSurfaceView)"}]}
   />
   <DocumentationItemComponent
     name="commandBuffer"
@@ -42,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="command-buffer"
     description=""
-    codeBlocks={[{ code: 'var commandBuffer: MTLCommandBufferProtocol?' }]}
+    codeBlocks={[{code: "var commandBuffer: MTLCommandBufferProtocol?"}]}
   />
   <DocumentationItemComponent
     name="commandQueue"
@@ -50,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="command-queue"
     description=""
-    codeBlocks={[{ code: 'val commandQueue: MTLCommandQueueProtocol' }]}
+    codeBlocks={[{code: "val commandQueue: MTLCommandQueueProtocol"}]}
   />
   <DocumentationItemComponent
     name="device"
@@ -58,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="device"
     description=""
-    codeBlocks={[{ code: 'val device: MTLDeviceProtocol' }]}
+    codeBlocks={[{code: "val device: MTLDeviceProtocol"}]}
   />
   <DocumentationItemComponent
     name="renderEncoder"
@@ -66,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="render-encoder"
     description=""
-    codeBlocks={[{ code: 'var renderEncoder: MTLRenderCommandEncoderProtocol?' }]}
+    codeBlocks={[{code: "var renderEncoder: MTLRenderCommandEncoderProtocol?"}]}
   />
   <DocumentationItemComponent
     name="surfaceView"
@@ -74,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="surface-view"
     description=""
-    codeBlocks={[{ code: 'val surfaceView: ZMtlSurfaceView' }]}
+    codeBlocks={[{code: "val surfaceView: ZMtlSurfaceView"}]}
   />
   <DocumentationItemComponent
     name="initWithSurfaceView"
@@ -82,7 +68,7 @@ import {
     groupType="FUNCTION"
     url="init-with-surface-view"
     description=""
-    codeBlocks={[{ code: 'open override fun initWithSurfaceView(surfaceView: ZSurfaceView)' }]}
+    codeBlocks={[{code: "open override fun initWithSurfaceView(surfaceView: ZSurfaceView)"}]}
   />
   <DocumentationItemComponent
     name="makeCommandBuffer"
@@ -90,7 +76,7 @@ import {
     groupType="FUNCTION"
     url="make-command-buffer"
     description=""
-    codeBlocks={[{ code: 'fun makeCommandBuffer()' }]}
+    codeBlocks={[{code: "fun makeCommandBuffer()"}]}
   />
   <DocumentationItemComponent
     name="makeRenderCommandEncoder"
@@ -98,8 +84,6 @@ import {
     groupType="FUNCTION"
     url="make-render-command-encoder"
     description=""
-    codeBlocks={[
-      { code: 'fun makeRenderCommandEncoder(renderPassDescriptor: MTLRenderPassDescriptor)' },
-    ]}
+    codeBlocks={[{code: "fun makeRenderCommandEncoder(renderPassDescriptor: MTLRenderPassDescriptor)"}]}
   />
 </CodeClassList>

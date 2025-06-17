@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZActionPlayer'
+slug: "index"
+title: "ZActionPlayer"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZActionPlayer"
   namespace="Zernikalos.zernikalos.action"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZActionPlayer', url: '#zactionplayer' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.action","url":"/docs/api/-zernikalos.zernikalos.action"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZActionPlayer","url":"#zactionplayer"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-action-player"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="getCurrentKeyFrame"
@@ -35,7 +28,7 @@ import {
     groupType="FUNCTION"
     url="get-current-key-frame"
     description="Gets the current keyframe based on playback time"
-    codeBlocks={[{ code: 'fun getCurrentKeyFrame(): ZKeyFrame?' }]}
+    codeBlocks={[{code: "fun getCurrentKeyFrame(): ZKeyFrame?"}]}
   />
   <DocumentationItemComponent
     name="getCurrentTime"
@@ -43,7 +36,7 @@ import {
     groupType="FUNCTION"
     url="get-current-time"
     description=""
-    codeBlocks={[{ code: 'fun getCurrentTime(): Float' }]}
+    codeBlocks={[{code: "fun getCurrentTime(): Float"}]}
   />
   <DocumentationItemComponent
     name="getDuration"
@@ -51,7 +44,7 @@ import {
     groupType="FUNCTION"
     url="get-duration"
     description=""
-    codeBlocks={[{ code: 'fun getDuration(): Float' }]}
+    codeBlocks={[{code: "fun getDuration(): Float"}]}
   />
   <DocumentationItemComponent
     name="getProgress"
@@ -59,7 +52,7 @@ import {
     groupType="FUNCTION"
     url="get-progress"
     description=""
-    codeBlocks={[{ code: 'fun getProgress(): Float' }]}
+    codeBlocks={[{code: "fun getProgress(): Float"}]}
   />
   <DocumentationItemComponent
     name="isPlaying"
@@ -67,7 +60,7 @@ import {
     groupType="FUNCTION"
     url="is-playing"
     description=""
-    codeBlocks={[{ code: 'fun isPlaying(): Boolean' }]}
+    codeBlocks={[{code: "fun isPlaying(): Boolean"}]}
   />
   <DocumentationItemComponent
     name="pause"
@@ -75,7 +68,7 @@ import {
     groupType="FUNCTION"
     url="pause"
     description="Pauses playback"
-    codeBlocks={[{ code: 'fun pause()' }]}
+    codeBlocks={[{code: "fun pause()"}]}
   />
   <DocumentationItemComponent
     name="play"
@@ -83,7 +76,7 @@ import {
     groupType="FUNCTION"
     url="play"
     description="Starts playing the action"
-    codeBlocks={[{ code: 'fun play(loop: Boolean = false)' }]}
+    codeBlocks={[{code: "fun play(loop: Boolean = false)"}]}
   />
   <DocumentationItemComponent
     name="resetTimer"
@@ -91,7 +84,7 @@ import {
     groupType="FUNCTION"
     url="reset-timer"
     description="Resets the internal time counter. Useful when a lot of time has passed since the last update and we don't want a large jump in the animation."
-    codeBlocks={[{ code: 'fun resetTimer()' }]}
+    codeBlocks={[{code: "fun resetTimer()"}]}
   />
   <DocumentationItemComponent
     name="seek"
@@ -99,7 +92,7 @@ import {
     groupType="FUNCTION"
     url="seek"
     description="Jumps to a specific point in time"
-    codeBlocks={[{ code: 'fun seek(time: Float)' }]}
+    codeBlocks={[{code: "fun seek(time: Float)"}]}
   />
   <DocumentationItemComponent
     name="setAction"
@@ -107,7 +100,7 @@ import {
     groupType="FUNCTION"
     url="set-action"
     description="Sets the action to be played"
-    codeBlocks={[{ code: 'fun setAction(obj: ZModel, action: ZSkeletalAction)' }]}
+    codeBlocks={[{code: "fun setAction(obj: ZModel, action: ZSkeletalAction)"}]}
   />
   <DocumentationItemComponent
     name="setPlaybackSpeed"
@@ -115,7 +108,7 @@ import {
     groupType="FUNCTION"
     url="set-playback-speed"
     description="Sets the playback speed"
-    codeBlocks={[{ code: 'fun setPlaybackSpeed(speed: Float)' }]}
+    codeBlocks={[{code: "fun setPlaybackSpeed(speed: Float)"}]}
   />
   <DocumentationItemComponent
     name="stop"
@@ -123,7 +116,7 @@ import {
     groupType="FUNCTION"
     url="stop"
     description="Stops playback and resets the time"
-    codeBlocks={[{ code: 'fun stop()' }]}
+    codeBlocks={[{code: "fun stop()"}]}
   />
   <DocumentationItemComponent
     name="update"
@@ -131,6 +124,6 @@ import {
     groupType="FUNCTION"
     url="update"
     description="Updates the playback state by automatically calculating the time elapsed since the last call."
-    codeBlocks={[{ code: 'fun update()' }]}
+    codeBlocks={[{code: "fun update()"}]}
   />
 </CodeClassList>

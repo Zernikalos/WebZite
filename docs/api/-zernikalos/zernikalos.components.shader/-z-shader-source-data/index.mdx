@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZShaderSourceData'
+slug: "index"
+title: "ZShaderSourceData"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZShaderSourceData"
   namespace="Zernikalos.zernikalos.components.shader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.shader',
-      url: '/docs/api/-zernikalos.zernikalos.components.shader',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZShaderSourceData', url: '#zshadersourcedata' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.shader","url":"/docs/api/-zernikalos.zernikalos.components.shader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZShaderSourceData","url":"#zshadersourcedata"}]}
 />
 
 <CodeClassList>
@@ -32,11 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-shader-source-data"
     description=""
-    codeBlocks={[
-      {
-        code: 'constructor(glsl: ZGlSLShaderSource = ZGlSLShaderSource(), metal: ZMetalShaderSource = ZMetalShaderSource())',
-      },
-    ]}
+    codeBlocks={[{code: "constructor(glsl: ZGlSLShaderSource = ZGlSLShaderSource(), metal: ZMetalShaderSource = ZMetalShaderSource())"}]}
   />
   <DocumentationItemComponent
     name="glsl"
@@ -44,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="glsl"
     description=""
-    codeBlocks={[{ code: 'var glsl: ZGlSLShaderSource' }]}
+    codeBlocks={[{code: "var glsl: ZGlSLShaderSource"}]}
   />
   <DocumentationItemComponent
     name="metal"
@@ -52,14 +36,14 @@ import {
     groupType="PROPERTY"
     url="metal"
     description=""
-    codeBlocks={[{ code: 'var metal: ZMetalShaderSource' }]}
+    codeBlocks={[{code: "var metal: ZMetalShaderSource"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "@Transient open override val refId: String"}]}
   />
 </CodeClassList>

@@ -6,7 +6,8 @@ import _ from 'lodash';
 export enum PageType {
   MEMBER = 'member',
   PACKAGE = 'package',
-  CLASS = 'classlike'
+  CLASS = 'classlike',
+  LIBRARY = 'library'
 }
 
 export abstract class DocumentationPage {
@@ -27,6 +28,12 @@ export abstract class DocumentationPage {
 
   public static isClassPage($: cheerio.CheerioAPI): boolean {
     return $('div[data-page-type="classlike"]').length > 0;
+  }
+
+  public static isLibraryPage($: cheerio.CheerioAPI): boolean {
+    const hasPageType = $('div[data-page-type]').length > 0;
+    const hasPackagesHeader = $('h2:contains("Packages")').length > 0;
+    return !hasPageType && hasPackagesHeader;
   }
 
   public get hasDocumentationItems(): boolean {
@@ -223,6 +230,45 @@ export class PackagePage extends DocumentationPage {
           throw error;
         }
       });
+    }
+  }
+}
+
+export class LibraryPage extends DocumentationPage {
+
+  public pageType: PageType = PageType.LIBRARY;
+
+  constructor($: cheerio.CheerioAPI) {
+    super($);
+  }
+
+  public parse($: cheerio.CheerioAPI): void {
+    const tabSectionBody = $('.main-content')
+
+    const tableRows = tabSectionBody.find('.table-row')
+
+    for (const token of tableRows) {
+      // const tokens = DocumentationPage.findTokenRows(tabSectionBody, availableToken);
+      // if (!tokens) {
+      //   continue;
+      // }
+      try {
+        const documentationItem = new DocumentationItem();
+        documentationItem.parse($, $(token));
+        this.documentationItems.push(documentationItem);
+      } catch (error) {
+        throw error;
+      }
+      // Use the Cheerio each method to iterate over the tokens
+      // token.each((i, tokenElement) => {
+      //   try {
+      //     const documentationItem = new DocumentationItem();
+      //     documentationItem.parse($, $(tokenElement));
+      //     this.documentationItems.push(documentationItem);
+      //   } catch (error) {
+      //     throw error;
+      //   }
+      // });
     }
   }
 }

@@ -1,23 +1,16 @@
 ---
-slug: 'find-in-tree'
-title: 'findInTree'
+slug: "find-in-tree"
+title: "findInTree"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="findInTree"
   namespace="Zernikalos.zernikalos.search"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.search', url: '/docs/api/-zernikalos.zernikalos.search' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'findInTree', url: '#findintree' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.search","url":"/docs/api/-zernikalos.zernikalos.search"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"findInTree","url":"#findintree"}]}
 />
 
 <CodeClassList>
@@ -27,8 +20,6 @@ import {
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[
-      { code: 'fun <T: ZTreeNode<T>> findInTree(tree: T, predicate: (node: T)-> Boolean): T?' },
-    ]}
+    codeBlocks={[{code: "fun <T: ZTreeNode<T>> findInTree(tree: T, predicate: (node: T)-> Boolean): T?"}]}
   />
 </CodeClassList>

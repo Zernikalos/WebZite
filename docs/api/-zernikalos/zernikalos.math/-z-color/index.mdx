@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZColor'
+slug: "index"
+title: "ZColor"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZColor"
   namespace="Zernikalos.zernikalos.math"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.math', url: '/docs/api/-zernikalos.zernikalos.math' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZColor', url: '#zcolor' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math","url":"/docs/api/-zernikalos.zernikalos.math"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZColor","url":"#zcolor"}]}
 />
 
 <CodeClassList>
@@ -27,12 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-color"
     description=""
-    codeBlocks={[
-      { code: 'constructor()' },
-      { code: 'constructor(red: Float, green: Float, blue: Float, alpha: Float)' },
-      { code: 'constructor(red: Int, green: Int, blue: Int, alpha: Int)' },
-      { code: 'constructor(hex: String)' },
-    ]}
+    codeBlocks={[{code: "constructor()"}, {code: "constructor(red: Float, green: Float, blue: Float, alpha: Float)"}, {code: "constructor(red: Int, green: Int, blue: Int, alpha: Int)"}, {code: "constructor(hex: String)"}]}
   />
   <DocumentationItemComponent
     name="a"
@@ -40,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="a"
     description=""
-    codeBlocks={[{ code: 'var a: Float' }]}
+    codeBlocks={[{code: "var a: Float"}]}
   />
   <DocumentationItemComponent
     name="alpha"
@@ -48,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="alpha"
     description=""
-    codeBlocks={[{ code: 'var alpha: Float' }]}
+    codeBlocks={[{code: "var alpha: Float"}]}
   />
   <DocumentationItemComponent
     name="b"
@@ -56,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="b"
     description=""
-    codeBlocks={[{ code: 'var b: Float' }]}
+    codeBlocks={[{code: "var b: Float"}]}
   />
   <DocumentationItemComponent
     name="blue"
@@ -64,7 +52,23 @@ import {
     groupType="PROPERTY"
     url="blue"
     description=""
-    codeBlocks={[{ code: 'var blue: Float' }]}
+    codeBlocks={[{code: "var blue: Float"}]}
+  />
+  <DocumentationItemComponent
+    name="byteArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-array"
+    description=""
+    codeBlocks={[{code: "open override val byteArray: ByteArray"}]}
+  />
+  <DocumentationItemComponent
+    name="byteSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-size"
+    description=""
+    codeBlocks={[{code: "open override val byteSize: Int"}]}
   />
   <DocumentationItemComponent
     name="count"
@@ -72,7 +76,7 @@ import {
     groupType="PROPERTY"
     url="count"
     description="Number of individual instances this object represents"
-    codeBlocks={[{ code: 'open override val count: Int' }]}
+    codeBlocks={[{code: "open override val count: Int = 1"}]}
   />
   <DocumentationItemComponent
     name="dataType"
@@ -80,7 +84,7 @@ import {
     groupType="PROPERTY"
     url="data-type"
     description="The data type stored"
-    codeBlocks={[{ code: 'open override val dataType: ZDataType' }]}
+    codeBlocks={[{code: "open override val dataType: ZDataType"}]}
   />
   <DocumentationItemComponent
     name="floatArray"
@@ -88,7 +92,7 @@ import {
     groupType="PROPERTY"
     url="float-array"
     description=""
-    codeBlocks={[{ code: 'open override val floatArray: FloatArray' }]}
+    codeBlocks={[{code: "open override val floatArray: FloatArray"}]}
   />
   <DocumentationItemComponent
     name="g"
@@ -96,7 +100,7 @@ import {
     groupType="PROPERTY"
     url="g"
     description=""
-    codeBlocks={[{ code: 'var g: Float' }]}
+    codeBlocks={[{code: "var g: Float"}]}
   />
   <DocumentationItemComponent
     name="green"
@@ -104,7 +108,7 @@ import {
     groupType="PROPERTY"
     url="green"
     description=""
-    codeBlocks={[{ code: 'var green: Float' }]}
+    codeBlocks={[{code: "var green: Float"}]}
   />
   <DocumentationItemComponent
     name="r"
@@ -112,7 +116,7 @@ import {
     groupType="PROPERTY"
     url="r"
     description=""
-    codeBlocks={[{ code: 'var r: Float' }]}
+    codeBlocks={[{code: "var r: Float"}]}
   />
   <DocumentationItemComponent
     name="red"
@@ -120,7 +124,7 @@ import {
     groupType="PROPERTY"
     url="red"
     description=""
-    codeBlocks={[{ code: 'var red: Float' }]}
+    codeBlocks={[{code: "var red: Float"}]}
   />
   <DocumentationItemComponent
     name="size"
@@ -128,7 +132,7 @@ import {
     groupType="PROPERTY"
     url="size"
     description="Number of elements contained within the values array with the specific type defined in dataType"
-    codeBlocks={[{ code: 'open override val size: Int' }]}
+    codeBlocks={[{code: "open override val size: Int = 4"}]}
   />
   <DocumentationItemComponent
     name="colorFromBytes"
@@ -136,7 +140,7 @@ import {
     groupType="FUNCTION"
     url="color-from-bytes"
     description=""
-    codeBlocks={[{ code: 'fun colorFromBytes(red: Int, green: Int, blue: Int, alpha: Int)' }]}
+    codeBlocks={[{code: "fun colorFromBytes(red: Int, green: Int, blue: Int, alpha: Int)"}]}
   />
   <DocumentationItemComponent
     name="colorFromFloats"
@@ -144,9 +148,7 @@ import {
     groupType="FUNCTION"
     url="color-from-floats"
     description=""
-    codeBlocks={[
-      { code: 'fun colorFromFloats(red: Float, green: Float, blue: Float, alpha: Float)' },
-    ]}
+    codeBlocks={[{code: "fun colorFromFloats(red: Float, green: Float, blue: Float, alpha: Float)"}]}
   />
   <DocumentationItemComponent
     name="colorFromHex"
@@ -154,6 +156,6 @@ import {
     groupType="FUNCTION"
     url="color-from-hex"
     description=""
-    codeBlocks={[{ code: 'fun colorFromHex(hex: String)' }]}
+    codeBlocks={[{code: "fun colorFromHex(hex: String)"}]}
   />
 </CodeClassList>

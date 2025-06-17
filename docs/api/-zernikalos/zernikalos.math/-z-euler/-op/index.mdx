@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'Op'
+slug: "index"
+title: "Op"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="Op"
   namespace="Zernikalos.zernikalos.math.ZEuler"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.math.ZEuler',
-      url: '/docs/api/-zernikalos.zernikalos.math.zeuler',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Op', url: '#op' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math.ZEuler","url":"/docs/api/-zernikalos.zernikalos.math.zeuler"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"Op","url":"#op"}]}
 />
 
 <CodeClassList>
@@ -30,7 +20,7 @@ import {
     groupType="PROPERTY"
     url="-zero"
     description=""
-    codeBlocks={[{ code: 'val Zero: ZEuler' }]}
+    codeBlocks={[{code: "val Zero: ZEuler"}]}
   />
   <DocumentationItemComponent
     name="copy"
@@ -38,7 +28,7 @@ import {
     groupType="FUNCTION"
     url="copy"
     description=""
-    codeBlocks={[{ code: 'fun copy(result: ZEuler, e: ZEuler)' }]}
+    codeBlocks={[{code: "fun copy(result: ZEuler, e: ZEuler)"}]}
   />
   <DocumentationItemComponent
     name="fromQuaternion"
@@ -46,9 +36,6 @@ import {
     groupType="FUNCTION"
     url="from-quaternion"
     description=""
-    codeBlocks={[
-      { code: 'fun fromQuaternion(q: ZQuaternion): ZEuler' },
-      { code: 'fun fromQuaternion(result: ZEuler, q: ZQuaternion)' },
-    ]}
+    codeBlocks={[{code: "fun fromQuaternion(q: ZQuaternion): ZEuler"}, {code: "fun fromQuaternion(result: ZEuler, q: ZQuaternion)"}]}
   />
 </CodeClassList>

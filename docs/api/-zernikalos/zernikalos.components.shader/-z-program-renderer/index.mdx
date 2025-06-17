@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZProgramRenderer'
+slug: "index"
+title: "ZProgramRenderer"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZProgramRenderer"
   namespace="Zernikalos.zernikalos.components.shader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.shader',
-      url: '/docs/api/-zernikalos.zernikalos.components.shader',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZProgramRenderer', url: '#zprogramrenderer' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.shader","url":"/docs/api/-zernikalos.zernikalos.components.shader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZProgramRenderer","url":"#zprogramrenderer"}]}
 />
 
 <CodeClassList>
@@ -32,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-program-renderer"
     description=""
-    codeBlocks={[{ code: 'constructor(ctx: ZRenderingContext)' }]}
+    codeBlocks={[{code: "constructor(ctx: ZRenderingContext)"}]}
   />
   <DocumentationItemComponent
     name="programId"
@@ -40,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="program-id"
     description=""
-    codeBlocks={[{ code: 'lateinit var programId: GLWrap' }]}
+    codeBlocks={[{code: "lateinit var programId: GLWrap"}]}
   />
   <DocumentationItemComponent
     name="bind"
@@ -48,7 +36,7 @@ import {
     groupType="FUNCTION"
     url="bind"
     description=""
-    codeBlocks={[{ code: 'open override fun bind()' }]}
+    codeBlocks={[{code: "open override fun bind()"}]}
   />
   <DocumentationItemComponent
     name="initialize"
@@ -56,7 +44,7 @@ import {
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[{ code: 'open override fun initialize()' }]}
+    codeBlocks={[{code: "open override fun initialize()"}]}
   />
   <DocumentationItemComponent
     name="link"
@@ -64,22 +52,22 @@ import {
     groupType="FUNCTION"
     url="link"
     description=""
-    codeBlocks={[{ code: 'fun link()' }]}
+    codeBlocks={[{code: "fun link()"}]}
   />
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
-    url="../../zernikalos.components/-z-base-component-render/render"
+    url="../../zernikalos.components/-z-component-renderer/render"
     description=""
-    codeBlocks={[{ code: 'open fun render()' }]}
+    codeBlocks={[{code: "open fun render()"}]}
   />
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
-    url="../../zernikalos.components/-z-base-component-render/unbind"
+    url="../../zernikalos.components/-z-component-renderer/unbind"
     description=""
-    codeBlocks={[{ code: 'open fun unbind()' }]}
+    codeBlocks={[{code: "open fun unbind()"}]}
   />
 </CodeClassList>

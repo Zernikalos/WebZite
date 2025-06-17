@@ -1,30 +1,16 @@
 ---
-slug: 'index'
-title: 'components.mesh'
+slug: "index"
+title: "components.mesh"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="components.mesh"
   namespace="Zernikalos"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
-  ]}
-  typeInfo={[
-    {
-      type: 'actual',
-      keyword: 'package',
-      name: 'zernikalos.components.mesh',
-      url: '#zernikalos.components.mesh',
-    },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.components.mesh","url":"#zernikalos.components.mesh"}]}
 />
 
 <CodeClassList>
@@ -34,9 +20,7 @@ import {
     groupType="TYPE"
     url="-z-buffer/index"
     description="Utility class for representing the mix of a ZBufferKey + ZRawBuffer in a simpler way Notice that ZBufferKey will only address one ZRawBuffer, however one ZRawBuffer can be addressed by more than one ZBufferKey"
-    codeBlocks={[
-      { code: 'class ZBuffer: ZRenderizableComponent<ZBufferData, ZBufferRenderer>, ZBindeable' },
-    ]}
+    codeBlocks={[{code: "class ZBuffer: ZRenderizableComponent<ZBufferRenderer>, ZBindeable"}]}
   />
   <DocumentationItemComponent
     name="ZBufferData"
@@ -44,11 +28,7 @@ import {
     groupType="TYPE"
     url="-z-buffer-data/index"
     description=""
-    codeBlocks={[
-      {
-        code: "data class ZBufferData(var id: Int = -1, var dataType: ZDataType = ZTypes.NONE, var name: String = '', var size: Int = -1, var count: Int = -1, var normalized: Boolean = false, var offset: Int = -1, var stride: Int = -1, var isIndexBuffer: Boolean = false, var bufferId: Int = -1, var dataArray: ByteArray = byteArrayOf()): ZComponentData",
-      },
-    ]}
+    codeBlocks={[{code: "data class ZBufferData(var id: Int = -1, var dataType: ZDataType = ZTypes.NONE, var name: String = '', var size: Int = -1, var count: Int = -1, var normalized: Boolean = false, var offset: Int = -1, var stride: Int = -1, var isIndexBuffer: Boolean = false, var bufferId: Int = -1, var dataArray: ByteArray = byteArrayOf()): ZComponentData"}]}
   />
   <DocumentationItemComponent
     name="ZBufferRenderer"
@@ -56,20 +36,7 @@ import {
     groupType="TYPE"
     url="-z-buffer-renderer/index"
     description=""
-    codeBlocks={[
-      {
-        code: 'expect class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData): ZComponentRender<ZBufferData>',
-      },
-      {
-        code: 'actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData): ZComponentRender<ZBufferData>',
-      },
-      {
-        code: 'actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData): ZComponentRender<ZBufferData>',
-      },
-      {
-        code: 'actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData): ZComponentRender<ZBufferData>',
-      },
-    ]}
+    codeBlocks={[{code: "expect class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData): ZComponentRenderer"}, {code: "actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData): ZComponentRenderer"}, {code: "actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData): ZComponentRenderer"}]}
   />
   <DocumentationItemComponent
     name="ZDrawMode"
@@ -77,7 +44,7 @@ import {
     groupType="TYPE"
     url="-z-draw-mode/index"
     description=""
-    codeBlocks={[{ code: 'enum ZDrawMode: Enum<ZDrawMode>' }]}
+    codeBlocks={[{code: "enum ZDrawMode: Enum<ZDrawMode>"}]}
   />
   <DocumentationItemComponent
     name="ZMesh"
@@ -85,11 +52,7 @@ import {
     groupType="TYPE"
     url="-z-mesh/index"
     description="Mesh will provide: A relationship between the BufferKey and its RawBuffers in a more cohesive way providing just Buffers"
-    codeBlocks={[
-      {
-        code: '@Serializable(with = ZMeshSerializer: : class)class ZMesh: ZRenderizableComponent<ZMeshData, ZMeshRenderer>, ZBindeable, ZRenderizable',
-      },
-    ]}
+    codeBlocks={[{code: "@Serializable(with = ZMeshSerializer: : class)class ZMesh: ZRenderizableComponent<ZMeshRenderer>, ZBindeable, ZRenderizable"}]}
   />
   <DocumentationItemComponent
     name="ZMeshRenderer"
@@ -97,15 +60,7 @@ import {
     groupType="TYPE"
     url="-z-mesh-renderer/index"
     description=""
-    codeBlocks={[
-      {
-        code: 'actual class ZMeshRenderer(ctx: ZRenderingContext, data: ZMeshData): ZComponentRender<ZMeshData>',
-      },
-      { code: 'actual class ZMeshRenderer: ZBaseComponentRender' },
-      {
-        code: 'actual class ZMeshRenderer(ctx: ZRenderingContext, data: ZMeshData): ZBaseComponentRender',
-      },
-    ]}
+    codeBlocks={[{code: "actual class ZMeshRenderer(ctx: ZRenderingContext, data: ZMeshData): ZComponentRenderer"}, {code: "actual class ZMeshRenderer: ZComponentRenderer"}]}
   />
   <DocumentationItemComponent
     name="ZVertexArray"
@@ -113,7 +68,7 @@ import {
     groupType="TYPE"
     url="-z-vertex-array/index"
     description=""
-    codeBlocks={[{ code: 'class ZVertexArray: ZLightComponent<ZVertexArrayRenderer>, ZBindeable' }]}
+    codeBlocks={[{code: "class ZVertexArray: ZRenderizableComponent<ZVertexArrayRenderer>, ZBindeable"}]}
   />
   <DocumentationItemComponent
     name="ZVertexArrayRenderer"
@@ -121,9 +76,7 @@ import {
     groupType="TYPE"
     url="-z-vertex-array-renderer/index"
     description=""
-    codeBlocks={[
-      { code: 'class ZVertexArrayRenderer(ctx: ZRenderingContext): ZBaseComponentRender' },
-    ]}
+    codeBlocks={[{code: "class ZVertexArrayRenderer(ctx: ZRenderingContext): ZComponentRenderer"}]}
   />
   <DocumentationItemComponent
     name="convertDrawModeLink copied to clipboard"
@@ -131,10 +84,7 @@ import {
     groupType="FUNCTION"
     url="[metal]convert-draw-mode"
     description=""
-    codeBlocks={[
-      { code: 'fun convertDrawMode(drawMode: ZDrawMode): ULong' },
-      { code: 'fun convertDrawMode(drawMode: ZDrawMode): DrawModes' },
-    ]}
+    codeBlocks={[{code: "fun convertDrawMode(drawMode: ZDrawMode): ULong"}, {code: "fun convertDrawMode(drawMode: ZDrawMode): DrawModes"}]}
   />
   <DocumentationItemComponent
     name="toMtlFormat"
@@ -142,6 +92,6 @@ import {
     groupType="FUNCTION"
     url="to-mtl-format"
     description=""
-    codeBlocks={[{ code: 'fun toMtlFormat(dataType: ZDataType): MTLVertexFormat' }]}
+    codeBlocks={[{code: "fun toMtlFormat(dataType: ZDataType): MTLVertexFormat"}]}
   />
 </CodeClassList>

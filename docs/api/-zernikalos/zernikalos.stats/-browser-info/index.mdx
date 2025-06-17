@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'BrowserInfo'
+slug: "index"
+title: "BrowserInfo"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="BrowserInfo"
   namespace="Zernikalos.zernikalos.stats"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.stats', url: '/docs/api/-zernikalos.zernikalos.stats' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'BrowserInfo', url: '#browserinfo' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.stats","url":"/docs/api/-zernikalos.zernikalos.stats"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"BrowserInfo","url":"#browserinfo"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="PROPERTY"
     url="name"
     description=""
-    codeBlocks={[{ code: 'abstract val name: String' }]}
+    codeBlocks={[{code: "abstract val name: String"}]}
   />
   <DocumentationItemComponent
     name="version"
@@ -35,6 +28,6 @@ import {
     groupType="PROPERTY"
     url="version"
     description=""
-    codeBlocks={[{ code: 'abstract val version: String' }]}
+    codeBlocks={[{code: "abstract val version: String"}]}
   />
 </CodeClassList>

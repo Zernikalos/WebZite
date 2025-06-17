@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZContext'
+slug: "index"
+title: "ZContext"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZContext"
   namespace="Zernikalos.zernikalos.context"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZContext', url: '#zcontext' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context","url":"/docs/api/-zernikalos.zernikalos.context"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZContext","url":"#zcontext"}]}
 />
 
 <CodeClassList>
@@ -27,9 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-context"
     description=""
-    codeBlocks={[
-      { code: 'constructor(sceneContext: ZSceneContext, renderingContext: ZRenderingContext)' },
-    ]}
+    codeBlocks={[{code: "constructor(sceneContext: ZSceneContext, renderingContext: ZRenderingContext)"}]}
   />
   <DocumentationItemComponent
     name="activeCamera"
@@ -37,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="active-camera"
     description=""
-    codeBlocks={[{ code: 'var activeCamera: ZCamera?' }]}
+    codeBlocks={[{code: "var activeCamera: ZCamera?"}]}
   />
   <DocumentationItemComponent
     name="isInitialized"
@@ -45,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="is-initialized"
     description=""
-    codeBlocks={[{ code: 'val isInitialized: Boolean' }]}
+    codeBlocks={[{code: "val isInitialized: Boolean"}]}
   />
   <DocumentationItemComponent
     name="renderingContext"
@@ -53,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="rendering-context"
     description=""
-    codeBlocks={[{ code: 'val renderingContext: ZRenderingContext' }]}
+    codeBlocks={[{code: "val renderingContext: ZRenderingContext"}]}
   />
   <DocumentationItemComponent
     name="scene"
@@ -61,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="scene"
     description=""
-    codeBlocks={[{ code: 'var scene: ZScene?' }]}
+    codeBlocks={[{code: "var scene: ZScene?"}]}
   />
   <DocumentationItemComponent
     name="sceneContext"
@@ -69,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="scene-context"
     description=""
-    codeBlocks={[{ code: 'val sceneContext: ZSceneContext' }]}
+    codeBlocks={[{code: "val sceneContext: ZSceneContext"}]}
   />
   <DocumentationItemComponent
     name="screenHeight"
@@ -77,7 +68,7 @@ import {
     groupType="PROPERTY"
     url="screen-height"
     description=""
-    codeBlocks={[{ code: 'var screenHeight: Int' }]}
+    codeBlocks={[{code: "var screenHeight: Int"}]}
   />
   <DocumentationItemComponent
     name="screenWidth"
@@ -85,6 +76,6 @@ import {
     groupType="PROPERTY"
     url="screen-width"
     description=""
-    codeBlocks={[{ code: 'var screenWidth: Int' }]}
+    codeBlocks={[{code: "var screenWidth: Int"}]}
   />
 </CodeClassList>

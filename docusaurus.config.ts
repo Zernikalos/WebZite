@@ -30,6 +30,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+
+
   stylesheets: [
     {
       href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap',
@@ -79,6 +81,20 @@ const config: Config = {
   ],
 
   plugins: [
+    // Plugin to ignore watching files in certain directories
+    () => ({
+      name: 'docusaurus-ignore-watch-plugin',
+      configureWebpack() {
+        return {
+          watchOptions: {
+            ignored: [
+              '**/sourceDocs/**',
+              '**/scripts/**',
+            ],
+          },
+        };
+      },
+    }),
     [
       "./src/plugins/tailwind-config.ts", 
       {}
@@ -90,6 +106,7 @@ const config: Config = {
         path: 'docs/api',
         routeBasePath: 'api',
         sidebarPath: './sidebars.ts',
+        exclude: ['**/scripts/**', '**/sourceDocs/**'],
         sidebarItemsGenerator: function({
           isCategoryIndex: defaultCategoryIndexMatcher,
           defaultSidebarItemsGenerator,

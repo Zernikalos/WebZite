@@ -1,23 +1,16 @@
 ---
-slug: 'create-logger'
-title: 'createLogger'
+slug: "create-logger"
+title: "createLogger"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="createLogger"
   namespace="Zernikalos.zernikalos.logger"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.logger', url: '/docs/api/-zernikalos.zernikalos.logger' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'createLogger', url: '#createlogger' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.logger","url":"/docs/api/-zernikalos.zernikalos.logger"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"createLogger","url":"#createlogger"}]}
 />
 
 <CodeClassList>
@@ -27,6 +20,6 @@ import {
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{ code: 'inline fun <T: ZLoggable> T.createLogger(): ZLogger' }]}
+    codeBlocks={[{code: "inline fun <T: ZLoggable> T.createLogger(): ZLogger"}]}
   />
 </CodeClassList>

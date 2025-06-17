@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZLogger'
+slug: "index"
+title: "ZLogger"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZLogger"
   namespace="Zernikalos.zernikalos.logger"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.logger', url: '/docs/api/-zernikalos.zernikalos.logger' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZLogger', url: '#zlogger' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.logger","url":"/docs/api/-zernikalos.zernikalos.logger"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZLogger","url":"#zlogger"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-logger"
     description=""
-    codeBlocks={[{ code: 'constructor(clsName: String?, instanceId: Int)' }]}
+    codeBlocks={[{code: "constructor(clsName: String?, instanceId: Int)"}]}
   />
   <DocumentationItemComponent
     name="Companion"
@@ -35,7 +28,7 @@ import {
     groupType="NONE"
     url="-companion/index"
     description=""
-    codeBlocks={[{ code: 'object Companion' }]}
+    codeBlocks={[{code: "object Companion"}]}
   />
   <DocumentationItemComponent
     name="instanceId"
@@ -43,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="instance-id"
     description=""
-    codeBlocks={[{ code: 'val instanceId: Int' }]}
+    codeBlocks={[{code: "val instanceId: Int"}]}
   />
   <DocumentationItemComponent
     name="debug"
@@ -51,7 +44,7 @@ import {
     groupType="FUNCTION"
     url="debug"
     description=""
-    codeBlocks={[{ code: 'fun debug(message: String)' }]}
+    codeBlocks={[{code: "fun debug(message: String)"}]}
   />
   <DocumentationItemComponent
     name="debugOnce"
@@ -59,7 +52,7 @@ import {
     groupType="FUNCTION"
     url="debug-once"
     description=""
-    codeBlocks={[{ code: 'fun debugOnce(message: String)' }]}
+    codeBlocks={[{code: "fun debugOnce(message: String)"}]}
   />
   <DocumentationItemComponent
     name="error"
@@ -67,7 +60,7 @@ import {
     groupType="FUNCTION"
     url="error"
     description=""
-    codeBlocks={[{ code: 'fun error(message: String)' }]}
+    codeBlocks={[{code: "fun error(message: String)"}]}
   />
   <DocumentationItemComponent
     name="info"
@@ -75,7 +68,7 @@ import {
     groupType="FUNCTION"
     url="info"
     description=""
-    codeBlocks={[{ code: 'fun info(message: String)' }]}
+    codeBlocks={[{code: "fun info(message: String)"}]}
   />
   <DocumentationItemComponent
     name="warn"
@@ -83,6 +76,6 @@ import {
     groupType="FUNCTION"
     url="warn"
     description=""
-    codeBlocks={[{ code: 'fun warn(message: String)' }]}
+    codeBlocks={[{code: "fun warn(message: String)"}]}
   />
 </CodeClassList>

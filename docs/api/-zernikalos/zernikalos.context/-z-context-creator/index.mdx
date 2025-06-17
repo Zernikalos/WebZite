@@ -1,25 +1,16 @@
 ---
-slug: 'index'
-title: 'ZContextCreator'
+slug: "index"
+title: "ZContextCreator"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZContextCreator"
   namespace="Zernikalos.zernikalos.context"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZContextCreator', url: '#zcontextcreator' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context","url":"/docs/api/-zernikalos.zernikalos.context"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZContextCreator","url":"#zcontextcreator"}]}
 />
 
 <CodeClassList>
@@ -29,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-context-creator"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="createContext"
@@ -37,7 +28,7 @@ import {
     groupType="FUNCTION"
     url="create-context"
     description=""
-    codeBlocks={[{ code: 'fun createContext(surfaceView: ZSurfaceView): ZContext' }]}
+    codeBlocks={[{code: "fun createContext(surfaceView: ZSurfaceView): ZContext"}]}
   />
   <DocumentationItemComponent
     name="createRenderingContext"
@@ -45,9 +36,7 @@ import {
     groupType="FUNCTION"
     url="create-rendering-context"
     description=""
-    codeBlocks={[
-      { code: 'abstract fun createRenderingContext(surfaceView: ZSurfaceView): ZRenderingContext' },
-    ]}
+    codeBlocks={[{code: "abstract fun createRenderingContext(surfaceView: ZSurfaceView): ZRenderingContext"}]}
   />
   <DocumentationItemComponent
     name="createSceneContext"
@@ -55,8 +44,6 @@ import {
     groupType="FUNCTION"
     url="create-scene-context"
     description=""
-    codeBlocks={[
-      { code: 'abstract fun createSceneContext(surfaceView: ZSurfaceView): ZSceneContext' },
-    ]}
+    codeBlocks={[{code: "abstract fun createSceneContext(surfaceView: ZSurfaceView): ZSceneContext"}]}
   />
 </CodeClassList>

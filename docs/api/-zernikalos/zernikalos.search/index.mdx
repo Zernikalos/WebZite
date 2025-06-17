@@ -1,25 +1,16 @@
 ---
-slug: 'index'
-title: 'search'
+slug: "index"
+title: "search"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="search"
   namespace="Zernikalos"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'zernikalos.search', url: '#zernikalos.search' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.search","url":"#zernikalos.search"}]}
 />
 
 <CodeClassList>
@@ -29,7 +20,7 @@ import {
     groupType="TYPE"
     url="-z-tree-node/index"
     description="ZTreeNode interface represents a node in a tree structure."
-    codeBlocks={[{ code: 'interface ZTreeNode<T: ZTreeNode<T>>' }]}
+    codeBlocks={[{code: "interface ZTreeNode<T: ZTreeNode<T>>"}]}
   />
   <DocumentationItemComponent
     name="findFirstCamera"
@@ -37,7 +28,7 @@ import {
     groupType="FUNCTION"
     url="find-first-camera"
     description="Finds the first ZCamera in a given ZObject tree starting at root."
-    codeBlocks={[{ code: 'fun findFirstCamera(root: ZObject): ZCamera?' }]}
+    codeBlocks={[{code: "fun findFirstCamera(root: ZObject): ZCamera?"}]}
   />
   <DocumentationItemComponent
     name="findFirstModel"
@@ -45,7 +36,7 @@ import {
     groupType="FUNCTION"
     url="find-first-model"
     description="Finds the first ZModel in a given ZObject tree starting at root."
-    codeBlocks={[{ code: 'fun findFirstModel(root: ZObject): ZModel?' }]}
+    codeBlocks={[{code: "fun findFirstModel(root: ZObject): ZModel?"}]}
   />
   <DocumentationItemComponent
     name="findInTree"
@@ -53,9 +44,7 @@ import {
     groupType="FUNCTION"
     url="find-in-tree"
     description="Finds a specific node in a tree on the given predicate."
-    codeBlocks={[
-      { code: 'fun <T: ZTreeNode<T>> findInTree(tree: T, predicate: (node: T)-> Boolean): T?' },
-    ]}
+    codeBlocks={[{code: "fun <T: ZTreeNode<T>> findInTree(tree: T, predicate: (node: T)-> Boolean): T?"}]}
   />
   <DocumentationItemComponent
     name="findObjectByName"
@@ -63,7 +52,7 @@ import {
     groupType="FUNCTION"
     url="find-object-by-name"
     description="Finds an object in a tree structure by its name."
-    codeBlocks={[{ code: 'fun findObjectByName(root: ZObject, name: String): ZObject?' }]}
+    codeBlocks={[{code: "fun findObjectByName(root: ZObject, name: String): ZObject?"}]}
   />
   <DocumentationItemComponent
     name="treeAsList"
@@ -71,7 +60,7 @@ import {
     groupType="FUNCTION"
     url="tree-as-list"
     description="Returns a list representation of the tree structure starting from the given node."
-    codeBlocks={[{ code: 'fun <T: ZTreeNode<T>> treeAsList(node: T): List<T>' }]}
+    codeBlocks={[{code: "fun <T: ZTreeNode<T>> treeAsList(node: T): List<T>"}]}
   />
   <DocumentationItemComponent
     name="treeTraverse"
@@ -79,6 +68,6 @@ import {
     groupType="FUNCTION"
     url="tree-traverse"
     description="Traverses a tree structure starting from the given node and returns an iterator over the nodes."
-    codeBlocks={[{ code: 'fun <T: ZTreeNode<T>> treeTraverse(node: T): Iterator<T>' }]}
+    codeBlocks={[{code: "fun <T: ZTreeNode<T>> treeTraverse(node: T): Iterator<T>"}]}
   />
 </CodeClassList>

@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'Companion'
+slug: "index"
+title: "Companion"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="Companion"
   namespace="Zernikalos.zernikalos.action.ZBoneFrameTransform"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.action.ZBoneFrameTransform',
-      url: '/docs/api/-zernikalos.zernikalos.action.zboneframetransform',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Companion', url: '#companion' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.action.ZBoneFrameTransform","url":"/docs/api/-zernikalos.zernikalos.action.zboneframetransform"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"Companion","url":"#companion"}]}
 />
 
 <CodeClassList>
@@ -30,10 +20,6 @@ import {
     groupType="FUNCTION"
     url="interpolate"
     description=""
-    codeBlocks={[
-      {
-        code: 'fun interpolate(time: Float, prev: ZBoneFrameTransform, next: ZBoneFrameTransform): ZBoneFrameTransform',
-      },
-    ]}
+    codeBlocks={[{code: "fun interpolate(time: Float, prev: ZBoneFrameTransform, next: ZBoneFrameTransform): ZBoneFrameTransform"}]}
   />
 </CodeClassList>

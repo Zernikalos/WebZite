@@ -1,30 +1,16 @@
 ---
-slug: 'index'
-title: 'ZBoneFrameTransform'
+slug: "index"
+title: "ZBoneFrameTransform"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZBoneFrameTransform"
   namespace="Zernikalos.zernikalos.action"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
-  ]}
-  typeInfo={[
-    {
-      type: 'actual',
-      keyword: 'package',
-      name: 'ZBoneFrameTransform',
-      url: '#zboneframetransform',
-    },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.action","url":"/docs/api/-zernikalos.zernikalos.action"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZBoneFrameTransform","url":"#zboneframetransform"}]}
 />
 
 <CodeClassList>
@@ -34,11 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-bone-frame-transform"
     description=""
-    codeBlocks={[
-      {
-        code: 'constructor(position: ZVector3? = null, rotation: ZQuaternion? = null, scale: ZVector3? = null)',
-      },
-    ]}
+    codeBlocks={[{code: "constructor(position: ZVector3? = null, rotation: ZQuaternion? = null, scale: ZVector3? = null)"}]}
   />
   <DocumentationItemComponent
     name="Companion"
@@ -46,7 +28,7 @@ import {
     groupType="NONE"
     url="-companion/index"
     description=""
-    codeBlocks={[{ code: 'object Companion' }]}
+    codeBlocks={[{code: "object Companion"}]}
   />
   <DocumentationItemComponent
     name="hasPosition"
@@ -54,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="has-position"
     description=""
-    codeBlocks={[{ code: 'val hasPosition: Boolean' }]}
+    codeBlocks={[{code: "val hasPosition: Boolean"}]}
   />
   <DocumentationItemComponent
     name="hasRotation"
@@ -62,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="has-rotation"
     description=""
-    codeBlocks={[{ code: 'val hasRotation: Boolean' }]}
+    codeBlocks={[{code: "val hasRotation: Boolean"}]}
   />
   <DocumentationItemComponent
     name="hasScale"
@@ -70,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="has-scale"
     description=""
-    codeBlocks={[{ code: 'val hasScale: Boolean' }]}
+    codeBlocks={[{code: "val hasScale: Boolean"}]}
   />
   <DocumentationItemComponent
     name="position"
@@ -78,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="position"
     description=""
-    codeBlocks={[{ code: 'var position: ZVector3?' }]}
+    codeBlocks={[{code: "var position: ZVector3?"}]}
   />
   <DocumentationItemComponent
     name="rotation"
@@ -86,7 +68,7 @@ import {
     groupType="PROPERTY"
     url="rotation"
     description=""
-    codeBlocks={[{ code: 'var rotation: ZQuaternion?' }]}
+    codeBlocks={[{code: "var rotation: ZQuaternion?"}]}
   />
   <DocumentationItemComponent
     name="scale"
@@ -94,7 +76,7 @@ import {
     groupType="PROPERTY"
     url="scale"
     description=""
-    codeBlocks={[{ code: 'var scale: ZVector3?' }]}
+    codeBlocks={[{code: "var scale: ZVector3?"}]}
   />
   <DocumentationItemComponent
     name="toTransform"
@@ -102,6 +84,6 @@ import {
     groupType="FUNCTION"
     url="to-transform"
     description=""
-    codeBlocks={[{ code: 'fun toTransform(): ZTransform' }]}
+    codeBlocks={[{code: "fun toTransform(): ZTransform"}]}
   />
 </CodeClassList>

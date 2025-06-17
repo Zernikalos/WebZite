@@ -1,35 +1,42 @@
 ---
-slug: 'index'
-title: 'ZAlgebraObject'
+slug: "index"
+title: "ZAlgebraObject"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZAlgebraObject"
   namespace="Zernikalos.zernikalos.math"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.math', url: '/docs/api/-zernikalos.zernikalos.math' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZAlgebraObject', url: '#zalgebraobject' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math","url":"/docs/api/-zernikalos.zernikalos.math"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZAlgebraObject","url":"#zalgebraobject"}]}
 />
 
 <CodeClassList>
+  <DocumentationItemComponent
+    name="byteArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-array"
+    description=""
+    codeBlocks={[{code: "abstract val byteArray: ByteArray"}]}
+  />
+  <DocumentationItemComponent
+    name="byteSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-size"
+    description=""
+    codeBlocks={[{code: "abstract val byteSize: Int"}]}
+  />
   <DocumentationItemComponent
     name="count"
     tokenType="val"
     groupType="PROPERTY"
     url="count"
     description="Number of individual instances this object represents"
-    codeBlocks={[{ code: 'abstract val count: Int' }]}
+    codeBlocks={[{code: "abstract val count: Int"}]}
   />
   <DocumentationItemComponent
     name="dataType"
@@ -37,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="data-type"
     description="The data type stored"
-    codeBlocks={[{ code: 'abstract val dataType: ZDataType' }]}
+    codeBlocks={[{code: "abstract val dataType: ZDataType"}]}
   />
   <DocumentationItemComponent
     name="floatArray"
@@ -45,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="float-array"
     description=""
-    codeBlocks={[{ code: 'abstract val floatArray: FloatArray' }]}
+    codeBlocks={[{code: "abstract val floatArray: FloatArray"}]}
   />
   <DocumentationItemComponent
     name="size"
@@ -53,6 +60,6 @@ import {
     groupType="PROPERTY"
     url="size"
     description="Number of elements contained within the values array with the specific type defined in dataType"
-    codeBlocks={[{ code: 'abstract val size: Int' }]}
+    codeBlocks={[{code: "abstract val size: Int"}]}
   />
 </CodeClassList>

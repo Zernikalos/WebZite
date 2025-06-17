@@ -1,25 +1,16 @@
 ---
-slug: 'index'
-title: 'ZRotationFrame'
+slug: "index"
+title: "ZRotationFrame"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZRotationFrame"
   namespace="Zernikalos.zernikalos.action"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZRotationFrame', url: '#zrotationframe' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.action","url":"/docs/api/-zernikalos.zernikalos.action"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZRotationFrame","url":"#zrotationframe"}]}
 />
 
 <CodeClassList>
@@ -29,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-rotation-frame"
     description=""
-    codeBlocks={[{ code: 'constructor(time: Float, rotation: ZQuaternion)' }]}
+    codeBlocks={[{code: "constructor(time: Float, rotation: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="rotation"
@@ -37,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="rotation"
     description=""
-    codeBlocks={[{ code: 'val rotation: ZQuaternion' }]}
+    codeBlocks={[{code: "val rotation: ZQuaternion"}]}
   />
   <DocumentationItemComponent
     name="time"
@@ -45,6 +36,6 @@ import {
     groupType="PROPERTY"
     url="time"
     description=""
-    codeBlocks={[{ code: 'open override val time: Float' }]}
+    codeBlocks={[{code: "open override val time: Float"}]}
   />
 </CodeClassList>

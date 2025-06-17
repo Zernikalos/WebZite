@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZSceneContext'
+slug: "index"
+title: "ZSceneContext"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZSceneContext"
   namespace="Zernikalos.zernikalos.context"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZSceneContext', url: '#zscenecontext' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context","url":"/docs/api/-zernikalos.zernikalos.context"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZSceneContext","url":"#zscenecontext"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-scene-context"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="activeCamera"
@@ -35,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="active-camera"
     description=""
-    codeBlocks={[{ code: 'var activeCamera: ZCamera?' }]}
+    codeBlocks={[{code: "var activeCamera: ZCamera?"}]}
   />
   <DocumentationItemComponent
     name="isInitialized"
@@ -43,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="is-initialized"
     description=""
-    codeBlocks={[{ code: 'val isInitialized: Boolean' }]}
+    codeBlocks={[{code: "val isInitialized: Boolean"}]}
   />
   <DocumentationItemComponent
     name="scene"
@@ -51,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="scene"
     description=""
-    codeBlocks={[{ code: 'var scene: ZScene?' }]}
+    codeBlocks={[{code: "var scene: ZScene?"}]}
   />
   <DocumentationItemComponent
     name="addUniformGenerator"
@@ -59,7 +52,7 @@ import {
     groupType="FUNCTION"
     url="add-uniform-generator"
     description=""
-    codeBlocks={[{ code: 'fun addUniformGenerator(key: String, generator: ZUniformGenerator)' }]}
+    codeBlocks={[{code: "fun addUniformGenerator(key: String, generator: ZUniformGenerator)"}]}
   />
   <DocumentationItemComponent
     name="getUniform"
@@ -67,6 +60,6 @@ import {
     groupType="FUNCTION"
     url="get-uniform"
     description=""
-    codeBlocks={[{ code: 'fun getUniform(key: String): ZUniformGenerator?' }]}
+    codeBlocks={[{code: "fun getUniform(key: String): ZUniformGenerator?"}]}
   />
 </CodeClassList>

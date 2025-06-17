@@ -1,25 +1,16 @@
 ---
-slug: 'index'
-title: 'ZLoggerSettings'
+slug: "index"
+title: "ZLoggerSettings"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZLoggerSettings"
   namespace="Zernikalos.zernikalos.settings"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.settings', url: '/docs/api/-zernikalos.zernikalos.settings' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZLoggerSettings', url: '#zloggersettings' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.settings","url":"/docs/api/-zernikalos.zernikalos.settings"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZLoggerSettings","url":"#zloggersettings"}]}
 />
 
 <CodeClassList>
@@ -29,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-logger-settings"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="adapters"
@@ -37,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="adapters"
     description=""
-    codeBlocks={[{ code: 'var adapters: Array<ZLoggerAdapter>' }]}
+    codeBlocks={[{code: "var adapters: Array<ZLoggerAdapter>"}]}
   />
   <DocumentationItemComponent
     name="debug"
@@ -45,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="debug"
     description=""
-    codeBlocks={[{ code: 'val debug: Boolean = true' }]}
+    codeBlocks={[{code: "val debug: Boolean = true"}]}
   />
   <DocumentationItemComponent
     name="logLevel"
@@ -53,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="log-level"
     description=""
-    codeBlocks={[{ code: 'var logLevel: ZLogLevel' }]}
+    codeBlocks={[{code: "var logLevel: ZLogLevel"}]}
   />
   <DocumentationItemComponent
     name="addAdapter"
@@ -61,6 +52,6 @@ import {
     groupType="FUNCTION"
     url="add-adapter"
     description=""
-    codeBlocks={[{ code: 'fun addAdapter(adapter: ZLoggerAdapter)' }]}
+    codeBlocks={[{code: "fun addAdapter(adapter: ZLoggerAdapter)"}]}
   />
 </CodeClassList>

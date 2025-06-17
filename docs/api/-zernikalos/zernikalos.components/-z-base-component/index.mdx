@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZBaseComponent'
+slug: "index"
+title: "ZBaseComponent"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZBaseComponent"
   namespace="Zernikalos.zernikalos.components"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components',
-      url: '/docs/api/-zernikalos.zernikalos.components',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZBaseComponent', url: '#zbasecomponent' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components","url":"/docs/api/-zernikalos.zernikalos.components"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZBaseComponent","url":"#zbasecomponent"}]}
 />
 
 <CodeClassList>
@@ -32,15 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-base-component"
     description=""
-    codeBlocks={[{ code: 'constructor(internalData: ZComponentData? = null)' }]}
-  />
-  <DocumentationItemComponent
-    name="hasRenderer"
-    tokenType="val"
-    groupType="PROPERTY"
-    url="has-renderer"
-    description=""
-    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="isInitialized"
@@ -48,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="is-initialized"
     description="Represents a boolean value indicating whether a component has been initialized."
-    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+    codeBlocks={[{code: "override val isInitialized: Boolean"}]}
   />
   <DocumentationItemComponent
     name="isRenderizable"
@@ -56,15 +36,15 @@ import {
     groupType="PROPERTY"
     url="../-z-component/is-renderizable"
     description="Represents a boolean value indicating whether a component is renderizable."
-    codeBlocks={[{ code: 'abstract val isRenderizable: Boolean' }]}
+    codeBlocks={[{code: "abstract val isRenderizable: Boolean"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: 'override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "override val refId: String"}]}
   />
   <DocumentationItemComponent
     name="initialize"
@@ -72,6 +52,6 @@ import {
     groupType="FUNCTION"
     url="initialize"
     description="Initializes the ZComponent using the provided ZRenderingContext."
-    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+    codeBlocks={[{code: "open override fun initialize(ctx: ZRenderingContext)"}]}
   />
 </CodeClassList>

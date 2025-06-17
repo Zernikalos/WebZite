@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZSurfaceView'
+slug: "index"
+title: "ZSurfaceView"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZSurfaceView"
   namespace="Zernikalos.zernikalos.ui"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.ui', url: '/docs/api/-zernikalos.zernikalos.ui' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZSurfaceView', url: '#zsurfaceview' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.ui","url":"/docs/api/-zernikalos.zernikalos.ui"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZSurfaceView","url":"#zsurfaceview"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="PROPERTY"
     url="event-handler"
     description="Represents an event handler that listens to surface-related events. Such as lifecycle and rendering updates, through ZSurfaceViewEventHandler."
-    codeBlocks={[{ code: 'abstract var eventHandler: ZSurfaceViewEventHandler?' }]}
+    codeBlocks={[{code: "abstract var eventHandler: ZSurfaceViewEventHandler?"}]}
   />
   <DocumentationItemComponent
     name="surfaceHeight"
@@ -35,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="surface-height"
     description="Represents the height of the rendering surface in logical pixels."
-    codeBlocks={[{ code: 'abstract val surfaceHeight: Int' }]}
+    codeBlocks={[{code: "abstract val surfaceHeight: Int"}]}
   />
   <DocumentationItemComponent
     name="surfaceWidth"
@@ -43,6 +36,6 @@ import {
     groupType="PROPERTY"
     url="surface-width"
     description="Represents the width of the rendering surface in logical pixels."
-    codeBlocks={[{ code: 'abstract val surfaceWidth: Int' }]}
+    codeBlocks={[{code: "abstract val surfaceWidth: Int"}]}
   />
 </CodeClassList>

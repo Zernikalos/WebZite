@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZAttributeData'
+slug: "index"
+title: "ZAttributeData"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZAttributeData"
   namespace="Zernikalos.zernikalos.components.shader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.shader',
-      url: '/docs/api/-zernikalos.zernikalos.components.shader',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZAttributeData', url: '#zattributedata' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.shader","url":"/docs/api/-zernikalos.zernikalos.components.shader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZAttributeData","url":"#zattributedata"}]}
 />
 
 <CodeClassList>
@@ -32,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-attribute-data"
     description=""
-    codeBlocks={[{ code: "constructor(id: Int = -1, attributeName: String = '')" }]}
+    codeBlocks={[{code: "constructor(id: Int = -1, attributeName: String = '')"}]}
   />
   <DocumentationItemComponent
     name="attributeName"
@@ -40,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="attribute-name"
     description=""
-    codeBlocks={[{ code: 'var attributeName: String' }]}
+    codeBlocks={[{code: "var attributeName: String"}]}
   />
   <DocumentationItemComponent
     name="id"
@@ -48,14 +36,14 @@ import {
     groupType="PROPERTY"
     url="id"
     description=""
-    codeBlocks={[{ code: 'var id: Int' }]}
+    codeBlocks={[{code: "var id: Int"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "@Transient open override val refId: String"}]}
   />
 </CodeClassList>

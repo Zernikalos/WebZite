@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZComponentData'
+slug: "index"
+title: "ZComponentData"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZComponentData"
   namespace="Zernikalos.zernikalos.components"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components',
-      url: '/docs/api/-zernikalos.zernikalos.components',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZComponentData', url: '#zcomponentdata' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components","url":"/docs/api/-zernikalos.zernikalos.components"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZComponentData","url":"#zcomponentdata"}]}
 />
 
 <CodeClassList>
@@ -32,15 +20,15 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-component-data"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "@Transient open override val refId: String"}]}
   />
   <DocumentationItemComponent
     name="toString"
@@ -48,6 +36,6 @@ import {
     groupType="FUNCTION"
     url="to-string"
     description=""
-    codeBlocks={[{ code: 'abstract override fun toString(): String' }]}
+    codeBlocks={[{code: "abstract override fun toString(): String"}]}
   />
 </CodeClassList>

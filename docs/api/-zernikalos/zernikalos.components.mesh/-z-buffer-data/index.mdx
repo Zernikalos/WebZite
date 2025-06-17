@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'ZBufferData'
+slug: "index"
+title: "ZBufferData"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZBufferData"
   namespace="Zernikalos.zernikalos.components.mesh"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.mesh',
-      url: '/docs/api/-zernikalos.zernikalos.components.mesh',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZBufferData', url: '#zbufferdata' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.mesh","url":"/docs/api/-zernikalos.zernikalos.components.mesh"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZBufferData","url":"#zbufferdata"}]}
 />
 
 <CodeClassList>
@@ -30,11 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-buffer-data"
     description=""
-    codeBlocks={[
-      {
-        code: "constructor(id: Int = -1, dataType: ZDataType = ZTypes.NONE, name: String = '', size: Int = -1, count: Int = -1, normalized: Boolean = false, offset: Int = -1, stride: Int = -1, isIndexBuffer: Boolean = false, bufferId: Int = -1, dataArray: ByteArray = byteArrayOf())",
-      },
-    ]}
+    codeBlocks={[{code: "constructor(id: Int = -1, dataType: ZDataType = ZTypes.NONE, name: String = '', size: Int = -1, count: Int = -1, normalized: Boolean = false, offset: Int = -1, stride: Int = -1, isIndexBuffer: Boolean = false, bufferId: Int = -1, dataArray: ByteArray = byteArrayOf())"}]}
   />
   <DocumentationItemComponent
     name="bufferId"
@@ -42,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="buffer-id"
     description=""
-    codeBlocks={[{ code: 'var bufferId: Int' }]}
+    codeBlocks={[{code: "var bufferId: Int"}]}
   />
   <DocumentationItemComponent
     name="count"
@@ -50,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="count"
     description=""
-    codeBlocks={[{ code: 'var count: Int' }]}
+    codeBlocks={[{code: "var count: Int"}]}
   />
   <DocumentationItemComponent
     name="dataArray"
@@ -58,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="data-array"
     description=""
-    codeBlocks={[{ code: 'var dataArray: ByteArray' }]}
+    codeBlocks={[{code: "var dataArray: ByteArray"}]}
   />
   <DocumentationItemComponent
     name="dataType"
@@ -66,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="data-type"
     description=""
-    codeBlocks={[{ code: 'var dataType: ZDataType' }]}
+    codeBlocks={[{code: "var dataType: ZDataType"}]}
   />
   <DocumentationItemComponent
     name="hasData"
@@ -74,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="has-data"
     description=""
-    codeBlocks={[{ code: 'val hasData: Boolean' }]}
+    codeBlocks={[{code: "val hasData: Boolean"}]}
   />
   <DocumentationItemComponent
     name="id"
@@ -82,7 +68,7 @@ import {
     groupType="PROPERTY"
     url="id"
     description=""
-    codeBlocks={[{ code: 'var id: Int' }]}
+    codeBlocks={[{code: "var id: Int"}]}
   />
   <DocumentationItemComponent
     name="isIndexBuffer"
@@ -90,7 +76,7 @@ import {
     groupType="PROPERTY"
     url="is-index-buffer"
     description=""
-    codeBlocks={[{ code: 'var isIndexBuffer: Boolean' }]}
+    codeBlocks={[{code: "var isIndexBuffer: Boolean"}]}
   />
   <DocumentationItemComponent
     name="name"
@@ -98,7 +84,7 @@ import {
     groupType="PROPERTY"
     url="name"
     description=""
-    codeBlocks={[{ code: 'var name: String' }]}
+    codeBlocks={[{code: "var name: String"}]}
   />
   <DocumentationItemComponent
     name="normalized"
@@ -106,7 +92,7 @@ import {
     groupType="PROPERTY"
     url="normalized"
     description=""
-    codeBlocks={[{ code: 'var normalized: Boolean' }]}
+    codeBlocks={[{code: "var normalized: Boolean"}]}
   />
   <DocumentationItemComponent
     name="offset"
@@ -114,15 +100,15 @@ import {
     groupType="PROPERTY"
     url="offset"
     description=""
-    codeBlocks={[{ code: 'var offset: Int' }]}
+    codeBlocks={[{code: "var offset: Int"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "@Transient open override val refId: String"}]}
   />
   <DocumentationItemComponent
     name="size"
@@ -130,7 +116,7 @@ import {
     groupType="PROPERTY"
     url="size"
     description=""
-    codeBlocks={[{ code: 'var size: Int' }]}
+    codeBlocks={[{code: "var size: Int"}]}
   />
   <DocumentationItemComponent
     name="stride"
@@ -138,6 +124,6 @@ import {
     groupType="PROPERTY"
     url="stride"
     description=""
-    codeBlocks={[{ code: 'var stride: Int' }]}
+    codeBlocks={[{code: "var stride: Int"}]}
   />
 </CodeClassList>

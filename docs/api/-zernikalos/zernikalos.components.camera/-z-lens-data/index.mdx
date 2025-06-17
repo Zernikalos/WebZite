@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'ZLensData'
+slug: "index"
+title: "ZLensData"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZLensData"
   namespace="Zernikalos.zernikalos.components.camera"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.camera',
-      url: '/docs/api/-zernikalos.zernikalos.components.camera',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZLensData', url: '#zlensdata' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.camera","url":"/docs/api/-zernikalos.zernikalos.components.camera"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZLensData","url":"#zlensdata"}]}
 />
 
 <CodeClassList>
@@ -30,11 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-lens-data"
     description=""
-    codeBlocks={[
-      { code: 'constructor()' },
-      { code: 'constructor(near: Float, far: Float)' },
-      { code: 'constructor(near: Float, far: Float, aspectRatio: Float)' },
-    ]}
+    codeBlocks={[{code: "constructor()"}, {code: "constructor(near: Float, far: Float)"}, {code: "constructor(near: Float, far: Float, aspectRatio: Float)"}]}
   />
   <DocumentationItemComponent
     name="_aspectRatio"
@@ -42,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="_aspect-ratio"
     description=""
-    codeBlocks={[{ code: 'var _aspectRatio: Float?' }]}
+    codeBlocks={[{code: "var _aspectRatio: Float?"}]}
   />
   <DocumentationItemComponent
     name="aspectRatio"
@@ -50,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="aspect-ratio"
     description=""
-    codeBlocks={[{ code: 'var aspectRatio: Float' }]}
+    codeBlocks={[{code: "var aspectRatio: Float"}]}
   />
   <DocumentationItemComponent
     name="far"
@@ -58,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="far"
     description=""
-    codeBlocks={[{ code: 'var far: Float' }]}
+    codeBlocks={[{code: "var far: Float"}]}
   />
   <DocumentationItemComponent
     name="height"
@@ -66,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="height"
     description=""
-    codeBlocks={[{ code: 'var height: Float?' }]}
+    codeBlocks={[{code: "var height: Float?"}]}
   />
   <DocumentationItemComponent
     name="near"
@@ -74,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="near"
     description=""
-    codeBlocks={[{ code: 'var near: Float' }]}
+    codeBlocks={[{code: "var near: Float"}]}
   />
   <DocumentationItemComponent
     name="projectionMatrix"
@@ -82,15 +68,15 @@ import {
     groupType="PROPERTY"
     url="projection-matrix"
     description=""
-    codeBlocks={[{ code: 'abstract val projectionMatrix: ZMatrix4' }]}
+    codeBlocks={[{code: "abstract val projectionMatrix: ZMatrix4"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "@Transient open override val refId: String"}]}
   />
   <DocumentationItemComponent
     name="useComputedAspectRatio"
@@ -98,7 +84,7 @@ import {
     groupType="PROPERTY"
     url="use-computed-aspect-ratio"
     description=""
-    codeBlocks={[{ code: 'var useComputedAspectRatio: Boolean' }]}
+    codeBlocks={[{code: "var useComputedAspectRatio: Boolean"}]}
   />
   <DocumentationItemComponent
     name="width"
@@ -106,7 +92,7 @@ import {
     groupType="PROPERTY"
     url="width"
     description=""
-    codeBlocks={[{ code: 'var width: Float?' }]}
+    codeBlocks={[{code: "var width: Float?"}]}
   />
   <DocumentationItemComponent
     name="setDimensions"
@@ -114,7 +100,7 @@ import {
     groupType="FUNCTION"
     url="set-dimensions"
     description=""
-    codeBlocks={[{ code: 'fun setDimensions(width: Int, height: Int)' }]}
+    codeBlocks={[{code: "fun setDimensions(width: Int, height: Int)"}]}
   />
   <DocumentationItemComponent
     name="toString"
@@ -122,6 +108,6 @@ import {
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-component-data/to-string"
     description=""
-    codeBlocks={[{ code: 'abstract override fun toString(): String' }]}
+    codeBlocks={[{code: "abstract override fun toString(): String"}]}
   />
 </CodeClassList>

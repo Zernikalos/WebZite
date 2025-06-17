@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZkoHeader'
+slug: "index"
+title: "ZkoHeader"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZkoHeader"
   namespace="Zernikalos.zernikalos.loader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.loader', url: '/docs/api/-zernikalos.zernikalos.loader' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZkoHeader', url: '#zkoheader' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.loader","url":"/docs/api/-zernikalos.zernikalos.loader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZkoHeader","url":"#zkoheader"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-zko-header"
     description=""
-    codeBlocks={[{ code: 'constructor(version: String)' }]}
+    codeBlocks={[{code: "constructor(version: String)"}]}
   />
   <DocumentationItemComponent
     name="currentVersion"
@@ -35,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="current-version"
     description=""
-    codeBlocks={[{ code: 'val currentVersion: ZSemVer' }]}
+    codeBlocks={[{code: "val currentVersion: ZSemVer"}]}
   />
   <DocumentationItemComponent
     name="version"
@@ -43,6 +36,6 @@ import {
     groupType="PROPERTY"
     url="version"
     description=""
-    codeBlocks={[{ code: 'val version: String' }]}
+    codeBlocks={[{code: "val version: String"}]}
   />
 </CodeClassList>

@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'ZRef'
+slug: "index"
+title: "ZRef"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZRef"
   namespace="Zernikalos.zernikalos.components"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components',
-      url: '/docs/api/-zernikalos.zernikalos.components',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZRef', url: '#zref' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components","url":"/docs/api/-zernikalos.zernikalos.components"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZRef","url":"#zref"}]}
 />
 
 <CodeClassList>
@@ -29,7 +19,7 @@ import {
     tokenType="val"
     groupType="PROPERTY"
     url="ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: 'abstract val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "abstract val refId: String"}]}
   />
 </CodeClassList>

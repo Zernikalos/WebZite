@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZSemVer'
+slug: "index"
+title: "ZSemVer"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZSemVer"
   namespace="Zernikalos.zernikalos.utils"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.utils', url: '/docs/api/-zernikalos.zernikalos.utils' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZSemVer', url: '#zsemver' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.utils","url":"/docs/api/-zernikalos.zernikalos.utils"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZSemVer","url":"#zsemver"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-sem-ver"
     description=""
-    codeBlocks={[{ code: 'constructor(major: Int, minor: Int, patch: Int)' }]}
+    codeBlocks={[{code: "constructor(major: Int, minor: Int, patch: Int)"}]}
   />
   <DocumentationItemComponent
     name="Companion"
@@ -35,7 +28,7 @@ import {
     groupType="NONE"
     url="-companion/index"
     description=""
-    codeBlocks={[{ code: 'object Companion' }]}
+    codeBlocks={[{code: "object Companion"}]}
   />
   <DocumentationItemComponent
     name="major"
@@ -43,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="major"
     description=""
-    codeBlocks={[{ code: 'val major: Int' }]}
+    codeBlocks={[{code: "val major: Int"}]}
   />
   <DocumentationItemComponent
     name="minor"
@@ -51,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="minor"
     description=""
-    codeBlocks={[{ code: 'val minor: Int' }]}
+    codeBlocks={[{code: "val minor: Int"}]}
   />
   <DocumentationItemComponent
     name="patch"
@@ -59,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="patch"
     description=""
-    codeBlocks={[{ code: 'val patch: Int' }]}
+    codeBlocks={[{code: "val patch: Int"}]}
   />
   <DocumentationItemComponent
     name="isCompatibleWith"
@@ -67,7 +60,7 @@ import {
     groupType="FUNCTION"
     url="is-compatible-with"
     description=""
-    codeBlocks={[{ code: 'fun isCompatibleWith(other: ZSemVer): Boolean' }]}
+    codeBlocks={[{code: "fun isCompatibleWith(other: ZSemVer): Boolean"}]}
   />
   <DocumentationItemComponent
     name="toString"
@@ -75,6 +68,6 @@ import {
     groupType="FUNCTION"
     url="to-string"
     description=""
-    codeBlocks={[{ code: 'open override fun toString(): String' }]}
+    codeBlocks={[{code: "open override fun toString(): String"}]}
   />
 </CodeClassList>
