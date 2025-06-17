@@ -33,11 +33,12 @@ export default function Landing(): JSX.Element {
       title={`${siteConfig.title} Docs`}
       description={siteConfig.tagline}
     >
-      <BackgroundBlobs />
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <BackgroundBlobs>
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+        </main>
+      </BackgroundBlobs>
     </Layout>
   );
 }
