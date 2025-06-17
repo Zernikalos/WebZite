@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ui'
+slug: "index"
+title: "ui"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ui"
   namespace="Zernikalos"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'zernikalos.ui', url: '#zernikalos.ui' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.ui","url":"#zernikalos.ui"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="TYPE"
     url="-android-native-renderer/index"
     description=""
-    codeBlocks={[{ code: 'class AndroidNativeRenderer: GLSurfaceView.Renderer' }]}
+    codeBlocks={[{code: "class AndroidNativeRenderer: GLSurfaceView.Renderer"}]}
   />
   <DocumentationItemComponent
     name="ZAndroidSurfaceView"
@@ -35,7 +28,7 @@ import {
     groupType="TYPE"
     url="-z-android-surface-view/index"
     description=""
-    codeBlocks={[{ code: 'class ZAndroidSurfaceView(view: GLSurfaceView): ZSurfaceView' }]}
+    codeBlocks={[{code: "class ZAndroidSurfaceView(view: GLSurfaceView): ZSurfaceView"}]}
   />
   <DocumentationItemComponent
     name="ZernikalosView"
@@ -43,7 +36,7 @@ import {
     groupType="TYPE"
     url="-zernikalos-view/index"
     description=""
-    codeBlocks={[{ code: 'class ZernikalosView: GLSurfaceView, ZSurfaceView' }]}
+    codeBlocks={[{code: "class ZernikalosView: GLSurfaceView, ZSurfaceView"}]}
   />
   <DocumentationItemComponent
     name="ZJsSurfaceView"
@@ -51,7 +44,7 @@ import {
     groupType="TYPE"
     url="-z-js-surface-view/index"
     description=""
-    codeBlocks={[{ code: 'CLASS: Symbol not found for HTMLCanvasElement): ZSurfaceView' }]}
+    codeBlocks={[{code: "@ExperimentalJsExport class ZJsSurfaceView(val canvas: HTMLCanvasElement): ZSurfaceView"}]}
   />
   <DocumentationItemComponent
     name="ZMtkViewDelegate"
@@ -59,7 +52,7 @@ import {
     groupType="TYPE"
     url="-z-mtk-view-delegate/index"
     description=""
-    codeBlocks={[{ code: 'class ZMtkViewDelegate: NSObject, MTKViewDelegateProtocol' }]}
+    codeBlocks={[{code: "class ZMtkViewDelegate: NSObject, MTKViewDelegateProtocol"}]}
   />
   <DocumentationItemComponent
     name="ZMtlSurfaceView"
@@ -67,7 +60,7 @@ import {
     groupType="TYPE"
     url="-z-mtl-surface-view/index"
     description=""
-    codeBlocks={[{ code: 'class ZMtlSurfaceView(view: MTKView): ZSurfaceView' }]}
+    codeBlocks={[{code: "class ZMtlSurfaceView(view: MTKView): ZSurfaceView"}]}
   />
   <DocumentationItemComponent
     name="ZSurfaceView"
@@ -75,7 +68,7 @@ import {
     groupType="TYPE"
     url="-z-surface-view/index"
     description="Represents a surface view that is used for rendering and handling events."
-    codeBlocks={[{ code: 'interface ZSurfaceView' }]}
+    codeBlocks={[{code: "interface ZSurfaceView"}]}
   />
   <DocumentationItemComponent
     name="ZSurfaceViewEventHandler"
@@ -83,6 +76,6 @@ import {
     groupType="TYPE"
     url="-z-surface-view-event-handler/index"
     description=""
-    codeBlocks={[{ code: 'interface ZSurfaceViewEventHandler' }]}
+    codeBlocks={[{code: "interface ZSurfaceViewEventHandler"}]}
   />
 </CodeClassList>

@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'GLWrap'
+slug: "index"
+title: "GLWrap"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="GLWrap"
   namespace="Zernikalos.zernikalos.context"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'GLWrap', url: '#glwrap' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context","url":"/docs/api/-zernikalos.zernikalos.context"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"GLWrap","url":"#glwrap"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-g-l-wrap"
     description=""
-    codeBlocks={[{ code: 'constructor(id: Any? = null)' }]}
+    codeBlocks={[{code: "constructor(id: Any? = null)"}]}
   />
   <DocumentationItemComponent
     name="id"
@@ -35,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="id"
     description=""
-    codeBlocks={[{ code: 'val id: Any?' }]}
+    codeBlocks={[{code: "val id: Any?"}]}
   />
   <DocumentationItemComponent
     name="isValid"
@@ -43,6 +36,6 @@ import {
     groupType="PROPERTY"
     url="is-valid"
     description=""
-    codeBlocks={[{ code: 'val isValid: Boolean' }]}
+    codeBlocks={[{code: "val isValid: Boolean"}]}
   />
 </CodeClassList>

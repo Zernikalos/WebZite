@@ -1,25 +1,16 @@
 ---
-slug: 'index'
-title: 'ZLoaderContext'
+slug: "index"
+title: "ZLoaderContext"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZLoaderContext"
   namespace="Zernikalos.zernikalos.loader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.loader', url: '/docs/api/-zernikalos.zernikalos.loader' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZLoaderContext', url: '#zloadercontext' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.loader","url":"/docs/api/-zernikalos.zernikalos.loader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZLoaderContext","url":"#zloadercontext"}]}
 />
 
 <CodeClassList>
@@ -29,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-loader-context"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="addComponent"
@@ -37,7 +28,7 @@ import {
     groupType="FUNCTION"
     url="add-component"
     description="Adds a component to the store with the given refId."
-    codeBlocks={[{ code: 'fun addComponent(refId: String, component: ZRef?)' }]}
+    codeBlocks={[{code: "fun addComponent(refId: String, component: ZRef?)"}]}
   />
   <DocumentationItemComponent
     name="getComponent"
@@ -45,7 +36,7 @@ import {
     groupType="FUNCTION"
     url="get-component"
     description="Retrieves a component from the store with the given refId."
-    codeBlocks={[{ code: 'fun getComponent(refId: String): ZRef?' }]}
+    codeBlocks={[{code: "fun getComponent(refId: String): ZRef?"}]}
   />
   <DocumentationItemComponent
     name="hasComponent"
@@ -53,6 +44,6 @@ import {
     groupType="FUNCTION"
     url="has-component"
     description="Returns true if the component with the given refId has been loaded."
-    codeBlocks={[{ code: 'fun hasComponent(refId: String): Boolean' }]}
+    codeBlocks={[{code: "fun hasComponent(refId: String): Boolean"}]}
   />
 </CodeClassList>

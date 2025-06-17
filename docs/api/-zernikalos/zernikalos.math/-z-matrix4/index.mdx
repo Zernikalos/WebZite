@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZMatrix4'
+slug: "index"
+title: "ZMatrix4"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZMatrix4"
   namespace="Zernikalos.zernikalos.math"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.math', url: '/docs/api/-zernikalos.zernikalos.math' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZMatrix4', url: '#zmatrix4' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math","url":"/docs/api/-zernikalos.zernikalos.math"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZMatrix4","url":"#zmatrix4"}]}
 />
 
 <CodeClassList>
@@ -27,11 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-matrix4"
     description="Initializes a ZMatrix4 object with the provided array of float values.Constructs a 4x4 matrix from a given array of float values."
-    codeBlocks={[
-      { code: 'constructor()' },
-      { code: 'constructor(values: Array<Float>)' },
-      { code: 'constructor(values: FloatArray)' },
-    ]}
+    codeBlocks={[{code: "constructor()"}, {code: "constructor(values: Array<Float>)"}, {code: "constructor(values: FloatArray)"}]}
   />
   <DocumentationItemComponent
     name="Op"
@@ -39,7 +28,23 @@ import {
     groupType="NONE"
     url="-op/index"
     description="Provides a collection of operations for manipulating 4x4 matrices."
-    codeBlocks={[{ code: 'object Op' }]}
+    codeBlocks={[{code: "object Op"}]}
+  />
+  <DocumentationItemComponent
+    name="byteArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-array"
+    description=""
+    codeBlocks={[{code: "open override val byteArray: ByteArray"}]}
+  />
+  <DocumentationItemComponent
+    name="byteSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-size"
+    description=""
+    codeBlocks={[{code: "open override val byteSize: Int"}]}
   />
   <DocumentationItemComponent
     name="count"
@@ -47,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="count"
     description="Number of individual instances this object represents"
-    codeBlocks={[{ code: 'open override val count: Int' }]}
+    codeBlocks={[{code: "open override val count: Int = 1"}]}
   />
   <DocumentationItemComponent
     name="dataType"
@@ -55,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="data-type"
     description="The data type stored"
-    codeBlocks={[{ code: 'open override val dataType: ZDataType' }]}
+    codeBlocks={[{code: "open override val dataType: ZDataType"}]}
   />
   <DocumentationItemComponent
     name="floatArray"
@@ -63,7 +68,7 @@ import {
     groupType="PROPERTY"
     url="float-array"
     description=""
-    codeBlocks={[{ code: 'open override val floatArray: FloatArray' }]}
+    codeBlocks={[{code: "open override val floatArray: FloatArray"}]}
   />
   <DocumentationItemComponent
     name="size"
@@ -71,7 +76,7 @@ import {
     groupType="PROPERTY"
     url="size"
     description="Number of elements contained within the values array with the specific type defined in dataType"
-    codeBlocks={[{ code: 'open override val size: Int' }]}
+    codeBlocks={[{code: "open override val size: Int"}]}
   />
   <DocumentationItemComponent
     name="get"
@@ -79,10 +84,7 @@ import {
     groupType="FUNCTION"
     url="get"
     description="Retrieves the value at the specified index. 0-15 index element.Retrieves the value at the specified 2D matrix coordinates."
-    codeBlocks={[
-      { code: 'operator fun get(i: Int): Float' },
-      { code: 'operator fun get(i: Int, j: Int): Float' },
-    ]}
+    codeBlocks={[{code: "operator fun get(i: Int): Float"}, {code: "operator fun get(i: Int, j: Int): Float"}]}
   />
   <DocumentationItemComponent
     name="identity"
@@ -90,7 +92,7 @@ import {
     groupType="FUNCTION"
     url="identity"
     description="Sets the current matrix to be the identity matrix."
-    codeBlocks={[{ code: 'fun identity()' }]}
+    codeBlocks={[{code: "fun identity()"}]}
   />
   <DocumentationItemComponent
     name="invert"
@@ -98,7 +100,7 @@ import {
     groupType="FUNCTION"
     url="invert"
     description="Inverts the current ZMatrix4 instance in place."
-    codeBlocks={[{ code: 'fun invert(): Boolean' }]}
+    codeBlocks={[{code: "fun invert(): Boolean"}]}
   />
   <DocumentationItemComponent
     name="inverted"
@@ -106,7 +108,7 @@ import {
     groupType="FUNCTION"
     url="inverted"
     description="Returns a new ZMatrix4 that is the inverse of the current matrix."
-    codeBlocks={[{ code: 'fun inverted(): ZMatrix4' }]}
+    codeBlocks={[{code: "fun inverted(): ZMatrix4"}]}
   />
   <DocumentationItemComponent
     name="minus"
@@ -114,7 +116,7 @@ import {
     groupType="FUNCTION"
     url="minus"
     description="Performs the Matrix subtraction operation."
-    codeBlocks={[{ code: 'operator fun minus(m: ZMatrix4): ZMatrix4' }]}
+    codeBlocks={[{code: "operator fun minus(m: ZMatrix4): ZMatrix4"}]}
   />
   <DocumentationItemComponent
     name="plus"
@@ -122,7 +124,7 @@ import {
     groupType="FUNCTION"
     url="plus"
     description="Performs the Matrix addition operation."
-    codeBlocks={[{ code: 'operator fun plus(m: ZMatrix4): ZMatrix4' }]}
+    codeBlocks={[{code: "operator fun plus(m: ZMatrix4): ZMatrix4"}]}
   />
   <DocumentationItemComponent
     name="scale"
@@ -130,10 +132,7 @@ import {
     groupType="FUNCTION"
     url="scale"
     description="Scales the current matrix by the specified vector."
-    codeBlocks={[
-      { code: 'fun scale(s: ZVector3)' },
-      { code: 'fun scale(x: Float, y: Float, z: Float)' },
-    ]}
+    codeBlocks={[{code: "fun scale(s: ZVector3)"}, {code: "fun scale(x: Float, y: Float, z: Float)"}]}
   />
   <DocumentationItemComponent
     name="set"
@@ -141,10 +140,7 @@ import {
     groupType="FUNCTION"
     url="set"
     description="Sets the value at the specified index. 0-15 index element.Sets the value at the specified 2D matrix coordinates."
-    codeBlocks={[
-      { code: 'operator fun set(i: Int, v: Float)' },
-      { code: 'operator fun set(i: Int, j: Int, v: Float)' },
-    ]}
+    codeBlocks={[{code: "operator fun set(i: Int, v: Float)"}, {code: "operator fun set(i: Int, j: Int, v: Float)"}]}
   />
   <DocumentationItemComponent
     name="times"
@@ -152,7 +148,7 @@ import {
     groupType="FUNCTION"
     url="times"
     description="Performs the Matrix multiplication operation."
-    codeBlocks={[{ code: 'operator fun times(m: ZMatrix4): ZMatrix4' }]}
+    codeBlocks={[{code: "operator fun times(m: ZMatrix4): ZMatrix4"}]}
   />
   <DocumentationItemComponent
     name="toString"
@@ -160,7 +156,7 @@ import {
     groupType="FUNCTION"
     url="to-string"
     description=""
-    codeBlocks={[{ code: 'open override fun toString(): String' }]}
+    codeBlocks={[{code: "open override fun toString(): String"}]}
   />
   <DocumentationItemComponent
     name="translate"
@@ -168,10 +164,7 @@ import {
     groupType="FUNCTION"
     url="translate"
     description="Translates the current matrix by the given vector.Translates the current matrix by the specified x, y, and z values."
-    codeBlocks={[
-      { code: 'fun translate(translation: ZVector3)' },
-      { code: 'fun translate(x: Float, y: Float, z: Float)' },
-    ]}
+    codeBlocks={[{code: "fun translate(translation: ZVector3)"}, {code: "fun translate(x: Float, y: Float, z: Float)"}]}
   />
   <DocumentationItemComponent
     name="transpose"
@@ -179,6 +172,6 @@ import {
     groupType="FUNCTION"
     url="transpose"
     description="Transposes the current ZMatrix4 instance in place."
-    codeBlocks={[{ code: 'fun transpose()' }]}
+    codeBlocks={[{code: "fun transpose()"}]}
   />
 </CodeClassList>

@@ -1,23 +1,16 @@
 ---
-slug: 'tree-as-list'
-title: 'treeAsList'
+slug: "tree-as-list"
+title: "treeAsList"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="treeAsList"
   namespace="Zernikalos.zernikalos.search"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.search', url: '/docs/api/-zernikalos.zernikalos.search' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'treeAsList', url: '#treeaslist' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.search","url":"/docs/api/-zernikalos.zernikalos.search"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"treeAsList","url":"#treeaslist"}]}
 />
 
 <CodeClassList>
@@ -27,6 +20,6 @@ import {
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{ code: 'fun <T: ZTreeNode<T>> treeAsList(node: T): List<T>' }]}
+    codeBlocks={[{code: "fun <T: ZTreeNode<T>> treeAsList(node: T): List<T>"}]}
   />
 </CodeClassList>

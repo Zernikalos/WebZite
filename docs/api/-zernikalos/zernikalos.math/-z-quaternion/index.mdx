@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZQuaternion'
+slug: "index"
+title: "ZQuaternion"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZQuaternion"
   namespace="Zernikalos.zernikalos.math"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.math', url: '/docs/api/-zernikalos.zernikalos.math' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZQuaternion', url: '#zquaternion' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math","url":"/docs/api/-zernikalos.zernikalos.math"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZQuaternion","url":"#zquaternion"}]}
 />
 
 <CodeClassList>
@@ -27,10 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-quaternion"
     description=""
-    codeBlocks={[
-      { code: 'constructor()' },
-      { code: 'constructor(w: Float = 1.0f, x: Float = 0.0f, y: Float = 0.0f, z: Float = 0.0f)' },
-    ]}
+    codeBlocks={[{code: "constructor()"}, {code: "constructor(w: Float = 1.0f, x: Float = 0.0f, y: Float = 0.0f, z: Float = 0.0f)"}]}
   />
   <DocumentationItemComponent
     name="Op"
@@ -38,7 +28,23 @@ import {
     groupType="NONE"
     url="-op/index"
     description=""
-    codeBlocks={[{ code: 'object Op' }]}
+    codeBlocks={[{code: "object Op"}]}
+  />
+  <DocumentationItemComponent
+    name="byteArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-array"
+    description=""
+    codeBlocks={[{code: "open override val byteArray: ByteArray"}]}
+  />
+  <DocumentationItemComponent
+    name="byteSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-size"
+    description=""
+    codeBlocks={[{code: "open override val byteSize: Int"}]}
   />
   <DocumentationItemComponent
     name="count"
@@ -46,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="count"
     description="Number of individual instances this object represents"
-    codeBlocks={[{ code: 'open override val count: Int' }]}
+    codeBlocks={[{code: "open override val count: Int = 1"}]}
   />
   <DocumentationItemComponent
     name="dataType"
@@ -54,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="data-type"
     description="The data type stored"
-    codeBlocks={[{ code: 'open override val dataType: ZDataType' }]}
+    codeBlocks={[{code: "open override val dataType: ZDataType"}]}
   />
   <DocumentationItemComponent
     name="floatArray"
@@ -62,7 +68,7 @@ import {
     groupType="PROPERTY"
     url="float-array"
     description=""
-    codeBlocks={[{ code: 'open override val floatArray: FloatArray' }]}
+    codeBlocks={[{code: "open override val floatArray: FloatArray"}]}
   />
   <DocumentationItemComponent
     name="isNormalized"
@@ -70,7 +76,7 @@ import {
     groupType="PROPERTY"
     url="is-normalized"
     description=""
-    codeBlocks={[{ code: 'val isNormalized: Boolean' }]}
+    codeBlocks={[{code: "val isNormalized: Boolean"}]}
   />
   <DocumentationItemComponent
     name="norm2"
@@ -78,7 +84,7 @@ import {
     groupType="PROPERTY"
     url="norm2"
     description=""
-    codeBlocks={[{ code: 'val norm2: Float' }]}
+    codeBlocks={[{code: "val norm2: Float"}]}
   />
   <DocumentationItemComponent
     name="size"
@@ -86,7 +92,7 @@ import {
     groupType="PROPERTY"
     url="size"
     description="Number of elements contained within the values array with the specific type defined in dataType"
-    codeBlocks={[{ code: 'open override val size: Int' }]}
+    codeBlocks={[{code: "open override val size: Int = 4"}]}
   />
   <DocumentationItemComponent
     name="w"
@@ -94,7 +100,7 @@ import {
     groupType="PROPERTY"
     url="w"
     description=""
-    codeBlocks={[{ code: 'var w: Float' }]}
+    codeBlocks={[{code: "var w: Float"}]}
   />
   <DocumentationItemComponent
     name="x"
@@ -102,7 +108,7 @@ import {
     groupType="PROPERTY"
     url="x"
     description=""
-    codeBlocks={[{ code: 'var x: Float' }]}
+    codeBlocks={[{code: "var x: Float"}]}
   />
   <DocumentationItemComponent
     name="y"
@@ -110,7 +116,7 @@ import {
     groupType="PROPERTY"
     url="y"
     description=""
-    codeBlocks={[{ code: 'var y: Float' }]}
+    codeBlocks={[{code: "var y: Float"}]}
   />
   <DocumentationItemComponent
     name="z"
@@ -118,7 +124,7 @@ import {
     groupType="PROPERTY"
     url="z"
     description=""
-    codeBlocks={[{ code: 'var z: Float' }]}
+    codeBlocks={[{code: "var z: Float"}]}
   />
   <DocumentationItemComponent
     name="conjugate"
@@ -126,7 +132,7 @@ import {
     groupType="FUNCTION"
     url="conjugate"
     description=""
-    codeBlocks={[{ code: 'fun conjugate()' }]}
+    codeBlocks={[{code: "fun conjugate()"}]}
   />
   <DocumentationItemComponent
     name="copy"
@@ -134,7 +140,7 @@ import {
     groupType="FUNCTION"
     url="copy"
     description=""
-    codeBlocks={[{ code: 'fun copy(q: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun copy(q: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="fromAngleAxis"
@@ -142,7 +148,7 @@ import {
     groupType="FUNCTION"
     url="from-angle-axis"
     description=""
-    codeBlocks={[{ code: 'fun fromAngleAxis(angle: Float, x: Float, y: Float, z: Float)' }]}
+    codeBlocks={[{code: "fun fromAngleAxis(angle: Float, x: Float, y: Float, z: Float)"}]}
   />
   <DocumentationItemComponent
     name="fromMatrix4"
@@ -150,7 +156,7 @@ import {
     groupType="FUNCTION"
     url="from-matrix4"
     description=""
-    codeBlocks={[{ code: 'fun fromMatrix4(m: ZMatrix4)' }]}
+    codeBlocks={[{code: "fun fromMatrix4(m: ZMatrix4)"}]}
   />
   <DocumentationItemComponent
     name="identity"
@@ -158,7 +164,7 @@ import {
     groupType="FUNCTION"
     url="identity"
     description=""
-    codeBlocks={[{ code: 'fun identity()' }]}
+    codeBlocks={[{code: "fun identity()"}]}
   />
   <DocumentationItemComponent
     name="invert"
@@ -166,7 +172,7 @@ import {
     groupType="FUNCTION"
     url="invert"
     description=""
-    codeBlocks={[{ code: 'fun invert()' }]}
+    codeBlocks={[{code: "fun invert()"}]}
   />
   <DocumentationItemComponent
     name="minus"
@@ -174,7 +180,7 @@ import {
     groupType="FUNCTION"
     url="minus"
     description=""
-    codeBlocks={[{ code: 'operator fun minus(q: ZQuaternion): ZQuaternion' }]}
+    codeBlocks={[{code: "operator fun minus(q: ZQuaternion): ZQuaternion"}]}
   />
   <DocumentationItemComponent
     name="normalize"
@@ -182,7 +188,7 @@ import {
     groupType="FUNCTION"
     url="normalize"
     description="Normalizes the quaternion."
-    codeBlocks={[{ code: 'fun normalize()' }]}
+    codeBlocks={[{code: "fun normalize()"}]}
   />
   <DocumentationItemComponent
     name="plus"
@@ -190,7 +196,7 @@ import {
     groupType="FUNCTION"
     url="plus"
     description=""
-    codeBlocks={[{ code: 'operator fun plus(q: ZQuaternion): ZQuaternion' }]}
+    codeBlocks={[{code: "operator fun plus(q: ZQuaternion): ZQuaternion"}]}
   />
   <DocumentationItemComponent
     name="rotate"
@@ -198,7 +204,7 @@ import {
     groupType="FUNCTION"
     url="rotate"
     description="Rotates the quaternion by a specified angle around a specified axis."
-    codeBlocks={[{ code: 'fun rotate(angle: Float, axis: ZVector3)' }]}
+    codeBlocks={[{code: "fun rotate(angle: Float, axis: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="setValues"
@@ -206,7 +212,7 @@ import {
     groupType="FUNCTION"
     url="set-values"
     description=""
-    codeBlocks={[{ code: 'fun setValues(w: Float, x: Float, y: Float, z: Float)' }]}
+    codeBlocks={[{code: "fun setValues(w: Float, x: Float, y: Float, z: Float)"}]}
   />
   <DocumentationItemComponent
     name="times"
@@ -214,10 +220,7 @@ import {
     groupType="FUNCTION"
     url="times"
     description=""
-    codeBlocks={[
-      { code: 'operator fun times(scalar: Float): ZQuaternion' },
-      { code: 'operator fun times(q: ZQuaternion): ZQuaternion' },
-    ]}
+    codeBlocks={[{code: "operator fun times(scalar: Float): ZQuaternion"}, {code: "operator fun times(q: ZQuaternion): ZQuaternion"}]}
   />
   <DocumentationItemComponent
     name="toEuler"
@@ -225,7 +228,7 @@ import {
     groupType="FUNCTION"
     url="to-euler"
     description=""
-    codeBlocks={[{ code: 'fun toEuler(): ZEuler' }]}
+    codeBlocks={[{code: "fun toEuler(): ZEuler"}]}
   />
   <DocumentationItemComponent
     name="toMatrix4"
@@ -233,7 +236,7 @@ import {
     groupType="FUNCTION"
     url="to-matrix4"
     description=""
-    codeBlocks={[{ code: 'fun toMatrix4(): ZMatrix4' }]}
+    codeBlocks={[{code: "fun toMatrix4(): ZMatrix4"}]}
   />
   <DocumentationItemComponent
     name="toString"
@@ -241,7 +244,7 @@ import {
     groupType="FUNCTION"
     url="to-string"
     description=""
-    codeBlocks={[{ code: 'open override fun toString(): String' }]}
+    codeBlocks={[{code: "open override fun toString(): String"}]}
   />
   <DocumentationItemComponent
     name="zero"
@@ -249,6 +252,6 @@ import {
     groupType="FUNCTION"
     url="zero"
     description=""
-    codeBlocks={[{ code: 'fun zero()' }]}
+    codeBlocks={[{code: "fun zero()"}]}
   />
 </CodeClassList>

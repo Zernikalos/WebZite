@@ -1,33 +1,16 @@
 ---
-slug: 'index'
-title: 'ZMaterialDataWrapper'
+slug: "index"
+title: "ZMaterialDataWrapper"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZMaterialDataWrapper"
   namespace="Zernikalos.zernikalos.components.material"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.material',
-      url: '/docs/api/-zernikalos.zernikalos.components.material',
-    },
-  ]}
-  typeInfo={[
-    {
-      type: 'actual',
-      keyword: 'package',
-      name: 'ZMaterialDataWrapper',
-      url: '#zmaterialdatawrapper',
-    },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.material","url":"/docs/api/-zernikalos.zernikalos.components.material"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZMaterialDataWrapper","url":"#zmaterialdatawrapper"}]}
 />
 
 <CodeClassList>
@@ -37,11 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-material-data-wrapper"
     description=""
-    codeBlocks={[
-      {
-        code: "constructor(refId: String = '', isReference: Boolean = false, data: ZMaterialData? = null)",
-      },
-    ]}
+    codeBlocks={[{code: "constructor(refId: String = '', isReference: Boolean = false, data: ZMaterialData? = null)"}]}
   />
   <DocumentationItemComponent
     name="data"
@@ -49,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="data"
     description=""
-    codeBlocks={[{ code: 'open override var data: ZMaterialData?' }]}
+    codeBlocks={[{code: "open override var data: ZMaterialData?"}]}
   />
   <DocumentationItemComponent
     name="isReference"
@@ -57,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="is-reference"
     description=""
-    codeBlocks={[{ code: 'open override var isReference: Boolean' }]}
+    codeBlocks={[{code: "open override var isReference: Boolean"}]}
   />
   <DocumentationItemComponent
     name="refId"
@@ -65,6 +44,6 @@ import {
     groupType="PROPERTY"
     url="ref-id"
     description=""
-    codeBlocks={[{ code: 'open override var refId: String' }]}
+    codeBlocks={[{code: "open override var refId: String"}]}
   />
 </CodeClassList>

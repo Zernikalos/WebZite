@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZBoneSerializer'
+slug: "index"
+title: "ZBoneSerializer"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZBoneSerializer"
   namespace="Zernikalos.zernikalos.components.skeleton"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.skeleton',
-      url: '/docs/api/-zernikalos.zernikalos.components.skeleton',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZBoneSerializer', url: '#zboneserializer' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.skeleton","url":"/docs/api/-zernikalos.zernikalos.components.skeleton"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZBoneSerializer","url":"#zboneserializer"}]}
 />
 
 <CodeClassList>
@@ -32,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-bone-serializer"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="descriptor"
@@ -40,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-serializer/descriptor"
     description=""
-    codeBlocks={[{ code: 'open override val descriptor: SerialDescriptor' }]}
+    codeBlocks={[{code: "open override val descriptor: SerialDescriptor"}]}
   />
   <DocumentationItemComponent
     name="kSerializer"
@@ -48,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="k-serializer"
     description=""
-    codeBlocks={[{ code: 'open override val kSerializer: KSerializer<ZBoneData>' }]}
+    codeBlocks={[{code: "open override val kSerializer: KSerializer<ZBoneData>"}]}
   />
   <DocumentationItemComponent
     name="deserialize"
@@ -56,7 +44,7 @@ import {
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-component-serializer/deserialize"
     description=""
-    codeBlocks={[{ code: 'open fun deserialize(decoder: Decoder): ZBone' }]}
+    codeBlocks={[{code: "open fun deserialize(decoder: Decoder): ZBone"}]}
   />
   <DocumentationItemComponent
     name="serialize"
@@ -64,6 +52,6 @@ import {
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-component-serializer/serialize"
     description=""
-    codeBlocks={[{ code: 'open fun serialize(encoder: Encoder, value: ZBone)' }]}
+    codeBlocks={[{code: "open fun serialize(encoder: Encoder, value: ZBone)"}]}
   />
 </CodeClassList>

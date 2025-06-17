@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZScaleFrame'
+slug: "index"
+title: "ZScaleFrame"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZScaleFrame"
   namespace="Zernikalos.zernikalos.action"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZScaleFrame', url: '#zscaleframe' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.action","url":"/docs/api/-zernikalos.zernikalos.action"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZScaleFrame","url":"#zscaleframe"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-scale-frame"
     description=""
-    codeBlocks={[{ code: 'constructor(time: Float, scale: ZVector3)' }]}
+    codeBlocks={[{code: "constructor(time: Float, scale: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="scale"
@@ -35,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="scale"
     description=""
-    codeBlocks={[{ code: 'val scale: ZVector3' }]}
+    codeBlocks={[{code: "val scale: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="time"
@@ -43,6 +36,6 @@ import {
     groupType="PROPERTY"
     url="time"
     description=""
-    codeBlocks={[{ code: 'open override val time: Float' }]}
+    codeBlocks={[{code: "open override val time: Float"}]}
   />
 </CodeClassList>

@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'ZUniformData'
+slug: "index"
+title: "ZUniformData"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZUniformData"
   namespace="Zernikalos.zernikalos.components.shader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.shader',
-      url: '/docs/api/-zernikalos.zernikalos.components.shader',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZUniformData', url: '#zuniformdata' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.shader","url":"/docs/api/-zernikalos.zernikalos.components.shader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZUniformData","url":"#zuniformdata"}]}
 />
 
 <CodeClassList>
@@ -30,11 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-uniform-data"
     description=""
-    codeBlocks={[
-      {
-        code: "constructor(id: Int = -1, uniformName: String = '', count: Int = -1, dataType: ZDataType = ZTypes.NONE)",
-      },
-    ]}
+    codeBlocks={[{code: "constructor(id: Int = -1, uniformName: String = '', count: Int = -1, dataType: ZDataType = ZTypes.NONE)"}]}
   />
   <DocumentationItemComponent
     name="count"
@@ -42,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="count"
     description=""
-    codeBlocks={[{ code: 'var count: Int' }]}
+    codeBlocks={[{code: "var count: Int"}]}
   />
   <DocumentationItemComponent
     name="dataType"
@@ -50,31 +36,31 @@ import {
     groupType="PROPERTY"
     url="data-type"
     description=""
-    codeBlocks={[{ code: 'var dataType: ZDataType' }]}
+    codeBlocks={[{code: "var dataType: ZDataType"}]}
   />
   <DocumentationItemComponent
     name="id"
     tokenType="var"
     groupType="PROPERTY"
     url="id"
-    description=""
-    codeBlocks={[{ code: 'var id: Int' }]}
+    description="Represents the unique identifier for a ZUniform instance. This ID is used to differentiate between different uniform components"
+    codeBlocks={[{code: "open override var id: Int"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "@Transient open override val refId: String"}]}
   />
   <DocumentationItemComponent
     name="uniformName"
     tokenType="var"
     groupType="PROPERTY"
     url="uniform-name"
-    description=""
-    codeBlocks={[{ code: 'var uniformName: String' }]}
+    description="This is the name within the shader source code"
+    codeBlocks={[{code: "open override var uniformName: String"}]}
   />
   <DocumentationItemComponent
     name="value"
@@ -82,6 +68,6 @@ import {
     groupType="PROPERTY"
     url="value"
     description=""
-    codeBlocks={[{ code: '@Transient var value: ZAlgebraObject?' }]}
+    codeBlocks={[{code: "open override var value: ZAlgebraObject"}]}
   />
 </CodeClassList>

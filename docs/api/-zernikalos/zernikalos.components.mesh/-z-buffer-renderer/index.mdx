@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZBufferRenderer'
+slug: "index"
+title: "ZBufferRenderer"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZBufferRenderer"
   namespace="Zernikalos.zernikalos.components.mesh"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.mesh',
-      url: '/docs/api/-zernikalos.zernikalos.components.mesh',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZBufferRenderer', url: '#zbufferrenderer' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.mesh","url":"/docs/api/-zernikalos.zernikalos.components.mesh"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZBufferRenderer","url":"#zbufferrenderer"}]}
 />
 
 <CodeClassList>
@@ -32,12 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-buffer-renderer"
     description=""
-    codeBlocks={[
-      { code: 'expect constructor(ctx: ZRenderingContext, data: ZBufferData)' },
-      { code: 'actual constructor(ctx: ZRenderingContext, data: ZBufferData)' },
-      { code: 'actual constructor(ctx: ZRenderingContext, data: ZBufferData)' },
-      { code: 'actual constructor(ctx: ZRenderingContext, data: ZBufferData)' },
-    ]}
+    codeBlocks={[{code: "expect constructor(ctx: ZRenderingContext, data: ZBufferData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZBufferData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZBufferData)"}]}
   />
   <DocumentationItemComponent
     name="attributeDescriptor"
@@ -45,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="attribute-descriptor"
     description=""
-    codeBlocks={[{ code: 'lateinit var attributeDescriptor: MTLVertexAttributeDescriptor' }]}
+    codeBlocks={[{code: "lateinit var attributeDescriptor: MTLVertexAttributeDescriptor"}]}
   />
   <DocumentationItemComponent
     name="bufferLink copied to clipboard"
@@ -53,11 +36,7 @@ import {
     groupType="PROPERTY"
     url="[metal]buffer"
     description=""
-    codeBlocks={[
-      { code: 'var buffer: MTLBufferProtocol?' },
-      { code: '@Transient lateinit var buffer: GLWrap' },
-      { code: 'lateinit var buffer: GPUBuffer' },
-    ]}
+    codeBlocks={[{code: "var buffer: MTLBufferProtocol?"}, {code: "@Transient lateinit var buffer: GLWrap"}]}
   />
   <DocumentationItemComponent
     name="layoutDescriptor"
@@ -65,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="layout-descriptor"
     description=""
-    codeBlocks={[{ code: 'lateinit var layoutDescriptor: MTLVertexBufferLayoutDescriptor' }]}
+    codeBlocks={[{code: "lateinit var layoutDescriptor: MTLVertexBufferLayoutDescriptor"}]}
   />
   <DocumentationItemComponent
     name="bind"
@@ -73,12 +52,7 @@ import {
     groupType="FUNCTION"
     url="bind"
     description=""
-    codeBlocks={[
-      { code: 'expect open override fun bind()' },
-      { code: 'actual open override fun bind()' },
-      { code: 'actual open override fun bind()' },
-      { code: 'actual open override fun bind()' },
-    ]}
+    codeBlocks={[{code: "expect open override fun bind()"}, {code: "actual open override fun bind()"}, {code: "actual open override fun bind()"}]}
   />
   <DocumentationItemComponent
     name="initialize"
@@ -86,25 +60,15 @@ import {
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[
-      { code: 'expect open override fun initialize()' },
-      { code: 'actual open override fun initialize()' },
-      { code: 'actual open override fun initialize()' },
-      { code: 'actual open override fun initialize()' },
-    ]}
+    codeBlocks={[{code: "expect open override fun initialize()"}, {code: "actual open override fun initialize()"}, {code: "actual open override fun initialize()"}]}
   />
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
-    url="../../zernikalos.components/-z-base-component-render/render"
+    url="../../zernikalos.components/-z-component-renderer/render"
     description=""
-    codeBlocks={[
-      { code: 'open fun render()' },
-      { code: 'open fun render()' },
-      { code: 'open fun render()' },
-      { code: 'open fun render()' },
-    ]}
+    codeBlocks={[{code: "open fun render()"}, {code: "open fun render()"}, {code: "open fun render()"}]}
   />
   <DocumentationItemComponent
     name="unbind"
@@ -112,11 +76,6 @@ import {
     groupType="FUNCTION"
     url="unbind"
     description=""
-    codeBlocks={[
-      { code: 'expect open override fun unbind()' },
-      { code: 'actual open override fun unbind()' },
-      { code: 'actual open override fun unbind()' },
-      { code: 'actual open override fun unbind()' },
-    ]}
+    codeBlocks={[{code: "expect open override fun unbind()"}, {code: "actual open override fun unbind()"}, {code: "actual open override fun unbind()"}]}
   />
 </CodeClassList>

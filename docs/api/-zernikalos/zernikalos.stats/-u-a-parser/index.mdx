@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'UAParser'
+slug: "index"
+title: "UAParser"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="UAParser"
   namespace="Zernikalos.zernikalos.stats"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.stats', url: '/docs/api/-zernikalos.zernikalos.stats' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'UAParser', url: '#uaparser' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.stats","url":"/docs/api/-zernikalos.zernikalos.stats"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"UAParser","url":"#uaparser"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-u-a-parser"
     description=""
-    codeBlocks={[{ code: 'constructor(userAgent: String)' }]}
+    codeBlocks={[{code: "constructor(userAgent: String)"}]}
   />
   <DocumentationItemComponent
     name="getBrowser"
@@ -35,6 +28,6 @@ import {
     groupType="FUNCTION"
     url="get-browser"
     description=""
-    codeBlocks={[{ code: 'fun getBrowser(): BrowserInfo' }]}
+    codeBlocks={[{code: "fun getBrowser(): BrowserInfo"}]}
   />
 </CodeClassList>

@@ -1,25 +1,16 @@
 ---
-slug: 'index'
-title: 'stats'
+slug: "index"
+title: "stats"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="stats"
   namespace="Zernikalos"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'zernikalos.stats', url: '#zernikalos.stats' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.stats","url":"#zernikalos.stats"}]}
 />
 
 <CodeClassList>
@@ -29,7 +20,7 @@ import {
     groupType="TYPE"
     url="-browser-info/index"
     description=""
-    codeBlocks={[{ code: 'external interface BrowserInfo' }]}
+    codeBlocks={[{code: "external interface BrowserInfo"}]}
   />
   <DocumentationItemComponent
     name="UAParser"
@@ -37,7 +28,7 @@ import {
     groupType="TYPE"
     url="-u-a-parser/index"
     description=""
-    codeBlocks={[{ code: 'external class UAParser(userAgent: String)' }]}
+    codeBlocks={[{code: "external class UAParser(userAgent: String)"}]}
   />
   <DocumentationItemComponent
     name="ZPlatformInfo"
@@ -45,11 +36,7 @@ import {
     groupType="TYPE"
     url="-z-platform-info/index"
     description=""
-    codeBlocks={[
-      {
-        code: '@Serializable data class ZPlatformInfo(val name: ZPlatformName, val version: String)',
-      },
-    ]}
+    codeBlocks={[{code: "@Serializable data class ZPlatformInfo(val name: ZPlatformName, val version: String)"}]}
   />
   <DocumentationItemComponent
     name="ZPlatformName"
@@ -57,7 +44,7 @@ import {
     groupType="TYPE"
     url="-z-platform-name/index"
     description=""
-    codeBlocks={[{ code: '@Serializable enum ZPlatformName: Enum<ZPlatformName>' }]}
+    codeBlocks={[{code: "@Serializable enum ZPlatformName: Enum<ZPlatformName>"}]}
   />
   <DocumentationItemComponent
     name="ZStats"
@@ -65,7 +52,7 @@ import {
     groupType="TYPE"
     url="-z-stats/index"
     description=""
-    codeBlocks={[{ code: '@Serializable class ZStats' }]}
+    codeBlocks={[{code: "@Serializable class ZStats"}]}
   />
   <DocumentationItemComponent
     name="getZPlatformInfo"
@@ -73,12 +60,6 @@ import {
     groupType="FUNCTION"
     url="get-z-platform-info"
     description=""
-    codeBlocks={[
-      { code: 'actual fun getZPlatformInfo(): ZPlatformInfo' },
-      { code: 'expect fun getZPlatformInfo(): ZPlatformInfo' },
-      { code: 'actual fun getZPlatformInfo(): ZPlatformInfo' },
-      { code: 'actual fun getZPlatformInfo(): ZPlatformInfo' },
-      { code: 'actual fun getZPlatformInfo(): ZPlatformInfo' },
-    ]}
+    codeBlocks={[{code: "actual fun getZPlatformInfo(): ZPlatformInfo"}, {code: "expect fun getZPlatformInfo(): ZPlatformInfo"}, {code: "actual fun getZPlatformInfo(): ZPlatformInfo"}, {code: "actual fun getZPlatformInfo(): ZPlatformInfo"}, {code: "actual fun getZPlatformInfo(): ZPlatformInfo"}]}
   />
 </CodeClassList>

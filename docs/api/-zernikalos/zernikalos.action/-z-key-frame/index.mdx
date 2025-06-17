@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZKeyFrame'
+slug: "index"
+title: "ZKeyFrame"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZKeyFrame"
   namespace="Zernikalos.zernikalos.action"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZKeyFrame', url: '#zkeyframe' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.action","url":"/docs/api/-zernikalos.zernikalos.action"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZKeyFrame","url":"#zkeyframe"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-key-frame"
     description=""
-    codeBlocks={[{ code: 'constructor(time: Float)' }]}
+    codeBlocks={[{code: "constructor(time: Float)"}]}
   />
   <DocumentationItemComponent
     name="Companion"
@@ -35,7 +28,7 @@ import {
     groupType="NONE"
     url="-companion/index"
     description=""
-    codeBlocks={[{ code: 'object Companion' }]}
+    codeBlocks={[{code: "object Companion"}]}
   />
   <DocumentationItemComponent
     name="pose"
@@ -43,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="pose"
     description=""
-    codeBlocks={[{ code: 'val pose: Map<String, ZBoneFrameTransform>' }]}
+    codeBlocks={[{code: "val pose: Map<String, ZBoneFrameTransform>"}]}
   />
   <DocumentationItemComponent
     name="time"
@@ -51,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="time"
     description=""
-    codeBlocks={[{ code: 'var time: Float' }]}
+    codeBlocks={[{code: "var time: Float"}]}
   />
   <DocumentationItemComponent
     name="getBoneTransform"
@@ -59,7 +52,7 @@ import {
     groupType="FUNCTION"
     url="get-bone-transform"
     description=""
-    codeBlocks={[{ code: 'fun getBoneTransform(boneName: String): ZBoneFrameTransform?' }]}
+    codeBlocks={[{code: "fun getBoneTransform(boneName: String): ZBoneFrameTransform?"}]}
   />
   <DocumentationItemComponent
     name="hasBone"
@@ -67,7 +60,7 @@ import {
     groupType="FUNCTION"
     url="has-bone"
     description=""
-    codeBlocks={[{ code: 'fun hasBone(boneName: String): Boolean' }]}
+    codeBlocks={[{code: "fun hasBone(boneName: String): Boolean"}]}
   />
   <DocumentationItemComponent
     name="setBoneTransform"
@@ -75,8 +68,6 @@ import {
     groupType="FUNCTION"
     url="set-bone-transform"
     description=""
-    codeBlocks={[
-      { code: 'fun setBoneTransform(boneName: String, transform: ZBoneFrameTransform)' },
-    ]}
+    codeBlocks={[{code: "fun setBoneTransform(boneName: String, transform: ZBoneFrameTransform)"}]}
   />
 </CodeClassList>

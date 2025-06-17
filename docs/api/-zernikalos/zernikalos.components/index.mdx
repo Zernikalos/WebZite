@@ -1,30 +1,16 @@
 ---
-slug: 'index'
-title: 'components'
+slug: "index"
+title: "components"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="components"
   namespace="Zernikalos"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
-  ]}
-  typeInfo={[
-    {
-      type: 'actual',
-      keyword: 'package',
-      name: 'zernikalos.components',
-      url: '#zernikalos.components',
-    },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.components","url":"#zernikalos.components"}]}
 />
 
 <CodeClassList>
@@ -33,36 +19,24 @@ import {
     tokenType="class"
     groupType="TYPE"
     url="-z-base-component/index"
-    description="Represents a template for a basic component in Zernikalos. These are used for storing and sharing data"
-    codeBlocks={[
-      {
-        code: 'abstract class ZBaseComponent(internalData: ZComponentData? = null): ZComponent, ZLoggable',
-      },
-    ]}
-  />
-  <DocumentationItemComponent
-    name="ZBaseComponentRender"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-base-component-render/index"
-    description="RENDERER SECTION"
-    codeBlocks={[{ code: 'abstract class ZBaseComponentRender: ZLoggable' }]}
+    description="Represents the base class for components in the Zernikalos Engine."
+    codeBlocks={[{code: "abstract class ZBaseComponent: ZComponent, ZLoggable"}]}
   />
   <DocumentationItemComponent
     name="ZBindeable"
     tokenType="interface"
     groupType="TYPE"
     url="-z-bindeable/index"
-    description=""
-    codeBlocks={[{ code: 'interface ZBindeable' }]}
+    description="Represents a bindable resource or component in the Zernikalos framework. Classes implementing this interface indicate that they require binding prior to usage and unbinding after usage, typically for rendering or resource management purposes."
+    codeBlocks={[{code: "interface ZBindeable"}]}
   />
   <DocumentationItemComponent
     name="ZComponent"
     tokenType="interface"
     groupType="TYPE"
     url="-z-component/index"
-    description="Represents a component in Zernikalos."
-    codeBlocks={[{ code: 'interface ZComponent: ZRef' }]}
+    description="Represents a component in the Zernikalos Engine that provides basic initialization and renderability functionalities. This interface is used as a foundation for defining components that interact with a ZRenderingContext."
+    codeBlocks={[{code: "interface ZComponent: ZRef"}]}
   />
   <DocumentationItemComponent
     name="ZComponentData"
@@ -70,19 +44,15 @@ import {
     groupType="TYPE"
     url="-z-component-data/index"
     description="Represents an abstract base class for data objects associated with components in the Zernikalos Engine."
-    codeBlocks={[{ code: 'abstract class ZComponentData: ZLoggable, ZRef' }]}
+    codeBlocks={[{code: "abstract class ZComponentData: ZLoggable, ZRef"}]}
   />
   <DocumentationItemComponent
-    name="ZComponentRender"
+    name="ZComponentRenderer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-component-render/index"
-    description=""
-    codeBlocks={[
-      {
-        code: 'abstract class ZComponentRender<D: ZComponentData>(ctx: ZRenderingContext, data: D): ZBaseComponentRender',
-      },
-    ]}
+    url="-z-component-renderer/index"
+    description="Abstract base class responsible for rendering components in the Zernikalos engine. Serves as the foundation for implementing render-specific logic for components that require rendering capabilities."
+    codeBlocks={[{code: "abstract class ZComponentRenderer: ZLoggable"}]}
   />
   <DocumentationItemComponent
     name="ZComponentSerializer"
@@ -90,19 +60,7 @@ import {
     groupType="TYPE"
     url="-z-component-serializer/index"
     description="SERIALIZATION SECTION"
-    codeBlocks={[
-      { code: 'abstract class ZComponentSerializer<T: ZComponent, D: Any>: KSerializer<T>' },
-    ]}
-  />
-  <DocumentationItemComponent
-    name="ZLightComponent"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-light-component/index"
-    description=""
-    codeBlocks={[
-      { code: 'abstract class ZLightComponent<R: ZBaseComponentRender>: ZBaseComponent' },
-    ]}
+    codeBlocks={[{code: "abstract class ZComponentSerializer<T: ZComponent, D: Any>: KSerializer<T>"}]}
   />
   <DocumentationItemComponent
     name="ZMainComponentType"
@@ -110,15 +68,15 @@ import {
     groupType="TYPE"
     url="-z-main-component-type/index"
     description=""
-    codeBlocks={[{ code: 'enum ZMainComponentType: Enum<ZMainComponentType>' }]}
+    codeBlocks={[{code: "enum ZMainComponentType: Enum<ZMainComponentType>"}]}
   />
   <DocumentationItemComponent
     name="ZRef"
     tokenType="interface"
     groupType="TYPE"
     url="-z-ref/index"
-    description=""
-    codeBlocks={[{ code: 'interface ZRef' }]}
+    description="Represents a reference entity within the Zernikalos Engine."
+    codeBlocks={[{code: "interface ZRef"}]}
   />
   <DocumentationItemComponent
     name="ZRefComponentSerializer"
@@ -126,11 +84,7 @@ import {
     groupType="TYPE"
     url="-z-ref-component-serializer/index"
     description=""
-    codeBlocks={[
-      {
-        code: 'abstract class ZRefComponentSerializer<T: ZComponent, D: ZComponentData, K: ZRefComponentWrapper<D>>(loaderContext: ZLoaderContext): KSerializer<T>',
-      },
-    ]}
+    codeBlocks={[{code: "abstract class ZRefComponentSerializer<T: ZComponent, D: ZComponentData, K: ZRefComponentWrapper<D>>(loaderContext: ZLoaderContext): KSerializer<T>"}]}
   />
   <DocumentationItemComponent
     name="ZRefComponentWrapper"
@@ -138,27 +92,23 @@ import {
     groupType="TYPE"
     url="-z-ref-component-wrapper/index"
     description=""
-    codeBlocks={[{ code: 'interface ZRefComponentWrapper<D: ZRef>' }]}
+    codeBlocks={[{code: "interface ZRefComponentWrapper<D: ZRef>"}]}
   />
   <DocumentationItemComponent
     name="ZRenderizable"
     tokenType="interface"
     groupType="TYPE"
     url="-z-renderizable/index"
-    description=""
-    codeBlocks={[{ code: 'interface ZRenderizable' }]}
+    description="Defines a contract for objects that can be rendered on the screen using a rendering system. Implementing classes should provide the logic for drawing their visual representation."
+    codeBlocks={[{code: "interface ZRenderizable"}]}
   />
   <DocumentationItemComponent
     name="ZRenderizableComponent"
     tokenType="class"
     groupType="TYPE"
     url="-z-renderizable-component/index"
-    description=""
-    codeBlocks={[
-      {
-        code: 'abstract class ZRenderizableComponent<D: ZComponentData, R: ZBaseComponentRender>(data: D): ZBaseComponent',
-      },
-    ]}
+    description="Represents an abstract component in the Zernikalos Engine that is renderizable, meaning it can produce a renderer to handle the rendering logic."
+    codeBlocks={[{code: "abstract class ZRenderizableComponent<R: ZComponentRenderer>: ZBaseComponent"}]}
   />
   <DocumentationItemComponent
     name="ZResizable"
@@ -166,7 +116,7 @@ import {
     groupType="TYPE"
     url="-z-resizable/index"
     description="An interface for objects that will listen to changes on the viewport dimensions."
-    codeBlocks={[{ code: 'interface ZResizable' }]}
+    codeBlocks={[{code: "interface ZResizable"}]}
   />
   <DocumentationItemComponent
     name="ZSerializableComponent"
@@ -174,9 +124,7 @@ import {
     groupType="TYPE"
     url="-z-serializable-component/index"
     description=""
-    codeBlocks={[
-      { code: 'abstract class ZSerializableComponent<D: ZComponentData>(data: D): ZBaseComponent' },
-    ]}
+    codeBlocks={[{code: "abstract class ZSerializableComponent<D: ZComponentData>(data: D): ZBaseComponent"}]}
   />
   <DocumentationItemComponent
     name="ZViewport"
@@ -184,11 +132,7 @@ import {
     groupType="TYPE"
     url="-z-viewport/index"
     description="Represents a viewport box for rendering objects in Zernikalos."
-    codeBlocks={[
-      {
-        code: '@Serializable(with = ZViewportSerializer: : class)class ZViewport: ZRenderizableComponent<ZViewportData, ZViewportRenderer>, ZRenderizable, ZResizable',
-      },
-    ]}
+    codeBlocks={[{code: "@Serializable(with = ZViewportSerializer: : class)class ZViewport: ZRenderizableComponent<ZViewportRenderer>, ZRenderizable, ZResizable"}]}
   />
   <DocumentationItemComponent
     name="ZViewportData"
@@ -196,11 +140,7 @@ import {
     groupType="TYPE"
     url="-z-viewport-data/index"
     description=""
-    codeBlocks={[
-      {
-        code: '@Serializable data class ZViewportData(var clearColor: ZColor = ZColor(.2f, .2f, .2f, 1.0f)): ZComponentData',
-      },
-    ]}
+    codeBlocks={[{code: "@Serializable data class ZViewportData(var clearColor: ZColor = ZColor(.2f, .2f, .2f, 1.0f)): ZComponentData"}]}
   />
   <DocumentationItemComponent
     name="ZViewportRenderer"
@@ -208,20 +148,7 @@ import {
     groupType="TYPE"
     url="-z-viewport-renderer/index"
     description=""
-    codeBlocks={[
-      {
-        code: 'expect class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData): ZComponentRender<ZViewportData>',
-      },
-      {
-        code: 'actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData): ZComponentRender<ZViewportData>',
-      },
-      {
-        code: 'actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData): ZComponentRender<ZViewportData>',
-      },
-      {
-        code: 'actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData): ZComponentRender<ZViewportData>',
-      },
-    ]}
+    codeBlocks={[{code: "expect class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData): ZComponentRenderer"}, {code: "actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData): ZComponentRenderer"}, {code: "actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData): ZComponentRenderer"}]}
   />
   <DocumentationItemComponent
     name="ZViewportSerializer"
@@ -229,8 +156,6 @@ import {
     groupType="TYPE"
     url="-z-viewport-serializer/index"
     description=""
-    codeBlocks={[
-      { code: 'class ZViewportSerializer: ZComponentSerializer<ZViewport, ZViewportData>' },
-    ]}
+    codeBlocks={[{code: "class ZViewportSerializer: ZComponentSerializer<ZViewport, ZViewportData>"}]}
   />
 </CodeClassList>

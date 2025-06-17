@@ -6,7 +6,7 @@
 import * as cheerio from 'cheerio';
 import { extractCleanText } from './base-extractors';
 
-import { ClassPage, MemberPage, PackagePage, DocumentationPage } from './DocumentationPage';
+import { ClassPage, MemberPage, PackagePage, DocumentationPage, LibraryPage } from './DocumentationPage';
 import { DocumentationItem } from './DocumentationItem';
 import { PageType } from './DocumentationPage';
 
@@ -40,6 +40,11 @@ export function extractData($: cheerio.CheerioAPI, content: string): Documentati
     classExtractor.parse($);
     return classExtractor;
   }
-  
+
+  if (DocumentationPage.isLibraryPage($)) {
+    const libraryExtractor = new LibraryPage($);
+    libraryExtractor.parse($);
+    return libraryExtractor;
+  }
 }
 

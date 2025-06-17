@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZDataType'
+slug: "index"
+title: "ZDataType"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZDataType"
   namespace="Zernikalos.zernikalos"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos', url: '/docs/api/-zernikalos.zernikalos' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZDataType', url: '#zdatatype' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos","url":"/docs/api/-zernikalos.zernikalos"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZDataType","url":"#zdatatype"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-data-type"
     description=""
-    codeBlocks={[{ code: 'constructor(type: ZBaseType, format: ZFormatType)' }]}
+    codeBlocks={[{code: "constructor(type: ZBaseType, format: ZFormatType)"}]}
   />
   <DocumentationItemComponent
     name="byteSize"
@@ -35,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="byte-size"
     description="Represents the size of the data type in bytes."
-    codeBlocks={[{ code: 'val byteSize: Int' }]}
+    codeBlocks={[{code: "val byteSize: Int"}]}
   />
   <DocumentationItemComponent
     name="format"
@@ -43,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="format"
     description=""
-    codeBlocks={[{ code: 'val format: ZFormatType' }]}
+    codeBlocks={[{code: "val format: ZFormatType"}]}
   />
   <DocumentationItemComponent
     name="size"
@@ -51,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="size"
     description="Represents the size of the data type."
-    codeBlocks={[{ code: 'val size: Int' }]}
+    codeBlocks={[{code: "val size: Int"}]}
   />
   <DocumentationItemComponent
     name="type"
@@ -59,6 +52,6 @@ import {
     groupType="PROPERTY"
     url="type"
     description=""
-    codeBlocks={[{ code: 'val type: ZBaseType' }]}
+    codeBlocks={[{code: "val type: ZBaseType"}]}
   />
 </CodeClassList>

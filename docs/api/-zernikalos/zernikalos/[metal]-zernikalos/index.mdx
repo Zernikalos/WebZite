@@ -1,25 +1,16 @@
 ---
-slug: 'index'
-title: '[metal]Zernikalos'
+slug: "index"
+title: "[metal]Zernikalos"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="[metal]Zernikalos"
   namespace="Zernikalos.zernikalos"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos', url: '/docs/api/-zernikalos.zernikalos' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: '[metal]Zernikalos', url: '#[metal]zernikalos' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos","url":"/docs/api/-zernikalos.zernikalos"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"[metal]Zernikalos","url":"#[metal]zernikalos"}]}
 />
 
 <CodeClassList>
@@ -29,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-zernikalos"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="context"
@@ -37,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="../-zernikalos-base/context"
     description="Represents the primary context of the Zernikalos engine during its lifecycle."
-    codeBlocks={[{ code: 'lateinit var context: ZContext' }]}
+    codeBlocks={[{code: "lateinit var context: ZContext"}]}
   />
   <DocumentationItemComponent
     name="settings"
@@ -45,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="../-zernikalos-base/settings"
     description="Represents the settings for the Zernikalos engine. It provides centralized access to control logging levels and other related settings."
-    codeBlocks={[{ code: 'val settings: ZSettings' }]}
+    codeBlocks={[{code: "val settings: ZSettings"}]}
   />
   <DocumentationItemComponent
     name="stats"
@@ -53,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="../-zernikalos-base/stats"
     description="Provides platform-specific information and version details for the Zernikalos engine."
-    codeBlocks={[{ code: 'val stats: ZStats' }]}
+    codeBlocks={[{code: "val stats: ZStats"}]}
   />
   <DocumentationItemComponent
     name="initialize"
@@ -61,7 +52,7 @@ import {
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[{ code: 'fun initialize(view: MTKView, stateHandler: ZSceneStateHandler)' }]}
+    codeBlocks={[{code: "fun initialize(view: MTKView, stateHandler: ZSceneStateHandler)"}]}
   />
   <DocumentationItemComponent
     name="initializeWithDefaults"
@@ -69,8 +60,6 @@ import {
     groupType="FUNCTION"
     url="initialize-with-defaults"
     description=""
-    codeBlocks={[
-      { code: 'fun initializeWithDefaults(view: ZSurfaceView, stateHandler: ZSceneStateHandler)' },
-    ]}
+    codeBlocks={[{code: "fun initializeWithDefaults(view: ZSurfaceView, stateHandler: ZSceneStateHandler)"}]}
   />
 </CodeClassList>

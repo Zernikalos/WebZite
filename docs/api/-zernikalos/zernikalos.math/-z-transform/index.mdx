@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZTransform'
+slug: "index"
+title: "ZTransform"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZTransform"
   namespace="Zernikalos.zernikalos.math"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.math', url: '/docs/api/-zernikalos.zernikalos.math' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZTransform', url: '#ztransform' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math","url":"/docs/api/-zernikalos.zernikalos.math"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZTransform","url":"#ztransform"}]}
 />
 
 <CodeClassList>
@@ -27,10 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-transform"
     description=""
-    codeBlocks={[
-      { code: 'constructor()' },
-      { code: 'constructor(position: ZVector3, rotation: ZQuaternion, scale: ZVector3)' },
-    ]}
+    codeBlocks={[{code: "constructor()"}, {code: "constructor(position: ZVector3, rotation: ZQuaternion, scale: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="forward"
@@ -38,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="forward"
     description=""
-    codeBlocks={[{ code: 'var forward: ZVector3' }]}
+    codeBlocks={[{code: "var forward: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="matrix"
@@ -46,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="matrix"
     description="Represents the transformation matrix that defines local transformation of an object in a 3D space."
-    codeBlocks={[{ code: 'val matrix: ZMatrix4' }]}
+    codeBlocks={[{code: "val matrix: ZMatrix4"}]}
   />
   <DocumentationItemComponent
     name="pitch"
@@ -54,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="pitch"
     description=""
-    codeBlocks={[{ code: 'val pitch: Float' }]}
+    codeBlocks={[{code: "val pitch: Float"}]}
   />
   <DocumentationItemComponent
     name="position"
@@ -62,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="position"
     description="Represents the position of the object in a 3D space."
-    codeBlocks={[{ code: 'var position: ZVector3' }]}
+    codeBlocks={[{code: "var position: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="right"
@@ -70,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="right"
     description=""
-    codeBlocks={[{ code: 'var right: ZVector3' }]}
+    codeBlocks={[{code: "var right: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="roll"
@@ -78,7 +68,7 @@ import {
     groupType="PROPERTY"
     url="roll"
     description=""
-    codeBlocks={[{ code: 'val roll: Float' }]}
+    codeBlocks={[{code: "val roll: Float"}]}
   />
   <DocumentationItemComponent
     name="rotation"
@@ -86,7 +76,7 @@ import {
     groupType="PROPERTY"
     url="rotation"
     description="Represents the rotation of the object in a 3D space."
-    codeBlocks={[{ code: 'var rotation: ZQuaternion' }]}
+    codeBlocks={[{code: "var rotation: ZQuaternion"}]}
   />
   <DocumentationItemComponent
     name="rotationEuler"
@@ -94,7 +84,7 @@ import {
     groupType="PROPERTY"
     url="rotation-euler"
     description="Represents the rotation of the object using Euler angles in radians. The Euler angles define the rotation about the three principal axes (roll, pitch, yaw)."
-    codeBlocks={[{ code: 'var rotationEuler: ZEuler' }]}
+    codeBlocks={[{code: "var rotationEuler: ZEuler"}]}
   />
   <DocumentationItemComponent
     name="scale"
@@ -102,7 +92,7 @@ import {
     groupType="PROPERTY"
     url="scale"
     description="Represents the scale of the object in a 3D space."
-    codeBlocks={[{ code: 'var scale: ZVector3' }]}
+    codeBlocks={[{code: "var scale: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="up"
@@ -110,7 +100,7 @@ import {
     groupType="PROPERTY"
     url="up"
     description=""
-    codeBlocks={[{ code: 'var up: ZVector3' }]}
+    codeBlocks={[{code: "var up: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="yaw"
@@ -118,7 +108,7 @@ import {
     groupType="PROPERTY"
     url="yaw"
     description=""
-    codeBlocks={[{ code: 'val yaw: Float' }]}
+    codeBlocks={[{code: "val yaw: Float"}]}
   />
   <DocumentationItemComponent
     name="lookAt"
@@ -126,10 +116,7 @@ import {
     groupType="FUNCTION"
     url="look-at"
     description=""
-    codeBlocks={[
-      { code: 'fun lookAt(look: ZVector3)' },
-      { code: 'fun lookAt(look: ZVector3, up: ZVector3)' },
-    ]}
+    codeBlocks={[{code: "fun lookAt(look: ZVector3)"}, {code: "fun lookAt(look: ZVector3, up: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="pan"
@@ -137,10 +124,7 @@ import {
     groupType="FUNCTION"
     url="pan"
     description="Adjusts the position of the object by panning it to the right and up directions."
-    codeBlocks={[
-      { code: 'fun pan(offset: ZVector2)' },
-      { code: 'fun pan(offsetRight: Float, offsetUp: Float)' },
-    ]}
+    codeBlocks={[{code: "fun pan(offset: ZVector2)"}, {code: "fun pan(offsetRight: Float, offsetUp: Float)"}]}
   />
   <DocumentationItemComponent
     name="rotate"
@@ -148,11 +132,7 @@ import {
     groupType="FUNCTION"
     url="rotate"
     description=""
-    codeBlocks={[
-      { code: 'fun rotate(q: ZQuaternion)' },
-      { code: 'fun rotate(angle: Float, axis: ZVector3)' },
-      { code: 'fun rotate(angle: Float, x: Float, y: Float, z: Float)' },
-    ]}
+    codeBlocks={[{code: "fun rotate(q: ZQuaternion)"}, {code: "fun rotate(angle: Float, axis: ZVector3)"}, {code: "fun rotate(angle: Float, x: Float, y: Float, z: Float)"}]}
   />
   <DocumentationItemComponent
     name="rotateAround"
@@ -160,12 +140,7 @@ import {
     groupType="FUNCTION"
     url="rotate-around"
     description=""
-    codeBlocks={[
-      { code: 'fun rotateAround(angle: Float, point: ZVector3, axis: ZVector3)' },
-      {
-        code: 'fun rotateAround(angle: Float, point: ZVector3, axis: ZVector3, through: ZVector3)',
-      },
-    ]}
+    codeBlocks={[{code: "fun rotateAround(angle: Float, point: ZVector3, axis: ZVector3)"}, {code: "fun rotateAround(angle: Float, point: ZVector3, axis: ZVector3, through: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="scale"
@@ -173,11 +148,7 @@ import {
     groupType="FUNCTION"
     url="scale"
     description=""
-    codeBlocks={[
-      { code: 'fun scale(s: Float)' },
-      { code: 'fun scale(v: ZVector3)' },
-      { code: 'fun scale(sx: Float, sy: Float, sz: Float)' },
-    ]}
+    codeBlocks={[{code: "fun scale(s: Float)"}, {code: "fun scale(v: ZVector3)"}, {code: "fun scale(sx: Float, sy: Float, sz: Float)"}]}
   />
   <DocumentationItemComponent
     name="setPosition"
@@ -185,7 +156,7 @@ import {
     groupType="FUNCTION"
     url="set-position"
     description=""
-    codeBlocks={[{ code: 'fun setPosition(x: Float, y: Float, z: Float)' }]}
+    codeBlocks={[{code: "fun setPosition(x: Float, y: Float, z: Float)"}]}
   />
   <DocumentationItemComponent
     name="setRotation"
@@ -193,10 +164,7 @@ import {
     groupType="FUNCTION"
     url="set-rotation"
     description=""
-    codeBlocks={[
-      { code: 'fun setRotation(angle: Float, axis: ZVector3)' },
-      { code: 'fun setRotation(angle: Float, x: Float, y: Float, z: Float)' },
-    ]}
+    codeBlocks={[{code: "fun setRotation(angle: Float, axis: ZVector3)"}, {code: "fun setRotation(angle: Float, x: Float, y: Float, z: Float)"}]}
   />
   <DocumentationItemComponent
     name="translate"
@@ -204,9 +172,6 @@ import {
     groupType="FUNCTION"
     url="translate"
     description=""
-    codeBlocks={[
-      { code: 'fun translate(v: ZVector3)' },
-      { code: 'fun translate(x: Float, y: Float, z: Float)' },
-    ]}
+    codeBlocks={[{code: "fun translate(v: ZVector3)"}, {code: "fun translate(x: Float, y: Float, z: Float)"}]}
   />
 </CodeClassList>

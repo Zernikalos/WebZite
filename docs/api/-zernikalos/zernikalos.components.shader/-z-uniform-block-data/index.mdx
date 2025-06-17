@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZUniformBlockData'
+slug: "index"
+title: "ZUniformBlockData"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZUniformBlockData"
   namespace="Zernikalos.zernikalos.components.shader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.shader',
-      url: '/docs/api/-zernikalos.zernikalos.components.shader',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZUniformBlockData', url: '#zuniformblockdata' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.shader","url":"/docs/api/-zernikalos.zernikalos.components.shader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZUniformBlockData","url":"#zuniformblockdata"}]}
 />
 
 <CodeClassList>
@@ -32,9 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-uniform-block-data"
     description=""
-    codeBlocks={[
-      { code: 'constructor(uniformBlockName: String, uniforms: HashMap<String, ZBaseUniform>)' },
-    ]}
+    codeBlocks={[{code: "constructor(uniformBlockName: String = '', uniforms: LinkedHashMap<String, ZUniformData> = LinkedHashMap())"}]}
   />
   <DocumentationItemComponent
     name="count"
@@ -42,15 +28,15 @@ import {
     groupType="PROPERTY"
     url="count"
     description=""
-    codeBlocks={[{ code: 'val count: Int' }]}
+    codeBlocks={[{code: "val count: Int"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "@Transient open override val refId: String"}]}
   />
   <DocumentationItemComponent
     name="uniformBlockName"
@@ -58,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="uniform-block-name"
     description=""
-    codeBlocks={[{ code: 'val uniformBlockName: String' }]}
+    codeBlocks={[{code: "val uniformBlockName: String"}]}
   />
   <DocumentationItemComponent
     name="uniforms"
@@ -66,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="uniforms"
     description=""
-    codeBlocks={[{ code: 'val uniforms: HashMap<String, ZBaseUniform>' }]}
+    codeBlocks={[{code: "val uniforms: LinkedHashMap<String, ZUniformData>"}]}
   />
   <DocumentationItemComponent
     name="value"
@@ -74,6 +60,6 @@ import {
     groupType="PROPERTY"
     url="value"
     description=""
-    codeBlocks={[{ code: 'var value: ZAlgebraObject' }]}
+    codeBlocks={[{code: "var value: ZAlgebraObject"}]}
   />
 </CodeClassList>

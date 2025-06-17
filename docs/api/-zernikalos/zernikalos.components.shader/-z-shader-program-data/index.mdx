@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZShaderProgramData'
+slug: "index"
+title: "ZShaderProgramData"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZShaderProgramData"
   namespace="Zernikalos.zernikalos.components.shader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.shader',
-      url: '/docs/api/-zernikalos.zernikalos.components.shader',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZShaderProgramData', url: '#zshaderprogramdata' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.shader","url":"/docs/api/-zernikalos.zernikalos.components.shader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZShaderProgramData","url":"#zshaderprogramdata"}]}
 />
 
 <CodeClassList>
@@ -32,11 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-shader-program-data"
     description=""
-    codeBlocks={[
-      {
-        code: 'constructor(vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), shaderSource: ZShaderSource = ZShaderSource(), attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), uniforms: ZUniformCollection = ZUniformCollection())',
-      },
-    ]}
+    codeBlocks={[{code: "constructor(vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), shaderSource: ZShaderSource = ZShaderSource(), attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), uniforms: ZUniformCollection = ZUniformCollection())"}]}
   />
   <DocumentationItemComponent
     name="attributes"
@@ -44,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="attributes"
     description=""
-    codeBlocks={[{ code: 'val attributes: LinkedHashMap<String, ZAttribute>' }]}
+    codeBlocks={[{code: "val attributes: LinkedHashMap<String, ZAttribute>"}]}
   />
   <DocumentationItemComponent
     name="fragmentShader"
@@ -52,15 +36,15 @@ import {
     groupType="PROPERTY"
     url="fragment-shader"
     description=""
-    codeBlocks={[{ code: '@Transient var fragmentShader: ZShader' }]}
+    codeBlocks={[{code: "var fragmentShader: ZShader"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "@Transient open override val refId: String"}]}
   />
   <DocumentationItemComponent
     name="shaderSource"
@@ -68,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="shader-source"
     description=""
-    codeBlocks={[{ code: '@Transient var shaderSource: ZShaderSource' }]}
+    codeBlocks={[{code: "var shaderSource: ZShaderSource"}]}
   />
   <DocumentationItemComponent
     name="uniforms"
@@ -76,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="uniforms"
     description=""
-    codeBlocks={[{ code: '@Transient var uniforms: ZUniformCollection' }]}
+    codeBlocks={[{code: "var uniforms: ZUniformCollection"}]}
   />
   <DocumentationItemComponent
     name="vertexShader"
@@ -84,6 +68,6 @@ import {
     groupType="PROPERTY"
     url="vertex-shader"
     description=""
-    codeBlocks={[{ code: '@Transient var vertexShader: ZShader' }]}
+    codeBlocks={[{code: "var vertexShader: ZShader"}]}
   />
 </CodeClassList>

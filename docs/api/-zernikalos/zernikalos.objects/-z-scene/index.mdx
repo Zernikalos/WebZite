@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZScene'
+slug: "index"
+title: "ZScene"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZScene"
   namespace="Zernikalos.zernikalos.objects"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.objects', url: '/docs/api/-zernikalos.zernikalos.objects' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZScene', url: '#zscene' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.objects","url":"/docs/api/-zernikalos.zernikalos.objects"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZScene","url":"#zscene"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-scene"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="children"
@@ -35,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="../-z-object/children"
     description="An array of ZObjects that are children of this object, allowing for a hierarchical structure."
-    codeBlocks={[{ code: '@Transient open override var children: Array<ZObject>' }]}
+    codeBlocks={[{code: "@Transient open override var children: Array<ZObject>"}]}
   />
   <DocumentationItemComponent
     name="hasParent"
@@ -43,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="../../zernikalos.search/-z-tree-node/has-parent"
     description=""
-    codeBlocks={[{ code: 'open val hasParent: Boolean' }]}
+    codeBlocks={[{code: "open val hasParent: Boolean"}]}
   />
   <DocumentationItemComponent
     name="isInitialized"
@@ -51,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="../-z-object/is-initialized"
     description="A boolean indicating whether the object has been initialized. This is set to true after the first call to initialize."
-    codeBlocks={[{ code: 'val isInitialized: Boolean' }]}
+    codeBlocks={[{code: "val isInitialized: Boolean"}]}
   />
   <DocumentationItemComponent
     name="isRoot"
@@ -59,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="../../zernikalos.search/-z-tree-node/is-root"
     description=""
-    codeBlocks={[{ code: 'open val isRoot: Boolean' }]}
+    codeBlocks={[{code: "open val isRoot: Boolean"}]}
   />
   <DocumentationItemComponent
     name="name"
@@ -67,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="../-z-object/name"
     description="The name of the object. If not explicitly set, a default name is generated based on the object's type and ID."
-    codeBlocks={[{ code: 'var name: String' }]}
+    codeBlocks={[{code: "var name: String"}]}
   />
   <DocumentationItemComponent
     name="parent"
@@ -75,15 +68,15 @@ import {
     groupType="PROPERTY"
     url="../-z-object/parent"
     description="A reference to the parent ZObject, if any. Null if the object has no parent, making it a root object."
-    codeBlocks={[{ code: 'open override val parent: ZObject?' }]}
+    codeBlocks={[{code: "open override val parent: ZObject?"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../-z-object/ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: 'open override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "open override val refId: String"}]}
   />
   <DocumentationItemComponent
     name="transform"
@@ -91,7 +84,7 @@ import {
     groupType="PROPERTY"
     url="../-z-object/transform"
     description="An instance of ZTransform representing the object's position, rotation, and scale in the 3D space."
-    codeBlocks={[{ code: 'var transform: ZTransform' }]}
+    codeBlocks={[{code: "var transform: ZTransform"}]}
   />
   <DocumentationItemComponent
     name="type"
@@ -99,7 +92,7 @@ import {
     groupType="PROPERTY"
     url="type"
     description=""
-    codeBlocks={[{ code: 'open override val type: ZObjectType' }]}
+    codeBlocks={[{code: "open override val type: ZObjectType"}]}
   />
   <DocumentationItemComponent
     name="viewport"
@@ -107,7 +100,7 @@ import {
     groupType="PROPERTY"
     url="viewport"
     description=""
-    codeBlocks={[{ code: '@Transient var viewport: ZViewport' }]}
+    codeBlocks={[{code: "@Transient var viewport: ZViewport"}]}
   />
   <DocumentationItemComponent
     name="addChild"
@@ -115,7 +108,7 @@ import {
     groupType="FUNCTION"
     url="../-z-object/add-child"
     description="Adds a child object to this object, establishing a parent-child relationship. The child object will be rendered relative to this object's transform."
-    codeBlocks={[{ code: 'fun addChild(child: ZObject)' }]}
+    codeBlocks={[{code: "fun addChild(child: ZObject)"}]}
   />
   <DocumentationItemComponent
     name="initialize"
@@ -123,18 +116,15 @@ import {
     groupType="FUNCTION"
     url="../-z-object/initialize"
     description="Initializes the object and its children, preparing them for rendering. This function should be called before the object is rendered for the first time. It sets the object's state to initialized and recursively initializes all child objects."
-    codeBlocks={[{ code: 'fun initialize(ctx: ZContext)' }]}
+    codeBlocks={[{code: "fun initialize(ctx: ZContext)"}]}
   />
   <DocumentationItemComponent
     name="lookAt"
     tokenType="fun"
     groupType="FUNCTION"
     url="../-z-object/look-at"
-    description='Adjusts the object&apos;s orientation so that it "looks at" a specified point in space.Adjusts the object&apos;s orientation so that it "looks at" a specified point in space, with a specified up direction. This changes the object&apos;s rotation to face the point, while aligning its up direction with the specified up vector.'
-    codeBlocks={[
-      { code: 'fun lookAt(look: ZVector3)' },
-      { code: 'fun lookAt(look: ZVector3, up: ZVector3)' },
-    ]}
+    description="Adjusts the object's orientation so that it &quot;looks at&quot; a specified point in space.Adjusts the object's orientation so that it &quot;looks at&quot; a specified point in space, with a specified up direction. This changes the object's rotation to face the point, while aligning its up direction with the specified up vector."
+    codeBlocks={[{code: "fun lookAt(look: ZVector3)"}, {code: "fun lookAt(look: ZVector3, up: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="onViewportResize"
@@ -142,7 +132,7 @@ import {
     groupType="FUNCTION"
     url="../-z-object/on-viewport-resize"
     description="Event handler for the viewport resizing. This method should not be called by the user"
-    codeBlocks={[{ code: 'fun onViewportResize(ctx: ZContext, width: Int, height: Int)' }]}
+    codeBlocks={[{code: "fun onViewportResize(ctx: ZContext, width: Int, height: Int)"}]}
   />
   <DocumentationItemComponent
     name="render"
@@ -150,7 +140,7 @@ import {
     groupType="FUNCTION"
     url="../-z-object/render"
     description="Renders the object and its children to the screen. This function is responsible for drawing the object on the screen. It should be called every frame to update the object's appearance based on its current state and transformations."
-    codeBlocks={[{ code: 'fun render(ctx: ZContext)' }]}
+    codeBlocks={[{code: "fun render(ctx: ZContext)"}]}
   />
   <DocumentationItemComponent
     name="translate"
@@ -158,6 +148,6 @@ import {
     groupType="FUNCTION"
     url="../-z-object/translate"
     description="Moves the object by a specified amount along each axis. This changes the object's position based on the given x, y, and z offsets."
-    codeBlocks={[{ code: 'fun translate(x: Float, y: Float, z: Float)' }]}
+    codeBlocks={[{code: "fun translate(x: Float, y: Float, z: Float)"}]}
   />
 </CodeClassList>

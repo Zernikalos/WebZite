@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'ZMeshRenderer'
+slug: "index"
+title: "ZMeshRenderer"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZMeshRenderer"
   namespace="Zernikalos.zernikalos.components.mesh"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.mesh',
-      url: '/docs/api/-zernikalos.zernikalos.components.mesh',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZMeshRenderer', url: '#zmeshrenderer' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.mesh","url":"/docs/api/-zernikalos.zernikalos.components.mesh"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZMeshRenderer","url":"#zmeshrenderer"}]}
 />
 
 <CodeClassList>
@@ -30,10 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-mesh-renderer"
     description=""
-    codeBlocks={[
-      { code: 'actual constructor(ctx: ZRenderingContext, data: ZMeshData)' },
-      { code: 'actual constructor(ctx: ZRenderingContext, data: ZMeshData)' },
-    ]}
+    codeBlocks={[{code: "actual constructor(ctx: ZRenderingContext, data: ZMeshData)"}]}
   />
   <DocumentationItemComponent
     name="vao"
@@ -41,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="vao"
     description=""
-    codeBlocks={[{ code: '@Transient val vao: ZVertexArray' }]}
+    codeBlocks={[{code: "@Transient val vao: ZVertexArray"}]}
   />
   <DocumentationItemComponent
     name="vertexDescriptor"
@@ -49,19 +36,15 @@ import {
     groupType="PROPERTY"
     url="vertex-descriptor"
     description=""
-    codeBlocks={[{ code: 'lateinit var vertexDescriptor: MTLVertexDescriptor' }]}
+    codeBlocks={[{code: "lateinit var vertexDescriptor: MTLVertexDescriptor"}]}
   />
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
-    url="../../zernikalos.components/-z-base-component-render/bind"
+    url="../../zernikalos.components/-z-component-renderer/bind"
     description=""
-    codeBlocks={[
-      { code: 'open override fun bind()' },
-      { code: 'open fun bind()' },
-      { code: 'open fun bind()' },
-    ]}
+    codeBlocks={[{code: "open override fun bind()"}, {code: "open fun bind()"}]}
   />
   <DocumentationItemComponent
     name="initialize"
@@ -69,11 +52,7 @@ import {
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[
-      { code: 'actual open override fun initialize()' },
-      { code: 'actual open override fun initialize()' },
-      { code: 'actual open override fun initialize()' },
-    ]}
+    codeBlocks={[{code: "actual open override fun initialize()"}, {code: "actual open override fun initialize()"}]}
   />
   <DocumentationItemComponent
     name="render"
@@ -81,22 +60,14 @@ import {
     groupType="FUNCTION"
     url="render"
     description=""
-    codeBlocks={[
-      { code: 'actual open override fun render()' },
-      { code: 'actual open override fun render()' },
-      { code: 'actual open override fun render()' },
-    ]}
+    codeBlocks={[{code: "actual open override fun render()"}, {code: "actual open override fun render()"}]}
   />
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
-    url="../../zernikalos.components/-z-base-component-render/unbind"
+    url="../../zernikalos.components/-z-component-renderer/unbind"
     description=""
-    codeBlocks={[
-      { code: 'open fun unbind()' },
-      { code: 'open fun unbind()' },
-      { code: 'open fun unbind()' },
-    ]}
+    codeBlocks={[{code: "open fun unbind()"}, {code: "open fun unbind()"}]}
   />
 </CodeClassList>

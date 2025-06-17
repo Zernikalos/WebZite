@@ -1,28 +1,16 @@
 ---
-slug: 'index'
-title: 'ZUniformCollection'
+slug: "index"
+title: "ZUniformCollection"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZUniformCollection"
   namespace="Zernikalos.zernikalos.components.shader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.shader',
-      url: '/docs/api/-zernikalos.zernikalos.components.shader',
-    },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZUniformCollection', url: '#zuniformcollection' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.shader","url":"/docs/api/-zernikalos.zernikalos.components.shader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZUniformCollection","url":"#zuniformcollection"}]}
 />
 
 <CodeClassList>
@@ -32,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-uniform-collection"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="blocks"
@@ -40,7 +28,15 @@ import {
     groupType="PROPERTY"
     url="blocks"
     description=""
-    codeBlocks={[{ code: 'val blocks: Iterator<ZUniformBlock>' }]}
+    codeBlocks={[{code: "val blocks: Iterator<ZUniformBlock>"}]}
+  />
+  <DocumentationItemComponent
+    name="datas"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="datas"
+    description=""
+    codeBlocks={[{code: "val datas: Iterator<ZUniformData>"}]}
   />
   <DocumentationItemComponent
     name="entries"
@@ -48,11 +44,7 @@ import {
     groupType="PROPERTY"
     url="entries"
     description=""
-    codeBlocks={[
-      {
-        code: 'open override val entries: MutableSet<MutableMap.MutableEntry<String, ZBaseUniform>>',
-      },
-    ]}
+    codeBlocks={[{code: "open override val entries: MutableSet<MutableMap.MutableEntry<String, ZBaseUniform>>"}]}
   />
   <DocumentationItemComponent
     name="keys"
@@ -60,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="keys"
     description=""
-    codeBlocks={[{ code: 'open override val keys: MutableSet<String>' }]}
+    codeBlocks={[{code: "open override val keys: MutableSet<String>"}]}
   />
   <DocumentationItemComponent
     name="singles"
@@ -68,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="singles"
     description=""
-    codeBlocks={[{ code: 'val singles: Iterator<ZUniform>' }]}
+    codeBlocks={[{code: "val singles: Iterator<ZUniform>"}]}
   />
   <DocumentationItemComponent
     name="size"
@@ -76,7 +68,7 @@ import {
     groupType="PROPERTY"
     url="size"
     description=""
-    codeBlocks={[{ code: 'open override val size: Int' }]}
+    codeBlocks={[{code: "open override val size: Int"}]}
   />
   <DocumentationItemComponent
     name="values"
@@ -84,7 +76,7 @@ import {
     groupType="PROPERTY"
     url="values"
     description=""
-    codeBlocks={[{ code: 'open override val values: MutableCollection<ZBaseUniform>' }]}
+    codeBlocks={[{code: "open override val values: MutableCollection<ZBaseUniform>"}]}
   />
   <DocumentationItemComponent
     name="clear"
@@ -92,7 +84,7 @@ import {
     groupType="FUNCTION"
     url="clear"
     description=""
-    codeBlocks={[{ code: 'open override fun clear()' }]}
+    codeBlocks={[{code: "open override fun clear()"}]}
   />
   <DocumentationItemComponent
     name="containsKey"
@@ -100,7 +92,7 @@ import {
     groupType="FUNCTION"
     url="contains-key"
     description=""
-    codeBlocks={[{ code: 'open override fun containsKey(key: String): Boolean' }]}
+    codeBlocks={[{code: "open override fun containsKey(key: String): Boolean"}]}
   />
   <DocumentationItemComponent
     name="containsValue"
@@ -108,7 +100,7 @@ import {
     groupType="FUNCTION"
     url="contains-value"
     description=""
-    codeBlocks={[{ code: 'open override fun containsValue(value: ZBaseUniform): Boolean' }]}
+    codeBlocks={[{code: "open override fun containsValue(value: ZBaseUniform): Boolean"}]}
   />
   <DocumentationItemComponent
     name="get"
@@ -116,7 +108,7 @@ import {
     groupType="FUNCTION"
     url="get"
     description=""
-    codeBlocks={[{ code: 'open operator override fun get(key: String): ZBaseUniform?' }]}
+    codeBlocks={[{code: "open operator override fun get(key: String): ZBaseUniform?"}]}
   />
   <DocumentationItemComponent
     name="isEmpty"
@@ -124,7 +116,7 @@ import {
     groupType="FUNCTION"
     url="is-empty"
     description=""
-    codeBlocks={[{ code: 'open override fun isEmpty(): Boolean' }]}
+    codeBlocks={[{code: "open override fun isEmpty(): Boolean"}]}
   />
   <DocumentationItemComponent
     name="put"
@@ -132,9 +124,7 @@ import {
     groupType="FUNCTION"
     url="put"
     description=""
-    codeBlocks={[
-      { code: 'open override fun put(key: String, value: ZBaseUniform): ZBaseUniform?' },
-    ]}
+    codeBlocks={[{code: "open override fun put(key: String, value: ZBaseUniform): ZBaseUniform?"}]}
   />
   <DocumentationItemComponent
     name="putAll"
@@ -142,7 +132,7 @@ import {
     groupType="FUNCTION"
     url="put-all"
     description=""
-    codeBlocks={[{ code: 'open override fun putAll(from: Map<out String, ZBaseUniform>)' }]}
+    codeBlocks={[{code: "open override fun putAll(from: Map<out String, ZBaseUniform>)"}]}
   />
   <DocumentationItemComponent
     name="remove"
@@ -150,6 +140,6 @@ import {
     groupType="FUNCTION"
     url="remove"
     description=""
-    codeBlocks={[{ code: 'open override fun remove(key: String): ZBaseUniform?' }]}
+    codeBlocks={[{code: "open override fun remove(key: String): ZBaseUniform?"}]}
   />
 </CodeClassList>

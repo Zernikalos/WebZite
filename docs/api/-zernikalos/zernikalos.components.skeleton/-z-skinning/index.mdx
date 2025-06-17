@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'ZSkinning'
+slug: "index"
+title: "ZSkinning"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZSkinning"
   namespace="Zernikalos.zernikalos.components.skeleton"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.skeleton',
-      url: '/docs/api/-zernikalos.zernikalos.components.skeleton',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZSkinning', url: '#zskinning' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.skeleton","url":"/docs/api/-zernikalos.zernikalos.components.skeleton"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZSkinning","url":"#zskinning"}]}
 />
 
 <CodeClassList>
@@ -30,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-skinning"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="boneIds"
@@ -38,15 +28,7 @@ import {
     groupType="PROPERTY"
     url="bone-ids"
     description=""
-    codeBlocks={[{ code: 'val boneIds: Array<String>' }]}
-  />
-  <DocumentationItemComponent
-    name="hasRenderer"
-    tokenType="val"
-    groupType="PROPERTY"
-    url="../../zernikalos.components/-z-base-component/has-renderer"
-    description=""
-    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+    codeBlocks={[{code: "val boneIds: Array<String>"}]}
   />
   <DocumentationItemComponent
     name="isInitialized"
@@ -54,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/is-initialized"
     description="Represents a boolean value indicating whether a component has been initialized."
-    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+    codeBlocks={[{code: "override val isInitialized: Boolean"}]}
   />
   <DocumentationItemComponent
     name="isRenderizable"
@@ -62,15 +44,15 @@ import {
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-serializable-component/is-renderizable"
     description="Represents a boolean value indicating whether a component is renderizable."
-    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = false' }]}
+    codeBlocks={[{code: "open override val isRenderizable: Boolean = false"}]}
   />
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/ref-id"
-    description="Represents the unique reference identifier for a component."
-    codeBlocks={[{ code: 'override val refId: String' }]}
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+    codeBlocks={[{code: "override val refId: String"}]}
   />
   <DocumentationItemComponent
     name="addBoneId"
@@ -78,7 +60,7 @@ import {
     groupType="FUNCTION"
     url="add-bone-id"
     description=""
-    codeBlocks={[{ code: 'fun addBoneId(boneId: String)' }]}
+    codeBlocks={[{code: "fun addBoneId(boneId: String)"}]}
   />
   <DocumentationItemComponent
     name="initialize"
@@ -86,7 +68,7 @@ import {
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-base-component/initialize"
     description="Initializes the ZComponent using the provided ZRenderingContext."
-    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+    codeBlocks={[{code: "open override fun initialize(ctx: ZRenderingContext)"}]}
   />
   <DocumentationItemComponent
     name="removeBoneId"
@@ -94,6 +76,6 @@ import {
     groupType="FUNCTION"
     url="remove-bone-id"
     description=""
-    codeBlocks={[{ code: 'fun removeBoneId(boneId: String)' }]}
+    codeBlocks={[{code: "fun removeBoneId(boneId: String)"}]}
   />
 </CodeClassList>

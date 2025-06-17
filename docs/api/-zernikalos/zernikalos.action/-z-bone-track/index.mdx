@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZBoneTrack'
+slug: "index"
+title: "ZBoneTrack"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZBoneTrack"
   namespace="Zernikalos.zernikalos.action"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZBoneTrack', url: '#zbonetrack' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.action","url":"/docs/api/-zernikalos.zernikalos.action"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZBoneTrack","url":"#zbonetrack"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-bone-track"
     description=""
-    codeBlocks={[{ code: "constructor(boneName: String = '')" }]}
+    codeBlocks={[{code: "constructor(boneName: String = '')"}]}
   />
   <DocumentationItemComponent
     name="boneName"
@@ -35,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="bone-name"
     description=""
-    codeBlocks={[{ code: 'val boneName: String' }]}
+    codeBlocks={[{code: "val boneName: String"}]}
   />
   <DocumentationItemComponent
     name="positionTrack"
@@ -43,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="position-track"
     description=""
-    codeBlocks={[{ code: 'val positionTrack: Array<ZPositionFrame>' }]}
+    codeBlocks={[{code: "val positionTrack: Array<ZPositionFrame>"}]}
   />
   <DocumentationItemComponent
     name="rotationTrack"
@@ -51,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="rotation-track"
     description=""
-    codeBlocks={[{ code: 'val rotationTrack: Array<ZRotationFrame>' }]}
+    codeBlocks={[{code: "val rotationTrack: Array<ZRotationFrame>"}]}
   />
   <DocumentationItemComponent
     name="scaleTrack"
@@ -59,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="scale-track"
     description=""
-    codeBlocks={[{ code: 'val scaleTrack: Array<ZScaleFrame>' }]}
+    codeBlocks={[{code: "val scaleTrack: Array<ZScaleFrame>"}]}
   />
   <DocumentationItemComponent
     name="addPositionFrame"
@@ -67,7 +60,7 @@ import {
     groupType="FUNCTION"
     url="add-position-frame"
     description=""
-    codeBlocks={[{ code: 'fun addPositionFrame(frame: ZPositionFrame)' }]}
+    codeBlocks={[{code: "fun addPositionFrame(frame: ZPositionFrame)"}]}
   />
   <DocumentationItemComponent
     name="addRotationFrame"
@@ -75,7 +68,7 @@ import {
     groupType="FUNCTION"
     url="add-rotation-frame"
     description=""
-    codeBlocks={[{ code: 'fun addRotationFrame(frame: ZRotationFrame)' }]}
+    codeBlocks={[{code: "fun addRotationFrame(frame: ZRotationFrame)"}]}
   />
   <DocumentationItemComponent
     name="addScaleFrame"
@@ -83,6 +76,6 @@ import {
     groupType="FUNCTION"
     url="add-scale-frame"
     description=""
-    codeBlocks={[{ code: 'fun addScaleFrame(frame: ZScaleFrame)' }]}
+    codeBlocks={[{code: "fun addScaleFrame(frame: ZScaleFrame)"}]}
   />
 </CodeClassList>

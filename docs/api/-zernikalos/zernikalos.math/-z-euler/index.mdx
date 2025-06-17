@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZEuler'
+slug: "index"
+title: "ZEuler"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZEuler"
   namespace="Zernikalos.zernikalos.math"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.math', url: '/docs/api/-zernikalos.zernikalos.math' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZEuler', url: '#zeuler' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math","url":"/docs/api/-zernikalos.zernikalos.math"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZEuler","url":"#zeuler"}]}
 />
 
 <CodeClassList>
@@ -27,11 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-euler"
     description=""
-    codeBlocks={[
-      { code: 'constructor()' },
-      { code: 'constructor(roll: Float, pitch: Float, yaw: Float)' },
-      { code: 'constructor(other: ZEuler)' },
-    ]}
+    codeBlocks={[{code: "constructor()"}, {code: "constructor(roll: Float, pitch: Float, yaw: Float)"}, {code: "constructor(other: ZEuler)"}]}
   />
   <DocumentationItemComponent
     name="Op"
@@ -39,7 +28,23 @@ import {
     groupType="NONE"
     url="-op/index"
     description=""
-    codeBlocks={[{ code: 'object Op' }]}
+    codeBlocks={[{code: "object Op"}]}
+  />
+  <DocumentationItemComponent
+    name="byteArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-array"
+    description=""
+    codeBlocks={[{code: "open override val byteArray: ByteArray"}]}
+  />
+  <DocumentationItemComponent
+    name="byteSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-size"
+    description=""
+    codeBlocks={[{code: "open override val byteSize: Int"}]}
   />
   <DocumentationItemComponent
     name="count"
@@ -47,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="count"
     description="Number of individual instances this object represents"
-    codeBlocks={[{ code: 'open override val count: Int' }]}
+    codeBlocks={[{code: "open override val count: Int = 1"}]}
   />
   <DocumentationItemComponent
     name="dataType"
@@ -55,7 +60,7 @@ import {
     groupType="PROPERTY"
     url="data-type"
     description="The data type stored"
-    codeBlocks={[{ code: 'open override val dataType: ZDataType' }]}
+    codeBlocks={[{code: "open override val dataType: ZDataType"}]}
   />
   <DocumentationItemComponent
     name="floatArray"
@@ -63,7 +68,7 @@ import {
     groupType="PROPERTY"
     url="float-array"
     description=""
-    codeBlocks={[{ code: 'open override val floatArray: FloatArray' }]}
+    codeBlocks={[{code: "open override val floatArray: FloatArray"}]}
   />
   <DocumentationItemComponent
     name="pitch"
@@ -71,7 +76,7 @@ import {
     groupType="PROPERTY"
     url="pitch"
     description=""
-    codeBlocks={[{ code: 'var pitch: Float' }]}
+    codeBlocks={[{code: "var pitch: Float"}]}
   />
   <DocumentationItemComponent
     name="roll"
@@ -79,7 +84,7 @@ import {
     groupType="PROPERTY"
     url="roll"
     description=""
-    codeBlocks={[{ code: 'var roll: Float' }]}
+    codeBlocks={[{code: "var roll: Float"}]}
   />
   <DocumentationItemComponent
     name="size"
@@ -87,7 +92,7 @@ import {
     groupType="PROPERTY"
     url="size"
     description="Number of elements contained within the values array with the specific type defined in dataType"
-    codeBlocks={[{ code: 'open override val size: Int' }]}
+    codeBlocks={[{code: "open override val size: Int = 3"}]}
   />
   <DocumentationItemComponent
     name="yaw"
@@ -95,7 +100,7 @@ import {
     groupType="PROPERTY"
     url="yaw"
     description=""
-    codeBlocks={[{ code: 'var yaw: Float' }]}
+    codeBlocks={[{code: "var yaw: Float"}]}
   />
   <DocumentationItemComponent
     name="toQuaternion"
@@ -103,7 +108,7 @@ import {
     groupType="FUNCTION"
     url="to-quaternion"
     description=""
-    codeBlocks={[{ code: 'fun toQuaternion(): ZQuaternion' }]}
+    codeBlocks={[{code: "fun toQuaternion(): ZQuaternion"}]}
   />
   <DocumentationItemComponent
     name="toString"
@@ -111,6 +116,6 @@ import {
     groupType="FUNCTION"
     url="to-string"
     description=""
-    codeBlocks={[{ code: 'open override fun toString(): String' }]}
+    codeBlocks={[{code: "open override fun toString(): String"}]}
   />
 </CodeClassList>

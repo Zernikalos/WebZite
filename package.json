@@ -14,7 +14,8 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
     "build:scripts": "tsc --project scripts/tsconfig.json",
-    "mdx-to-react": "ts-node scripts/mdx-to-react.ts"
+    "mdx-to-react": "ts-node scripts/mdx-to-react.ts",
+    "generate:docs": "ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",

@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'Op'
+slug: "index"
+title: "Op"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="Op"
   namespace="Zernikalos.zernikalos.math.ZQuaternion"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.math.ZQuaternion',
-      url: '/docs/api/-zernikalos.zernikalos.math.zquaternion',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Op', url: '#op' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math.ZQuaternion","url":"/docs/api/-zernikalos.zernikalos.math.zquaternion"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"Op","url":"#op"}]}
 />
 
 <CodeClassList>
@@ -30,7 +20,7 @@ import {
     groupType="PROPERTY"
     url="-identity"
     description=""
-    codeBlocks={[{ code: 'val Identity: ZQuaternion' }]}
+    codeBlocks={[{code: "val Identity: ZQuaternion"}]}
   />
   <DocumentationItemComponent
     name="add"
@@ -38,7 +28,7 @@ import {
     groupType="FUNCTION"
     url="add"
     description=""
-    codeBlocks={[{ code: 'fun add(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun add(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="conjugate"
@@ -46,7 +36,7 @@ import {
     groupType="FUNCTION"
     url="conjugate"
     description=""
-    codeBlocks={[{ code: 'fun conjugate(result: ZQuaternion, q: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun conjugate(result: ZQuaternion, q: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="copy"
@@ -54,7 +44,7 @@ import {
     groupType="FUNCTION"
     url="copy"
     description=""
-    codeBlocks={[{ code: 'fun copy(result: ZQuaternion, q: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun copy(result: ZQuaternion, q: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="dot"
@@ -62,7 +52,7 @@ import {
     groupType="FUNCTION"
     url="dot"
     description=""
-    codeBlocks={[{ code: 'fun dot(q1: ZQuaternion, q2: ZQuaternion): Float' }]}
+    codeBlocks={[{code: "fun dot(q1: ZQuaternion, q2: ZQuaternion): Float"}]}
   />
   <DocumentationItemComponent
     name="fromAngleAxis"
@@ -70,12 +60,7 @@ import {
     groupType="FUNCTION"
     url="from-angle-axis"
     description=""
-    codeBlocks={[
-      { code: 'fun fromAngleAxis(result: ZQuaternion, angle: Float, axis: ZVector3)' },
-      {
-        code: 'fun fromAngleAxis(result: ZQuaternion, angle: Float, x: Float, y: Float, z: Float)',
-      },
-    ]}
+    codeBlocks={[{code: "fun fromAngleAxis(result: ZQuaternion, angle: Float, axis: ZVector3)"}, {code: "fun fromAngleAxis(result: ZQuaternion, angle: Float, x: Float, y: Float, z: Float)"}]}
   />
   <DocumentationItemComponent
     name="fromEuler"
@@ -83,11 +68,7 @@ import {
     groupType="FUNCTION"
     url="from-euler"
     description="Converts Euler angles to quaternion using ZYX (yaw-pitch-roll) convention.Creates a new quaternion from Euler angles."
-    codeBlocks={[
-      { code: 'fun fromEuler(euler: ZEuler): ZQuaternion' },
-      { code: 'fun fromEuler(result: ZQuaternion, euler: ZEuler)' },
-      { code: 'fun fromEuler(roll: Float, pitch: Float, yaw: Float): ZQuaternion' },
-    ]}
+    codeBlocks={[{code: "fun fromEuler(euler: ZEuler): ZQuaternion"}, {code: "fun fromEuler(result: ZQuaternion, euler: ZEuler)"}, {code: "fun fromEuler(roll: Float, pitch: Float, yaw: Float): ZQuaternion"}]}
   />
   <DocumentationItemComponent
     name="fromMatrix4"
@@ -95,10 +76,7 @@ import {
     groupType="FUNCTION"
     url="from-matrix4"
     description=""
-    codeBlocks={[
-      { code: 'fun fromMatrix4(m: ZMatrix4): ZQuaternion' },
-      { code: 'fun fromMatrix4(result: ZQuaternion, m: ZMatrix4)' },
-    ]}
+    codeBlocks={[{code: "fun fromMatrix4(m: ZMatrix4): ZQuaternion"}, {code: "fun fromMatrix4(result: ZQuaternion, m: ZMatrix4)"}]}
   />
   <DocumentationItemComponent
     name="fromVec3"
@@ -106,7 +84,7 @@ import {
     groupType="FUNCTION"
     url="from-vec3"
     description=""
-    codeBlocks={[{ code: 'fun fromVec3(result: ZQuaternion, v: ZVector3)' }]}
+    codeBlocks={[{code: "fun fromVec3(result: ZQuaternion, v: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="identity"
@@ -114,7 +92,7 @@ import {
     groupType="FUNCTION"
     url="identity"
     description=""
-    codeBlocks={[{ code: 'fun identity(result: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun identity(result: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="invert"
@@ -122,7 +100,7 @@ import {
     groupType="FUNCTION"
     url="invert"
     description=""
-    codeBlocks={[{ code: 'fun invert(result: ZQuaternion, q: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun invert(result: ZQuaternion, q: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="mult"
@@ -130,7 +108,7 @@ import {
     groupType="FUNCTION"
     url="mult"
     description=""
-    codeBlocks={[{ code: 'fun mult(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun mult(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="multScalar"
@@ -138,7 +116,7 @@ import {
     groupType="FUNCTION"
     url="mult-scalar"
     description=""
-    codeBlocks={[{ code: 'fun multScalar(result: ZQuaternion, r: Float, q: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun multScalar(result: ZQuaternion, r: Float, q: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="normalize"
@@ -146,7 +124,7 @@ import {
     groupType="FUNCTION"
     url="normalize"
     description="Normalizes the quaternion."
-    codeBlocks={[{ code: 'fun normalize(result: ZQuaternion, q: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun normalize(result: ZQuaternion, q: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="rotate"
@@ -154,9 +132,7 @@ import {
     groupType="FUNCTION"
     url="rotate"
     description="Rotates a quaternion by a specified angle around a specified axis."
-    codeBlocks={[
-      { code: 'fun rotate(result: ZQuaternion, q: ZQuaternion, angle: Float, axis: ZVector3)' },
-    ]}
+    codeBlocks={[{code: "fun rotate(result: ZQuaternion, q: ZQuaternion, angle: Float, axis: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="slerp"
@@ -164,10 +140,7 @@ import {
     groupType="FUNCTION"
     url="slerp"
     description=""
-    codeBlocks={[
-      { code: 'fun slerp(t: Float, q1: ZQuaternion, q2: ZQuaternion): ZQuaternion' },
-      { code: 'fun slerp(result: ZQuaternion, t: Float, q1: ZQuaternion, q2: ZQuaternion)' },
-    ]}
+    codeBlocks={[{code: "fun slerp(t: Float, q1: ZQuaternion, q2: ZQuaternion): ZQuaternion"}, {code: "fun slerp(result: ZQuaternion, t: Float, q1: ZQuaternion, q2: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="subtract"
@@ -175,7 +148,7 @@ import {
     groupType="FUNCTION"
     url="subtract"
     description=""
-    codeBlocks={[{ code: 'fun subtract(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun subtract(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)"}]}
   />
   <DocumentationItemComponent
     name="zero"
@@ -183,6 +156,6 @@ import {
     groupType="FUNCTION"
     url="zero"
     description=""
-    codeBlocks={[{ code: 'fun zero(result: ZQuaternion)' }]}
+    codeBlocks={[{code: "fun zero(result: ZQuaternion)"}]}
   />
 </CodeClassList>

@@ -1,23 +1,16 @@
 ---
-slug: 'index'
-title: 'ZPlatformInfo'
+slug: "index"
+title: "ZPlatformInfo"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZPlatformInfo"
   namespace="Zernikalos.zernikalos.stats"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.stats', url: '/docs/api/-zernikalos.zernikalos.stats' },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZPlatformInfo', url: '#zplatforminfo' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.stats","url":"/docs/api/-zernikalos.zernikalos.stats"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZPlatformInfo","url":"#zplatforminfo"}]}
 />
 
 <CodeClassList>
@@ -27,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-platform-info"
     description=""
-    codeBlocks={[{ code: 'constructor(name: ZPlatformName, version: String)' }]}
+    codeBlocks={[{code: "constructor(name: ZPlatformName, version: String)"}]}
   />
   <DocumentationItemComponent
     name="name"
@@ -35,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="name"
     description=""
-    codeBlocks={[{ code: 'val name: ZPlatformName' }]}
+    codeBlocks={[{code: "val name: ZPlatformName"}]}
   />
   <DocumentationItemComponent
     name="version"
@@ -43,6 +36,6 @@ import {
     groupType="PROPERTY"
     url="version"
     description=""
-    codeBlocks={[{ code: 'val version: String' }]}
+    codeBlocks={[{code: "val version: String"}]}
   />
 </CodeClassList>

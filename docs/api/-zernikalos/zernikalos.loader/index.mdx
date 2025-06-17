@@ -1,25 +1,16 @@
 ---
-slug: 'index'
-title: 'loader'
+slug: "index"
+title: "loader"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="loader"
   namespace="Zernikalos"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'zernikalos.loader', url: '#zernikalos.loader' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.loader","url":"#zernikalos.loader"}]}
 />
 
 <CodeClassList>
@@ -29,11 +20,7 @@ import {
     groupType="TYPE"
     url="-z-ko/index"
     description=""
-    codeBlocks={[
-      {
-        code: 'data class ZKo(val header: ZkoHeader, val root: ZObject, val actions: List<ZSkeletalAction>? = null)',
-      },
-    ]}
+    codeBlocks={[{code: "data class ZKo(val header: ZkoHeader, val root: ZObject, val actions: List<ZSkeletalAction>? = null)"}]}
   />
   <DocumentationItemComponent
     name="ZkoFormat"
@@ -41,11 +28,7 @@ import {
     groupType="TYPE"
     url="-zko-format/index"
     description="Zernikalos KObject file format."
-    codeBlocks={[
-      {
-        code: '@Serializable data class ZkoFormat(val header: ZkoHeader, val textures: List<ZTexture>, val objects: List<ZkoObjectProto>, val hierarchy: ZkoHierarchyNode, val actions: List<ZSkeletalAction>? = null)',
-      },
-    ]}
+    codeBlocks={[{code: "@Serializable data class ZkoFormat(val header: ZkoHeader, val textures: List<ZTexture>, val objects: List<ZkoObjectProto>, val hierarchy: ZkoHierarchyNode, val actions: List<ZSkeletalAction>? = null)"}]}
   />
   <DocumentationItemComponent
     name="ZkoHeader"
@@ -53,7 +36,7 @@ import {
     groupType="TYPE"
     url="-zko-header/index"
     description=""
-    codeBlocks={[{ code: '@Serializable data class ZkoHeader(val version: String)' }]}
+    codeBlocks={[{code: "@Serializable data class ZkoHeader(val version: String)"}]}
   />
   <DocumentationItemComponent
     name="ZkoHierarchyNode"
@@ -61,11 +44,7 @@ import {
     groupType="TYPE"
     url="-zko-hierarchy-node/index"
     description=""
-    codeBlocks={[
-      {
-        code: '@Serializable data class ZkoHierarchyNode(val refId: String, val children: List<ZkoHierarchyNode>? = emptyList())',
-      },
-    ]}
+    codeBlocks={[{code: "@Serializable data class ZkoHierarchyNode(val refId: String, val children: List<ZkoHierarchyNode>? = emptyList())"}]}
   />
   <DocumentationItemComponent
     name="ZkoLoader"
@@ -73,7 +52,7 @@ import {
     groupType="TYPE"
     url="-zko-loader/index"
     description=""
-    codeBlocks={[{ code: 'class ZkoLoader' }]}
+    codeBlocks={[{code: "class ZkoLoader"}]}
   />
   <DocumentationItemComponent
     name="ZkoObjectProto"
@@ -81,11 +60,7 @@ import {
     groupType="TYPE"
     url="-zko-object-proto/index"
     description=""
-    codeBlocks={[
-      {
-        code: '@Serializable data class ZkoObjectProto(val type: String, val refId: String, val isReference: Boolean, val zObject: ZObject)',
-      },
-    ]}
+    codeBlocks={[{code: "@Serializable data class ZkoObjectProto(val type: String, val refId: String, val isReference: Boolean, val zObject: ZObject)"}]}
   />
   <DocumentationItemComponent
     name="ZkoObjectProtoDef"
@@ -93,11 +68,7 @@ import {
     groupType="TYPE"
     url="-zko-object-proto-def/index"
     description=""
-    codeBlocks={[
-      {
-        code: '@Serializable data class ZkoObjectProtoDef(val type: String, val refId: String, val isReference: Boolean, val scene: ZScene?, val group: ZGroup?, val model: ZModel?, val camera: ZCamera?, val skeleton: ZSkeleton?)',
-      },
-    ]}
+    codeBlocks={[{code: "@Serializable data class ZkoObjectProtoDef(val type: String, val refId: String, val isReference: Boolean, val scene: ZScene?, val group: ZGroup?, val model: ZModel?, val camera: ZCamera?, val skeleton: ZSkeleton?)"}]}
   />
   <DocumentationItemComponent
     name="ZkoObjectProtoSerializer"
@@ -105,11 +76,7 @@ import {
     groupType="TYPE"
     url="-zko-object-proto-serializer/index"
     description=""
-    codeBlocks={[
-      {
-        code: 'class ZkoObjectProtoSerializer(loaderContext: ZLoaderContext): KSerializer<ZkoObjectProto>',
-      },
-    ]}
+    codeBlocks={[{code: "class ZkoObjectProtoSerializer(loaderContext: ZLoaderContext): KSerializer<ZkoObjectProto>"}]}
   />
   <DocumentationItemComponent
     name="ZLoaderContext"
@@ -117,7 +84,7 @@ import {
     groupType="TYPE"
     url="-z-loader-context/index"
     description="This class is used to store the components loaded by the engine."
-    codeBlocks={[{ code: 'class ZLoaderContext' }]}
+    codeBlocks={[{code: "class ZLoaderContext"}]}
   />
   <DocumentationItemComponent
     name="loadFromFile"
@@ -125,7 +92,7 @@ import {
     groupType="FUNCTION"
     url="load-from-file"
     description=""
-    codeBlocks={[{ code: 'suspend fun loadFromFile(context: Context, fileName: String): ZKo' }]}
+    codeBlocks={[{code: "suspend fun loadFromFile(context: Context, fileName: String): ZKo"}]}
   />
   <DocumentationItemComponent
     name="loadFromProto"
@@ -133,7 +100,7 @@ import {
     groupType="FUNCTION"
     url="load-from-proto"
     description="Decodes a ByteArray into a ZKo object."
-    codeBlocks={[{ code: 'fun loadFromProto(byteArray: ByteArray): ZKo' }]}
+    codeBlocks={[{code: "fun loadFromProto(byteArray: ByteArray): ZKo"}]}
   />
   <DocumentationItemComponent
     name="loadFromUrl"
@@ -141,7 +108,7 @@ import {
     groupType="FUNCTION"
     url="load-from-url"
     description="Loads a ZObject from the specified URL."
-    codeBlocks={[{ code: 'fun loadFromUrl(url: String): Promise<ZKo>' }]}
+    codeBlocks={[{code: "fun loadFromUrl(url: String): Promise<ZKo>"}]}
   />
   <DocumentationItemComponent
     name="ZKO_VERSION"
@@ -149,7 +116,7 @@ import {
     groupType="PROPERTY"
     url="-z-k-o_-v-e-r-s-i-o-n"
     description="Current ZKO format version"
-    codeBlocks={[{ code: 'const val ZKO_VERSION: String' }]}
+    codeBlocks={[{code: "const val ZKO_VERSION: String"}]}
   />
   <DocumentationItemComponent
     name="ZkoVersion"
@@ -157,6 +124,6 @@ import {
     groupType="PROPERTY"
     url="-zko-version"
     description="Current ZKO format version"
-    codeBlocks={[{ code: 'val ZkoVersion: ZSemVer' }]}
+    codeBlocks={[{code: "val ZkoVersion: ZSemVer"}]}
   />
 </CodeClassList>

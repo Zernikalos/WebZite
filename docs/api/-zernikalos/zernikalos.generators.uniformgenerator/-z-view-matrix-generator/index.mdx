@@ -1,33 +1,16 @@
 ---
-slug: 'index'
-title: 'ZViewMatrixGenerator'
+slug: "index"
+title: "ZViewMatrixGenerator"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZViewMatrixGenerator"
   namespace="Zernikalos.zernikalos.generators.uniformgenerator"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.generators.uniformgenerator',
-      url: '/docs/api/-zernikalos.zernikalos.generators.uniformgenerator',
-    },
-  ]}
-  typeInfo={[
-    {
-      type: 'actual',
-      keyword: 'package',
-      name: 'ZViewMatrixGenerator',
-      url: '#zviewmatrixgenerator',
-    },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.generators.uniformgenerator","url":"/docs/api/-zernikalos.zernikalos.generators.uniformgenerator"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZViewMatrixGenerator","url":"#zviewmatrixgenerator"}]}
 />
 
 <CodeClassList>
@@ -37,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-view-matrix-generator"
     description=""
-    codeBlocks={[{ code: 'constructor()' }]}
+    codeBlocks={[{code: "constructor()"}]}
   />
   <DocumentationItemComponent
     name="compute"
@@ -45,10 +28,6 @@ import {
     groupType="FUNCTION"
     url="compute"
     description=""
-    codeBlocks={[
-      {
-        code: 'open override fun compute(sceneContext: ZSceneContext, obj: ZObject): ZAlgebraObject',
-      },
-    ]}
+    codeBlocks={[{code: "open override fun compute(sceneContext: ZSceneContext, obj: ZObject): ZAlgebraObject"}]}
   />
 </CodeClassList>

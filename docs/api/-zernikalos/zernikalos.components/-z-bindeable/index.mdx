@@ -1,44 +1,26 @@
 ---
-slug: 'index'
-title: 'ZBindeable'
+slug: "index"
+title: "ZBindeable"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZBindeable"
   namespace="Zernikalos.zernikalos.components"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components',
-      url: '/docs/api/-zernikalos.zernikalos.components',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZBindeable', url: '#zbindeable' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components","url":"/docs/api/-zernikalos.zernikalos.components"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZBindeable","url":"#zbindeable"}]}
 />
 
 <CodeClassList>
-  <DocumentationItemComponent
-    name="renderer"
-    tokenType="val"
-    groupType="PROPERTY"
-    url="renderer"
-    description=""
-    codeBlocks={[{ code: 'abstract val renderer: ZBaseComponentRender' }]}
-  />
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind"
     description="Binds the renderer. This method is called to prepare the renderer for drawing."
-    codeBlocks={[{ code: 'open fun bind()' }]}
+    codeBlocks={[{code: "abstract fun bind()"}]}
   />
   <DocumentationItemComponent
     name="unbind"
@@ -46,6 +28,6 @@ import {
     groupType="FUNCTION"
     url="unbind"
     description="Unbinds the renderer. This method is called after drawing to clean up."
-    codeBlocks={[{ code: 'open fun unbind()' }]}
+    codeBlocks={[{code: "abstract fun unbind()"}]}
   />
 </CodeClassList>

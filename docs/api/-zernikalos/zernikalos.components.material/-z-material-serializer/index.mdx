@@ -1,33 +1,16 @@
 ---
-slug: 'index'
-title: 'ZMaterialSerializer'
+slug: "index"
+title: "ZMaterialSerializer"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZMaterialSerializer"
   namespace="Zernikalos.zernikalos.components.material"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.components.material',
-      url: '/docs/api/-zernikalos.zernikalos.components.material',
-    },
-  ]}
-  typeInfo={[
-    {
-      type: 'actual',
-      keyword: 'package',
-      name: 'ZMaterialSerializer',
-      url: '#zmaterialserializer',
-    },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.material","url":"/docs/api/-zernikalos.zernikalos.components.material"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZMaterialSerializer","url":"#zmaterialserializer"}]}
 />
 
 <CodeClassList>
@@ -37,7 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-z-material-serializer"
     description=""
-    codeBlocks={[{ code: 'constructor(loaderContext: ZLoaderContext)' }]}
+    codeBlocks={[{code: "constructor(loaderContext: ZLoaderContext)"}]}
   />
   <DocumentationItemComponent
     name="descriptor"
@@ -45,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-ref-component-serializer/descriptor"
     description=""
-    codeBlocks={[{ code: 'open override val descriptor: SerialDescriptor' }]}
+    codeBlocks={[{code: "open override val descriptor: SerialDescriptor"}]}
   />
   <DocumentationItemComponent
     name="deserializationStrategy"
@@ -53,11 +36,7 @@ import {
     groupType="PROPERTY"
     url="deserialization-strategy"
     description=""
-    codeBlocks={[
-      {
-        code: 'open override val deserializationStrategy: DeserializationStrategy<ZMaterialDataWrapper>',
-      },
-    ]}
+    codeBlocks={[{code: "open override val deserializationStrategy: DeserializationStrategy<ZMaterialDataWrapper>"}]}
   />
   <DocumentationItemComponent
     name="deserialize"
@@ -65,7 +44,7 @@ import {
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-ref-component-serializer/deserialize"
     description=""
-    codeBlocks={[{ code: 'open fun deserialize(decoder: Decoder): ZMaterial' }]}
+    codeBlocks={[{code: "open fun deserialize(decoder: Decoder): ZMaterial"}]}
   />
   <DocumentationItemComponent
     name="serialize"
@@ -73,6 +52,6 @@ import {
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-ref-component-serializer/serialize"
     description=""
-    codeBlocks={[{ code: 'open fun serialize(encoder: Encoder, value: ZMaterial)' }]}
+    codeBlocks={[{code: "open fun serialize(encoder: Encoder, value: ZMaterial)"}]}
   />
 </CodeClassList>

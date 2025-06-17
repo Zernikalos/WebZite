@@ -1,25 +1,16 @@
 ---
-slug: 'index'
-title: 'ZkoObjectProto'
+slug: "index"
+title: "ZkoObjectProto"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZkoObjectProto"
   namespace="Zernikalos.zernikalos.loader"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    { label: 'Zernikalos.zernikalos.loader', url: '/docs/api/-zernikalos.zernikalos.loader' },
-  ]}
-  typeInfo={[
-    { type: 'actual', keyword: 'package', name: 'ZkoObjectProto', url: '#zkoobjectproto' },
-  ]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.loader","url":"/docs/api/-zernikalos.zernikalos.loader"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"ZkoObjectProto","url":"#zkoobjectproto"}]}
 />
 
 <CodeClassList>
@@ -29,9 +20,7 @@ import {
     groupType="CONSTRUCTOR"
     url="-zko-object-proto"
     description=""
-    codeBlocks={[
-      { code: 'constructor(type: String, refId: String, isReference: Boolean, zObject: ZObject)' },
-    ]}
+    codeBlocks={[{code: "constructor(type: String, refId: String, isReference: Boolean, zObject: ZObject)"}]}
   />
   <DocumentationItemComponent
     name="isReference"
@@ -39,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="is-reference"
     description=""
-    codeBlocks={[{ code: 'val isReference: Boolean' }]}
+    codeBlocks={[{code: "val isReference: Boolean"}]}
   />
   <DocumentationItemComponent
     name="refId"
@@ -47,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="ref-id"
     description=""
-    codeBlocks={[{ code: 'val refId: String' }]}
+    codeBlocks={[{code: "val refId: String"}]}
   />
   <DocumentationItemComponent
     name="type"
@@ -55,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="type"
     description=""
-    codeBlocks={[{ code: 'val type: String' }]}
+    codeBlocks={[{code: "val type: String"}]}
   />
   <DocumentationItemComponent
     name="zObject"
@@ -63,6 +52,6 @@ import {
     groupType="PROPERTY"
     url="z-object"
     description=""
-    codeBlocks={[{ code: 'val zObject: ZObject' }]}
+    codeBlocks={[{code: "val zObject: ZObject"}]}
   />
 </CodeClassList>

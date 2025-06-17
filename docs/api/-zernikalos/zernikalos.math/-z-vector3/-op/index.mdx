@@ -1,26 +1,16 @@
 ---
-slug: 'index'
-title: 'Op'
+slug: "index"
+title: "Op"
 hide_title: true
 ---
+import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
 
-import {
-  DocHeader,
-  CodeClassList,
-  DocumentationItemComponent,
-} from '@site/src/components/Documentation';
 
 <DocHeader
   title="Op"
   namespace="Zernikalos.zernikalos.math.ZVector3"
-  breadcrumbs={[
-    { label: 'API', url: '/docs/api' },
-    {
-      label: 'Zernikalos.zernikalos.math.ZVector3',
-      url: '/docs/api/-zernikalos.zernikalos.math.zvector3',
-    },
-  ]}
-  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Op', url: '#op' }]}
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math.ZVector3","url":"/docs/api/-zernikalos.zernikalos.math.zvector3"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"Op","url":"#op"}]}
 />
 
 <CodeClassList>
@@ -30,7 +20,7 @@ import {
     groupType="PROPERTY"
     url="-forward"
     description=""
-    codeBlocks={[{ code: 'val Forward: ZVector3' }]}
+    codeBlocks={[{code: "val Forward: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="Ones"
@@ -38,7 +28,7 @@ import {
     groupType="PROPERTY"
     url="-ones"
     description=""
-    codeBlocks={[{ code: 'val Ones: ZVector3' }]}
+    codeBlocks={[{code: "val Ones: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="Right"
@@ -46,7 +36,7 @@ import {
     groupType="PROPERTY"
     url="-right"
     description=""
-    codeBlocks={[{ code: 'val Right: ZVector3' }]}
+    codeBlocks={[{code: "val Right: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="Up"
@@ -54,7 +44,7 @@ import {
     groupType="PROPERTY"
     url="-up"
     description=""
-    codeBlocks={[{ code: 'val Up: ZVector3' }]}
+    codeBlocks={[{code: "val Up: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="Zero"
@@ -62,7 +52,7 @@ import {
     groupType="PROPERTY"
     url="-zero"
     description=""
-    codeBlocks={[{ code: 'val Zero: ZVector3' }]}
+    codeBlocks={[{code: "val Zero: ZVector3"}]}
   />
   <DocumentationItemComponent
     name="add"
@@ -70,7 +60,7 @@ import {
     groupType="FUNCTION"
     url="add"
     description=""
-    codeBlocks={[{ code: 'fun add(result: ZVector3, op1: ZVector3, op2: ZVector3)' }]}
+    codeBlocks={[{code: "fun add(result: ZVector3, op1: ZVector3, op2: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="copy"
@@ -78,7 +68,7 @@ import {
     groupType="FUNCTION"
     url="copy"
     description=""
-    codeBlocks={[{ code: 'fun copy(result: ZVector3, v: ZVector3)' }]}
+    codeBlocks={[{code: "fun copy(result: ZVector3, v: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="cross"
@@ -86,7 +76,7 @@ import {
     groupType="FUNCTION"
     url="cross"
     description=""
-    codeBlocks={[{ code: 'fun cross(result: ZVector3, op1: ZVector3, op2: ZVector3)' }]}
+    codeBlocks={[{code: "fun cross(result: ZVector3, op1: ZVector3, op2: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="dot"
@@ -94,7 +84,7 @@ import {
     groupType="FUNCTION"
     url="dot"
     description=""
-    codeBlocks={[{ code: 'fun dot(op1: ZVector3, op2: ZVector3): Float' }]}
+    codeBlocks={[{code: "fun dot(op1: ZVector3, op2: ZVector3): Float"}]}
   />
   <DocumentationItemComponent
     name="fromVec4"
@@ -102,7 +92,7 @@ import {
     groupType="FUNCTION"
     url="from-vec4"
     description=""
-    codeBlocks={[{ code: 'fun fromVec4(result: ZVector3, v: ZVector4)' }]}
+    codeBlocks={[{code: "fun fromVec4(result: ZVector3, v: ZVector4)"}]}
   />
   <DocumentationItemComponent
     name="lerp"
@@ -110,10 +100,7 @@ import {
     groupType="FUNCTION"
     url="lerp"
     description=""
-    codeBlocks={[
-      { code: 'fun lerp(t: Float, op1: ZVector3, op2: ZVector3): ZVector3' },
-      { code: 'fun lerp(result: ZVector3, t: Float, op1: ZVector3, op2: ZVector3)' },
-    ]}
+    codeBlocks={[{code: "fun lerp(t: Float, op1: ZVector3, op2: ZVector3): ZVector3"}, {code: "fun lerp(result: ZVector3, t: Float, op1: ZVector3, op2: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="multMatrix"
@@ -121,7 +108,7 @@ import {
     groupType="FUNCTION"
     url="mult-matrix"
     description=""
-    codeBlocks={[{ code: 'fun multMatrix(result: ZVector3, m: ZMatrix4, v: ZVector3)' }]}
+    codeBlocks={[{code: "fun multMatrix(result: ZVector3, m: ZMatrix4, v: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="multScalar"
@@ -129,7 +116,7 @@ import {
     groupType="FUNCTION"
     url="mult-scalar"
     description=""
-    codeBlocks={[{ code: 'fun multScalar(result: ZVector3, scalar: Float, v: ZVector3)' }]}
+    codeBlocks={[{code: "fun multScalar(result: ZVector3, scalar: Float, v: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="norm2"
@@ -137,10 +124,7 @@ import {
     groupType="FUNCTION"
     url="norm2"
     description=""
-    codeBlocks={[
-      { code: 'fun norm2(v: ZVector3): Float' },
-      { code: 'fun norm2(x: Float, y: Float, z: Float): Float' },
-    ]}
+    codeBlocks={[{code: "fun norm2(v: ZVector3): Float"}, {code: "fun norm2(x: Float, y: Float, z: Float): Float"}]}
   />
   <DocumentationItemComponent
     name="normalize"
@@ -148,7 +132,7 @@ import {
     groupType="FUNCTION"
     url="normalize"
     description=""
-    codeBlocks={[{ code: 'fun normalize(result: ZVector3, v: ZVector3)' }]}
+    codeBlocks={[{code: "fun normalize(result: ZVector3, v: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="rotateVector"
@@ -156,7 +140,7 @@ import {
     groupType="FUNCTION"
     url="rotate-vector"
     description=""
-    codeBlocks={[{ code: 'fun rotateVector(result: ZVector3, quat: ZQuaternion, v: ZVector3)' }]}
+    codeBlocks={[{code: "fun rotateVector(result: ZVector3, quat: ZQuaternion, v: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="subtract"
@@ -164,7 +148,7 @@ import {
     groupType="FUNCTION"
     url="subtract"
     description=""
-    codeBlocks={[{ code: 'fun subtract(result: ZVector3, op1: ZVector3, op2: ZVector3)' }]}
+    codeBlocks={[{code: "fun subtract(result: ZVector3, op1: ZVector3, op2: ZVector3)"}]}
   />
   <DocumentationItemComponent
     name="zero"
@@ -172,6 +156,6 @@ import {
     groupType="FUNCTION"
     url="zero"
     description=""
-    codeBlocks={[{ code: 'fun zero(result: ZVector3)' }]}
+    codeBlocks={[{code: "fun zero(result: ZVector3)"}]}
   />
 </CodeClassList>
