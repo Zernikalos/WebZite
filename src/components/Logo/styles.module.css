@@ -1,9 +1,16 @@
-.logoSvg {
-    height: 150px;
-    width: 150px;
-    flex-shrink: 0;
-  }
-  
-  .customGradient linearGradient stop {
-    stop-color: rgb(8, 12, 13) !important;
-  }
+
+:global([data-theme='dark']) .customGradient linearGradient stop:first-child {
+    stop-color: #00b4d8 !important; 
+}
+
+:global([data-theme='dark']) .customGradient linearGradient stop:last-child {
+    stop-color: #ffffff !important;
+}
+
+.customGradient linearGradient stop:first-child {
+    stop-color: #ff4d00 !important;
+}
+
+.customGradient linearGradient stop:last-child {
+    stop-color: #ffcc00 !important;
+}

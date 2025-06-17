@@ -1,9 +1,7 @@
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
@@ -12,6 +10,7 @@ type SvgType = React.ComponentType<React.ComponentProps<'svg'>>
 
 import * as SvgModule from '@site/static/img/zklogo.svg'
 import Logo from '../components/Logo';
+import LandingHeader from '../components/landing/Header';
 const Svg = SvgModule.default
 
 function HomepageHeader() {
@@ -23,28 +22,7 @@ function HomepageHeader() {
           🚧 This project is still in early stages of development, not suitable for production 🚧
         </span>
       </header>
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <div className={styles.titleContainer}>
-            <div className={styles.titleLayout}>
-              <Logo />
-              <Heading as="h1" className="hero__title">
-                {siteConfig.title}
-              </Heading>
-              <p className="hero__subtitle">{siteConfig.tagline}</p>
-            </div>
-
-          </div>
-
-          <div className={styles.buttons}>
-            {/* <Link
-              className="button button--secondary button--lg"
-              to="/docs/intro">
-              Docusaurus Tutorial - 5min ⏱️
-            </Link> */}
-          </div>
-        </div>
-      </header>
+      <LandingHeader siteConfig={siteConfig} />
     </>
   );
 }
