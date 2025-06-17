@@ -66,10 +66,6 @@ const config: Config = {
         theme: {
           customCss: [
             './src/css/zk-docs-styles.css',
-            // './src/css/custom.css',
-            // './src/css/main.css',
-            //'./src/css/style.css',
-            // './src/css/prism.css',
           ],
         
         },
