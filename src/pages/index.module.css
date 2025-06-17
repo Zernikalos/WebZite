@@ -3,19 +3,6 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .buttons {
   display: flex;
   align-items: center;
@@ -30,18 +17,6 @@
 
 .customGradient linearGradient stop {
   stop-color: rgb(8, 12, 13) !important;
-}
-
-.titleContainer {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
-
-.titleLayout {
-  margin: 0 auto;
-  text-align: center;
-  flex-grow: 1;
 }
 
 .wipBanner {
