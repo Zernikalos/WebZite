@@ -6,9 +6,9 @@ import SectionText from "../SectionText";
 export default function BlazingFastSection() {
   return (
     <section className="tw:py-24 tw:w-full">
-      <div className="container tw:flex tw:flex-row-reverse tw:justify-between tw:items-center tw:gap-12">
+      <div className="container tw:flex tw:flex-col tw:md:flex-row-reverse tw:justify-between tw:items-center tw:gap-12">
         {/* Code Window */}
-        <div className="tw:w-full md:tw:w-1/2">
+        <div className="tw:w-full tw:md:w-1/2 tw:order-2 tw:md:order-none">
           <CodeWindow
             language="kotlin"
             code={`val zernikalos = Zernikalos()
@@ -32,7 +32,7 @@ zernikalos.initialize(renderSurface, object : ZSceneStateHandler {
         </div>
 
         {/* Textual content */}
-        <div className="tw:w-full md:tw:w-1/2">
+        <div className="tw:w-full tw:md:w-1/2 tw:order-1 tw:md:order-none">
           <SectionTitle title="Blazing Fast" />
           <SectionText>
             Built with a unified core and minimal dependencies, Zernikalos delivers 
