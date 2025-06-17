@@ -185,7 +185,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} Zernikalos. Built with Docusaurus.`,
+      copyright: `Copyright ${new Date().getFullYear()} Zernikalos. Built with 💙 in 🇮🇨`,
     },
     prism: {
       theme: prismThemes.github,
