@@ -19,17 +19,6 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-
-  {
-    title: 'Powered by Kotlin',
-    imgUrl: '/img/zkkotlin.webp',
-    description: (
-      <>
-        The Zernikalos engine is implemented with Kotlin Multiplatform, an amazing 
-        technology for both developers and contributors alike.
-      </>
-    ),
-  },
 ];
 
 function Feature({title, Svg, imgUrl, description}: FeatureItem) {

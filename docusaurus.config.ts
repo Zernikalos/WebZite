@@ -30,6 +30,13 @@ const config: Config = {
     locales: ['en'],
   },
 
+  stylesheets: [
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap',
+      type: 'text/css',
+    },
+  ],
+
   markdown: {
     format: "detect",
     mermaid: true,
@@ -59,10 +66,6 @@ const config: Config = {
         theme: {
           customCss: [
             './src/css/zk-docs-styles.css',
-            // './src/css/custom.css',
-            // './src/css/main.css',
-            //'./src/css/style.css',
-            // './src/css/prism.css',
           ],
         
         },
