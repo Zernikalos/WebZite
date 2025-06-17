@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
-import styles from './styles.module.css';
 import BlazingFast from '../BlazingFast';
 
 type FeatureItem = {
@@ -58,8 +57,8 @@ function Feature({title, Svg, imgUrl, description}: FeatureItem) {
     <div className={clsx('col col--3')}>
       <div className="tw:text-center">
         {imgUrl ? 
-        (<img className={styles.featureSvg} src={imgUrl}></img>) :
-        (<Svg className={styles.featureSvg} role="img" />)
+        (<img className="tw:h-[200px] tw:w-[200px]" src={imgUrl}></img>) :
+        (<Svg className="tw:h-[200px] tw:w-[200px]" role="img" />)
         }
       </div>
       <div className="tw:text-center tw:px-4">
@@ -72,7 +71,7 @@ function Feature({title, Svg, imgUrl, description}: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className={styles.features}>
+    <section className="tw:flex tw:items-center tw:py-8 tw:w-full">
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
