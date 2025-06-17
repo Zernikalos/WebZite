@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import { FaAndroid, FaApple } from 'react-icons/fa';
 import { SiJavascript, SiKotlin } from 'react-icons/si';
 
@@ -26,11 +27,6 @@ function IconPlanet({ Icon, colorClass, sizeClass, orbitScale, speed }: PlanetPr
     left: `${offset}%`,
   };
 
-  // Animation for the container (rotates the orbit)
-  const orbitAnimation = `spin ${speed}s linear infinite`;
-  // Animation for the icon (counter-rotates to maintain orientation)
-  const iconAnimation = `spin ${speed}s linear infinite reverse`;
-
   return (
     <>
       {/* Orbit ring */}
@@ -39,16 +35,30 @@ function IconPlanet({ Icon, colorClass, sizeClass, orbitScale, speed }: PlanetPr
         style={{ ...ringStyle }}
       />
 
-      {/* Rotating container */}
-      <div
+      {/* Rotating container using Framer Motion */}
+      <motion.div
         className="tw:absolute tw:flex tw:items-center tw:justify-center"
-        style={{ ...ringStyle, animation: orbitAnimation }}
+        style={{ ...ringStyle }}
+        animate={{ rotate: 360 }}
+        transition={{ duration: speed, ease: "linear", repeat: Infinity }}
       >
-        <Icon
-          className={clsx(colorClass, sizeClass, 'tw:absolute tw:left-1/2 tw:-translate-x-1/2 tw:-translate-y-1/2')}
-          style={{ top: 0, animation: iconAnimation }}
-        />
-      </div>
+        {/* Inner container for counter-rotation to keep icon upright */}
+        <motion.div
+          style={{ 
+            position: 'absolute', 
+            left: '50%', 
+            top: '0%', // Position icon at the 'top' of the orbit circle
+            translateX: '-50%', 
+            translateY: '-50%' // Center icon on its own axis
+          }}
+          animate={{ rotate: -360 }}
+          transition={{ duration: speed, ease: "linear", repeat: Infinity }}
+        >
+          <Icon
+            className={clsx(colorClass, sizeClass)}
+          />
+        </motion.div>
+      </motion.div>
     </>
   );
 }
