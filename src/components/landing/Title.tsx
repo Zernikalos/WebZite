@@ -17,7 +17,7 @@ export default function Title(): JSX.Element {
         )}
       >
         <span className="tw:block tw:text-8xl lg:tw:text-9xl">Zernikalos</span>
-        <span className="tw:block tw:text-5xl tw:pl-20 md:tw:pl-24 lg:tw:pl-28">The Kotlin 3D Engine</span>
+        <span className="tw:block tw:text-5xl tw:leading-normal tw:pl-20 md:tw:pl-24 lg:tw:pl-28">The Kotlin 3D Engine</span>
       </Heading>
     </div>
   );
