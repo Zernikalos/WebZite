@@ -3,14 +3,21 @@ import styles from './styles.module.css';
 import Svg from '@site/static/img/zklogo.svg';
 
 interface LogoProps {
+  isMobile?: boolean;
 }
 
-export default function Logo({}: LogoProps): JSX.Element {
+export default function Logo({ isMobile }: LogoProps): JSX.Element {
     return (
         <Svg 
-        className={clsx(styles.customGradient, 'tw:w-150 tw:h-150 tw:flex-shrink-0')} 
+        className={clsx(
+            styles.customGradient, 
+            'tw:flex-shrink-0',
+            isMobile ? 'tw:w-96 tw:h-96' : 'tw:w-150 tw:h-150'
+        )} 
         style={{ 
-            transform: 'scaleX(-1) scale(1.2) rotate(10deg) translateX(-10%)', 
+            transform: isMobile 
+                ? 'scaleX(-1) scale(1) rotate(10deg) translateX(-10%)' 
+                : 'scaleX(-1) scale(1.2) rotate(10deg) translateX(-10%)', 
             transformOrigin: 'center' 
         }} 
         role="img"
