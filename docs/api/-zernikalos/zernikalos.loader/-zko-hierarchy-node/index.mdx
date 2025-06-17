@@ -1,0 +1,60 @@
+---
+slug: 'index'
+title: 'ZkoHierarchyNode'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZkoHierarchyNode"
+  namespace="Zernikalos.zernikalos.loader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.loader', url: '/docs/api/-zernikalos.zernikalos.loader' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZkoHierarchyNode', url: '#zkohierarchynode' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZkoHierarchyNode"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-zko-hierarchy-node"
+    description=""
+    codeBlocks={[
+      { code: 'constructor(refId: String, children: List<ZkoHierarchyNode>? = emptyList())' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="Companion"
+    tokenType=""
+    groupType="NONE"
+    url="-companion/index"
+    description=""
+    codeBlocks={[{ code: 'object Companion' }]}
+  />
+  <DocumentationItemComponent
+    name="children"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="children"
+    description=""
+    codeBlocks={[{ code: 'val children: List<ZkoHierarchyNode>?' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="ref-id"
+    description=""
+    codeBlocks={[{ code: 'val refId: String' }]}
+  />
+</CodeClassList>

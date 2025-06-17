@@ -1,0 +1,78 @@
+---
+slug: 'index'
+title: 'ZMaterialSerializer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZMaterialSerializer"
+  namespace="Zernikalos.zernikalos.components.material"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.material',
+      url: '/docs/api/-zernikalos.zernikalos.components.material',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZMaterialSerializer',
+      url: '#zmaterialserializer',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZMaterialSerializer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-material-serializer"
+    description=""
+    codeBlocks={[{ code: 'constructor(loaderContext: ZLoaderContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="descriptor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-ref-component-serializer/descriptor"
+    description=""
+    codeBlocks={[{ code: 'open override val descriptor: SerialDescriptor' }]}
+  />
+  <DocumentationItemComponent
+    name="deserializationStrategy"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="deserialization-strategy"
+    description=""
+    codeBlocks={[
+      {
+        code: 'open override val deserializationStrategy: DeserializationStrategy<ZMaterialDataWrapper>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="deserialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-ref-component-serializer/deserialize"
+    description=""
+    codeBlocks={[{ code: 'open fun deserialize(decoder: Decoder): ZMaterial' }]}
+  />
+  <DocumentationItemComponent
+    name="serialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-ref-component-serializer/serialize"
+    description=""
+    codeBlocks={[{ code: 'open fun serialize(encoder: Encoder, value: ZMaterial)' }]}
+  />
+</CodeClassList>

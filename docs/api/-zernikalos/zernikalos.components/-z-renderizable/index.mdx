@@ -1,0 +1,43 @@
+---
+slug: 'index'
+title: 'ZRenderizable'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZRenderizable"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components',
+      url: '/docs/api/-zernikalos.zernikalos.components',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZRenderizable', url: '#zrenderizable' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="renderer"
+    description=""
+    codeBlocks={[{ code: 'abstract val renderer: ZBaseComponentRender' }]}
+  />
+  <DocumentationItemComponent
+    name="render"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="render"
+    description="Draws the mesh on the screen using its renderer."
+    codeBlocks={[{ code: 'open fun render()' }]}
+  />
+</CodeClassList>

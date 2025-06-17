@@ -1,0 +1,78 @@
+---
+slug: 'index'
+title: 'GPUBufferBindingLayout'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="GPUBufferBindingLayout"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.webgpu',
+      url: '/docs/api/-zernikalos.zernikalos.context.webgpu',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'GPUBufferBindingLayout',
+      url: '#gpubufferbindinglayout',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="GPUBufferBindingLayout"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-g-p-u-buffer-binding-layout"
+    description=""
+    codeBlocks={[
+      {
+        code: 'constructor(type: String?, hasDynamicOffset: Boolean? = null, minBindingSize: Long? = null)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="hasDynamicOffset"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="has-dynamic-offset"
+    description=""
+    codeBlocks={[{ code: 'var hasDynamicOffset: Boolean?' }]}
+  />
+  <DocumentationItemComponent
+    name="minBindingSize"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="min-binding-size"
+    description=""
+    codeBlocks={[{ code: 'var minBindingSize: Long?' }]}
+  />
+  <DocumentationItemComponent
+    name="type"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="type"
+    description=""
+    codeBlocks={[{ code: 'var type: String?' }]}
+  />
+  <DocumentationItemComponent
+    name="toGpu"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-gpu"
+    description=""
+    codeBlocks={[{ code: 'fun toGpu(): dynamic' }]}
+  />
+</CodeClassList>

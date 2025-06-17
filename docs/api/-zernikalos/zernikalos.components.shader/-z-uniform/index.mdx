@@ -1,0 +1,134 @@
+---
+slug: 'index'
+title: 'ZUniform'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZUniform"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZUniform', url: '#zuniform' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZUniform"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-uniform"
+    description=""
+    codeBlocks={[
+      { code: 'constructor(id: Int, uniformName: String, count: Int, dataType: ZDataType)' },
+      { code: 'constructor()' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="count"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="count"
+    description="How many elements of this will be used"
+    codeBlocks={[{ code: 'var count: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="dataType"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="data-type"
+    description="The datatype of all individual elements used by this uniform"
+    codeBlocks={[{ code: 'var dataType: ZDataType' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="id"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="id"
+    description="Represents the unique identifier for a ZUniform instance. This ID is used to differentiate between different uniform components"
+    codeBlocks={[{ code: 'open override var id: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = true' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/renderer"
+    description=""
+    codeBlocks={[{ code: 'val renderer: ZUniformRenderer' }]}
+  />
+  <DocumentationItemComponent
+    name="uniformName"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="uniform-name"
+    description="This is the name within the shader source code"
+    codeBlocks={[{ code: 'open override var uniformName: String' }]}
+  />
+  <DocumentationItemComponent
+    name="value"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="value"
+    description=""
+    codeBlocks={[{ code: 'open override var value: ZAlgebraObject' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-string"
+    description=""
+    codeBlocks={[{ code: 'open override fun toString(): String' }]}
+  />
+</CodeClassList>

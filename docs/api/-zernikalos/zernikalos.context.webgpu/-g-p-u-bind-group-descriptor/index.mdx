@@ -1,0 +1,78 @@
+---
+slug: 'index'
+title: 'GPUBindGroupDescriptor'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="GPUBindGroupDescriptor"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.webgpu',
+      url: '/docs/api/-zernikalos.zernikalos.context.webgpu',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'GPUBindGroupDescriptor',
+      url: '#gpubindgroupdescriptor',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="GPUBindGroupDescriptor"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-g-p-u-bind-group-descriptor"
+    description=""
+    codeBlocks={[
+      {
+        code: "constructor(layout: GPUBindGroupLayout, entries: Array<GPUBindGroupEntry>?, label: String? = '')",
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="entries"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="entries"
+    description=""
+    codeBlocks={[{ code: 'var entries: Array<GPUBindGroupEntry>?' }]}
+  />
+  <DocumentationItemComponent
+    name="label"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="label"
+    description=""
+    codeBlocks={[{ code: 'var label: String?' }]}
+  />
+  <DocumentationItemComponent
+    name="layout"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="layout"
+    description=""
+    codeBlocks={[{ code: 'var layout: GPUBindGroupLayout' }]}
+  />
+  <DocumentationItemComponent
+    name="toGpu"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-gpu"
+    description=""
+    codeBlocks={[{ code: 'fun toGpu(): dynamic' }]}
+  />
+</CodeClassList>

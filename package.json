@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "dev": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -12,25 +12,38 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "build:scripts": "tsc --project scripts/tsconfig.json",
+    "mdx-to-react": "ts-node scripts/mdx-to-react.ts"
   },
   "dependencies": {
-    "@docusaurus/core": "3.7.0",
-    "@docusaurus/preset-classic": "3.7.0",
-    "@docusaurus/plugin-content-docs": "3.7.0",
-    "@docusaurus/plugin-ideal-image":"3.7.0",
-    "@mdx-js/react": "^3.0.0",
+    "@docusaurus/core": "3.8.0",
+    "@docusaurus/plugin-content-docs": "3.8.0",
+    "@docusaurus/plugin-ideal-image": "3.8.0",
+    "@docusaurus/preset-classic": "3.8.0",
+    "@mdx-js/react": "3.1.0",
     "clsx": "^2.0.0",
-    "prism-react-renderer": "^2.3.0",
+    "commander": "^14.0.0",
+    "daisyui": "^5.0.29",
+    "lodash": "^4.17.21",
+    "prism-react-renderer": "2.4.1",
+    "pug": "^3.0.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "tailwindcss": "4.1.7",
     "unist-util-visit": "5.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/tsconfig": "3.7.0",
-    "@docusaurus/types": "3.7.0",
-    "typescript": "~5.2.2"
+    "@docusaurus/module-type-aliases": "3.8.0",
+    "@docusaurus/tsconfig": "3.8.0",
+    "@docusaurus/types": "3.8.0",
+    "@tailwindcss/postcss": "^4.1.5",
+    "@types/lodash": "^4.17.17",
+    "cheerio": "^1.0.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "5.8.3"
   },
   "browserslist": {
     "production": [

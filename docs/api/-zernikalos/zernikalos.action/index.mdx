@@ -1,0 +1,122 @@
+---
+slug: 'index'
+title: 'action'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="action"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'zernikalos.action', url: '#zernikalos.action' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZActionPlayer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-action-player/index"
+    description="Class that allows playback of skeletal actions stored in ZSkeletalAction. Provides playback control such as play, pause, and retrieving the current state of the animation at a specific moment."
+    codeBlocks={[{ code: 'class ZActionPlayer' }]}
+  />
+  <DocumentationItemComponent
+    name="ZBoneFrameTransform"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-bone-frame-transform/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable data class ZBoneFrameTransform(var position: ZVector3? = null, var rotation: ZQuaternion? = null, var scale: ZVector3? = null)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZBoneTrack"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-bone-track/index"
+    description=""
+    codeBlocks={[{ code: "@Serializable data class ZBoneTrack(val boneName: String = '')" }]}
+  />
+  <DocumentationItemComponent
+    name="ZKeyFrame"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-key-frame/index"
+    description=""
+    codeBlocks={[{ code: '@Serializable class ZKeyFrame(var time: Float)' }]}
+  />
+  <DocumentationItemComponent
+    name="ZPositionFrame"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-position-frame/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable data class ZPositionFrame(val time: Float, val position: ZVector3): ZTimeFrame',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZRotationFrame"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-rotation-frame/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable data class ZRotationFrame(val time: Float, val rotation: ZQuaternion): ZTimeFrame',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZScaleFrame"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-scale-frame/index"
+    description=""
+    codeBlocks={[
+      {
+        code: '@Serializable data class ZScaleFrame(val time: Float, val scale: ZVector3): ZTimeFrame',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZSkeletalAction"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-skeletal-action/index"
+    description=""
+    codeBlocks={[{ code: '@Serializable class ZSkeletalAction(val name: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="ZTimeFrame"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-time-frame/index"
+    description=""
+    codeBlocks={[{ code: 'interface ZTimeFrame' }]}
+  />
+  <DocumentationItemComponent
+    name="currentTimeMillis"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="current-time-millis"
+    description=""
+    codeBlocks={[{ code: 'fun Clock.System.currentTimeMillis(): Long' }]}
+  />
+</CodeClassList>

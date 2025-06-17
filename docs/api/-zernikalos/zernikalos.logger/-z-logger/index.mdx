@@ -1,0 +1,88 @@
+---
+slug: 'index'
+title: 'ZLogger'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZLogger"
+  namespace="Zernikalos.zernikalos.logger"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.logger', url: '/docs/api/-zernikalos.zernikalos.logger' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZLogger', url: '#zlogger' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZLogger"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-logger"
+    description=""
+    codeBlocks={[{ code: 'constructor(clsName: String?, instanceId: Int)' }]}
+  />
+  <DocumentationItemComponent
+    name="Companion"
+    tokenType=""
+    groupType="NONE"
+    url="-companion/index"
+    description=""
+    codeBlocks={[{ code: 'object Companion' }]}
+  />
+  <DocumentationItemComponent
+    name="instanceId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="instance-id"
+    description=""
+    codeBlocks={[{ code: 'val instanceId: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="debug"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="debug"
+    description=""
+    codeBlocks={[{ code: 'fun debug(message: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="debugOnce"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="debug-once"
+    description=""
+    codeBlocks={[{ code: 'fun debugOnce(message: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="error"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="error"
+    description=""
+    codeBlocks={[{ code: 'fun error(message: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="info"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="info"
+    description=""
+    codeBlocks={[{ code: 'fun info(message: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="warn"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="warn"
+    description=""
+    codeBlocks={[{ code: 'fun warn(message: String)' }]}
+  />
+</CodeClassList>

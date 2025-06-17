@@ -1,0 +1,87 @@
+---
+slug: 'index'
+title: 'ZUniformData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZUniformData"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZUniformData', url: '#zuniformdata' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZUniformData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-uniform-data"
+    description=""
+    codeBlocks={[
+      {
+        code: "constructor(id: Int = -1, uniformName: String = '', count: Int = -1, dataType: ZDataType = ZTypes.NONE)",
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="count"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="count"
+    description=""
+    codeBlocks={[{ code: 'var count: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="dataType"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="data-type"
+    description=""
+    codeBlocks={[{ code: 'var dataType: ZDataType' }]}
+  />
+  <DocumentationItemComponent
+    name="id"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="id"
+    description=""
+    codeBlocks={[{ code: 'var id: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-component-data/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="uniformName"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="uniform-name"
+    description=""
+    codeBlocks={[{ code: 'var uniformName: String' }]}
+  />
+  <DocumentationItemComponent
+    name="value"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="value"
+    description=""
+    codeBlocks={[{ code: '@Transient var value: ZAlgebraObject?' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,143 @@
+---
+slug: 'index'
+title: 'ZBufferData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZBufferData"
+  namespace="Zernikalos.zernikalos.components.mesh"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.mesh',
+      url: '/docs/api/-zernikalos.zernikalos.components.mesh',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZBufferData', url: '#zbufferdata' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZBufferData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-buffer-data"
+    description=""
+    codeBlocks={[
+      {
+        code: "constructor(id: Int = -1, dataType: ZDataType = ZTypes.NONE, name: String = '', size: Int = -1, count: Int = -1, normalized: Boolean = false, offset: Int = -1, stride: Int = -1, isIndexBuffer: Boolean = false, bufferId: Int = -1, dataArray: ByteArray = byteArrayOf())",
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="bufferId"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="buffer-id"
+    description=""
+    codeBlocks={[{ code: 'var bufferId: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="count"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="count"
+    description=""
+    codeBlocks={[{ code: 'var count: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="dataArray"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="data-array"
+    description=""
+    codeBlocks={[{ code: 'var dataArray: ByteArray' }]}
+  />
+  <DocumentationItemComponent
+    name="dataType"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="data-type"
+    description=""
+    codeBlocks={[{ code: 'var dataType: ZDataType' }]}
+  />
+  <DocumentationItemComponent
+    name="hasData"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="has-data"
+    description=""
+    codeBlocks={[{ code: 'val hasData: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="id"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="id"
+    description=""
+    codeBlocks={[{ code: 'var id: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="isIndexBuffer"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="is-index-buffer"
+    description=""
+    codeBlocks={[{ code: 'var isIndexBuffer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="name"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="name"
+    description=""
+    codeBlocks={[{ code: 'var name: String' }]}
+  />
+  <DocumentationItemComponent
+    name="normalized"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="normalized"
+    description=""
+    codeBlocks={[{ code: 'var normalized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="offset"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="offset"
+    description=""
+    codeBlocks={[{ code: 'var offset: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-component-data/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="size"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="size"
+    description=""
+    codeBlocks={[{ code: 'var size: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="stride"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="stride"
+    description=""
+    codeBlocks={[{ code: 'var stride: Int' }]}
+  />
+</CodeClassList>

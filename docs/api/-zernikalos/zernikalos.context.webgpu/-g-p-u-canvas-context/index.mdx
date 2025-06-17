@@ -1,0 +1,53 @@
+---
+slug: 'index'
+title: 'GPUCanvasContext'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="GPUCanvasContext"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.webgpu',
+      url: '/docs/api/-zernikalos.zernikalos.context.webgpu',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'GPUCanvasContext', url: '#gpucanvascontext' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="GPUCanvasContext"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-g-p-u-canvas-context"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="configure"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="configure"
+    description=""
+    codeBlocks={[{ code: 'fun configure(descriptor: GPUCanvasConfiguration): GPUSwapChain' }]}
+  />
+  <DocumentationItemComponent
+    name="getCurrentTexture"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-current-texture"
+    description=""
+    codeBlocks={[{ code: 'fun getCurrentTexture(): GPUTexture' }]}
+  />
+</CodeClassList>

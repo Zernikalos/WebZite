@@ -1,0 +1,71 @@
+---
+slug: 'index'
+title: 'components.camera'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="components.camera"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'zernikalos.components.camera',
+      url: '#zernikalos.components.camera',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZLensData"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-lens-data/index"
+    description=""
+    codeBlocks={[{ code: '@Serializable abstract class ZLensData: ZComponentData' }]}
+  />
+  <DocumentationItemComponent
+    name="ZPerspectiveLens"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-perspective-lens/index"
+    description="Represents a perspective lens used for rendering in Zernikalos."
+    codeBlocks={[
+      {
+        code: '@Serializable(with = ZPerspectiveLensSerializer: : class)open class ZPerspectiveLens: ZSerializableComponent<ZPerspectiveLensData>, ZResizable',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZPerspectiveLensData"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-perspective-lens-data/index"
+    description=""
+    codeBlocks={[{ code: '@Serializable class ZPerspectiveLensData: ZLensData' }]}
+  />
+  <DocumentationItemComponent
+    name="ZPerspectiveLensSerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-perspective-lens-serializer/index"
+    description=""
+    codeBlocks={[
+      {
+        code: 'class ZPerspectiveLensSerializer: ZComponentSerializer<ZPerspectiveLens, ZPerspectiveLensData>',
+      },
+    ]}
+  />
+</CodeClassList>

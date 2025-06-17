@@ -1,0 +1,99 @@
+---
+slug: 'index'
+title: 'ZShaderSource'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZShaderSource"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZShaderSource', url: '#zshadersource' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZShaderSource"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-shader-source"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="glslFragmentShaderSource"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="glsl-fragment-shader-source"
+    description=""
+    codeBlocks={[{ code: 'var glslFragmentShaderSource: String' }]}
+  />
+  <DocumentationItemComponent
+    name="glslVertexShaderSource"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="glsl-vertex-shader-source"
+    description=""
+    codeBlocks={[{ code: 'var glslVertexShaderSource: String' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-serializable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = false' }]}
+  />
+  <DocumentationItemComponent
+    name="metalShaderSource"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="metal-shader-source"
+    description=""
+    codeBlocks={[{ code: 'var metalShaderSource: String' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+</CodeClassList>

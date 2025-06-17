@@ -1,0 +1,39 @@
+---
+slug: 'from-euler'
+title: 'fromEuler'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="fromEuler"
+  namespace="Zernikalos.zernikalos.math.ZQuaternion.Op"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.math.ZQuaternion.Op',
+      url: '/docs/api/-zernikalos.zernikalos.math.zquaternion.op',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'fromEuler', url: '#fromeuler' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="resulteulerrollpitchyaw"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../../../index"
+    description=""
+    codeBlocks={[
+      { code: 'fun fromEuler(result: ZQuaternion, euler: ZEuler)' },
+      { code: 'fun fromEuler(euler: ZEuler): ZQuaternion' },
+      { code: 'fun fromEuler(roll: Float, pitch: Float, yaw: Float): ZQuaternion' },
+    ]}
+  />
+</CodeClassList>

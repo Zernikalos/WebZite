@@ -1,0 +1,116 @@
+---
+slug: 'index'
+title: 'ZEuler'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZEuler"
+  namespace="Zernikalos.zernikalos.math"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.math', url: '/docs/api/-zernikalos.zernikalos.math' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZEuler', url: '#zeuler' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZEuler"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-euler"
+    description=""
+    codeBlocks={[
+      { code: 'constructor()' },
+      { code: 'constructor(roll: Float, pitch: Float, yaw: Float)' },
+      { code: 'constructor(other: ZEuler)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="Op"
+    tokenType=""
+    groupType="NONE"
+    url="-op/index"
+    description=""
+    codeBlocks={[{ code: 'object Op' }]}
+  />
+  <DocumentationItemComponent
+    name="count"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="count"
+    description="Number of individual instances this object represents"
+    codeBlocks={[{ code: 'open override val count: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="dataType"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="data-type"
+    description="The data type stored"
+    codeBlocks={[{ code: 'open override val dataType: ZDataType' }]}
+  />
+  <DocumentationItemComponent
+    name="floatArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="float-array"
+    description=""
+    codeBlocks={[{ code: 'open override val floatArray: FloatArray' }]}
+  />
+  <DocumentationItemComponent
+    name="pitch"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="pitch"
+    description=""
+    codeBlocks={[{ code: 'var pitch: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="roll"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="roll"
+    description=""
+    codeBlocks={[{ code: 'var roll: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="size"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="size"
+    description="Number of elements contained within the values array with the specific type defined in dataType"
+    codeBlocks={[{ code: 'open override val size: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="yaw"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="yaw"
+    description=""
+    codeBlocks={[{ code: 'var yaw: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="toQuaternion"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-quaternion"
+    description=""
+    codeBlocks={[{ code: 'fun toQuaternion(): ZQuaternion' }]}
+  />
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-string"
+    description=""
+    codeBlocks={[{ code: 'open override fun toString(): String' }]}
+  />
+</CodeClassList>

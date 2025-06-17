@@ -1,0 +1,112 @@
+---
+slug: 'index'
+title: 'logger'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="logger"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'zernikalos.logger', url: '#zernikalos.logger' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="WindowConsole"
+    tokenType="class"
+    groupType="TYPE"
+    url="-window-console/index"
+    description=""
+    codeBlocks={[{ code: 'abstract external class WindowConsole: Console' }]}
+  />
+  <DocumentationItemComponent
+    name="ZLoggable"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-loggable/index"
+    description="Provides a common interface for all objects with zernikalos.logger.ZLogger access."
+    codeBlocks={[{ code: 'interface ZLoggable' }]}
+  />
+  <DocumentationItemComponent
+    name="ZLogger"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-logger/index"
+    description=""
+    codeBlocks={[{ code: 'class ZLogger(clsName: String?, val instanceId: Int)' }]}
+  />
+  <DocumentationItemComponent
+    name="ZLoggerAdapter"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-logger-adapter/index"
+    description=""
+    codeBlocks={[{ code: 'interface ZLoggerAdapter' }]}
+  />
+  <DocumentationItemComponent
+    name="ZLoggerAdapterConsole"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-logger-adapter-console/index"
+    description=""
+    codeBlocks={[
+      { code: 'actual class ZLoggerAdapterConsole: ZLoggerAdapter' },
+      { code: 'expect class ZLoggerAdapterConsole: ZLoggerAdapter' },
+      { code: 'actual class ZLoggerAdapterConsole: ZLoggerAdapter' },
+      { code: 'actual class ZLoggerAdapterConsole: ZLoggerAdapter' },
+      { code: 'actual class ZLoggerAdapterConsole: ZLoggerAdapter' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZLogLevel"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-log-level/index"
+    description=""
+    codeBlocks={[{ code: 'enum ZLogLevel: Comparator<ZLogLevel>, Enum<ZLogLevel>' }]}
+  />
+  <DocumentationItemComponent
+    name="createLazyLogger"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-lazy-logger"
+    description=""
+    codeBlocks={[{ code: 'inline fun <T: ZLoggable> T.createLazyLogger(): Lazy<ZLogger>' }]}
+  />
+  <DocumentationItemComponent
+    name="createLogger"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-logger"
+    description=""
+    codeBlocks={[{ code: 'inline fun <T: ZLoggable> T.createLogger(): ZLogger' }]}
+  />
+  <DocumentationItemComponent
+    name="console"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="console"
+    description=""
+    codeBlocks={[{ code: 'external val console: WindowConsole' }]}
+  />
+  <DocumentationItemComponent
+    name="logger"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="logger"
+    description=""
+    codeBlocks={[{ code: 'val <T: ZLoggable> T.logger: ZLogger' }]}
+  />
+</CodeClassList>

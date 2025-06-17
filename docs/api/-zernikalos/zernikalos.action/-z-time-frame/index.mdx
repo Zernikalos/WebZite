@@ -1,0 +1,32 @@
+---
+slug: 'index'
+title: 'ZTimeFrame'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZTimeFrame"
+  namespace="Zernikalos.zernikalos.action"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.action', url: '/docs/api/-zernikalos.zernikalos.action' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZTimeFrame', url: '#ztimeframe' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="time"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="time"
+    description=""
+    codeBlocks={[{ code: 'abstract val time: Float' }]}
+  />
+</CodeClassList>

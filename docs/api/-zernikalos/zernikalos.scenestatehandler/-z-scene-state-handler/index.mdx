@@ -1,0 +1,57 @@
+---
+slug: 'index'
+title: 'ZSceneStateHandler'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSceneStateHandler"
+  namespace="Zernikalos.zernikalos.scenestatehandler"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.scenestatehandler',
+      url: '/docs/api/-zernikalos.zernikalos.scenestatehandler',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZSceneStateHandler', url: '#zscenestatehandler' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="onReady"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-ready"
+    description="Called when the scene or the system is ready to start interacting or rendering. This method is typically used to perform initialization tasks specific to the scene state."
+    codeBlocks={[{ code: 'abstract fun onReady(context: ZContext, done: ()-> Unit)' }]}
+  />
+  <DocumentationItemComponent
+    name="onRender"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-render"
+    description="Handles the resizing of the scene or rendering system, typically triggered when the viewport dimensions change. This should update internal state or configurations based on the new width and height values."
+    codeBlocks={[{ code: 'abstract fun onRender(context: ZContext, done: ()-> Unit)' }]}
+  />
+  <DocumentationItemComponent
+    name="onResize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-resize"
+    description="Handles the rendering process for the current scene and rendering context. This method is expected to be called during each frame of the rendering loop."
+    codeBlocks={[
+      {
+        code: 'abstract fun onResize(context: ZContext, width: Int, height: Int, done: ()-> Unit)',
+      },
+    ]}
+  />
+</CodeClassList>

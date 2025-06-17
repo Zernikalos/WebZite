@@ -1,0 +1,74 @@
+---
+slug: 'index'
+title: 'ZUniformBlockSerializer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZUniformBlockSerializer"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZUniformBlockSerializer',
+      url: '#zuniformblockserializer',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZUniformBlockSerializer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-uniform-block-serializer"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="descriptor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-component-serializer/descriptor"
+    description=""
+    codeBlocks={[{ code: 'open override val descriptor: SerialDescriptor' }]}
+  />
+  <DocumentationItemComponent
+    name="kSerializer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="k-serializer"
+    description=""
+    codeBlocks={[{ code: 'open override val kSerializer: KSerializer<ZUniformBlockData>' }]}
+  />
+  <DocumentationItemComponent
+    name="deserialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-component-serializer/deserialize"
+    description=""
+    codeBlocks={[{ code: 'open fun deserialize(decoder: Decoder): ZUniformBlock' }]}
+  />
+  <DocumentationItemComponent
+    name="serialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-component-serializer/serialize"
+    description=""
+    codeBlocks={[{ code: 'open fun serialize(encoder: Encoder, value: ZUniformBlock)' }]}
+  />
+</CodeClassList>

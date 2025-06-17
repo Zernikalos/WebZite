@@ -1,0 +1,105 @@
+---
+slug: 'index'
+title: 'ZMtlRenderingContext'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZMtlRenderingContext"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZMtlRenderingContext',
+      url: '#zmtlrenderingcontext',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZMtlRenderingContext"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-mtl-rendering-context"
+    description=""
+    codeBlocks={[{ code: 'constructor(view: ZSurfaceView)' }]}
+  />
+  <DocumentationItemComponent
+    name="commandBuffer"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="command-buffer"
+    description=""
+    codeBlocks={[{ code: 'var commandBuffer: MTLCommandBufferProtocol?' }]}
+  />
+  <DocumentationItemComponent
+    name="commandQueue"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="command-queue"
+    description=""
+    codeBlocks={[{ code: 'val commandQueue: MTLCommandQueueProtocol' }]}
+  />
+  <DocumentationItemComponent
+    name="device"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="device"
+    description=""
+    codeBlocks={[{ code: 'val device: MTLDeviceProtocol' }]}
+  />
+  <DocumentationItemComponent
+    name="renderEncoder"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="render-encoder"
+    description=""
+    codeBlocks={[{ code: 'var renderEncoder: MTLRenderCommandEncoderProtocol?' }]}
+  />
+  <DocumentationItemComponent
+    name="surfaceView"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="surface-view"
+    description=""
+    codeBlocks={[{ code: 'val surfaceView: ZMtlSurfaceView' }]}
+  />
+  <DocumentationItemComponent
+    name="initWithSurfaceView"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="init-with-surface-view"
+    description=""
+    codeBlocks={[{ code: 'open override fun initWithSurfaceView(surfaceView: ZSurfaceView)' }]}
+  />
+  <DocumentationItemComponent
+    name="makeCommandBuffer"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="make-command-buffer"
+    description=""
+    codeBlocks={[{ code: 'fun makeCommandBuffer()' }]}
+  />
+  <DocumentationItemComponent
+    name="makeRenderCommandEncoder"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="make-render-command-encoder"
+    description=""
+    codeBlocks={[
+      { code: 'fun makeRenderCommandEncoder(renderPassDescriptor: MTLRenderPassDescriptor)' },
+    ]}
+  />
+</CodeClassList>

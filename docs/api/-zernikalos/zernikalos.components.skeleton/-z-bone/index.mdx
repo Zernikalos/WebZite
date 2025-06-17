@@ -1,0 +1,173 @@
+---
+slug: 'index'
+title: 'ZBone'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZBone"
+  namespace="Zernikalos.zernikalos.components.skeleton"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.skeleton',
+      url: '/docs/api/-zernikalos.zernikalos.components.skeleton',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZBone', url: '#zbone' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZBone"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-bone"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="bindMatrix"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="bind-matrix"
+    description="Returns the bind matrix of this bone."
+    codeBlocks={[{ code: 'var bindMatrix: ZMatrix4' }]}
+  />
+  <DocumentationItemComponent
+    name="children"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="children"
+    description="Returns the children of this bone."
+    codeBlocks={[{ code: 'open override val children: Array<ZBone>' }]}
+  />
+  <DocumentationItemComponent
+    name="hasParent"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="has-parent"
+    description="Returns true if this bone has a parent, false otherwise."
+    codeBlocks={[{ code: 'open override val hasParent: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="id"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="id"
+    description="Returns the unique identifier of this bone."
+    codeBlocks={[{ code: 'var id: String' }]}
+  />
+  <DocumentationItemComponent
+    name="inverseBindMatrix"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="inverse-bind-matrix"
+    description="Returns the inverse bind matrix of this bone."
+    codeBlocks={[{ code: 'var inverseBindMatrix: ZMatrix4' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-serializable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = false' }]}
+  />
+  <DocumentationItemComponent
+    name="isRoot"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.search/-z-tree-node/is-root"
+    description=""
+    codeBlocks={[{ code: 'open val isRoot: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="name"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="name"
+    description="Returns the name of this bone."
+    codeBlocks={[{ code: 'var name: String' }]}
+  />
+  <DocumentationItemComponent
+    name="parent"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="parent"
+    description=""
+    codeBlocks={[{ code: 'open override val parent: ZBone?' }]}
+  />
+  <DocumentationItemComponent
+    name="poseMatrix"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="pose-matrix"
+    description="Returns the pose matrix of this bone."
+    codeBlocks={[{ code: 'var poseMatrix: ZMatrix4' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="transform"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="transform"
+    description="Returns the transform of this bone."
+    codeBlocks={[{ code: 'var transform: ZTransform' }]}
+  />
+  <DocumentationItemComponent
+    name="addChild"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-child"
+    description="Add a child bone to this bone."
+    codeBlocks={[{ code: 'fun addChild(bone: ZBone)' }]}
+  />
+  <DocumentationItemComponent
+    name="computePoseFromKeyFrame"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="compute-pose-from-key-frame"
+    description="Compute the pose matrix for this bone and its children from the given keyframe."
+    codeBlocks={[
+      { code: 'fun computePoseFromKeyFrame(keyFrame: ZKeyFrame, parentPoseMatrix: ZMatrix4)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+</CodeClassList>

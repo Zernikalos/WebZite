@@ -1,0 +1,51 @@
+---
+slug: 'index'
+title: 'ZShaderData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZShaderData"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZShaderData', url: '#zshaderdata' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZShaderData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-shader-data"
+    description=""
+    codeBlocks={[{ code: 'constructor(type: ZShaderType = ZShaderType.VERTEX_SHADER)' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-component-data/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="type"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="type"
+    description=""
+    codeBlocks={[{ code: 'var type: ZShaderType' }]}
+  />
+</CodeClassList>

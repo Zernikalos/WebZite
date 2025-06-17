@@ -1,0 +1,74 @@
+---
+slug: 'index'
+title: 'GPUCanvasConfiguration'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="GPUCanvasConfiguration"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.context.webgpu',
+      url: '/docs/api/-zernikalos.zernikalos.context.webgpu',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'GPUCanvasConfiguration',
+      url: '#gpucanvasconfiguration',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="alphaMode"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="alpha-mode"
+    description=""
+    codeBlocks={[{ code: 'open var alphaMode: String?' }]}
+  />
+  <DocumentationItemComponent
+    name="device"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="device"
+    description=""
+    codeBlocks={[{ code: 'abstract var device: GPUDevice' }]}
+  />
+  <DocumentationItemComponent
+    name="format"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="format"
+    description=""
+    codeBlocks={[{ code: 'abstract var format: GPUTextureFormat' }]}
+  />
+  <DocumentationItemComponent
+    name="usage"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="usage"
+    description=""
+    codeBlocks={[{ code: 'open var usage: GPUTextureUsageFlags?' }]}
+  />
+  <DocumentationItemComponent
+    name="viewFormats"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="view-formats"
+    description=""
+    codeBlocks={[{ code: 'open var viewFormats: Array<GPUTextureFormat>?' }]}
+  />
+</CodeClassList>

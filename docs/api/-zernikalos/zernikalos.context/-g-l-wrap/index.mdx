@@ -1,0 +1,48 @@
+---
+slug: 'index'
+title: 'GLWrap'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="GLWrap"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.context', url: '/docs/api/-zernikalos.zernikalos.context' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'GLWrap', url: '#glwrap' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="GLWrap"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-g-l-wrap"
+    description=""
+    codeBlocks={[{ code: 'constructor(id: Any? = null)' }]}
+  />
+  <DocumentationItemComponent
+    name="id"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="id"
+    description=""
+    codeBlocks={[{ code: 'val id: Any?' }]}
+  />
+  <DocumentationItemComponent
+    name="isValid"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="is-valid"
+    description=""
+    codeBlocks={[{ code: 'val isValid: Boolean' }]}
+  />
+</CodeClassList>

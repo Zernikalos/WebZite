@@ -1,0 +1,74 @@
+---
+slug: 'index'
+title: '[android]Zernikalos'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="[android]Zernikalos"
+  namespace="Zernikalos.zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos', url: '/docs/api/-zernikalos.zernikalos' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: '[android]Zernikalos',
+      url: '#[android]zernikalos',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="Zernikalos"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-zernikalos"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="context"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="../-zernikalos-base/context"
+    description="Represents the primary context of the Zernikalos engine during its lifecycle."
+    codeBlocks={[{ code: 'lateinit var context: ZContext' }]}
+  />
+  <DocumentationItemComponent
+    name="settings"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-zernikalos-base/settings"
+    description="Represents the settings for the Zernikalos engine. It provides centralized access to control logging levels and other related settings."
+    codeBlocks={[{ code: 'val settings: ZSettings' }]}
+  />
+  <DocumentationItemComponent
+    name="stats"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-zernikalos-base/stats"
+    description="Provides platform-specific information and version details for the Zernikalos engine."
+    codeBlocks={[{ code: 'val stats: ZStats' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="initialize"
+    description=""
+    codeBlocks={[
+      { code: 'fun initialize(view: GLSurfaceView, stateHandler: ZSceneStateHandler)' },
+      { code: 'fun initialize(view: ZernikalosView, stateHandler: ZSceneStateHandler)' },
+    ]}
+  />
+</CodeClassList>

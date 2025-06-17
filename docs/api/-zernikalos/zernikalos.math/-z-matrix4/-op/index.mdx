@@ -1,0 +1,167 @@
+---
+slug: 'index'
+title: 'Op'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="Op"
+  namespace="Zernikalos.zernikalos.math.ZMatrix4"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.math.ZMatrix4',
+      url: '/docs/api/-zernikalos.zernikalos.math.zmatrix4',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Op', url: '#op' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="Identity"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-identity"
+    description="Provides a new instance of the identity 4x4 matrix."
+    codeBlocks={[{ code: 'val Identity: ZMatrix4' }]}
+  />
+  <DocumentationItemComponent
+    name="add"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add"
+    description="Adds two 4x4 matrices and stores the result in the provided result matrix."
+    codeBlocks={[{ code: 'fun add(result: ZMatrix4, m1: ZMatrix4, m2: ZMatrix4)' }]}
+  />
+  <DocumentationItemComponent
+    name="fromQuaternion"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="from-quaternion"
+    description="Converts a quaternion into a 4x4 matrix representing the same rotation."
+    codeBlocks={[
+      { code: 'fun fromQuaternion(q: ZQuaternion): ZMatrix4' },
+      { code: 'fun fromQuaternion(result: ZMatrix4, q: ZQuaternion)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="identity"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="identity"
+    description="Sets the given matrix to be the identity matrix."
+    codeBlocks={[{ code: 'fun identity(result: ZMatrix4)' }]}
+  />
+  <DocumentationItemComponent
+    name="invert"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="invert"
+    description="Computes the invert matrix from the given one"
+    codeBlocks={[{ code: 'fun invert(result: ZMatrix4, m: ZMatrix4): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="lookAt"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="look-at"
+    description="Sets up a view transformation matrix to represent a camera looking at a specified target."
+    codeBlocks={[
+      { code: 'fun lookAt(result: ZMatrix4, eye: ZVector3, center: ZVector3, up: ZVector3)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="mult"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="mult"
+    description="Multiplies two 4x4 matrices, storing the result in the result matrix."
+    codeBlocks={[{ code: 'fun mult(result: ZMatrix4, lm: ZMatrix4, rm: ZMatrix4)' }]}
+  />
+  <DocumentationItemComponent
+    name="perspective"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="perspective"
+    description="Computes the perspective projection matrix"
+    codeBlocks={[
+      {
+        code: 'fun perspective(result: ZMatrix4, fov: Float, aspect: Float, near: Float, far: Float)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="rotate"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="rotate"
+    description="Rotates the given ZMatrix4 result by the specified ZQuaternion."
+    codeBlocks={[{ code: 'fun rotate(result: ZMatrix4, q: ZQuaternion)' }]}
+  />
+  <DocumentationItemComponent
+    name="scale"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="scale"
+    description="Scales a given 4x4 matrix by specified x, y, and z scaling factors."
+    codeBlocks={[
+      { code: 'fun scale(result: ZMatrix4, s: ZVector3)' },
+      { code: 'fun scale(result: ZMatrix4, m: ZMatrix4, s: ZVector3)' },
+      { code: 'fun scale(result: ZMatrix4, m: ZMatrix4, x: Float, y: Float, z: Float)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="setTranslation"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-translation"
+    description="Sets the translation component of a matrix using the specified translation vector.Sets the translation components of the provided 4x4 matrix to the specified x, y, and z values."
+    codeBlocks={[
+      { code: 'fun setTranslation(result: ZMatrix4, translation: ZVector3)' },
+      { code: 'fun setTranslation(result: ZMatrix4, x: Float, y: Float, z: Float)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="subtract"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="subtract"
+    description="Subtracts two 4x4 matrices and stores the result in the provided result matrix."
+    codeBlocks={[{ code: 'fun subtract(result: ZMatrix4, m1: ZMatrix4, m2: ZMatrix4)' }]}
+  />
+  <DocumentationItemComponent
+    name="translate"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="translate"
+    description=""
+    codeBlocks={[
+      { code: 'fun translate(result: ZMatrix4, translation: ZVector3)' },
+      { code: 'fun translate(result: ZMatrix4, m: ZMatrix4, translation: ZVector3)' },
+      { code: 'fun translate(result: ZMatrix4, x: Float, y: Float, z: Float)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="transpose"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="transpose"
+    description="Transposes the given 4x4 matrix m and stores the result in result."
+    codeBlocks={[{ code: 'fun transpose(result: ZMatrix4, m: ZMatrix4)' }]}
+  />
+  <DocumentationItemComponent
+    name="transposeIp"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="transpose-ip"
+    description=""
+    codeBlocks={[{ code: 'fun transposeIp(result: ZMatrix4)' }]}
+  />
+</CodeClassList>

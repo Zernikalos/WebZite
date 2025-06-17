@@ -1,0 +1,40 @@
+---
+slug: 'index'
+title: 'UAParser'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="UAParser"
+  namespace="Zernikalos.zernikalos.stats"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.stats', url: '/docs/api/-zernikalos.zernikalos.stats' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'UAParser', url: '#uaparser' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="UAParser"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-u-a-parser"
+    description=""
+    codeBlocks={[{ code: 'constructor(userAgent: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="getBrowser"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-browser"
+    description=""
+    codeBlocks={[{ code: 'fun getBrowser(): BrowserInfo' }]}
+  />
+</CodeClassList>

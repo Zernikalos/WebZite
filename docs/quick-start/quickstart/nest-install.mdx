@@ -1,6 +1,9 @@
 ---
 sidebar_position: 2
 ---
+import CodeWindow from '@site/src/components/CodeWindow';
+
+
 # Installing Zernikalos Nest
 
 ## Prerequisites
@@ -13,13 +16,14 @@ Before starting, make sure you have completed all steps in the [Installing Zerni
 
 First, you'll need to clone two essential repositories:
 
-```bash
-# Clone ZKBuilder
+<CodeWindow
+language="bash"
+code={`# Clone ZKBuilder
 git clone https://gitlab.com/zernikalos/zkbuilder.git
 
 # Clone Nest Backend
-git clone https://gitlab.com/zernikalos/nest.git
-```
+git clone https://gitlab.com/zernikalos/nest.git`}
+/>
 
 ### 2. Build the repositories
 :::warning
@@ -27,18 +31,20 @@ It is recommended to use PNPM package manager for Nest, as npm currently has iss
 :::
 
 Build the ZkBuilder project
-```bash
-cd zkbuilder
+<CodeWindow
+language="bash"
+code={`cd zkbuilder
 pnpm install
-pnpm build
-```
+pnpm build`}
+/>
 
 And then perform the very same operation for nest
-```bash
-cd ../nest
+<CodeWindow
+language="bash"
+code={`cd ../nest
 pnpm install
-pnpm build
-```
+pnpm build`}
+/>
 
 ### 3. Launch the Nest application
 

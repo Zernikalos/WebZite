@@ -1,0 +1,58 @@
+---
+slug: 'index'
+title: 'ZernikalosBase'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZernikalosBase"
+  namespace="Zernikalos.zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos', url: '/docs/api/-zernikalos.zernikalos' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZernikalosBase', url: '#zernikalosbase' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZernikalosBase"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-zernikalos-base"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="context"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="context"
+    description="Represents the primary context of the Zernikalos engine during its lifecycle."
+    codeBlocks={[{ code: 'lateinit var context: ZContext' }]}
+  />
+  <DocumentationItemComponent
+    name="settings"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="settings"
+    description="Represents the settings for the Zernikalos engine. It provides centralized access to control logging levels and other related settings."
+    codeBlocks={[{ code: 'val settings: ZSettings' }]}
+  />
+  <DocumentationItemComponent
+    name="stats"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="stats"
+    description="Provides platform-specific information and version details for the Zernikalos engine."
+    codeBlocks={[{ code: 'val stats: ZStats' }]}
+  />
+</CodeClassList>

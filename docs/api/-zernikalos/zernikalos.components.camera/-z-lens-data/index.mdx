@@ -1,0 +1,127 @@
+---
+slug: 'index'
+title: 'ZLensData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZLensData"
+  namespace="Zernikalos.zernikalos.components.camera"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.camera',
+      url: '/docs/api/-zernikalos.zernikalos.components.camera',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZLensData', url: '#zlensdata' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZLensData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-lens-data"
+    description=""
+    codeBlocks={[
+      { code: 'constructor()' },
+      { code: 'constructor(near: Float, far: Float)' },
+      { code: 'constructor(near: Float, far: Float, aspectRatio: Float)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="_aspectRatio"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="_aspect-ratio"
+    description=""
+    codeBlocks={[{ code: 'var _aspectRatio: Float?' }]}
+  />
+  <DocumentationItemComponent
+    name="aspectRatio"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="aspect-ratio"
+    description=""
+    codeBlocks={[{ code: 'var aspectRatio: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="far"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="far"
+    description=""
+    codeBlocks={[{ code: 'var far: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="height"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="height"
+    description=""
+    codeBlocks={[{ code: 'var height: Float?' }]}
+  />
+  <DocumentationItemComponent
+    name="near"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="near"
+    description=""
+    codeBlocks={[{ code: 'var near: Float' }]}
+  />
+  <DocumentationItemComponent
+    name="projectionMatrix"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="projection-matrix"
+    description=""
+    codeBlocks={[{ code: 'abstract val projectionMatrix: ZMatrix4' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-component-data/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: '@Transient open override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="useComputedAspectRatio"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="use-computed-aspect-ratio"
+    description=""
+    codeBlocks={[{ code: 'var useComputedAspectRatio: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="width"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="width"
+    description=""
+    codeBlocks={[{ code: 'var width: Float?' }]}
+  />
+  <DocumentationItemComponent
+    name="setDimensions"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-dimensions"
+    description=""
+    codeBlocks={[{ code: 'fun setDimensions(width: Int, height: Int)' }]}
+  />
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-component-data/to-string"
+    description=""
+    codeBlocks={[{ code: 'abstract override fun toString(): String' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,60 @@
+---
+slug: 'index'
+title: 'ZKo'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZKo"
+  namespace="Zernikalos.zernikalos.loader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.loader', url: '/docs/api/-zernikalos.zernikalos.loader' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZKo', url: '#zko' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZKo"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-ko"
+    description=""
+    codeBlocks={[
+      {
+        code: 'constructor(header: ZkoHeader, root: ZObject, actions: List<ZSkeletalAction>? = null)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="actions"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="actions"
+    description=""
+    codeBlocks={[{ code: 'val actions: List<ZSkeletalAction>?' }]}
+  />
+  <DocumentationItemComponent
+    name="header"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="header"
+    description=""
+    codeBlocks={[{ code: 'val header: ZkoHeader' }]}
+  />
+  <DocumentationItemComponent
+    name="root"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="root"
+    description=""
+    codeBlocks={[{ code: 'val root: ZObject' }]}
+  />
+</CodeClassList>

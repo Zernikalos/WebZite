@@ -1,0 +1,48 @@
+---
+slug: 'index'
+title: 'ZkoHeader'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZkoHeader"
+  namespace="Zernikalos.zernikalos.loader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.loader', url: '/docs/api/-zernikalos.zernikalos.loader' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZkoHeader', url: '#zkoheader' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZkoHeader"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-zko-header"
+    description=""
+    codeBlocks={[{ code: 'constructor(version: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="currentVersion"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="current-version"
+    description=""
+    codeBlocks={[{ code: 'val currentVersion: ZSemVer' }]}
+  />
+  <DocumentationItemComponent
+    name="version"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="version"
+    description=""
+    codeBlocks={[{ code: 'val version: String' }]}
+  />
+</CodeClassList>

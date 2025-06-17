@@ -1,0 +1,200 @@
+---
+slug: 'index'
+title: 'ZShaderProgram'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZShaderProgram"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZShaderProgram', url: '#zshaderprogram' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZShaderProgram"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-shader-program"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="attributeIds"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="attribute-ids"
+    description=""
+    codeBlocks={[{ code: 'val attributeIds: Set<ZAttributeId>' }]}
+  />
+  <DocumentationItemComponent
+    name="attributes"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="attributes"
+    description=""
+    codeBlocks={[{ code: 'val attributes: Map<String, ZAttribute>' }]}
+  />
+  <DocumentationItemComponent
+    name="hasRenderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/has-renderer"
+    description=""
+    codeBlocks={[{ code: 'val hasRenderer: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-initialized"
+    description="Represents a boolean value indicating whether a component has been initialized."
+    codeBlocks={[{ code: 'override val isInitialized: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
+    description="Represents a boolean value indicating whether a component is renderizable."
+    codeBlocks={[{ code: 'open override val isRenderizable: Boolean = true' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/ref-id"
+    description="Represents the unique reference identifier for a component."
+    codeBlocks={[{ code: 'override val refId: String' }]}
+  />
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-renderizable-component/renderer"
+    description=""
+    codeBlocks={[{ code: 'val renderer: ZShaderProgramRenderer' }]}
+  />
+  <DocumentationItemComponent
+    name="shaderSource"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="shader-source"
+    description=""
+    codeBlocks={[{ code: 'val shaderSource: ZShaderSource' }]}
+  />
+  <DocumentationItemComponent
+    name="uniforms"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="uniforms"
+    description=""
+    codeBlocks={[{ code: 'val uniforms: ZUniformCollection' }]}
+  />
+  <DocumentationItemComponent
+    name="uniformsNames"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="uniforms-names"
+    description=""
+    codeBlocks={[{ code: 'val uniformsNames: Set<String>' }]}
+  />
+  <DocumentationItemComponent
+    name="addAttribute"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-attribute"
+    description=""
+    codeBlocks={[
+      { code: 'fun addAttribute(attribute: ZAttribute)' },
+      { code: 'fun addAttribute(name: String, attribute: ZAttribute)' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="addUniform"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="add-uniform"
+    description=""
+    codeBlocks={[{ code: 'fun addUniform(name: String, uniform: ZUniform)' }]}
+  />
+  <DocumentationItemComponent
+    name="bind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-bindeable/bind"
+    description="Binds the renderer. This method is called to prepare the renderer for drawing."
+    codeBlocks={[{ code: 'open fun bind()' }]}
+  />
+  <DocumentationItemComponent
+    name="clearAttributes"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="clear-attributes"
+    description=""
+    codeBlocks={[{ code: 'fun clearAttributes()' }]}
+  />
+  <DocumentationItemComponent
+    name="clearUniforms"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="clear-uniforms"
+    description=""
+    codeBlocks={[{ code: 'fun clearUniforms()' }]}
+  />
+  <DocumentationItemComponent
+    name="getUniform"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-uniform"
+    description=""
+    codeBlocks={[{ code: 'fun getUniform(name: String): ZBaseUniform?' }]}
+  />
+  <DocumentationItemComponent
+    name="hasAttribute"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="has-attribute"
+    description=""
+    codeBlocks={[{ code: 'fun hasAttribute(name: String): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="hasAttributeById"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="has-attribute-by-id"
+    description=""
+    codeBlocks={[{ code: 'fun hasAttributeById(attrId: ZAttributeId): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+    codeBlocks={[{ code: 'override fun initialize(ctx: ZRenderingContext)' }]}
+  />
+  <DocumentationItemComponent
+    name="unbind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-bindeable/unbind"
+    description="Unbinds the renderer. This method is called after drawing to clean up."
+    codeBlocks={[{ code: 'open fun unbind()' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,58 @@
+---
+slug: 'index'
+title: 'ZRefComponentWrapper'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZRefComponentWrapper"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components',
+      url: '/docs/api/-zernikalos.zernikalos.components',
+    },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'ZRefComponentWrapper',
+      url: '#zrefcomponentwrapper',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="data"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="data"
+    description=""
+    codeBlocks={[{ code: 'abstract var data: D?' }]}
+  />
+  <DocumentationItemComponent
+    name="isReference"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="is-reference"
+    description=""
+    codeBlocks={[{ code: 'abstract var isReference: Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="ref-id"
+    description=""
+    codeBlocks={[{ code: 'abstract var refId: String' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,52 @@
+---
+slug: 'index'
+title: 'renderer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="renderer"
+  namespace="Zernikalos"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos', url: '/docs/api/-zernikalos' },
+  ]}
+  typeInfo={[
+    {
+      type: 'actual',
+      keyword: 'package',
+      name: 'zernikalos.renderer',
+      url: '#zernikalos.renderer',
+    },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-renderer/index"
+    description=""
+    codeBlocks={[
+      { code: 'expect class ZRenderer(ctx: ZContext): ZRendererBase' },
+      { code: 'actual class ZRenderer(ctx: ZContext): ZRendererBase' },
+      { code: 'actual class ZRenderer(ctx: ZContext): ZRendererBase' },
+      { code: 'actual class ZRenderer(ctx: ZContext): ZRendererBase' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="ZRendererBase"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-renderer-base/index"
+    description=""
+    codeBlocks={[{ code: 'abstract class ZRendererBase(ctx: ZContext): ZLoggable, ZResizable' }]}
+  />
+</CodeClassList>

@@ -1,0 +1,43 @@
+---
+slug: 'index'
+title: 'Companion'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="Companion"
+  namespace="Zernikalos.zernikalos.loader.ZkoLoader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.loader.ZkoLoader',
+      url: '/docs/api/-zernikalos.zernikalos.loader.zkoloader',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Companion', url: '#companion' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="loadFromMainBundlePath"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="load-from-main-bundle-path"
+    description=""
+    codeBlocks={[{ code: 'suspend fun loadFromMainBundlePath(fileName: String): ZKo?' }]}
+  />
+  <DocumentationItemComponent
+    name="loadFromMainBundlePathSync"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="load-from-main-bundle-path-sync"
+    description=""
+    codeBlocks={[{ code: 'fun loadFromMainBundlePathSync(fileName: String): ZKo?' }]}
+  />
+</CodeClassList>

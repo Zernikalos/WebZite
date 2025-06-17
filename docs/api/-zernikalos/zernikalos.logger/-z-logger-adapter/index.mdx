@@ -1,0 +1,58 @@
+---
+slug: 'index'
+title: 'ZLoggerAdapter'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZLoggerAdapter"
+  namespace="Zernikalos.zernikalos.logger"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.logger', url: '/docs/api/-zernikalos.zernikalos.logger' },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZLoggerAdapter', url: '#zloggeradapter' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="debug"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="debug"
+    description=""
+    codeBlocks={[{ code: 'abstract fun debug(message: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="error"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="error"
+    description=""
+    codeBlocks={[{ code: 'abstract fun error(message: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="info"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="info"
+    description=""
+    codeBlocks={[{ code: 'abstract fun info(message: String)' }]}
+  />
+  <DocumentationItemComponent
+    name="warn"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="warn"
+    description=""
+    codeBlocks={[{ code: 'abstract fun warn(message: String)' }]}
+  />
+</CodeClassList>

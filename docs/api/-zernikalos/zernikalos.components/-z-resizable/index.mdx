@@ -1,0 +1,35 @@
+---
+slug: 'index'
+title: 'ZResizable'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZResizable"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components',
+      url: '/docs/api/-zernikalos.zernikalos.components',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZResizable', url: '#zresizable' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="onViewportResize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-viewport-resize"
+    description="Notifies the listener when the viewport dimensions change."
+    codeBlocks={[{ code: 'abstract fun onViewportResize(width: Int, height: Int)' }]}
+  />
+</CodeClassList>

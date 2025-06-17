@@ -1,0 +1,37 @@
+---
+slug: 'index'
+title: 'Companion'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="Companion"
+  namespace="Zernikalos.zernikalos.action.ZKeyFrame"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.action.ZKeyFrame',
+      url: '/docs/api/-zernikalos.zernikalos.action.zkeyframe',
+    },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'Companion', url: '#companion' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="interpolate"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="interpolate"
+    description=""
+    codeBlocks={[
+      { code: 'fun interpolate(time: Float, prev: ZKeyFrame, next: ZKeyFrame): ZKeyFrame' },
+    ]}
+  />
+</CodeClassList>

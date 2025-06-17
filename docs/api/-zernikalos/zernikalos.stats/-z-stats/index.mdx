@@ -1,0 +1,64 @@
+---
+slug: 'index'
+title: 'ZStats'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZStats"
+  namespace="Zernikalos.zernikalos.stats"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.stats', url: '/docs/api/-zernikalos.zernikalos.stats' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZStats', url: '#zstats' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZStats"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-stats"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="platform"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="platform"
+    description=""
+    codeBlocks={[{ code: 'val platform: ZPlatformInfo' }]}
+  />
+  <DocumentationItemComponent
+    name="version"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="version"
+    description=""
+    codeBlocks={[{ code: 'val version: String' }]}
+  />
+  <DocumentationItemComponent
+    name="toJson"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-json"
+    description=""
+    codeBlocks={[{ code: 'fun toJson(): String' }]}
+  />
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="to-string"
+    description=""
+    codeBlocks={[{ code: 'open override fun toString(): String' }]}
+  />
+</CodeClassList>

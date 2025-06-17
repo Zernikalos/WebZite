@@ -1,0 +1,155 @@
+---
+slug: 'index'
+title: 'ZUniformCollection'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZUniformCollection"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    {
+      label: 'Zernikalos.zernikalos.components.shader',
+      url: '/docs/api/-zernikalos.zernikalos.components.shader',
+    },
+  ]}
+  typeInfo={[
+    { type: 'actual', keyword: 'package', name: 'ZUniformCollection', url: '#zuniformcollection' },
+  ]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZUniformCollection"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-z-uniform-collection"
+    description=""
+    codeBlocks={[{ code: 'constructor()' }]}
+  />
+  <DocumentationItemComponent
+    name="blocks"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="blocks"
+    description=""
+    codeBlocks={[{ code: 'val blocks: Iterator<ZUniformBlock>' }]}
+  />
+  <DocumentationItemComponent
+    name="entries"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="entries"
+    description=""
+    codeBlocks={[
+      {
+        code: 'open override val entries: MutableSet<MutableMap.MutableEntry<String, ZBaseUniform>>',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="keys"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="keys"
+    description=""
+    codeBlocks={[{ code: 'open override val keys: MutableSet<String>' }]}
+  />
+  <DocumentationItemComponent
+    name="singles"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="singles"
+    description=""
+    codeBlocks={[{ code: 'val singles: Iterator<ZUniform>' }]}
+  />
+  <DocumentationItemComponent
+    name="size"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="size"
+    description=""
+    codeBlocks={[{ code: 'open override val size: Int' }]}
+  />
+  <DocumentationItemComponent
+    name="values"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="values"
+    description=""
+    codeBlocks={[{ code: 'open override val values: MutableCollection<ZBaseUniform>' }]}
+  />
+  <DocumentationItemComponent
+    name="clear"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="clear"
+    description=""
+    codeBlocks={[{ code: 'open override fun clear()' }]}
+  />
+  <DocumentationItemComponent
+    name="containsKey"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="contains-key"
+    description=""
+    codeBlocks={[{ code: 'open override fun containsKey(key: String): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="containsValue"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="contains-value"
+    description=""
+    codeBlocks={[{ code: 'open override fun containsValue(value: ZBaseUniform): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="get"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get"
+    description=""
+    codeBlocks={[{ code: 'open operator override fun get(key: String): ZBaseUniform?' }]}
+  />
+  <DocumentationItemComponent
+    name="isEmpty"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="is-empty"
+    description=""
+    codeBlocks={[{ code: 'open override fun isEmpty(): Boolean' }]}
+  />
+  <DocumentationItemComponent
+    name="put"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="put"
+    description=""
+    codeBlocks={[
+      { code: 'open override fun put(key: String, value: ZBaseUniform): ZBaseUniform?' },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="putAll"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="put-all"
+    description=""
+    codeBlocks={[{ code: 'open override fun putAll(from: Map<out String, ZBaseUniform>)' }]}
+  />
+  <DocumentationItemComponent
+    name="remove"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="remove"
+    description=""
+    codeBlocks={[{ code: 'open override fun remove(key: String): ZBaseUniform?' }]}
+  />
+</CodeClassList>

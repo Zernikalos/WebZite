@@ -1,0 +1,76 @@
+---
+slug: 'index'
+title: 'ZkoFormat'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  CodeClassList,
+  DocumentationItemComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZkoFormat"
+  namespace="Zernikalos.zernikalos.loader"
+  breadcrumbs={[
+    { label: 'API', url: '/docs/api' },
+    { label: 'Zernikalos.zernikalos.loader', url: '/docs/api/-zernikalos.zernikalos.loader' },
+  ]}
+  typeInfo={[{ type: 'actual', keyword: 'package', name: 'ZkoFormat', url: '#zkoformat' }]}
+/>
+
+<CodeClassList>
+  <DocumentationItemComponent
+    name="ZkoFormat"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url="-zko-format"
+    description=""
+    codeBlocks={[
+      {
+        code: 'constructor(header: ZkoHeader, textures: List<ZTexture>, objects: List<ZkoObjectProto>, hierarchy: ZkoHierarchyNode, actions: List<ZSkeletalAction>? = null)',
+      },
+    ]}
+  />
+  <DocumentationItemComponent
+    name="actions"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="actions"
+    description=""
+    codeBlocks={[{ code: 'val actions: List<ZSkeletalAction>?' }]}
+  />
+  <DocumentationItemComponent
+    name="header"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="header"
+    description=""
+    codeBlocks={[{ code: 'val header: ZkoHeader' }]}
+  />
+  <DocumentationItemComponent
+    name="hierarchy"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="hierarchy"
+    description=""
+    codeBlocks={[{ code: 'val hierarchy: ZkoHierarchyNode' }]}
+  />
+  <DocumentationItemComponent
+    name="objects"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="objects"
+    description=""
+    codeBlocks={[{ code: 'val objects: List<ZkoObjectProto>' }]}
+  />
+  <DocumentationItemComponent
+    name="textures"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="textures"
+    description=""
+    codeBlocks={[{ code: 'val textures: List<ZTexture>' }]}
+  />
+</CodeClassList>
