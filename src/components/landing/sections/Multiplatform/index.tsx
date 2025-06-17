@@ -7,14 +7,14 @@ import SectionText from '../SectionText';
 export default function MultiplatformSection(): JSX.Element {
   return (
     <section className="tw:py-24 tw:w-full">
-      <div className="container tw:flex tw:flex-row tw:justify-between tw:items-center tw:gap-12">
+      <div className="container tw:flex tw:flex-col tw:md:flex-row tw:justify-between tw:items-center tw:gap-12">
         {/* Icon composition */}
-        <div className="tw:w-full md:tw:w-1/2 tw:flex tw:justify-center md:tw:justify-start tw:scale-75 md:tw:scale-90 lg:tw:scale-100">
+        <div className="tw:order-2 tw:md:order-1 tw:w-full tw:md:w-1/2 tw:flex tw:justify-center tw:md:justify-start tw:scale-75 tw:md:scale-90 tw:lg:scale-100">
           <PlatformSolarSystem />
         </div>
 
         {/* Textual content */}
-        <div className="tw:w-full md:tw:w-1/2">
+        <div className="tw:order-1 tw:md:order-2 tw:w-full tw:md:w-1/2">
           <SectionTitle title="Truly Multiplatform" />
           <SectionText>
             Write your game or 3D application once and run it everywhere. Thanks to&nbsp;
