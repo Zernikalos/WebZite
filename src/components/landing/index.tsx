@@ -8,6 +8,7 @@ import styles from '../../pages/index.module.css';
 import * as SvgModule from '@site/static/img/zklogo.svg';
 import LandingHeader from './Header';
 import BackgroundBlobs from './BackgroundBlobs';
+import MultiplatformSection from './sections/Multiplatform';
 const Svg = SvgModule.default;
 
 type SvgType = React.ComponentType<React.ComponentProps<'svg'>>;
@@ -36,6 +37,7 @@ export default function Landing(): JSX.Element {
       <BackgroundBlobs>
         <HomepageHeader />
         <main>
+          <MultiplatformSection />
           <HomepageFeatures />
         </main>
       </BackgroundBlobs>

@@ -31,16 +31,6 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Multiplatform',
-    imgUrl: '/img/multiplatform.webp',
-    description: (
-      <>
-        Want to develop for Android, iOS, and Web? We got you! With Zernikalos engine, 
-        you can build amazing applications using a single unified API across all platforms.
-      </>
-    ),
-  },
-  {
     title: 'Powered by Kotlin',
     imgUrl: '/img/zkkotlin.webp',
     description: (
