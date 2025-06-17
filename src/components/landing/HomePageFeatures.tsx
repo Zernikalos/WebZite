@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
-import BlazingFast from '../BlazingFast';
 
 type FeatureItem = {
   title: string;
@@ -20,16 +19,7 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-  {
-    title: 'Blazing Fast',
-    imgUrl: '/img/blazing_fast.webp',
-    description: (
-      <>
-        Built with a unified core and minimal dependencies, Zernikalos delivers 
-        lightning-fast development and runtime performance across all platforms.
-      </>
-    ),
-  },
+
   {
     title: 'Powered by Kotlin',
     imgUrl: '/img/zkkotlin.webp',
@@ -67,9 +57,6 @@ export default function HomepageFeatures(): JSX.Element {
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
-        </div>
-        <div className="row">
-          <BlazingFast />
         </div>
       </div>
     </section>
