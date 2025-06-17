@@ -1,16 +1,14 @@
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/landing/HomePageFeatures';
 
 import styles from '../../pages/index.module.css';
 
-import * as SvgModule from '@site/static/img/zklogo.svg';
 import LandingHeader from './Header';
 import BackgroundBlobs from './BackgroundBlobs';
 import MultiplatformSection from './sections/Multiplatform';
 import BlazingFastSection from './sections/BlazingFast';
-const Svg = SvgModule.default;
+import PoweredByKotlinSection from './sections/PoweredByKotlin';
 
 type SvgType = React.ComponentType<React.ComponentProps<'svg'>>;
 
@@ -40,7 +38,7 @@ export default function Landing(): JSX.Element {
         <main>
           <MultiplatformSection />
           <BlazingFastSection />
-          <HomepageFeatures />
+          <PoweredByKotlinSection />
         </main>
       </BackgroundBlobs>
     </Layout>
