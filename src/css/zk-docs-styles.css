@@ -1,10 +1,40 @@
-@layer theme, base, components, utilities;
-@import 'tailwindcss/theme.css' layer(theme) prefix(tw) important;
-@import 'tailwindcss/utilities.css' layer(utilities) important;
+@layer base, components, docusaurus.infima, theme, utilities;
+@import 'tailwindcss/theme.css' layer(theme) prefix(tw);
+@import 'tailwindcss/utilities.css' layer(utilities);
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @plugin "daisyui";
+
+/**
+ * Reverts the docusaurus.infima CSS layer for any element with this class,
+ * effectively isolating it and its children from Docusaurus's global styles.
+ * The ':not(#a#b)' selector is a trick to increase specificity.
+ */
+.no-infima-styles:not(#a#b),
+.no-infima-styles:not(#a#b) * {
+  @layer docusaurus.infima {
+    all: revert-layer;
+  }
+}
+
+/* Override Infima's heading styles within .no-infima-styles */
+/* This allows Tailwind to take control */
+.landing h1,
+.landing h2,
+.landing h3,
+.landing h4,
+.landing h5,
+.landing h6 {
+  /* General reset for all headings, color will be overridden for h1 below */
+  color: transparent !important;
+  font-size: initial;
+  /* font-family: inherit !important; */
+  /* font-weight: inherit !important;
+  line-height: inherit !important; */
+  /* margin: 0 !important; */
+}
+
 
 /* You can override the default Infima variables here. */
 :root {
