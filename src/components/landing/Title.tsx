@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import Heading from '@theme/Heading';
 
 export default function Title(): JSX.Element {
 
@@ -9,8 +8,7 @@ export default function Title(): JSX.Element {
           // Layout: Grow to fill space, align text left, add right padding
           "tw:flex-grow tw:text-left tw:pr-4"
         }>
-      <Heading
-        as="h1"
+      <h1
         className={clsx(
           // Typography & Layout: Extra-bold, italic, tight tracking, inline-block, right padding
           'tw:inline-block tw:font-extrabold tw:tracking-tight tw:pr-4',
@@ -38,7 +36,7 @@ export default function Title(): JSX.Element {
             // Typography: Normal line height
             'tw:leading-normal'
           )}>The Kotlin 3D Engine</span>
-      </Heading>
+      </h1>
     </div>
   );
 }

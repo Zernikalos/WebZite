@@ -4,6 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import platformsToIcons from './src/remark/platformsToIcons';
 
 const config: Config = {
+
   title: 'Zernikalos Engine',
   tagline: 'The Kotlin 3D Engine',
   favicon: 'img/zklogo.svg',
@@ -137,9 +138,9 @@ const config: Config = {
       {name: 'keywords', content: 'zernikalos, engine, game development, kotlin, 3d, graphics'},
     ],
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
       disableSwitch: true,
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'Zernikalos',
