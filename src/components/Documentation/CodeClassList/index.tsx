@@ -54,13 +54,13 @@ const TAB_CONFIGS: Record<string, TabConfig> = {
       </svg>
     )
   },
-  functions: {
-    value: 'functions',
-    title: 'Functions',
-    color: 'amber',
+  enum_entries: {
+    value: 'enum_entries',
+    title: 'Enum Values',
+    color: 'rose',
     icon: (
-      <svg className="tw:w-5 tw:h-5" fill="currentColor" viewBox="0 0 20 20">
-        <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+      <svg xmlns="http://www.w3.org/2000/svg" className="tw:w-5 tw:h-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fillRule="evenodd" d="M10 3a1 1 0 011 1v.069l.36-1.59A1 1 0 0112.333 2h.025a1 1 0 01.975 1.217L12.9 6H16a1 1 0 110 2h-3.075l-.334 1.488A1 1 0 0111.618 11h.027a1 1 0 01.975 1.217L12.187 14H16a1 1 0 110 2h-3.813l-.36 1.59a1 1 0 01-1.975-.434L10.217 16H8a1 1 0 110-2h2.217l.36-1.59a1 1 0 011.975-.434L12.187 10H8a1 1 0 110-2h4.187l.334-1.488A1 1 0 0113.5 5h.025a1 1 0 01.975 1.217L14.066 8H10a1 1 0 01-1-1V4a1 1 0 011-1z" clipRule="evenodd" />
       </svg>
     )
   },
@@ -73,14 +73,26 @@ const TAB_CONFIGS: Record<string, TabConfig> = {
         <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
       </svg>
     )
+  },
+  functions: {
+    value: 'functions',
+    title: 'Functions',
+    color: 'amber',
+    icon: (
+      <svg className="tw:w-5 tw:h-5" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+      </svg>
+    )
   }
 };
 
 const GROUP_TYPE_TO_TAB_VALUE = {
   [GroupType.TYPE]: 'types',
+  [GroupType.PACKAGE]: 'types',
   [GroupType.CONSTRUCTOR]: 'constructors',
   [GroupType.FUNCTION]: 'functions',
   [GroupType.PROPERTY]: 'properties',
+  [GroupType.ENUM_ENTRY]: 'enum_entries',
   [GroupType.NONE]: '' // Ensure this case is handled if NONE items can appear
 };
 
@@ -92,8 +104,9 @@ export const CodeClassList: React.FC<CodeClassListProps> = ({ children }) => {
       all: [],
       types: [],
       constructors: [],
-      functions: [],
-      properties: []
+      enum_entries: [],
+      properties: [],
+      functions: []
     };
     
     Children.forEach(children, (child) => {

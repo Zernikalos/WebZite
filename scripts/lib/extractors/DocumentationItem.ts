@@ -8,8 +8,10 @@ import { extractCleanText } from './base-extractors';
  */
 export enum GroupType {
   NONE = 'NONE',
+  PACKAGE = 'PACKAGE',
   CONSTRUCTOR = 'CONSTRUCTOR',
   PROPERTY = 'PROPERTY',
+  ENUM_ENTRY = 'ENUM_ENTRY',
   FUNCTION = 'FUNCTION',
   TYPE = 'TYPE',
 }
@@ -24,6 +26,7 @@ export enum TokenType {
   VAL = 'val',
   VAR = 'var',
   ENUM = 'enum',
+  ENUM_ENTRY = 'enum entry',
   NONE = ''
 }
 
@@ -113,7 +116,7 @@ export class DocumentationItem {
     return '#';
   }
 
-  private extractTokenType(element: cheerio.Cheerio<any>): TokenType {    
+    private extractTokenType(element: cheerio.Cheerio<any>): TokenType {    
     if (element.find('.token.keyword:contains("package")').length > 0) {
       return TokenType.PACKAGE;
     }
@@ -143,13 +146,17 @@ export class DocumentationItem {
     if (element.find('.token.function').length > 0) {
       return TokenType.FUNCTION;
     }
-    
+    if (element.attr('data-togglable') === 'ENTRY') {
+      return TokenType.ENUM_ENTRY;
+    }
     return TokenType.NONE;
   }
 
-  private extractType(tokenType: TokenType): GroupType {
+  private extractGroupType(tokenType: TokenType): GroupType {
     switch (tokenType) {
       case TokenType.PACKAGE:
+        return GroupType.PACKAGE;
+
       case TokenType.CLASS:
       case TokenType.DATA_CLASS:
       case TokenType.INTERFACE:
@@ -165,6 +172,9 @@ export class DocumentationItem {
       
       case TokenType.FUNCTION:
         return GroupType.FUNCTION;
+      
+      case TokenType.ENUM_ENTRY:
+        return GroupType.ENUM_ENTRY;
       
       case TokenType.NONE:
       default:
@@ -194,7 +204,7 @@ export class DocumentationItem {
 
     this.tokenType = this.extractTokenType(element);
     this.description = this.extractDescription(element);
-    this.groupType = this.extractType(this.tokenType);
+    this.groupType = this.extractGroupType(this.tokenType);
     this.name = name;
     this.sourceUrl = DocumentationItem.extractSourceUrl(element);;
     this.url = this.extractDocumentationUrl(element);

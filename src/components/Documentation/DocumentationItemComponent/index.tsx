@@ -12,13 +12,16 @@ export enum TokenType {
   VAL = 'val',
   VAR = 'var',
   ENUM = 'enum',
+  ENUM_ENTRY = 'enum entry',
   NONE = ''
 }
 
 export enum GroupType {
   NONE = 'NONE',
+  PACKAGE = 'PACKAGE',
   CONSTRUCTOR = 'CONSTRUCTOR',
   PROPERTY = 'PROPERTY',
+  ENUM_ENTRY = 'ENUM_ENTRY',
   FUNCTION = 'FUNCTION',
   TYPE = 'TYPE',
 }
@@ -58,6 +61,7 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
         return 'blue';
       case TokenType.VAL:
       case TokenType.VAR:
+      case TokenType.ENUM_ENTRY:
         return 'red';
       default:
         return 'gray';
@@ -110,6 +114,7 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
         return 'tw:bg-blue-100 tw:text-blue-800 tw:dark:bg-blue-900 tw:dark:text-blue-300';
       case TokenType.VAL:
       case TokenType.VAR:
+      case TokenType.ENUM_ENTRY:
         return 'tw:bg-red-100 tw:text-red-800 tw:dark:bg-red-900 tw:dark:text-red-300';
       default:
         return 'tw:bg-gray-100 tw:text-gray-800 tw:dark:bg-gray-700 tw:dark:text-gray-300';

@@ -51,6 +51,7 @@ const headerTemplate = (data: TemplateData): string => {
 />`;
 };
 
+// TODO: Check the processedCode step
 // Helper function to generate the string for the codeBlocks prop
 function createCodeBlocksPropString(blocks: Array<{ code: string; [key: string]: any }> | undefined): string {
   const blockStrings = blocks?.map(block => {
