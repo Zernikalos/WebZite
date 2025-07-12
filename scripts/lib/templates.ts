@@ -95,9 +95,9 @@ const codeListTemplate = (data: TemplateData): string => {
   }
   
   // Generate the CodeClassList component with all DocumentationItemComponent children
-  return `<CodeClassList>
+  return `<DocumentationItemList>
   ${documentationItemsRC.join('\n  ')}
-</CodeClassList>`;
+</DocumentationItemList>`;
 };
 
 /**
@@ -107,7 +107,7 @@ const codeListTemplate = (data: TemplateData): string => {
  */
 const docTemplate = (data: TemplateData): string => {
   // Imports section is common for all document types
-  const imports = "import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';\n\n";
+  const imports = "import { DocHeader, DocumentationItemList, DocumentationItemComponent } from '@site/src/components/Documentation';\n\n";
   
   // Generate header section
   const header = headerTemplate(data);

@@ -7,4 +7,4 @@ export * from './PropertyList';
 
 // New code documentation components
 export * from './DocumentationItemComponent';
-export * from './CodeClassList';
+export * from './DocumentationItemList';

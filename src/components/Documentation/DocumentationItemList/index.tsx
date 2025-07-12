@@ -3,14 +3,14 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { GroupType } from '../DocumentationItemComponent';
 
-export interface CodeClass {
+export interface DocumentationListHeader {
   name: string;
   description?: string;
   annotations?: string[];
   url?: string;
 }
 
-interface CodeClassListProps {
+interface DocumentationItemListProps {
   children: React.ReactNode;
 }
 
@@ -96,7 +96,7 @@ const GROUP_TYPE_TO_TAB_VALUE = {
   [GroupType.NONE]: '' // Ensure this case is handled if NONE items can appear
 };
 
-export const CodeClassList: React.FC<CodeClassListProps> = ({ children }) => {
+export const DocumentationItemList: React.FC<DocumentationItemListProps> = ({ children }) => {
   // tabConfigs and groupTypeToTabValue are now module-level constants: TAB_CONFIGS, GROUP_TYPE_TO_TAB_VALUE
   // The actual definitions for TAB_CONFIGS and GROUP_TYPE_TO_TAB_VALUE are now outside this component.
   const { itemsByType, totalItems } = useMemo(() => {
@@ -107,6 +107,16 @@ export const CodeClassList: React.FC<CodeClassListProps> = ({ children }) => {
       enum_entries: [],
       properties: [],
       functions: []
+    };
+
+    const groupTypeSortOrder: Record<GroupType, number> = {
+      [GroupType.TYPE]: 0,
+      [GroupType.PACKAGE]: 0,
+      [GroupType.CONSTRUCTOR]: 1,
+      [GroupType.ENUM_ENTRY]: 2,
+      [GroupType.PROPERTY]: 3,
+      [GroupType.FUNCTION]: 4,
+      [GroupType.NONE]: 5
     };
     
     Children.forEach(children, (child) => {
@@ -120,6 +130,15 @@ export const CodeClassList: React.FC<CodeClassListProps> = ({ children }) => {
           itemsAccumulator[tabValue].push(child);
         }
       }
+    });
+
+    // Sort the 'all' items based on the defined order
+    itemsAccumulator.all.sort((a, b) => {
+      const groupA = a.props.groupType as GroupType;
+      const groupB = b.props.groupType as GroupType;
+      const orderA = groupTypeSortOrder[groupA] ?? 99;
+      const orderB = groupTypeSortOrder[groupB] ?? 99;
+      return orderA - orderB;
     });
     
     const total = Object.values(itemsAccumulator).reduce(
@@ -217,4 +236,4 @@ export const CodeClassList: React.FC<CodeClassListProps> = ({ children }) => {
   );
 };
 
-export default CodeClassList;
+export default DocumentationItemList;
