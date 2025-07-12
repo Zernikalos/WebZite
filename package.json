@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "dev": "docusaurus start",
+    "dev": "docusaurus start --host 0.0.0.0",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -18,8 +18,8 @@
     "generate:docs": "rimraf ./docs/api && ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api",
     "generate:docs:dev": "ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api"
   },
-  "dependencies": {
-    "@docusaurus/core": "3.8.1",
+  "dependencies": { 
+    "@zernikalos/zernikalos": "0.4.1",
     "@docusaurus/plugin-content-docs": "3.8.1",
     "@docusaurus/plugin-ideal-image": "3.8.1",
     "@docusaurus/preset-classic": "3.8.1",

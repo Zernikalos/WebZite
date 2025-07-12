@@ -9,6 +9,7 @@ import BackgroundBlobs from './BackgroundBlobs';
 import MultiplatformSection from './sections/Multiplatform';
 import BlazingFastSection from './sections/BlazingFast';
 import PoweredByKotlinSection from './sections/PoweredByKotlin';
+import FoxRunning from './FoxRunning';
 
 type SvgType = React.ComponentType<React.ComponentProps<'svg'>>;
 
@@ -39,6 +40,7 @@ export default function Landing(): JSX.Element {
           <MultiplatformSection />
           <BlazingFastSection />
           <PoweredByKotlinSection />
+          <FoxRunning />
         </main>
       </BackgroundBlobs>
     </Layout>
