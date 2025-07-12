@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import CodeBlockComponent, { CodeBlockComponentProps } from '../CodeBlockComponent';
 
 export enum TokenType {
+  PACKAGE = 'package',
   CLASS = 'class',
   DATA_CLASS = 'data class',
   CONSTRUCTOR = 'constructor',
@@ -48,6 +49,8 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
       case TokenType.INTERFACE:
       case TokenType.ENUM:
         return 'purple';
+      case TokenType.PACKAGE:
+        return 'yellow';
       case TokenType.DATA_CLASS:
         return 'green';
       case TokenType.FUNCTION:
@@ -69,6 +72,7 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
       green: 'tw:border-l-green-500',
       blue: 'tw:border-l-blue-500',
       red: 'tw:border-l-red-500',
+      yellow: 'tw:border-l-yellow-500',
       gray: 'tw:border-l-gray-500',
     };
     return map[colorSchemeName] || map.gray;
@@ -86,6 +90,8 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
         return 'tw:bg-blue-50 tw:text-blue-700 tw:dark:bg-blue-900/20 tw:dark:text-blue-300 tw:border-blue-200 tw:dark:border-blue-800/50';
       case 'red':
         return 'tw:bg-red-50 tw:text-red-700 tw:dark:bg-red-900/20 tw:dark:text-red-300 tw:border-red-200 tw:dark:border-red-800/50';
+      case 'yellow':
+        return 'tw:bg-yellow-50 tw:text-yellow-700 tw:dark:bg-yellow-900/20 tw:dark:text-yellow-300 tw:border-yellow-200 tw:dark:border-yellow-800/50';
       default: // gray
         return 'tw:bg-gray-50 tw:text-gray-700 tw:dark:bg-gray-900/20 tw:dark:text-gray-300 tw:border-gray-200 tw:dark:border-gray-800/50';
     }
@@ -93,6 +99,8 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
 
   const getBadgeColor = () => {
     switch (tokenType) {
+      case TokenType.PACKAGE:
+        return 'tw:bg-yellow-100 tw:text-yellow-800 tw:dark:bg-yellow-900 tw:dark:text-yellow-300';
       case TokenType.CLASS:
       case TokenType.INTERFACE:
       case TokenType.ENUM:

@@ -15,6 +15,7 @@ export enum GroupType {
 }
 
 export enum TokenType {
+  PACKAGE = 'package',
   CLASS = 'class',
   DATA_CLASS = 'data class',
   CONSTRUCTOR = 'constructor',
@@ -113,6 +114,9 @@ export class DocumentationItem {
   }
 
   private extractTokenType(element: cheerio.Cheerio<any>): TokenType {    
+    if (element.find('.token.keyword:contains("package")').length > 0) {
+      return TokenType.PACKAGE;
+    }
     if (element.find('.token.keyword:contains("data")').length > 0 && element.find('.token.keyword:contains("class")').length > 0) {
       return TokenType.DATA_CLASS;
     }
@@ -145,6 +149,7 @@ export class DocumentationItem {
 
   private extractType(tokenType: TokenType): GroupType {
     switch (tokenType) {
+      case TokenType.PACKAGE:
       case TokenType.CLASS:
       case TokenType.DATA_CLASS:
       case TokenType.INTERFACE:
