@@ -63,8 +63,8 @@ export class DocumentationItem {
       return nameElement.text().trim();
     }
 
-    // If no link is found, try with the div directly
-    const divElement = element.find('.inline-flex div');
+    // If no link is found, try with a more specific div selector to avoid grabbing the 'copy-popup' text.
+    const divElement = element.find('.inline-flex > div:first-child');
     if (divElement.length > 0) {
       return divElement.text().trim();
     }
@@ -182,7 +182,9 @@ export class DocumentationItem {
   }
 
   public parse($: cheerio.CheerioAPI, element: cheerio.Cheerio<any>): void {
-    const name = DocumentationItem.extractDeclarationName(element) || DocumentationItem.extractNameFromCover(element, $);
+    let nameFromDeclaration = DocumentationItem.extractDeclarationName(element) 
+    let nameFromCover = DocumentationItem.extractNameFromCover(element, $);
+    const name = nameFromDeclaration || nameFromCover;
 
     if (!name) {
       throw new Error('No name found');
