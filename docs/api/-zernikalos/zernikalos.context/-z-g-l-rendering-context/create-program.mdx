@@ -3,7 +3,7 @@ slug: "create-program"
 title: "createProgram"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"createProgram","url":"#createprogram"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="createProgram"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual fun createProgram(): GLWrap"}, {code: "actual fun createProgram(): GLWrap"}, {code: "expect fun createProgram(): GLWrap"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun createProgram(): GLWrap"]} links={[{"text":"createProgram","href":"create-program"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L42"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L42" />
+    <CodeBlockComponent platform="ogl" code={["expect fun createProgram(): GLWrap"]} links={[{"text":"createProgram","href":"create-program"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L37"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L37" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

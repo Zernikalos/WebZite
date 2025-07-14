@@ -3,7 +3,7 @@ slug: "-ones"
 title: "Ones"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"Ones","url":"#ones"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="Ones"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "val Ones: ZVector3"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val Ones: ZVector3"]} links={[{"text":"Ones","href":"-ones"},{"text":"ZVector3","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L169"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L169" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

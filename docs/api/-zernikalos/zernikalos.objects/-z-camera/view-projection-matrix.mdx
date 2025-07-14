@@ -3,7 +3,7 @@ slug: "view-projection-matrix"
 title: "viewProjectionMatrix"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"viewProjectionMatrix","url":"#viewprojectionmatrix"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="viewProjectionMatrix"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val viewProjectionMatrix: ZMatrix4"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val viewProjectionMatrix: ZMatrix4"]} links={[{"text":"viewProjectionMatrix","href":"view-projection-matrix"},{"text":"ZMatrix4","href":"../../zernikalos.math/-z-matrix4/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZCamera.kt#L68"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZCamera.kt#L68" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

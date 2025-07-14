@@ -3,7 +3,7 @@ slug: "is-compatible-with"
 title: "isCompatibleWith"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"isCompatibleWith","url":"#iscompatiblewith"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="isCompatibleWith"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun isCompatibleWith(other: ZSemVer): Boolean"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun isCompatibleWith(other: ZSemVer): Boolean"]} links={[{"text":"isCompatibleWith","href":"is-compatible-with"},{"text":"ZSemVer","href":"index"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/utils/ZSemver.kt#L30"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/utils/ZSemver.kt#L30" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

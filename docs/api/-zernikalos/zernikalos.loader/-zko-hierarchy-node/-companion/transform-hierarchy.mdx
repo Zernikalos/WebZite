@@ -3,7 +3,7 @@ slug: "transform-hierarchy"
 title: "transformHierarchy"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"transformHierarchy","url":"#transformhierarchy"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="Error"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun transformHierarchy(hierarchyNode: ZkoHierarchyNode, objects: List<ZkoObjectProto>): ZObject"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun transformHierarchy(hierarchyNode: ZkoHierarchyNode, objects: List<ZkoObjectProto>): ZObject"]} links={[{"text":"transformHierarchy","href":"transform-hierarchy"},{"text":"ZkoHierarchyNode","href":"../index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZkoObjectProto","href":"../../-zko-object-proto/index"},{"text":"ZObject","href":"../../../zernikalos.objects/-z-object/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoHierarchyNode.kt#L22"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoHierarchyNode.kt#L22" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

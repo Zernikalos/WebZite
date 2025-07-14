@@ -3,7 +3,7 @@ slug: "index"
 title: "BONE_INDEX"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,37 +13,41 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"BONE_INDEX","url":"#bone_index"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="attrName"
     tokenType="val"
     groupType="PROPERTY"
     url="../attr-name"
     description=""
-    codeBlocks={[{code: "val attrName: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val attrName: String"]} links={[{"text":"attrName","href":"../attr-name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="id"
     tokenType="val"
     groupType="PROPERTY"
     url="../id"
     description=""
-    codeBlocks={[{code: "val id: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val id: Int"]} links={[{"text":"id","href":"../id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="name"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../../zernikalos.objects/-z-object-type/-s-k-e-l-e-t-o-n/index.html#-372974862%2FProperties%2F1558683979"
+    url="../../../zernikalos.objects/-z-object-type/-l-i-g-h-t/index.html#-372974862%2FProperties%2F1558683979"
     description=""
-    codeBlocks={[{code: "expect val name: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect val name: String"]} links={[{"text":"name","href":"../../../zernikalos.objects/-z-object-type/-l-i-g-h-t/index.html#-372974862%2FProperties%2F1558683979"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ordinal"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../../zernikalos.objects/-z-object-type/-s-k-e-l-e-t-o-n/index.html#-739389684%2FProperties%2F1558683979"
+    url="../../../zernikalos.objects/-z-object-type/-l-i-g-h-t/index.html#-739389684%2FProperties%2F1558683979"
     description=""
-    codeBlocks={[{code: "expect val ordinal: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect val ordinal: Int"]} links={[{"text":"ordinal","href":"../../../zernikalos.objects/-z-object-type/-l-i-g-h-t/index.html#-739389684%2FProperties%2F1558683979"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

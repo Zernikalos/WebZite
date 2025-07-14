@@ -3,7 +3,7 @@ slug: "index"
 title: "ExpectShaderType"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,25 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ExpectShaderType","url":"#expectshadertype"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="FRAGMENT_SHADER"
     tokenType="val"
     groupType="PROPERTY"
     url="-f-r-a-g-m-e-n-t_-s-h-a-d-e-r"
     description=""
-    codeBlocks={[{code: "actual val FRAGMENT_SHADER: Int"}, {code: "actual val FRAGMENT_SHADER: Int"}, {code: "expect val FRAGMENT_SHADER: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual val FRAGMENT_SHADER: Int"]} links={[{"text":"FRAGMENT_SHADER","href":"-f-r-a-g-m-e-n-t_-s-h-a-d-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val FRAGMENT_SHADER: Int"]} links={[{"text":"FRAGMENT_SHADER","href":"-f-r-a-g-m-e-n-t_-s-h-a-d-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="VERTEX_SHADER"
     tokenType="val"
     groupType="PROPERTY"
     url="-v-e-r-t-e-x_-s-h-a-d-e-r"
     description=""
-    codeBlocks={[{code: "actual val VERTEX_SHADER: Int"}, {code: "actual val VERTEX_SHADER: Int"}, {code: "expect val VERTEX_SHADER: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val VERTEX_SHADER: Int"]} links={[{"text":"VERTEX_SHADER","href":"-v-e-r-t-e-x_-s-h-a-d-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val VERTEX_SHADER: Int"]} links={[{"text":"VERTEX_SHADER","href":"-v-e-r-t-e-x_-s-h-a-d-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

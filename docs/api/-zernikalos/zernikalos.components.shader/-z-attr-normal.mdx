@@ -3,7 +3,7 @@ slug: "-z-attr-normal"
 title: "ZAttrNormal"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZAttrNormal","url":"#zattrnormal"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZAttrNormal"
     tokenType="val"
     groupType="PROPERTY"
     url="../../index"
     description=""
-    codeBlocks={[{code: "val ZAttrNormal: ZAttribute"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val ZAttrNormal: ZAttribute"]} links={[{"text":"ZAttrNormal","href":"-z-attr-normal"},{"text":"ZAttribute","href":"-z-attribute/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZAttribute.kt#L35"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZAttribute.kt#L35" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

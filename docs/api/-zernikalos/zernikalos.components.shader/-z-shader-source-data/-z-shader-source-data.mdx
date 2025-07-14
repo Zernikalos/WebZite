@@ -3,7 +3,7 @@ slug: "-z-shader-source-data"
 title: "ZShaderSourceData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZShaderSourceData","url":"#zshadersourcedata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZShaderSourceData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "constructor(glsl: ZGlSLShaderSource = ZGlSLShaderSource(), metal: ZMetalShaderSource = ZMetalShaderSource())"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["constructor(glsl: ZGlSLShaderSource = ZGlSLShaderSource(), metal: ZMetalShaderSource = ZMetalShaderSource(), wgpu: ZWebGpuShaderSource = ZWebGpuShaderSource())"]} links={[{"text":"ZGlSLShaderSource","href":"../-z-gl-s-l-shader-source/index"},{"text":"ZMetalShaderSource","href":"../-z-metal-shader-source/index"},{"text":"ZWebGpuShaderSource","href":"../-z-web-gpu-shader-source/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderSource.kt#L56"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderSource.kt#L56" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

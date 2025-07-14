@@ -3,7 +3,7 @@ slug: "minus"
 title: "minus"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"minus","url":"#minus"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="minus"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "operator fun minus(q: ZQuaternion): ZQuaternion"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["operator fun minus(q: ZQuaternion): ZQuaternion"]} links={[{"text":"minus","href":"minus"},{"text":"ZQuaternion","href":"index"},{"text":"ZQuaternion","href":"index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZQuaternion.kt#L102"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZQuaternion.kt#L102" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

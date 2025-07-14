@@ -3,7 +3,7 @@ slug: "index"
 title: "ui"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,69 +13,77 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.ui","url":"#zernikalos.ui"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="AndroidNativeRenderer"
     tokenType="class"
     groupType="TYPE"
     url="-android-native-renderer/index"
     description=""
-    codeBlocks={[{code: "class AndroidNativeRenderer: GLSurfaceView.Renderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["class AndroidNativeRenderer : GLSurfaceView.Renderer"]} links={[{"text":"AndroidNativeRenderer","href":"-android-native-renderer/index"},{"text":"GLSurfaceView.Renderer","href":"https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAndroidSurfaceView"
     tokenType="class"
     groupType="TYPE"
     url="-z-android-surface-view/index"
     description=""
-    codeBlocks={[{code: "class ZAndroidSurfaceView(view: GLSurfaceView): ZSurfaceView"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["class ZAndroidSurfaceView(view: GLSurfaceView) : ZSurfaceView"]} links={[{"text":"ZAndroidSurfaceView","href":"-z-android-surface-view/index"},{"text":"GLSurfaceView","href":"https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.html"},{"text":"ZSurfaceView","href":"-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZernikalosView"
     tokenType="class"
     groupType="TYPE"
     url="-zernikalos-view/index"
     description=""
-    codeBlocks={[{code: "class ZernikalosView: GLSurfaceView, ZSurfaceView"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["class ZernikalosView : GLSurfaceView, ZSurfaceView"]} links={[{"text":"ZernikalosView","href":"-zernikalos-view/index"},{"text":"GLSurfaceView","href":"https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.html"},{"text":"ZSurfaceView","href":"-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZJsSurfaceView"
     tokenType="class"
     groupType="TYPE"
     url="-z-js-surface-view/index"
     description=""
-    codeBlocks={[{code: "@ExperimentalJsExport class ZJsSurfaceView(val canvas: HTMLCanvasElement): ZSurfaceView"}]}
-  />
+  >
+    <CodeBlockComponent platform="webgpu" code={["class ZJsSurfaceView(val canvas: ERROR CLASS: Symbol not found for HTMLCanvasElement) : ZSurfaceView"]} links={[{"text":"ZJsSurfaceView","href":"-z-js-surface-view/index"},{"text":"ZSurfaceView","href":"-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZMtkViewDelegate"
     tokenType="class"
     groupType="TYPE"
     url="-z-mtk-view-delegate/index"
     description=""
-    codeBlocks={[{code: "class ZMtkViewDelegate: NSObject, MTKViewDelegateProtocol"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["class ZMtkViewDelegate : NSObject, MTKViewDelegateProtocol"]} links={[{"text":"ZMtkViewDelegate","href":"-z-mtk-view-delegate/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZMtlSurfaceView"
     tokenType="class"
     groupType="TYPE"
     url="-z-mtl-surface-view/index"
     description=""
-    codeBlocks={[{code: "class ZMtlSurfaceView(view: MTKView): ZSurfaceView"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["class ZMtlSurfaceView(view: MTKView) : ZSurfaceView"]} links={[{"text":"ZMtlSurfaceView","href":"-z-mtl-surface-view/index"},{"text":"ZSurfaceView","href":"-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSurfaceView"
     tokenType="interface"
     groupType="TYPE"
     url="-z-surface-view/index"
     description="Represents a surface view that is used for rendering and handling events."
-    codeBlocks={[{code: "interface ZSurfaceView"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["interface ZSurfaceView"]} links={[{"text":"ZSurfaceView","href":"-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSurfaceViewEventHandler"
     tokenType="interface"
     groupType="TYPE"
     url="-z-surface-view-event-handler/index"
     description=""
-    codeBlocks={[{code: "interface ZSurfaceViewEventHandler"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["interface ZSurfaceViewEventHandler"]} links={[{"text":"ZSurfaceViewEventHandler","href":"-z-surface-view-event-handler/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "ZShader"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,69 +13,77 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZShader","url":"#zshader"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZShader"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-shader"
     description=""
-    codeBlocks={[{code: "constructor()"}, {code: "constructor(type: ZShaderType)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()constructor(type: ZShaderType)"]} links={[{"text":"ZShaderType","href":"../-z-shader-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/is-initialized"
     description="Represents a boolean value indicating whether a component has been initialized."
-    codeBlocks={[{code: "override val isInitialized: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["override val isInitialized: Boolean"]} links={[{"text":"isInitialized","href":"../../zernikalos.components/-z-base-component/is-initialized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
     description="Represents a boolean value indicating whether a component is renderizable."
-    codeBlocks={[{code: "open override val isRenderizable: Boolean = true"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val isRenderizable: Boolean = true"]} links={[{"text":"isRenderizable","href":"../../zernikalos.components/-z-renderizable-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "override val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-base-component/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="renderer"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-renderizable-component/renderer"
     description=""
-    codeBlocks={[{code: "val renderer: ZShaderRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val renderer: ZShaderRenderer"]} links={[{"text":"renderer","href":"../../zernikalos.components/-z-renderizable-component/renderer"},{"text":"ZShaderRenderer","href":"../-z-shader-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="type"
     tokenType="val"
     groupType="PROPERTY"
     url="type"
     description=""
-    codeBlocks={[{code: "val type: ZShaderType"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val type: ZShaderType"]} links={[{"text":"type","href":"type"},{"text":"ZShaderType","href":"../-z-shader-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createRenderer"
     tokenType="fun"
     groupType="FUNCTION"
     url="create-renderer"
     description=""
-    codeBlocks={[{code: "open override fun createRenderer(ctx: ZRenderingContext): ZShaderRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun createRenderer(ctx: ZRenderingContext): ZShaderRenderer"]} links={[{"text":"createRenderer","href":"create-renderer"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderRenderer","href":"../-z-shader-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-renderizable-component/initialize"
     description="Initializes the ZComponent using the provided ZRenderingContext."
-    codeBlocks={[{code: "open override fun initialize(ctx: ZRenderingContext)"}, {code: "fun initialize(source: ZShaderSource)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun initialize(ctx: ZRenderingContext)fun initialize(source: ZShaderSource)"]} links={[{"text":"initialize","href":"../../zernikalos.components/-z-renderizable-component/initialize"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"initialize","href":"initialize"},{"text":"ZShaderSource","href":"../-z-shader-source/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

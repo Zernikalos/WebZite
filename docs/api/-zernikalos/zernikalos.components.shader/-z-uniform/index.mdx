@@ -3,7 +3,7 @@ slug: "index"
 title: "ZUniform"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,125 +13,140 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZUniform","url":"#zuniform"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZUniform"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-uniform"
     description=""
-    codeBlocks={[{code: "constructor(id: Int, uniformName: String, count: Int, dataType: ZDataType)"}, {code: "constructor()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(id: Int, uniformName: String, count: Int, dataType: ZDataType)constructor()"]} links={[{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="count"
     tokenType="var"
     groupType="PROPERTY"
     url="count"
     description="How many elements of this will be used"
-    codeBlocks={[{code: "var count: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var count: Int"]} links={[{"text":"count","href":"count"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dataType"
     tokenType="var"
     groupType="PROPERTY"
     url="data-type"
     description="The datatype of all individual elements used by this uniform"
-    codeBlocks={[{code: "var dataType: ZDataType"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var dataType: ZDataType"]} links={[{"text":"dataType","href":"data-type"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="id"
     tokenType="var"
     groupType="PROPERTY"
     url="id"
     description="Represents the unique identifier for a ZUniform instance. This ID is used to differentiate between different uniform components"
-    codeBlocks={[{code: "open override var id: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override var id: Int"]} links={[{"text":"id","href":"id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/is-initialized"
     description="Represents a boolean value indicating whether a component has been initialized."
-    codeBlocks={[{code: "override val isInitialized: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["override val isInitialized: Boolean"]} links={[{"text":"isInitialized","href":"../../zernikalos.components/-z-base-component/is-initialized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
     description="Represents a boolean value indicating whether a component is renderizable."
-    codeBlocks={[{code: "open override val isRenderizable: Boolean = true"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val isRenderizable: Boolean = true"]} links={[{"text":"isRenderizable","href":"../../zernikalos.components/-z-renderizable-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "override val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-base-component/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="renderer"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-renderizable-component/renderer"
     description=""
-    codeBlocks={[{code: "val renderer: ZUniformRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val renderer: ZUniformRenderer"]} links={[{"text":"renderer","href":"../../zernikalos.components/-z-renderizable-component/renderer"},{"text":"ZUniformRenderer","href":"../-z-uniform-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="uniformName"
     tokenType="var"
     groupType="PROPERTY"
     url="uniform-name"
     description="This is the name within the shader source code"
-    codeBlocks={[{code: "open override var uniformName: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override var uniformName: String"]} links={[{"text":"uniformName","href":"uniform-name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="value"
     tokenType="var"
     groupType="PROPERTY"
     url="value"
     description=""
-    codeBlocks={[{code: "open override var value: ZAlgebraObject"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override var value: ZAlgebraObject"]} links={[{"text":"value","href":"value"},{"text":"ZAlgebraObject","href":"../../zernikalos.math/-z-algebra-object/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind"
     description="Binds the renderer. This method is called to prepare the renderer for drawing."
-    codeBlocks={[{code: "open override fun bind()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createRenderer"
     tokenType="fun"
     groupType="FUNCTION"
     url="create-renderer"
     description=""
-    codeBlocks={[{code: "open override fun createRenderer(ctx: ZRenderingContext): ZUniformRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun createRenderer(ctx: ZRenderingContext): ZUniformRenderer"]} links={[{"text":"createRenderer","href":"create-renderer"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformRenderer","href":"../-z-uniform-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-renderizable-component/initialize"
     description="Initializes the ZComponent using the provided ZRenderingContext."
-    codeBlocks={[{code: "open override fun initialize(ctx: ZRenderingContext)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun initialize(ctx: ZRenderingContext)"]} links={[{"text":"initialize","href":"../../zernikalos.components/-z-renderizable-component/initialize"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toString"
     tokenType="fun"
     groupType="FUNCTION"
     url="to-string"
     description=""
-    codeBlocks={[{code: "open override fun toString(): String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun toString(): String"]} links={[{"text":"toString","href":"to-string"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
     url="unbind"
     description="Unbinds the renderer. This method is called after drawing to clean up."
-    codeBlocks={[{code: "open override fun unbind()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

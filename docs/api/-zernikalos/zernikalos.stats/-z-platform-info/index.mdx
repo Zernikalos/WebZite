@@ -3,7 +3,7 @@ slug: "index"
 title: "ZPlatformInfo"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,32 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZPlatformInfo","url":"#zplatforminfo"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZPlatformInfo"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-platform-info"
     description=""
-    codeBlocks={[{code: "constructor(name: ZPlatformName, version: String)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(name: ZPlatformName, version: String)"]} links={[{"text":"ZPlatformName","href":"../-z-platform-name/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="name"
     tokenType="val"
     groupType="PROPERTY"
     url="name"
     description=""
-    codeBlocks={[{code: "val name: ZPlatformName"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val name: ZPlatformName"]} links={[{"text":"name","href":"name"},{"text":"ZPlatformName","href":"../-z-platform-name/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="version"
     tokenType="val"
     groupType="PROPERTY"
     url="version"
     description=""
-    codeBlocks={[{code: "val version: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val version: String"]} links={[{"text":"version","href":"version"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

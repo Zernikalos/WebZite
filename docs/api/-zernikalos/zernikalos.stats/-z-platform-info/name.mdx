@@ -3,7 +3,7 @@ slug: "name"
 title: "name"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"name","url":"#name"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="name"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val name: ZPlatformName"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val name: ZPlatformName"]} links={[{"text":"name","href":"name"},{"text":"ZPlatformName","href":"../-z-platform-name/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/stats/ZSystemInfo.kt#L28"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/stats/ZSystemInfo.kt#L28" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

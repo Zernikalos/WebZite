@@ -3,7 +3,7 @@ slug: "deserialize"
 title: "deserialize"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"deserialize","url":"#deserialize"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="deserialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "open override fun deserialize(decoder: Decoder): ZSkeleton"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun deserialize(decoder: Decoder): ZSkeleton"]} links={[{"text":"deserialize","href":"deserialize"},{"text":"ZSkeleton","href":"../-z-skeleton/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZSkeleton.kt#L68"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZSkeleton.kt#L68" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

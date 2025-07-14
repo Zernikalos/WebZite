@@ -3,7 +3,7 @@ slug: "create-rendering-context"
 title: "createRenderingContext"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"createRenderingContext","url":"#createrenderingcontext"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="createRenderingContext"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "open override fun createRenderingContext(surfaceView: ZSurfaceView): ZRenderingContext"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="ogl" code={["open override fun createRenderingContext(surfaceView: ZSurfaceView): ZRenderingContext"]} links={[{"text":"createRenderingContext","href":"create-rendering-context"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"},{"text":"ZRenderingContext","href":"../-z-rendering-context/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZContextCreator.kt#L19"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZContextCreator.kt#L19" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

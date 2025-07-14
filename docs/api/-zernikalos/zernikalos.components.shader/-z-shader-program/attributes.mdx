@@ -3,7 +3,7 @@ slug: "attributes"
 title: "attributes"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"attributes","url":"#attributes"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="attributes"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val attributes: Map<String, ZAttribute>"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val attributes: Map<String, ZAttribute>"]} links={[{"text":"attributes","href":"attributes"},{"text":"Map","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZAttribute","href":"../-z-attribute/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L24"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L24" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

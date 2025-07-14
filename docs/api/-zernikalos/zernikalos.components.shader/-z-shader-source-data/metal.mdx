@@ -3,7 +3,7 @@ slug: "metal"
 title: "metal"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"metal","url":"#metal"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="metal"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var metal: ZMetalShaderSource"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var metal: ZMetalShaderSource"]} links={[{"text":"metal","href":"metal"},{"text":"ZMetalShaderSource","href":"../-z-metal-shader-source/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderSource.kt#L58"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderSource.kt#L58" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

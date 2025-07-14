@@ -3,7 +3,7 @@ slug: "-z-shader-program-renderer"
 title: "ZShaderProgramRenderer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,17 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZShaderProgramRenderer","url":"#zshaderprogramrenderer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZShaderProgramRenderer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "expect constructor(ctx: ZRenderingContext, data: ZShaderProgramData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZShaderProgramData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZShaderProgramData)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect constructor(ctx: ZRenderingContext, data: ZShaderProgramData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderProgramData","href":"../-z-shader-program-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L89"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L89" />
+    <CodeBlockComponent platform="metal" code={["actual constructor(ctx: ZRenderingContext, data: ZShaderProgramData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderProgramData","href":"../-z-shader-program-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.metal.kt#L21"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.metal.kt#L21" />
+    <CodeBlockComponent platform="ogl" code={["actual constructor(ctx: ZRenderingContext, data: ZShaderProgramData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderProgramData","href":"../-z-shader-program-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.ogl.kt#L21"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.ogl.kt#L21" />
+    <CodeBlockComponent platform="webgpu" code={["actual constructor(ctx: ZRenderingContext, data: ZShaderProgramData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderProgramData","href":"../-z-shader-program-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.wgpu.kt#L20"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.wgpu.kt#L20" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "[metal]model"
 title: "[metal]model"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"[metal]model","url":"#[metal]model"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="model"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val model: ZModel"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["val model: ZModel"]} links={[{"text":"model","href":"[metal]model"},{"text":"ZModel","href":"../-z-model/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/objects/ZModelRenderer.metal.kt#L20"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/objects/ZModelRenderer.metal.kt#L20" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

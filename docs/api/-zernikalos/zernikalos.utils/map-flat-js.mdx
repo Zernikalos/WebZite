@@ -3,7 +3,7 @@ slug: "map-flat-js"
 title: "mapFlatJs"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"mapFlatJs","url":"#mapflatjs"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="mapFlatJs"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "fun mapFlatJs(m: Map<*, *>): Array<MapPairJs>"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="js" code={["fun mapFlatJs(m: Map<*, *>): Array<MapPairJs>"]} links={[{"text":"mapFlatJs","href":"map-flat-js"},{"text":"Map","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"MapPairJs","href":"-map-pair-js/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/utils/MapFlatJs.kt#L15"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/utils/MapFlatJs.kt#L15" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "-u-n-s-i-g-n-e-d_-i-n-t"
 title: "UNSIGNED_INT"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"UNSIGNED_INT","url":"#unsigned_int"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="UNSIGNED_INT"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual val UNSIGNED_INT: Int"}, {code: "actual val UNSIGNED_INT: Int"}, {code: "expect val UNSIGNED_INT: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val UNSIGNED_INT: Int"]} links={[{"text":"UNSIGNED_INT","href":"-u-n-s-i-g-n-e-d_-i-n-t"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/ZDataType.kt#L17"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/ZDataType.kt#L17" />
+    <CodeBlockComponent platform="ogl" code={["expect val UNSIGNED_INT: Int"]} links={[{"text":"UNSIGNED_INT","href":"-u-n-s-i-g-n-e-d_-i-n-t"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/ZDataType.kt#L53"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/ZDataType.kt#L53" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

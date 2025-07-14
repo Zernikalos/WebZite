@@ -3,7 +3,7 @@ slug: "index"
 title: "Op"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,149 +13,167 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"Op","url":"#op"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="Identity"
     tokenType="val"
     groupType="PROPERTY"
     url="-identity"
     description=""
-    codeBlocks={[{code: "val Identity: ZQuaternion"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val Identity: ZQuaternion"]} links={[{"text":"Identity","href":"-identity"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="add"
     tokenType="fun"
     groupType="FUNCTION"
     url="add"
     description=""
-    codeBlocks={[{code: "fun add(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun add(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)"]} links={[{"text":"add","href":"add"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="conjugate"
     tokenType="fun"
     groupType="FUNCTION"
     url="conjugate"
     description=""
-    codeBlocks={[{code: "fun conjugate(result: ZQuaternion, q: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun conjugate(result: ZQuaternion, q: ZQuaternion)"]} links={[{"text":"conjugate","href":"conjugate"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="copy"
     tokenType="fun"
     groupType="FUNCTION"
     url="copy"
     description=""
-    codeBlocks={[{code: "fun copy(result: ZQuaternion, q: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun copy(result: ZQuaternion, q: ZQuaternion)"]} links={[{"text":"copy","href":"copy"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dot"
     tokenType="fun"
     groupType="FUNCTION"
     url="dot"
     description=""
-    codeBlocks={[{code: "fun dot(q1: ZQuaternion, q2: ZQuaternion): Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun dot(q1: ZQuaternion, q2: ZQuaternion): Float"]} links={[{"text":"dot","href":"dot"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="fromAngleAxis"
     tokenType="fun"
     groupType="FUNCTION"
     url="from-angle-axis"
     description=""
-    codeBlocks={[{code: "fun fromAngleAxis(result: ZQuaternion, angle: Float, axis: ZVector3)"}, {code: "fun fromAngleAxis(result: ZQuaternion, angle: Float, x: Float, y: Float, z: Float)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun fromAngleAxis(result: ZQuaternion, angle: Float, axis: ZVector3)fun fromAngleAxis(result: ZQuaternion, angle: Float, x: Float, y: Float, z: Float)"]} links={[{"text":"fromAngleAxis","href":"from-angle-axis"},{"text":"ZQuaternion","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"fromAngleAxis","href":"from-angle-axis"},{"text":"ZQuaternion","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="fromEuler"
     tokenType="fun"
     groupType="FUNCTION"
     url="from-euler"
     description="Converts Euler angles to quaternion using ZYX (yaw-pitch-roll) convention.Creates a new quaternion from Euler angles."
-    codeBlocks={[{code: "fun fromEuler(euler: ZEuler): ZQuaternion"}, {code: "fun fromEuler(result: ZQuaternion, euler: ZEuler)"}, {code: "fun fromEuler(roll: Float, pitch: Float, yaw: Float): ZQuaternion"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun fromEuler(euler: ZEuler): ZQuaternionfun fromEuler(result: ZQuaternion, euler: ZEuler)fun fromEuler(roll: Float, pitch: Float, yaw: Float): ZQuaternion"]} links={[{"text":"fromEuler","href":"from-euler"},{"text":"ZEuler","href":"../../-z-euler/index"},{"text":"ZQuaternion","href":"../index"},{"text":"fromEuler","href":"from-euler"},{"text":"ZQuaternion","href":"../index"},{"text":"ZEuler","href":"../../-z-euler/index"},{"text":"fromEuler","href":"from-euler"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="fromMatrix4"
     tokenType="fun"
     groupType="FUNCTION"
     url="from-matrix4"
     description=""
-    codeBlocks={[{code: "fun fromMatrix4(m: ZMatrix4): ZQuaternion"}, {code: "fun fromMatrix4(result: ZQuaternion, m: ZMatrix4)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun fromMatrix4(m: ZMatrix4): ZQuaternionfun fromMatrix4(result: ZQuaternion, m: ZMatrix4)"]} links={[{"text":"fromMatrix4","href":"from-matrix4"},{"text":"ZMatrix4","href":"../../-z-matrix4/index"},{"text":"ZQuaternion","href":"../index"},{"text":"fromMatrix4","href":"from-matrix4"},{"text":"ZQuaternion","href":"../index"},{"text":"ZMatrix4","href":"../../-z-matrix4/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="fromVec3"
     tokenType="fun"
     groupType="FUNCTION"
     url="from-vec3"
     description=""
-    codeBlocks={[{code: "fun fromVec3(result: ZQuaternion, v: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun fromVec3(result: ZQuaternion, v: ZVector3)"]} links={[{"text":"fromVec3","href":"from-vec3"},{"text":"ZQuaternion","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="identity"
     tokenType="fun"
     groupType="FUNCTION"
     url="identity"
     description=""
-    codeBlocks={[{code: "fun identity(result: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun identity(result: ZQuaternion)"]} links={[{"text":"identity","href":"identity"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="invert"
     tokenType="fun"
     groupType="FUNCTION"
     url="invert"
     description=""
-    codeBlocks={[{code: "fun invert(result: ZQuaternion, q: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun invert(result: ZQuaternion, q: ZQuaternion)"]} links={[{"text":"invert","href":"invert"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="mult"
     tokenType="fun"
     groupType="FUNCTION"
     url="mult"
     description=""
-    codeBlocks={[{code: "fun mult(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun mult(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)"]} links={[{"text":"mult","href":"mult"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="multScalar"
     tokenType="fun"
     groupType="FUNCTION"
     url="mult-scalar"
     description=""
-    codeBlocks={[{code: "fun multScalar(result: ZQuaternion, r: Float, q: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun multScalar(result: ZQuaternion, r: Float, q: ZQuaternion)"]} links={[{"text":"multScalar","href":"mult-scalar"},{"text":"ZQuaternion","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="normalize"
     tokenType="fun"
     groupType="FUNCTION"
     url="normalize"
     description="Normalizes the quaternion."
-    codeBlocks={[{code: "fun normalize(result: ZQuaternion, q: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun normalize(result: ZQuaternion, q: ZQuaternion)"]} links={[{"text":"normalize","href":"normalize"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="rotate"
     tokenType="fun"
     groupType="FUNCTION"
     url="rotate"
     description="Rotates a quaternion by a specified angle around a specified axis."
-    codeBlocks={[{code: "fun rotate(result: ZQuaternion, q: ZQuaternion, angle: Float, axis: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun rotate(result: ZQuaternion, q: ZQuaternion, angle: Float, axis: ZVector3)"]} links={[{"text":"rotate","href":"rotate"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../../-z-vector3/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="slerp"
     tokenType="fun"
     groupType="FUNCTION"
     url="slerp"
     description=""
-    codeBlocks={[{code: "fun slerp(t: Float, q1: ZQuaternion, q2: ZQuaternion): ZQuaternion"}, {code: "fun slerp(result: ZQuaternion, t: Float, q1: ZQuaternion, q2: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun slerp(t: Float, q1: ZQuaternion, q2: ZQuaternion): ZQuaternionfun slerp(result: ZQuaternion, t: Float, q1: ZQuaternion, q2: ZQuaternion)"]} links={[{"text":"slerp","href":"slerp"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"slerp","href":"slerp"},{"text":"ZQuaternion","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="subtract"
     tokenType="fun"
     groupType="FUNCTION"
     url="subtract"
     description=""
-    codeBlocks={[{code: "fun subtract(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun subtract(result: ZQuaternion, q1: ZQuaternion, q2: ZQuaternion)"]} links={[{"text":"subtract","href":"subtract"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="zero"
     tokenType="fun"
     groupType="FUNCTION"
     url="zero"
     description=""
-    codeBlocks={[{code: "fun zero(result: ZQuaternion)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun zero(result: ZQuaternion)"]} links={[{"text":"zero","href":"zero"},{"text":"ZQuaternion","href":"../index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

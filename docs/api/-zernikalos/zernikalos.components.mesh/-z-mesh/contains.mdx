@@ -3,7 +3,7 @@ slug: "contains"
 title: "contains"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"contains","url":"#contains"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="contains"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "operator fun contains(attrId: ZAttributeId): Boolean"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["operator fun contains(attrId: ZAttributeId): Boolean"]} links={[{"text":"contains","href":"contains"},{"text":"ZAttributeId","href":"../../zernikalos.components.shader/-z-attribute-id/index"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZMesh.kt#L67"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZMesh.kt#L67" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

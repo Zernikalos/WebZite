@@ -3,7 +3,7 @@ slug: "-z-renderer"
 title: "ZRenderer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,17 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZRenderer","url":"#zrenderer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZRenderer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "expect constructor(ctx: ZContext)"}, {code: "actual constructor(ctx: ZContext)"}, {code: "actual constructor(ctx: ZContext)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect constructor(ctx: ZContext)"]} links={[{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/renderer/ZRenderer.kt#L26"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/renderer/ZRenderer.kt#L26" />
+    <CodeBlockComponent platform="metal" code={["actual constructor(ctx: ZContext)"]} links={[{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/renderer/ZRenderer.metal.kt#L16"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/renderer/ZRenderer.metal.kt#L16" />
+    <CodeBlockComponent platform="ogl" code={["actual constructor(ctx: ZContext)"]} links={[{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/renderer/ZRenderer.ogl.kt#L13"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/renderer/ZRenderer.ogl.kt#L13" />
+    <CodeBlockComponent platform="webgpu" code={["actual constructor(ctx: ZContext)"]} links={[{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/renderer/ZRenderer.wgpu.kt#L17"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/renderer/ZRenderer.wgpu.kt#L17" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

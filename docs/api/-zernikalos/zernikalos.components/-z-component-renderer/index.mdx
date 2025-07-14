@@ -3,7 +3,7 @@ slug: "index"
 title: "ZComponentRenderer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,37 +13,41 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZComponentRenderer","url":"#zcomponentrenderer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind"
     description=""
-    codeBlocks={[{code: "open fun bind()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[{code: "abstract fun initialize()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
     url="render"
     description=""
-    codeBlocks={[{code: "open fun render()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open fun render()"]} links={[{"text":"render","href":"render"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
     url="unbind"
     description=""
-    codeBlocks={[{code: "open fun unbind()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

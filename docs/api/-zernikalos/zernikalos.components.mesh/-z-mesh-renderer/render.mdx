@@ -3,7 +3,7 @@ slug: "render"
 title: "render"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,16 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"render","url":"#render"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual open override fun render()"}, {code: "actual open override fun render()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["actual open override fun render()"]} links={[{"text":"render","href":"render"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/mesh/ZMeshRenderer.metal.kt#L52"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/mesh/ZMeshRenderer.metal.kt#L52" />
+    <CodeBlockComponent platform="ogl" code={["actual open override fun render()"]} links={[{"text":"render","href":"render"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/mesh/ZMeshRenderer.ogl.kt#L36"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/mesh/ZMeshRenderer.ogl.kt#L36" />
+    <CodeBlockComponent platform="webgpu" code={["actual open override fun render()"]} links={[{"text":"render","href":"render"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/mesh/ZMeshRenderer.wgpu.kt#L78"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/mesh/ZMeshRenderer.wgpu.kt#L78" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

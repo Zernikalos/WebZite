@@ -3,7 +3,7 @@ slug: "index"
 title: "ZBuffer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,197 +13,221 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZBuffer","url":"#zbuffer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZBuffer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-buffer"
     description="Initializes a new instance of ZBuffer class. It is used to instantiate a ZBuffer object with default data values.Initializes a ZBuffer object with the given arguments."
-    codeBlocks={[{code: "constructor()"}, {code: "constructor(id: Int, dataType: ZDataType, name: String, size: Int, count: Int, normalized: Boolean, offset: Int, stride: Int, isIndexBuffer: Boolean, bufferId: Int, dataArray: ByteArray)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()constructor(id: Int, dataType: ZDataType, name: String, size: Int, count: Int, normalized: Boolean, offset: Int, stride: Int, isIndexBuffer: Boolean, bufferId: Int, dataArray: ByteArray)"]} links={[{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="attributeId"
     tokenType="val"
     groupType="PROPERTY"
     url="attribute-id"
     description=""
-    codeBlocks={[{code: "val attributeId: ZAttributeId"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val attributeId: ZAttributeId"]} links={[{"text":"attributeId","href":"attribute-id"},{"text":"ZAttributeId","href":"../../zernikalos.components.shader/-z-attribute-id/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bufferId"
     tokenType="val"
     groupType="PROPERTY"
     url="buffer-id"
     description="Represents the buffer ID associated with the ZBuffer."
-    codeBlocks={[{code: "val bufferId: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val bufferId: Int"]} links={[{"text":"bufferId","href":"buffer-id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="count"
     tokenType="val"
     groupType="PROPERTY"
     url="count"
     description="How many elements of this type are stored. Example: If we store 15 Vec3 elements in the data array the count will have a value of 15."
-    codeBlocks={[{code: "val count: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val count: Int"]} links={[{"text":"count","href":"count"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dataArray"
     tokenType="val"
     groupType="PROPERTY"
     url="data-array"
     description="Represents an array of bytes for ZBufferData data."
-    codeBlocks={[{code: "val dataArray: ByteArray"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val dataArray: ByteArray"]} links={[{"text":"dataArray","href":"data-array"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dataType"
     tokenType="val"
     groupType="PROPERTY"
     url="data-type"
     description="Type of data stored"
-    codeBlocks={[{code: "val dataType: ZDataType"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val dataType: ZDataType"]} links={[{"text":"dataType","href":"data-type"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="enabled"
     tokenType="var"
     groupType="PROPERTY"
     url="enabled"
     description=""
-    codeBlocks={[{code: "var enabled: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var enabled: Boolean"]} links={[{"text":"enabled","href":"enabled"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="hasData"
     tokenType="val"
     groupType="PROPERTY"
     url="has-data"
     description="Indicates whether the data has any data."
-    codeBlocks={[{code: "val hasData: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val hasData: Boolean"]} links={[{"text":"hasData","href":"has-data"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="id"
     tokenType="val"
     groupType="PROPERTY"
     url="id"
     description="ID for this Buffer."
-    codeBlocks={[{code: "val id: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val id: Int"]} links={[{"text":"id","href":"id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isIndexBuffer"
     tokenType="val"
     groupType="PROPERTY"
     url="is-index-buffer"
     description=""
-    codeBlocks={[{code: "val isIndexBuffer: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val isIndexBuffer: Boolean"]} links={[{"text":"isIndexBuffer","href":"is-index-buffer"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/is-initialized"
     description="Represents a boolean value indicating whether a component has been initialized."
-    codeBlocks={[{code: "override val isInitialized: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["override val isInitialized: Boolean"]} links={[{"text":"isInitialized","href":"../../zernikalos.components/-z-base-component/is-initialized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
     description="Represents a boolean value indicating whether a component is renderizable."
-    codeBlocks={[{code: "open override val isRenderizable: Boolean = true"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val isRenderizable: Boolean = true"]} links={[{"text":"isRenderizable","href":"../../zernikalos.components/-z-renderizable-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="name"
     tokenType="val"
     groupType="PROPERTY"
     url="name"
     description=""
-    codeBlocks={[{code: "val name: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val name: String"]} links={[{"text":"name","href":"name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="normalized"
     tokenType="val"
     groupType="PROPERTY"
     url="normalized"
     description=""
-    codeBlocks={[{code: "val normalized: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val normalized: Boolean"]} links={[{"text":"normalized","href":"normalized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="offset"
     tokenType="val"
     groupType="PROPERTY"
     url="offset"
     description=""
-    codeBlocks={[{code: "val offset: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val offset: Int"]} links={[{"text":"offset","href":"offset"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "override val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-base-component/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="renderer"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-renderizable-component/renderer"
     description=""
-    codeBlocks={[{code: "val renderer: ZBufferRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val renderer: ZBufferRenderer"]} links={[{"text":"renderer","href":"../../zernikalos.components/-z-renderizable-component/renderer"},{"text":"ZBufferRenderer","href":"../-z-buffer-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="size"
     tokenType="val"
     groupType="PROPERTY"
     url="size"
     description="How many elements are stored per data unit. Example: a Vec3 will have size equals to 3 in the same way a Scalar will be 1"
-    codeBlocks={[{code: "val size: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val size: Int"]} links={[{"text":"size","href":"size"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="stride"
     tokenType="val"
     groupType="PROPERTY"
     url="stride"
     description="If the data is tightly represented within the array how many elements it requires to be jumped to the next one Example: We store a Vec3 postion and a Vec3 normal in the very same array, the stride will be 6"
-    codeBlocks={[{code: "val stride: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val stride: Int"]} links={[{"text":"stride","href":"stride"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind"
     description="Binds the renderer. This method is called to prepare the renderer for drawing."
-    codeBlocks={[{code: "open override fun bind()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createRenderer"
     tokenType="fun"
     groupType="FUNCTION"
     url="create-renderer"
     description=""
-    codeBlocks={[{code: "open override fun createRenderer(ctx: ZRenderingContext): ZBufferRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun createRenderer(ctx: ZRenderingContext): ZBufferRenderer"]} links={[{"text":"createRenderer","href":"create-renderer"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZBufferRenderer","href":"../-z-buffer-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-renderizable-component/initialize"
     description="Initializes the ZComponent using the provided ZRenderingContext."
-    codeBlocks={[{code: "open override fun initialize(ctx: ZRenderingContext)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun initialize(ctx: ZRenderingContext)"]} links={[{"text":"initialize","href":"../../zernikalos.components/-z-renderizable-component/initialize"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toString"
     tokenType="fun"
     groupType="FUNCTION"
     url="to-string"
     description=""
-    codeBlocks={[{code: "open override fun toString(): String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun toString(): String"]} links={[{"text":"toString","href":"to-string"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
     url="unbind"
     description="Unbinds the renderer. This method is called after drawing to clean up."
-    codeBlocks={[{code: "open override fun unbind()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

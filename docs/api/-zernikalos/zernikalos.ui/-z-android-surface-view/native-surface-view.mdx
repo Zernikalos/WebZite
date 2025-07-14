@@ -3,7 +3,7 @@ slug: "native-surface-view"
 title: "nativeSurfaceView"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"nativeSurfaceView","url":"#nativesurfaceview"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="nativeSurfaceView"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var nativeSurfaceView: GLSurfaceView"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["var nativeSurfaceView: GLSurfaceView"]} links={[{"text":"nativeSurfaceView","href":"native-surface-view"},{"text":"GLSurfaceView","href":"https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/ui/ZSurfaceView.android.kt#L17"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/ui/ZSurfaceView.android.kt#L17" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

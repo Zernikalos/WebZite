@@ -3,7 +3,7 @@ slug: "[metal]buffer"
 title: "[metal]buffer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"[metal]buffer","url":"#[metal]buffer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="buffer"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var buffer: MTLBufferProtocol?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["var buffer: MTLBufferProtocol?"]} links={[{"text":"buffer","href":"[metal]buffer"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/mesh/ZBufferRenderer.metal.kt#L24"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/mesh/ZBufferRenderer.metal.kt#L24" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

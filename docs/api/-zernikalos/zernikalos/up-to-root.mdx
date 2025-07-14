@@ -3,7 +3,7 @@ slug: "up-to-root"
 title: "upToRoot"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"upToRoot","url":"#uptoroot"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
-    name="upToRoot"
+    name="obj"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "fun upToRoot(obj: ZObject): Iterator<ZObject>"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun upToRoot(obj: ZObject): Iterator<ZObject>"]} links={[{"text":"upToRoot","href":"up-to-root"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"},{"text":"Iterator","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterator/index.html"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZTraverse.kt#L18"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZTraverse.kt#L18" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "-u-a-parser"
 title: "UAParser"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"UAParser","url":"#uaparser"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="UAParser"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "constructor(userAgent: String)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="js" code={["constructor(userAgent: String)"]} links={[{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/stats/ZSystemInfo.js.kt#L21"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/stats/ZSystemInfo.js.kt#L21" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

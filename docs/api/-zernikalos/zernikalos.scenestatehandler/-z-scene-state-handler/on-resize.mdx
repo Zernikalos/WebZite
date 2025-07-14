@@ -3,7 +3,7 @@ slug: "on-resize"
 title: "onResize"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"onResize","url":"#onresize"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="contextdone"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "abstract fun onResize(context: ZContext, width: Int, height: Int, done: ()-> Unit)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract fun onResize(context: ZContext, width: Int, height: Int, done: () -> Unit)"]} links={[{"text":"onResize","href":"on-resize"},{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Unit","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/scenestatehandler/ZSceneStateHandler.kt#L35"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/scenestatehandler/ZSceneStateHandler.kt#L35" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

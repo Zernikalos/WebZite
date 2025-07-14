@@ -3,7 +3,7 @@ slug: "add-uniform-generator"
 title: "addUniformGenerator"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"addUniformGenerator","url":"#adduniformgenerator"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="addUniformGenerator"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun addUniformGenerator(key: String, generator: ZUniformGenerator)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun addUniformGenerator(key: String, generator: ZUniformGenerator)"]} links={[{"text":"addUniformGenerator","href":"add-uniform-generator"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZUniformGenerator","href":"../../zernikalos.generators.uniformgenerator/-z-uniform-generator/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/context/ZSceneContext.kt#L41"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/context/ZSceneContext.kt#L41" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

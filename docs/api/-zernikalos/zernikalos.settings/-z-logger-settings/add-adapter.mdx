@@ -3,7 +3,7 @@ slug: "add-adapter"
 title: "addAdapter"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"addAdapter","url":"#addadapter"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="addAdapter"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun addAdapter(adapter: ZLoggerAdapter)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun addAdapter(adapter: ZLoggerAdapter)"]} links={[{"text":"addAdapter","href":"add-adapter"},{"text":"ZLoggerAdapter","href":"../../zernikalos.logger/-z-logger-adapter/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/settings/ZLoggerSettings.kt#L26"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/settings/ZLoggerSettings.kt#L26" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

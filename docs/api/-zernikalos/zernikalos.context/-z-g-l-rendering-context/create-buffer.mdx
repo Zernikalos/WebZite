@@ -3,7 +3,7 @@ slug: "create-buffer"
 title: "createBuffer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"createBuffer","url":"#createbuffer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="createBuffer"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual fun createBuffer(): GLWrap"}, {code: "actual fun createBuffer(): GLWrap"}, {code: "expect fun createBuffer(): GLWrap"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun createBuffer(): GLWrap"]} links={[{"text":"createBuffer","href":"create-buffer"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L114"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L114" />
+    <CodeBlockComponent platform="ogl" code={["expect fun createBuffer(): GLWrap"]} links={[{"text":"createBuffer","href":"create-buffer"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L75"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L75" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

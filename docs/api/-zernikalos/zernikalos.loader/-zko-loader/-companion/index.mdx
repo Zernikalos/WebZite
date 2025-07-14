@@ -3,7 +3,7 @@ slug: "index"
 title: "Companion"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,23 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"Companion","url":"#companion"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="loadFromMainBundlePath"
     tokenType="fun"
     groupType="FUNCTION"
     url="load-from-main-bundle-path"
     description=""
-    codeBlocks={[{code: "suspend fun loadFromMainBundlePath(fileName: String): ZKo?"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["suspend fun loadFromMainBundlePath(fileName: String): ZKo?"]} links={[{"text":"loadFromMainBundlePath","href":"load-from-main-bundle-path"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZKo","href":"../../-z-ko/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="loadFromMainBundlePathSync"
     tokenType="fun"
     groupType="FUNCTION"
     url="load-from-main-bundle-path-sync"
     description=""
-    codeBlocks={[{code: "fun loadFromMainBundlePathSync(fileName: String): ZKo?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["fun loadFromMainBundlePathSync(fileName: String): ZKo?"]} links={[{"text":"loadFromMainBundlePathSync","href":"load-from-main-bundle-path-sync"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZKo","href":"../../-z-ko/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

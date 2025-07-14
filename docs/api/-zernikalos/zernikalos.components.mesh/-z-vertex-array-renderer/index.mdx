@@ -3,7 +3,7 @@ slug: "index"
 title: "ZVertexArrayRenderer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,45 +13,50 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZVertexArrayRenderer","url":"#zvertexarrayrenderer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZVertexArrayRenderer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-vertex-array-renderer"
     description=""
-    codeBlocks={[{code: "constructor(ctx: ZRenderingContext)"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["constructor(ctx: ZRenderingContext)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind"
     description=""
-    codeBlocks={[{code: "open override fun bind()"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["open override fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[{code: "open override fun initialize()"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["open override fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-component-renderer/render"
     description=""
-    codeBlocks={[{code: "open fun render()"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["open fun render()"]} links={[{"text":"render","href":"../../zernikalos.components/-z-component-renderer/render"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
     url="unbind"
     description=""
-    codeBlocks={[{code: "open override fun unbind()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="ogl" code={["open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

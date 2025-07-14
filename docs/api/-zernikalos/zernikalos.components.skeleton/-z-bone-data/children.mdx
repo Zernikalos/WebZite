@@ -3,7 +3,7 @@ slug: "children"
 title: "children"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"children","url":"#children"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="children"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val children: ArrayList<ZBone>"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val children: ArrayList<ZBone>"]} links={[{"text":"children","href":"children"},{"text":"ArrayList","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-array-list/index.html"},{"text":"ZBone","href":"../-z-bone/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/skeleton/ZBone.kt#L152"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/skeleton/ZBone.kt#L152" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

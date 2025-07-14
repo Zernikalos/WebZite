@@ -3,7 +3,7 @@ slug: "-c-o-l-o-r_-b-u-f-f-e-r"
 title: "COLOR_BUFFER"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"COLOR_BUFFER","url":"#color_buffer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="COLOR_BUFFER"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual val COLOR_BUFFER: Int"}, {code: "actual val COLOR_BUFFER: Int"}, {code: "expect val COLOR_BUFFER: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val COLOR_BUFFER: Int"]} links={[{"text":"COLOR_BUFFER","href":"-c-o-l-o-r_-b-u-f-f-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L211"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L211" />
+    <CodeBlockComponent platform="ogl" code={["expect val COLOR_BUFFER: Int"]} links={[{"text":"COLOR_BUFFER","href":"-c-o-l-o-r_-b-u-f-f-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L171"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L171" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

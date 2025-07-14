@@ -3,7 +3,7 @@ slug: "index"
 title: "ZAlgebraObject"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,53 +13,59 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZAlgebraObject","url":"#zalgebraobject"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="byteArray"
     tokenType="val"
     groupType="PROPERTY"
     url="byte-array"
     description=""
-    codeBlocks={[{code: "abstract val byteArray: ByteArray"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract val byteArray: ByteArray"]} links={[{"text":"byteArray","href":"byte-array"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="byteSize"
     tokenType="val"
     groupType="PROPERTY"
     url="byte-size"
     description=""
-    codeBlocks={[{code: "abstract val byteSize: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract val byteSize: Int"]} links={[{"text":"byteSize","href":"byte-size"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="count"
     tokenType="val"
     groupType="PROPERTY"
     url="count"
     description="Number of individual instances this object represents"
-    codeBlocks={[{code: "abstract val count: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract val count: Int"]} links={[{"text":"count","href":"count"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dataType"
     tokenType="val"
     groupType="PROPERTY"
     url="data-type"
     description="The data type stored"
-    codeBlocks={[{code: "abstract val dataType: ZDataType"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract val dataType: ZDataType"]} links={[{"text":"dataType","href":"data-type"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="floatArray"
     tokenType="val"
     groupType="PROPERTY"
     url="float-array"
     description=""
-    codeBlocks={[{code: "abstract val floatArray: FloatArray"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract val floatArray: FloatArray"]} links={[{"text":"floatArray","href":"float-array"},{"text":"FloatArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="size"
     tokenType="val"
     groupType="PROPERTY"
     url="size"
     description="Number of elements contained within the values array with the specific type defined in dataType"
-    codeBlocks={[{code: "abstract val size: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract val size: Int"]} links={[{"text":"size","href":"size"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

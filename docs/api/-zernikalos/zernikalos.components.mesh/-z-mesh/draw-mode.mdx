@@ -3,7 +3,7 @@ slug: "draw-mode"
 title: "drawMode"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"drawMode","url":"#drawmode"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="drawMode"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var drawMode: ZDrawMode"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var drawMode: ZDrawMode"]} links={[{"text":"drawMode","href":"draw-mode"},{"text":"ZDrawMode","href":"../-z-draw-mode/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZMesh.kt#L53"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZMesh.kt#L53" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

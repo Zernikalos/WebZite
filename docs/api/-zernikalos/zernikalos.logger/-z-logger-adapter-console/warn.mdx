@@ -3,7 +3,7 @@ slug: "warn"
 title: "warn"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,18 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"warn","url":"#warn"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="warn"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual open override fun warn(message: String)"}, {code: "expect open override fun warn(message: String)"}, {code: "actual open override fun warn(message: String)"}, {code: "actual open override fun warn(message: String)"}, {code: "actual open override fun warn(message: String)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual open override fun warn(message: String)"]} links={[{"text":"warn","href":"warn"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/logger/ZLoggerAdapter.android.kt#L23"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/logger/ZLoggerAdapter.android.kt#L23" />
+    <CodeBlockComponent platform="common" code={["expect open override fun warn(message: String)"]} links={[{"text":"warn","href":"warn"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLoggerAdapter.kt#L24"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLoggerAdapter.kt#L24" />
+    <CodeBlockComponent platform="ios" code={["actual open override fun warn(message: String)"]} links={[{"text":"warn","href":"warn"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/iosMain/kotlin/zernikalos/logger/ZLoggerAdapter.ios.kt#L25"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/iosMain/kotlin/zernikalos/logger/ZLoggerAdapter.ios.kt#L25" />
+    <CodeBlockComponent platform="js" code={["actual open override fun warn(message: String)"]} links={[{"text":"warn","href":"warn"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/logger/ZLoggerAdapter.js.kt#L28"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/logger/ZLoggerAdapter.js.kt#L28" />
+    <CodeBlockComponent platform="macosArm64" code={["actual open override fun warn(message: String)"]} links={[{"text":"warn","href":"warn"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/macosArm64Main/kotlin/zernikalos/logger/ZLoggerAdapter.macosArm64.kt#L31"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/macosArm64Main/kotlin/zernikalos/logger/ZLoggerAdapter.macosArm64.kt#L31" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

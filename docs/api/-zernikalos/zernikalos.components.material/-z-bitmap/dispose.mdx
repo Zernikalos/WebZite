@@ -3,7 +3,7 @@ slug: "dispose"
 title: "dispose"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,17 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"dispose","url":"#dispose"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="dispose"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual fun dispose()"}, {code: "expect fun dispose()"}, {code: "actual fun dispose()"}, {code: "actual fun dispose()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun dispose()"]} links={[{"text":"dispose","href":"dispose"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/components/material/ZBitmap.kt#L22"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/components/material/ZBitmap.kt#L22" />
+    <CodeBlockComponent platform="common" code={["expect fun dispose()"]} links={[{"text":"dispose","href":"dispose"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/material/ZBitmap.kt#L13"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/material/ZBitmap.kt#L13" />
+    <CodeBlockComponent platform="metal" code={["actual fun dispose()"]} links={[{"text":"dispose","href":"dispose"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/material/ZBitmap.kt#L13"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/material/ZBitmap.kt#L13" />
+    <CodeBlockComponent platform="webgpu" code={["actual fun dispose()"]} links={[{"text":"dispose","href":"dispose"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/material/ZBitmap.js.kt#L62"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/material/ZBitmap.js.kt#L62" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "subtract"
 title: "subtract"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"subtract","url":"#subtract"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="subtract"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun subtract(result: ZVector2, op1: ZVector2, op2: ZVector2)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun subtract(result: ZVector2, op1: ZVector2, op2: ZVector2)"]} links={[{"text":"subtract","href":"subtract"},{"text":"ZVector2","href":"../index"},{"text":"ZVector2","href":"../index"},{"text":"ZVector2","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector2.kt#L197"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector2.kt#L197" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "ZModelRenderer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,45 +13,88 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZModelRenderer","url":"#zmodelrenderer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZModelRenderer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-model-renderer"
     description=""
-    codeBlocks={[{code: "expect constructor(ctx: ZRenderingContext, model: ZModel)"}, {code: "actual constructor(ctx: ZRenderingContext, model: ZModel)"}, {code: "actual constructor(ctx: ZRenderingContext, model: ZModel)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect constructor(ctx: ZRenderingContext, model: ZModel)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZModel","href":"../-z-model/index"}]} />
+    <CodeBlockComponent platform="metal" code={["actual constructor(ctx: ZRenderingContext, model: ZModel)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZModel","href":"../-z-model/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual constructor(ctx: ZRenderingContext, model: ZModel)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZModel","href":"../-z-model/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual constructor(ctx: ZRenderingContext, model: ZModel)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZModel","href":"../-z-model/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
-    name="ctxLink copied to clipboard"
+    name="bindGroup"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="bind-group"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["var bindGroup: GPUBindGroup?"]} links={[{"text":"bindGroup","href":"bind-group"},{"text":"GPUBindGroup","href":"../../zernikalos.context.webgpu/-g-p-u-bind-group/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ctx"
     tokenType="val"
     groupType="PROPERTY"
     url="[metal]ctx"
     description=""
-    codeBlocks={[{code: "val ctx: ZRenderingContext"}, {code: "val ctx: ZRenderingContext"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["val ctx: ZRenderingContext"]} links={[{"text":"ctx","href":"[metal]ctx"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["val ctx: ZRenderingContext"]} links={[{"text":"ctx","href":"[ogl]ctx"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
-    name="modelLink copied to clipboard"
+    name="model"
     tokenType="val"
     groupType="PROPERTY"
     url="[metal]model"
     description=""
-    codeBlocks={[{code: "val model: ZModel"}, {code: "val model: ZModel"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["val model: ZModel"]} links={[{"text":"model","href":"[metal]model"},{"text":"ZModel","href":"../-z-model/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["val model: ZModel"]} links={[{"text":"model","href":"[ogl]model"},{"text":"ZModel","href":"../-z-model/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="pipeline"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="pipeline"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["var pipeline: GPURenderPipeline?"]} links={[{"text":"pipeline","href":"pipeline"},{"text":"GPURenderPipeline","href":"../../zernikalos.context.webgpu/-g-p-u-render-pipeline/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="textureBindGroup"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="texture-bind-group"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["var textureBindGroup: GPUBindGroup?"]} links={[{"text":"textureBindGroup","href":"texture-bind-group"},{"text":"GPUBindGroup","href":"../../zernikalos.context.webgpu/-g-p-u-bind-group/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[{code: "expect fun initialize()"}, {code: "actual fun initialize()"}, {code: "actual fun initialize()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+    <CodeBlockComponent platform="metal" code={["actual fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
     url="render"
     description=""
-    codeBlocks={[{code: "expect fun render()"}, {code: "actual fun render()"}, {code: "actual fun render()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect fun render()"]} links={[{"text":"render","href":"render"}]} />
+    <CodeBlockComponent platform="metal" code={["actual fun render()"]} links={[{"text":"render","href":"render"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual fun render()"]} links={[{"text":"render","href":"render"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual fun render()"]} links={[{"text":"render","href":"render"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

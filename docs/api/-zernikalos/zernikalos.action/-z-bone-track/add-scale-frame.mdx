@@ -3,7 +3,7 @@ slug: "add-scale-frame"
 title: "addScaleFrame"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"addScaleFrame","url":"#addscaleframe"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="addScaleFrame"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun addScaleFrame(frame: ZScaleFrame)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun addScaleFrame(frame: ZScaleFrame)"]} links={[{"text":"addScaleFrame","href":"add-scale-frame"},{"text":"ZScaleFrame","href":"../-z-scale-frame/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/action/ZBoneTrack.kt#L41"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/action/ZBoneTrack.kt#L41" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

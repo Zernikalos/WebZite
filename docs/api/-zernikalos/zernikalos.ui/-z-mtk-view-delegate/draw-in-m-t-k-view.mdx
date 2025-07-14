@@ -3,7 +3,7 @@ slug: "draw-in-m-t-k-view"
 title: "drawInMTKView"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"drawInMTKView","url":"#drawinmtkview"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="drawInMTKView"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "open override fun drawInMTKView(view: MTKView)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["open override fun drawInMTKView(view: MTKView)"]} links={[{"text":"drawInMTKView","href":"draw-in-m-t-k-view"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/ui/ZMtkViewDelegate.kt#L37"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/ui/ZMtkViewDelegate.kt#L37" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

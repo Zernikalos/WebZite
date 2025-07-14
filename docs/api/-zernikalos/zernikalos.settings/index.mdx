@@ -3,7 +3,7 @@ slug: "index"
 title: "settings"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,23 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.settings","url":"#zernikalos.settings"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZLoggerSettings"
     tokenType="class"
     groupType="TYPE"
     url="-z-logger-settings/index"
     description=""
-    codeBlocks={[{code: "class ZLoggerSettings"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["class ZLoggerSettings"]} links={[{"text":"ZLoggerSettings","href":"-z-logger-settings/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSettings"
     tokenType="class"
     groupType="TYPE"
     url="-z-settings/index"
     description="Provides the settings for the Zernikalos Engine."
-    codeBlocks={[{code: "class ZSettings"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["class ZSettings"]} links={[{"text":"ZSettings","href":"-z-settings/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

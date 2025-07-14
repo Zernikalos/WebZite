@@ -3,7 +3,7 @@ slug: "look-at"
 title: "lookAt"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"lookAt","url":"#lookat"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="resulteyecenterup"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun lookAt(result: ZMatrix4, eye: ZVector3, center: ZVector3, up: ZVector3)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun lookAt(result: ZMatrix4, eye: ZVector3, center: ZVector3, up: ZVector3)"]} links={[{"text":"lookAt","href":"look-at"},{"text":"ZMatrix4","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L607"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L607" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

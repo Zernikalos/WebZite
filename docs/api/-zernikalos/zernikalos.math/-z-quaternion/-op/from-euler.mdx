@@ -3,7 +3,7 @@ slug: "from-euler"
 title: "fromEuler"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"fromEuler","url":"#fromeuler"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="resulteulerrollpitchyaw"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun fromEuler(result: ZQuaternion, euler: ZEuler)"}, {code: "fun fromEuler(euler: ZEuler): ZQuaternion"}, {code: "fun fromEuler(roll: Float, pitch: Float, yaw: Float): ZQuaternion"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun fromEuler(result: ZQuaternion, euler: ZEuler)fun fromEuler(euler: ZEuler): ZQuaternion(source)fun fromEuler(roll: Float, pitch: Float, yaw: Float): ZQuaternion(source)"]} links={[{"text":"fromEuler","href":"from-euler"},{"text":"ZQuaternion","href":"../index"},{"text":"ZEuler","href":"../../-z-euler/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZQuaternion.kt#L371"},{"text":"fromEuler","href":"from-euler"},{"text":"ZEuler","href":"../../-z-euler/index"},{"text":"ZQuaternion","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZQuaternion.kt#L387"},{"text":"fromEuler","href":"from-euler"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZQuaternion","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZQuaternion.kt#L401"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZQuaternion.kt#L371" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

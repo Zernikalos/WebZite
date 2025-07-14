@@ -3,7 +3,7 @@ slug: "index"
 title: "ZShaderSourceData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,37 +13,50 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZShaderSourceData","url":"#zshadersourcedata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZShaderSourceData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-shader-source-data"
     description=""
-    codeBlocks={[{code: "constructor(glsl: ZGlSLShaderSource = ZGlSLShaderSource(), metal: ZMetalShaderSource = ZMetalShaderSource())"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(glsl: ZGlSLShaderSource = ZGlSLShaderSource(), metal: ZMetalShaderSource = ZMetalShaderSource(), wgpu: ZWebGpuShaderSource = ZWebGpuShaderSource())"]} links={[{"text":"ZGlSLShaderSource","href":"../-z-gl-s-l-shader-source/index"},{"text":"ZMetalShaderSource","href":"../-z-metal-shader-source/index"},{"text":"ZWebGpuShaderSource","href":"../-z-web-gpu-shader-source/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="glsl"
     tokenType="var"
     groupType="PROPERTY"
     url="glsl"
     description=""
-    codeBlocks={[{code: "var glsl: ZGlSLShaderSource"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var glsl: ZGlSLShaderSource"]} links={[{"text":"glsl","href":"glsl"},{"text":"ZGlSLShaderSource","href":"../-z-gl-s-l-shader-source/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="metal"
     tokenType="var"
     groupType="PROPERTY"
     url="metal"
     description=""
-    codeBlocks={[{code: "var metal: ZMetalShaderSource"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var metal: ZMetalShaderSource"]} links={[{"text":"metal","href":"metal"},{"text":"ZMetalShaderSource","href":"../-z-metal-shader-source/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "@Transient open override val refId: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["@Transient","open override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-component-data/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="wgpu"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="wgpu"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["var wgpu: ZWebGpuShaderSource"]} links={[{"text":"wgpu","href":"wgpu"},{"text":"ZWebGpuShaderSource","href":"../-z-web-gpu-shader-source/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

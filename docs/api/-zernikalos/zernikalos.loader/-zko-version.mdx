@@ -3,7 +3,7 @@ slug: "-zko-version"
 title: "ZkoVersion"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZkoVersion","url":"#zkoversion"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZkoVersion"
     tokenType="val"
     groupType="PROPERTY"
     url="../../index"
     description=""
-    codeBlocks={[{code: "val ZkoVersion: ZSemVer"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val ZkoVersion: ZSemVer"]} links={[{"text":"ZkoVersion","href":"-zko-version"},{"text":"ZSemVer","href":"../zernikalos.utils/-z-sem-ver/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoFormat.kt#L21"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoFormat.kt#L21" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

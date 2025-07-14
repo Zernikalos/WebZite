@@ -3,7 +3,7 @@ slug: "-u-n-i-f-o-r-m_-b-u-f-f-e-r"
 title: "UNIFORM_BUFFER"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"UNIFORM_BUFFER","url":"#uniform_buffer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="UNIFORM_BUFFER"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual val UNIFORM_BUFFER: Int"}, {code: "actual val UNIFORM_BUFFER: Int"}, {code: "expect val UNIFORM_BUFFER: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val UNIFORM_BUFFER: Int"]} links={[{"text":"UNIFORM_BUFFER","href":"-u-n-i-f-o-r-m_-b-u-f-f-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L202"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L202" />
+    <CodeBlockComponent platform="ogl" code={["expect val UNIFORM_BUFFER: Int"]} links={[{"text":"UNIFORM_BUFFER","href":"-u-n-i-f-o-r-m_-b-u-f-f-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L136"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L136" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

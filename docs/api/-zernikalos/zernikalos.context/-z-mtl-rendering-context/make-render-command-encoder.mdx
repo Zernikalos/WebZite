@@ -3,7 +3,7 @@ slug: "make-render-command-encoder"
 title: "makeRenderCommandEncoder"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"makeRenderCommandEncoder","url":"#makerendercommandencoder"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="makeRenderCommandEncoder"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun makeRenderCommandEncoder(renderPassDescriptor: MTLRenderPassDescriptor)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["fun makeRenderCommandEncoder(renderPassDescriptor: MTLRenderPassDescriptor)"]} links={[{"text":"makeRenderCommandEncoder","href":"make-render-command-encoder"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/context/ZRenderingContext.kt#L37"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/context/ZRenderingContext.kt#L37" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

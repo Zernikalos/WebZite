@@ -3,7 +3,7 @@ slug: "index"
 title: "ZMaterialData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,41 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZMaterialData","url":"#zmaterialdata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZMaterialData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-material-data"
     description=""
-    codeBlocks={[{code: "constructor(texture: ZTexture? = null)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(pbr: ZPbrMaterialData? = null, texture: ZTexture? = null)"]} links={[{"text":"ZPbrMaterialData","href":"../-z-pbr-material-data/index"},{"text":"ZTexture","href":"../-z-texture/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="pbr"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="pbr"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["var pbr: ZPbrMaterialData?"]} links={[{"text":"pbr","href":"pbr"},{"text":"ZPbrMaterialData","href":"../-z-pbr-material-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "@Transient open override val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["@Transient","open override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-component-data/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="texture"
     tokenType="var"
     groupType="PROPERTY"
     url="texture"
     description=""
-    codeBlocks={[{code: "var texture: ZTexture?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var texture: ZTexture?"]} links={[{"text":"texture","href":"texture"},{"text":"ZTexture","href":"../-z-texture/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

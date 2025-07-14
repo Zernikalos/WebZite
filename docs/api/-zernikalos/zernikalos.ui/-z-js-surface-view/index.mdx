@@ -3,7 +3,7 @@ slug: "index"
 title: "ZJsSurfaceView"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,53 +13,59 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZJsSurfaceView","url":"#zjssurfaceview"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZJsSurfaceView"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-js-surface-view"
     description=""
-    codeBlocks={[{code: "constructor(canvas: HTMLCanvasElement)"}]}
-  />
+  >
+    <CodeBlockComponent platform="webgpu" code={["constructor(canvas: ERROR CLASS: Symbol not found for HTMLCanvasElement)"]} links={[]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="_eventHandler"
     tokenType="var"
     groupType="PROPERTY"
     url="_event-handler"
     description=""
-    codeBlocks={[{code: "var _eventHandler: ZSurfaceViewEventHandler?"}]}
-  />
+  >
+    <CodeBlockComponent platform="webgpu" code={["var _eventHandler: ZSurfaceViewEventHandler?"]} links={[{"text":"_eventHandler","href":"_event-handler"},{"text":"ZSurfaceViewEventHandler","href":"../-z-surface-view-event-handler/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="canvas"
     tokenType="val"
     groupType="PROPERTY"
     url="canvas"
     description=""
-    codeBlocks={[{code: "val canvas: HTMLCanvasElement"}]}
-  />
+  >
+    <CodeBlockComponent platform="webgpu" code={["val canvas: ERROR CLASS: Symbol not found for HTMLCanvasElement"]} links={[{"text":"canvas","href":"canvas"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="eventHandler"
     tokenType="var"
     groupType="PROPERTY"
     url="event-handler"
     description="Represents an event handler that listens to surface-related events. Such as lifecycle and rendering updates, through ZSurfaceViewEventHandler."
-    codeBlocks={[{code: "open override var eventHandler: ZSurfaceViewEventHandler?"}]}
-  />
+  >
+    <CodeBlockComponent platform="webgpu" code={["open override var eventHandler: ZSurfaceViewEventHandler?"]} links={[{"text":"eventHandler","href":"event-handler"},{"text":"ZSurfaceViewEventHandler","href":"../-z-surface-view-event-handler/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="surfaceHeight"
     tokenType="val"
     groupType="PROPERTY"
     url="surface-height"
     description="Represents the height of the rendering surface in logical pixels."
-    codeBlocks={[{code: "open override val surfaceHeight: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="webgpu" code={["open override val surfaceHeight: Int"]} links={[{"text":"surfaceHeight","href":"surface-height"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="surfaceWidth"
     tokenType="val"
     groupType="PROPERTY"
     url="surface-width"
     description="Represents the width of the rendering surface in logical pixels."
-    codeBlocks={[{code: "open override val surfaceWidth: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="webgpu" code={["open override val surfaceWidth: Int"]} links={[{"text":"surfaceWidth","href":"surface-width"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

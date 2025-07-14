@@ -3,7 +3,7 @@ slug: "lerp"
 title: "lerp"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"lerp","url":"#lerp"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="lerp"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun lerp(result: ZVector3, t: Float, op1: ZVector3, op2: ZVector3)"}, {code: "fun lerp(t: Float, op1: ZVector3, op2: ZVector3): ZVector3"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun lerp(result: ZVector3, t: Float, op1: ZVector3, op2: ZVector3)fun lerp(t: Float, op1: ZVector3, op2: ZVector3): ZVector3(source)"]} links={[{"text":"lerp","href":"lerp"},{"text":"ZVector3","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L259"},{"text":"lerp","href":"lerp"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L265"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L259" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

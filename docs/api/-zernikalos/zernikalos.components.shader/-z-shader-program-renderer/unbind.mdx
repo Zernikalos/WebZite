@@ -3,7 +3,7 @@ slug: "unbind"
 title: "unbind"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,17 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"unbind","url":"#unbind"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "expect open override fun unbind()"}, {code: "actual open override fun unbind()"}, {code: "actual open override fun unbind()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L92"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L92" />
+    <CodeBlockComponent platform="metal" code={["actual open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.metal.kt#L75"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.metal.kt#L75" />
+    <CodeBlockComponent platform="ogl" code={["actual open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.ogl.kt#L67"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.ogl.kt#L67" />
+    <CodeBlockComponent platform="webgpu" code={["actual open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.wgpu.kt#L43"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.wgpu.kt#L43" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

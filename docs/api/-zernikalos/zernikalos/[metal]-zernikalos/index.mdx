@@ -3,7 +3,7 @@ slug: "index"
 title: "[metal]Zernikalos"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,53 +13,68 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"[metal]Zernikalos","url":"#[metal]zernikalos"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="Zernikalos"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-zernikalos"
     description=""
-    codeBlocks={[{code: "constructor()"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["constructor()"]} links={[]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="context"
     tokenType="var"
     groupType="PROPERTY"
     url="../-zernikalos-base/context"
     description="Represents the primary context of the Zernikalos engine during its lifecycle."
-    codeBlocks={[{code: "lateinit var context: ZContext"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["lateinit var context: ZContext"]} links={[{"text":"context","href":"../-zernikalos-base/context"},{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="settings"
     tokenType="val"
     groupType="PROPERTY"
     url="../-zernikalos-base/settings"
     description="Represents the settings for the Zernikalos engine. It provides centralized access to control logging levels and other related settings."
-    codeBlocks={[{code: "val settings: ZSettings"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["val settings: ZSettings"]} links={[{"text":"settings","href":"../-zernikalos-base/settings"},{"text":"ZSettings","href":"../../zernikalos.settings/-z-settings/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="stats"
     tokenType="val"
     groupType="PROPERTY"
     url="../-zernikalos-base/stats"
     description="Provides platform-specific information and version details for the Zernikalos engine."
-    codeBlocks={[{code: "val stats: ZStats"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["val stats: ZStats"]} links={[{"text":"stats","href":"../-zernikalos-base/stats"},{"text":"ZStats","href":"../../zernikalos.stats/-z-stats/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="surfaceView"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="../-zernikalos-base/surface-view"
+    description=""
+  >
+    <CodeBlockComponent platform="metal" code={["lateinit var surfaceView: ZSurfaceView"]} links={[{"text":"surfaceView","href":"../-zernikalos-base/surface-view"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[{code: "fun initialize(view: MTKView, stateHandler: ZSceneStateHandler)"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["fun initialize(view: MTKView, stateHandler: ZSceneStateHandler)"]} links={[{"text":"initialize","href":"initialize"},{"text":"ZSceneStateHandler","href":"../../zernikalos.scenestatehandler/-z-scene-state-handler/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initializeWithDefaults"
     tokenType="fun"
     groupType="FUNCTION"
     url="initialize-with-defaults"
     description=""
-    codeBlocks={[{code: "fun initializeWithDefaults(view: ZSurfaceView, stateHandler: ZSceneStateHandler)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["fun initializeWithDefaults(view: ZSurfaceView, stateHandler: ZSceneStateHandler)"]} links={[{"text":"initializeWithDefaults","href":"initialize-with-defaults"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"},{"text":"ZSceneStateHandler","href":"../../zernikalos.scenestatehandler/-z-scene-state-handler/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

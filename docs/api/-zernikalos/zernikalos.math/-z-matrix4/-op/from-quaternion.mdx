@@ -3,7 +3,7 @@ slug: "from-quaternion"
 title: "fromQuaternion"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"fromQuaternion","url":"#fromquaternion"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="resultq"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun fromQuaternion(q: ZQuaternion): ZMatrix4"}, {code: "fun fromQuaternion(result: ZMatrix4, q: ZQuaternion)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun fromQuaternion(q: ZQuaternion): ZMatrix4fun fromQuaternion(result: ZMatrix4, q: ZQuaternion)(source)"]} links={[{"text":"fromQuaternion","href":"from-quaternion"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"},{"text":"ZMatrix4","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L654"},{"text":"fromQuaternion","href":"from-quaternion"},{"text":"ZMatrix4","href":"../index"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L666"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L654" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

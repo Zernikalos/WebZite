@@ -3,7 +3,7 @@ slug: "view-box"
 title: "viewBox"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"viewBox","url":"#viewbox"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="viewBox"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var viewBox: ZBox2D"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var viewBox: ZBox2D"]} links={[{"text":"viewBox","href":"view-box"},{"text":"ZBox2D","href":"../../zernikalos.math/-z-box2-d/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/ZViewport.kt#L51"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/ZViewport.kt#L51" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

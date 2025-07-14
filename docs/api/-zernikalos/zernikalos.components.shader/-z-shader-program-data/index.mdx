@@ -3,7 +3,7 @@ slug: "index"
 title: "ZShaderProgramData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,61 +13,68 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZShaderProgramData","url":"#zshaderprogramdata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZShaderProgramData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-shader-program-data"
     description=""
-    codeBlocks={[{code: "constructor(vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), shaderSource: ZShaderSource = ZShaderSource(), attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), uniforms: ZUniformCollection = ZUniformCollection())"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), shaderSource: ZShaderSource = ZShaderSource(), attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), uniforms: ZUniformCollection = ZUniformCollection())"]} links={[{"text":"ZShader","href":"../-z-shader/index"},{"text":"ZShader","href":"../-z-shader/index"},{"text":"ZShaderSource","href":"../-z-shader-source/index"},{"text":"LinkedHashMap","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-linked-hash-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZAttribute","href":"../-z-attribute/index"},{"text":"ZUniformCollection","href":"../-z-uniform-collection/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="attributes"
     tokenType="val"
     groupType="PROPERTY"
     url="attributes"
     description=""
-    codeBlocks={[{code: "val attributes: LinkedHashMap<String, ZAttribute>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val attributes: LinkedHashMap<String, ZAttribute>"]} links={[{"text":"attributes","href":"attributes"},{"text":"LinkedHashMap","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-linked-hash-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZAttribute","href":"../-z-attribute/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="fragmentShader"
     tokenType="var"
     groupType="PROPERTY"
     url="fragment-shader"
     description=""
-    codeBlocks={[{code: "var fragmentShader: ZShader"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var fragmentShader: ZShader"]} links={[{"text":"fragmentShader","href":"fragment-shader"},{"text":"ZShader","href":"../-z-shader/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "@Transient open override val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["@Transient","open override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-component-data/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="shaderSource"
     tokenType="var"
     groupType="PROPERTY"
     url="shader-source"
     description=""
-    codeBlocks={[{code: "var shaderSource: ZShaderSource"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var shaderSource: ZShaderSource"]} links={[{"text":"shaderSource","href":"shader-source"},{"text":"ZShaderSource","href":"../-z-shader-source/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="uniforms"
     tokenType="var"
     groupType="PROPERTY"
     url="uniforms"
     description=""
-    codeBlocks={[{code: "var uniforms: ZUniformCollection"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var uniforms: ZUniformCollection"]} links={[{"text":"uniforms","href":"uniforms"},{"text":"ZUniformCollection","href":"../-z-uniform-collection/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="vertexShader"
     tokenType="var"
     groupType="PROPERTY"
     url="vertex-shader"
     description=""
-    codeBlocks={[{code: "var vertexShader: ZShader"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var vertexShader: ZShader"]} links={[{"text":"vertexShader","href":"vertex-shader"},{"text":"ZShader","href":"../-z-shader/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

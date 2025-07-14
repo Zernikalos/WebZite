@@ -3,7 +3,7 @@ slug: "load-from-url"
 title: "loadFromUrl"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"loadFromUrl","url":"#loadfromurl"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="url"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "fun loadFromUrl(url: String): Promise<ZKo>"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="js" code={["fun loadFromUrl(url: String): Promise<ZKo>"]} links={[{"text":"loadFromUrl","href":"load-from-url"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Promise","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.js/-promise/index.html"},{"text":"ZKo","href":"-z-ko/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/loader/ZkoLoader.js.kt#L26"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/loader/ZkoLoader.js.kt#L26" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

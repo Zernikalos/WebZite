@@ -3,7 +3,7 @@ slug: "-s-t-a-t-i-c_-d-r-a-w"
 title: "STATIC_DRAW"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"STATIC_DRAW","url":"#static_draw"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="STATIC_DRAW"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual val STATIC_DRAW: Int"}, {code: "actual val STATIC_DRAW: Int"}, {code: "expect val STATIC_DRAW: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val STATIC_DRAW: Int"]} links={[{"text":"STATIC_DRAW","href":"-s-t-a-t-i-c_-d-r-a-w"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L206"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L206" />
+    <CodeBlockComponent platform="ogl" code={["expect val STATIC_DRAW: Int"]} links={[{"text":"STATIC_DRAW","href":"-s-t-a-t-i-c_-d-r-a-w"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L181"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L181" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

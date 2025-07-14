@@ -3,7 +3,7 @@ slug: "get-attrib-location"
 title: "getAttribLocation"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"getAttribLocation","url":"#getattriblocation"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="getAttribLocation"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual fun getAttribLocation(program: GLWrap, attrName: String): Int"}, {code: "actual fun getAttribLocation(program: GLWrap, attrName: String): Int"}, {code: "expect fun getAttribLocation(program: GLWrap, attrName: String): Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun getAttribLocation(program: GLWrap, attrName: String): Int"]} links={[{"text":"getAttribLocation","href":"get-attrib-location"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L88"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L88" />
+    <CodeBlockComponent platform="ogl" code={["expect fun getAttribLocation(program: GLWrap, attrName: String): Int"]} links={[{"text":"getAttribLocation","href":"get-attrib-location"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L59"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L59" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

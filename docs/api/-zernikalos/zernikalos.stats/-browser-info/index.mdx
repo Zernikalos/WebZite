@@ -3,7 +3,7 @@ slug: "index"
 title: "BrowserInfo"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,23 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"BrowserInfo","url":"#browserinfo"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="name"
     tokenType="val"
     groupType="PROPERTY"
     url="name"
     description=""
-    codeBlocks={[{code: "abstract val name: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="js" code={["abstract val name: String"]} links={[{"text":"name","href":"name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="version"
     tokenType="val"
     groupType="PROPERTY"
     url="version"
     description=""
-    codeBlocks={[{code: "abstract val version: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="js" code={["abstract val version: String"]} links={[{"text":"version","href":"version"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "ZLoggerSettings"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,45 +13,50 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZLoggerSettings","url":"#zloggersettings"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZLoggerSettings"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-logger-settings"
     description=""
-    codeBlocks={[{code: "constructor()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="adapters"
     tokenType="var"
     groupType="PROPERTY"
     url="adapters"
     description=""
-    codeBlocks={[{code: "var adapters: Array<ZLoggerAdapter>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var adapters: Array<ZLoggerAdapter>"]} links={[{"text":"adapters","href":"adapters"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"ZLoggerAdapter","href":"../../zernikalos.logger/-z-logger-adapter/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="debug"
     tokenType="val"
     groupType="PROPERTY"
     url="debug"
     description=""
-    codeBlocks={[{code: "val debug: Boolean = true"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val debug: Boolean = true"]} links={[{"text":"debug","href":"debug"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="logLevel"
     tokenType="var"
     groupType="PROPERTY"
     url="log-level"
     description=""
-    codeBlocks={[{code: "var logLevel: ZLogLevel"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var logLevel: ZLogLevel"]} links={[{"text":"logLevel","href":"log-level"},{"text":"ZLogLevel","href":"../../zernikalos.logger/-z-log-level/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="addAdapter"
     tokenType="fun"
     groupType="FUNCTION"
     url="add-adapter"
     description=""
-    codeBlocks={[{code: "fun addAdapter(adapter: ZLoggerAdapter)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun addAdapter(adapter: ZLoggerAdapter)"]} links={[{"text":"addAdapter","href":"add-adapter"},{"text":"ZLoggerAdapter","href":"../../zernikalos.logger/-z-logger-adapter/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

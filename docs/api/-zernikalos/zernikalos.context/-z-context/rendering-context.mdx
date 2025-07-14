@@ -3,7 +3,7 @@ slug: "rendering-context"
 title: "renderingContext"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"renderingContext","url":"#renderingcontext"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="renderingContext"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val renderingContext: ZRenderingContext"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val renderingContext: ZRenderingContext"]} links={[{"text":"renderingContext","href":"rendering-context"},{"text":"ZRenderingContext","href":"../-z-rendering-context/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/context/ZContext.kt#L17"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/context/ZContext.kt#L17" />
+  </DocumentationItemComponent>
+</DocumentationItemList>
