@@ -8,3 +8,4 @@ export * from './PropertyList';
 // New code documentation components
 export * from './DocumentationItemComponent';
 export * from './DocumentationItemList';
+export * from './CodeBlockComponent';

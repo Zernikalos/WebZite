@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { isValidElement } from 'react';
 import Link from '@docusaurus/Link';
-import CodeBlockComponent from '../CodeBlockComponent';
+import CodeBlockComponent, { CodeBlockComponentProps } from '../CodeBlockComponent';
+
 
 export enum TokenType {
   PACKAGE = 'package',
@@ -26,11 +27,6 @@ export enum GroupType {
   TYPE = 'TYPE',
 }
 
-interface CodeBlockData {
-  platform: string;
-  code: string[];
-}
-
 interface DocumentationItemComponentProps {
   name: string;
   description?: string;
@@ -38,7 +34,7 @@ interface DocumentationItemComponentProps {
   tokenType: TokenType;
   annotations?: string[];
   url?: string;
-  codeBlocks?: CodeBlockData[];
+  children?: React.ReactNode;
 }
 
 export const DocumentationItemComponent: React.FC<DocumentationItemComponentProps> = ({
@@ -48,19 +44,13 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
   tokenType,
   annotations = [],
   url,
-  codeBlocks
+  children
 }) => {
-  const [activePlatform, setActivePlatform] = React.useState<string | null>(null);
+  const codeBlockChildren = React.useMemo(() => 
+    React.Children.toArray(children).filter(React.isValidElement) as React.ReactElement<CodeBlockComponentProps>[],
+  [children]);
 
-  React.useEffect(() => {
-    if (codeBlocks && codeBlocks.length > 0 && !activePlatform) {
-      setActivePlatform(codeBlocks[0].platform);
-    }
-  }, [codeBlocks, activePlatform]);
 
-  const activeCodeBlock = React.useMemo(() => {
-    return codeBlocks?.find(cb => cb.platform === activePlatform);
-  }, [codeBlocks, activePlatform]);
   // Determinar el esquema de color y las clases CSS correspondientes
   const getColorSchemeName = (): string => {
     switch (tokenType) {
@@ -180,42 +170,18 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
         </div>
       </div>
       
-      {/* Selector de plataforma y bloque de código */}
-      {codeBlocks && codeBlocks.length > 0 && (
-        <div className="tw:border-t tw:border-gray-200 tw:dark:border-gray-700">
-          {/* Pestañas para seleccionar la plataforma */}
-          {codeBlocks.length > 1 && (
-            <div className="tw:px-5 tw:py-2 tw:bg-gray-50 tw:dark:bg-gray-800/50 tw:border-b tw:border-gray-200 tw:dark:border-gray-700">
-              <div className="tw:flex tw:items-center tw:gap-2">
-                {codeBlocks.map((cb) => (
-                  <button
-                    key={cb.platform}
-                    onClick={() => setActivePlatform(cb.platform)}
-                    className={`tw:px-3 tw:py-1 tw:text-sm tw:font-medium tw:rounded-md tw:transition-colors ${
-                      activePlatform === cb.platform
-                        ? 'tw:bg-primary-600 tw:text-white tw:shadow-sm'
-                        : 'tw:bg-gray-200 tw:dark:bg-gray-700 tw:text-gray-800 tw:dark:text-gray-200 hover:tw:bg-gray-300 tw:dark:hover:bg-gray-600'
-                    }`}
-                  >
-                    {cb.platform}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Bloque de código activo */}
-          {activeCodeBlock && (
-            <div className={`tw:bg-gray-100 tw:dark:bg-gray-900 tw:p-4`}>
-              <CodeBlockComponent code={activeCodeBlock.code} />
-            </div>
-          )}
+      {/* Bloques de código */}
+      {codeBlockChildren.length > 0 && (
+        <div className="tw:border-t tw:border-gray-200 tw:dark:border-gray-700 tw:bg-gray-100 tw:dark:bg-gray-900 tw:p-4">
+          <div className="tw:flex tw:flex-col tw:gap-4">
+            {codeBlockChildren}
+          </div>
         </div>
       )}
       
       {/* Descripción con estilo mejorado */}
       {description && (
-        <div className={`tw:p-5 ${(!codeBlocks || codeBlocks.length === 0) ? 'tw:border-t tw:border-gray-200 tw:dark:border-gray-700' : 'tw:border-t tw:border-gray-100 tw:dark:border-gray-700'} tw:bg-gray-50/50 tw:dark:bg-gray-800/50 tw:text-gray-700 tw:dark:text-gray-300 tw:text-sm tw:leading-relaxed`}>
+        <div className={`tw:p-5 ${codeBlockChildren.length === 0 ? 'tw:border-t tw:border-gray-200 tw:dark:border-gray-700' : 'tw:border-t tw:border-gray-100 tw:dark:border-gray-700'} tw:bg-gray-50/50 tw:dark:bg-gray-800/50 tw:text-gray-700 tw:dark:text-gray-300 tw:text-sm tw:leading-relaxed`}>
           {description}
         </div>
       )}

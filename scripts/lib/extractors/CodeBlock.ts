@@ -15,11 +15,13 @@ export class CodeBlock {
     platform: string;
     code: string[];
     links: { text: string; href: string }[];
+    source: string | null;
 
-    constructor({ platform = '', code = [], links = [] }: { platform?: string; code?: string[]; links?: { text: string; href: string }[] } = {}) {
+    constructor({ platform = '', code = [], links = [], source = null }: { platform?: string; code?: string[]; links?: { text: string; href: string }[], source?: string | null } = {}) {
         this.platform = platform;
         this.code = code;
         this.links = links;
+        this.source = source;
     }
 
     public parse($: cheerio.CheerioAPI, element: cheerio.Cheerio<any>): void {
@@ -27,12 +29,26 @@ export class CodeBlock {
         this.platform = platformAttr.replace(':/', '').replace('Main', '');
 
         const codeElement = element.find('.symbol.monospace');
+
+        // Find and extract the source link, but don't remove it yet.
+        const sourceLinkElement = codeElement.find('span.floating-right a');
+        const sourceContainer = sourceLinkElement.closest('span.clearfix');
+        if (sourceLinkElement.length > 0) {
+            this.source = sourceLinkElement.attr('href') || null;
+        }
+
         this.code = [];
         const lines: string[] = [];
         let currentLine = '';
 
         codeElement.contents().each((i, node) => {
             const $node = $(node);
+
+            // Skip the source container element without removing it from the DOM
+            if (sourceContainer.length > 0 && $node[0] === sourceContainer[0]) {
+                return; // Skips this iteration
+            }
+
             // If it's a block element, it forces a new line.
             if (node.type === 'tag' && $node.is('div.block')) {
                 // Push the accumulated line if it's not empty
@@ -69,6 +85,9 @@ export class CodeBlock {
         const output = [];
         output.push('\n--- BLOCK ---');
         output.push(`Platform(s): ${this.platform}`);
+        if (this.source) {
+            output.push(`Source: ${this.source}`);
+        }
         output.push('Code:');
         this.code.forEach(line => output.push(`  ${line}`));
         output.push('Links:');

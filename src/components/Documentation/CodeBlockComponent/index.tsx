@@ -2,10 +2,12 @@ import React from 'react';
 import CodeBlock from '@theme/CodeBlock';
 
 export interface CodeBlockComponentProps {
+  platform: string;
   code: string[];
 }
 
 export const CodeBlockComponent: React.FC<CodeBlockComponentProps> = ({
+  platform,
   code
 }) => {
   // Join the array of code lines into a single string with newlines.
