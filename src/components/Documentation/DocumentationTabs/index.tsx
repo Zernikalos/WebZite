@@ -20,7 +20,7 @@ const DocumentationTabs: React.FC<DocumentationTabsProps> = ({ tabs, selected, o
   const selectedTab = tabs.find(tab => tab.value === selected);
 
   return (
-    <div className="tw:border-b tw:border-gray-200 tw:dark:tw:border-gray-700 tw:bg-transparent tw:px-2">
+    <div className="tw:border-b tw:border-gray-200 tw:dark:border-gray-700 tw:bg-transparent tw:px-2">
       <div className="tw:flex tw:items-center tw:gap-x-2">
         {tabs.map((tab) => {
           const isActive = tab.value === selected;
@@ -30,8 +30,8 @@ const DocumentationTabs: React.FC<DocumentationTabsProps> = ({ tabs, selected, o
               onClick={() => onSelect(tab.value)}
               className={`tw:flex tw:items-center tw:gap-2 tw:whitespace-nowrap tw:py-2 tw:px-3 tw:rounded-t-md tw:font-medium tw:text-sm tw:transition-all tw:duration-150 focus:tw:outline-none
                 ${isActive
-                  ? 'tw:bg-blue-100 tw:dark:bg-gray-800 tw:shadow-sm tw:border-b-2 tw:border-b-transparent'
-                  : 'tw:bg-transparent tw:text-gray-700 tw:dark:text-gray-300 tw:border-b-2 tw:border-b-transparent tw:hover:bg-gray-100 tw:dark:hover:bg-gray-800/40'}
+                  ? 'tw:bg-blue-100 tw:dark:bg-gray-800 tw:border-gray-700 tw:border-b-2 tw:border-b-transparent'
+                  : 'tw:bg-transparent tw:text-gray-700 tw:dark:text-gray-300 tw:border-gray-700 tw:border-b-2 tw:border-b-transparent tw:hover:bg-gray-100 tw:dark:hover:bg-gray-800/40'}
               `}>
               {React.cloneElement(tab.icon, {
                 className: `tw:w-4 tw:h-4 ${isActive ? 'tw:text-blue-800 tw:dark:text-blue-300' : 'tw:text-gray-400 tw:dark:text-gray-500'}`

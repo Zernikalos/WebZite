@@ -15,6 +15,23 @@ export class CodeBlock {
         this.source = source;
     }
 
+    private extractLinks($: cheerio.CheerioAPI, codeElement: cheerio.Cheerio<any>): { text: string; href: string }[] {
+        const links: { text: string; href: string }[] = [];
+        codeElement.find('a').each((i: number, el: any) => {
+            const link = $(el);
+            let href = link.attr('href') || '';
+            // Si es relativo y termina en .html, quitamos la extensión
+            if (href && !/^https?:\/\//.test(href) && href.endsWith('.html')) {
+                href = href.slice(0, -5);
+            }
+            links.push({
+                text: link.text().trim(),
+                href
+            });
+        });
+        return links;
+    }
+
     public parse($: cheerio.CheerioAPI, element: cheerio.Cheerio<any>): void {
         const platformAttr = element.attr('data-togglable') || '';
         this.platform = platformAttr.replace(':/', '').replace('Main', '');
@@ -62,14 +79,7 @@ export class CodeBlock {
 
         this.code = lines.map(line => line.replace(/\s+/g, ' ').trim()).filter(line => line);
 
-        this.links = [];
-        codeElement.find('a').each((i: number, el: any) => {
-            const link = $(el);
-            this.links.push({
-                text: link.text().trim(),
-                href: link.attr('href') || ''
-            });
-        });
+        this.links = this.extractLinks($, codeElement);
     }
 
     public toString(): string {

@@ -56,10 +56,12 @@ const headerTemplate = (data: TemplateData): string => {
  * @param block - The code block data.
  * @returns A string representing a CodeBlockComponent.
  */
-const createCodeBlockComponentString = (block: { platform: string; code: string[] }): string => {
+const createCodeBlockComponentString = (block: { platform: string; code: string[]; links?: { text: string; href: string }[]; source?: string | null }): string => {
   // Serialize the code array into a JSON string, which is a valid way to represent an array prop in JSX.
   const codeProp = JSON.stringify(block.code);
-  return `<CodeBlockComponent platform="${block.platform}" code={${codeProp}} />`;
+  const linksProp = JSON.stringify(block.links || []);
+  const sourceProp = block.source ? ` source=\"${block.source}\"` : '';
+  return `<CodeBlockComponent platform=\"${block.platform}\" code={${codeProp}} links={${linksProp}}${sourceProp} />`;
 };
 
 /**
