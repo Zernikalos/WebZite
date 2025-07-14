@@ -15,7 +15,8 @@
     "typecheck": "tsc",
     "build:scripts": "tsc --project scripts/tsconfig.json",
     "mdx-to-react": "ts-node scripts/mdx-to-react.ts",
-    "generate:docs": "ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api"
+    "generate:docs": "rimraf ./docs/api && ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api",
+    "generate:docs:dev": "ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
@@ -45,6 +46,7 @@
     "cheerio": "1.1.0",
     "jsdom": "^26.1.0",
     "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "5.8.3"
   },

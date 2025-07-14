@@ -1,6 +1,6 @@
 import * as cheerio from 'cheerio';
 import { extractText } from './base-extractors';
-import { DocumentationItem } from './DocumentationItem';
+import { DocumentationItem, TokenType } from './DocumentationItem';
 import _ from 'lodash';
 
 export enum PageType {
@@ -234,6 +234,10 @@ export class PackagePage extends DocumentationPage {
   }
 }
 
+/**
+ * Extracts information from a library page
+ * The Library page is the API entry index
+ */
 export class LibraryPage extends DocumentationPage {
 
   public pageType: PageType = PageType.LIBRARY;
@@ -242,33 +246,24 @@ export class LibraryPage extends DocumentationPage {
     super($);
   }
 
+  public override get title(): string {
+    return "API Index";
+  }
+
   public parse($: cheerio.CheerioAPI): void {
     const tabSectionBody = $('.main-content')
 
     const tableRows = tabSectionBody.find('.table-row')
 
     for (const token of tableRows) {
-      // const tokens = DocumentationPage.findTokenRows(tabSectionBody, availableToken);
-      // if (!tokens) {
-      //   continue;
-      // }
       try {
         const documentationItem = new DocumentationItem();
         documentationItem.parse($, $(token));
+        documentationItem.tokenType = TokenType.PACKAGE;
         this.documentationItems.push(documentationItem);
       } catch (error) {
         throw error;
       }
-      // Use the Cheerio each method to iterate over the tokens
-      // token.each((i, tokenElement) => {
-      //   try {
-      //     const documentationItem = new DocumentationItem();
-      //     documentationItem.parse($, $(tokenElement));
-      //     this.documentationItems.push(documentationItem);
-      //   } catch (error) {
-      //     throw error;
-      //   }
-      // });
     }
   }
 }

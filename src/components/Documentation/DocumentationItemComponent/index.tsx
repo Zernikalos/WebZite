@@ -1,25 +1,32 @@
-import React from 'react';
+import React, { isValidElement } from 'react';
 import Link from '@docusaurus/Link';
 import CodeBlockComponent, { CodeBlockComponentProps } from '../CodeBlockComponent';
 
+
 export enum TokenType {
+  PACKAGE = 'package',
   CLASS = 'class',
   DATA_CLASS = 'data class',
   CONSTRUCTOR = 'constructor',
   INTERFACE = 'interface',
+  OBJECT = 'object',
   FUNCTION = 'fun',
   VAL = 'val',
   VAR = 'var',
   ENUM = 'enum',
+  ENUM_ENTRY = 'enum entry',
   NONE = ''
 }
 
 export enum GroupType {
   NONE = 'NONE',
+  PACKAGE = 'PACKAGE',
   CONSTRUCTOR = 'CONSTRUCTOR',
   PROPERTY = 'PROPERTY',
+  ENUM_ENTRY = 'ENUM_ENTRY',
   FUNCTION = 'FUNCTION',
   TYPE = 'TYPE',
+  OBJECT = 'OBJECT',
 }
 
 interface DocumentationItemComponentProps {
@@ -29,7 +36,7 @@ interface DocumentationItemComponentProps {
   tokenType: TokenType;
   annotations?: string[];
   url?: string;
-  codeBlocks?: CodeBlockComponentProps[];
+  children?: React.ReactNode;
 }
 
 export const DocumentationItemComponent: React.FC<DocumentationItemComponentProps> = ({
@@ -39,15 +46,23 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
   tokenType,
   annotations = [],
   url,
-  codeBlocks
+  children
 }) => {
+  const codeBlockChildren = React.useMemo(() => 
+    React.Children.toArray(children).filter(React.isValidElement) as React.ReactElement<CodeBlockComponentProps>[],
+  [children]);
+
+
   // Determinar el esquema de color y las clases CSS correspondientes
   const getColorSchemeName = (): string => {
     switch (tokenType) {
       case TokenType.CLASS:
       case TokenType.INTERFACE:
       case TokenType.ENUM:
+      case TokenType.OBJECT:
         return 'purple';
+      case TokenType.PACKAGE:
+        return 'yellow';
       case TokenType.DATA_CLASS:
         return 'green';
       case TokenType.FUNCTION:
@@ -55,6 +70,7 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
         return 'blue';
       case TokenType.VAL:
       case TokenType.VAR:
+      case TokenType.ENUM_ENTRY:
         return 'red';
       default:
         return 'gray';
@@ -69,6 +85,7 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
       green: 'tw:border-l-green-500',
       blue: 'tw:border-l-blue-500',
       red: 'tw:border-l-red-500',
+      yellow: 'tw:border-l-yellow-500',
       gray: 'tw:border-l-gray-500',
     };
     return map[colorSchemeName] || map.gray;
@@ -86,6 +103,8 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
         return 'tw:bg-blue-50 tw:text-blue-700 tw:dark:bg-blue-900/20 tw:dark:text-blue-300 tw:border-blue-200 tw:dark:border-blue-800/50';
       case 'red':
         return 'tw:bg-red-50 tw:text-red-700 tw:dark:bg-red-900/20 tw:dark:text-red-300 tw:border-red-200 tw:dark:border-red-800/50';
+      case 'yellow':
+        return 'tw:bg-yellow-50 tw:text-yellow-700 tw:dark:bg-yellow-900/20 tw:dark:text-yellow-300 tw:border-yellow-200 tw:dark:border-yellow-800/50';
       default: // gray
         return 'tw:bg-gray-50 tw:text-gray-700 tw:dark:bg-gray-900/20 tw:dark:text-gray-300 tw:border-gray-200 tw:dark:border-gray-800/50';
     }
@@ -93,15 +112,19 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
 
   const getBadgeColor = () => {
     switch (tokenType) {
+      case TokenType.PACKAGE:
+        return 'tw:bg-yellow-100 tw:text-yellow-800 tw:dark:bg-yellow-900 tw:dark:text-yellow-300';
       case TokenType.CLASS:
       case TokenType.INTERFACE:
       case TokenType.ENUM:
+      case TokenType.OBJECT:
         return 'tw:bg-purple-100 tw:text-purple-800 tw:dark:bg-purple-900 tw:dark:text-purple-300';
       case TokenType.FUNCTION:
       case TokenType.CONSTRUCTOR:
         return 'tw:bg-blue-100 tw:text-blue-800 tw:dark:bg-blue-900 tw:dark:text-blue-300';
       case TokenType.VAL:
       case TokenType.VAR:
+      case TokenType.ENUM_ENTRY:
         return 'tw:bg-red-100 tw:text-red-800 tw:dark:bg-red-900 tw:dark:text-red-300';
       default:
         return 'tw:bg-gray-100 tw:text-gray-800 tw:dark:bg-gray-700 tw:dark:text-gray-300';
@@ -151,20 +174,18 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
         </div>
       </div>
       
-      {/* Bloques de código con estilo mejorado */}
-      {codeBlocks && codeBlocks.length > 0 && (
-        <div className="tw:border-t tw:border-gray-200 tw:dark:border-gray-700">
-          {codeBlocks.map((cb, index) => (
-            <div key={index} className={`tw:bg-gray-100 tw:dark:bg-gray-900 tw:p-4 ${index > 0 ? '' : ''}`}>
-              <CodeBlockComponent code={cb.code} />
-            </div>
-          ))}
+      {/* Bloques de código */}
+      {codeBlockChildren.length > 0 && (
+        <div className="tw:border-t tw:border-gray-200 tw:dark:border-gray-700 tw:bg-gray-100 tw:dark:bg-gray-900 tw:p-4">
+          <div className="tw:flex tw:flex-col tw:gap-4">
+            {codeBlockChildren}
+          </div>
         </div>
       )}
       
       {/* Descripción con estilo mejorado */}
       {description && (
-        <div className={`tw:p-5 ${(!codeBlocks || codeBlocks.length === 0) ? 'tw:border-t tw:border-gray-200 tw:dark:border-gray-700' : 'tw:border-t tw:border-gray-100 tw:dark:border-gray-700'} tw:bg-gray-50/50 tw:dark:bg-gray-800/50 tw:text-gray-700 tw:dark:text-gray-300 tw:text-sm tw:leading-relaxed`}>
+        <div className={`tw:p-5 ${codeBlockChildren.length === 0 ? 'tw:border-t tw:border-gray-200 tw:dark:border-gray-700' : 'tw:border-t tw:border-gray-100 tw:dark:border-gray-700'} tw:bg-gray-50/50 tw:dark:bg-gray-800/50 tw:text-gray-700 tw:dark:text-gray-300 tw:text-sm tw:leading-relaxed`}>
           {description}
         </div>
       )}

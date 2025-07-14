@@ -1,161 +1,131 @@
 import * as cheerio from 'cheerio';
-import { extractCleanText } from './base-extractors';
 import _ from 'lodash';
-
-enum CodeBlockMetadataType {
-    CLASS = 'class',
-    INTERFACE = 'interface',
-    FUN = 'fun',
-    DATA_CLASS = 'data class',
-    VAL = 'property',
-    VAR = 'property'
-}
-
-
-export class CodeBlockLink {
-    text: string;
-    href: string;
-
-    constructor(text: string, href: string) {
-        this.text = text;
-        this.href = href;
-    }
-}
-
-/**
- * Interface for metadata in code blocks
- */
-export class CodeBlockMetadata {
-    type: string;
-    links: CodeBlockLink[];
-
-    constructor() {
-        this.type = '';
-        this.links = [];
-    }
-}
-
-/**
- * Cleans a code block by normalizing spaces and format
- * @param codeSource - Code block to clean
- * @returns Clean code block
- */
-function cleanCodeSource(codeSource: string): string {
-    return _
-      .chain(codeSource)
-      // Normalize horizontal spaces
-      .replace(/[\t ]+/g, ' ')
-      // Remove spaces around parentheses
-      .replace(/\s*\(\s*/g, '(')
-      .replace(/\s*\)\s*/g, ')')
-      // Normalize spaces around colons
-      .replace(/\s*:\s*/g, ': ')
-      // Normalize spaces after commas
-      .replace(/\s*,\s*/g, ', ')
-      // Remove spaces at the beginning of lines
-      .replace(/\n\s+/g, '\n')
-      // Remove duplicate blank lines
-      .replace(/\n+/g, '\n')
-    // Escape double quotes to avoid breaking JSX props
-    .replace(/"/g, "'")
-    // Replace line breaks with spaces for MDX compatibility
-    .replace(/\n/g, " ")
-      // Remove spaces at the beginning and end
-      .trim()
-      // Replace newlines with spaces for MDX compatibility
-      .replace(/\n/g, ' ')
-      .value();
-}
 
 export class CodeBlock {
 
-    code: string;
-    metadata: CodeBlockMetadata;
+    platform: string;
+    code: string[];
+    links: { text: string; href: string }[];
+    source: string | null;
 
-    constructor() {
-        this.code = '';
-        this.metadata = new CodeBlockMetadata();
+    constructor({ platform = '', code = [], links = [], source = null }: { platform?: string; code?: string[]; links?: { text: string; href: string }[], source?: string | null } = {}) {
+        this.platform = platform;
+        this.code = code;
+        this.links = links;
+        this.source = source;
     }
 
-    private extractInternalLinks($: cheerio.CheerioAPI, element: any | cheerio.Cheerio<any>): void {  
-        $(element).find('a').each((i, linkElement) => {
-          const $link = $(linkElement);
-          const href = $link.attr('href');
-          const text = $link.text().trim();
-          
-          if (href && text) {
-            this.metadata.links.push(new CodeBlockLink(text, href));
-          }
+    private extractLinks($: cheerio.CheerioAPI, codeElement: cheerio.Cheerio<any>): { text: string; href: string }[] {
+        const links: { text: string; href: string }[] = [];
+        codeElement.find('a').each((i: number, el: any) => {
+            const link = $(el);
+            let href = link.attr('href') || '';
+            // Si es relativo y termina en .html, quitamos la extensión
+            if (href && !/^https?:\/\//.test(href) && href.endsWith('.html')) {
+                href = href.slice(0, -5);
+            }
+            links.push({
+                text: link.text().trim(),
+                href
+            });
         });
+        return links;
     }
 
-    private detectDeclarationAndMetaType(sourceCode: string): { startIndex: number; detectedType: string } {
-        let startIndex = -1;
-        let detectedType = '';
-        
-        for (const [keyword, type] of Object.entries(CodeBlockMetadataType)) {
-          const index = sourceCode.indexOf(keyword);
-          if (index !== -1 && (startIndex === -1 || index < startIndex)) {
-            startIndex = index;
-            detectedType = type;
-          }
-        }
-        
-        return { startIndex, detectedType };
-    }
+    public parse($: cheerio.CheerioAPI, element: cheerio.Cheerio<any>): void {
+        const platformAttr = element.attr('data-togglable') || '';
+        this.platform = platformAttr.replace(':/', '').replace('Main', '');
 
-    /**
-     * Finds the element containing the source code
-     * @param element - Container element
-     * @param $ - Cheerio instance
-     * @returns Element containing the source code
-     */
-    private findRawCodeBlock(element: cheerio.Cheerio<any>): cheerio.Cheerio<any> {
-      if (element.hasClass('symbol') && element.hasClass('monospace')) {
-        return element;
-      }
-      return element.find('.symbol.monospace');
-    }
-    
-    public parse($: cheerio.CheerioAPI, element: any | cheerio.Cheerio<any>): void {
-        try {
-            const rawCodeBlock = this.findRawCodeBlock(element);
-            if (rawCodeBlock.length === 0) {
-                return;
-            }
+        const codeElement = element.find('.symbol.monospace');
 
-            // Extract the complete text of the declaration
-            this.code = '';
-
-            // Extract text only from the raw code block element, not the entire element
-            this.code = extractCleanText(rawCodeBlock, $);
-
-            // Clean the declaration preserving line breaks
-            this.code = cleanCodeSource(this.code);
-
-            // Extract links from the element
-            this.extractInternalLinks($, element);
-
-            // Find the beginning of the declaration and detect its type
-            const { startIndex, detectedType } = this.detectDeclarationAndMetaType(this.code);
-
-            // Assign the detected type to the metadata
-            this.metadata.type = detectedType;
-
-            // If we found a keyword, extract from there
-            if (startIndex !== -1) {
-                this.code = this.code.substring(startIndex);
-            }
-
-        } catch (error) {
-            console.error('Error extracting code block:', error);
+        // Find and extract the source link, but don't remove it yet.
+        const sourceLinkElement = codeElement.find('span.floating-right a');
+        const sourceContainer = sourceLinkElement.closest('span.clearfix');
+        if (sourceLinkElement.length > 0) {
+            this.source = sourceLinkElement.attr('href') || null;
         }
 
+        this.code = [];
+        const lines: string[] = [];
+        let currentLine = '';
+
+        codeElement.contents().each((i, node) => {
+            const $node = $(node);
+
+            // Skip the source container element without removing it from the DOM
+            if (sourceContainer.length > 0 && $node[0] === sourceContainer[0]) {
+                return; // Skips this iteration
+            }
+
+            // If it's a block element, it forces a new line.
+            if (node.type === 'tag' && $node.is('div.block')) {
+                // Push the accumulated line if it's not empty
+                if (currentLine.trim()) {
+                    lines.push(currentLine.trim());
+                }
+                currentLine = ''; // Reset for the next line
+                // Add the block's content as a new line
+                lines.push($node.text().trim());
+            } else {
+                // Append text from other nodes to the current line
+                currentLine += $node.text();
+            }
+        });
+
+        // Add the last accumulated line if it's not empty
+        if (currentLine.trim()) {
+            lines.push(currentLine.trim());
+        }
+
+        this.code = lines.map(line => line.replace(/\s+/g, ' ').trim()).filter(line => line);
+
+        this.links = this.extractLinks($, codeElement);
     }
+
+    public toString(): string {
+        const output = [];
+        output.push('\n--- BLOCK ---');
+        output.push(`Platform(s): ${this.platform}`);
+        if (this.source) {
+            output.push(`Source: ${this.source}`);
+        }
+        output.push('Code:');
+        this.code.forEach(line => output.push(`  ${line}`));
+        output.push('Links:');
+        this.links.forEach(l => output.push(`  - ${l.text} -> ${l.href}`));
+        output.push('------------');
+        return output.join('\n');
+    }
+
 }
 
-export function extractCodeBlock($: cheerio.CheerioAPI, element: cheerio.Cheerio<any>): CodeBlock {
-    const codeBlock = new CodeBlock();
-    codeBlock.parse($, element);
-    return codeBlock;
-}
+// function debugReadInputFile(filePath: string): string {
+//     return fs.readFileSync(filePath, 'utf-8');
+// }
+
+// function debugParseCodeBlocks(filePath: string): CodeBlock2[] {
+//     const htmlContent = debugReadInputFile(filePath);
+//     const $ = cheerio.load(htmlContent);
+
+//     const elements = $('.sourceset-dependent-content');
+//     const codeBlocks: CodeBlock2[] = [];
+
+//     elements.each((index, element) => {
+//         const codeBlock = new CodeBlock2();
+//         codeBlock.parse($, $(element));
+//         codeBlocks.push(codeBlock);
+//     });
+
+//     return codeBlocks;
+// }
+
+// // --- Debug execution ---
+// if (require.main === module) {
+//     const sampleFilePath = '/Users/aaron/Documents/ZernikalosProject/WebZite/scripts/samples/index.html';
+//     console.log(`[DEBUG] Parsing file: ${sampleFilePath}`);
+//     const parsedBlocks = debugParseCodeBlocks(sampleFilePath);
+//     console.log(`[DEBUG] Found and processed ${parsedBlocks.length} code blocks.`);
+
+//     parsedBlocks.forEach(block => {
+//         console.log(block.toString());//     });
+// }

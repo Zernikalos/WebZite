@@ -1,28 +1,33 @@
 import * as cheerio from 'cheerio';
-import { CodeBlock, extractCodeBlock } from "./CodeBlock";
+import { CodeBlock } from "./CodeBlock";
 import _ from 'lodash';
-import { extractCleanText } from './base-extractors';
 
 /**
  * Element types enum
  */
 export enum GroupType {
   NONE = 'NONE',
+  PACKAGE = 'PACKAGE',
   CONSTRUCTOR = 'CONSTRUCTOR',
   PROPERTY = 'PROPERTY',
+  ENUM_ENTRY = 'ENUM_ENTRY',
   FUNCTION = 'FUNCTION',
   TYPE = 'TYPE',
+  OBJECT = 'OBJECT'
 }
 
 export enum TokenType {
+  PACKAGE = 'package',
   CLASS = 'class',
   DATA_CLASS = 'data class',
   CONSTRUCTOR = 'constructor',
   INTERFACE = 'interface',
+  OBJECT = 'object',
   FUNCTION = 'fun',
   VAL = 'val',
   VAR = 'var',
   ENUM = 'enum',
+  ENUM_ENTRY = 'enum entry',
   NONE = ''
 }
 
@@ -60,8 +65,8 @@ export class DocumentationItem {
       return nameElement.text().trim();
     }
 
-    // If no link is found, try with the div directly
-    const divElement = element.find('.inline-flex div');
+    // If no link is found, try with a more specific div selector to avoid grabbing the 'copy-popup' text.
+    const divElement = element.find('.inline-flex > div:first-child');
     if (divElement.length > 0) {
       return divElement.text().trim();
     }
@@ -112,7 +117,10 @@ export class DocumentationItem {
     return '#';
   }
 
-  private extractTokenType(element: cheerio.Cheerio<any>): TokenType {    
+    private extractTokenType(element: cheerio.Cheerio<any>): TokenType {    
+    if (element.find('.token.keyword:contains("package")').length > 0) {
+      return TokenType.PACKAGE;
+    }
     if (element.find('.token.keyword:contains("data")').length > 0 && element.find('.token.keyword:contains("class")').length > 0) {
       return TokenType.DATA_CLASS;
     }
@@ -127,6 +135,9 @@ export class DocumentationItem {
     if (element.find('.token.keyword:contains("interface")').length > 0) {
       return TokenType.INTERFACE;
     }
+    if (element.find('.token.keyword:contains("object")').length > 0) {
+      return TokenType.OBJECT;
+    }
     if (element.find('.token.keyword:contains("val")').length > 0) {
       return TokenType.VAL;
     }
@@ -139,17 +150,25 @@ export class DocumentationItem {
     if (element.find('.token.function').length > 0) {
       return TokenType.FUNCTION;
     }
-    
+    if (element.attr('data-togglable') === 'ENTRY') {
+      return TokenType.ENUM_ENTRY;
+    }
     return TokenType.NONE;
   }
 
-  private extractType(tokenType: TokenType): GroupType {
+  private extractGroupType(tokenType: TokenType): GroupType {
     switch (tokenType) {
+      case TokenType.PACKAGE:
+        return GroupType.PACKAGE;
+
       case TokenType.CLASS:
       case TokenType.DATA_CLASS:
       case TokenType.INTERFACE:
       case TokenType.ENUM:
         return GroupType.TYPE;
+
+      case TokenType.OBJECT:
+        return GroupType.OBJECT;
       
       case TokenType.CONSTRUCTOR:
         return GroupType.CONSTRUCTOR;
@@ -161,6 +180,9 @@ export class DocumentationItem {
       case TokenType.FUNCTION:
         return GroupType.FUNCTION;
       
+      case TokenType.ENUM_ENTRY:
+        return GroupType.ENUM_ENTRY;
+      
       case TokenType.NONE:
       default:
         return GroupType.NONE;
@@ -168,28 +190,26 @@ export class DocumentationItem {
   }
 
   public parse($: cheerio.CheerioAPI, element: cheerio.Cheerio<any>): void {
-    const name = DocumentationItem.extractDeclarationName(element) || DocumentationItem.extractNameFromCover(element, $);
+    let nameFromDeclaration = DocumentationItem.extractDeclarationName(element) 
+    let nameFromCover = DocumentationItem.extractNameFromCover(element, $);
+    const name = nameFromDeclaration || nameFromCover;
 
     if (!name) {
       throw new Error('No name found');
     }
 
     this.codeBlocks = [];
-    const codeBlockElements = element.find('div.symbol.monospace');
+    const codeBlockElements = element.find('.sourceset-dependent-content');
 
-    if (codeBlockElements.length > 0) {
-      codeBlockElements.each((i, el) => {
-        const $el = $(el);
-        const cb = extractCodeBlock($, $el);
-        if (cb && cb.code && cb.code.trim() !== '') {
-          this.codeBlocks.push(cb);
-        }
-      });
-    }
+    codeBlockElements.each((i, el) => {
+        const codeBlock = new CodeBlock();
+        codeBlock.parse($, $(el));
+        this.codeBlocks.push(codeBlock);
+    });
 
     this.tokenType = this.extractTokenType(element);
     this.description = this.extractDescription(element);
-    this.groupType = this.extractType(this.tokenType);
+    this.groupType = this.extractGroupType(this.tokenType);
     this.name = name;
     this.sourceUrl = DocumentationItem.extractSourceUrl(element);;
     this.url = this.extractDocumentationUrl(element);

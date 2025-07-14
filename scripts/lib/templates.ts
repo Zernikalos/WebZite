@@ -51,32 +51,50 @@ const headerTemplate = (data: TemplateData): string => {
 />`;
 };
 
-// Helper function to generate the string for the codeBlocks prop
-function createCodeBlocksPropString(blocks: Array<{ code: string; [key: string]: any }> | undefined): string {
-  const blockStrings = blocks?.map(block => {
-      const processedCode = block.code?.replace(/"/g, "'").replace(/\n/g, ' ') || '';
-      // JSON.stringify ensures processedCode becomes a valid JS string literal (e.g., handles internal quotes, backslashes)
-      const codeLiteral = JSON.stringify(processedCode);
-      return `{code: ${codeLiteral}}`;
-  }) || []; // If blocks is undefined or map results in undefined, default to an empty array
-  return `[${blockStrings.join(', ')}]`;
-}
 /**
- * Helper function to create a DocumentationItemComponent template string
- * @param item - Documentation item
- * @returns DocumentationItemComponent template string
+ * Creates a template string for a single CodeBlockComponent.
+ * @param block - The code block data.
+ * @returns A string representing a CodeBlockComponent.
+ */
+const createCodeBlockComponentString = (block: { platform: string; code: string[]; links?: { text: string; href: string }[]; source?: string | null }): string => {
+  // Serialize the code array into a JSON string, which is a valid way to represent an array prop in JSX.
+  const codeProp = JSON.stringify(block.code);
+  const linksProp = JSON.stringify(block.links || []);
+  const sourceProp = block.source ? ` source=\"${block.source}\"` : '';
+  return `<CodeBlockComponent platform=\"${block.platform}\" code={${codeProp}} links={${linksProp}}${sourceProp} />`;
+};
+
+/**
+ * Helper function to create a DocumentationItemComponent template string.
+ * @param item - Documentation item.
+ * @returns DocumentationItemComponent template string.
  */
 export const createDocumentationItemComponent = (item: DocumentationItem): string => {
   const escapedDescription = item.description?.replace(/"/g, "'").replace(/\n/g, ' ') || '';
-  
-  // Generar el componente
+
+  const codeBlockChildren = item.codeBlocks
+    ?.map(createCodeBlockComponentString)
+    .map(line => `    ${line}`)
+    .join('\n') || '';
+
+  if (codeBlockChildren) {
+    return `<DocumentationItemComponent
+    name="${item.name}"
+    tokenType="${item.tokenType}"
+    groupType="${item.groupType}"
+    url="${item.url}"
+    description="${escapedDescription}"
+  >
+${codeBlockChildren}
+  </DocumentationItemComponent>`;
+  }
+
   return `<DocumentationItemComponent
     name="${item.name}"
     tokenType="${item.tokenType}"
     groupType="${item.groupType}"
     url="${item.url}"
     description="${escapedDescription}"
-    codeBlocks={${createCodeBlocksPropString(item.codeBlocks)}}
   />`;
 };
 
@@ -94,9 +112,9 @@ const codeListTemplate = (data: TemplateData): string => {
   }
   
   // Generate the CodeClassList component with all DocumentationItemComponent children
-  return `<CodeClassList>
+  return `<DocumentationItemList>
   ${documentationItemsRC.join('\n  ')}
-</CodeClassList>`;
+</DocumentationItemList>`;
 };
 
 /**
@@ -106,7 +124,7 @@ const codeListTemplate = (data: TemplateData): string => {
  */
 const docTemplate = (data: TemplateData): string => {
   // Imports section is common for all document types
-  const imports = "import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';\n\n";
+  const imports = "import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';\n\n";
   
   // Generate header section
   const header = headerTemplate(data);

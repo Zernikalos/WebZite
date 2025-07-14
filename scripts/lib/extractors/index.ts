@@ -4,11 +4,7 @@
  */
 
 import * as cheerio from 'cheerio';
-import { extractCleanText } from './base-extractors';
-
 import { ClassPage, MemberPage, PackagePage, DocumentationPage, LibraryPage } from './DocumentationPage';
-import { DocumentationItem } from './DocumentationItem';
-import { PageType } from './DocumentationPage';
 
 /**
  * Unified function to extract information from HTML content

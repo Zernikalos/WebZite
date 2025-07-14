@@ -4,7 +4,6 @@
 
 import * as cheerio from 'cheerio';
 import _ from 'lodash';
-import { CodeBlock, CodeBlockLink, CodeBlockMetadata } from './CodeBlock';
 
 
 /**
