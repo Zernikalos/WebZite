@@ -9,6 +9,7 @@ export enum TokenType {
   DATA_CLASS = 'data class',
   CONSTRUCTOR = 'constructor',
   INTERFACE = 'interface',
+  OBJECT = 'object',
   FUNCTION = 'fun',
   VAL = 'val',
   VAR = 'var',
@@ -25,6 +26,7 @@ export enum GroupType {
   ENUM_ENTRY = 'ENUM_ENTRY',
   FUNCTION = 'FUNCTION',
   TYPE = 'TYPE',
+  OBJECT = 'OBJECT',
 }
 
 interface DocumentationItemComponentProps {
@@ -57,6 +59,7 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
       case TokenType.CLASS:
       case TokenType.INTERFACE:
       case TokenType.ENUM:
+      case TokenType.OBJECT:
         return 'purple';
       case TokenType.PACKAGE:
         return 'yellow';
@@ -114,6 +117,7 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
       case TokenType.CLASS:
       case TokenType.INTERFACE:
       case TokenType.ENUM:
+      case TokenType.OBJECT:
         return 'tw:bg-purple-100 tw:text-purple-800 tw:dark:bg-purple-900 tw:dark:text-purple-300';
       case TokenType.FUNCTION:
       case TokenType.CONSTRUCTOR:

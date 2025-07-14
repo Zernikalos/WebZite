@@ -1,15 +1,6 @@
 import * as cheerio from 'cheerio';
 import _ from 'lodash';
 
-enum CodeBlockMetadataType {
-    CLASS = 'class',
-    INTERFACE = 'interface',
-    FUN = 'fun',
-    DATA_CLASS = 'data class',
-    VAL = 'property',
-    VAR = 'property'
-}
-
 export class CodeBlock {
 
     platform: string;

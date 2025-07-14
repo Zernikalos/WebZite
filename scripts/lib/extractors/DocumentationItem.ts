@@ -13,6 +13,7 @@ export enum GroupType {
   ENUM_ENTRY = 'ENUM_ENTRY',
   FUNCTION = 'FUNCTION',
   TYPE = 'TYPE',
+  OBJECT = 'OBJECT'
 }
 
 export enum TokenType {
@@ -21,6 +22,7 @@ export enum TokenType {
   DATA_CLASS = 'data class',
   CONSTRUCTOR = 'constructor',
   INTERFACE = 'interface',
+  OBJECT = 'object',
   FUNCTION = 'fun',
   VAL = 'val',
   VAR = 'var',
@@ -133,6 +135,9 @@ export class DocumentationItem {
     if (element.find('.token.keyword:contains("interface")').length > 0) {
       return TokenType.INTERFACE;
     }
+    if (element.find('.token.keyword:contains("object")').length > 0) {
+      return TokenType.OBJECT;
+    }
     if (element.find('.token.keyword:contains("val")').length > 0) {
       return TokenType.VAL;
     }
@@ -161,6 +166,9 @@ export class DocumentationItem {
       case TokenType.INTERFACE:
       case TokenType.ENUM:
         return GroupType.TYPE;
+
+      case TokenType.OBJECT:
+        return GroupType.OBJECT;
       
       case TokenType.CONSTRUCTOR:
         return GroupType.CONSTRUCTOR;

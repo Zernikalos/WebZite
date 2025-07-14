@@ -83,6 +83,16 @@ const TAB_CONFIGS: Record<string, TabConfig> = {
         <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
       </svg>
     )
+  },
+  objects: {
+    value: 'objects',
+    title: 'Objects',
+    color: 'cyan',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" className="tw:w-5 tw:h-5" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h1a1 1 0 011 1v1.5a1.5 1.5 0 010 3V12a1 1 0 00-1 1v1a1 1 0 01-1 1h-1.5a1.5 1.5 0 01-3 0H8a1 1 0 01-1-1v-1a1 1 0 00-1-1V8.5a1.5 1.5 0 010-3V4a1 1 0 001-1h1.5z" />
+      </svg>
+    )
   }
 };
 
@@ -93,6 +103,7 @@ const GROUP_TYPE_TO_TAB_VALUE = {
   [GroupType.FUNCTION]: 'functions',
   [GroupType.PROPERTY]: 'properties',
   [GroupType.ENUM_ENTRY]: 'enum_entries',
+  [GroupType.OBJECT]: 'objects',
   [GroupType.NONE]: '' // Ensure this case is handled if NONE items can appear
 };
 
@@ -106,17 +117,19 @@ export const DocumentationItemList: React.FC<DocumentationItemListProps> = ({ ch
       constructors: [],
       enum_entries: [],
       properties: [],
-      functions: []
+      functions: [],
+      objects: []
     };
 
     const groupTypeSortOrder: Record<GroupType, number> = {
-      [GroupType.TYPE]: 0,
+      [GroupType.TYPE]: 1,
       [GroupType.PACKAGE]: 0,
-      [GroupType.CONSTRUCTOR]: 1,
-      [GroupType.ENUM_ENTRY]: 2,
+      [GroupType.CONSTRUCTOR]: 2,
       [GroupType.PROPERTY]: 3,
-      [GroupType.FUNCTION]: 4,
-      [GroupType.NONE]: 5
+      [GroupType.OBJECT]: 4, // Just before functions
+      [GroupType.FUNCTION]: 5,
+      [GroupType.ENUM_ENTRY]: 6,
+      [GroupType.NONE]: 99
     };
     
     Children.forEach(children, (child) => {
