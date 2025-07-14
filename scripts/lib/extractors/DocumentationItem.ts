@@ -1,7 +1,6 @@
 import * as cheerio from 'cheerio';
-import { CodeBlock, extractCodeBlock } from "./CodeBlock";
+import { CodeBlock } from "./CodeBlock";
 import _ from 'lodash';
-import { extractCleanText } from './base-extractors';
 
 /**
  * Element types enum
@@ -190,17 +189,13 @@ export class DocumentationItem {
     }
 
     this.codeBlocks = [];
-    const codeBlockElements = element.find('div.symbol.monospace');
+    const codeBlockElements = element.find('.sourceset-dependent-content');
 
-    if (codeBlockElements.length > 0) {
-      codeBlockElements.each((i, el) => {
-        const $el = $(el);
-        const cb = extractCodeBlock($, $el);
-        if (cb && cb.code && cb.code.trim() !== '') {
-          this.codeBlocks.push(cb);
-        }
-      });
-    }
+    codeBlockElements.each((i, el) => {
+        const codeBlock = new CodeBlock();
+        codeBlock.parse($, $(el));
+        this.codeBlocks.push(codeBlock);
+    });
 
     this.tokenType = this.extractTokenType(element);
     this.description = this.extractDescription(element);

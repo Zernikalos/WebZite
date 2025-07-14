@@ -51,16 +51,14 @@ const headerTemplate = (data: TemplateData): string => {
 />`;
 };
 
-// TODO: Check the processedCode step
 // Helper function to generate the string for the codeBlocks prop
-function createCodeBlocksPropString(blocks: Array<{ code: string; [key: string]: any }> | undefined): string {
-  const blockStrings = blocks?.map(block => {
-      const processedCode = block.code?.replace(/"/g, "'").replace(/\n/g, ' ') || '';
-      // JSON.stringify ensures processedCode becomes a valid JS string literal (e.g., handles internal quotes, backslashes)
-      const codeLiteral = JSON.stringify(processedCode);
-      return `{code: ${codeLiteral}}`;
-  }) || []; // If blocks is undefined or map results in undefined, default to an empty array
-  return `[${blockStrings.join(', ')}]`;
+function createCodeBlocksPropString(blocks: Array<{ platform: string; code: string[] }> | undefined): string {
+  if (!blocks) {
+    return '[]';
+  }
+  // We serialize the whole array of blocks into a JSON string.
+  // This is the safest way to pass complex objects as props.
+  return JSON.stringify(blocks);
 }
 /**
  * Helper function to create a DocumentationItemComponent template string
