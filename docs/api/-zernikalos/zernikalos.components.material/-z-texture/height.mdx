@@ -3,7 +3,7 @@ slug: "height"
 title: "height"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"height","url":"#height"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="height"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var height: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var height: Int"]} links={[{"text":"height","href":"height"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/material/ZTexture.kt#L44"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/material/ZTexture.kt#L44" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

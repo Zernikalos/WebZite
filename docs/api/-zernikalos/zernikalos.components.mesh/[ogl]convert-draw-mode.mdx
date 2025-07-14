@@ -3,7 +3,7 @@ slug: "[ogl]convert-draw-mode"
 title: "[ogl]convertDrawMode"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"[ogl]convertDrawMode","url":"#[ogl]convertdrawmode"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="convertDrawMode"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "fun convertDrawMode(drawMode: ZDrawMode): DrawModes"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="ogl" code={["fun convertDrawMode(drawMode: ZDrawMode): DrawModes"]} links={[{"text":"convertDrawMode","href":"[ogl]convert-draw-mode"},{"text":"ZDrawMode","href":"-z-draw-mode/index"},{"text":"DrawModes","href":"../zernikalos.context/-draw-modes/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/mesh/ZMeshRenderer.ogl.kt#L57"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/mesh/ZMeshRenderer.ogl.kt#L57" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

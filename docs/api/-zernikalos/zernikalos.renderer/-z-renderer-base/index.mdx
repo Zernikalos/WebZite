@@ -3,7 +3,7 @@ slug: "index"
 title: "ZRendererBase"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,32 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZRendererBase","url":"#zrendererbase"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZRendererBase"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-renderer-base"
     description=""
-    codeBlocks={[{code: "constructor(ctx: ZContext)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(ctx: ZContext)"]} links={[{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[{code: "fun initialize()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="onViewportResize"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-resizable/on-viewport-resize"
     description="Notifies the listener when the viewport dimensions change."
-    codeBlocks={[{code: "abstract fun onViewportResize(width: Int, height: Int)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"../../zernikalos.components/-z-resizable/on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

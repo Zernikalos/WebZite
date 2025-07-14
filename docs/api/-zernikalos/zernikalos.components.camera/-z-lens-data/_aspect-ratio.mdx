@@ -3,7 +3,7 @@ slug: "_aspect-ratio"
 title: "_aspectRatio"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"_aspectRatio","url":"#_aspectratio"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="_aspectRatio"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var _aspectRatio: Float?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var _aspectRatio: Float?"]} links={[{"text":"_aspectRatio","href":"_aspect-ratio"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/camera/ZLensData.kt#L26"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/camera/ZLensData.kt#L26" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

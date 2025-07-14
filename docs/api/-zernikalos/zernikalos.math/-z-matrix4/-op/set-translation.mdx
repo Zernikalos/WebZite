@@ -3,7 +3,7 @@ slug: "set-translation"
 title: "setTranslation"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"setTranslation","url":"#settranslation"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="resulttranslationresultxyz"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun setTranslation(result: ZMatrix4, translation: ZVector3)"}, {code: "fun setTranslation(result: ZMatrix4, x: Float, y: Float, z: Float)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun setTranslation(result: ZMatrix4, translation: ZVector3)fun setTranslation(result: ZMatrix4, x: Float, y: Float, z: Float)(source)"]} links={[{"text":"setTranslation","href":"set-translation"},{"text":"ZMatrix4","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L396"},{"text":"setTranslation","href":"set-translation"},{"text":"ZMatrix4","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L408"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L396" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

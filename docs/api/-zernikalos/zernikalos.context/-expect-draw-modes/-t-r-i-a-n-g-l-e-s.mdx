@@ -3,7 +3,7 @@ slug: "-t-r-i-a-n-g-l-e-s"
 title: "TRIANGLES"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"TRIANGLES","url":"#triangles"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="TRIANGLES"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual val TRIANGLES: Int"}, {code: "actual val TRIANGLES: Int"}, {code: "expect val TRIANGLES: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val TRIANGLES: Int"]} links={[{"text":"TRIANGLES","href":"-t-r-i-a-n-g-l-e-s"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L221"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L221" />
+    <CodeBlockComponent platform="ogl" code={["expect val TRIANGLES: Int"]} links={[{"text":"TRIANGLES","href":"-t-r-i-a-n-g-l-e-s"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L186"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L186" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "-v-e-c3"
 title: "VEC3"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"VEC3","url":"#vec3"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="VEC3"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual val VEC3: Int"}, {code: "actual val VEC3: Int"}, {code: "expect val VEC3: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val VEC3: Int"]} links={[{"text":"VEC3","href":"-v-e-c3"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/ZDataType.kt#L24"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/ZDataType.kt#L24" />
+    <CodeBlockComponent platform="ogl" code={["expect val VEC3: Int"]} links={[{"text":"VEC3","href":"-v-e-c3"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/ZDataType.kt#L60"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/ZDataType.kt#L60" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

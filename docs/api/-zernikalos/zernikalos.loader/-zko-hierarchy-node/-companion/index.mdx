@@ -3,7 +3,7 @@ slug: "index"
 title: "Companion"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"Companion","url":"#companion"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="transformHierarchy"
     tokenType="fun"
     groupType="FUNCTION"
     url="transform-hierarchy"
     description="Recursively transforms a hierarchy of ZkoHierarchyNode objects into corresponding ZObject structures, linking child objects to their respective parents."
-    codeBlocks={[{code: "fun transformHierarchy(hierarchyNode: ZkoHierarchyNode, objects: List<ZkoObjectProto>): ZObject"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun transformHierarchy(hierarchyNode: ZkoHierarchyNode, objects: List<ZkoObjectProto>): ZObject"]} links={[{"text":"transformHierarchy","href":"transform-hierarchy"},{"text":"ZkoHierarchyNode","href":"../index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZkoObjectProto","href":"../../-zko-object-proto/index"},{"text":"ZObject","href":"../../../zernikalos.objects/-z-object/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

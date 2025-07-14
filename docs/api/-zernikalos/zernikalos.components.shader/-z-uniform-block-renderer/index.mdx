@@ -3,7 +3,7 @@ slug: "index"
 title: "ZUniformBlockRenderer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,53 +13,102 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZUniformBlockRenderer","url":"#zuniformblockrenderer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZUniformBlockRenderer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-uniform-block-renderer"
     description=""
-    codeBlocks={[{code: "expect constructor(ctx: ZRenderingContext, data: ZUniformBlockData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZUniformBlockData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZUniformBlockData)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect constructor(ctx: ZRenderingContext, data: ZUniformBlockData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformBlockData","href":"../-z-uniform-block-data/index"}]} />
+    <CodeBlockComponent platform="metal" code={["actual constructor(ctx: ZRenderingContext, data: ZUniformBlockData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformBlockData","href":"../-z-uniform-block-data/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual constructor(ctx: ZRenderingContext, data: ZUniformBlockData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformBlockData","href":"../-z-uniform-block-data/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual constructor(ctx: ZRenderingContext, data: ZUniformBlockData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformBlockData","href":"../-z-uniform-block-data/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="bindGroupEntry"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="bind-group-entry"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["var bindGroupEntry: GPUBindGroupEntry?"]} links={[{"text":"bindGroupEntry","href":"bind-group-entry"},{"text":"GPUBindGroupEntry","href":"../../zernikalos.context.webgpu/-g-p-u-bind-group-entry/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="bindGroupLayoutEntry"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="bind-group-layout-entry"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["var bindGroupLayoutEntry: GPUBindGroupLayoutEntry?"]} links={[{"text":"bindGroupLayoutEntry","href":"bind-group-layout-entry"},{"text":"GPUBindGroupLayoutEntry","href":"../../zernikalos.context.webgpu/-g-p-u-bind-group-layout-entry/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="uniformBuffer"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="[metal]uniform-buffer"
+    description=""
+  >
+    <CodeBlockComponent platform="metal" code={["var uniformBuffer: MTLBufferProtocol?"]} links={[{"text":"uniformBuffer","href":"[metal]uniform-buffer"}]} />
+    <CodeBlockComponent platform="webgpu" code={["var uniformBuffer: GPUBuffer?"]} links={[{"text":"uniformBuffer","href":"[webgpu]uniform-buffer"},{"text":"GPUBuffer","href":"../../zernikalos.context.webgpu/-g-p-u-buffer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind"
     description=""
-    codeBlocks={[{code: "expect open override fun bind()"}, {code: "actual open override fun bind()"}, {code: "actual open override fun bind()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect open override fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
+    <CodeBlockComponent platform="metal" code={["actual open override fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual open override fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual open override fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bindLocation"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind-location"
     description=""
-    codeBlocks={[{code: "fun bindLocation(programId: GLWrap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["fun bindLocation(programId: GLWrap)"]} links={[{"text":"bindLocation","href":"bind-location"},{"text":"GLWrap","href":"../../zernikalos.context/-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[{code: "expect open override fun initialize()"}, {code: "actual open override fun initialize()"}, {code: "actual open override fun initialize()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect open override fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+    <CodeBlockComponent platform="metal" code={["actual open override fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual open override fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual open override fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-component-renderer/render"
     description=""
-    codeBlocks={[{code: "open fun render()"}, {code: "open fun render()"}, {code: "open fun render()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open fun render()"]} links={[{"text":"render","href":"../../zernikalos.components/-z-component-renderer/render"}]} />
+    <CodeBlockComponent platform="metal" code={["open fun render()"]} links={[{"text":"render","href":"../../zernikalos.components/-z-component-renderer/render"}]} />
+    <CodeBlockComponent platform="ogl" code={["open fun render()"]} links={[{"text":"render","href":"../../zernikalos.components/-z-component-renderer/render"}]} />
+    <CodeBlockComponent platform="webgpu" code={["open fun render()"]} links={[{"text":"render","href":"../../zernikalos.components/-z-component-renderer/render"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
     url="unbind"
     description=""
-    codeBlocks={[{code: "expect open override fun unbind()"}, {code: "actual open override fun unbind()"}, {code: "actual open override fun unbind()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+    <CodeBlockComponent platform="metal" code={["actual open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

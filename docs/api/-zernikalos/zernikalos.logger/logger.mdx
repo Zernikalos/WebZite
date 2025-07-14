@@ -3,7 +3,7 @@ slug: "logger"
 title: "logger"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"logger","url":"#logger"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="logger"
     tokenType="val"
     groupType="PROPERTY"
     url="../../index"
     description=""
-    codeBlocks={[{code: "val <T: ZLoggable> T.logger: ZLogger"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val <T : ZLoggable> T.logger: ZLogger"]} links={[{"text":"T","href":"logger"},{"text":"ZLoggable","href":"-z-loggable/index"},{"text":"T","href":"logger"},{"text":"logger","href":"logger"},{"text":"ZLogger","href":"-z-logger/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLogger.kt#L23"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLogger.kt#L23" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

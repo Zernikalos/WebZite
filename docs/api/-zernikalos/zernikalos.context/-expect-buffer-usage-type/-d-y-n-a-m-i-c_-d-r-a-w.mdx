@@ -3,7 +3,7 @@ slug: "-d-y-n-a-m-i-c_-d-r-a-w"
 title: "DYNAMIC_DRAW"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"DYNAMIC_DRAW","url":"#dynamic_draw"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="DYNAMIC_DRAW"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual val DYNAMIC_DRAW: Int"}, {code: "actual val DYNAMIC_DRAW: Int"}, {code: "expect val DYNAMIC_DRAW: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val DYNAMIC_DRAW: Int"]} links={[{"text":"DYNAMIC_DRAW","href":"-d-y-n-a-m-i-c_-d-r-a-w"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L207"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L207" />
+    <CodeBlockComponent platform="ogl" code={["expect val DYNAMIC_DRAW: Int"]} links={[{"text":"DYNAMIC_DRAW","href":"-d-y-n-a-m-i-c_-d-r-a-w"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L182"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L182" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

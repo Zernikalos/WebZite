@@ -3,7 +3,7 @@ slug: "delete-shader"
 title: "deleteShader"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"deleteShader","url":"#deleteshader"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="deleteShader"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual fun deleteShader(shader: GLWrap)"}, {code: "actual fun deleteShader(shader: GLWrap)"}, {code: "expect fun deleteShader(shader: GLWrap)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun deleteShader(shader: GLWrap)"]} links={[{"text":"deleteShader","href":"delete-shader"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L60"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L60" />
+    <CodeBlockComponent platform="ogl" code={["expect fun deleteShader(shader: GLWrap)"]} links={[{"text":"deleteShader","href":"delete-shader"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L45"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L45" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

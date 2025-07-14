@@ -3,7 +3,7 @@ slug: "cross"
 title: "cross"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"cross","url":"#cross"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="cross"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun cross(result: ZVector3, op1: ZVector3, op2: ZVector3)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun cross(result: ZVector3, op1: ZVector3, op2: ZVector3)"]} links={[{"text":"cross","href":"cross"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L252"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L252" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

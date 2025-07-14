@@ -3,7 +3,7 @@ slug: "add-uniform"
 title: "addUniform"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"addUniform","url":"#adduniform"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="addUniform"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun addUniform(name: String, uniform: ZBaseUniform)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun addUniform(name: String, uniform: ZBaseUniform)"]} links={[{"text":"addUniform","href":"add-uniform"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZBaseUniform","href":"../-z-base-uniform/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L46"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L46" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

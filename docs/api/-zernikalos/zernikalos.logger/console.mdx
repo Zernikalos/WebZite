@@ -3,7 +3,7 @@ slug: "console"
 title: "console"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"console","url":"#console"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="console"
     tokenType="val"
     groupType="PROPERTY"
     url="../../index"
     description=""
-    codeBlocks={[{code: "external val console: WindowConsole"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="js" code={["external val console: WindowConsole"]} links={[{"text":"console","href":"console"},{"text":"WindowConsole","href":"-window-console/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/logger/ZLoggerAdapter.js.kt#L17"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/logger/ZLoggerAdapter.js.kt#L17" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

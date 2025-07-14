@@ -3,7 +3,7 @@ slug: "get-key-frame"
 title: "getKeyFrame"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"getKeyFrame","url":"#getkeyframe"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="getKeyFrame"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun getKeyFrame(time: Float): ZKeyFrame"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun getKeyFrame(time: Float): ZKeyFrame"]} links={[{"text":"getKeyFrame","href":"get-key-frame"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZKeyFrame","href":"../-z-key-frame/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/action/ZSkeletalAction.kt#L37"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/action/ZSkeletalAction.kt#L37" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

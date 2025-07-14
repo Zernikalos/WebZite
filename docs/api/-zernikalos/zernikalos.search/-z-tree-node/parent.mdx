@@ -3,7 +3,7 @@ slug: "parent"
 title: "parent"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"parent","url":"#parent"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="parent"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "abstract val parent: T?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract val parent: T?"]} links={[{"text":"parent","href":"parent"},{"text":"T","href":"index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/search/ZTreeNode.kt#L21"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/search/ZTreeNode.kt#L21" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

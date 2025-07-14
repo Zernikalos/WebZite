@@ -3,7 +3,7 @@ slug: "index"
 title: "ZViewportRenderer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,61 +13,95 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZViewportRenderer","url":"#zviewportrenderer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZViewportRenderer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-viewport-renderer"
     description=""
-    codeBlocks={[{code: "expect constructor(ctx: ZRenderingContext, data: ZViewportData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZViewportData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZViewportData)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect constructor(ctx: ZRenderingContext, data: ZViewportData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZViewportData","href":"../-z-viewport-data/index"}]} />
+    <CodeBlockComponent platform="metal" code={["actual constructor(ctx: ZRenderingContext, data: ZViewportData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZViewportData","href":"../-z-viewport-data/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual constructor(ctx: ZRenderingContext, data: ZViewportData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZViewportData","href":"../-z-viewport-data/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual constructor(ctx: ZRenderingContext, data: ZViewportData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZViewportData","href":"../-z-viewport-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="clearMask"
     tokenType="var"
     groupType="PROPERTY"
     url="clear-mask"
     description=""
-    codeBlocks={[{code: "var clearMask: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["var clearMask: Int"]} links={[{"text":"clearMask","href":"clear-mask"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="renderPassDescriptor"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="render-pass-descriptor"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["var renderPassDescriptor: GPURenderPassDescriptor?"]} links={[{"text":"renderPassDescriptor","href":"render-pass-descriptor"},{"text":"GPURenderPassDescriptor","href":"../../zernikalos.context.webgpu/-g-p-u-render-pass-descriptor/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
     url="../-z-component-renderer/bind"
     description=""
-    codeBlocks={[{code: "open fun bind()"}, {code: "open fun bind()"}, {code: "open fun bind()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open fun bind()"]} links={[{"text":"bind","href":"../-z-component-renderer/bind"}]} />
+    <CodeBlockComponent platform="metal" code={["open fun bind()"]} links={[{"text":"bind","href":"../-z-component-renderer/bind"}]} />
+    <CodeBlockComponent platform="ogl" code={["open fun bind()"]} links={[{"text":"bind","href":"../-z-component-renderer/bind"}]} />
+    <CodeBlockComponent platform="webgpu" code={["open fun bind()"]} links={[{"text":"bind","href":"../-z-component-renderer/bind"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="initialize"
     description=""
-    codeBlocks={[{code: "expect open override fun initialize()"}, {code: "actual open override fun initialize()"}, {code: "actual open override fun initialize()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect open override fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+    <CodeBlockComponent platform="metal" code={["actual open override fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual open override fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual open override fun initialize()"]} links={[{"text":"initialize","href":"initialize"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="onViewportResize"
     tokenType="fun"
     groupType="FUNCTION"
     url="on-viewport-resize"
     description=""
-    codeBlocks={[{code: "expect fun onViewportResize(width: Int, height: Int)"}, {code: "actual fun onViewportResize(width: Int, height: Int)"}, {code: "actual fun onViewportResize(width: Int, height: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="metal" code={["actual fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
     url="render"
     description=""
-    codeBlocks={[{code: "expect open override fun render()"}, {code: "actual open override fun render()"}, {code: "actual open override fun render()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect open override fun render()"]} links={[{"text":"render","href":"render"}]} />
+    <CodeBlockComponent platform="metal" code={["actual open override fun render()"]} links={[{"text":"render","href":"render"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual open override fun render()"]} links={[{"text":"render","href":"render"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual open override fun render()"]} links={[{"text":"render","href":"render"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
     url="../-z-component-renderer/unbind"
     description=""
-    codeBlocks={[{code: "open fun unbind()"}, {code: "open fun unbind()"}, {code: "open fun unbind()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open fun unbind()"]} links={[{"text":"unbind","href":"../-z-component-renderer/unbind"}]} />
+    <CodeBlockComponent platform="metal" code={["open fun unbind()"]} links={[{"text":"unbind","href":"../-z-component-renderer/unbind"}]} />
+    <CodeBlockComponent platform="ogl" code={["open fun unbind()"]} links={[{"text":"unbind","href":"../-z-component-renderer/unbind"}]} />
+    <CodeBlockComponent platform="webgpu" code={["open fun unbind()"]} links={[{"text":"unbind","href":"../-z-component-renderer/unbind"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

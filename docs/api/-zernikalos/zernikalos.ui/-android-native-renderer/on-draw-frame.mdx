@@ -3,7 +3,7 @@ slug: "on-draw-frame"
 title: "onDrawFrame"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"onDrawFrame","url":"#ondrawframe"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="onDrawFrame"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "open override fun onDrawFrame(p0: GL10?)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["open override fun onDrawFrame(p0: GL10?)"]} links={[{"text":"onDrawFrame","href":"on-draw-frame"},{"text":"GL10","href":"https://developer.android.com/reference/kotlin/javax/microedition/khronos/opengles/GL10.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/ui/ZSurfaceView.android.kt#L60"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/ui/ZSurfaceView.android.kt#L60" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

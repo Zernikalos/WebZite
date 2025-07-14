@@ -3,7 +3,7 @@ slug: "-t-e-x-t-u-r-e"
 title: "TEXTURE"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"TEXTURE","url":"#texture"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="TEXTURE"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val TEXTURE: ZDataType"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val TEXTURE: ZDataType"]} links={[{"text":"TEXTURE","href":"-t-e-x-t-u-r-e"},{"text":"ZDataType","href":"../-z-data-type/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L189"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L189" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

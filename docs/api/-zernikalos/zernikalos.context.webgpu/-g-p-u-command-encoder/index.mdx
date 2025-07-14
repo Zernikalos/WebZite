@@ -1,0 +1,35 @@
+---
+slug: "index"
+title: "GPUCommandEncoder"
+hide_title: true
+---
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
+
+
+<DocHeader
+  title="GPUCommandEncoder"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context.webgpu","url":"/docs/api/-zernikalos.zernikalos.context.webgpu"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"GPUCommandEncoder","url":"#gpucommandencoder"}]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="beginRenderPass"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="begin-render-pass"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["abstract fun beginRenderPass(descriptor: GPURenderPassDescriptor): GPURenderPassEncoder"]} links={[{"text":"beginRenderPass","href":"begin-render-pass"},{"text":"GPURenderPassDescriptor","href":"../-g-p-u-render-pass-descriptor/index"},{"text":"GPURenderPassEncoder","href":"../-g-p-u-render-pass-encoder/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="finish"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="finish"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["abstract fun finish(): GPUCommandBuffer"]} links={[{"text":"finish","href":"finish"},{"text":"GPUCommandBuffer","href":"../-g-p-u-command-buffer/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

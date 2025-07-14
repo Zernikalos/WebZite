@@ -3,7 +3,7 @@ slug: "has-index-buffer"
 title: "hasIndexBuffer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"hasIndexBuffer","url":"#hasindexbuffer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="hasIndexBuffer"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val hasIndexBuffer: Boolean"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val hasIndexBuffer: Boolean"]} links={[{"text":"hasIndexBuffer","href":"has-index-buffer"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZMesh.kt#L51"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZMesh.kt#L51" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

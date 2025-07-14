@@ -3,7 +3,7 @@ slug: "index"
 title: "MapPairJs"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,32 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"MapPairJs","url":"#mappairjs"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="MapPairJs"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-map-pair-js"
     description=""
-    codeBlocks={[{code: "constructor(key: Any, value: Any)"}]}
-  />
+  >
+    <CodeBlockComponent platform="js" code={["constructor(key: Any, value: Any)"]} links={[{"text":"Any","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html"},{"text":"Any","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="key"
     tokenType="val"
     groupType="PROPERTY"
     url="key"
     description=""
-    codeBlocks={[{code: "val key: Any"}]}
-  />
+  >
+    <CodeBlockComponent platform="js" code={["val key: Any"]} links={[{"text":"key","href":"key"},{"text":"Any","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="value"
     tokenType="val"
     groupType="PROPERTY"
     url="value"
     description=""
-    codeBlocks={[{code: "val value: Any"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="js" code={["val value: Any"]} links={[{"text":"value","href":"value"},{"text":"Any","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

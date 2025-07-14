@@ -3,7 +3,7 @@ slug: "compare"
 title: "compare"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"compare","url":"#compare"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="compare"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "open override fun compare(a: ZLogLevel, b: ZLogLevel): Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun compare(a: ZLogLevel, b: ZLogLevel): Int"]} links={[{"text":"compare","href":"compare"},{"text":"ZLogLevel","href":"index"},{"text":"ZLogLevel","href":"index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLogLevel.kt#L22"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLogLevel.kt#L22" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

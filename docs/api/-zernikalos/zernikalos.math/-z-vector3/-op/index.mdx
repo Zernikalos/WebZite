@@ -3,7 +3,7 @@ slug: "index"
 title: "Op"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,149 +13,167 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"Op","url":"#op"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="Forward"
     tokenType="val"
     groupType="PROPERTY"
     url="-forward"
     description=""
-    codeBlocks={[{code: "val Forward: ZVector3"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val Forward: ZVector3"]} links={[{"text":"Forward","href":"-forward"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="Ones"
     tokenType="val"
     groupType="PROPERTY"
     url="-ones"
     description=""
-    codeBlocks={[{code: "val Ones: ZVector3"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val Ones: ZVector3"]} links={[{"text":"Ones","href":"-ones"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="Right"
     tokenType="val"
     groupType="PROPERTY"
     url="-right"
     description=""
-    codeBlocks={[{code: "val Right: ZVector3"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val Right: ZVector3"]} links={[{"text":"Right","href":"-right"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="Up"
     tokenType="val"
     groupType="PROPERTY"
     url="-up"
     description=""
-    codeBlocks={[{code: "val Up: ZVector3"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val Up: ZVector3"]} links={[{"text":"Up","href":"-up"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="Zero"
     tokenType="val"
     groupType="PROPERTY"
     url="-zero"
     description=""
-    codeBlocks={[{code: "val Zero: ZVector3"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val Zero: ZVector3"]} links={[{"text":"Zero","href":"-zero"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="add"
     tokenType="fun"
     groupType="FUNCTION"
     url="add"
     description=""
-    codeBlocks={[{code: "fun add(result: ZVector3, op1: ZVector3, op2: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun add(result: ZVector3, op1: ZVector3, op2: ZVector3)"]} links={[{"text":"add","href":"add"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="copy"
     tokenType="fun"
     groupType="FUNCTION"
     url="copy"
     description=""
-    codeBlocks={[{code: "fun copy(result: ZVector3, v: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun copy(result: ZVector3, v: ZVector3)"]} links={[{"text":"copy","href":"copy"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="cross"
     tokenType="fun"
     groupType="FUNCTION"
     url="cross"
     description=""
-    codeBlocks={[{code: "fun cross(result: ZVector3, op1: ZVector3, op2: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun cross(result: ZVector3, op1: ZVector3, op2: ZVector3)"]} links={[{"text":"cross","href":"cross"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dot"
     tokenType="fun"
     groupType="FUNCTION"
     url="dot"
     description=""
-    codeBlocks={[{code: "fun dot(op1: ZVector3, op2: ZVector3): Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun dot(op1: ZVector3, op2: ZVector3): Float"]} links={[{"text":"dot","href":"dot"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="fromVec4"
     tokenType="fun"
     groupType="FUNCTION"
     url="from-vec4"
     description=""
-    codeBlocks={[{code: "fun fromVec4(result: ZVector3, v: ZVector4)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun fromVec4(result: ZVector3, v: ZVector4)"]} links={[{"text":"fromVec4","href":"from-vec4"},{"text":"ZVector3","href":"../index"},{"text":"ZVector4","href":"../../-z-vector4/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="lerp"
     tokenType="fun"
     groupType="FUNCTION"
     url="lerp"
     description=""
-    codeBlocks={[{code: "fun lerp(t: Float, op1: ZVector3, op2: ZVector3): ZVector3"}, {code: "fun lerp(result: ZVector3, t: Float, op1: ZVector3, op2: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun lerp(t: Float, op1: ZVector3, op2: ZVector3): ZVector3fun lerp(result: ZVector3, t: Float, op1: ZVector3, op2: ZVector3)"]} links={[{"text":"lerp","href":"lerp"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"lerp","href":"lerp"},{"text":"ZVector3","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="multMatrix"
     tokenType="fun"
     groupType="FUNCTION"
     url="mult-matrix"
     description=""
-    codeBlocks={[{code: "fun multMatrix(result: ZVector3, m: ZMatrix4, v: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun multMatrix(result: ZVector3, m: ZMatrix4, v: ZVector3)"]} links={[{"text":"multMatrix","href":"mult-matrix"},{"text":"ZVector3","href":"../index"},{"text":"ZMatrix4","href":"../../-z-matrix4/index"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="multScalar"
     tokenType="fun"
     groupType="FUNCTION"
     url="mult-scalar"
     description=""
-    codeBlocks={[{code: "fun multScalar(result: ZVector3, scalar: Float, v: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun multScalar(result: ZVector3, scalar: Float, v: ZVector3)"]} links={[{"text":"multScalar","href":"mult-scalar"},{"text":"ZVector3","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="norm2"
     tokenType="fun"
     groupType="FUNCTION"
     url="norm2"
     description=""
-    codeBlocks={[{code: "fun norm2(v: ZVector3): Float"}, {code: "fun norm2(x: Float, y: Float, z: Float): Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun norm2(v: ZVector3): Floatfun norm2(x: Float, y: Float, z: Float): Float"]} links={[{"text":"norm2","href":"norm2"},{"text":"ZVector3","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"norm2","href":"norm2"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="normalize"
     tokenType="fun"
     groupType="FUNCTION"
     url="normalize"
     description=""
-    codeBlocks={[{code: "fun normalize(result: ZVector3, v: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun normalize(result: ZVector3, v: ZVector3)"]} links={[{"text":"normalize","href":"normalize"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="rotateVector"
     tokenType="fun"
     groupType="FUNCTION"
     url="rotate-vector"
     description=""
-    codeBlocks={[{code: "fun rotateVector(result: ZVector3, quat: ZQuaternion, v: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun rotateVector(result: ZVector3, quat: ZQuaternion, v: ZVector3)"]} links={[{"text":"rotateVector","href":"rotate-vector"},{"text":"ZVector3","href":"../index"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="subtract"
     tokenType="fun"
     groupType="FUNCTION"
     url="subtract"
     description=""
-    codeBlocks={[{code: "fun subtract(result: ZVector3, op1: ZVector3, op2: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun subtract(result: ZVector3, op1: ZVector3, op2: ZVector3)"]} links={[{"text":"subtract","href":"subtract"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="zero"
     tokenType="fun"
     groupType="FUNCTION"
     url="zero"
     description=""
-    codeBlocks={[{code: "fun zero(result: ZVector3)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun zero(result: ZVector3)"]} links={[{"text":"zero","href":"zero"},{"text":"ZVector3","href":"../index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "ZAttributeId"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,125 +13,140 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZAttributeId","url":"#zattributeid"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="attrName"
     tokenType="val"
     groupType="PROPERTY"
     url="attr-name"
     description=""
-    codeBlocks={[{code: "val attrName: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val attrName: String"]} links={[{"text":"attrName","href":"attr-name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="entries"
     tokenType="val"
     groupType="PROPERTY"
     url="entries"
     description="Returns a representation of an immutable list of all enum entries, in the order they're declared."
-    codeBlocks={[{code: "val entries: EnumEntries<ZAttributeId>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val entries: EnumEntries<ZAttributeId>"]} links={[{"text":"entries","href":"entries"},{"text":"EnumEntries","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.enums/-enum-entries/index.html"},{"text":"ZAttributeId","href":"index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="id"
     tokenType="val"
     groupType="PROPERTY"
     url="id"
     description=""
-    codeBlocks={[{code: "val id: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val id: Int"]} links={[{"text":"id","href":"id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="name"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.objects/-z-object-type/-s-k-e-l-e-t-o-n/index.html#-372974862%2FProperties%2F1558683979"
+    url="../../zernikalos.objects/-z-object-type/-l-i-g-h-t/index.html#-372974862%2FProperties%2F1558683979"
     description=""
-    codeBlocks={[{code: "expect val name: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect val name: String"]} links={[{"text":"name","href":"../../zernikalos.objects/-z-object-type/-l-i-g-h-t/index.html#-372974862%2FProperties%2F1558683979"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ordinal"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.objects/-z-object-type/-s-k-e-l-e-t-o-n/index.html#-739389684%2FProperties%2F1558683979"
+    url="../../zernikalos.objects/-z-object-type/-l-i-g-h-t/index.html#-739389684%2FProperties%2F1558683979"
     description=""
-    codeBlocks={[{code: "expect val ordinal: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect val ordinal: Int"]} links={[{"text":"ordinal","href":"../../zernikalos.objects/-z-object-type/-l-i-g-h-t/index.html#-739389684%2FProperties%2F1558683979"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="valueOf"
     tokenType="fun"
     groupType="FUNCTION"
     url="value-of"
     description="Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)"
-    codeBlocks={[{code: "fun valueOf(value: String): ZAttributeId"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun valueOf(value: String): ZAttributeId"]} links={[{"text":"valueOf","href":"value-of"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZAttributeId","href":"index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="values"
     tokenType="fun"
     groupType="FUNCTION"
     url="values"
     description="Returns an array containing the constants of this enum type, in the order they're declared."
-    codeBlocks={[{code: "fun values(): Array<ZAttributeId>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun values(): Array<ZAttributeId>"]} links={[{"text":"values","href":"values"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"ZAttributeId","href":"index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="INDICES"
-    tokenType=""
-    groupType="NONE"
+    tokenType="enum entry"
+    groupType="ENUM_ENTRY"
     url="-i-n-d-i-c-e-s/index"
     description=""
-    codeBlocks={[{code: "INDICES"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["INDICES"]} links={[{"text":"INDICES","href":"-i-n-d-i-c-e-s/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="POSITION"
-    tokenType=""
-    groupType="NONE"
+    tokenType="enum entry"
+    groupType="ENUM_ENTRY"
     url="-p-o-s-i-t-i-o-n/index"
     description=""
-    codeBlocks={[{code: "POSITION"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["POSITION"]} links={[{"text":"POSITION","href":"-p-o-s-i-t-i-o-n/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="NORMAL"
-    tokenType=""
-    groupType="NONE"
+    tokenType="enum entry"
+    groupType="ENUM_ENTRY"
     url="-n-o-r-m-a-l/index"
     description=""
-    codeBlocks={[{code: "NORMAL"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["NORMAL"]} links={[{"text":"NORMAL","href":"-n-o-r-m-a-l/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="COLOR"
-    tokenType=""
-    groupType="NONE"
+    tokenType="enum entry"
+    groupType="ENUM_ENTRY"
     url="-c-o-l-o-r/index"
     description=""
-    codeBlocks={[{code: "COLOR"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["COLOR"]} links={[{"text":"COLOR","href":"-c-o-l-o-r/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="UV"
-    tokenType=""
-    groupType="NONE"
+    tokenType="enum entry"
+    groupType="ENUM_ENTRY"
     url="-u-v/index"
     description=""
-    codeBlocks={[{code: "UV"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["UV"]} links={[{"text":"UV","href":"-u-v/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="BONE_WEIGHT"
-    tokenType=""
-    groupType="NONE"
+    tokenType="enum entry"
+    groupType="ENUM_ENTRY"
     url="-b-o-n-e_-w-e-i-g-h-t/index"
     description=""
-    codeBlocks={[{code: "BONE_WEIGHT"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["BONE_WEIGHT"]} links={[{"text":"BONE_WEIGHT","href":"-b-o-n-e_-w-e-i-g-h-t/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="BONE_INDEX"
-    tokenType=""
-    groupType="NONE"
+    tokenType="enum entry"
+    groupType="ENUM_ENTRY"
     url="-b-o-n-e_-i-n-d-e-x/index"
     description=""
-    codeBlocks={[{code: "BONE_INDEX"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["BONE_INDEX"]} links={[{"text":"BONE_INDEX","href":"-b-o-n-e_-i-n-d-e-x/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="CUSTOM"
-    tokenType=""
-    groupType="NONE"
+    tokenType="enum entry"
+    groupType="ENUM_ENTRY"
     url="-c-u-s-t-o-m/index"
     description=""
-    codeBlocks={[{code: "CUSTOM"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["CUSTOM"]} links={[{"text":"CUSTOM","href":"-c-u-s-t-o-m/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

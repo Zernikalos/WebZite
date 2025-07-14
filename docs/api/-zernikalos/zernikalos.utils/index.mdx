@@ -3,7 +3,7 @@ slug: "index"
 title: "utils"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,85 +13,95 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.utils","url":"#zernikalos.utils"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="MapPairJs"
     tokenType="data class"
     groupType="TYPE"
     url="-map-pair-js/index"
     description=""
-    codeBlocks={[{code: "data class MapPairJs(val key: Any, val value: Any)"}]}
-  />
+  >
+    <CodeBlockComponent platform="js" code={["data class MapPairJs(val key: Any, val value: Any)"]} links={[{"text":"MapPairJs","href":"-map-pair-js/index"},{"text":"Any","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html"},{"text":"Any","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSemVer"
     tokenType="data class"
     groupType="TYPE"
     url="-z-sem-ver/index"
     description=""
-    codeBlocks={[{code: "@Serializable data class ZSemVer(val major: Int, val minor: Int, val patch: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["@Serializable","data class ZSemVer(val major: Int, val minor: Int, val patch: Int)"]} links={[{"text":"ZSemVer","href":"-z-sem-ver/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="crc32"
     tokenType="fun"
     groupType="FUNCTION"
     url="crc32"
     description=""
-    codeBlocks={[{code: "fun crc32(bytes: ByteArray): Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun crc32(bytes: ByteArray): Int"]} links={[{"text":"crc32","href":"crc32"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="crc32FromStr"
     tokenType="fun"
     groupType="FUNCTION"
     url="crc32-from-str"
     description=""
-    codeBlocks={[{code: "fun crc32FromStr(s: String): Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun crc32FromStr(s: String): Int"]} links={[{"text":"crc32FromStr","href":"crc32-from-str"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="genRefId"
     tokenType="fun"
     groupType="FUNCTION"
     url="gen-ref-id"
     description=""
-    codeBlocks={[{code: "fun genRefId(): String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun genRefId(): String"]} links={[{"text":"genRefId","href":"gen-ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="mapFlatJs"
     tokenType="fun"
     groupType="FUNCTION"
     url="map-flat-js"
     description=""
-    codeBlocks={[{code: "fun mapFlatJs(m: Map<*, *>): Array<MapPairJs>"}]}
-  />
+  >
+    <CodeBlockComponent platform="js" code={["fun mapFlatJs(m: Map<*, *>): Array<MapPairJs>"]} links={[{"text":"mapFlatJs","href":"map-flat-js"},{"text":"Map","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"MapPairJs","href":"-map-pair-js/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="randomId"
     tokenType="fun"
     groupType="FUNCTION"
     url="random-id"
     description=""
-    codeBlocks={[{code: "fun randomId(): String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun randomId(): String"]} links={[{"text":"randomId","href":"random-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="randomNumId"
     tokenType="fun"
     groupType="FUNCTION"
     url="random-num-id"
     description=""
-    codeBlocks={[{code: "fun randomNumId(): Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun randomNumId(): Int"]} links={[{"text":"randomNumId","href":"random-num-id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toByteArray"
     tokenType="fun"
     groupType="FUNCTION"
     url="to-byte-array"
     description=""
-    codeBlocks={[{code: "fun FloatArray.toByteArray(littleEndian: Boolean = true): ByteArray"}, {code: "fun ShortArray.toByteArray(littleEndian: Boolean = true): ByteArray"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun FloatArray.toByteArray(littleEndian: Boolean = true): ByteArrayfun ShortArray.toByteArray(littleEndian: Boolean = true): ByteArray"]} links={[{"text":"FloatArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html"},{"text":"toByteArray","href":"to-byte-array"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"},{"text":"ShortArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short-array/index.html"},{"text":"toByteArray","href":"to-byte-array"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toFloatArray"
     tokenType="fun"
     groupType="FUNCTION"
     url="to-float-array"
     description="Converts this ByteArray into a FloatArray."
-    codeBlocks={[{code: "fun ByteArray.toFloatArray(littleEndian: Boolean = true): FloatArray"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun ByteArray.toFloatArray(littleEndian: Boolean = true): FloatArray"]} links={[{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"},{"text":"toFloatArray","href":"to-float-array"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"FloatArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

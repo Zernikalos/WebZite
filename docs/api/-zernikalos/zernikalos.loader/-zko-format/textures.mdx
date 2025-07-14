@@ -3,7 +3,7 @@ slug: "textures"
 title: "textures"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"textures","url":"#textures"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="textures"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val textures: List<ZTexture>"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val textures: List<ZTexture>"]} links={[{"text":"textures","href":"textures"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZTexture","href":"../../zernikalos.components.material/-z-texture/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoFormat.kt#L57"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoFormat.kt#L57" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

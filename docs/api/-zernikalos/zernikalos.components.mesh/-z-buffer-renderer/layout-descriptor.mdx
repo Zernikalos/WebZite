@@ -3,7 +3,7 @@ slug: "layout-descriptor"
 title: "layoutDescriptor"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"layoutDescriptor","url":"#layoutdescriptor"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="layoutDescriptor"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "lateinit var layoutDescriptor: MTLVertexBufferLayoutDescriptor"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["lateinit var layoutDescriptor: MTLVertexBufferLayoutDescriptor"]} links={[{"text":"layoutDescriptor","href":"layout-descriptor"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/mesh/ZBufferRenderer.metal.kt#L26"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/mesh/ZBufferRenderer.metal.kt#L26" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

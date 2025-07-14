@@ -3,7 +3,7 @@ slug: "program"
 title: "program"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"program","url":"#program"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="program"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val program: ZProgram"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="ogl" code={["val program: ZProgram"]} links={[{"text":"program","href":"program"},{"text":"ZProgram","href":"../-z-program/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.ogl.kt#L23"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.ogl.kt#L23" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

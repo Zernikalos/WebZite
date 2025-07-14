@@ -3,7 +3,7 @@ slug: "objects"
 title: "objects"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"objects","url":"#objects"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="objects"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val objects: List<ZkoObjectProto>"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val objects: List<ZkoObjectProto>"]} links={[{"text":"objects","href":"objects"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZkoObjectProto","href":"../-zko-object-proto/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoFormat.kt#L58"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoFormat.kt#L58" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "GLWrap"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,32 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"GLWrap","url":"#glwrap"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="GLWrap"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-g-l-wrap"
     description=""
-    codeBlocks={[{code: "constructor(id: Any? = null)"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["constructor(id: Any? = null)"]} links={[{"text":"Any","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="id"
     tokenType="val"
     groupType="PROPERTY"
     url="id"
     description=""
-    codeBlocks={[{code: "val id: Any?"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["val id: Any?"]} links={[{"text":"id","href":"id"},{"text":"Any","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isValid"
     tokenType="val"
     groupType="PROPERTY"
     url="is-valid"
     description=""
-    codeBlocks={[{code: "val isValid: Boolean"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="ogl" code={["val isValid: Boolean"]} links={[{"text":"isValid","href":"is-valid"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

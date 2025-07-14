@@ -3,7 +3,7 @@ slug: "-z-scene-context"
 title: "ZSceneContext"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZSceneContext","url":"#zscenecontext"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZSceneContext"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "constructor()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["constructor()"]} links={[{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/context/ZSceneContext.kt#L18"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/context/ZSceneContext.kt#L18" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

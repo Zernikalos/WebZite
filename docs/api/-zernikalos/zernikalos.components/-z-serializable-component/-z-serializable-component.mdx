@@ -3,7 +3,7 @@ slug: "-z-serializable-component"
 title: "ZSerializableComponent"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZSerializableComponent","url":"#zserializablecomponent"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZSerializableComponent"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "constructor(data: D)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["constructor(data: D)"]} links={[{"text":"D","href":"index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/ZComponent.kt#L125"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/ZComponent.kt#L125" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

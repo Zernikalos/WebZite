@@ -3,7 +3,7 @@ slug: "put-all"
 title: "putAll"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"putAll","url":"#putall"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="putAll"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "open override fun putAll(from: Map<out String, ZBaseUniform>)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun putAll(from: Map<out String, ZBaseUniform>)"]} links={[{"text":"putAll","href":"put-all"},{"text":"Map","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZBaseUniform","href":"../-z-base-uniform/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniformCollection.kt#L62"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniformCollection.kt#L62" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

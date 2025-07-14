@@ -3,7 +3,7 @@ slug: "viewport"
 title: "viewport"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"viewport","url":"#viewport"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="viewport"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "@Transient var viewport: ZViewport"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["@Transient","var viewport: ZViewport"]} links={[{"text":"viewport","href":"viewport"},{"text":"ZViewport","href":"../../zernikalos.components/-z-viewport/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZScene.kt#L24"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZScene.kt#L24" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "create-scene-context"
 title: "createSceneContext"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"createSceneContext","url":"#createscenecontext"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="createSceneContext"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "fun createSceneContext(): ZSceneContext"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun createSceneContext(): ZSceneContext"]} links={[{"text":"createSceneContext","href":"create-scene-context"},{"text":"ZSceneContext","href":"-z-scene-context/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/context/ZSceneContext.kt#L65"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/context/ZSceneContext.kt#L65" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "zernikalos"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,93 +13,107 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos","url":"#zernikalos"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="OglDataTypes"
-    tokenType=""
-    groupType="NONE"
+    tokenType="object"
+    groupType="OBJECT"
     url="-ogl-data-types/index"
     description=""
-    codeBlocks={[{code: "actual object OglDataTypes"}, {code: "actual object OglDataTypes"}, {code: "expect object OglDataTypes"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual object OglDataTypes"]} links={[{"text":"OglDataTypes","href":"-ogl-data-types/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect object OglDataTypes"]} links={[{"text":"OglDataTypes","href":"-ogl-data-types/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBaseType"
     tokenType="enum"
     groupType="TYPE"
     url="-z-base-type/index"
     description=""
-    codeBlocks={[{code: "enum ZBaseType: Enum<ZBaseType>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["enum ZBaseType : Enum<ZBaseType>"]} links={[{"text":"ZBaseType","href":"-z-base-type/index"},{"text":"Enum","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html"},{"text":"ZBaseType","href":"-z-base-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZDataType"
     tokenType="data class"
     groupType="TYPE"
     url="-z-data-type/index"
     description=""
-    codeBlocks={[{code: "@Serializable data class ZDataType(val type: ZBaseType, val format: ZFormatType)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["@Serializable","data class ZDataType(val type: ZBaseType, val format: ZFormatType)"]} links={[{"text":"ZDataType","href":"-z-data-type/index"},{"text":"ZBaseType","href":"-z-base-type/index"},{"text":"ZFormatType","href":"-z-format-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
-    name="ZernikalosLink copied to clipboard"
+    name="Zernikalos"
     tokenType="class"
     groupType="TYPE"
     url="[android]-zernikalos/index"
     description=""
-    codeBlocks={[{code: "class Zernikalos: ZernikalosBase"}, {code: "class Zernikalos: ZernikalosBase"}, {code: "class Zernikalos: ZernikalosBase"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["class Zernikalos : ZernikalosBase"]} links={[{"text":"Zernikalos","href":"[android]-zernikalos/index"},{"text":"ZernikalosBase","href":"-zernikalos-base/index"}]} />
+    <CodeBlockComponent platform="metal" code={["class Zernikalos : ZernikalosBase"]} links={[{"text":"Zernikalos","href":"[metal]-zernikalos/index"},{"text":"ZernikalosBase","href":"-zernikalos-base/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["class Zernikalos : ZernikalosBase"]} links={[{"text":"Zernikalos","href":"[webgpu]-zernikalos/index"},{"text":"ZernikalosBase","href":"-zernikalos-base/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZernikalosBase"
     tokenType="class"
     groupType="TYPE"
     url="-zernikalos-base/index"
     description="Base class for the Zernikalos Engine, providing core functionality for managing surface views, rendering contexts, scene contexts, state handlers, and logging. This class initializes the engine and coordinates the interaction between various components, such as the scene lifecycle, event management, and rendering operations."
-    codeBlocks={[{code: "open class ZernikalosBase: ZLoggable"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open class ZernikalosBase : ZLoggable"]} links={[{"text":"ZernikalosBase","href":"-zernikalos-base/index"},{"text":"ZLoggable","href":"../zernikalos.logger/-z-loggable/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZFormatType"
     tokenType="enum"
     groupType="TYPE"
     url="-z-format-type/index"
     description=""
-    codeBlocks={[{code: "enum ZFormatType: Enum<ZFormatType>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["enum ZFormatType : Enum<ZFormatType>"]} links={[{"text":"ZFormatType","href":"-z-format-type/index"},{"text":"Enum","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html"},{"text":"ZFormatType","href":"-z-format-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZTypes"
-    tokenType=""
-    groupType="NONE"
+    tokenType="object"
+    groupType="OBJECT"
     url="-z-types/index"
     description=""
-    codeBlocks={[{code: "object ZTypes"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["object ZTypes"]} links={[{"text":"ZTypes","href":"-z-types/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZVersion"
-    tokenType=""
-    groupType="NONE"
+    tokenType="object"
+    groupType="OBJECT"
     url="-z-version/index"
     description=""
-    codeBlocks={[{code: "object ZVersion"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["object ZVersion"]} links={[{"text":"ZVersion","href":"-z-version/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toOglBaseType"
     tokenType="fun"
     groupType="FUNCTION"
     url="to-ogl-base-type"
     description=""
-    codeBlocks={[{code: "fun toOglBaseType(t: ZDataType): Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["fun toOglBaseType(t: ZDataType): Int"]} links={[{"text":"toOglBaseType","href":"to-ogl-base-type"},{"text":"ZDataType","href":"-z-data-type/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toOglType"
     tokenType="fun"
     groupType="FUNCTION"
     url="to-ogl-type"
     description=""
-    codeBlocks={[{code: "fun toOglType(t: ZDataType): Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["fun toOglType(t: ZDataType): Int"]} links={[{"text":"toOglType","href":"to-ogl-type"},{"text":"ZDataType","href":"-z-data-type/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="upToRoot"
     tokenType="fun"
     groupType="FUNCTION"
     url="up-to-root"
-    description=""
-    codeBlocks={[{code: "fun upToRoot(obj: ZObject): Iterator<ZObject>"}]}
-  />
-</CodeClassList>
+    description="Returns an iterator over the tree nodes from the parameter obj to the root node. The first node returned from the iterator will be the parameter obj itself."
+  >
+    <CodeBlockComponent platform="common" code={["fun upToRoot(obj: ZObject): Iterator<ZObject>"]} links={[{"text":"upToRoot","href":"up-to-root"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"},{"text":"Iterator","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterator/index.html"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "scenestatehandler"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.scenestatehandler","url":"#zernikalos.scenestatehandler"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZSceneStateHandler"
     tokenType="interface"
     groupType="TYPE"
     url="-z-scene-state-handler/index"
     description="Asynchronous state handler for managing the lifecycle events of a scene within the Zernikalos engine. This interface facilitates the handling of ready, resize, and render events in an asynchronous manner by utilizing callback functions to signal the completion of tasks."
-    codeBlocks={[{code: "interface ZSceneStateHandler"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["interface ZSceneStateHandler"]} links={[{"text":"ZSceneStateHandler","href":"-z-scene-state-handler/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

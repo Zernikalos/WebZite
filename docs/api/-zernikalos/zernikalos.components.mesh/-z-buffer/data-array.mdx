@@ -3,7 +3,7 @@ slug: "data-array"
 title: "dataArray"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"dataArray","url":"#dataarray"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="dataArray"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val dataArray: ByteArray"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val dataArray: ByteArray"]} links={[{"text":"dataArray","href":"data-array"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZBuffer.kt#L132"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZBuffer.kt#L132" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

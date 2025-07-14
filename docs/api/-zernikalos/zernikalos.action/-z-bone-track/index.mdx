@@ -3,7 +3,7 @@ slug: "index"
 title: "ZBoneTrack"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,69 +13,86 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZBoneTrack","url":"#zbonetrack"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZBoneTrack"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-bone-track"
     description=""
-    codeBlocks={[{code: "constructor(boneName: String = '')"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(boneName: String = \"\", boneId: String = \"\")"]} links={[{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="boneId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="bone-id"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val boneId: String"]} links={[{"text":"boneId","href":"bone-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="boneName"
     tokenType="val"
     groupType="PROPERTY"
     url="bone-name"
     description=""
-    codeBlocks={[{code: "val boneName: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val boneName: String"]} links={[{"text":"boneName","href":"bone-name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="positionTrack"
     tokenType="val"
     groupType="PROPERTY"
     url="position-track"
     description=""
-    codeBlocks={[{code: "val positionTrack: Array<ZPositionFrame>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val positionTrack: Array<ZPositionFrame>"]} links={[{"text":"positionTrack","href":"position-track"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"ZPositionFrame","href":"../-z-position-frame/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="rotationTrack"
     tokenType="val"
     groupType="PROPERTY"
     url="rotation-track"
     description=""
-    codeBlocks={[{code: "val rotationTrack: Array<ZRotationFrame>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val rotationTrack: Array<ZRotationFrame>"]} links={[{"text":"rotationTrack","href":"rotation-track"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"ZRotationFrame","href":"../-z-rotation-frame/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="scaleTrack"
     tokenType="val"
     groupType="PROPERTY"
     url="scale-track"
     description=""
-    codeBlocks={[{code: "val scaleTrack: Array<ZScaleFrame>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val scaleTrack: Array<ZScaleFrame>"]} links={[{"text":"scaleTrack","href":"scale-track"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"ZScaleFrame","href":"../-z-scale-frame/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="addPositionFrame"
     tokenType="fun"
     groupType="FUNCTION"
     url="add-position-frame"
     description=""
-    codeBlocks={[{code: "fun addPositionFrame(frame: ZPositionFrame)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun addPositionFrame(frame: ZPositionFrame)"]} links={[{"text":"addPositionFrame","href":"add-position-frame"},{"text":"ZPositionFrame","href":"../-z-position-frame/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="addRotationFrame"
     tokenType="fun"
     groupType="FUNCTION"
     url="add-rotation-frame"
     description=""
-    codeBlocks={[{code: "fun addRotationFrame(frame: ZRotationFrame)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun addRotationFrame(frame: ZRotationFrame)"]} links={[{"text":"addRotationFrame","href":"add-rotation-frame"},{"text":"ZRotationFrame","href":"../-z-rotation-frame/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="addScaleFrame"
     tokenType="fun"
     groupType="FUNCTION"
     url="add-scale-frame"
     description=""
-    codeBlocks={[{code: "fun addScaleFrame(frame: ZScaleFrame)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun addScaleFrame(frame: ZScaleFrame)"]} links={[{"text":"addScaleFrame","href":"add-scale-frame"},{"text":"ZScaleFrame","href":"../-z-scale-frame/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

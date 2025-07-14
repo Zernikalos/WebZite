@@ -3,7 +3,7 @@ slug: "index"
 title: "ZSkeletalAction"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,53 +13,59 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZSkeletalAction","url":"#zskeletalaction"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZSkeletalAction"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-skeletal-action"
     description=""
-    codeBlocks={[{code: "constructor(name: String)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(name: String)"]} links={[{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="duration"
     tokenType="var"
     groupType="PROPERTY"
     url="duration"
     description=""
-    codeBlocks={[{code: "var duration: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var duration: Float"]} links={[{"text":"duration","href":"duration"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="name"
     tokenType="val"
     groupType="PROPERTY"
     url="name"
     description=""
-    codeBlocks={[{code: "val name: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val name: String"]} links={[{"text":"name","href":"name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="tracks"
     tokenType="val"
     groupType="PROPERTY"
     url="tracks"
     description=""
-    codeBlocks={[{code: "val tracks: Array<ZBoneTrack>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val tracks: Array<ZBoneTrack>"]} links={[{"text":"tracks","href":"tracks"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"ZBoneTrack","href":"../-z-bone-track/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="addTrack"
     tokenType="fun"
     groupType="FUNCTION"
     url="add-track"
     description=""
-    codeBlocks={[{code: "fun addTrack(track: ZBoneTrack)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun addTrack(track: ZBoneTrack)"]} links={[{"text":"addTrack","href":"add-track"},{"text":"ZBoneTrack","href":"../-z-bone-track/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getKeyFrame"
     tokenType="fun"
     groupType="FUNCTION"
     url="get-key-frame"
     description=""
-    codeBlocks={[{code: "fun getKeyFrame(time: Float): ZKeyFrame"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun getKeyFrame(time: Float): ZKeyFrame"]} links={[{"text":"getKeyFrame","href":"get-key-frame"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZKeyFrame","href":"../-z-key-frame/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

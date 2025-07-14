@@ -3,7 +3,7 @@ slug: "buffer-id"
 title: "bufferId"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"bufferId","url":"#bufferid"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="bufferId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val bufferId: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val bufferId: Int"]} links={[{"text":"bufferId","href":"buffer-id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZBuffer.kt#L127"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/mesh/ZBuffer.kt#L127" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "-u-i-n-t"
 title: "UINT"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"UINT","url":"#uint"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="UINT"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val UINT: ZDataType"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val UINT: ZDataType"]} links={[{"text":"UINT","href":"-u-i-n-t"},{"text":"ZDataType","href":"../-z-data-type/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L173"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L173" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

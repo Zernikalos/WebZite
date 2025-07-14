@@ -3,7 +3,7 @@ slug: "surface-view"
 title: "surfaceView"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"surfaceView","url":"#surfaceview"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="surfaceView"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val surfaceView: ZSurfaceView"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["val surfaceView: ZSurfaceView"]} links={[{"text":"surfaceView","href":"surface-view"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L17"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L17" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

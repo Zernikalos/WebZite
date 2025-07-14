@@ -3,7 +3,7 @@ slug: "mult"
 title: "mult"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"mult","url":"#mult"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="resultlmrm"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun mult(result: ZMatrix4, lm: ZMatrix4, rm: ZMatrix4)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun mult(result: ZMatrix4, lm: ZMatrix4, rm: ZMatrix4)"]} links={[{"text":"mult","href":"mult"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L331"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L331" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

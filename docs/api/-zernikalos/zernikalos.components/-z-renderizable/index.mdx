@@ -3,7 +3,7 @@ slug: "index"
 title: "ZRenderizable"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZRenderizable","url":"#zrenderizable"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
     url="render"
     description="Renders the object's visual representation on the screen."
-    codeBlocks={[{code: "abstract fun render()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract fun render()"]} links={[{"text":"render","href":"render"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

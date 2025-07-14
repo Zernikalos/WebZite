@@ -3,7 +3,7 @@ slug: "-z-data-type"
 title: "ZDataType"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZDataType","url":"#zdatatype"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZDataType"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "constructor(type: ZBaseType, format: ZFormatType)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["constructor(type: ZBaseType, format: ZFormatType)"]} links={[{"text":"ZBaseType","href":"../-z-base-type/index"},{"text":"ZFormatType","href":"../-z-format-type/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L94"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L94" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

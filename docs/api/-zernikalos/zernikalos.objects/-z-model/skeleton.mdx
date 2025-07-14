@@ -3,7 +3,7 @@ slug: "skeleton"
 title: "skeleton"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"skeleton","url":"#skeleton"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="skeleton"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var skeleton: ZSkeleton?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var skeleton: ZSkeleton?"]} links={[{"text":"skeleton","href":"skeleton"},{"text":"ZSkeleton","href":"../-z-skeleton/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZModel.kt#L43"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZModel.kt#L43" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

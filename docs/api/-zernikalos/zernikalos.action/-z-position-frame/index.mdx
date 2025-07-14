@@ -3,7 +3,7 @@ slug: "index"
 title: "ZPositionFrame"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,32 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZPositionFrame","url":"#zpositionframe"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZPositionFrame"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-position-frame"
     description=""
-    codeBlocks={[{code: "constructor(time: Float, position: ZVector3)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(time: Float, position: ZVector3)"]} links={[{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../../zernikalos.math/-z-vector3/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="position"
     tokenType="val"
     groupType="PROPERTY"
     url="position"
     description=""
-    codeBlocks={[{code: "val position: ZVector3"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val position: ZVector3"]} links={[{"text":"position","href":"position"},{"text":"ZVector3","href":"../../zernikalos.math/-z-vector3/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="time"
     tokenType="val"
     groupType="PROPERTY"
     url="time"
     description=""
-    codeBlocks={[{code: "open override val time: Float"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override val time: Float"]} links={[{"text":"time","href":"time"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

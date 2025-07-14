@@ -3,7 +3,7 @@ slug: "index"
 title: "ExpectCullModeType"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,35 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ExpectCullModeType","url":"#expectcullmodetype"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="BACK"
     tokenType="val"
     groupType="PROPERTY"
     url="-b-a-c-k"
     description=""
-    codeBlocks={[{code: "actual val BACK: Int"}, {code: "actual val BACK: Int"}, {code: "expect val BACK: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual val BACK: Int"]} links={[{"text":"BACK","href":"-b-a-c-k"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val BACK: Int"]} links={[{"text":"BACK","href":"-b-a-c-k"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="FRONT"
     tokenType="val"
     groupType="PROPERTY"
     url="-f-r-o-n-t"
     description=""
-    codeBlocks={[{code: "actual val FRONT: Int"}, {code: "actual val FRONT: Int"}, {code: "expect val FRONT: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual val FRONT: Int"]} links={[{"text":"FRONT","href":"-f-r-o-n-t"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val FRONT: Int"]} links={[{"text":"FRONT","href":"-f-r-o-n-t"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="FRONT_AND_BACK"
     tokenType="val"
     groupType="PROPERTY"
     url="-f-r-o-n-t_-a-n-d_-b-a-c-k"
     description=""
-    codeBlocks={[{code: "actual val FRONT_AND_BACK: Int"}, {code: "actual val FRONT_AND_BACK: Int"}, {code: "expect val FRONT_AND_BACK: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val FRONT_AND_BACK: Int"]} links={[{"text":"FRONT_AND_BACK","href":"-f-r-o-n-t_-a-n-d_-b-a-c-k"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val FRONT_AND_BACK: Int"]} links={[{"text":"FRONT_AND_BACK","href":"-f-r-o-n-t_-a-n-d_-b-a-c-k"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "ZkoHeader"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,32 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZkoHeader","url":"#zkoheader"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZkoHeader"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-zko-header"
     description=""
-    codeBlocks={[{code: "constructor(version: String)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(version: String)"]} links={[{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="currentVersion"
     tokenType="val"
     groupType="PROPERTY"
     url="current-version"
     description=""
-    codeBlocks={[{code: "val currentVersion: ZSemVer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val currentVersion: ZSemVer"]} links={[{"text":"currentVersion","href":"current-version"},{"text":"ZSemVer","href":"../../zernikalos.utils/-z-sem-ver/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="version"
     tokenType="val"
     groupType="PROPERTY"
     url="version"
     description=""
-    codeBlocks={[{code: "val version: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val version: String"]} links={[{"text":"version","href":"version"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

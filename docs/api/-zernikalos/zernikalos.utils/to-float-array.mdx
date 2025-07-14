@@ -3,7 +3,7 @@ slug: "to-float-array"
 title: "toFloatArray"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"toFloatArray","url":"#tofloatarray"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="IllegalArgumentException"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "fun ByteArray.toFloatArray(littleEndian: Boolean = true): FloatArray"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun ByteArray.toFloatArray(littleEndian: Boolean = true): FloatArray"]} links={[{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"},{"text":"toFloatArray","href":"to-float-array"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"FloatArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/utils/extensions.kt#L64"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/utils/extensions.kt#L64" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "shader-source"
 title: "shaderSource"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"shaderSource","url":"#shadersource"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="shaderSource"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual fun shaderSource(shader: GLWrap, source: String)"}, {code: "actual fun shaderSource(shader: GLWrap, source: String)"}, {code: "expect fun shaderSource(shader: GLWrap, source: String)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun shaderSource(shader: GLWrap, source: String)"]} links={[{"text":"shaderSource","href":"shader-source"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L64"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L64" />
+    <CodeBlockComponent platform="ogl" code={["expect fun shaderSource(shader: GLWrap, source: String)"]} links={[{"text":"shaderSource","href":"shader-source"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L47"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L47" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

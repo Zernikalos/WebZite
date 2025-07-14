@@ -3,7 +3,7 @@ slug: "index"
 title: "ZTreeNode"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,37 +13,41 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZTreeNode","url":"#ztreenode"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="children"
     tokenType="val"
     groupType="PROPERTY"
     url="children"
     description=""
-    codeBlocks={[{code: "abstract val children: Array<T>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract val children: Array<T>"]} links={[{"text":"children","href":"children"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"T","href":"index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="hasParent"
     tokenType="val"
     groupType="PROPERTY"
     url="has-parent"
     description=""
-    codeBlocks={[{code: "open val hasParent: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open val hasParent: Boolean"]} links={[{"text":"hasParent","href":"has-parent"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRoot"
     tokenType="val"
     groupType="PROPERTY"
     url="is-root"
     description=""
-    codeBlocks={[{code: "open val isRoot: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open val isRoot: Boolean"]} links={[{"text":"isRoot","href":"is-root"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="parent"
     tokenType="val"
     groupType="PROPERTY"
     url="parent"
     description=""
-    codeBlocks={[{code: "abstract val parent: T?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract val parent: T?"]} links={[{"text":"parent","href":"parent"},{"text":"T","href":"index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

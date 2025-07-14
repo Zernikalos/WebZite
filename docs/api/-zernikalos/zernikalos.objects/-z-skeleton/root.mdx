@@ -3,7 +3,7 @@ slug: "root"
 title: "root"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"root","url":"#root"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="root"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var root: ZBone"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var root: ZBone"]} links={[{"text":"root","href":"root"},{"text":"ZBone","href":"../../zernikalos.components.skeleton/-z-bone/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZSkeleton.kt#L31"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZSkeleton.kt#L31" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

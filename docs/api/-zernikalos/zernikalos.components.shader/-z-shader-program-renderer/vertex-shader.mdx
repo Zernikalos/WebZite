@@ -3,7 +3,7 @@ slug: "vertex-shader"
 title: "vertexShader"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"vertexShader","url":"#vertexshader"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="vertexShader"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "lateinit var vertexShader: MTLFunctionProtocol"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["lateinit var vertexShader: MTLFunctionProtocol"]} links={[{"text":"vertexShader","href":"vertex-shader"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.metal.kt#L24"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/shader/ZShaderProgramRenderer.metal.kt#L24" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

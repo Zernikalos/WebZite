@@ -3,7 +3,7 @@ slug: "index"
 title: "ZColor"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,149 +13,167 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZColor","url":"#zcolor"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZColor"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-color"
     description=""
-    codeBlocks={[{code: "constructor()"}, {code: "constructor(red: Float, green: Float, blue: Float, alpha: Float)"}, {code: "constructor(red: Int, green: Int, blue: Int, alpha: Int)"}, {code: "constructor(hex: String)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()constructor(red: Float, green: Float, blue: Float, alpha: Float = 1.0f)constructor(red: Int, green: Int, blue: Int, alpha: Int = 255)constructor(hex: String)"]} links={[{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="a"
     tokenType="var"
     groupType="PROPERTY"
     url="a"
     description=""
-    codeBlocks={[{code: "var a: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var a: Float"]} links={[{"text":"a","href":"a"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="alpha"
     tokenType="var"
     groupType="PROPERTY"
     url="alpha"
     description=""
-    codeBlocks={[{code: "var alpha: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var alpha: Float"]} links={[{"text":"alpha","href":"alpha"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="b"
     tokenType="var"
     groupType="PROPERTY"
     url="b"
     description=""
-    codeBlocks={[{code: "var b: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var b: Float"]} links={[{"text":"b","href":"b"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="blue"
     tokenType="var"
     groupType="PROPERTY"
     url="blue"
     description=""
-    codeBlocks={[{code: "var blue: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var blue: Float"]} links={[{"text":"blue","href":"blue"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="byteArray"
     tokenType="val"
     groupType="PROPERTY"
     url="byte-array"
     description=""
-    codeBlocks={[{code: "open override val byteArray: ByteArray"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val byteArray: ByteArray"]} links={[{"text":"byteArray","href":"byte-array"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="byteSize"
     tokenType="val"
     groupType="PROPERTY"
     url="byte-size"
     description=""
-    codeBlocks={[{code: "open override val byteSize: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val byteSize: Int"]} links={[{"text":"byteSize","href":"byte-size"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="count"
     tokenType="val"
     groupType="PROPERTY"
     url="count"
     description="Number of individual instances this object represents"
-    codeBlocks={[{code: "open override val count: Int = 1"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val count: Int = 1"]} links={[{"text":"count","href":"count"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dataType"
     tokenType="val"
     groupType="PROPERTY"
     url="data-type"
     description="The data type stored"
-    codeBlocks={[{code: "open override val dataType: ZDataType"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val dataType: ZDataType"]} links={[{"text":"dataType","href":"data-type"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="floatArray"
     tokenType="val"
     groupType="PROPERTY"
     url="float-array"
     description=""
-    codeBlocks={[{code: "open override val floatArray: FloatArray"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val floatArray: FloatArray"]} links={[{"text":"floatArray","href":"float-array"},{"text":"FloatArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="g"
     tokenType="var"
     groupType="PROPERTY"
     url="g"
     description=""
-    codeBlocks={[{code: "var g: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var g: Float"]} links={[{"text":"g","href":"g"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="green"
     tokenType="var"
     groupType="PROPERTY"
     url="green"
     description=""
-    codeBlocks={[{code: "var green: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var green: Float"]} links={[{"text":"green","href":"green"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="r"
     tokenType="var"
     groupType="PROPERTY"
     url="r"
     description=""
-    codeBlocks={[{code: "var r: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var r: Float"]} links={[{"text":"r","href":"r"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="red"
     tokenType="var"
     groupType="PROPERTY"
     url="red"
     description=""
-    codeBlocks={[{code: "var red: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var red: Float"]} links={[{"text":"red","href":"red"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="size"
     tokenType="val"
     groupType="PROPERTY"
     url="size"
     description="Number of elements contained within the values array with the specific type defined in dataType"
-    codeBlocks={[{code: "open override val size: Int = 4"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val size: Int = 4"]} links={[{"text":"size","href":"size"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="colorFromBytes"
     tokenType="fun"
     groupType="FUNCTION"
     url="color-from-bytes"
     description=""
-    codeBlocks={[{code: "fun colorFromBytes(red: Int, green: Int, blue: Int, alpha: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun colorFromBytes(red: Int, green: Int, blue: Int, alpha: Int)"]} links={[{"text":"colorFromBytes","href":"color-from-bytes"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="colorFromFloats"
     tokenType="fun"
     groupType="FUNCTION"
     url="color-from-floats"
     description=""
-    codeBlocks={[{code: "fun colorFromFloats(red: Float, green: Float, blue: Float, alpha: Float)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun colorFromFloats(red: Float, green: Float, blue: Float, alpha: Float)"]} links={[{"text":"colorFromFloats","href":"color-from-floats"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="colorFromHex"
     tokenType="fun"
     groupType="FUNCTION"
     url="color-from-hex"
     description=""
-    codeBlocks={[{code: "fun colorFromHex(hex: String)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun colorFromHex(hex: String)"]} links={[{"text":"colorFromHex","href":"color-from-hex"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

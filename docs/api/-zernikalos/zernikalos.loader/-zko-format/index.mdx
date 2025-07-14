@@ -3,7 +3,7 @@ slug: "index"
 title: "ZkoFormat"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,53 +13,59 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZkoFormat","url":"#zkoformat"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZkoFormat"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-zko-format"
     description=""
-    codeBlocks={[{code: "constructor(header: ZkoHeader, textures: List<ZTexture>, objects: List<ZkoObjectProto>, hierarchy: ZkoHierarchyNode, actions: List<ZSkeletalAction>? = null)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(header: ZkoHeader, textures: List<ZTexture>, objects: List<ZkoObjectProto>, hierarchy: ZkoHierarchyNode, actions: List<ZSkeletalAction>? = null)"]} links={[{"text":"ZkoHeader","href":"../-zko-header/index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZTexture","href":"../../zernikalos.components.material/-z-texture/index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZkoObjectProto","href":"../-zko-object-proto/index"},{"text":"ZkoHierarchyNode","href":"../-zko-hierarchy-node/index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZSkeletalAction","href":"../../zernikalos.action/-z-skeletal-action/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="actions"
     tokenType="val"
     groupType="PROPERTY"
     url="actions"
     description=""
-    codeBlocks={[{code: "val actions: List<ZSkeletalAction>?"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val actions: List<ZSkeletalAction>?"]} links={[{"text":"actions","href":"actions"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZSkeletalAction","href":"../../zernikalos.action/-z-skeletal-action/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="header"
     tokenType="val"
     groupType="PROPERTY"
     url="header"
     description=""
-    codeBlocks={[{code: "val header: ZkoHeader"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val header: ZkoHeader"]} links={[{"text":"header","href":"header"},{"text":"ZkoHeader","href":"../-zko-header/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="hierarchy"
     tokenType="val"
     groupType="PROPERTY"
     url="hierarchy"
     description=""
-    codeBlocks={[{code: "val hierarchy: ZkoHierarchyNode"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val hierarchy: ZkoHierarchyNode"]} links={[{"text":"hierarchy","href":"hierarchy"},{"text":"ZkoHierarchyNode","href":"../-zko-hierarchy-node/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="objects"
     tokenType="val"
     groupType="PROPERTY"
     url="objects"
     description=""
-    codeBlocks={[{code: "val objects: List<ZkoObjectProto>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val objects: List<ZkoObjectProto>"]} links={[{"text":"objects","href":"objects"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZkoObjectProto","href":"../-zko-object-proto/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="textures"
     tokenType="val"
     groupType="PROPERTY"
     url="textures"
     description=""
-    codeBlocks={[{code: "val textures: List<ZTexture>"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val textures: List<ZTexture>"]} links={[{"text":"textures","href":"textures"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZTexture","href":"../../zernikalos.components.material/-z-texture/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "get-logger"
 title: "getLogger"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"getLogger","url":"#getlogger"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="getLogger"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun getLogger(clsName: String?, instanceId: Int): ZLogger"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun getLogger(clsName: String?, instanceId: Int): ZLogger"]} links={[{"text":"getLogger","href":"get-logger"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ZLogger","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLogger.kt#L87"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLogger.kt#L87" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

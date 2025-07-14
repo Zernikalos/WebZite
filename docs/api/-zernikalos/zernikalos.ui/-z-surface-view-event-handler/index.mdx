@@ -3,7 +3,7 @@ slug: "index"
 title: "ZSurfaceViewEventHandler"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,32 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZSurfaceViewEventHandler","url":"#zsurfacevieweventhandler"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="onReady"
     tokenType="fun"
     groupType="FUNCTION"
     url="on-ready"
     description=""
-    codeBlocks={[{code: "abstract fun onReady()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract fun onReady()"]} links={[{"text":"onReady","href":"on-ready"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="onRender"
     tokenType="fun"
     groupType="FUNCTION"
     url="on-render"
     description=""
-    codeBlocks={[{code: "abstract fun onRender()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract fun onRender()"]} links={[{"text":"onRender","href":"on-render"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="onResize"
     tokenType="fun"
     groupType="FUNCTION"
     url="on-resize"
     description=""
-    codeBlocks={[{code: "abstract fun onResize(width: Int, height: Int)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract fun onResize(width: Int, height: Int)"]} links={[{"text":"onResize","href":"on-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

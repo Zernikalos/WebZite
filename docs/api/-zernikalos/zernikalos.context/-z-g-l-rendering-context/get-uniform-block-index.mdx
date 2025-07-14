@@ -3,7 +3,7 @@ slug: "get-uniform-block-index"
 title: "getUniformBlockIndex"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"getUniformBlockIndex","url":"#getuniformblockindex"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="getUniformBlockIndex"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"}, {code: "actual fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"}, {code: "expect fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"]} links={[{"text":"getUniformBlockIndex","href":"get-uniform-block-index"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L97"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L97" />
+    <CodeBlockComponent platform="ogl" code={["expect fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"]} links={[{"text":"getUniformBlockIndex","href":"get-uniform-block-index"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L67"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L67" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

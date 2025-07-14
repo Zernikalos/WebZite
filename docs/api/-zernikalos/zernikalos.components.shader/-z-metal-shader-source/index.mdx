@@ -3,7 +3,7 @@ slug: "index"
 title: "ZMetalShaderSource"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,23 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZMetalShaderSource","url":"#zmetalshadersource"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZMetalShaderSource"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-metal-shader-source"
     description=""
-    codeBlocks={[{code: "constructor(shaderSource: String = '')"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(shaderSource: String = \"\")"]} links={[{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="shaderSource"
     tokenType="var"
     groupType="PROPERTY"
     url="shader-source"
     description=""
-    codeBlocks={[{code: "var shaderSource: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var shaderSource: String"]} links={[{"text":"shaderSource","href":"shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "settings"
 title: "settings"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"settings","url":"#settings"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="settings"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val settings: ZSettings"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val settings: ZSettings"]} links={[{"text":"settings","href":"settings"},{"text":"ZSettings","href":"../../zernikalos.settings/-z-settings/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZernikalosBase.kt#L48"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZernikalosBase.kt#L48" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

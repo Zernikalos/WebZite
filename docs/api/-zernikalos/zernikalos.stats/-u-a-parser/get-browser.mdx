@@ -3,7 +3,7 @@ slug: "get-browser"
 title: "getBrowser"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"getBrowser","url":"#getbrowser"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="getBrowser"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun getBrowser(): BrowserInfo"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="js" code={["fun getBrowser(): BrowserInfo"]} links={[{"text":"getBrowser","href":"get-browser"},{"text":"BrowserInfo","href":"../-browser-info/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/stats/ZSystemInfo.js.kt#L22"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/jsMain/kotlin/zernikalos/stats/ZSystemInfo.js.kt#L22" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

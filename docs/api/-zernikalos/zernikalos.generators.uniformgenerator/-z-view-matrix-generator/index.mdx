@@ -3,7 +3,7 @@ slug: "index"
 title: "ZViewMatrixGenerator"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,23 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZViewMatrixGenerator","url":"#zviewmatrixgenerator"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZViewMatrixGenerator"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-view-matrix-generator"
     description=""
-    codeBlocks={[{code: "constructor()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="compute"
     tokenType="fun"
     groupType="FUNCTION"
     url="compute"
     description=""
-    codeBlocks={[{code: "open override fun compute(sceneContext: ZSceneContext, obj: ZObject): ZAlgebraObject"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun compute(sceneContext: ZSceneContext, obj: ZObject): ZAlgebraObject"]} links={[{"text":"compute","href":"compute"},{"text":"ZSceneContext","href":"../../zernikalos.context/-z-scene-context/index"},{"text":"ZObject","href":"../../zernikalos.objects/-z-object/index"},{"text":"ZAlgebraObject","href":"../../zernikalos.math/-z-algebra-object/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

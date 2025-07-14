@@ -3,7 +3,7 @@ slug: "mult-scalar"
 title: "multScalar"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"multScalar","url":"#multscalar"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="multScalar"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun multScalar(result: ZVector3, scalar: Float, v: ZVector3)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun multScalar(result: ZVector3, scalar: Float, v: ZVector3)"]} links={[{"text":"multScalar","href":"mult-scalar"},{"text":"ZVector3","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L230"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L230" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

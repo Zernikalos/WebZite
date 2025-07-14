@@ -3,7 +3,7 @@ slug: "index"
 title: "ZGLRenderingContext"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,333 +13,414 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZGLRenderingContext","url":"#zglrenderingcontext"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZGLRenderingContext"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-g-l-rendering-context"
     description=""
-    codeBlocks={[{code: "actual constructor(surfaceView: ZSurfaceView)"}, {code: "actual constructor(surfaceView: ZSurfaceView)"}, {code: "expect constructor(surfaceView: ZSurfaceView)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual constructor(surfaceView: ZSurfaceView)"]} links={[{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect constructor(surfaceView: ZSurfaceView)"]} links={[{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="surfaceView"
     tokenType="val"
     groupType="PROPERTY"
     url="surface-view"
     description=""
-    codeBlocks={[{code: "val surfaceView: ZSurfaceView"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["val surfaceView: ZSurfaceView"]} links={[{"text":"surfaceView","href":"surface-view"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="activeTexture"
     tokenType="fun"
     groupType="FUNCTION"
     url="active-texture"
     description=""
-    codeBlocks={[{code: "actual fun activeTexture()"}, {code: "actual fun activeTexture()"}, {code: "expect fun activeTexture()"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun activeTexture()"]} links={[{"text":"activeTexture","href":"active-texture"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun activeTexture()"]} links={[{"text":"activeTexture","href":"active-texture"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="attachShader"
     tokenType="fun"
     groupType="FUNCTION"
     url="attach-shader"
     description=""
-    codeBlocks={[{code: "actual fun attachShader(program: GLWrap, shader: GLWrap)"}, {code: "actual fun attachShader(program: GLWrap, shader: GLWrap)"}, {code: "expect fun attachShader(program: GLWrap, shader: GLWrap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun attachShader(program: GLWrap, shader: GLWrap)"]} links={[{"text":"attachShader","href":"attach-shader"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun attachShader(program: GLWrap, shader: GLWrap)"]} links={[{"text":"attachShader","href":"attach-shader"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bindAttribLocation"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind-attrib-location"
     description=""
-    codeBlocks={[{code: "actual fun bindAttribLocation(program: GLWrap, index: Int, attrName: String)"}, {code: "actual fun bindAttribLocation(program: GLWrap, index: Int, attrName: String)"}, {code: "expect fun bindAttribLocation(program: GLWrap, index: Int, attrName: String)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun bindAttribLocation(program: GLWrap, index: Int, attrName: String)"]} links={[{"text":"bindAttribLocation","href":"bind-attrib-location"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun bindAttribLocation(program: GLWrap, index: Int, attrName: String)"]} links={[{"text":"bindAttribLocation","href":"bind-attrib-location"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bindBuffer"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind-buffer"
     description=""
-    codeBlocks={[{code: "actual fun bindBuffer(targetType: BufferTargetType, buffer: GLWrap)"}, {code: "actual fun bindBuffer(targetType: BufferTargetType, buffer: GLWrap)"}, {code: "expect fun bindBuffer(targetType: BufferTargetType, buffer: GLWrap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun bindBuffer(targetType: BufferTargetType, buffer: GLWrap)"]} links={[{"text":"bindBuffer","href":"bind-buffer"},{"text":"BufferTargetType","href":"../-buffer-target-type/index"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun bindBuffer(targetType: BufferTargetType, buffer: GLWrap)"]} links={[{"text":"bindBuffer","href":"bind-buffer"},{"text":"BufferTargetType","href":"../-buffer-target-type/index"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bindBufferBase"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind-buffer-base"
     description=""
-    codeBlocks={[{code: "actual fun bindBufferBase(targetType: BufferTargetType, uniformBlockIndex: GLWrap, uniformBufferObject: GLWrap)"}, {code: "actual fun bindBufferBase(targetType: BufferTargetType, uniformBlockIndex: GLWrap, uniformBufferObject: GLWrap)"}, {code: "expect fun bindBufferBase(targetType: BufferTargetType, uniformBlockIndex: GLWrap, uniformBufferObject: GLWrap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun bindBufferBase(targetType: BufferTargetType, uniformBlockBinding: Int, uniformBufferObject: GLWrap)"]} links={[{"text":"bindBufferBase","href":"bind-buffer-base"},{"text":"BufferTargetType","href":"../-buffer-target-type/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun bindBufferBase(targetType: BufferTargetType, uniformBlockBinding: Int, uniformBufferObject: GLWrap)"]} links={[{"text":"bindBufferBase","href":"bind-buffer-base"},{"text":"BufferTargetType","href":"../-buffer-target-type/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bindTexture"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind-texture"
     description=""
-    codeBlocks={[{code: "actual fun bindTexture(texture: GLWrap)"}, {code: "actual fun bindTexture(texture: GLWrap)"}, {code: "expect fun bindTexture(texture: GLWrap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun bindTexture(texture: GLWrap)"]} links={[{"text":"bindTexture","href":"bind-texture"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun bindTexture(texture: GLWrap)"]} links={[{"text":"bindTexture","href":"bind-texture"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bindVertexArray"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind-vertex-array"
     description=""
-    codeBlocks={[{code: "actual fun bindVertexArray(vao: GLWrap)"}, {code: "actual fun bindVertexArray(vao: GLWrap)"}, {code: "expect fun bindVertexArray(vao: GLWrap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun bindVertexArray(vao: GLWrap)"]} links={[{"text":"bindVertexArray","href":"bind-vertex-array"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun bindVertexArray(vao: GLWrap)"]} links={[{"text":"bindVertexArray","href":"bind-vertex-array"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bufferData"
     tokenType="fun"
     groupType="FUNCTION"
     url="buffer-data"
     description=""
-    codeBlocks={[{code: "actual fun bufferData(targetType: BufferTargetType, dataArray: ByteArray, usageType: BufferUsageType)"}, {code: "actual fun bufferData(targetType: BufferTargetType, byteSize: Int, usageType: BufferUsageType)"}, {code: "actual fun bufferData(targetType: BufferTargetType, dataArray: ByteArray, usageType: BufferUsageType)"}, {code: "actual fun bufferData(targetType: BufferTargetType, byteSize: Int, usageType: BufferUsageType)"}, {code: "expect fun bufferData(targetType: BufferTargetType, dataArray: ByteArray, usageType: BufferUsageType)"}, {code: "expect fun bufferData(targetType: BufferTargetType, byteSize: Int, usageType: BufferUsageType)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun bufferData(targetType: BufferTargetType, dataArray: ByteArray, usageType: BufferUsageType)actual fun bufferData(targetType: BufferTargetType, byteSize: Int, usageType: BufferUsageType)"]} links={[{"text":"bufferData","href":"buffer-data"},{"text":"BufferTargetType","href":"../-buffer-target-type/index"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"},{"text":"BufferUsageType","href":"../-buffer-usage-type/index"},{"text":"bufferData","href":"buffer-data"},{"text":"BufferTargetType","href":"../-buffer-target-type/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"BufferUsageType","href":"../-buffer-usage-type/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun bufferData(targetType: BufferTargetType, dataArray: ByteArray, usageType: BufferUsageType)expect fun bufferData(targetType: BufferTargetType, byteSize: Int, usageType: BufferUsageType)"]} links={[{"text":"bufferData","href":"buffer-data"},{"text":"BufferTargetType","href":"../-buffer-target-type/index"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"},{"text":"BufferUsageType","href":"../-buffer-usage-type/index"},{"text":"bufferData","href":"buffer-data"},{"text":"BufferTargetType","href":"../-buffer-target-type/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"BufferUsageType","href":"../-buffer-usage-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="clear"
     tokenType="fun"
     groupType="FUNCTION"
     url="clear"
     description=""
-    codeBlocks={[{code: "actual fun clear(buffer: Int)"}, {code: "actual fun clear(buffer: Int)"}, {code: "expect fun clear(buffer: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun clear(buffer: Int)"]} links={[{"text":"clear","href":"clear"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun clear(buffer: Int)"]} links={[{"text":"clear","href":"clear"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="clearColor"
     tokenType="fun"
     groupType="FUNCTION"
     url="clear-color"
     description="Viewport"
-    codeBlocks={[{code: "actual fun clearColor(r: Float, g: Float, b: Float, a: Float)"}, {code: "actual fun clearColor(r: Float, g: Float, b: Float, a: Float)"}, {code: "expect fun clearColor(r: Float, g: Float, b: Float, a: Float)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun clearColor(r: Float, g: Float, b: Float, a: Float)"]} links={[{"text":"clearColor","href":"clear-color"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun clearColor(r: Float, g: Float, b: Float, a: Float)"]} links={[{"text":"clearColor","href":"clear-color"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="compileShader"
     tokenType="fun"
     groupType="FUNCTION"
     url="compile-shader"
     description=""
-    codeBlocks={[{code: "actual fun compileShader(shader: GLWrap)"}, {code: "actual fun compileShader(shader: GLWrap)"}, {code: "expect fun compileShader(shader: GLWrap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun compileShader(shader: GLWrap)"]} links={[{"text":"compileShader","href":"compile-shader"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun compileShader(shader: GLWrap)"]} links={[{"text":"compileShader","href":"compile-shader"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createBuffer"
     tokenType="fun"
     groupType="FUNCTION"
     url="create-buffer"
     description="VBO"
-    codeBlocks={[{code: "actual fun createBuffer(): GLWrap"}, {code: "actual fun createBuffer(): GLWrap"}, {code: "expect fun createBuffer(): GLWrap"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun createBuffer(): GLWrap"]} links={[{"text":"createBuffer","href":"create-buffer"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun createBuffer(): GLWrap"]} links={[{"text":"createBuffer","href":"create-buffer"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createProgram"
     tokenType="fun"
     groupType="FUNCTION"
     url="create-program"
     description="ShaderProgram"
-    codeBlocks={[{code: "actual fun createProgram(): GLWrap"}, {code: "actual fun createProgram(): GLWrap"}, {code: "expect fun createProgram(): GLWrap"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun createProgram(): GLWrap"]} links={[{"text":"createProgram","href":"create-program"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun createProgram(): GLWrap"]} links={[{"text":"createProgram","href":"create-program"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createShader"
     tokenType="fun"
     groupType="FUNCTION"
     url="create-shader"
     description=""
-    codeBlocks={[{code: "actual fun createShader(shaderType: Int): GLWrap"}, {code: "actual fun createShader(shaderType: Int): GLWrap"}, {code: "expect fun createShader(shaderType: Int): GLWrap"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun createShader(shaderType: Int): GLWrap"]} links={[{"text":"createShader","href":"create-shader"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun createShader(shaderType: Int): GLWrap"]} links={[{"text":"createShader","href":"create-shader"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createVertexArray"
     tokenType="fun"
     groupType="FUNCTION"
     url="create-vertex-array"
     description="VAO"
-    codeBlocks={[{code: "actual fun createVertexArray(): GLWrap"}, {code: "actual fun createVertexArray(): GLWrap"}, {code: "expect fun createVertexArray(): GLWrap"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun createVertexArray(): GLWrap"]} links={[{"text":"createVertexArray","href":"create-vertex-array"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun createVertexArray(): GLWrap"]} links={[{"text":"createVertexArray","href":"create-vertex-array"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="cullFace"
     tokenType="fun"
     groupType="FUNCTION"
     url="cull-face"
     description=""
-    codeBlocks={[{code: "actual fun cullFace(mode: Int)"}, {code: "actual fun cullFace(mode: Int)"}, {code: "expect fun cullFace(mode: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun cullFace(mode: Int)"]} links={[{"text":"cullFace","href":"cull-face"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun cullFace(mode: Int)"]} links={[{"text":"cullFace","href":"cull-face"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="deleteShader"
     tokenType="fun"
     groupType="FUNCTION"
     url="delete-shader"
     description=""
-    codeBlocks={[{code: "actual fun deleteShader(shader: GLWrap)"}, {code: "actual fun deleteShader(shader: GLWrap)"}, {code: "expect fun deleteShader(shader: GLWrap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun deleteShader(shader: GLWrap)"]} links={[{"text":"deleteShader","href":"delete-shader"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun deleteShader(shader: GLWrap)"]} links={[{"text":"deleteShader","href":"delete-shader"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="drawArrays"
     tokenType="fun"
     groupType="FUNCTION"
     url="draw-arrays"
     description="Draw"
-    codeBlocks={[{code: "actual fun drawArrays(mode: Int, first: Int, count: Int)"}, {code: "actual fun drawArrays(mode: Int, first: Int, count: Int)"}, {code: "expect fun drawArrays(mode: Int, first: Int, count: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun drawArrays(mode: Int, first: Int, count: Int)"]} links={[{"text":"drawArrays","href":"draw-arrays"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun drawArrays(mode: Int, first: Int, count: Int)"]} links={[{"text":"drawArrays","href":"draw-arrays"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="drawElements"
     tokenType="fun"
     groupType="FUNCTION"
     url="draw-elements"
     description=""
-    codeBlocks={[{code: "actual fun drawElements(mode: Int, count: Int, type: Int, offset: Int)"}, {code: "actual fun drawElements(mode: Int, count: Int, type: Int, offset: Int)"}, {code: "expect fun drawElements(mode: Int, count: Int, type: Int, offset: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun drawElements(mode: Int, count: Int, type: Int, offset: Int)"]} links={[{"text":"drawElements","href":"draw-elements"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun drawElements(mode: Int, count: Int, type: Int, offset: Int)"]} links={[{"text":"drawElements","href":"draw-elements"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="enable"
     tokenType="fun"
     groupType="FUNCTION"
     url="enable"
     description="Commons"
-    codeBlocks={[{code: "actual fun enable(feat: Int)"}, {code: "actual fun enable(feat: Int)"}, {code: "expect fun enable(feat: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun enable(feat: Int)"]} links={[{"text":"enable","href":"enable"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun enable(feat: Int)"]} links={[{"text":"enable","href":"enable"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="enableVertexAttrib"
     tokenType="fun"
     groupType="FUNCTION"
     url="enable-vertex-attrib"
     description=""
-    codeBlocks={[{code: "actual fun enableVertexAttrib(index: Int)"}, {code: "actual fun enableVertexAttrib(index: Int)"}, {code: "expect fun enableVertexAttrib(index: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun enableVertexAttrib(index: Int)"]} links={[{"text":"enableVertexAttrib","href":"enable-vertex-attrib"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun enableVertexAttrib(index: Int)"]} links={[{"text":"enableVertexAttrib","href":"enable-vertex-attrib"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="enableVertexAttribArray"
     tokenType="fun"
     groupType="FUNCTION"
     url="enable-vertex-attrib-array"
     description=""
-    codeBlocks={[{code: "actual fun enableVertexAttribArray(index: Int)"}, {code: "actual fun enableVertexAttribArray(index: Int)"}, {code: "expect fun enableVertexAttribArray(index: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun enableVertexAttribArray(index: Int)"]} links={[{"text":"enableVertexAttribArray","href":"enable-vertex-attrib-array"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun enableVertexAttribArray(index: Int)"]} links={[{"text":"enableVertexAttribArray","href":"enable-vertex-attrib-array"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="genTexture"
     tokenType="fun"
     groupType="FUNCTION"
     url="gen-texture"
-    description="TexturesTexturesTextures"
-    codeBlocks={[{code: "actual fun genTexture(): GLWrap"}, {code: "actual fun genTexture(): GLWrap"}, {code: "expect fun genTexture(): GLWrap"}]}
-  />
+    description="TexturesTextures"
+  >
+    <CodeBlockComponent platform="android" code={["actual fun genTexture(): GLWrap"]} links={[{"text":"genTexture","href":"gen-texture"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun genTexture(): GLWrap"]} links={[{"text":"genTexture","href":"gen-texture"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getAttribLocation"
     tokenType="fun"
     groupType="FUNCTION"
     url="get-attrib-location"
     description=""
-    codeBlocks={[{code: "actual fun getAttribLocation(program: GLWrap, attrName: String): Int"}, {code: "actual fun getAttribLocation(program: GLWrap, attrName: String): Int"}, {code: "expect fun getAttribLocation(program: GLWrap, attrName: String): Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun getAttribLocation(program: GLWrap, attrName: String): Int"]} links={[{"text":"getAttribLocation","href":"get-attrib-location"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun getAttribLocation(program: GLWrap, attrName: String): Int"]} links={[{"text":"getAttribLocation","href":"get-attrib-location"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getError"
     tokenType="fun"
     groupType="FUNCTION"
     url="get-error"
     description=""
-    codeBlocks={[{code: "actual fun getError(): Int"}, {code: "actual fun getError(): Int"}, {code: "expect fun getError(): Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun getError(): Int"]} links={[{"text":"getError","href":"get-error"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun getError(): Int"]} links={[{"text":"getError","href":"get-error"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getShaderInfoLog"
     tokenType="fun"
     groupType="FUNCTION"
     url="get-shader-info-log"
     description=""
-    codeBlocks={[{code: "actual fun getShaderInfoLog(shader: GLWrap): String"}, {code: "actual fun getShaderInfoLog(shader: GLWrap): String"}, {code: "expect fun getShaderInfoLog(shader: GLWrap): String"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun getShaderInfoLog(shader: GLWrap): String"]} links={[{"text":"getShaderInfoLog","href":"get-shader-info-log"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun getShaderInfoLog(shader: GLWrap): String"]} links={[{"text":"getShaderInfoLog","href":"get-shader-info-log"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getUniformBlockIndex"
     tokenType="fun"
     groupType="FUNCTION"
     url="get-uniform-block-index"
     description=""
-    codeBlocks={[{code: "actual fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"}, {code: "actual fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"}, {code: "expect fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"]} links={[{"text":"getUniformBlockIndex","href":"get-uniform-block-index"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun getUniformBlockIndex(program: GLWrap, uniformBlockName: String): GLWrap"]} links={[{"text":"getUniformBlockIndex","href":"get-uniform-block-index"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getUniformLocation"
     tokenType="fun"
     groupType="FUNCTION"
     url="get-uniform-location"
     description="UNIFORMS"
-    codeBlocks={[{code: "actual fun getUniformLocation(program: GLWrap, uniformName: String): GLWrap"}, {code: "actual fun getUniformLocation(program: GLWrap, uniformName: String): GLWrap"}, {code: "expect fun getUniformLocation(program: GLWrap, uniformName: String): GLWrap"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun getUniformLocation(program: GLWrap, uniformName: String): GLWrap"]} links={[{"text":"getUniformLocation","href":"get-uniform-location"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun getUniformLocation(program: GLWrap, uniformName: String): GLWrap"]} links={[{"text":"getUniformLocation","href":"get-uniform-location"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initWithSurfaceView"
     tokenType="fun"
     groupType="FUNCTION"
     url="init-with-surface-view"
     description=""
-    codeBlocks={[{code: "actual open override fun initWithSurfaceView(surfaceView: ZSurfaceView)"}, {code: "actual open override fun initWithSurfaceView(surfaceView: ZSurfaceView)"}, {code: "expect open override fun initWithSurfaceView(surfaceView: ZSurfaceView)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual open override fun initWithSurfaceView(surfaceView: ZSurfaceView)"]} links={[{"text":"initWithSurfaceView","href":"init-with-surface-view"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect open override fun initWithSurfaceView(surfaceView: ZSurfaceView)"]} links={[{"text":"initWithSurfaceView","href":"init-with-surface-view"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="linkProgram"
     tokenType="fun"
     groupType="FUNCTION"
     url="link-program"
     description=""
-    codeBlocks={[{code: "actual fun linkProgram(program: GLWrap)"}, {code: "actual fun linkProgram(program: GLWrap)"}, {code: "expect fun linkProgram(program: GLWrap)"}]}
-  />
-  <DocumentationItemComponent
-    name="setContext"
-    tokenType="fun"
-    groupType="FUNCTION"
-    url="set-context"
-    description=""
-    codeBlocks={[{code: "fun setContext(canvas: HTMLCanvasElement)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun linkProgram(program: GLWrap)"]} links={[{"text":"linkProgram","href":"link-program"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun linkProgram(program: GLWrap)"]} links={[{"text":"linkProgram","href":"link-program"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="shaderSource"
     tokenType="fun"
     groupType="FUNCTION"
     url="shader-source"
     description=""
-    codeBlocks={[{code: "actual fun shaderSource(shader: GLWrap, source: String)"}, {code: "actual fun shaderSource(shader: GLWrap, source: String)"}, {code: "expect fun shaderSource(shader: GLWrap, source: String)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun shaderSource(shader: GLWrap, source: String)"]} links={[{"text":"shaderSource","href":"shader-source"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun shaderSource(shader: GLWrap, source: String)"]} links={[{"text":"shaderSource","href":"shader-source"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="texImage2D"
     tokenType="fun"
     groupType="FUNCTION"
     url="tex-image2-d"
     description=""
-    codeBlocks={[{code: "actual fun texImage2D(bitmap: ZBitmap)"}, {code: "actual fun texImage2D(bitmap: ZBitmap)"}, {code: "expect fun texImage2D(bitmap: ZBitmap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun texImage2D(bitmap: ZBitmap)"]} links={[{"text":"texImage2D","href":"tex-image2-d"},{"text":"ZBitmap","href":"../../zernikalos.components.material/-z-bitmap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun texImage2D(bitmap: ZBitmap)"]} links={[{"text":"texImage2D","href":"tex-image2-d"},{"text":"ZBitmap","href":"../../zernikalos.components.material/-z-bitmap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="texParameterMag"
     tokenType="fun"
     groupType="FUNCTION"
     url="tex-parameter-mag"
     description=""
-    codeBlocks={[{code: "actual fun texParameterMag()"}, {code: "actual fun texParameterMag()"}, {code: "expect fun texParameterMag()"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun texParameterMag()"]} links={[{"text":"texParameterMag","href":"tex-parameter-mag"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun texParameterMag()"]} links={[{"text":"texParameterMag","href":"tex-parameter-mag"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="texParameterMin"
     tokenType="fun"
     groupType="FUNCTION"
     url="tex-parameter-min"
     description=""
-    codeBlocks={[{code: "actual fun texParameterMin()"}, {code: "actual fun texParameterMin()"}, {code: "expect fun texParameterMin()"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun texParameterMin()"]} links={[{"text":"texParameterMin","href":"tex-parameter-min"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun texParameterMin()"]} links={[{"text":"texParameterMin","href":"tex-parameter-min"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="uniformBlockBinding"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="uniform-block-binding"
+    description=""
+  >
+    <CodeBlockComponent platform="android" code={["actual fun uniformBlockBinding(program: GLWrap, uniformBlockIndex: GLWrap, uniformBlockBinding: Int)"]} links={[{"text":"uniformBlockBinding","href":"uniform-block-binding"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun uniformBlockBinding(program: GLWrap, uniformBlockIndex: GLWrap, uniformBlockBinding: Int)"]} links={[{"text":"uniformBlockBinding","href":"uniform-block-binding"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="uniformMatrix4fv"
     tokenType="fun"
     groupType="FUNCTION"
     url="uniform-matrix4fv"
     description=""
-    codeBlocks={[{code: "actual fun uniformMatrix4fv(uniform: GLWrap, count: Int, transpose: Boolean, values: FloatArray)"}, {code: "actual fun uniformMatrix4fv(uniform: GLWrap, count: Int, transpose: Boolean, values: FloatArray)"}, {code: "expect fun uniformMatrix4fv(uniform: GLWrap, count: Int, transpose: Boolean, values: FloatArray)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun uniformMatrix4fv(uniform: GLWrap, count: Int, transpose: Boolean, values: FloatArray)"]} links={[{"text":"uniformMatrix4fv","href":"uniform-matrix4fv"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"FloatArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun uniformMatrix4fv(uniform: GLWrap, count: Int, transpose: Boolean, values: FloatArray)"]} links={[{"text":"uniformMatrix4fv","href":"uniform-matrix4fv"},{"text":"GLWrap","href":"../-g-l-wrap/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"FloatArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="useProgram"
     tokenType="fun"
     groupType="FUNCTION"
     url="use-program"
     description=""
-    codeBlocks={[{code: "actual fun useProgram(program: GLWrap)"}, {code: "actual fun useProgram(program: GLWrap)"}, {code: "expect fun useProgram(program: GLWrap)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun useProgram(program: GLWrap)"]} links={[{"text":"useProgram","href":"use-program"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun useProgram(program: GLWrap)"]} links={[{"text":"useProgram","href":"use-program"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="vertexAttribPointer"
     tokenType="fun"
     groupType="FUNCTION"
     url="vertex-attrib-pointer"
     description=""
-    codeBlocks={[{code: "actual fun vertexAttribPointer(index: Int, size: Int, type: Int, normalized: Boolean, stride: Int, offset: Int)"}, {code: "actual fun vertexAttribPointer(index: Int, size: Int, type: Int, normalized: Boolean, stride: Int, offset: Int)"}, {code: "expect fun vertexAttribPointer(index: Int, size: Int, type: Int, normalized: Boolean, stride: Int, offset: Int)"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual fun vertexAttribPointer(index: Int, size: Int, type: Int, normalized: Boolean, stride: Int, offset: Int)"]} links={[{"text":"vertexAttribPointer","href":"vertex-attrib-pointer"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun vertexAttribPointer(index: Int, size: Int, type: Int, normalized: Boolean, stride: Int, offset: Int)"]} links={[{"text":"vertexAttribPointer","href":"vertex-attrib-pointer"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="viewport"
     tokenType="fun"
     groupType="FUNCTION"
     url="viewport"
     description=""
-    codeBlocks={[{code: "actual fun viewport(top: Int, left: Int, width: Int, height: Int)"}, {code: "actual fun viewport(top: Int, left: Int, width: Int, height: Int)"}, {code: "expect fun viewport(top: Int, left: Int, width: Int, height: Int)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun viewport(top: Int, left: Int, width: Int, height: Int)"]} links={[{"text":"viewport","href":"viewport"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun viewport(top: Int, left: Int, width: Int, height: Int)"]} links={[{"text":"viewport","href":"viewport"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

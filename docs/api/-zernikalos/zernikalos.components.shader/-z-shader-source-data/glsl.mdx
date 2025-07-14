@@ -3,7 +3,7 @@ slug: "glsl"
 title: "glsl"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"glsl","url":"#glsl"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="glsl"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var glsl: ZGlSLShaderSource"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var glsl: ZGlSLShaderSource"]} links={[{"text":"glsl","href":"glsl"},{"text":"ZGlSLShaderSource","href":"../-z-gl-s-l-shader-source/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderSource.kt#L57"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderSource.kt#L57" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

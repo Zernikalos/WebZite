@@ -3,7 +3,7 @@ slug: "index"
 title: "ZComponentData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,32 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZComponentData","url":"#zcomponentdata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZComponentData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-component-data"
     description=""
-    codeBlocks={[{code: "constructor()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "@Transient open override val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["@Transient","open override val refId: String"]} links={[{"text":"refId","href":"ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toString"
     tokenType="fun"
     groupType="FUNCTION"
     url="to-string"
     description=""
-    codeBlocks={[{code: "abstract override fun toString(): String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract override fun toString(): String"]} links={[{"text":"toString","href":"to-string"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

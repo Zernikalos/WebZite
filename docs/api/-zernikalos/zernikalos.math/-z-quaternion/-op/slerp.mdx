@@ -3,7 +3,7 @@ slug: "slerp"
 title: "slerp"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"slerp","url":"#slerp"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="slerp"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun slerp(result: ZQuaternion, t: Float, q1: ZQuaternion, q2: ZQuaternion)"}, {code: "fun slerp(t: Float, q1: ZQuaternion, q2: ZQuaternion): ZQuaternion"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun slerp(result: ZQuaternion, t: Float, q1: ZQuaternion, q2: ZQuaternion)fun slerp(t: Float, q1: ZQuaternion, q2: ZQuaternion): ZQuaternion(source)"]} links={[{"text":"slerp","href":"slerp"},{"text":"ZQuaternion","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZQuaternion.kt#L409"},{"text":"slerp","href":"slerp"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"ZQuaternion","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZQuaternion.kt#L441"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZQuaternion.kt#L409" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

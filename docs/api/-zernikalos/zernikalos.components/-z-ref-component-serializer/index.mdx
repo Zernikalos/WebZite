@@ -3,7 +3,7 @@ slug: "index"
 title: "ZRefComponentSerializer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,45 +13,50 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZRefComponentSerializer","url":"#zrefcomponentserializer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZRefComponentSerializer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-ref-component-serializer"
     description=""
-    codeBlocks={[{code: "constructor(loaderContext: ZLoaderContext)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(loaderContext: ZLoaderContext)"]} links={[{"text":"ZLoaderContext","href":"../../zernikalos.loader/-z-loader-context/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="descriptor"
     tokenType="val"
     groupType="PROPERTY"
     url="descriptor"
     description=""
-    codeBlocks={[{code: "open override val descriptor: SerialDescriptor"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val descriptor: SerialDescriptor"]} links={[{"text":"descriptor","href":"descriptor"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="deserializationStrategy"
     tokenType="val"
     groupType="PROPERTY"
     url="deserialization-strategy"
     description=""
-    codeBlocks={[{code: "abstract val deserializationStrategy: DeserializationStrategy<K>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract val deserializationStrategy: DeserializationStrategy<K>"]} links={[{"text":"deserializationStrategy","href":"deserialization-strategy"},{"text":"K","href":"index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="deserialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="deserialize"
     description=""
-    codeBlocks={[{code: "open override fun deserialize(decoder: Decoder): T"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override fun deserialize(decoder: Decoder): T"]} links={[{"text":"deserialize","href":"deserialize"},{"text":"T","href":"index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="serialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="serialize"
     description=""
-    codeBlocks={[{code: "open override fun serialize(encoder: Encoder, value: T)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun serialize(encoder: Encoder, value: T)"]} links={[{"text":"serialize","href":"serialize"},{"text":"T","href":"index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -1,0 +1,80 @@
+---
+slug: "index"
+title: "GPURenderPassEncoder"
+hide_title: true
+---
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
+
+
+<DocHeader
+  title="GPURenderPassEncoder"
+  namespace="Zernikalos.zernikalos.context.webgpu"
+  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context.webgpu","url":"/docs/api/-zernikalos.zernikalos.context.webgpu"}]}
+  typeInfo={[{"type":"actual","keyword":"package","name":"GPURenderPassEncoder","url":"#gpurenderpassencoder"}]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="draw"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="draw"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["abstract fun draw(vertexCount: Int, instanceCount: Int, firstVertex: Int, firstInstance: Int)"]} links={[{"text":"draw","href":"draw"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="drawIndexed"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="draw-indexed"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["abstract fun drawIndexed(indexCount: Int)"]} links={[{"text":"drawIndexed","href":"draw-indexed"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="end"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="end"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["abstract fun end()"]} links={[{"text":"end","href":"end"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="setBindGroup"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-bind-group"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["abstract fun setBindGroup(slot: Int, bindGroup: GPUBindGroup)"]} links={[{"text":"setBindGroup","href":"set-bind-group"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"GPUBindGroup","href":"../-g-p-u-bind-group/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="setIndexBuffer"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-index-buffer"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["abstract fun setIndexBuffer(buffer: GPUBuffer, indexFormat: String)"]} links={[{"text":"setIndexBuffer","href":"set-index-buffer"},{"text":"GPUBuffer","href":"../-g-p-u-buffer/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="setPipeline"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-pipeline"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["abstract fun setPipeline(pipeline: GPURenderPipeline)"]} links={[{"text":"setPipeline","href":"set-pipeline"},{"text":"GPURenderPipeline","href":"../-g-p-u-render-pipeline/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="setVertexBuffer"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-vertex-buffer"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["abstract fun setVertexBuffer(slot: Int, buffer: GPUBuffer)"]} links={[{"text":"setVertexBuffer","href":"set-vertex-buffer"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"GPUBuffer","href":"../-g-p-u-buffer/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

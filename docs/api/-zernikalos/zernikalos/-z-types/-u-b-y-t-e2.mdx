@@ -3,7 +3,7 @@ slug: "-u-b-y-t-e2"
 title: "UBYTE2"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"UBYTE2","url":"#ubyte2"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="UBYTE2"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val UBYTE2: ZDataType"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val UBYTE2: ZDataType"]} links={[{"text":"UBYTE2","href":"-u-b-y-t-e2"},{"text":"ZDataType","href":"../-z-data-type/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L154"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L154" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

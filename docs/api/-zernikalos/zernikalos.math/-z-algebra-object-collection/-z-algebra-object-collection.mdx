@@ -3,7 +3,7 @@ slug: "-z-algebra-object-collection"
 title: "ZAlgebraObjectCollection"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZAlgebraObjectCollection","url":"#zalgebraobjectcollection"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="dataTypecount"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "constructor(byteDataSize: Int)"}, {code: "constructor(dataType: ZDataType, count: Int)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["constructor(byteDataSize: Int)constructor(dataType: ZDataType, count: Int)(source)"]} links={[{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZAlgebraObjectCollection.kt#L29"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZAlgebraObjectCollection.kt#L52"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZAlgebraObjectCollection.kt#L29" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "renderer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,26 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.renderer","url":"#zernikalos.renderer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZRenderer"
     tokenType="class"
     groupType="TYPE"
     url="-z-renderer/index"
     description=""
-    codeBlocks={[{code: "expect class ZRenderer(ctx: ZContext): ZRendererBase"}, {code: "actual class ZRenderer(ctx: ZContext): ZRendererBase"}, {code: "actual class ZRenderer(ctx: ZContext): ZRendererBase"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect class ZRenderer(ctx: ZContext) : ZRendererBase"]} links={[{"text":"ZRenderer","href":"-z-renderer/index"},{"text":"ZContext","href":"../zernikalos.context/-z-context/index"},{"text":"ZRendererBase","href":"-z-renderer-base/index"}]} />
+    <CodeBlockComponent platform="metal" code={["actual class ZRenderer(ctx: ZContext) : ZRendererBase"]} links={[{"text":"ZRenderer","href":"-z-renderer/index"},{"text":"ZContext","href":"../zernikalos.context/-z-context/index"},{"text":"ZRendererBase","href":"-z-renderer-base/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual class ZRenderer(ctx: ZContext) : ZRendererBase"]} links={[{"text":"ZRenderer","href":"-z-renderer/index"},{"text":"ZContext","href":"../zernikalos.context/-z-context/index"},{"text":"ZRendererBase","href":"-z-renderer-base/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual class ZRenderer(ctx: ZContext) : ZRendererBase"]} links={[{"text":"ZRenderer","href":"-z-renderer/index"},{"text":"ZContext","href":"../zernikalos.context/-z-context/index"},{"text":"ZRendererBase","href":"-z-renderer-base/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZRendererBase"
     tokenType="class"
     groupType="TYPE"
     url="-z-renderer-base/index"
     description=""
-    codeBlocks={[{code: "abstract class ZRendererBase(ctx: ZContext): ZLoggable, ZResizable"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract class ZRendererBase(ctx: ZContext) : ZLoggable, ZResizable"]} links={[{"text":"ZRendererBase","href":"-z-renderer-base/index"},{"text":"ZContext","href":"../zernikalos.context/-z-context/index"},{"text":"ZLoggable","href":"../zernikalos.logger/-z-loggable/index"},{"text":"ZResizable","href":"../zernikalos.components/-z-resizable/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

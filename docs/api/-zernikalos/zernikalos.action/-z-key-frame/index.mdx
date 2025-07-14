@@ -3,7 +3,7 @@ slug: "index"
 title: "ZKeyFrame"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,61 +13,68 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZKeyFrame","url":"#zkeyframe"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZKeyFrame"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-key-frame"
     description=""
-    codeBlocks={[{code: "constructor(time: Float)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(time: Float)"]} links={[{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="Companion"
-    tokenType=""
-    groupType="NONE"
+    tokenType="object"
+    groupType="OBJECT"
     url="-companion/index"
     description=""
-    codeBlocks={[{code: "object Companion"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["object Companion"]} links={[{"text":"Companion","href":"-companion/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="pose"
     tokenType="val"
     groupType="PROPERTY"
     url="pose"
     description=""
-    codeBlocks={[{code: "val pose: Map<String, ZBoneFrameTransform>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val pose: Map<String, ZBoneFrameTransform>"]} links={[{"text":"pose","href":"pose"},{"text":"Map","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZBoneFrameTransform","href":"../-z-bone-frame-transform/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="time"
     tokenType="var"
     groupType="PROPERTY"
     url="time"
     description=""
-    codeBlocks={[{code: "var time: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var time: Float"]} links={[{"text":"time","href":"time"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getBoneTransform"
     tokenType="fun"
     groupType="FUNCTION"
     url="get-bone-transform"
     description=""
-    codeBlocks={[{code: "fun getBoneTransform(boneName: String): ZBoneFrameTransform?"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun getBoneTransform(boneId: String): ZBoneFrameTransform?"]} links={[{"text":"getBoneTransform","href":"get-bone-transform"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZBoneFrameTransform","href":"../-z-bone-frame-transform/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="hasBone"
     tokenType="fun"
     groupType="FUNCTION"
     url="has-bone"
     description=""
-    codeBlocks={[{code: "fun hasBone(boneName: String): Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun hasBone(boneName: String): Boolean"]} links={[{"text":"hasBone","href":"has-bone"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="setBoneTransform"
     tokenType="fun"
     groupType="FUNCTION"
     url="set-bone-transform"
     description=""
-    codeBlocks={[{code: "fun setBoneTransform(boneName: String, transform: ZBoneFrameTransform)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun setBoneTransform(boneId: String, transform: ZBoneFrameTransform)"]} links={[{"text":"setBoneTransform","href":"set-bone-transform"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZBoneFrameTransform","href":"../-z-bone-frame-transform/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

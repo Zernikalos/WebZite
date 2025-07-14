@@ -3,7 +3,7 @@ slug: "index"
 title: "components.shader"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,317 +13,461 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.components.shader","url":"#zernikalos.components.shader"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="UNIFORM_IDS"
+    tokenType="object"
+    groupType="OBJECT"
+    url="-u-n-i-f-o-r-m_-i-d-s/index"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["object UNIFORM_IDS"]} links={[{"text":"UNIFORM_IDS","href":"-u-n-i-f-o-r-m_-i-d-s/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="UNIFORM_NAMES"
-    tokenType=""
-    groupType="NONE"
+    tokenType="object"
+    groupType="OBJECT"
     url="-u-n-i-f-o-r-m_-n-a-m-e-s/index"
     description=""
-    codeBlocks={[{code: "object UNIFORM_NAMES"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["object UNIFORM_NAMES"]} links={[{"text":"UNIFORM_NAMES","href":"-u-n-i-f-o-r-m_-n-a-m-e-s/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttribute"
     tokenType="class"
     groupType="TYPE"
     url="-z-attribute/index"
     description=""
-    codeBlocks={[{code: "class ZAttribute: ZRenderizableComponent<ZAttributeRenderer>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["class ZAttribute : ZRenderizableComponent<ZAttributeRenderer>"]} links={[{"text":"ZAttribute","href":"-z-attribute/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZAttributeRenderer","href":"-z-attribute-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttributeData"
     tokenType="data class"
     groupType="TYPE"
     url="-z-attribute-data/index"
     description=""
-    codeBlocks={[{code: "data class ZAttributeData(var id: Int = -1, var attributeName: String = ''): ZComponentData"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["data class ZAttributeData(var id: Int = -1, var attributeName: String = \"\") : ZComponentData"]} links={[{"text":"ZAttributeData","href":"-z-attribute-data/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttributeId"
     tokenType="enum"
     groupType="TYPE"
     url="-z-attribute-id/index"
     description=""
-    codeBlocks={[{code: "enum ZAttributeId: Enum<ZAttributeId>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["enum ZAttributeId : Enum<ZAttributeId>"]} links={[{"text":"ZAttributeId","href":"-z-attribute-id/index"},{"text":"Enum","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html"},{"text":"ZAttributeId","href":"-z-attribute-id/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttributeRenderer"
     tokenType="class"
     groupType="TYPE"
     url="-z-attribute-renderer/index"
     description=""
-    codeBlocks={[{code: "expect class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData): ZComponentRenderer"}, {code: "actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData): ZComponentRenderer"}, {code: "actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData): ZComponentRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData) : ZComponentRenderer"]} links={[{"text":"ZAttributeRenderer","href":"-z-attribute-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZAttributeData","href":"-z-attribute-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="metal" code={["actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData) : ZComponentRenderer"]} links={[{"text":"ZAttributeRenderer","href":"-z-attribute-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZAttributeData","href":"-z-attribute-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData) : ZComponentRenderer"]} links={[{"text":"ZAttributeRenderer","href":"-z-attribute-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZAttributeData","href":"-z-attribute-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData) : ZComponentRenderer"]} links={[{"text":"ZAttributeRenderer","href":"-z-attribute-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZAttributeData","href":"-z-attribute-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBaseUniform"
     tokenType="interface"
     groupType="TYPE"
     url="-z-base-uniform/index"
     description=""
-    codeBlocks={[{code: "interface ZBaseUniform"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["interface ZBaseUniform"]} links={[{"text":"ZBaseUniform","href":"-z-base-uniform/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZGlShaderType"
     tokenType="enum"
     groupType="TYPE"
     url="-z-gl-shader-type/index"
     description=""
-    codeBlocks={[{code: "enum ZGlShaderType: Enum<ZGlShaderType>"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["enum ZGlShaderType : Enum<ZGlShaderType>"]} links={[{"text":"ZGlShaderType","href":"-z-gl-shader-type/index"},{"text":"Enum","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html"},{"text":"ZGlShaderType","href":"-z-gl-shader-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZGlSLShaderSource"
     tokenType="data class"
     groupType="TYPE"
     url="-z-gl-s-l-shader-source/index"
     description=""
-    codeBlocks={[{code: "data class ZGlSLShaderSource(var vertexShaderSource: String = '', var fragmentShaderSource: String = '')"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["data class ZGlSLShaderSource(var vertexShaderSource: String = \"\", var fragmentShaderSource: String = \"\")"]} links={[{"text":"ZGlSLShaderSource","href":"-z-gl-s-l-shader-source/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZMetalShaderSource"
     tokenType="data class"
     groupType="TYPE"
     url="-z-metal-shader-source/index"
     description=""
-    codeBlocks={[{code: "data class ZMetalShaderSource(var shaderSource: String = '')"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["data class ZMetalShaderSource(var shaderSource: String = \"\")"]} links={[{"text":"ZMetalShaderSource","href":"-z-metal-shader-source/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZProgram"
     tokenType="class"
     groupType="TYPE"
     url="-z-program/index"
     description=""
-    codeBlocks={[{code: "class ZProgram: ZRenderizableComponent<ZProgramRenderer>, ZBindeable"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["class ZProgram : ZRenderizableComponent<ZProgramRenderer> , ZBindeable"]} links={[{"text":"ZProgram","href":"-z-program/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZProgramRenderer","href":"-z-program-renderer/index"},{"text":"ZBindeable","href":"../zernikalos.components/-z-bindeable/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZProgramRenderer"
     tokenType="class"
     groupType="TYPE"
     url="-z-program-renderer/index"
     description=""
-    codeBlocks={[{code: "class ZProgramRenderer(ctx: ZRenderingContext): ZComponentRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="ogl" code={["class ZProgramRenderer(ctx: ZRenderingContext) : ZComponentRenderer"]} links={[{"text":"ZProgramRenderer","href":"-z-program-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZShader"
     tokenType="class"
     groupType="TYPE"
     url="-z-shader/index"
     description=""
-    codeBlocks={[{code: "class ZShader: ZRenderizableComponent<ZShaderRenderer>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["class ZShader : ZRenderizableComponent<ZShaderRenderer>"]} links={[{"text":"ZShader","href":"-z-shader/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZShaderRenderer","href":"-z-shader-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZShaderData"
     tokenType="data class"
     groupType="TYPE"
     url="-z-shader-data/index"
     description=""
-    codeBlocks={[{code: "data class ZShaderData(var type: ZShaderType = ZShaderType.VERTEX_SHADER): ZComponentData"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["data class ZShaderData(var type: ZShaderType = ZShaderType.VERTEX_SHADER) : ZComponentData"]} links={[{"text":"ZShaderData","href":"-z-shader-data/index"},{"text":"ZShaderType","href":"-z-shader-type/index"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZShaderProgram"
     tokenType="class"
     groupType="TYPE"
     url="-z-shader-program/index"
     description=""
-    codeBlocks={[{code: "class ZShaderProgram: ZRenderizableComponent<ZShaderProgramRenderer>, ZBindeable"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["class ZShaderProgram : ZRenderizableComponent<ZShaderProgramRenderer> , ZBindeable"]} links={[{"text":"ZShaderProgram","href":"-z-shader-program/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZShaderProgramRenderer","href":"-z-shader-program-renderer/index"},{"text":"ZBindeable","href":"../zernikalos.components/-z-bindeable/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZShaderProgramData"
     tokenType="data class"
     groupType="TYPE"
     url="-z-shader-program-data/index"
     description=""
-    codeBlocks={[{code: "data class ZShaderProgramData(var vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), var fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), var shaderSource: ZShaderSource = ZShaderSource(), val attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), var uniforms: ZUniformCollection = ZUniformCollection()): ZComponentData"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["data class ZShaderProgramData(var vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), var fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), var shaderSource: ZShaderSource = ZShaderSource(), val attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), var uniforms: ZUniformCollection = ZUniformCollection()) : ZComponentData"]} links={[{"text":"ZShaderProgramData","href":"-z-shader-program-data/index"},{"text":"ZShader","href":"-z-shader/index"},{"text":"ZShader","href":"-z-shader/index"},{"text":"ZShaderSource","href":"-z-shader-source/index"},{"text":"LinkedHashMap","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-linked-hash-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZAttribute","href":"-z-attribute/index"},{"text":"ZUniformCollection","href":"-z-uniform-collection/index"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZShaderProgramRenderer"
     tokenType="class"
     groupType="TYPE"
     url="-z-shader-program-renderer/index"
     description=""
-    codeBlocks={[{code: "expect class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData): ZComponentRenderer"}, {code: "actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData): ZComponentRenderer"}, {code: "actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData): ZComponentRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData) : ZComponentRenderer"]} links={[{"text":"ZShaderProgramRenderer","href":"-z-shader-program-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderProgramData","href":"-z-shader-program-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="metal" code={["actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData) : ZComponentRenderer"]} links={[{"text":"ZShaderProgramRenderer","href":"-z-shader-program-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderProgramData","href":"-z-shader-program-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData) : ZComponentRenderer"]} links={[{"text":"ZShaderProgramRenderer","href":"-z-shader-program-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderProgramData","href":"-z-shader-program-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData) : ZComponentRenderer"]} links={[{"text":"ZShaderProgramRenderer","href":"-z-shader-program-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderProgramData","href":"-z-shader-program-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZShaderRenderer"
     tokenType="class"
     groupType="TYPE"
     url="-z-shader-renderer/index"
     description=""
-    codeBlocks={[{code: "expect class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData): ZComponentRenderer"}, {code: "actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData): ZComponentRenderer"}, {code: "actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData): ZComponentRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData) : ZComponentRenderer"]} links={[{"text":"ZShaderRenderer","href":"-z-shader-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderData","href":"-z-shader-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="metal" code={["actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData) : ZComponentRenderer"]} links={[{"text":"ZShaderRenderer","href":"-z-shader-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderData","href":"-z-shader-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData) : ZComponentRenderer"]} links={[{"text":"ZShaderRenderer","href":"-z-shader-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderData","href":"-z-shader-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData) : ZComponentRenderer"]} links={[{"text":"ZShaderRenderer","href":"-z-shader-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZShaderData","href":"-z-shader-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZShaderSource"
     tokenType="class"
     groupType="TYPE"
     url="-z-shader-source/index"
     description=""
-    codeBlocks={[{code: "class ZShaderSource: ZSerializableComponent<ZShaderSourceData>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["class ZShaderSource : ZSerializableComponent<ZShaderSourceData>"]} links={[{"text":"ZShaderSource","href":"-z-shader-source/index"},{"text":"ZSerializableComponent","href":"../zernikalos.components/-z-serializable-component/index"},{"text":"ZShaderSourceData","href":"-z-shader-source-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZShaderSourceData"
     tokenType="data class"
     groupType="TYPE"
     url="-z-shader-source-data/index"
     description=""
-    codeBlocks={[{code: "data class ZShaderSourceData(var glsl: ZGlSLShaderSource = ZGlSLShaderSource(), var metal: ZMetalShaderSource = ZMetalShaderSource()): ZComponentData"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["data class ZShaderSourceData(var glsl: ZGlSLShaderSource = ZGlSLShaderSource(), var metal: ZMetalShaderSource = ZMetalShaderSource(), var wgpu: ZWebGpuShaderSource = ZWebGpuShaderSource()) : ZComponentData"]} links={[{"text":"ZShaderSourceData","href":"-z-shader-source-data/index"},{"text":"ZGlSLShaderSource","href":"-z-gl-s-l-shader-source/index"},{"text":"ZMetalShaderSource","href":"-z-metal-shader-source/index"},{"text":"ZWebGpuShaderSource","href":"-z-web-gpu-shader-source/index"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZShaderType"
     tokenType="enum"
     groupType="TYPE"
     url="-z-shader-type/index"
     description=""
-    codeBlocks={[{code: "enum ZShaderType: Enum<ZShaderType>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["enum ZShaderType : Enum<ZShaderType>"]} links={[{"text":"ZShaderType","href":"-z-shader-type/index"},{"text":"Enum","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html"},{"text":"ZShaderType","href":"-z-shader-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniform"
     tokenType="class"
     groupType="TYPE"
     url="-z-uniform/index"
     description=""
-    codeBlocks={[{code: "class ZUniform: ZRenderizableComponent<ZUniformRenderer>, ZBindeable, ZBaseUniform"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["class ZUniform : ZRenderizableComponent<ZUniformRenderer> , ZBindeable, ZBaseUniform"]} links={[{"text":"ZUniform","href":"-z-uniform/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZUniformRenderer","href":"-z-uniform-renderer/index"},{"text":"ZBindeable","href":"../zernikalos.components/-z-bindeable/index"},{"text":"ZBaseUniform","href":"-z-base-uniform/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniformBlock"
     tokenType="class"
     groupType="TYPE"
     url="-z-uniform-block/index"
     description=""
-    codeBlocks={[{code: "class ZUniformBlock: ZRenderizableComponent<ZUniformBlockRenderer>, ZBindeable, ZBaseUniform"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["class ZUniformBlock : ZRenderizableComponent<ZUniformBlockRenderer> , ZBindeable, ZBaseUniform"]} links={[{"text":"ZUniformBlock","href":"-z-uniform-block/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZUniformBlockRenderer","href":"-z-uniform-block-renderer/index"},{"text":"ZBindeable","href":"../zernikalos.components/-z-bindeable/index"},{"text":"ZBaseUniform","href":"-z-base-uniform/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniformBlockData"
     tokenType="data class"
     groupType="TYPE"
     url="-z-uniform-block-data/index"
     description=""
-    codeBlocks={[{code: "data class ZUniformBlockData(val uniformBlockName: String = '', val uniforms: LinkedHashMap<String, ZUniformData> = LinkedHashMap()): ZComponentData"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["data class ZUniformBlockData(val id: Int = -1, val uniformBlockName: String = \"\", val uniforms: LinkedHashMap<String, ZUniformData>) : ZComponentData"]} links={[{"text":"ZUniformBlockData","href":"-z-uniform-block-data/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"LinkedHashMap","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-linked-hash-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZUniformData","href":"-z-uniform-data/index"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniformBlockRenderer"
     tokenType="class"
     groupType="TYPE"
     url="-z-uniform-block-renderer/index"
     description=""
-    codeBlocks={[{code: "expect class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData): ZComponentRenderer"}, {code: "actual class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData): ZComponentRenderer"}, {code: "actual class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData): ZComponentRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData) : ZComponentRenderer"]} links={[{"text":"ZUniformBlockRenderer","href":"-z-uniform-block-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformBlockData","href":"-z-uniform-block-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="metal" code={["actual class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData) : ZComponentRenderer"]} links={[{"text":"ZUniformBlockRenderer","href":"-z-uniform-block-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformBlockData","href":"-z-uniform-block-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData) : ZComponentRenderer"]} links={[{"text":"ZUniformBlockRenderer","href":"-z-uniform-block-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformBlockData","href":"-z-uniform-block-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual class ZUniformBlockRenderer(ctx: ZRenderingContext, data: ZUniformBlockData) : ZComponentRenderer"]} links={[{"text":"ZUniformBlockRenderer","href":"-z-uniform-block-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformBlockData","href":"-z-uniform-block-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniformCollection"
     tokenType="class"
     groupType="TYPE"
     url="-z-uniform-collection/index"
     description=""
-    codeBlocks={[{code: "class ZUniformCollection: MutableMap<String, ZBaseUniform>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["class ZUniformCollection : MutableMap<String, ZBaseUniform>"]} links={[{"text":"ZUniformCollection","href":"-z-uniform-collection/index"},{"text":"MutableMap","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZBaseUniform","href":"-z-base-uniform/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniformData"
     tokenType="data class"
     groupType="TYPE"
     url="-z-uniform-data/index"
     description=""
-    codeBlocks={[{code: "data class ZUniformData(var id: Int = -1, var uniformName: String = '', var count: Int = -1, var dataType: ZDataType = ZTypes.NONE): ZComponentData, ZBaseUniform"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["data class ZUniformData(var id: Int = -1, var uniformName: String = \"\", var count: Int = -1, var dataType: ZDataType = ZTypes.NONE) : ZComponentData, ZBaseUniform"]} links={[{"text":"ZUniformData","href":"-z-uniform-data/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ZDataType","href":"../zernikalos/-z-data-type/index"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"},{"text":"ZBaseUniform","href":"-z-base-uniform/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniformRenderer"
     tokenType="class"
     groupType="TYPE"
     url="-z-uniform-renderer/index"
     description=""
-    codeBlocks={[{code: "expect class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData): ZComponentRenderer"}, {code: "actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData): ZComponentRenderer"}, {code: "actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData): ZComponentRenderer"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["expect class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData) : ZComponentRenderer"]} links={[{"text":"ZUniformRenderer","href":"-z-uniform-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformData","href":"-z-uniform-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="metal" code={["actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData) : ZComponentRenderer"]} links={[{"text":"ZUniformRenderer","href":"-z-uniform-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformData","href":"-z-uniform-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData) : ZComponentRenderer"]} links={[{"text":"ZUniformRenderer","href":"-z-uniform-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformData","href":"-z-uniform-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent platform="webgpu" code={["actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformData) : ZComponentRenderer"]} links={[{"text":"ZUniformRenderer","href":"-z-uniform-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformData","href":"-z-uniform-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZWebGpuShaderSource"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-web-gpu-shader-source/index"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["data class ZWebGpuShaderSource(var shaderSource: String = \"\")"]} links={[{"text":"ZWebGpuShaderSource","href":"-z-web-gpu-shader-source/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBonesMatrixArray"
     tokenType="fun"
     groupType="FUNCTION"
     url="-z-bones-matrix-array"
     description=""
-    codeBlocks={[{code: "fun ZBonesMatrixArray(count: Int): ZUniformData"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun ZBonesMatrixArray(count: Int): ZUniformData"]} links={[{"text":"ZBonesMatrixArray","href":"-z-bones-matrix-array"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZInverseBindMatrixArray"
     tokenType="fun"
     groupType="FUNCTION"
     url="-z-inverse-bind-matrix-array"
     description=""
-    codeBlocks={[{code: "fun ZInverseBindMatrixArray(count: Int): ZUniformData"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun ZInverseBindMatrixArray(count: Int): ZUniformData"]} links={[{"text":"ZInverseBindMatrixArray","href":"-z-inverse-bind-matrix-array"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttrBoneIndices"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-attr-bone-indices"
     description=""
-    codeBlocks={[{code: "val ZAttrBoneIndices: ZAttribute"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val ZAttrBoneIndices: ZAttribute"]} links={[{"text":"ZAttrBoneIndices","href":"-z-attr-bone-indices"},{"text":"ZAttribute","href":"-z-attribute/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttrBoneWeight"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-attr-bone-weight"
     description=""
-    codeBlocks={[{code: "val ZAttrBoneWeight: ZAttribute"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val ZAttrBoneWeight: ZAttribute"]} links={[{"text":"ZAttrBoneWeight","href":"-z-attr-bone-weight"},{"text":"ZAttribute","href":"-z-attribute/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttrColor"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-attr-color"
     description=""
-    codeBlocks={[{code: "val ZAttrColor: ZAttribute"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val ZAttrColor: ZAttribute"]} links={[{"text":"ZAttrColor","href":"-z-attr-color"},{"text":"ZAttribute","href":"-z-attribute/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttrIndices"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-attr-indices"
     description=""
-    codeBlocks={[{code: "val ZAttrIndices: ZAttribute"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val ZAttrIndices: ZAttribute"]} links={[{"text":"ZAttrIndices","href":"-z-attr-indices"},{"text":"ZAttribute","href":"-z-attribute/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttrNormal"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-attr-normal"
     description=""
-    codeBlocks={[{code: "val ZAttrNormal: ZAttribute"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val ZAttrNormal: ZAttribute"]} links={[{"text":"ZAttrNormal","href":"-z-attr-normal"},{"text":"ZAttribute","href":"-z-attribute/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttrPosition"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-attr-position"
     description=""
-    codeBlocks={[{code: "val ZAttrPosition: ZAttribute"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val ZAttrPosition: ZAttribute"]} links={[{"text":"ZAttrPosition","href":"-z-attr-position"},{"text":"ZAttribute","href":"-z-attribute/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZAttrUv"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-attr-uv"
     description=""
-    codeBlocks={[{code: "val ZAttrUv: ZAttribute"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val ZAttrUv: ZAttribute"]} links={[{"text":"ZAttrUv","href":"-z-attr-uv"},{"text":"ZAttribute","href":"-z-attribute/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZModelViewProjectionMatrixBlock"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-model-view-projection-matrix-block"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val ZModelViewProjectionMatrixBlock: ZUniformBlock"]} links={[{"text":"ZModelViewProjectionMatrixBlock","href":"-z-model-view-projection-matrix-block"},{"text":"ZUniformBlock","href":"-z-uniform-block/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZPbrMaterialBlock"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-pbr-material-block"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val ZPbrMaterialBlock: ZUniformBlock"]} links={[{"text":"ZPbrMaterialBlock","href":"-z-pbr-material-block"},{"text":"ZUniformBlock","href":"-z-uniform-block/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZSkinningMatrixBlock"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-skinning-matrix-block"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val ZSkinningMatrixBlock: ZUniformBlock"]} links={[{"text":"ZSkinningMatrixBlock","href":"-z-skinning-matrix-block"},{"text":"ZUniformBlock","href":"-z-uniform-block/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniformModelViewProjectionMatrix"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-uniform-model-view-projection-matrix"
     description=""
-    codeBlocks={[{code: "val ZUniformModelViewProjectionMatrix: ZUniformData"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val ZUniformModelViewProjectionMatrix: ZUniformData"]} links={[{"text":"ZUniformModelViewProjectionMatrix","href":"-z-uniform-model-view-projection-matrix"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrColor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-uniform-pbr-color"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val ZUniformPbrColor: ZUniformData"]} links={[{"text":"ZUniformPbrColor","href":"-z-uniform-pbr-color"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrEmissive"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-uniform-pbr-emissive"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val ZUniformPbrEmissive: ZUniformData"]} links={[{"text":"ZUniformPbrEmissive","href":"-z-uniform-pbr-emissive"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrEmissiveIntensity"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-uniform-pbr-emissive-intensity"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val ZUniformPbrEmissiveIntensity: ZUniformData"]} links={[{"text":"ZUniformPbrEmissiveIntensity","href":"-z-uniform-pbr-emissive-intensity"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrMetalness"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-uniform-pbr-metalness"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val ZUniformPbrMetalness: ZUniformData"]} links={[{"text":"ZUniformPbrMetalness","href":"-z-uniform-pbr-metalness"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrRoughness"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="-z-uniform-pbr-roughness"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val ZUniformPbrRoughness: ZUniformData"]} links={[{"text":"ZUniformPbrRoughness","href":"-z-uniform-pbr-roughness"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniformProjectionMatrix"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-uniform-projection-matrix"
     description=""
-    codeBlocks={[{code: "val ZUniformProjectionMatrix: ZUniformData"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val ZUniformProjectionMatrix: ZUniformData"]} links={[{"text":"ZUniformProjectionMatrix","href":"-z-uniform-projection-matrix"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZUniformViewMatrix"
     tokenType="val"
     groupType="PROPERTY"
     url="-z-uniform-view-matrix"
     description=""
-    codeBlocks={[{code: "val ZUniformViewMatrix: ZUniformData"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val ZUniformViewMatrix: ZUniformData"]} links={[{"text":"ZUniformViewMatrix","href":"-z-uniform-view-matrix"},{"text":"ZUniformData","href":"-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

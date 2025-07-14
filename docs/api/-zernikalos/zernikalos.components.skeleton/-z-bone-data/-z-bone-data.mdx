@@ -3,7 +3,7 @@ slug: "-z-bone-data"
 title: "ZBoneData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZBoneData","url":"#zbonedata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZBoneData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "constructor(id: String = '', name: String = '', transform: ZTransform = ZTransform(), children: ArrayList<ZBone> = arrayListOf())"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["constructor(id: String = \"\", name: String = \"\", transform: ZTransform = ZTransform(), children: ArrayList<ZBone> = arrayListOf())"]} links={[{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZTransform","href":"../../zernikalos.math/-z-transform/index"},{"text":"ArrayList","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-array-list/index.html"},{"text":"ZBone","href":"../-z-bone/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/skeleton/ZBone.kt#L144"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/skeleton/ZBone.kt#L144" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

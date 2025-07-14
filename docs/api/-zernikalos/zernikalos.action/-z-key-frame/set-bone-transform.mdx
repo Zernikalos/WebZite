@@ -3,7 +3,7 @@ slug: "set-bone-transform"
 title: "setBoneTransform"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"setBoneTransform","url":"#setbonetransform"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="setBoneTransform"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun setBoneTransform(boneName: String, transform: ZBoneFrameTransform)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun setBoneTransform(boneId: String, transform: ZBoneFrameTransform)"]} links={[{"text":"setBoneTransform","href":"set-bone-transform"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZBoneFrameTransform","href":"../-z-bone-frame-transform/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/action/ZKeyFrame.kt#L35"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/action/ZKeyFrame.kt#L35" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

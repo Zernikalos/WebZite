@@ -3,7 +3,7 @@ slug: "index"
 title: "ZSkeletonProtoRef"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,45 +13,50 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZSkeletonProtoRef","url":"#zskeletonprotoref"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZSkeletonProtoRef"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-skeleton-proto-ref"
     description=""
-    codeBlocks={[{code: "constructor(type: String, refId: String = '', isReference: Boolean = false, data: ZSkeleton? = null)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(type: String, refId: String = \"\", isReference: Boolean = false, data: ZSkeleton? = null)"]} links={[{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"ZSkeleton","href":"../-z-skeleton/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="data"
     tokenType="val"
     groupType="PROPERTY"
     url="data"
     description=""
-    codeBlocks={[{code: "val data: ZSkeleton?"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val data: ZSkeleton?"]} links={[{"text":"data","href":"data"},{"text":"ZSkeleton","href":"../-z-skeleton/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isReference"
     tokenType="val"
     groupType="PROPERTY"
     url="is-reference"
     description=""
-    codeBlocks={[{code: "val isReference: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val isReference: Boolean"]} links={[{"text":"isReference","href":"is-reference"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="ref-id"
     description=""
-    codeBlocks={[{code: "val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val refId: String"]} links={[{"text":"refId","href":"ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="type"
     tokenType="val"
     groupType="PROPERTY"
     url="type"
     description=""
-    codeBlocks={[{code: "val type: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val type: String"]} links={[{"text":"type","href":"type"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

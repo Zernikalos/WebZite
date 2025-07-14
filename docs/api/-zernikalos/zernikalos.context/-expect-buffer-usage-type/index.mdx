@@ -3,7 +3,7 @@ slug: "index"
 title: "ExpectBufferUsageType"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,25 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ExpectBufferUsageType","url":"#expectbufferusagetype"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="DYNAMIC_DRAW"
     tokenType="val"
     groupType="PROPERTY"
     url="-d-y-n-a-m-i-c_-d-r-a-w"
     description=""
-    codeBlocks={[{code: "actual val DYNAMIC_DRAW: Int"}, {code: "actual val DYNAMIC_DRAW: Int"}, {code: "expect val DYNAMIC_DRAW: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual val DYNAMIC_DRAW: Int"]} links={[{"text":"DYNAMIC_DRAW","href":"-d-y-n-a-m-i-c_-d-r-a-w"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val DYNAMIC_DRAW: Int"]} links={[{"text":"DYNAMIC_DRAW","href":"-d-y-n-a-m-i-c_-d-r-a-w"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="STATIC_DRAW"
     tokenType="val"
     groupType="PROPERTY"
     url="-s-t-a-t-i-c_-d-r-a-w"
     description=""
-    codeBlocks={[{code: "actual val STATIC_DRAW: Int"}, {code: "actual val STATIC_DRAW: Int"}, {code: "expect val STATIC_DRAW: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val STATIC_DRAW: Int"]} links={[{"text":"STATIC_DRAW","href":"-s-t-a-t-i-c_-d-r-a-w"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val STATIC_DRAW: Int"]} links={[{"text":"STATIC_DRAW","href":"-s-t-a-t-i-c_-d-r-a-w"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

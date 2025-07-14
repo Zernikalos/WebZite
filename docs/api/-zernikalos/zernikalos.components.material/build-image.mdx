@@ -3,7 +3,7 @@ slug: "build-image"
 title: "buildImage"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"buildImage","url":"#buildimage"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="buildImage"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "fun buildImage(nativeData: ArrayBufferView): HTMLImageElement"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="webgpu" code={["fun buildImage(nativeData: ERROR CLASS: Symbol not found for ArrayBufferView): ERROR CLASS: Symbol not found for HTMLImageElement"]} links={[{"text":"buildImage","href":"build-image"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/material/ZBitmap.js.kt#L67"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/material/ZBitmap.js.kt#L67" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

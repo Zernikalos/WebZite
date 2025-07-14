@@ -3,7 +3,7 @@ slug: "index"
 title: "ZUniformBlockData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,53 +13,77 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZUniformBlockData","url":"#zuniformblockdata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZUniformBlockData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-uniform-block-data"
     description=""
-    codeBlocks={[{code: "constructor(uniformBlockName: String = '', uniforms: LinkedHashMap<String, ZUniformData> = LinkedHashMap())"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(id: Int = -1, uniformBlockName: String = \"\", uniforms: LinkedHashMap<String, ZUniformData>)"]} links={[{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"LinkedHashMap","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-linked-hash-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZUniformData","href":"../-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="byteSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="byte-size"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val byteSize: Int"]} links={[{"text":"byteSize","href":"byte-size"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="count"
     tokenType="val"
     groupType="PROPERTY"
     url="count"
     description=""
-    codeBlocks={[{code: "val count: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val count: Int"]} links={[{"text":"count","href":"count"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="id"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="id"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["val id: Int"]} links={[{"text":"id","href":"id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "@Transient open override val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["@Transient","open override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-component-data/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="uniformBlockName"
     tokenType="val"
     groupType="PROPERTY"
     url="uniform-block-name"
     description=""
-    codeBlocks={[{code: "val uniformBlockName: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val uniformBlockName: String"]} links={[{"text":"uniformBlockName","href":"uniform-block-name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="uniforms"
     tokenType="val"
     groupType="PROPERTY"
     url="uniforms"
     description=""
-    codeBlocks={[{code: "val uniforms: LinkedHashMap<String, ZUniformData>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val uniforms: LinkedHashMap<String, ZUniformData>"]} links={[{"text":"uniforms","href":"uniforms"},{"text":"LinkedHashMap","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-linked-hash-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZUniformData","href":"../-z-uniform-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="value"
     tokenType="var"
     groupType="PROPERTY"
     url="value"
     description=""
-    codeBlocks={[{code: "var value: ZAlgebraObject"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var value: ZAlgebraObject"]} links={[{"text":"value","href":"value"},{"text":"ZAlgebraObject","href":"../../zernikalos.math/-z-algebra-object/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

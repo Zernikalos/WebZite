@@ -3,7 +3,7 @@ slug: "-right"
 title: "Right"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"Right","url":"#right"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="Right"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "val Right: ZVector2"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val Right: ZVector2"]} links={[{"text":"Right","href":"-right"},{"text":"ZVector2","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector2.kt#L148"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector2.kt#L148" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

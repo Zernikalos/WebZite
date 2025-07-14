@@ -3,7 +3,7 @@ slug: "get-current-key-frame"
 title: "getCurrentKeyFrame"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"getCurrentKeyFrame","url":"#getcurrentkeyframe"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="getCurrentKeyFrame"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun getCurrentKeyFrame(): ZKeyFrame?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun getCurrentKeyFrame(): ZKeyFrame?"]} links={[{"text":"getCurrentKeyFrame","href":"get-current-key-frame"},{"text":"ZKeyFrame","href":"../-z-key-frame/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/action/ZActionPlayer.kt#L110"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/action/ZActionPlayer.kt#L110" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

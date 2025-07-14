@@ -3,7 +3,7 @@ slug: "unbind"
 title: "unbind"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,17 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"unbind","url":"#unbind"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "expect fun unbind()"}, {code: "actual fun unbind()"}, {code: "actual fun unbind()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect fun unbind()"]} links={[{"text":"unbind","href":"unbind"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/renderer/ZRenderer.kt#L28"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/renderer/ZRenderer.kt#L28" />
+    <CodeBlockComponent platform="metal" code={["actual fun unbind()"]} links={[{"text":"unbind","href":"unbind"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/renderer/ZRenderer.metal.kt#L36"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/renderer/ZRenderer.metal.kt#L36" />
+    <CodeBlockComponent platform="ogl" code={["actual fun unbind()"]} links={[{"text":"unbind","href":"unbind"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/renderer/ZRenderer.ogl.kt#L17"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/renderer/ZRenderer.ogl.kt#L17" />
+    <CodeBlockComponent platform="webgpu" code={["actual fun unbind()"]} links={[{"text":"unbind","href":"unbind"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/renderer/ZRenderer.wgpu.kt#L26"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/renderer/ZRenderer.wgpu.kt#L26" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

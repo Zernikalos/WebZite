@@ -3,7 +3,7 @@ slug: "-forward"
 title: "Forward"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"Forward","url":"#forward"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="Forward"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "val Forward: ZVector3"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val Forward: ZVector3"]} links={[{"text":"Forward","href":"-forward"},{"text":"ZVector3","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L172"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector3.kt#L172" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "attr-id"
 title: "attrId"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"attrId","url":"#attrid"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="attrId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val attrId: ZAttributeId"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val attrId: ZAttributeId"]} links={[{"text":"attrId","href":"attr-id"},{"text":"ZAttributeId","href":"../-z-attribute-id/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZAttribute.kt#L62"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZAttribute.kt#L62" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

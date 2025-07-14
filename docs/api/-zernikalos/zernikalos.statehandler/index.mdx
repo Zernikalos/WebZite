@@ -3,7 +3,7 @@ slug: "index"
 title: "statehandler"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.statehandler","url":"#zernikalos.statehandler"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="createSurfaceViewEventHandler"
     tokenType="fun"
     groupType="FUNCTION"
     url="create-surface-view-event-handler"
     description="Creates a new instance of the surface view event handler."
-    codeBlocks={[{code: "fun createSurfaceViewEventHandler(context: ZContext, stateHandler: ZSceneStateHandler): ZSurfaceViewEventHandler"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun createSurfaceViewEventHandler(context: ZContext, stateHandler: ZSceneStateHandler): ZSurfaceViewEventHandler"]} links={[{"text":"createSurfaceViewEventHandler","href":"create-surface-view-event-handler"},{"text":"ZContext","href":"../zernikalos.context/-z-context/index"},{"text":"ZSceneStateHandler","href":"../zernikalos.scenestatehandler/-z-scene-state-handler/index"},{"text":"ZSurfaceViewEventHandler","href":"../zernikalos.ui/-z-surface-view-event-handler/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

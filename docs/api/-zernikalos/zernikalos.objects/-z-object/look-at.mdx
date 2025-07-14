@@ -3,7 +3,7 @@ slug: "look-at"
 title: "lookAt"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"lookAt","url":"#lookat"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="looklookup"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun lookAt(look: ZVector3)"}, {code: "fun lookAt(look: ZVector3, up: ZVector3)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun lookAt(look: ZVector3)fun lookAt(look: ZVector3, up: ZVector3)(source)"]} links={[{"text":"lookAt","href":"look-at"},{"text":"ZVector3","href":"../../zernikalos.math/-z-vector3/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZObject.kt#L145"},{"text":"lookAt","href":"look-at"},{"text":"ZVector3","href":"../../zernikalos.math/-z-vector3/index"},{"text":"ZVector3","href":"../../zernikalos.math/-z-vector3/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZObject.kt#L156"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZObject.kt#L145" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

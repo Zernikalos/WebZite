@@ -3,7 +3,7 @@ slug: "mesh"
 title: "mesh"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"mesh","url":"#mesh"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="mesh"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "lateinit var mesh: ZMesh"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var mesh: ZMesh"]} links={[{"text":"mesh","href":"mesh"},{"text":"ZMesh","href":"../../zernikalos.components.mesh/-z-mesh/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZModel.kt#L37"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZModel.kt#L37" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

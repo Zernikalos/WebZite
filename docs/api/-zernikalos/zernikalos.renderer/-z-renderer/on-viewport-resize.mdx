@@ -3,7 +3,7 @@ slug: "on-viewport-resize"
 title: "onViewportResize"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,17 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"onViewportResize","url":"#onviewportresize"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
-    name="widthheightwidthheightwidthheight"
+    name="widthheightwidthheightwidthheightwidthheight"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "expect open override fun onViewportResize(width: Int, height: Int)"}, {code: "actual open override fun onViewportResize(width: Int, height: Int)"}, {code: "actual open override fun onViewportResize(width: Int, height: Int)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect open override fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/renderer/ZRenderer.kt#L30"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/renderer/ZRenderer.kt#L30" />
+    <CodeBlockComponent platform="metal" code={["actual open override fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/renderer/ZRenderer.metal.kt#L73"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/renderer/ZRenderer.metal.kt#L73" />
+    <CodeBlockComponent platform="ogl" code={["actual open override fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/renderer/ZRenderer.ogl.kt#L24"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/renderer/ZRenderer.ogl.kt#L24" />
+    <CodeBlockComponent platform="webgpu" code={["actual open override fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/renderer/ZRenderer.wgpu.kt#L41"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/renderer/ZRenderer.wgpu.kt#L41" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "-z-attr-position"
 title: "ZAttrPosition"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZAttrPosition","url":"#zattrposition"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZAttrPosition"
     tokenType="val"
     groupType="PROPERTY"
     url="../../index"
     description=""
-    codeBlocks={[{code: "val ZAttrPosition: ZAttribute"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val ZAttrPosition: ZAttribute"]} links={[{"text":"ZAttrPosition","href":"-z-attr-position"},{"text":"ZAttribute","href":"-z-attribute/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZAttribute.kt#L33"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZAttribute.kt#L33" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

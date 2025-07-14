@@ -3,7 +3,7 @@ slug: "index"
 title: "Op"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,29 +13,32 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"Op","url":"#op"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="Zero"
     tokenType="val"
     groupType="PROPERTY"
     url="-zero"
     description=""
-    codeBlocks={[{code: "val Zero: ZEuler"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val Zero: ZEuler"]} links={[{"text":"Zero","href":"-zero"},{"text":"ZEuler","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="copy"
     tokenType="fun"
     groupType="FUNCTION"
     url="copy"
     description=""
-    codeBlocks={[{code: "fun copy(result: ZEuler, e: ZEuler)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun copy(result: ZEuler, e: ZEuler)"]} links={[{"text":"copy","href":"copy"},{"text":"ZEuler","href":"../index"},{"text":"ZEuler","href":"../index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="fromQuaternion"
     tokenType="fun"
     groupType="FUNCTION"
     url="from-quaternion"
     description=""
-    codeBlocks={[{code: "fun fromQuaternion(q: ZQuaternion): ZEuler"}, {code: "fun fromQuaternion(result: ZEuler, q: ZQuaternion)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun fromQuaternion(q: ZQuaternion): ZEulerfun fromQuaternion(result: ZEuler, q: ZQuaternion)"]} links={[{"text":"fromQuaternion","href":"from-quaternion"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"},{"text":"ZEuler","href":"../index"},{"text":"fromQuaternion","href":"from-quaternion"},{"text":"ZEuler","href":"../index"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

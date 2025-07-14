@@ -3,7 +3,7 @@ slug: "index"
 title: "ExpectEnabler"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ExpectEnabler","url":"#expectenabler"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="DEPTH_TEST"
     tokenType="val"
     groupType="PROPERTY"
     url="-d-e-p-t-h_-t-e-s-t"
     description=""
-    codeBlocks={[{code: "actual val DEPTH_TEST: Int"}, {code: "actual val DEPTH_TEST: Int"}, {code: "expect val DEPTH_TEST: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val DEPTH_TEST: Int"]} links={[{"text":"DEPTH_TEST","href":"-d-e-p-t-h_-t-e-s-t"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val DEPTH_TEST: Int"]} links={[{"text":"DEPTH_TEST","href":"-d-e-p-t-h_-t-e-s-t"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

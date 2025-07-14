@@ -3,7 +3,7 @@ slug: "-q-u-a-t-e-r-n-i-o-n"
 title: "QUATERNION"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"QUATERNION","url":"#quaternion"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="QUATERNION"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val QUATERNION: ZDataType"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val QUATERNION: ZDataType"]} links={[{"text":"QUATERNION","href":"-q-u-a-t-e-r-n-i-o-n"},{"text":"ZDataType","href":"../-z-data-type/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L190"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/ZDataType.kt#L190" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

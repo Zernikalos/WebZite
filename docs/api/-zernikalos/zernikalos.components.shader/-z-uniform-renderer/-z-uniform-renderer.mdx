@@ -3,7 +3,7 @@ slug: "-z-uniform-renderer"
 title: "ZUniformRenderer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,17 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZUniformRenderer","url":"#zuniformrenderer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZUniformRenderer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "expect constructor(ctx: ZRenderingContext, data: ZUniformData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZUniformData)"}, {code: "actual constructor(ctx: ZRenderingContext, data: ZUniformData)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect constructor(ctx: ZRenderingContext, data: ZUniformData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformData","href":"../-z-uniform-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniform.kt#L87"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniform.kt#L87" />
+    <CodeBlockComponent platform="metal" code={["actual constructor(ctx: ZRenderingContext, data: ZUniformData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformData","href":"../-z-uniform-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/shader/ZUniformRenderer.metal.kt#L14"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/components/shader/ZUniformRenderer.metal.kt#L14" />
+    <CodeBlockComponent platform="ogl" code={["actual constructor(ctx: ZRenderingContext, data: ZUniformData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformData","href":"../-z-uniform-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZUniformRenderer.ogl.kt#L18"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZUniformRenderer.ogl.kt#L18" />
+    <CodeBlockComponent platform="webgpu" code={["actual constructor(ctx: ZRenderingContext, data: ZUniformData)"]} links={[{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZUniformData","href":"../-z-uniform-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/shader/ZUniformRenderer.wgpu.kt#L17"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/components/shader/ZUniformRenderer.wgpu.kt#L17" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

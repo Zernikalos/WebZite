@@ -3,7 +3,7 @@ slug: "tex-image2-d"
 title: "texImage2D"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"texImage2D","url":"#teximage2d"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="texImage2D"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual fun texImage2D(bitmap: ZBitmap)"}, {code: "actual fun texImage2D(bitmap: ZBitmap)"}, {code: "expect fun texImage2D(bitmap: ZBitmap)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun texImage2D(bitmap: ZBitmap)"]} links={[{"text":"texImage2D","href":"tex-image2-d"},{"text":"ZBitmap","href":"../../zernikalos.components.material/-z-bitmap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L189"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L189" />
+    <CodeBlockComponent platform="ogl" code={["expect fun texImage2D(bitmap: ZBitmap)"]} links={[{"text":"texImage2D","href":"tex-image2-d"},{"text":"ZBitmap","href":"../../zernikalos.components.material/-z-bitmap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L113"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L113" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

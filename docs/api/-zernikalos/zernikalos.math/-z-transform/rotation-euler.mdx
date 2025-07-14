@@ -3,7 +3,7 @@ slug: "rotation-euler"
 title: "rotationEuler"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"rotationEuler","url":"#rotationeuler"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="rotationEuler"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var rotationEuler: ZEuler"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var rotationEuler: ZEuler"]} links={[{"text":"rotationEuler","href":"rotation-euler"},{"text":"ZEuler","href":"../-z-euler/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZTransform.kt#L106"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZTransform.kt#L106" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

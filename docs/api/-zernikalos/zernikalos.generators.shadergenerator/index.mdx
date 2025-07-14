@@ -3,7 +3,7 @@ slug: "index"
 title: "generators.shadergenerator"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.generators.shadergenerator","url":"#zernikalos.generators.shadergenerator"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZShaderProgramParameters"
     tokenType="class"
     groupType="TYPE"
     url="-z-shader-program-parameters/index"
     description=""
-    codeBlocks={[{code: "class ZShaderProgramParameters"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["class ZShaderProgramParameters"]} links={[{"text":"ZShaderProgramParameters","href":"-z-shader-program-parameters/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

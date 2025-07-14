@@ -3,7 +3,7 @@ slug: "shader-common-headers"
 title: "shaderCommonHeaders"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"shaderCommonHeaders","url":"#shadercommonheaders"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="shaderCommonHeaders"
     tokenType="val"
     groupType="PROPERTY"
     url="../../index"
     description=""
-    codeBlocks={[{code: "const val shaderCommonHeaders: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["const val shaderCommonHeaders: String"]} links={[{"text":"shaderCommonHeaders","href":"shader-common-headers"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/generators/shadergenerator/libs/ZDefaultShader.metal.kt#L14"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/generators/shadergenerator/libs/ZDefaultShader.metal.kt#L14" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

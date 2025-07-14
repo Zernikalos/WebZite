@@ -3,7 +3,7 @@ slug: "shader-vertex-main"
 title: "shaderVertexMain"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"shaderVertexMain","url":"#shadervertexmain"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="shaderVertexMain"
     tokenType="val"
     groupType="PROPERTY"
     url="../../index"
     description=""
-    codeBlocks={[{code: "const val shaderVertexMain: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["val shaderVertexMain: String"]} links={[{"text":"shaderVertexMain","href":"shader-vertex-main"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/generators/shadergenerator/libs/ZDefaultShader.metal.kt#L69"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/generators/shadergenerator/libs/ZDefaultShader.metal.kt#L69" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

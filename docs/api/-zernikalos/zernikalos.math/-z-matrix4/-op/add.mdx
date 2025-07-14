@@ -3,7 +3,7 @@ slug: "add"
 title: "add"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"add","url":"#add"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="resultm1m2"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun add(result: ZMatrix4, m1: ZMatrix4, m2: ZMatrix4)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun add(result: ZMatrix4, m1: ZMatrix4, m2: ZMatrix4)"]} links={[{"text":"add","href":"add"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L305"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZMatrix4.kt#L305" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

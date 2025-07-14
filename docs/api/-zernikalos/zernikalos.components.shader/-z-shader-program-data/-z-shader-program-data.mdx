@@ -3,7 +3,7 @@ slug: "-z-shader-program-data"
 title: "ZShaderProgramData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZShaderProgramData","url":"#zshaderprogramdata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZShaderProgramData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "constructor(vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), shaderSource: ZShaderSource = ZShaderSource(), attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), uniforms: ZUniformCollection = ZUniformCollection())"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["constructor(vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), shaderSource: ZShaderSource = ZShaderSource(), attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), uniforms: ZUniformCollection = ZUniformCollection())"]} links={[{"text":"ZShader","href":"../-z-shader/index"},{"text":"ZShader","href":"../-z-shader/index"},{"text":"ZShaderSource","href":"../-z-shader-source/index"},{"text":"LinkedHashMap","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-linked-hash-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZAttribute","href":"../-z-attribute/index"},{"text":"ZUniformCollection","href":"../-z-uniform-collection/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L81"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZShaderProgram.kt#L81" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

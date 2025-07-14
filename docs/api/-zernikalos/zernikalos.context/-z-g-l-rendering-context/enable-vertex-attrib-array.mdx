@@ -3,7 +3,7 @@ slug: "enable-vertex-attrib-array"
 title: "enableVertexAttribArray"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"enableVertexAttribArray","url":"#enablevertexattribarray"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="enableVertexAttribArray"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual fun enableVertexAttribArray(index: Int)"}, {code: "actual fun enableVertexAttribArray(index: Int)"}, {code: "expect fun enableVertexAttribArray(index: Int)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual fun enableVertexAttribArray(index: Int)"]} links={[{"text":"enableVertexAttribArray","href":"enable-vertex-attrib-array"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L138"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L138" />
+    <CodeBlockComponent platform="ogl" code={["expect fun enableVertexAttribArray(index: Int)"]} links={[{"text":"enableVertexAttribArray","href":"enable-vertex-attrib-array"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L85"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L85" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

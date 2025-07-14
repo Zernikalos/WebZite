@@ -3,7 +3,7 @@ slug: "-v-e-r-t-e-x_-s-h-a-d-e-r"
 title: "VERTEX_SHADER"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"VERTEX_SHADER","url":"#vertex_shader"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="VERTEX_SHADER"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual val VERTEX_SHADER: Int"}, {code: "actual val VERTEX_SHADER: Int"}, {code: "expect val VERTEX_SHADER: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val VERTEX_SHADER: Int"]} links={[{"text":"VERTEX_SHADER","href":"-v-e-r-t-e-x_-s-h-a-d-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L216"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L216" />
+    <CodeBlockComponent platform="ogl" code={["expect val VERTEX_SHADER: Int"]} links={[{"text":"VERTEX_SHADER","href":"-v-e-r-t-e-x_-s-h-a-d-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L176"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L176" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

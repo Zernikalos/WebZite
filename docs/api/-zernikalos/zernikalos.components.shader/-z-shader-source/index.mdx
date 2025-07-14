@@ -3,7 +3,7 @@ slug: "index"
 title: "ZShaderSource"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,69 +13,86 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZShaderSource","url":"#zshadersource"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZShaderSource"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-shader-source"
     description=""
-    codeBlocks={[{code: "constructor()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="glslFragmentShaderSource"
     tokenType="var"
     groupType="PROPERTY"
     url="glsl-fragment-shader-source"
     description=""
-    codeBlocks={[{code: "var glslFragmentShaderSource: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var glslFragmentShaderSource: String"]} links={[{"text":"glslFragmentShaderSource","href":"glsl-fragment-shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="glslVertexShaderSource"
     tokenType="var"
     groupType="PROPERTY"
     url="glsl-vertex-shader-source"
     description=""
-    codeBlocks={[{code: "var glslVertexShaderSource: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var glslVertexShaderSource: String"]} links={[{"text":"glslVertexShaderSource","href":"glsl-vertex-shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/is-initialized"
     description="Represents a boolean value indicating whether a component has been initialized."
-    codeBlocks={[{code: "override val isInitialized: Boolean"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["override val isInitialized: Boolean"]} links={[{"text":"isInitialized","href":"../../zernikalos.components/-z-base-component/is-initialized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-serializable-component/is-renderizable"
     description="Represents a boolean value indicating whether a component is renderizable."
-    codeBlocks={[{code: "open override val isRenderizable: Boolean = false"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val isRenderizable: Boolean = false"]} links={[{"text":"isRenderizable","href":"../../zernikalos.components/-z-serializable-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="metalShaderSource"
     tokenType="var"
     groupType="PROPERTY"
     url="metal-shader-source"
     description=""
-    codeBlocks={[{code: "var metalShaderSource: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var metalShaderSource: String"]} links={[{"text":"metalShaderSource","href":"metal-shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-base-component/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "override val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-base-component/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="wgpuShaderSource"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="wgpu-shader-source"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["var wgpuShaderSource: String"]} links={[{"text":"wgpuShaderSource","href":"wgpu-shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-base-component/initialize"
     description="Initializes the ZComponent using the provided ZRenderingContext."
-    codeBlocks={[{code: "open override fun initialize(ctx: ZRenderingContext)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun initialize(ctx: ZRenderingContext)"]} links={[{"text":"initialize","href":"../../zernikalos.components/-z-base-component/initialize"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

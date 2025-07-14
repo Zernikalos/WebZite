@@ -3,7 +3,7 @@ slug: "command-buffer"
 title: "commandBuffer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"commandBuffer","url":"#commandbuffer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="commandBuffer"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var commandBuffer: MTLCommandBufferProtocol?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["var commandBuffer: MTLCommandBufferProtocol?"]} links={[{"text":"commandBuffer","href":"command-buffer"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/context/ZRenderingContext.kt#L22"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/context/ZRenderingContext.kt#L22" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

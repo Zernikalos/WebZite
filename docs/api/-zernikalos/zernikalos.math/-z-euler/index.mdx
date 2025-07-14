@@ -3,7 +3,7 @@ slug: "index"
 title: "ZEuler"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,109 +13,122 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZEuler","url":"#zeuler"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZEuler"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-euler"
     description=""
-    codeBlocks={[{code: "constructor()"}, {code: "constructor(roll: Float, pitch: Float, yaw: Float)"}, {code: "constructor(other: ZEuler)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()constructor(roll: Float, pitch: Float, yaw: Float)constructor(other: ZEuler)"]} links={[{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZEuler","href":"index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="Op"
-    tokenType=""
-    groupType="NONE"
+    tokenType="object"
+    groupType="OBJECT"
     url="-op/index"
     description=""
-    codeBlocks={[{code: "object Op"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["object Op"]} links={[{"text":"Op","href":"-op/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="byteArray"
     tokenType="val"
     groupType="PROPERTY"
     url="byte-array"
     description=""
-    codeBlocks={[{code: "open override val byteArray: ByteArray"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val byteArray: ByteArray"]} links={[{"text":"byteArray","href":"byte-array"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="byteSize"
     tokenType="val"
     groupType="PROPERTY"
     url="byte-size"
     description=""
-    codeBlocks={[{code: "open override val byteSize: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val byteSize: Int"]} links={[{"text":"byteSize","href":"byte-size"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="count"
     tokenType="val"
     groupType="PROPERTY"
     url="count"
     description="Number of individual instances this object represents"
-    codeBlocks={[{code: "open override val count: Int = 1"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val count: Int = 1"]} links={[{"text":"count","href":"count"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dataType"
     tokenType="val"
     groupType="PROPERTY"
     url="data-type"
     description="The data type stored"
-    codeBlocks={[{code: "open override val dataType: ZDataType"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val dataType: ZDataType"]} links={[{"text":"dataType","href":"data-type"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="floatArray"
     tokenType="val"
     groupType="PROPERTY"
     url="float-array"
     description=""
-    codeBlocks={[{code: "open override val floatArray: FloatArray"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val floatArray: FloatArray"]} links={[{"text":"floatArray","href":"float-array"},{"text":"FloatArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="pitch"
     tokenType="var"
     groupType="PROPERTY"
     url="pitch"
     description=""
-    codeBlocks={[{code: "var pitch: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var pitch: Float"]} links={[{"text":"pitch","href":"pitch"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="roll"
     tokenType="var"
     groupType="PROPERTY"
     url="roll"
     description=""
-    codeBlocks={[{code: "var roll: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var roll: Float"]} links={[{"text":"roll","href":"roll"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="size"
     tokenType="val"
     groupType="PROPERTY"
     url="size"
     description="Number of elements contained within the values array with the specific type defined in dataType"
-    codeBlocks={[{code: "open override val size: Int = 3"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val size: Int = 3"]} links={[{"text":"size","href":"size"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="yaw"
     tokenType="var"
     groupType="PROPERTY"
     url="yaw"
     description=""
-    codeBlocks={[{code: "var yaw: Float"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var yaw: Float"]} links={[{"text":"yaw","href":"yaw"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toQuaternion"
     tokenType="fun"
     groupType="FUNCTION"
     url="to-quaternion"
     description=""
-    codeBlocks={[{code: "fun toQuaternion(): ZQuaternion"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["fun toQuaternion(): ZQuaternion"]} links={[{"text":"toQuaternion","href":"to-quaternion"},{"text":"ZQuaternion","href":"../-z-quaternion/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toString"
     tokenType="fun"
     groupType="FUNCTION"
     url="to-string"
     description=""
-    codeBlocks={[{code: "open override fun toString(): String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open override fun toString(): String"]} links={[{"text":"toString","href":"to-string"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

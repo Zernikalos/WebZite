@@ -3,7 +3,7 @@ slug: "index"
 title: "ZBox2D"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,45 +13,50 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZBox2D","url":"#zbox2d"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZBox2D"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-box2-d"
     description=""
-    codeBlocks={[{code: "constructor(top: Int = 0, left: Int = 0, width: Int = 0, height: Int = 0)"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(top: Int = 0, left: Int = 0, width: Int = 0, height: Int = 0)"]} links={[{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="height"
     tokenType="var"
     groupType="PROPERTY"
     url="height"
     description="The height of the box."
-    codeBlocks={[{code: "var height: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var height: Int"]} links={[{"text":"height","href":"height"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="left"
     tokenType="var"
     groupType="PROPERTY"
     url="left"
     description="The left coordinate of the box."
-    codeBlocks={[{code: "var left: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var left: Int"]} links={[{"text":"left","href":"left"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="top"
     tokenType="var"
     groupType="PROPERTY"
     url="top"
     description="The top coordinate of the box."
-    codeBlocks={[{code: "var top: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var top: Int"]} links={[{"text":"top","href":"top"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="width"
     tokenType="var"
     groupType="PROPERTY"
     url="width"
     description="The width of the box."
-    codeBlocks={[{code: "var width: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var width: Int"]} links={[{"text":"width","href":"width"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "program-id"
 title: "programId"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"programId","url":"#programid"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="programId"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "lateinit var programId: GLWrap"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="ogl" code={["lateinit var programId: GLWrap"]} links={[{"text":"programId","href":"program-id"},{"text":"GLWrap","href":"../../zernikalos.context/-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZProgramRenderer.ogl.kt#L39"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZProgramRenderer.ogl.kt#L39" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

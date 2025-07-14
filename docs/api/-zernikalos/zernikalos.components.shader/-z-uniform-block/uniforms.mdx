@@ -3,7 +3,7 @@ slug: "uniforms"
 title: "uniforms"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"uniforms","url":"#uniforms"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="uniforms"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val uniforms: MutableMap<String, ZUniformData>"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val uniforms: MutableMap<String, ZUniformData>"]} links={[{"text":"uniforms","href":"uniforms"},{"text":"MutableMap","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZUniformData","href":"../-z-uniform-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniformBlock.kt#L44"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniformBlock.kt#L44" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

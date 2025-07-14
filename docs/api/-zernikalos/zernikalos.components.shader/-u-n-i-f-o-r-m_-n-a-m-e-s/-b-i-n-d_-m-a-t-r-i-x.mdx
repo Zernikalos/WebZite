@@ -3,7 +3,7 @@ slug: "-b-i-n-d_-m-a-t-r-i-x"
 title: "BIND_MATRIX"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"BIND_MATRIX","url":"#bind_matrix"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="BIND_MATRIX"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "const val BIND_MATRIX: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["const val BIND_MATRIX: String"]} links={[{"text":"BIND_MATRIX","href":"-b-i-n-d_-m-a-t-r-i-x"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniformDescriptor.kt#L19"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniformDescriptor.kt#L19" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

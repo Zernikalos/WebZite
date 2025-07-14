@@ -3,7 +3,7 @@ slug: "-f-r-a-g-m-e-n-t_-s-h-a-d-e-r"
 title: "FRAGMENT_SHADER"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,15 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"FRAGMENT_SHADER","url":"#fragment_shader"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="FRAGMENT_SHADER"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "actual val FRAGMENT_SHADER: Int"}, {code: "actual val FRAGMENT_SHADER: Int"}, {code: "expect val FRAGMENT_SHADER: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val FRAGMENT_SHADER: Int"]} links={[{"text":"FRAGMENT_SHADER","href":"-f-r-a-g-m-e-n-t_-s-h-a-d-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L217"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/context/ZRenderingContext.kt#L217" />
+    <CodeBlockComponent platform="ogl" code={["expect val FRAGMENT_SHADER: Int"]} links={[{"text":"FRAGMENT_SHADER","href":"-f-r-a-g-m-e-n-t_-s-h-a-d-e-r"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L177"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/context/ZRenderingContext.kt#L177" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

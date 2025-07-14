@@ -3,7 +3,7 @@ slug: "index"
 title: "ZMtlRenderingContext"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,77 +13,86 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZMtlRenderingContext","url":"#zmtlrenderingcontext"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZMtlRenderingContext"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-mtl-rendering-context"
     description=""
-    codeBlocks={[{code: "constructor(view: ZSurfaceView)"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["constructor(view: ZSurfaceView)"]} links={[{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="commandBuffer"
     tokenType="var"
     groupType="PROPERTY"
     url="command-buffer"
     description=""
-    codeBlocks={[{code: "var commandBuffer: MTLCommandBufferProtocol?"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["var commandBuffer: MTLCommandBufferProtocol?"]} links={[{"text":"commandBuffer","href":"command-buffer"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="commandQueue"
     tokenType="val"
     groupType="PROPERTY"
     url="command-queue"
     description=""
-    codeBlocks={[{code: "val commandQueue: MTLCommandQueueProtocol"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["val commandQueue: MTLCommandQueueProtocol"]} links={[{"text":"commandQueue","href":"command-queue"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="device"
     tokenType="val"
     groupType="PROPERTY"
     url="device"
     description=""
-    codeBlocks={[{code: "val device: MTLDeviceProtocol"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["val device: MTLDeviceProtocol"]} links={[{"text":"device","href":"device"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="renderEncoder"
     tokenType="var"
     groupType="PROPERTY"
     url="render-encoder"
     description=""
-    codeBlocks={[{code: "var renderEncoder: MTLRenderCommandEncoderProtocol?"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["var renderEncoder: MTLRenderCommandEncoderProtocol?"]} links={[{"text":"renderEncoder","href":"render-encoder"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="surfaceView"
     tokenType="val"
     groupType="PROPERTY"
     url="surface-view"
     description=""
-    codeBlocks={[{code: "val surfaceView: ZMtlSurfaceView"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["val surfaceView: ZMtlSurfaceView"]} links={[{"text":"surfaceView","href":"surface-view"},{"text":"ZMtlSurfaceView","href":"../../zernikalos.ui/-z-mtl-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initWithSurfaceView"
     tokenType="fun"
     groupType="FUNCTION"
     url="init-with-surface-view"
     description=""
-    codeBlocks={[{code: "open override fun initWithSurfaceView(surfaceView: ZSurfaceView)"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["open override fun initWithSurfaceView(surfaceView: ZSurfaceView)"]} links={[{"text":"initWithSurfaceView","href":"init-with-surface-view"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="makeCommandBuffer"
     tokenType="fun"
     groupType="FUNCTION"
     url="make-command-buffer"
     description=""
-    codeBlocks={[{code: "fun makeCommandBuffer()"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["fun makeCommandBuffer()"]} links={[{"text":"makeCommandBuffer","href":"make-command-buffer"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="makeRenderCommandEncoder"
     tokenType="fun"
     groupType="FUNCTION"
     url="make-render-command-encoder"
     description=""
-    codeBlocks={[{code: "fun makeRenderCommandEncoder(renderPassDescriptor: MTLRenderPassDescriptor)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["fun makeRenderCommandEncoder(renderPassDescriptor: MTLRenderPassDescriptor)"]} links={[{"text":"makeRenderCommandEncoder","href":"make-render-command-encoder"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

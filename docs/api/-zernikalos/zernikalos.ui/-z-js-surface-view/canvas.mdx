@@ -3,7 +3,7 @@ slug: "canvas"
 title: "canvas"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"canvas","url":"#canvas"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="canvas"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val canvas: HTMLCanvasElement"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="webgpu" code={["val canvas: ERROR CLASS: Symbol not found for HTMLCanvasElement"]} links={[{"text":"canvas","href":"canvas"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/ui/ZSurfaceView.kt#L16"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/ui/ZSurfaceView.kt#L16" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

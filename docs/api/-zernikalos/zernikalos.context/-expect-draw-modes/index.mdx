@@ -3,7 +3,7 @@ slug: "index"
 title: "ExpectDrawModes"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,25 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ExpectDrawModes","url":"#expectdrawmodes"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="LINES"
     tokenType="val"
     groupType="PROPERTY"
     url="-l-i-n-e-s"
     description=""
-    codeBlocks={[{code: "actual val LINES: Int"}, {code: "actual val LINES: Int"}, {code: "expect val LINES: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["actual val LINES: Int"]} links={[{"text":"LINES","href":"-l-i-n-e-s"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val LINES: Int"]} links={[{"text":"LINES","href":"-l-i-n-e-s"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="TRIANGLES"
     tokenType="val"
     groupType="PROPERTY"
     url="-t-r-i-a-n-g-l-e-s"
     description=""
-    codeBlocks={[{code: "actual val TRIANGLES: Int"}, {code: "actual val TRIANGLES: Int"}, {code: "expect val TRIANGLES: Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["actual val TRIANGLES: Int"]} links={[{"text":"TRIANGLES","href":"-t-r-i-a-n-g-l-e-s"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val TRIANGLES: Int"]} links={[{"text":"TRIANGLES","href":"-t-r-i-a-n-g-l-e-s"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

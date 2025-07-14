@@ -3,7 +3,7 @@ slug: "index"
 title: "ZSkinningSerializer"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,45 +13,50 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZSkinningSerializer","url":"#zskinningserializer"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZSkinningSerializer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-skinning-serializer"
     description=""
-    codeBlocks={[{code: "constructor()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="descriptor"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-serializer/descriptor"
     description=""
-    codeBlocks={[{code: "open override val descriptor: SerialDescriptor"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val descriptor: SerialDescriptor"]} links={[{"text":"descriptor","href":"../../zernikalos.components/-z-component-serializer/descriptor"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="kSerializer"
     tokenType="val"
     groupType="PROPERTY"
     url="k-serializer"
     description=""
-    codeBlocks={[{code: "open override val kSerializer: KSerializer<ZSkinningData>"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open override val kSerializer: KSerializer<ZSkinningData>"]} links={[{"text":"kSerializer","href":"k-serializer"},{"text":"ZSkinningData","href":"../-z-skinning-data/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="deserialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-component-serializer/deserialize"
     description=""
-    codeBlocks={[{code: "open fun deserialize(decoder: Decoder): ZSkinning"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["open fun deserialize(decoder: Decoder): ZSkinning"]} links={[{"text":"deserialize","href":"../../zernikalos.components/-z-component-serializer/deserialize"},{"text":"ZSkinning","href":"../-z-skinning/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="serialize"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../zernikalos.components/-z-component-serializer/serialize"
     description=""
-    codeBlocks={[{code: "open fun serialize(encoder: Encoder, value: ZSkinning)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["open fun serialize(encoder: Encoder, value: ZSkinning)"]} links={[{"text":"serialize","href":"../../zernikalos.components/-z-component-serializer/serialize"},{"text":"ZSkinning","href":"../-z-skinning/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

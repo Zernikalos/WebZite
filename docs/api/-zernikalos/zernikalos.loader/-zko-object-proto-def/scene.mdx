@@ -3,7 +3,7 @@ slug: "scene"
 title: "scene"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"scene","url":"#scene"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="scene"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val scene: ZScene?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val scene: ZScene?"]} links={[{"text":"scene","href":"scene"},{"text":"ZScene","href":"../../zernikalos.objects/-z-scene/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoObjectProto.kt#L34"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoObjectProto.kt#L34" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

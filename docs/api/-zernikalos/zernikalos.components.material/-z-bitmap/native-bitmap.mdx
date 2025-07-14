@@ -3,7 +3,7 @@ slug: "native-bitmap"
 title: "nativeBitmap"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"nativeBitmap","url":"#nativebitmap"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="nativeBitmap"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val nativeBitmap: Bitmap"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["val nativeBitmap: Bitmap"]} links={[{"text":"nativeBitmap","href":"native-bitmap"},{"text":"Bitmap","href":"https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/components/material/ZBitmap.kt#L16"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/components/material/ZBitmap.kt#L16" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

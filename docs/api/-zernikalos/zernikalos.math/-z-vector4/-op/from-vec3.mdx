@@ -3,7 +3,7 @@ slug: "from-vec3"
 title: "fromVec3"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"fromVec3","url":"#fromvec3"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="fromVec3"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../../index"
     description=""
-    codeBlocks={[{code: "fun fromVec3(result: ZVector4, v: ZVector3)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun fromVec3(result: ZVector4, v: ZVector3)"]} links={[{"text":"fromVec3","href":"from-vec3"},{"text":"ZVector4","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector4.kt#L155"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/math/ZVector4.kt#L155" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "-z-uniform-view-matrix"
 title: "ZUniformViewMatrix"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZUniformViewMatrix","url":"#zuniformviewmatrix"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZUniformViewMatrix"
     tokenType="val"
     groupType="PROPERTY"
     url="../../index"
     description=""
-    codeBlocks={[{code: "val ZUniformViewMatrix: ZUniformData"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val ZUniformViewMatrix: ZUniformData"]} links={[{"text":"ZUniformViewMatrix","href":"-z-uniform-view-matrix"},{"text":"ZUniformData","href":"-z-uniform-data/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniformDescriptor.kt#L51"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/shader/ZUniformDescriptor.kt#L51" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

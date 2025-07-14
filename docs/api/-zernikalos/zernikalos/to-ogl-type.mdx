@@ -3,7 +3,7 @@ slug: "to-ogl-type"
 title: "toOglType"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"toOglType","url":"#toogltype"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="toOglType"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "fun toOglType(t: ZDataType): Int"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="ogl" code={["fun toOglType(t: ZDataType): Int"]} links={[{"text":"toOglType","href":"to-ogl-type"},{"text":"ZDataType","href":"-z-data-type/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/ZDataType.kt#L11"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/ZDataType.kt#L11" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

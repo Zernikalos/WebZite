@@ -3,7 +3,7 @@ slug: "-z-mtl-surface-view"
 title: "ZMtlSurfaceView"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZMtlSurfaceView","url":"#zmtlsurfaceview"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZMtlSurfaceView"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "constructor(view: MTKView)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["constructor(view: MTKView)"]} links={[{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/ui/ZSurfaceView.metal.kt#L16"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/ui/ZSurfaceView.metal.kt#L16" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "index"
 title: "ZAttributeData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,37 +13,41 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZAttributeData","url":"#zattributedata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZAttributeData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-attribute-data"
     description=""
-    codeBlocks={[{code: "constructor(id: Int = -1, attributeName: String = '')"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(id: Int = -1, attributeName: String = \"\")"]} links={[{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="attributeName"
     tokenType="var"
     groupType="PROPERTY"
     url="attribute-name"
     description=""
-    codeBlocks={[{code: "var attributeName: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var attributeName: String"]} links={[{"text":"attributeName","href":"attribute-name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="id"
     tokenType="var"
     groupType="PROPERTY"
     url="id"
     description=""
-    codeBlocks={[{code: "var id: Int"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var id: Int"]} links={[{"text":"id","href":"id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-component-data/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "@Transient open override val refId: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["@Transient","open override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-component-data/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

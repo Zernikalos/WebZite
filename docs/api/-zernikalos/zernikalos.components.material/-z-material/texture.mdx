@@ -3,7 +3,7 @@ slug: "texture"
 title: "texture"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"texture","url":"#texture"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="texture"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "var texture: ZTexture?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var texture: ZTexture?"]} links={[{"text":"texture","href":"texture"},{"text":"ZTexture","href":"../-z-texture/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/material/ZMaterial.kt#L31"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/components/material/ZMaterial.kt#L31" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

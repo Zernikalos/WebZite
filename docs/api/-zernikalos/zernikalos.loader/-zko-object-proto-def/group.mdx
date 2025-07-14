@@ -3,7 +3,7 @@ slug: "group"
 title: "group"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"group","url":"#group"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="group"
     tokenType="val"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "val group: ZGroup?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val group: ZGroup?"]} links={[{"text":"group","href":"group"},{"text":"ZGroup","href":"../../zernikalos.objects/-z-group/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoObjectProto.kt#L35"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/loader/ZkoObjectProto.kt#L35" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

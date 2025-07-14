@@ -3,7 +3,7 @@ slug: "default-fragment-shader-source"
 title: "defaultFragmentShaderSource"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"defaultFragmentShaderSource","url":"#defaultfragmentshadersource"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="defaultFragmentShaderSource"
     tokenType="val"
     groupType="PROPERTY"
     url="../../index"
     description=""
-    codeBlocks={[{code: "const val defaultFragmentShaderSource: String"}, {code: "const val defaultFragmentShaderSource: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="android" code={["const val defaultFragmentShaderSource: String"]} links={[{"text":"defaultFragmentShaderSource","href":"default-fragment-shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/generators/shadergenerator/libs/ZDefaultShader.android.kt#L101"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/androidMain/kotlin/zernikalos/generators/shadergenerator/libs/ZDefaultShader.android.kt#L101" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

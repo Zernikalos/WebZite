@@ -3,7 +3,7 @@ slug: "event-handler"
 title: "eventHandler"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"eventHandler","url":"#eventhandler"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="eventHandler"
     tokenType="var"
     groupType="PROPERTY"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "open override var eventHandler: ZSurfaceViewEventHandler?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["open override var eventHandler: ZSurfaceViewEventHandler?"]} links={[{"text":"eventHandler","href":"event-handler"},{"text":"ZSurfaceViewEventHandler","href":"../-z-surface-view-event-handler/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/ui/ZSurfaceView.metal.kt#L37"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/ui/ZSurfaceView.metal.kt#L37" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

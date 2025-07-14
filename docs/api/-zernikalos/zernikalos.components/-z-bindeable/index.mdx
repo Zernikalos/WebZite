@@ -3,7 +3,7 @@ slug: "index"
 title: "ZBindeable"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,21 +13,23 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZBindeable","url":"#zbindeable"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
     url="bind"
     description="Binds the renderer. This method is called to prepare the renderer for drawing."
-    codeBlocks={[{code: "abstract fun bind()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["abstract fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
     url="unbind"
     description="Unbinds the renderer. This method is called after drawing to clean up."
-    codeBlocks={[{code: "abstract fun unbind()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["abstract fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

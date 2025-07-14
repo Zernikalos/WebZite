@@ -3,7 +3,7 @@ slug: "find-first-camera"
 title: "findFirstCamera"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"findFirstCamera","url":"#findfirstcamera"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="root"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "fun findFirstCamera(root: ZObject): ZCamera?"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["fun findFirstCamera(root: ZObject): ZCamera?"]} links={[{"text":"findFirstCamera","href":"find-first-camera"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"},{"text":"ZCamera","href":"../zernikalos.objects/-z-camera/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/search/ZFinder.kt#L47"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/search/ZFinder.kt#L47" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

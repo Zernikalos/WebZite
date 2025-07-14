@@ -3,7 +3,7 @@ slug: "index"
 title: "generators.shadergenerator.libs"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,69 +13,95 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.generators.shadergenerator.libs","url":"#zernikalos.generators.shadergenerator.libs"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="defaultFragmentShaderSource"
     tokenType="val"
     groupType="PROPERTY"
     url="default-fragment-shader-source"
     description=""
-    codeBlocks={[{code: "const val defaultFragmentShaderSource: String"}, {code: "const val defaultFragmentShaderSource: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["const val defaultFragmentShaderSource: String"]} links={[{"text":"defaultFragmentShaderSource","href":"default-fragment-shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="defaultShaderSource"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="default-shader-source"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["val defaultShaderSource: String"]} links={[{"text":"defaultShaderSource","href":"default-shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="defaultVertexShaderSource"
     tokenType="val"
     groupType="PROPERTY"
     url="default-vertex-shader-source"
     description=""
-    codeBlocks={[{code: "const val defaultVertexShaderSource: String"}, {code: "const val defaultVertexShaderSource: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="android" code={["const val defaultVertexShaderSource: String"]} links={[{"text":"defaultVertexShaderSource","href":"default-vertex-shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="shaderCommonHeaders"
     tokenType="val"
     groupType="PROPERTY"
     url="shader-common-headers"
     description=""
-    codeBlocks={[{code: "const val shaderCommonHeaders: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["const val shaderCommonHeaders: String"]} links={[{"text":"shaderCommonHeaders","href":"shader-common-headers"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="shaderFragmentDefinitions"
     tokenType="val"
     groupType="PROPERTY"
     url="shader-fragment-definitions"
     description=""
-    codeBlocks={[{code: "const val shaderFragmentDefinitions: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["const val shaderFragmentDefinitions: String"]} links={[{"text":"shaderFragmentDefinitions","href":"shader-fragment-definitions"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="shaderFragmentMain"
     tokenType="val"
     groupType="PROPERTY"
     url="shader-fragment-main"
     description=""
-    codeBlocks={[{code: "const val shaderFragmentMain: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["val shaderFragmentMain: String"]} links={[{"text":"shaderFragmentMain","href":"shader-fragment-main"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="shaderUniforms"
     tokenType="val"
     groupType="PROPERTY"
     url="shader-uniforms"
     description=""
-    codeBlocks={[{code: "const val shaderUniforms: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["const val shaderUniforms: String"]} links={[{"text":"shaderUniforms","href":"shader-uniforms"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="shaderVertexDefinitions"
     tokenType="val"
     groupType="PROPERTY"
     url="shader-vertex-definitions"
     description=""
-    codeBlocks={[{code: "val shaderVertexDefinitions: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="metal" code={["val shaderVertexDefinitions: String"]} links={[{"text":"shaderVertexDefinitions","href":"shader-vertex-definitions"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="shaderVertexMain"
     tokenType="val"
     groupType="PROPERTY"
     url="shader-vertex-main"
     description=""
-    codeBlocks={[{code: "const val shaderVertexMain: String"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="metal" code={["val shaderVertexMain: String"]} links={[{"text":"shaderVertexMain","href":"shader-vertex-main"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="skinningShaderSource"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="skinning-shader-source"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["val skinningShaderSource: String"]} links={[{"text":"skinningShaderSource","href":"skinning-shader-source"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

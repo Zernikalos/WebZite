@@ -3,7 +3,7 @@ slug: "create-logger"
 title: "createLogger"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"createLogger","url":"#createlogger"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="createLogger"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../index"
     description=""
-    codeBlocks={[{code: "inline fun <T: ZLoggable> T.createLogger(): ZLogger"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["inline fun <T : ZLoggable> T.createLogger(): ZLogger"]} links={[{"text":"T","href":"create-logger"},{"text":"ZLoggable","href":"-z-loggable/index"},{"text":"T","href":"create-logger"},{"text":"createLogger","href":"create-logger"},{"text":"ZLogger","href":"-z-logger/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLogger.kt#L15"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/logger/ZLogger.kt#L15" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

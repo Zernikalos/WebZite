@@ -3,7 +3,7 @@ slug: "index"
 title: "ZViewportData"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,37 +13,41 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZViewportData","url":"#zviewportdata"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZViewportData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-z-viewport-data"
     description=""
-    codeBlocks={[{code: "constructor(clearColor: ZColor = ZColor(.2f, .2f, .2f, 1.0f))"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor(clearColor: ZColor = ZColor(.2f, .2f, .2f, 1.0f))"]} links={[{"text":"ZColor","href":"../../zernikalos.math/-z-color/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="clearColor"
     tokenType="var"
     groupType="PROPERTY"
     url="clear-color"
     description=""
-    codeBlocks={[{code: "var clearColor: ZColor"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["var clearColor: ZColor"]} links={[{"text":"clearColor","href":"clear-color"},{"text":"ZColor","href":"../../zernikalos.math/-z-color/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
     url="../-z-component-data/ref-id"
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
-    codeBlocks={[{code: "@Transient open override val refId: String"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["@Transient","open override val refId: String"]} links={[{"text":"refId","href":"../-z-component-data/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="viewBox"
     tokenType="var"
     groupType="PROPERTY"
     url="view-box"
     description=""
-    codeBlocks={[{code: "var viewBox: ZBox2D"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["var viewBox: ZBox2D"]} links={[{"text":"viewBox","href":"view-box"},{"text":"ZBox2D","href":"../../zernikalos.math/-z-box2-d/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

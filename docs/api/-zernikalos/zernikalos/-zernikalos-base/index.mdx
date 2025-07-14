@@ -3,7 +3,7 @@ slug: "index"
 title: "ZernikalosBase"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,37 +13,50 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"ZernikalosBase","url":"#zernikalosbase"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="ZernikalosBase"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
     url="-zernikalos-base"
     description=""
-    codeBlocks={[{code: "constructor()"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="context"
     tokenType="var"
     groupType="PROPERTY"
     url="context"
     description="Represents the primary context of the Zernikalos engine during its lifecycle."
-    codeBlocks={[{code: "lateinit var context: ZContext"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["lateinit var context: ZContext"]} links={[{"text":"context","href":"context"},{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="settings"
     tokenType="val"
     groupType="PROPERTY"
     url="settings"
     description="Represents the settings for the Zernikalos engine. It provides centralized access to control logging levels and other related settings."
-    codeBlocks={[{code: "val settings: ZSettings"}]}
-  />
+  >
+    <CodeBlockComponent platform="common" code={["val settings: ZSettings"]} links={[{"text":"settings","href":"settings"},{"text":"ZSettings","href":"../../zernikalos.settings/-z-settings/index"}]} />
+  </DocumentationItemComponent>
   <DocumentationItemComponent
     name="stats"
     tokenType="val"
     groupType="PROPERTY"
     url="stats"
     description="Provides platform-specific information and version details for the Zernikalos engine."
-    codeBlocks={[{code: "val stats: ZStats"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["val stats: ZStats"]} links={[{"text":"stats","href":"stats"},{"text":"ZStats","href":"../../zernikalos.stats/-z-stats/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="surfaceView"
+    tokenType="var"
+    groupType="PROPERTY"
+    url="surface-view"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["lateinit var surfaceView: ZSurfaceView"]} links={[{"text":"surfaceView","href":"surface-view"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

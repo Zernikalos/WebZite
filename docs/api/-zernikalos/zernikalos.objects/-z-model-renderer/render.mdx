@@ -3,7 +3,7 @@ slug: "render"
 title: "render"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,17 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"render","url":"#render"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "expect fun render()"}, {code: "actual fun render()"}, {code: "actual fun render()"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="common" code={["expect fun render()"]} links={[{"text":"render","href":"render"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZModel.kt#L140"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/commonMain/kotlin/zernikalos/objects/ZModel.kt#L140" />
+    <CodeBlockComponent platform="metal" code={["actual fun render()"]} links={[{"text":"render","href":"render"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/objects/ZModelRenderer.metal.kt#L29"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/metalMain/kotlin/zernikalos/objects/ZModelRenderer.metal.kt#L29" />
+    <CodeBlockComponent platform="ogl" code={["actual fun render()"]} links={[{"text":"render","href":"render"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/objects/ZModel.ogl.kt#L20"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/objects/ZModel.ogl.kt#L20" />
+    <CodeBlockComponent platform="webgpu" code={["actual fun render()"]} links={[{"text":"render","href":"render"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/objects/ZModelRenderer.wgpu.kt#L126"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/webgpuMain/kotlin/zernikalos/objects/ZModelRenderer.wgpu.kt#L126" />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -3,7 +3,7 @@ slug: "bind-location"
 title: "bindLocation"
 hide_title: true
 ---
-import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/components/Documentation';
+import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
 
 <DocHeader
@@ -13,13 +13,14 @@ import { DocHeader, CodeClassList, DocumentationItemComponent } from '@site/src/
   typeInfo={[{"type":"actual","keyword":"package","name":"bindLocation","url":"#bindlocation"}]}
 />
 
-<CodeClassList>
+<DocumentationItemList>
   <DocumentationItemComponent
     name="bindLocation"
     tokenType="fun"
     groupType="FUNCTION"
     url="../../../index"
     description=""
-    codeBlocks={[{code: "fun bindLocation(programId: GLWrap)"}]}
-  />
-</CodeClassList>
+  >
+    <CodeBlockComponent platform="ogl" code={["fun bindLocation(programId: GLWrap)"]} links={[{"text":"bindLocation","href":"bind-location"},{"text":"GLWrap","href":"../../zernikalos.context/-g-l-wrap/index"},{"text":"source","href":"https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZUniformBlockRenderer.ogl.kt#L25"}]} source="https://github.com/Zernikalos/Zernikalos/tree/main/src/oglMain/kotlin/zernikalos/components/shader/ZUniformBlockRenderer.ogl.kt#L25" />
+  </DocumentationItemComponent>
+</DocumentationItemList>
