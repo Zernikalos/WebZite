@@ -9,7 +9,8 @@
 /.cache-loader
 
 # Project Specific
-/sourceDocs
+/sourceDocs/*
+!/sourceDocs/README.md
 
 # Environment variables
 # Keep .env in git but ignore local overrides
