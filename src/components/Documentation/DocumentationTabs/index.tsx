@@ -30,7 +30,7 @@ const DocumentationTabs: React.FC<DocumentationTabsProps> = ({ tabs, selected, o
               onClick={() => onSelect(tab.value)}
               className={`tw:flex tw:items-center tw:gap-2 tw:whitespace-nowrap tw:py-2 tw:px-3 tw:rounded-t-md tw:font-medium tw:text-sm tw:transition-all tw:duration-150 focus:tw:outline-none
                 ${isActive
-                  ? 'tw:bg-blue-100 tw:dark:bg-gray-800 tw:border-gray-700 tw:border-b-2 tw:border-b-transparent'
+                  ? 'tw:bg-blue-100 tw:dark:bg-gray-800 tw:shadow-sm tw:border-gray-700 tw:border-b-2 tw:border-b-transparent'
                   : 'tw:bg-transparent tw:text-gray-700 tw:dark:text-gray-300 tw:border-gray-700 tw:border-b-2 tw:border-b-transparent tw:hover:bg-gray-100 tw:dark:hover:bg-gray-800/40'}
               `}>
               {React.cloneElement(tab.icon, {

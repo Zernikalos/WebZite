@@ -18,7 +18,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Zernikalos', // Usually your GitHub org/user name.
-  projectName: 'Zernikalos Engine', // Usually your repo name.
+  projectName: 'zernikalos.github.io', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
