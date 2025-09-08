@@ -25,6 +25,16 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     <CodeBlockComponent platform="ogl" code={["expect constructor(surfaceView: ZSurfaceView)"]} links={[{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
+    name="maxUniformBuffersBinding"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="max-uniform-buffers-binding"
+    description=""
+  >
+    <CodeBlockComponent platform="android" code={["actual val maxUniformBuffersBinding: Int"]} links={[{"text":"maxUniformBuffersBinding","href":"max-uniform-buffers-binding"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect val maxUniformBuffersBinding: Int"]} links={[{"text":"maxUniformBuffersBinding","href":"max-uniform-buffers-binding"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
     name="surfaceView"
     tokenType="val"
     groupType="PROPERTY"
@@ -100,8 +110,8 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     url="bind-vertex-array"
     description=""
   >
-    <CodeBlockComponent platform="android" code={["actual fun bindVertexArray(vao: GLWrap)"]} links={[{"text":"bindVertexArray","href":"bind-vertex-array"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
-    <CodeBlockComponent platform="ogl" code={["expect fun bindVertexArray(vao: GLWrap)"]} links={[{"text":"bindVertexArray","href":"bind-vertex-array"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="android" code={["actual fun bindVertexArray(vao: GLWrap?)"]} links={[{"text":"bindVertexArray","href":"bind-vertex-array"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
+    <CodeBlockComponent platform="ogl" code={["expect fun bindVertexArray(vao: GLWrap?)"]} links={[{"text":"bindVertexArray","href":"bind-vertex-array"},{"text":"GLWrap","href":"../-g-l-wrap/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bufferData"

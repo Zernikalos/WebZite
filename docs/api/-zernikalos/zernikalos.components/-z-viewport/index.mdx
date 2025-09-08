@@ -33,6 +33,15 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     <CodeBlockComponent platform="common" code={["var clearColor: ZColor"]} links={[{"text":"clearColor","href":"clear-color"},{"text":"ZColor","href":"../../zernikalos.math/-z-color/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
+    name="data"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-omni-component/data"
+    description="Provides access to the component's serializable data."
+  >
+    <CodeBlockComponent platform="common" code={["val data: ZViewportData"]} links={[{"text":"data","href":"../-z-omni-component/data"},{"text":"ZViewportData","href":"../-z-viewport-data/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
@@ -45,10 +54,19 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
-    url="../-z-renderizable-component/is-renderizable"
+    url="../-z-base-component/is-renderizable"
     description="Represents a boolean value indicating whether a component is renderizable."
   >
-    <CodeBlockComponent platform="common" code={["open override val isRenderizable: Boolean = true"]} links={[{"text":"isRenderizable","href":"../-z-renderizable-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={["override val isRenderizable: Boolean"]} links={[{"text":"isRenderizable","href":"../-z-base-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isSerializable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-base-component/is-serializable"
+    description="Indicates whether this component can be serialized."
+  >
+    <CodeBlockComponent platform="common" code={["val isSerializable: Boolean"]} links={[{"text":"isSerializable","href":"../-z-base-component/is-serializable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
@@ -63,10 +81,10 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="renderer"
     tokenType="val"
     groupType="PROPERTY"
-    url="../-z-renderizable-component/renderer"
-    description=""
+    url="../-z-omni-component/renderer"
+    description="Provides access to the component's renderer."
   >
-    <CodeBlockComponent platform="common" code={["val renderer: ZViewportRenderer"]} links={[{"text":"renderer","href":"../-z-renderizable-component/renderer"},{"text":"ZViewportRenderer","href":"../-z-viewport-renderer/index"}]} />
+    <CodeBlockComponent platform="common" code={["val renderer: ZViewportRenderer"]} links={[{"text":"renderer","href":"../-z-omni-component/renderer"},{"text":"ZViewportRenderer","href":"../-z-viewport-renderer/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="viewBox"
@@ -82,7 +100,7 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     tokenType="fun"
     groupType="FUNCTION"
     url="create-renderer"
-    description=""
+    description="Creates a new renderer instance for this component."
   >
     <CodeBlockComponent platform="common" code={["open override fun createRenderer(ctx: ZRenderingContext): ZViewportRenderer"]} links={[{"text":"createRenderer","href":"create-renderer"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZViewportRenderer","href":"../-z-viewport-renderer/index"}]} />
   </DocumentationItemComponent>
@@ -90,10 +108,10 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
-    url="../-z-renderizable-component/initialize"
+    url="../-z-omni-component/initialize"
     description="Initializes the ZComponent using the provided ZRenderingContext."
   >
-    <CodeBlockComponent platform="common" code={["open override fun initialize(ctx: ZRenderingContext)"]} links={[{"text":"initialize","href":"../-z-renderizable-component/initialize"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+    <CodeBlockComponent platform="common" code={["open override fun initialize(ctx: ZRenderingContext)"]} links={[{"text":"initialize","href":"../-z-omni-component/initialize"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="onViewportResize"

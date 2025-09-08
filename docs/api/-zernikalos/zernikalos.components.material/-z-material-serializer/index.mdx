@@ -37,7 +37,7 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     tokenType="val"
     groupType="PROPERTY"
     url="k-serializer"
-    description=""
+    description="The serializer for the data type associated with this component."
   >
     <CodeBlockComponent platform="common" code={["open override val kSerializer: KSerializer<ZMaterialData>"]} links={[{"text":"kSerializer","href":"k-serializer"},{"text":"ZMaterialData","href":"../-z-material-data/index"}]} />
   </DocumentationItemComponent>
@@ -48,7 +48,7 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     url="../../zernikalos.components/-z-component-serializer/deserialize"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["open fun deserialize(decoder: Decoder): ZMaterial"]} links={[{"text":"deserialize","href":"../../zernikalos.components/-z-component-serializer/deserialize"},{"text":"ZMaterial","href":"../-z-material/index"}]} />
+    <CodeBlockComponent platform="common" code={["open override fun deserialize(decoder: Decoder): ZMaterial"]} links={[{"text":"deserialize","href":"../../zernikalos.components/-z-component-serializer/deserialize"},{"text":"ZMaterial","href":"../-z-material/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="serialize"
@@ -57,6 +57,6 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     url="../../zernikalos.components/-z-component-serializer/serialize"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["open fun serialize(encoder: Encoder, value: ZMaterial)"]} links={[{"text":"serialize","href":"../../zernikalos.components/-z-component-serializer/serialize"},{"text":"ZMaterial","href":"../-z-material/index"}]} />
+    <CodeBlockComponent platform="common" code={["open override fun serialize(encoder: Encoder, value: ZMaterial)"]} links={[{"text":"serialize","href":"../../zernikalos.components/-z-component-serializer/serialize"},{"text":"ZMaterial","href":"../-z-material/index"}]} />
   </DocumentationItemComponent>
 </DocumentationItemList>
