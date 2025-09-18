@@ -2,7 +2,11 @@ import { useEffect, useRef } from "react";
 import * as zernikalos from "@zernikalos/zernikalos";
 import styles from './styles.module.css';
 
-export default function FoxRunning() {
+interface ZkExampleProps {
+    onError: () => void;
+}
+
+export default function ZkExample({ onError }: ZkExampleProps) {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
     
@@ -64,13 +68,14 @@ export default function FoxRunning() {
                             player.play(true);
                         }
 
-                        ctx.activeCamera?.transform?.translate(-1, -7, -40);
+                        ctx.activeCamera?.transform?.translate(-1, -7, -21);
                         ctx.activeCamera?.transform?.rotate(-45, 0, 1, 0);
 
                         ctx.scene = scene;
                         done();
                     }).catch(error => {
                         console.error("Failed to load Zernikalos scene:", error);
+                        onError();
                         done();
                     });
                 },
@@ -84,6 +89,7 @@ export default function FoxRunning() {
             } as any);
         } catch (error) {
             console.error("Failed to initialize Zernikalos canvas:", error);
+            onError();
         }
 
 
@@ -92,12 +98,12 @@ export default function FoxRunning() {
             if (playerRef.current) {
                 playerRef.current.stop();
             }
-            // Assuming there's a dispose method to clean up WebGL resources
-            // if (zkRef.current && typeof zkRef.current.dispose === 'function') {
-            //     zkRef.current.dispose();
-            // }
+            // Clean up WebGPU resources
+            if (zkRef.current && typeof zkRef.current.dispose === 'function') {
+                zkRef.current.dispose();
+            }
         };
-    }, []); // Empty dependency array ensures this effect runs only once
+    }, [onError]); // Add onError to dependencies
 
     return (
         <div ref={containerRef} className={styles.container}>
