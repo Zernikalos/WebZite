@@ -39,7 +39,7 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     url="../-z-object/children"
     description="An array of ZObjects that are children of this object, allowing for a hierarchical structure."
   >
-    <CodeBlockComponent platform="common" code={["@Transient","open override var children: Array<ZObject>"]} links={[{"text":"children","href":"../-z-object/children"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"ZObject","href":"../-z-object/index"}]} />
+    <CodeBlockComponent platform="common" code={["open override var children: Array<ZObject>"]} links={[{"text":"children","href":"../-z-object/children"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"ZObject","href":"../-z-object/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="hasParent"
@@ -84,7 +84,7 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     url="../-z-object/name"
     description="The name of the object. If not explicitly set, a default name is generated based on the object's type and ID."
   >
-    <CodeBlockComponent platform="common" code={["var name: String"]} links={[{"text":"name","href":"../-z-object/name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="common" code={["@SerialName(value = \"name\")","var name: String"]} links={[{"text":"name","href":"../-z-object/name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="parent"
@@ -184,6 +184,15 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     description="Event handler for the viewport resizing. This method should not be called by the user"
   >
     <CodeBlockComponent platform="common" code={["fun onViewportResize(ctx: ZContext, width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"../-z-object/on-viewport-resize"},{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="removeChild"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-z-object/remove-child"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["fun removeChild(idx: Int)fun removeChild(child: ZObject)"]} links={[{"text":"removeChild","href":"../-z-object/remove-child"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"removeChild","href":"../-z-object/remove-child"},{"text":"ZObject","href":"../-z-object/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="render"

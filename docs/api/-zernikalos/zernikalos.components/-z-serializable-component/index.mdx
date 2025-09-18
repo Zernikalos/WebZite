@@ -24,6 +24,15 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     <CodeBlockComponent platform="common" code={["constructor(data: D)"]} links={[{"text":"D","href":"index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
+    name="data"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="data"
+    description="Provides access to the component's serializable data."
+  >
+    <CodeBlockComponent platform="common" code={["val data: D"]} links={[{"text":"data","href":"data"},{"text":"D","href":"index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
@@ -36,10 +45,19 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
-    url="is-renderizable"
+    url="../-z-base-component/is-renderizable"
     description="Represents a boolean value indicating whether a component is renderizable."
   >
-    <CodeBlockComponent platform="common" code={["open override val isRenderizable: Boolean = false"]} links={[{"text":"isRenderizable","href":"is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={["override val isRenderizable: Boolean"]} links={[{"text":"isRenderizable","href":"../-z-base-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isSerializable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../-z-base-component/is-serializable"
+    description="Indicates whether this component can be serialized."
+  >
+    <CodeBlockComponent platform="common" code={["val isSerializable: Boolean"]} links={[{"text":"isSerializable","href":"../-z-base-component/is-serializable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"

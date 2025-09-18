@@ -165,8 +165,8 @@ const config: Config = {
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://gitlab.com/zernikalos',
-          label: 'Gitlab',
+          href: 'https://github.com/Zernikalos',
+          label: 'GitHub',
           position: 'right',
         },
       ],
@@ -200,8 +200,8 @@ const config: Config = {
               to: '/api',
             },
             {
-              label: 'Gitlab',
-              href: 'https://gitlab.com/zernikalos',
+              label: 'GitHub',
+              href: 'https://github.com/Zernikalos',
             },
           ],
         },

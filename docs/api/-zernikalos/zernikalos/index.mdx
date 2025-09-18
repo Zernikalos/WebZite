@@ -25,6 +25,15 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     <CodeBlockComponent platform="ogl" code={["expect object OglDataTypes"]} links={[{"text":"OglDataTypes","href":"-ogl-data-types/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
+    name="Version"
+    tokenType="object"
+    groupType="OBJECT"
+    url="-version/index"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={["object Version"]} links={[{"text":"Version","href":"-version/index"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
     name="ZBaseType"
     tokenType="enum"
     groupType="TYPE"
@@ -79,15 +88,6 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     description=""
   >
     <CodeBlockComponent platform="common" code={["object ZTypes"]} links={[{"text":"ZTypes","href":"-z-types/index"}]} />
-  </DocumentationItemComponent>
-  <DocumentationItemComponent
-    name="ZVersion"
-    tokenType="object"
-    groupType="OBJECT"
-    url="-z-version/index"
-    description=""
-  >
-    <CodeBlockComponent platform="common" code={["object ZVersion"]} links={[{"text":"ZVersion","href":"-z-version/index"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toOglBaseType"

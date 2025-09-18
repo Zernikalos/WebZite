@@ -24,15 +24,6 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     <CodeBlockComponent platform="webgpu" code={["constructor(canvas: ERROR CLASS: Symbol not found for HTMLCanvasElement)"]} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
-    name="_eventHandler"
-    tokenType="var"
-    groupType="PROPERTY"
-    url="_event-handler"
-    description=""
-  >
-    <CodeBlockComponent platform="webgpu" code={["var _eventHandler: ZSurfaceViewEventHandler?"]} links={[{"text":"_eventHandler","href":"_event-handler"},{"text":"ZSurfaceViewEventHandler","href":"../-z-surface-view-event-handler/index"}]} />
-  </DocumentationItemComponent>
-  <DocumentationItemComponent
     name="canvas"
     tokenType="val"
     groupType="PROPERTY"
@@ -46,7 +37,7 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     tokenType="var"
     groupType="PROPERTY"
     url="event-handler"
-    description="Represents an event handler that listens to surface-related events. Such as lifecycle and rendering updates, through ZSurfaceViewEventHandler."
+    description="Event handler for surface view events (ready, resize, render). When set, automatically calls onReady() to initialize the surface."
   >
     <CodeBlockComponent platform="webgpu" code={["open override var eventHandler: ZSurfaceViewEventHandler?"]} links={[{"text":"eventHandler","href":"event-handler"},{"text":"ZSurfaceViewEventHandler","href":"../-z-surface-view-event-handler/index"}]} />
   </DocumentationItemComponent>
@@ -55,7 +46,7 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     tokenType="val"
     groupType="PROPERTY"
     url="surface-height"
-    description="Represents the height of the rendering surface in logical pixels."
+    description="Current surface height in pixels"
   >
     <CodeBlockComponent platform="webgpu" code={["open override val surfaceHeight: Int"]} links={[{"text":"surfaceHeight","href":"surface-height"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
   </DocumentationItemComponent>
@@ -64,8 +55,17 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     tokenType="val"
     groupType="PROPERTY"
     url="surface-width"
-    description="Represents the width of the rendering surface in logical pixels."
+    description="Current surface width in pixels"
   >
     <CodeBlockComponent platform="webgpu" code={["open override val surfaceWidth: Int"]} links={[{"text":"surfaceWidth","href":"surface-width"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="dispose"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="dispose"
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={["open override fun dispose()"]} links={[{"text":"dispose","href":"dispose"}]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

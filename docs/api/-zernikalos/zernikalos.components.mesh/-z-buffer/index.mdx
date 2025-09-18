@@ -117,10 +117,19 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-renderizable-component/is-renderizable"
+    url="../../zernikalos.components/-z-base-component/is-renderizable"
     description="Represents a boolean value indicating whether a component is renderizable."
   >
-    <CodeBlockComponent platform="common" code={["open override val isRenderizable: Boolean = true"]} links={[{"text":"isRenderizable","href":"../../zernikalos.components/-z-renderizable-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={["override val isRenderizable: Boolean"]} links={[{"text":"isRenderizable","href":"../../zernikalos.components/-z-base-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isSerializable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url="../../zernikalos.components/-z-base-component/is-serializable"
+    description="Indicates whether this component can be serialized."
+  >
+    <CodeBlockComponent platform="common" code={["val isSerializable: Boolean"]} links={[{"text":"isSerializable","href":"../../zernikalos.components/-z-base-component/is-serializable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="name"
@@ -163,7 +172,7 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     tokenType="val"
     groupType="PROPERTY"
     url="../../zernikalos.components/-z-renderizable-component/renderer"
-    description=""
+    description="Provides access to the component's renderer."
   >
     <CodeBlockComponent platform="common" code={["val renderer: ZBufferRenderer"]} links={[{"text":"renderer","href":"../../zernikalos.components/-z-renderizable-component/renderer"},{"text":"ZBufferRenderer","href":"../-z-buffer-renderer/index"}]} />
   </DocumentationItemComponent>
@@ -199,7 +208,7 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     tokenType="fun"
     groupType="FUNCTION"
     url="create-renderer"
-    description=""
+    description="Creates a new renderer instance for this component."
   >
     <CodeBlockComponent platform="common" code={["open override fun createRenderer(ctx: ZRenderingContext): ZBufferRenderer"]} links={[{"text":"createRenderer","href":"create-renderer"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZBufferRenderer","href":"../-z-buffer-renderer/index"}]} />
   </DocumentationItemComponent>
