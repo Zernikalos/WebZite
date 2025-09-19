@@ -15,12 +15,16 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@zernikalos'
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
       - name: Deploy to zernikalos.github.io
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./build
           external_repository: Zernikalos/zernikalos.github.io
           publish_branch: gh-pages
