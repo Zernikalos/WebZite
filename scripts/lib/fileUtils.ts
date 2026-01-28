@@ -205,6 +205,10 @@ function convertHtmlToMdx(
     if (!result) {
       return { result: false, error: `Failed to convert ${htmlFilePath} to MDX` };
     }
+
+    if (result.skipped) {
+      return { result: true, error: null };
+    }
     
     // Write output to file
     const writeResult = writeOutput(outputFilePath, htmlFilePath, result, replace);

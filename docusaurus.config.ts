@@ -2,6 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import platformsToIcons from './src/remark/platformsToIcons';
+import {createZernikalosSitemapItems} from './docusaurusconf/sitemap.config';
 
 const config: Config = {
 
@@ -14,6 +15,7 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -30,8 +32,6 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
-
 
   stylesheets: [
     {
@@ -72,11 +72,11 @@ const config: Config = {
           ],
         
         },
-        sitemap: {
-          changefreq: 'weekly',
-          priority: 0.5,
-          filename: 'sitemap.xml',
-        },
+        // sitemap: {
+        //   changefreq: 'weekly',
+        //   priority: 0.5,
+        //   filename: 'sitemap.xml',
+        // },
       } satisfies Preset.Options,
     ],
   ],
@@ -107,6 +107,7 @@ const config: Config = {
         path: 'docs/api',
         routeBasePath: 'api',
         sidebarPath: './sidebars.ts',
+        //docItemComponent: '@site/src/components/api/ApiDocItem',
         exclude: ['**/scripts/**', '**/sourceDocs/**'],
         sidebarItemsGenerator: function({
           isCategoryIndex: defaultCategoryIndexMatcher,
@@ -128,6 +129,20 @@ const config: Config = {
     [
       '@docusaurus/plugin-ideal-image', 
       {}
+    ],
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        id: 'sitemap',
+        lastmod: 'date',
+        // We'll assign changefreq/priority per-URL in createSitemapItems.
+        changefreq: null,
+        priority: null,
+        // Exclude the whole API subtree; we will re-add /api/index/ manually.
+        ignorePatterns: ['/api/**'],
+        filename: 'sitemap.xml',
+        createSitemapItems: createZernikalosSitemapItems,
+      }
     ]
   ],
 

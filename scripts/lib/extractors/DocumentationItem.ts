@@ -213,6 +213,12 @@ export class DocumentationItem {
     this.name = name;
     this.sourceUrl = DocumentationItem.extractSourceUrl(element);;
     this.url = this.extractDocumentationUrl(element);
+
+    // If there is no description, we clear the URL so that the index page 
+    // doesn't link to a non-existent member page.
+    if (!this.description || this.description.trim().length === 0) {
+      this.url = '';
+    }
   }
 
   public toString(): string {

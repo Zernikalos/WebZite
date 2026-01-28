@@ -15,6 +15,7 @@ export interface ConversionResult {
   mdxContent: string;
   baseName: string;
   title: string;
+  skipped?: boolean;
 }
 
 /**
@@ -31,8 +32,7 @@ function convertHtmlToMdx(slug: string, content: string): ConversionResult | nul
   const extractedData = extractData($, content);
   
   if (!extractedData) {
-    console.error('Failed to extract data from content');
-    return null;
+    return { mdxContent: '', baseName: '', title: '', skipped: true };
   }
   
   return _generateMdx(slug, extractedData);
