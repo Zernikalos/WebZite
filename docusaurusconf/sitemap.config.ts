@@ -41,7 +41,7 @@ export async function createZernikalosSitemapItems(
   params: CreateSitemapItemsParams
 ): Promise<SitemapItem[]> {
   const {siteConfig, defaultCreateSitemapItems, ...rest} = params;
-  const items = await defaultCreateSitemapItems(rest);
+  const items = await defaultCreateSitemapItems(params);
 
   const defaults = {priority: 0.8 as number | null, changefreq: null as string | null};
 

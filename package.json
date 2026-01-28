@@ -19,7 +19,7 @@
     "generate:docs:dev": "ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api"
   },
   "dependencies": { 
-    "@zernikalos/zernikalos": "0.4.1",
+    "@zernikalos/zernikalos": "0.7.0",
     "@docusaurus/plugin-content-docs": "3.9.2",
     "@docusaurus/plugin-ideal-image": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
@@ -27,15 +27,15 @@
     "@mdx-js/react": "3.1.1",
     "clsx": "^2.0.0",
     "commander": "^14.0.0",
-    "daisyui": "5.1.8",
+    "daisyui": "5.5.14",
     "framer-motion": "^12.18.1",
-    "lodash": "^4.17.21",
+    "lodash": "4.17.23",
     "prism-react-renderer": "2.4.1",
     "pug": "^3.0.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-icons": "^5.5.0",
-    "tailwindcss": "4.1.13",
+    "tailwindcss": "4.1.18",
     "unist-util-visit": "5.0.0"
   },
   "devDependencies": {
@@ -43,13 +43,13 @@
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
     "@tailwindcss/postcss": "4.1.13",
-    "@types/lodash": "^4.17.17",
-    "cheerio": "1.1.2",
+    "@types/lodash": "4.17.23",
+    "cheerio": "1.2.0",
     "jsdom": "^26.1.0",
     "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
-    "typescript": "5.9.2",
+    "typescript": "5.9.3",
     "sharp": "0.34.5"
   },
   "browserslist": {
