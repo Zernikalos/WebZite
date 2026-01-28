@@ -15,6 +15,7 @@ import { converter, ConversionResult } from './converter';
 export interface OperationResult {
   result: boolean;
   error: string | null;
+  skipped?: boolean;
 }
 
 /**
@@ -207,7 +208,7 @@ function convertHtmlToMdx(
     }
 
     if (result.skipped) {
-      return { result: true, error: null };
+      return { result: true, error: null, skipped: true };
     }
     
     // Write output to file
@@ -245,6 +246,7 @@ function convertDirectoryToMdx(
   }
   
   let successful = 0;
+  let skipped = 0;
   let failed = 0;
   const errors: string[] = [];
   
@@ -261,7 +263,9 @@ function convertDirectoryToMdx(
     const conversionResult = convertHtmlToMdx(htmlFile, outputFile, replace);
     
     // Update counts and collect errors
-    if (conversionResult.result) {
+    if (conversionResult.skipped) {
+      skipped++;
+    } else if (conversionResult.result) {
       successful++;
     } else {
       failed++;
@@ -270,12 +274,14 @@ function convertDirectoryToMdx(
   }
   
   // Prepare the result
+  const summary = `${successful} converted, ${skipped} skipped, ${failed} failed`;
   if (failed > 0) {
     return {
       result: false,
-      error: `Error processing some files, ${successful}/${htmlFiles.length} files converted successfully\n${errors.join('\n')}`
+      error: `Error processing some files. ${summary}\n${errors.join('\n')}`
     };
   } else {
+    console.log(`✅ Directory processing completed. ${summary}.`);
     return {
       result: true,
       error: null

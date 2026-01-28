@@ -167,12 +167,10 @@ export class MemberPage extends DocumentationPage {
       // This prevents generating redundant MDX files for simple members.
       if (documentationItem.description && documentationItem.description.trim().length > 0) {
         this.documentationItems.push(documentationItem);
-      } else {
-        console.log(`Skipping redundant member page: ${this.mainName}`);
       }
     } catch (error) {
       console.error('Error parsing documentation item:', error);
-      // No añadimos el item si hubo un error en el parseo
+      // We don't add the item if there was an error parsing it.
       return;
     }
   }

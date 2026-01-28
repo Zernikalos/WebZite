@@ -26,8 +26,6 @@ export function extractData($: cheerio.CheerioAPI, content: string): Documentati
     // Only process if a valid member property was found
     if (memberExtractor.hasDocumentationItems) {
       return memberExtractor;
-    } else {
-      console.log('No valid member property found, continuing with normal process...');
     }
   }
 
