@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZResizable"
+slug: 'zernikalos.components/-z-resizable/index.mdx/'
+title: 'ZResizable'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZResizable"
   namespace="Zernikalos.zernikalos.components"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components","url":"/docs/api/-zernikalos.zernikalos.components"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZResizable","url":"#zresizable"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,9 +26,13 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="onViewportResize"
     tokenType="fun"
     groupType="FUNCTION"
-    url="on-viewport-resize"
+    url="on-viewport-resize/"
     description="Notifies the listener when the viewport dimensions change."
   >
-    <CodeBlockComponent platform="common" code={["abstract fun onViewportResize(width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract fun onViewportResize(width: Int, height: Int)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

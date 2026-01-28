@@ -1,16 +1,25 @@
 ---
-slug: "index"
-title: "Op"
+slug: 'zernikalos.math/-z-euler/-op/index.mdx/'
+title: 'Op'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="Op"
   namespace="Zernikalos.zernikalos.math.ZEuler"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math.ZEuler","url":"/docs/api/-zernikalos.zernikalos.math.zeuler"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"Op","url":"#op"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../../' },
+    { label: 'zernikalos.math', url: '../../' },
+    { label: 'ZEuler', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,27 +27,37 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="Zero"
     tokenType="val"
     groupType="PROPERTY"
-    url="-zero"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["val Zero: ZEuler"]} links={[{"text":"Zero","href":"-zero"},{"text":"ZEuler","href":"../index"}]} />
+    <CodeBlockComponent platform="common" code={['val Zero: ZEuler']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="copy"
     tokenType="fun"
     groupType="FUNCTION"
-    url="copy"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun copy(result: ZEuler, e: ZEuler)"]} links={[{"text":"copy","href":"copy"},{"text":"ZEuler","href":"../index"},{"text":"ZEuler","href":"../index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun copy(result: ZEuler, e: ZEuler)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="fromQuaternion"
     tokenType="fun"
     groupType="FUNCTION"
-    url="from-quaternion"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun fromQuaternion(q: ZQuaternion): ZEulerfun fromQuaternion(result: ZEuler, q: ZQuaternion)"]} links={[{"text":"fromQuaternion","href":"from-quaternion"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"},{"text":"ZEuler","href":"../index"},{"text":"fromQuaternion","href":"from-quaternion"},{"text":"ZEuler","href":"../index"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'fun fromQuaternion(q: ZQuaternion): ZEulerfun fromQuaternion(result: ZEuler, q: ZQuaternion)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

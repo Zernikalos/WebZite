@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZVertexArray"
+slug: 'zernikalos.components.mesh/-z-vertex-array/index.mdx/'
+title: 'ZVertexArray'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZVertexArray"
   namespace="Zernikalos.zernikalos.components.mesh"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.mesh","url":"/docs/api/-zernikalos.zernikalos.components.mesh"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZVertexArray","url":"#zvertexarray"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components.mesh', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,90 +26,85 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZVertexArray"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-vertex-array"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="ogl" code={["constructor()"]} links={[]} />
+    <CodeBlockComponent platform="ogl" code={['constructor()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-base-component/is-initialized"
+    url=""
     description="Represents a boolean value indicating whether a component has been initialized."
   >
-    <CodeBlockComponent platform="ogl" code={["override val isInitialized: Boolean"]} links={[{"text":"isInitialized","href":"../../zernikalos.components/-z-base-component/is-initialized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={['override val isInitialized: Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-base-component/is-renderizable"
+    url=""
     description="Represents a boolean value indicating whether a component is renderizable."
   >
-    <CodeBlockComponent platform="ogl" code={["override val isRenderizable: Boolean"]} links={[{"text":"isRenderizable","href":"../../zernikalos.components/-z-base-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={['override val isRenderizable: Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isSerializable"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-base-component/is-serializable"
+    url=""
     description="Indicates whether this component can be serialized."
   >
-    <CodeBlockComponent platform="ogl" code={["val isSerializable: Boolean"]} links={[{"text":"isSerializable","href":"../../zernikalos.components/-z-base-component/is-serializable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={['val isSerializable: Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-base-component/ref-id"
+    url=""
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
   >
-    <CodeBlockComponent platform="ogl" code={["override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-base-component/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="ogl" code={['override val refId: String']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="renderer"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-renderizable-component/renderer"
+    url=""
     description="Provides access to the component's renderer."
   >
-    <CodeBlockComponent platform="ogl" code={["val renderer: ZVertexArrayRenderer"]} links={[{"text":"renderer","href":"../../zernikalos.components/-z-renderizable-component/renderer"},{"text":"ZVertexArrayRenderer","href":"../-z-vertex-array-renderer/index"}]} />
+    <CodeBlockComponent platform="ogl" code={['val renderer: ZVertexArrayRenderer']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
-    url="bind"
+    url="bind/"
     description="Binds the renderer. This method is called to prepare the renderer for drawing."
   >
-    <CodeBlockComponent platform="ogl" code={["open override fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
-  </DocumentationItemComponent>
-  <DocumentationItemComponent
-    name="createRenderer"
-    tokenType="fun"
-    groupType="FUNCTION"
-    url="create-renderer"
-    description="Creates a new renderer instance for this component."
-  >
-    <CodeBlockComponent platform="ogl" code={["open override fun createRenderer(ctx: ZRenderingContext): ZVertexArrayRenderer"]} links={[{"text":"createRenderer","href":"create-renderer"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"ZVertexArrayRenderer","href":"../-z-vertex-array-renderer/index"}]} />
+    <CodeBlockComponent platform="ogl" code={['open override fun bind()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
-    url="../../zernikalos.components/-z-renderizable-component/initialize"
+    url="../../zernikalos.components/-z-renderizable-component/initialize/"
     description="Initializes the ZComponent using the provided ZRenderingContext."
   >
-    <CodeBlockComponent platform="ogl" code={["open override fun initialize(ctx: ZRenderingContext)"]} links={[{"text":"initialize","href":"../../zernikalos.components/-z-renderizable-component/initialize"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+    <CodeBlockComponent
+      platform="ogl"
+      code={['open override fun initialize(ctx: ZRenderingContext)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
-    url="unbind"
+    url="unbind/"
     description="Unbinds the renderer. This method is called after drawing to clean up."
   >
-    <CodeBlockComponent platform="ogl" code={["open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+    <CodeBlockComponent platform="ogl" code={['open override fun unbind()']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

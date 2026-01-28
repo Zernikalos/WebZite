@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZKo"
+slug: 'zernikalos.loader/-z-ko/index.mdx/'
+title: 'ZKo'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZKo"
   namespace="Zernikalos.zernikalos.loader"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.loader","url":"/docs/api/-zernikalos.zernikalos.loader"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZKo","url":"#zko"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.loader', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,36 +26,46 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZKo"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-ko"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor(header: ZkoHeader, root: ZObject, actions: List<ZSkeletalAction>? = null)"]} links={[{"text":"ZkoHeader","href":"../-zko-header/index"},{"text":"ZObject","href":"../../zernikalos.objects/-z-object/index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZSkeletalAction","href":"../../zernikalos.action/-z-skeletal-action/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor(header: ZkoHeader, root: ZObject, actions: List<ZSkeletalAction>? = null)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="actions"
     tokenType="val"
     groupType="PROPERTY"
-    url="actions"
-    description=""
+    url=""
+    description="An optional list of actions (ZSkeletalAction) that can be executed or associated with this ZKo object."
   >
-    <CodeBlockComponent platform="common" code={["val actions: List<ZSkeletalAction>?"]} links={[{"text":"actions","href":"actions"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZSkeletalAction","href":"../../zernikalos.action/-z-skeletal-action/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val actions: List<ZSkeletalAction>?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="header"
     tokenType="val"
     groupType="PROPERTY"
-    url="header"
-    description=""
+    url=""
+    description="The metadata header associated with the ZKo object. This contains the version information and ensures compatibility."
   >
-    <CodeBlockComponent platform="common" code={["val header: ZkoHeader"]} links={[{"text":"header","href":"header"},{"text":"ZkoHeader","href":"../-zko-header/index"}]} />
+    <CodeBlockComponent platform="common" code={['val header: ZkoHeader']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="root"
     tokenType="val"
     groupType="PROPERTY"
-    url="root"
-    description=""
+    url=""
+    description="The root ZObject of the ZKo structure. This represents the starting point of the object hierarchy."
   >
-    <CodeBlockComponent platform="common" code={["val root: ZObject"]} links={[{"text":"root","href":"root"},{"text":"ZObject","href":"../../zernikalos.objects/-z-object/index"}]} />
+    <CodeBlockComponent platform="common" code={['val root: ZObject']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

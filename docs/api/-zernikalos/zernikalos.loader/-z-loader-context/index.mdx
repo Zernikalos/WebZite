@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZLoaderContext"
+slug: 'zernikalos.loader/-z-loader-context/index.mdx/'
+title: 'ZLoaderContext'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZLoaderContext"
   namespace="Zernikalos.zernikalos.loader"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.loader","url":"/docs/api/-zernikalos.zernikalos.loader"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZLoaderContext","url":"#zloadercontext"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.loader', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,36 +26,48 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZLoaderContext"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-loader-context"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+    <CodeBlockComponent platform="common" code={['constructor()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="addComponent"
     tokenType="fun"
     groupType="FUNCTION"
-    url="add-component"
+    url="add-component/"
     description="Adds a component to the store with the given refId."
   >
-    <CodeBlockComponent platform="common" code={["fun addComponent(refId: String, component: ZRef?)"]} links={[{"text":"addComponent","href":"add-component"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZRef","href":"../../zernikalos.components/-z-ref/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun addComponent(refId: String, component: ZRef?)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getComponent"
     tokenType="fun"
     groupType="FUNCTION"
-    url="get-component"
+    url="get-component/"
     description="Retrieves a component from the store with the given refId."
   >
-    <CodeBlockComponent platform="common" code={["fun getComponent(refId: String): ZRef?"]} links={[{"text":"getComponent","href":"get-component"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZRef","href":"../../zernikalos.components/-z-ref/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun getComponent(refId: String): ZRef?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="hasComponent"
     tokenType="fun"
     groupType="FUNCTION"
-    url="has-component"
+    url="has-component/"
     description="Returns true if the component with the given refId has been loaded."
   >
-    <CodeBlockComponent platform="common" code={["fun hasComponent(refId: String): Boolean"]} links={[{"text":"hasComponent","href":"has-component"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun hasComponent(refId: String): Boolean']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

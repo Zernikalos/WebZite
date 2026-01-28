@@ -1,0 +1,166 @@
+---
+slug: 'zernikalos.events.mouse/-z-mouse-event/index.mdx/'
+title: 'ZMouseEvent'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZMouseEvent"
+  namespace="Zernikalos.zernikalos.events.mouse"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.events.mouse', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZMouseEvent"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor(x: Float, y: Float, prevX: Float, prevY: Float, deltaX: Float, deltaY: Float, velocityX: Float, velocityY: Float, accelerationX: Float, accelerationY: Float, type: ZMouseEventType, timestamp: Long, button: Int, buttons: Int)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="accelerationX"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Acceleration in X direction (pixels per second squared)"
+  >
+    <CodeBlockComponent platform="common" code={['val accelerationX: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="accelerationY"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Acceleration in Y direction (pixels per second squared)"
+  >
+    <CodeBlockComponent platform="common" code={['val accelerationY: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="button"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="The mouse button that was pressed (0 = left, 1 = middle, 2 = right)"
+  >
+    <CodeBlockComponent platform="common" code={['val button: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="buttons"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Bitmask of all currently pressed mouse buttons"
+  >
+    <CodeBlockComponent platform="common" code={['val buttons: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="deltaX"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Change in X coordinate since last event"
+  >
+    <CodeBlockComponent platform="common" code={['val deltaX: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="deltaY"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Change in Y coordinate since last event"
+  >
+    <CodeBlockComponent platform="common" code={['val deltaY: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="prevX"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Previous X coordinate in pixels"
+  >
+    <CodeBlockComponent platform="common" code={['val prevX: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="prevY"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Previous Y coordinate in pixels"
+  >
+    <CodeBlockComponent platform="common" code={['val prevY: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="timestamp"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Event timestamp in milliseconds"
+  >
+    <CodeBlockComponent platform="common" code={['val timestamp: Long']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="type"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Type of mouse event"
+  >
+    <CodeBlockComponent platform="common" code={['val type: ZMouseEventType']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="velocityX"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Velocity in X direction (pixels per second)"
+  >
+    <CodeBlockComponent platform="common" code={['val velocityX: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="velocityY"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Velocity in Y direction (pixels per second)"
+  >
+    <CodeBlockComponent platform="common" code={['val velocityY: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="x"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Current X coordinate in pixels"
+  >
+    <CodeBlockComponent platform="common" code={['val x: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="y"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Current Y coordinate in pixels"
+  >
+    <CodeBlockComponent platform="common" code={['val y: Float']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

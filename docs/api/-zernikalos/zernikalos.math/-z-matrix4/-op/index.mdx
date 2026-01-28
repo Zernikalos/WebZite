@@ -1,16 +1,25 @@
 ---
-slug: "index"
-title: "Op"
+slug: 'zernikalos.math/-z-matrix4/-op/index.mdx/'
+title: 'Op'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="Op"
   namespace="Zernikalos.zernikalos.math.ZMatrix4"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.math.ZMatrix4","url":"/docs/api/-zernikalos.zernikalos.math.zmatrix4"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"Op","url":"#op"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../../' },
+    { label: 'zernikalos.math', url: '../../' },
+    { label: 'ZMatrix4', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,135 +27,193 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="Identity"
     tokenType="val"
     groupType="PROPERTY"
-    url="-identity"
+    url=""
     description="Provides a new instance of the identity 4x4 matrix."
   >
-    <CodeBlockComponent platform="common" code={["val Identity: ZMatrix4"]} links={[{"text":"Identity","href":"-identity"},{"text":"ZMatrix4","href":"../index"}]} />
+    <CodeBlockComponent platform="common" code={['val Identity: ZMatrix4']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="add"
     tokenType="fun"
     groupType="FUNCTION"
-    url="add"
+    url="add/"
     description="Adds two 4x4 matrices and stores the result in the provided result matrix."
   >
-    <CodeBlockComponent platform="common" code={["fun add(result: ZMatrix4, m1: ZMatrix4, m2: ZMatrix4)"]} links={[{"text":"add","href":"add"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun add(result: ZMatrix4, m1: ZMatrix4, m2: ZMatrix4)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="fromQuaternion"
     tokenType="fun"
     groupType="FUNCTION"
-    url="from-quaternion"
+    url="from-quaternion/"
     description="Converts a quaternion into a 4x4 matrix representing the same rotation."
   >
-    <CodeBlockComponent platform="common" code={["fun fromQuaternion(q: ZQuaternion): ZMatrix4fun fromQuaternion(result: ZMatrix4, q: ZQuaternion)"]} links={[{"text":"fromQuaternion","href":"from-quaternion"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"},{"text":"ZMatrix4","href":"../index"},{"text":"fromQuaternion","href":"from-quaternion"},{"text":"ZMatrix4","href":"../index"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'fun fromQuaternion(q: ZQuaternion): ZMatrix4fun fromQuaternion(result: ZMatrix4, q: ZQuaternion)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="identity"
     tokenType="fun"
     groupType="FUNCTION"
-    url="identity"
+    url="identity/"
     description="Sets the given matrix to be the identity matrix."
   >
-    <CodeBlockComponent platform="common" code={["fun identity(result: ZMatrix4)"]} links={[{"text":"identity","href":"identity"},{"text":"ZMatrix4","href":"../index"}]} />
+    <CodeBlockComponent platform="common" code={['fun identity(result: ZMatrix4)']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="invert"
     tokenType="fun"
     groupType="FUNCTION"
-    url="invert"
+    url="invert/"
     description="Computes the invert matrix from the given one"
   >
-    <CodeBlockComponent platform="common" code={["fun invert(result: ZMatrix4, m: ZMatrix4): Boolean"]} links={[{"text":"invert","href":"invert"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun invert(result: ZMatrix4, m: ZMatrix4): Boolean']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="lookAt"
     tokenType="fun"
     groupType="FUNCTION"
-    url="look-at"
+    url="look-at/"
     description="Sets up a view transformation matrix to represent a camera looking at a specified target."
   >
-    <CodeBlockComponent platform="common" code={["fun lookAt(result: ZMatrix4, eye: ZVector3, center: ZVector3, up: ZVector3)"]} links={[{"text":"lookAt","href":"look-at"},{"text":"ZMatrix4","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"ZVector3","href":"../../-z-vector3/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun lookAt(result: ZMatrix4, eye: ZVector3, center: ZVector3, up: ZVector3)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="mult"
     tokenType="fun"
     groupType="FUNCTION"
-    url="mult"
+    url="mult/"
     description="Multiplies two 4x4 matrices, storing the result in the result matrix."
   >
-    <CodeBlockComponent platform="common" code={["fun mult(result: ZMatrix4, lm: ZMatrix4, rm: ZMatrix4)"]} links={[{"text":"mult","href":"mult"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun mult(result: ZMatrix4, lm: ZMatrix4, rm: ZMatrix4)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="perspective"
     tokenType="fun"
     groupType="FUNCTION"
-    url="perspective"
+    url="perspective/"
     description="Computes the perspective projection matrix"
   >
-    <CodeBlockComponent platform="common" code={["fun perspective(result: ZMatrix4, fov: Float, aspect: Float, near: Float, far: Float)"]} links={[{"text":"perspective","href":"perspective"},{"text":"ZMatrix4","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'fun perspective(result: ZMatrix4, fov: Float, aspect: Float, near: Float, far: Float)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="rotate"
     tokenType="fun"
     groupType="FUNCTION"
-    url="rotate"
+    url="rotate/"
     description="Rotates the given ZMatrix4 result by the specified ZQuaternion."
   >
-    <CodeBlockComponent platform="common" code={["fun rotate(result: ZMatrix4, q: ZQuaternion)"]} links={[{"text":"rotate","href":"rotate"},{"text":"ZMatrix4","href":"../index"},{"text":"ZQuaternion","href":"../../-z-quaternion/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun rotate(result: ZMatrix4, q: ZQuaternion)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="scale"
     tokenType="fun"
     groupType="FUNCTION"
-    url="scale"
+    url="scale/"
     description="Scales a given 4x4 matrix by specified x, y, and z scaling factors."
   >
-    <CodeBlockComponent platform="common" code={["fun scale(result: ZMatrix4, s: ZVector3)fun scale(result: ZMatrix4, m: ZMatrix4, s: ZVector3)fun scale(result: ZMatrix4, m: ZMatrix4, x: Float, y: Float, z: Float)"]} links={[{"text":"scale","href":"scale"},{"text":"ZMatrix4","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"scale","href":"scale"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"scale","href":"scale"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'fun scale(result: ZMatrix4, s: ZVector3)fun scale(result: ZMatrix4, m: ZMatrix4, s: ZVector3)fun scale(result: ZMatrix4, m: ZMatrix4, x: Float, y: Float, z: Float)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="setTranslation"
     tokenType="fun"
     groupType="FUNCTION"
-    url="set-translation"
+    url="set-translation/"
     description="Sets the translation component of a matrix using the specified translation vector.Sets the translation components of the provided 4x4 matrix to the specified x, y, and z values."
   >
-    <CodeBlockComponent platform="common" code={["fun setTranslation(result: ZMatrix4, translation: ZVector3)fun setTranslation(result: ZMatrix4, x: Float, y: Float, z: Float)"]} links={[{"text":"setTranslation","href":"set-translation"},{"text":"ZMatrix4","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"setTranslation","href":"set-translation"},{"text":"ZMatrix4","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'fun setTranslation(result: ZMatrix4, translation: ZVector3)fun setTranslation(result: ZMatrix4, x: Float, y: Float, z: Float)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="subtract"
     tokenType="fun"
     groupType="FUNCTION"
-    url="subtract"
+    url="subtract/"
     description="Subtracts two 4x4 matrices and stores the result in the provided result matrix."
   >
-    <CodeBlockComponent platform="common" code={["fun subtract(result: ZMatrix4, m1: ZMatrix4, m2: ZMatrix4)"]} links={[{"text":"subtract","href":"subtract"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun subtract(result: ZMatrix4, m1: ZMatrix4, m2: ZMatrix4)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="translate"
     tokenType="fun"
     groupType="FUNCTION"
-    url="translate"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun translate(result: ZMatrix4, translation: ZVector3)fun translate(result: ZMatrix4, m: ZMatrix4, translation: ZVector3)fun translate(result: ZMatrix4, x: Float, y: Float, z: Float)"]} links={[{"text":"translate","href":"translate"},{"text":"ZMatrix4","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"translate","href":"translate"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"},{"text":"ZVector3","href":"../../-z-vector3/index"},{"text":"translate","href":"translate"},{"text":"ZMatrix4","href":"../index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'fun translate(result: ZMatrix4, translation: ZVector3)fun translate(result: ZMatrix4, m: ZMatrix4, translation: ZVector3)fun translate(result: ZMatrix4, x: Float, y: Float, z: Float)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="transpose"
     tokenType="fun"
     groupType="FUNCTION"
-    url="transpose"
+    url="transpose/"
     description="Transposes the given 4x4 matrix m and stores the result in result."
   >
-    <CodeBlockComponent platform="common" code={["fun transpose(result: ZMatrix4, m: ZMatrix4)"]} links={[{"text":"transpose","href":"transpose"},{"text":"ZMatrix4","href":"../index"},{"text":"ZMatrix4","href":"../index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun transpose(result: ZMatrix4, m: ZMatrix4)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="transposeIp"
     tokenType="fun"
     groupType="FUNCTION"
-    url="transpose-ip"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun transposeIp(result: ZMatrix4)"]} links={[{"text":"transposeIp","href":"transpose-ip"},{"text":"ZMatrix4","href":"../index"}]} />
+    <CodeBlockComponent platform="common" code={['fun transposeIp(result: ZMatrix4)']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

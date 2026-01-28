@@ -1,0 +1,101 @@
+---
+slug: 'zernikalos.events/index.mdx/'
+title: 'events'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="events"
+  namespace="Zernikalos"
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="WebInputEventManager"
+    tokenType="class"
+    groupType="TYPE"
+    url="-web-input-event-manager/"
+    description="Manages the capture and conversion of DOM input events (mouse and keyboard) for a canvas element, converting them to Zernikalos events and enqueuing them in an event queue for synchronous processing during the game loop."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['class WebInputEventManager(canvas: HTMLCanvasElement, eventQueue: ZEventQueue?)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="WebKeyboardEventAdapter"
+    tokenType="class"
+    groupType="TYPE"
+    url="-web-keyboard-event-adapter/"
+    description="Adapter that converts DOM KeyboardEvent to ZKeyboardEvent."
+  >
+    <CodeBlockComponent platform="webgpu" code={['class WebKeyboardEventAdapter']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="WebMouseEventAdapter"
+    tokenType="class"
+    groupType="TYPE"
+    url="-web-mouse-event-adapter/"
+    description="Adapter that converts DOM MouseEvent to ZMouseEvent."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['class WebMouseEventAdapter(canvas: HTMLCanvasElement)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZEventManager"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-event-manager/"
+    description="Manages event listeners for a ZObject instance. This class encapsulates all listener management functionality, providing a clean API for adding, removing, and notifying listeners for touch, mouse, and keyboard events."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZEventManager(owner: ZObject)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZEventQueue"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-event-queue/"
+    description="Event queue that accumulates user input events and processes them synchronously during the game loop frame update phase."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZEventQueue(context: ZContext) : ZUserInputEventHandler']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZInputState"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-input-state/"
+    description="Container for all input state information, including keyboard, mouse, and touch states."
+  >
+    <CodeBlockComponent platform="common" code={['class ZInputState']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUserInputEventHandler"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-user-input-event-handler/"
+    description="Handler interface for user input events, including touch, mouse, and keyboard events."
+  >
+    <CodeBlockComponent platform="common" code={['interface ZUserInputEventHandler']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

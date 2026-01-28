@@ -194,7 +194,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/quickstart',
+              to: '/quickstart/',
             },
           ],
         },
@@ -212,7 +212,7 @@ const config: Config = {
           items: [
             {
               label: 'API',
-              to: '/api',
+              to: '/api/',
             },
             {
               label: 'GitHub',

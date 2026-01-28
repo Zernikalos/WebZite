@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZTexture"
+slug: 'zernikalos.components.material/-z-texture/index.mdx/'
+title: 'ZTexture'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZTexture"
   namespace="Zernikalos.zernikalos.components.material"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.material","url":"/docs/api/-zernikalos.zernikalos.components.material"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZTexture","url":"#ztexture"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components.material', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,144 +26,223 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZTexture"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-texture"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor()constructor(id: String, width: Int, height: Int, flipX: Boolean, flipY: Boolean, dataArray: ByteArray)"]} links={[{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor()constructor(id: String, width: Int, height: Int, flipX: Boolean, flipY: Boolean, dataArray: ByteArray)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="channels"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the channel format (e.g., RGBA, RGB, R)."
+  >
+    <CodeBlockComponent platform="common" code={['var channels: ZTextureChannels']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="colorSpace"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the color space (LINEAR or SRGB)."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['var colorSpace: ZTextureColorSpace']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dataArray"
     tokenType="var"
     groupType="PROPERTY"
-    url="data-array"
+    url=""
     description="Represents an array of bytes used for storing the image data."
   >
-    <CodeBlockComponent platform="common" code={["var dataArray: ByteArray"]} links={[{"text":"dataArray","href":"data-array"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['var dataArray: ByteArray']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="flipX"
     tokenType="var"
     groupType="PROPERTY"
-    url="flip-x"
+    url=""
     description="Represents whether the texture should be flipped horizontally."
   >
-    <CodeBlockComponent platform="common" code={["var flipX: Boolean"]} links={[{"text":"flipX","href":"flip-x"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['var flipX: Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="flipY"
     tokenType="var"
     groupType="PROPERTY"
-    url="flip-y"
+    url=""
     description="Represents whether the texture should be flipped vertically."
   >
-    <CodeBlockComponent platform="common" code={["var flipY: Boolean"]} links={[{"text":"flipY","href":"flip-y"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['var flipY: Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="height"
     tokenType="var"
     groupType="PROPERTY"
-    url="height"
+    url=""
     description="Represents the height of the texture image"
   >
-    <CodeBlockComponent platform="common" code={["var height: Int"]} links={[{"text":"height","href":"height"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['var height: Int']} links={[]} />
   </DocumentationItemComponent>
-  <DocumentationItemComponent
-    name="id"
-    tokenType="var"
-    groupType="PROPERTY"
-    url="id"
-    description=""
-  >
-    <CodeBlockComponent platform="common" code={["var id: String"]} links={[{"text":"id","href":"id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+  <DocumentationItemComponent name="id" tokenType="var" groupType="PROPERTY" url="" description="">
+    <CodeBlockComponent platform="common" code={['var id: String']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-base-component/is-initialized"
+    url=""
     description="Represents a boolean value indicating whether a component has been initialized."
   >
-    <CodeBlockComponent platform="common" code={["override val isInitialized: Boolean"]} links={[{"text":"isInitialized","href":"../../zernikalos.components/-z-base-component/is-initialized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isInitialized: Boolean']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-base-component/is-renderizable"
+    url=""
     description="Represents a boolean value indicating whether a component is renderizable."
   >
-    <CodeBlockComponent platform="common" code={["override val isRenderizable: Boolean"]} links={[{"text":"isRenderizable","href":"../../zernikalos.components/-z-base-component/is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isRenderizable: Boolean']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isSerializable"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-base-component/is-serializable"
+    url=""
     description="Indicates whether this component can be serialized."
   >
-    <CodeBlockComponent platform="common" code={["val isSerializable: Boolean"]} links={[{"text":"isSerializable","href":"../../zernikalos.components/-z-base-component/is-serializable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['val isSerializable: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="magFilter"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the magnification filter mode for the texture."
+  >
+    <CodeBlockComponent platform="common" code={['var magFilter: ZTextureFilterMode']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="minFilter"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the minification filter mode for the texture."
+  >
+    <CodeBlockComponent platform="common" code={['var minFilter: ZTextureFilterMode']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="normalized"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents whether the texture values are normalized."
+  >
+    <CodeBlockComponent platform="common" code={['var normalized: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="pixelType"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the pixel type (e.g., UNSIGNED_BYTE, FLOAT)."
+  >
+    <CodeBlockComponent platform="common" code={['var pixelType: ZBaseType']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-base-component/ref-id"
+    url=""
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
   >
-    <CodeBlockComponent platform="common" code={["override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-base-component/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['override val refId: String']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="renderer"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-renderizable-component/renderer"
+    url=""
     description="Provides access to the component's renderer."
   >
-    <CodeBlockComponent platform="common" code={["val renderer: ZTextureRenderer"]} links={[{"text":"renderer","href":"../../zernikalos.components/-z-renderizable-component/renderer"}]} />
+    <CodeBlockComponent platform="common" code={['val renderer: ZTextureRenderer']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="width"
     tokenType="var"
     groupType="PROPERTY"
-    url="width"
+    url=""
     description="Represents the width of the texture image"
   >
-    <CodeBlockComponent platform="common" code={["var width: Int"]} links={[{"text":"width","href":"width"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['var width: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="wrapModeU"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the wrap mode for the U (horizontal) texture coordinate."
+  >
+    <CodeBlockComponent platform="common" code={['var wrapModeU: ZTextureWrapMode']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="wrapModeV"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the wrap mode for the V (vertical) texture coordinate."
+  >
+    <CodeBlockComponent platform="common" code={['var wrapModeV: ZTextureWrapMode']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="bind"
     tokenType="fun"
     groupType="FUNCTION"
-    url="bind"
+    url="bind/"
     description="Binds the renderer. This method is called to prepare the renderer for drawing."
   >
-    <CodeBlockComponent platform="common" code={["open override fun bind()"]} links={[{"text":"bind","href":"bind"}]} />
-  </DocumentationItemComponent>
-  <DocumentationItemComponent
-    name="createRenderer"
-    tokenType="fun"
-    groupType="FUNCTION"
-    url="create-renderer"
-    description="Creates a new renderer instance for this component."
-  >
-    <CodeBlockComponent platform="common" code={["open override fun createRenderer(ctx: ZRenderingContext): ZTextureRenderer"]} links={[{"text":"createRenderer","href":"create-renderer"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+    <CodeBlockComponent platform="common" code={['open override fun bind()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
-    url="../../zernikalos.components/-z-renderizable-component/initialize"
+    url="../../zernikalos.components/-z-renderizable-component/initialize/"
     description="Initializes the ZComponent using the provided ZRenderingContext."
   >
-    <CodeBlockComponent platform="common" code={["open override fun initialize(ctx: ZRenderingContext)"]} links={[{"text":"initialize","href":"../../zernikalos.components/-z-renderizable-component/initialize"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun initialize(ctx: ZRenderingContext)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="unbind"
     tokenType="fun"
     groupType="FUNCTION"
-    url="unbind"
+    url="unbind/"
     description="Unbinds the renderer. This method is called after drawing to clean up."
   >
-    <CodeBlockComponent platform="common" code={["open override fun unbind()"]} links={[{"text":"unbind","href":"unbind"}]} />
+    <CodeBlockComponent platform="common" code={['open override fun unbind()']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZComponent"
+slug: 'zernikalos.components/-z-component/index.mdx/'
+title: 'ZComponent'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZComponent"
   namespace="Zernikalos.zernikalos.components"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components","url":"/docs/api/-zernikalos.zernikalos.components"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZComponent","url":"#zcomponent"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,36 +26,48 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
-    url="is-initialized"
+    url=""
     description="Represents a boolean value indicating whether a component has been initialized."
   >
-    <CodeBlockComponent platform="common" code={["abstract val isInitialized: Boolean"]} links={[{"text":"isInitialized","href":"is-initialized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract val isInitialized: Boolean']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
-    url="is-renderizable"
+    url=""
     description="Represents a boolean value indicating whether a component is renderizable."
   >
-    <CodeBlockComponent platform="common" code={["abstract val isRenderizable: Boolean"]} links={[{"text":"isRenderizable","href":"is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract val isRenderizable: Boolean']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
-    url="../-z-ref/ref-id"
+    url=""
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
   >
-    <CodeBlockComponent platform="common" code={["abstract val refId: String"]} links={[{"text":"refId","href":"../-z-ref/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['abstract val refId: String']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
-    url="initialize"
+    url="initialize/"
     description="Initializes the ZComponent using the provided ZRenderingContext."
   >
-    <CodeBlockComponent platform="common" code={["abstract fun initialize(ctx: ZRenderingContext)"]} links={[{"text":"initialize","href":"initialize"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract fun initialize(ctx: ZRenderingContext)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZUniformData"
+slug: 'zernikalos.components.shader/-z-uniform-data/index.mdx/'
+title: 'ZUniformData'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZUniformData"
   namespace="Zernikalos.zernikalos.components.shader"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components.shader","url":"/docs/api/-zernikalos.zernikalos.components.shader"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZUniformData","url":"#zuniformdata"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components.shader', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,72 +26,90 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZUniformData"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-uniform-data"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor(id: Int = -1, uniformName: String = \"\", count: Int = -1, dataType: ZDataType = ZTypes.NONE)"]} links={[{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor(id: Int = -1, uniformName: String = "", count: Int = -1, dataType: ZDataType = ZTypes.NONE)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="byteSize"
     tokenType="val"
     groupType="PROPERTY"
-    url="byte-size"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["val byteSize: Int"]} links={[{"text":"byteSize","href":"byte-size"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['val byteSize: Int']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="count"
     tokenType="var"
     groupType="PROPERTY"
-    url="count"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["var count: Int"]} links={[{"text":"count","href":"count"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['var count: Int']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dataType"
     tokenType="var"
     groupType="PROPERTY"
-    url="data-type"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["var dataType: ZDataType"]} links={[{"text":"dataType","href":"data-type"},{"text":"ZDataType","href":"../../zernikalos/-z-data-type/index"}]} />
+    <CodeBlockComponent platform="common" code={['var dataType: ZDataType']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="id"
     tokenType="var"
     groupType="PROPERTY"
-    url="id"
+    url=""
     description="Represents the unique identifier for a ZUniform instance. This ID is used to differentiate between different uniform components"
   >
-    <CodeBlockComponent platform="common" code={["open override var id: Int"]} links={[{"text":"id","href":"id"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['open override var id: Int']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.components/-z-component-data/ref-id"
+    url=""
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
   >
-    <CodeBlockComponent platform="common" code={["@Transient","open override val refId: String"]} links={[{"text":"refId","href":"../../zernikalos.components/-z-component-data/ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['@Transient', 'open override val refId: String']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="uniformName"
     tokenType="var"
     groupType="PROPERTY"
-    url="uniform-name"
+    url=""
     description="This is the name within the shader source code"
   >
-    <CodeBlockComponent platform="common" code={["open override var uniformName: String"]} links={[{"text":"uniformName","href":"uniform-name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override var uniformName: String']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="value"
     tokenType="var"
     groupType="PROPERTY"
-    url="value"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["open override var value: ZAlgebraObject"]} links={[{"text":"value","href":"value"},{"text":"ZAlgebraObject","href":"../../zernikalos.math/-z-algebra-object/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override var value: ZAlgebraObject']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZActionPlayer"
+slug: 'zernikalos.action/-z-action-player/index.mdx/'
+title: 'ZActionPlayer'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZActionPlayer"
   namespace="Zernikalos.zernikalos.action"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.action","url":"/docs/api/-zernikalos.zernikalos.action"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZActionPlayer","url":"#zactionplayer"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.action', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,126 +26,138 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZActionPlayer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-action-player"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+    <CodeBlockComponent platform="common" code={['constructor()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getCurrentKeyFrame"
     tokenType="fun"
     groupType="FUNCTION"
-    url="get-current-key-frame"
+    url="get-current-key-frame/"
     description="Gets the current keyframe based on playback time"
   >
-    <CodeBlockComponent platform="common" code={["fun getCurrentKeyFrame(): ZKeyFrame?"]} links={[{"text":"getCurrentKeyFrame","href":"get-current-key-frame"},{"text":"ZKeyFrame","href":"../-z-key-frame/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun getCurrentKeyFrame(): ZKeyFrame?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getCurrentTime"
     tokenType="fun"
     groupType="FUNCTION"
-    url="get-current-time"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun getCurrentTime(): Float"]} links={[{"text":"getCurrentTime","href":"get-current-time"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['fun getCurrentTime(): Float']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getDuration"
     tokenType="fun"
     groupType="FUNCTION"
-    url="get-duration"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun getDuration(): Float"]} links={[{"text":"getDuration","href":"get-duration"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['fun getDuration(): Float']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getProgress"
     tokenType="fun"
     groupType="FUNCTION"
-    url="get-progress"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun getProgress(): Float"]} links={[{"text":"getProgress","href":"get-progress"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['fun getProgress(): Float']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isPlaying"
     tokenType="fun"
     groupType="FUNCTION"
-    url="is-playing"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun isPlaying(): Boolean"]} links={[{"text":"isPlaying","href":"is-playing"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['fun isPlaying(): Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="pause"
     tokenType="fun"
     groupType="FUNCTION"
-    url="pause"
+    url="pause/"
     description="Pauses playback"
   >
-    <CodeBlockComponent platform="common" code={["fun pause()"]} links={[{"text":"pause","href":"pause"}]} />
+    <CodeBlockComponent platform="common" code={['fun pause()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="play"
     tokenType="fun"
     groupType="FUNCTION"
-    url="play"
+    url="play/"
     description="Starts playing the action"
   >
-    <CodeBlockComponent platform="common" code={["fun play(loop: Boolean = false)"]} links={[{"text":"play","href":"play"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['fun play(loop: Boolean = false)']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="resetTimer"
     tokenType="fun"
     groupType="FUNCTION"
-    url="reset-timer"
+    url="reset-timer/"
     description="Resets the internal time counter. Useful when a lot of time has passed since the last update and we don't want a large jump in the animation."
   >
-    <CodeBlockComponent platform="common" code={["fun resetTimer()"]} links={[{"text":"resetTimer","href":"reset-timer"}]} />
+    <CodeBlockComponent platform="common" code={['fun resetTimer()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="seek"
     tokenType="fun"
     groupType="FUNCTION"
-    url="seek"
+    url="seek/"
     description="Jumps to a specific point in time"
   >
-    <CodeBlockComponent platform="common" code={["fun seek(time: Float)"]} links={[{"text":"seek","href":"seek"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['fun seek(time: Float)']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="setAction"
     tokenType="fun"
     groupType="FUNCTION"
-    url="set-action"
+    url="set-action/"
     description="Sets the action to be played"
   >
-    <CodeBlockComponent platform="common" code={["fun setAction(obj: ZModel, action: ZSkeletalAction)"]} links={[{"text":"setAction","href":"set-action"},{"text":"ZModel","href":"../../zernikalos.objects/-z-model/index"},{"text":"ZSkeletalAction","href":"../-z-skeletal-action/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun setAction(obj: ZModel, action: ZSkeletalAction)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="setPlaybackSpeed"
     tokenType="fun"
     groupType="FUNCTION"
-    url="set-playback-speed"
+    url="set-playback-speed/"
     description="Sets the playback speed"
   >
-    <CodeBlockComponent platform="common" code={["fun setPlaybackSpeed(speed: Float)"]} links={[{"text":"setPlaybackSpeed","href":"set-playback-speed"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun setPlaybackSpeed(speed: Float)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="stop"
     tokenType="fun"
     groupType="FUNCTION"
-    url="stop"
+    url="stop/"
     description="Stops playback and resets the time"
   >
-    <CodeBlockComponent platform="common" code={["fun stop()"]} links={[{"text":"stop","href":"stop"}]} />
+    <CodeBlockComponent platform="common" code={['fun stop()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="update"
     tokenType="fun"
     groupType="FUNCTION"
-    url="update"
+    url="update/"
     description="Updates the playback state by automatically calculating the time elapsed since the last call."
   >
-    <CodeBlockComponent platform="common" code={["fun update()"]} links={[{"text":"update","href":"update"}]} />
+    <CodeBlockComponent platform="common" code={['fun update()']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

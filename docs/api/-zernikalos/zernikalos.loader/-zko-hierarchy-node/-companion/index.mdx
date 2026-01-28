@@ -1,16 +1,25 @@
 ---
-slug: "index"
-title: "Companion"
+slug: 'zernikalos.loader/-zko-hierarchy-node/-companion/index.mdx/'
+title: 'Companion'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="Companion"
   namespace="Zernikalos.zernikalos.loader.ZkoHierarchyNode"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.loader.ZkoHierarchyNode","url":"/docs/api/-zernikalos.zernikalos.loader.zkohierarchynode"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"Companion","url":"#companion"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../../' },
+    { label: 'zernikalos.loader', url: '../../' },
+    { label: 'ZkoHierarchyNode', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,9 +27,15 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="transformHierarchy"
     tokenType="fun"
     groupType="FUNCTION"
-    url="transform-hierarchy"
+    url="transform-hierarchy/"
     description="Recursively transforms a hierarchy of ZkoHierarchyNode objects into corresponding ZObject structures, linking child objects to their respective parents."
   >
-    <CodeBlockComponent platform="common" code={["fun transformHierarchy(hierarchyNode: ZkoHierarchyNode, objects: List<ZkoObjectProto>): ZObject"]} links={[{"text":"transformHierarchy","href":"transform-hierarchy"},{"text":"ZkoHierarchyNode","href":"../index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZkoObjectProto","href":"../../-zko-object-proto/index"},{"text":"ZObject","href":"../../../zernikalos.objects/-z-object/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'fun transformHierarchy(hierarchyNode: ZkoHierarchyNode, objects: List<ZkoObjectProto>): ZObject',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

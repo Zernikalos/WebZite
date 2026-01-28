@@ -1,0 +1,64 @@
+---
+slug: 'zernikalos.events/-z-user-input-event-handler/index.mdx/'
+title: 'ZUserInputEventHandler'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZUserInputEventHandler"
+  namespace="Zernikalos.zernikalos.events"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.events', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="onKeyboardEvent"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-keyboard-event/"
+    description="Called when a keyboard event occurs."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract fun onKeyboardEvent(event: ZKeyboardEvent)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="onMouseEvent"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-mouse-event/"
+    description="Called when a mouse event occurs."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract fun onMouseEvent(event: ZMouseEvent)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="onTouchEvent"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-touch-event/"
+    description="Called when a touch event occurs."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract fun onTouchEvent(event: ZTouchEvent)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

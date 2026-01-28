@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZObject"
+slug: 'zernikalos.objects/-z-object/index.mdx/'
+title: 'ZObject'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZObject"
   namespace="Zernikalos.zernikalos.objects"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.objects","url":"/docs/api/-zernikalos.zernikalos.objects"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZObject","url":"#zobject"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.objects', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,153 +26,194 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZObject"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-object"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+    <CodeBlockComponent platform="common" code={['constructor()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="children"
     tokenType="var"
     groupType="PROPERTY"
-    url="children"
+    url=""
     description="An array of ZObjects that are children of this object, allowing for a hierarchical structure."
   >
-    <CodeBlockComponent platform="common" code={["open override var children: Array<ZObject>"]} links={[{"text":"children","href":"children"},{"text":"Array","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html"},{"text":"ZObject","href":"index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override var children: Array<ZObject>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="events"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Event manager for this object, providing access to listener management functionality."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Transient', 'val events: ZEventManager']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="hasParent"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.search/-z-tree-node/has-parent"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["open val hasParent: Boolean"]} links={[{"text":"hasParent","href":"../../zernikalos.search/-z-tree-node/has-parent"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['open val hasParent: Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
-    url="is-initialized"
+    url=""
     description="A boolean indicating whether the object has been initialized. This is set to true after the first call to initialize."
   >
-    <CodeBlockComponent platform="common" code={["val isInitialized: Boolean"]} links={[{"text":"isInitialized","href":"is-initialized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['val isInitialized: Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRoot"
     tokenType="val"
     groupType="PROPERTY"
-    url="../../zernikalos.search/-z-tree-node/is-root"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["open val isRoot: Boolean"]} links={[{"text":"isRoot","href":"../../zernikalos.search/-z-tree-node/is-root"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['open val isRoot: Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="name"
     tokenType="var"
     groupType="PROPERTY"
-    url="name"
+    url=""
     description="The name of the object. If not explicitly set, a default name is generated based on the object's type and ID."
   >
-    <CodeBlockComponent platform="common" code={["@SerialName(value = \"name\")","var name: String"]} links={[{"text":"name","href":"name"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['@SerialName(value = "name")', 'var name: String']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="parent"
     tokenType="val"
     groupType="PROPERTY"
-    url="parent"
+    url=""
     description="A reference to the parent ZObject, if any. Null if the object has no parent, making it a root object."
   >
-    <CodeBlockComponent platform="common" code={["open override val parent: ZObject?"]} links={[{"text":"parent","href":"parent"},{"text":"ZObject","href":"index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val parent: ZObject?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
-    url="ref-id"
+    url=""
     description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
   >
-    <CodeBlockComponent platform="common" code={["open override val refId: String"]} links={[{"text":"refId","href":"ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['open override val refId: String']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="transform"
     tokenType="var"
     groupType="PROPERTY"
-    url="transform"
+    url=""
     description="An instance of ZTransform representing the object's position, rotation, and scale in the 3D space."
   >
-    <CodeBlockComponent platform="common" code={["var transform: ZTransform"]} links={[{"text":"transform","href":"transform"},{"text":"ZTransform","href":"../../zernikalos.math/-z-transform/index"}]} />
+    <CodeBlockComponent platform="common" code={['var transform: ZTransform']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="type"
     tokenType="val"
     groupType="PROPERTY"
-    url="type"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["abstract val type: ZObjectType"]} links={[{"text":"type","href":"type"},{"text":"ZObjectType","href":"../-z-object-type/index"}]} />
+    <CodeBlockComponent platform="common" code={['abstract val type: ZObjectType']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="addChild"
     tokenType="fun"
     groupType="FUNCTION"
-    url="add-child"
+    url="add-child/"
     description="Adds a child object to this object, establishing a parent-child relationship. The child object will be rendered relative to this object's transform."
   >
-    <CodeBlockComponent platform="common" code={["fun addChild(child: ZObject)"]} links={[{"text":"addChild","href":"add-child"},{"text":"ZObject","href":"index"}]} />
+    <CodeBlockComponent platform="common" code={['fun addChild(child: ZObject)']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="initialize"
     tokenType="fun"
     groupType="FUNCTION"
-    url="initialize"
+    url="initialize/"
     description="Initializes the object and its children, preparing them for rendering. This function should be called before the object is rendered for the first time. It sets the object's state to initialized and recursively initializes all child objects."
   >
-    <CodeBlockComponent platform="common" code={["fun initialize(ctx: ZContext)"]} links={[{"text":"initialize","href":"initialize"},{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"}]} />
+    <CodeBlockComponent platform="common" code={['fun initialize(ctx: ZContext)']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="lookAt"
     tokenType="fun"
     groupType="FUNCTION"
-    url="look-at"
-    description="Adjusts the object's orientation so that it &quot;looks at&quot; a specified point in space.Adjusts the object's orientation so that it &quot;looks at&quot; a specified point in space, with a specified up direction. This changes the object's rotation to face the point, while aligning its up direction with the specified up vector."
+    url="look-at/"
+    description='Adjusts the object&apos;s orientation so that it "looks at" a specified point in space.Adjusts the object&apos;s orientation so that it "looks at" a specified point in space, with a specified up direction. This changes the object&apos;s rotation to face the point, while aligning its up direction with the specified up vector.'
   >
-    <CodeBlockComponent platform="common" code={["fun lookAt(look: ZVector3)fun lookAt(look: ZVector3, up: ZVector3)"]} links={[{"text":"lookAt","href":"look-at"},{"text":"ZVector3","href":"../../zernikalos.math/-z-vector3/index"},{"text":"lookAt","href":"look-at"},{"text":"ZVector3","href":"../../zernikalos.math/-z-vector3/index"},{"text":"ZVector3","href":"../../zernikalos.math/-z-vector3/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun lookAt(look: ZVector3)fun lookAt(look: ZVector3, up: ZVector3)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="onViewportResize"
     tokenType="fun"
     groupType="FUNCTION"
-    url="on-viewport-resize"
+    url="on-viewport-resize/"
     description="Event handler for the viewport resizing. This method should not be called by the user"
   >
-    <CodeBlockComponent platform="common" code={["fun onViewportResize(ctx: ZContext, width: Int, height: Int)"]} links={[{"text":"onViewportResize","href":"on-viewport-resize"},{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun onViewportResize(ctx: ZContext, width: Int, height: Int)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="removeChild"
     tokenType="fun"
     groupType="FUNCTION"
-    url="remove-child"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun removeChild(idx: Int)fun removeChild(child: ZObject)"]} links={[{"text":"removeChild","href":"remove-child"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"removeChild","href":"remove-child"},{"text":"ZObject","href":"index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun removeChild(idx: Int)fun removeChild(child: ZObject)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="render"
     tokenType="fun"
     groupType="FUNCTION"
-    url="render"
+    url="render/"
     description="Renders the object and its children to the screen. This function is responsible for drawing the object on the screen. It should be called every frame to update the object's appearance based on its current state and transformations."
   >
-    <CodeBlockComponent platform="common" code={["fun render(ctx: ZContext)"]} links={[{"text":"render","href":"render"},{"text":"ZContext","href":"../../zernikalos.context/-z-context/index"}]} />
+    <CodeBlockComponent platform="common" code={['fun render(ctx: ZContext)']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="translate"
     tokenType="fun"
     groupType="FUNCTION"
-    url="translate"
+    url="translate/"
     description="Moves the object by a specified amount along each axis. This changes the object's position based on the given x, y, and z offsets."
   >
-    <CodeBlockComponent platform="common" code={["fun translate(x: Float, y: Float, z: Float)"]} links={[{"text":"translate","href":"translate"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun translate(x: Float, y: Float, z: Float)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

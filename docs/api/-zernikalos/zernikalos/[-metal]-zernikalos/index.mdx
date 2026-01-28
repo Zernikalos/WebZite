@@ -1,0 +1,96 @@
+---
+slug: 'zernikalos/[-metal]-zernikalos/index.mdx/'
+title: '[Metal]Zernikalos'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="[Metal]Zernikalos"
+  namespace="Zernikalos.zernikalos"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="Zernikalos"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="metal" code={['constructor()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="context"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the primary context of the Zernikalos engine during its lifecycle."
+  >
+    <CodeBlockComponent platform="metal" code={['lateinit var context: ZContext']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="settings"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the settings for the Zernikalos engine. It provides centralized access to control logging levels and other related settings."
+  >
+    <CodeBlockComponent platform="metal" code={['val settings: ZSettings']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="stats"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Provides platform-specific information and version details for the Zernikalos engine."
+  >
+    <CodeBlockComponent platform="metal" code={['val stats: ZStats']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="dispose"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-zernikalos-base/dispose/"
+    description="Disposes the Zernikalos engine and releases all associated resources."
+  >
+    <CodeBlockComponent platform="metal" code={['fun dispose()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="metal"
+      code={['fun initialize(view: MTKView, stateHandler: ZSceneStateHandler)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="initializeWithDefaults"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="metal"
+      code={['fun initializeWithDefaults(view: ZSurfaceView, stateHandler: ZSceneStateHandler)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

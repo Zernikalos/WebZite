@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "search"
+slug: 'zernikalos.search/index.mdx/'
+title: 'search'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="search"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.search","url":"#zernikalos.search"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,63 +23,91 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZTreeNode"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-tree-node/index"
+    url="-z-tree-node/"
     description="ZTreeNode interface represents a node in a tree structure."
   >
-    <CodeBlockComponent platform="common" code={["interface ZTreeNode<T : ZTreeNode<T>>"]} links={[{"text":"ZTreeNode","href":"-z-tree-node/index"},{"text":"T","href":"-z-tree-node/index"},{"text":"ZTreeNode","href":"-z-tree-node/index"},{"text":"T","href":"-z-tree-node/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['interface ZTreeNode<T : ZTreeNode<T>>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="findFirstCamera"
     tokenType="fun"
     groupType="FUNCTION"
-    url="find-first-camera"
+    url="find-first-camera/"
     description="Finds the first ZCamera in a given ZObject tree starting at root."
   >
-    <CodeBlockComponent platform="common" code={["fun findFirstCamera(root: ZObject): ZCamera?"]} links={[{"text":"findFirstCamera","href":"find-first-camera"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"},{"text":"ZCamera","href":"../zernikalos.objects/-z-camera/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun findFirstCamera(root: ZObject): ZCamera?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="findFirstModel"
     tokenType="fun"
     groupType="FUNCTION"
-    url="find-first-model"
+    url="find-first-model/"
     description="Finds the first ZModel in a given ZObject tree starting at root."
   >
-    <CodeBlockComponent platform="common" code={["fun findFirstModel(root: ZObject): ZModel?"]} links={[{"text":"findFirstModel","href":"find-first-model"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"},{"text":"ZModel","href":"../zernikalos.objects/-z-model/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun findFirstModel(root: ZObject): ZModel?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="findInTree"
     tokenType="fun"
     groupType="FUNCTION"
-    url="find-in-tree"
+    url="find-in-tree/"
     description="Finds a specific node in a tree on the given predicate."
   >
-    <CodeBlockComponent platform="common" code={["fun <T : ZTreeNode<T>> findInTree(tree: T, predicate: (node: T) -> Boolean): T?"]} links={[{"text":"T","href":"find-in-tree"},{"text":"ZTreeNode","href":"-z-tree-node/index"},{"text":"T","href":"find-in-tree"},{"text":"findInTree","href":"find-in-tree"},{"text":"T","href":"find-in-tree"},{"text":"T","href":"find-in-tree"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"T","href":"find-in-tree"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun <T : ZTreeNode<T>> findInTree(tree: T, predicate: (node: T) -> Boolean): T?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="findObjectByName"
     tokenType="fun"
     groupType="FUNCTION"
-    url="find-object-by-name"
+    url="find-object-by-name/"
     description="Finds an object in a tree structure by its name."
   >
-    <CodeBlockComponent platform="common" code={["fun findObjectByName(root: ZObject, name: String): ZObject?"]} links={[{"text":"findObjectByName","href":"find-object-by-name"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun findObjectByName(root: ZObject, name: String): ZObject?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="treeAsList"
     tokenType="fun"
     groupType="FUNCTION"
-    url="tree-as-list"
+    url="tree-as-list/"
     description="Returns a list representation of the tree structure starting from the given node."
   >
-    <CodeBlockComponent platform="common" code={["fun <T : ZTreeNode<T>> treeAsList(node: T): List<T>"]} links={[{"text":"T","href":"tree-as-list"},{"text":"ZTreeNode","href":"-z-tree-node/index"},{"text":"T","href":"tree-as-list"},{"text":"treeAsList","href":"tree-as-list"},{"text":"T","href":"tree-as-list"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"T","href":"tree-as-list"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun <T : ZTreeNode<T>> treeAsList(node: T): List<T>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="treeTraverse"
     tokenType="fun"
     groupType="FUNCTION"
-    url="tree-traverse"
+    url="tree-traverse/"
     description="Traverses a tree structure starting from the given node and returns an iterator over the nodes."
   >
-    <CodeBlockComponent platform="common" code={["fun <T : ZTreeNode<T>> treeTraverse(node: T): Iterator<T>"]} links={[{"text":"T","href":"tree-traverse"},{"text":"ZTreeNode","href":"-z-tree-node/index"},{"text":"T","href":"tree-traverse"},{"text":"treeTraverse","href":"tree-traverse"},{"text":"T","href":"tree-traverse"},{"text":"Iterator","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterator/index.html"},{"text":"T","href":"tree-traverse"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun <T : ZTreeNode<T>> treeTraverse(node: T): Iterator<T>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

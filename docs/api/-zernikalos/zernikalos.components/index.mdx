@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "components"
+slug: 'zernikalos.components/index.mdx/'
+title: 'components'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="components"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.components","url":"#zernikalos.components"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,210 +23,316 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZBaseComponent"
     tokenType="class"
     groupType="TYPE"
-    url="-z-base-component/index"
+    url="-z-base-component/"
     description="Represents the base class for components in the Zernikalos Engine."
   >
-    <CodeBlockComponent platform="common" code={["abstract class ZBaseComponent : ZComponent, ZLoggable"]} links={[{"text":"ZBaseComponent","href":"-z-base-component/index"},{"text":"ZComponent","href":"-z-component/index"},{"text":"ZLoggable","href":"../zernikalos.logger/-z-loggable/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract class ZBaseComponent : ZComponent, ZLoggable']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBindeable"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-bindeable/index"
+    url="-z-bindeable/"
     description="Represents a bindable resource or component in the Zernikalos framework. Classes implementing this interface indicate that they require binding prior to usage and unbinding after usage, typically for rendering or resource management purposes."
   >
-    <CodeBlockComponent platform="common" code={["interface ZBindeable"]} links={[{"text":"ZBindeable","href":"-z-bindeable/index"}]} />
+    <CodeBlockComponent platform="common" code={['interface ZBindeable']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZComponent"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-component/index"
+    url="-z-component/"
     description="Represents a component in the Zernikalos Engine that provides basic initialization and renderability functionalities. This interface is used as a foundation for defining components that interact with a ZRenderingContext."
   >
-    <CodeBlockComponent platform="common" code={["interface ZComponent : ZRef"]} links={[{"text":"ZComponent","href":"-z-component/index"},{"text":"ZRef","href":"-z-ref/index"}]} />
+    <CodeBlockComponent platform="common" code={['interface ZComponent : ZRef']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZComponentData"
     tokenType="class"
     groupType="TYPE"
-    url="-z-component-data/index"
+    url="-z-component-data/"
     description="Represents an abstract base class for data objects associated with components in the Zernikalos Engine."
   >
-    <CodeBlockComponent platform="common" code={["abstract class ZComponentData : ZLoggable, ZRef"]} links={[{"text":"ZComponentData","href":"-z-component-data/index"},{"text":"ZLoggable","href":"../zernikalos.logger/-z-loggable/index"},{"text":"ZRef","href":"-z-ref/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract class ZComponentData : ZLoggable, ZRef']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZComponentRenderer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-component-renderer/index"
+    url="-z-component-renderer/"
     description="Abstract base class responsible for rendering components in the Zernikalos engine. Serves as the foundation for implementing render-specific logic for components that require rendering capabilities."
   >
-    <CodeBlockComponent platform="common" code={["abstract class ZComponentRenderer : ZLoggable"]} links={[{"text":"ZComponentRenderer","href":"-z-component-renderer/index"},{"text":"ZLoggable","href":"../zernikalos.logger/-z-loggable/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract class ZComponentRenderer : ZLoggable']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZComponentSerializer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-component-serializer/index"
+    url="-z-component-serializer/"
     description="Abstract base class for serializing ZComponent instances."
   >
-    <CodeBlockComponent platform="common" code={["abstract class ZComponentSerializer<T : ZComponent, D : Any> : KSerializer<T>"]} links={[{"text":"ZComponentSerializer","href":"-z-component-serializer/index"},{"text":"T","href":"-z-component-serializer/index"},{"text":"ZComponent","href":"-z-component/index"},{"text":"D","href":"-z-component-serializer/index"},{"text":"Any","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html"},{"text":"T","href":"-z-component-serializer/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract class ZComponentSerializer<T : ZComponent, D : Any> : KSerializer<T>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZMainComponentType"
     tokenType="enum"
     groupType="TYPE"
-    url="-z-main-component-type/index"
+    url="-z-main-component-type/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["enum ZMainComponentType : Enum<ZMainComponentType>"]} links={[{"text":"ZMainComponentType","href":"-z-main-component-type/index"},{"text":"Enum","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html"},{"text":"ZMainComponentType","href":"-z-main-component-type/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['enum ZMainComponentType : Enum<ZMainComponentType>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZOmniComponent"
     tokenType="class"
     groupType="TYPE"
-    url="-z-omni-component/index"
+    url="-z-omni-component/"
     description="Represents an abstract component in the Zernikalos Engine that combines both rendering and serialization capabilities."
   >
-    <CodeBlockComponent platform="common" code={["abstract class ZOmniComponent<D : ZComponentData, R : ZComponentRenderer>(data: D) : ZBaseComponent"]} links={[{"text":"ZOmniComponent","href":"-z-omni-component/index"},{"text":"D","href":"-z-omni-component/index"},{"text":"ZComponentData","href":"-z-component-data/index"},{"text":"R","href":"-z-omni-component/index"},{"text":"ZComponentRenderer","href":"-z-component-renderer/index"},{"text":"D","href":"-z-omni-component/index"},{"text":"ZBaseComponent","href":"-z-base-component/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'abstract class ZOmniComponent<D : ZComponentData, R : ZComponentRenderer>(data: D) : ZBaseComponent',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZRef"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-ref/index"
+    url="-z-ref/"
     description="Represents a reference entity within the Zernikalos Engine."
   >
-    <CodeBlockComponent platform="common" code={["interface ZRef"]} links={[{"text":"ZRef","href":"-z-ref/index"}]} />
+    <CodeBlockComponent platform="common" code={['interface ZRef']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZRefComponentSerializer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-ref-component-serializer/index"
+    url="-z-ref-component-serializer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["abstract class ZRefComponentSerializer<T : ZComponent, D : ZComponentData, K : ZRefComponentWrapper<D>>(loaderContext: ZLoaderContext) : KSerializer<T>"]} links={[{"text":"ZRefComponentSerializer","href":"-z-ref-component-serializer/index"},{"text":"T","href":"-z-ref-component-serializer/index"},{"text":"ZComponent","href":"-z-component/index"},{"text":"D","href":"-z-ref-component-serializer/index"},{"text":"ZComponentData","href":"-z-component-data/index"},{"text":"K","href":"-z-ref-component-serializer/index"},{"text":"ZRefComponentWrapper","href":"-z-ref-component-wrapper/index"},{"text":"D","href":"-z-ref-component-serializer/index"},{"text":"ZLoaderContext","href":"../zernikalos.loader/-z-loader-context/index"},{"text":"T","href":"-z-ref-component-serializer/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'abstract class ZRefComponentSerializer<T : ZComponent, D : ZComponentData, K : ZRefComponentWrapper<D>>(loaderContext: ZLoaderContext) : KSerializer<T>',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZRefComponentWrapper"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-ref-component-wrapper/index"
+    url="-z-ref-component-wrapper/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["interface ZRefComponentWrapper<D : ZRef>"]} links={[{"text":"ZRefComponentWrapper","href":"-z-ref-component-wrapper/index"},{"text":"D","href":"-z-ref-component-wrapper/index"},{"text":"ZRef","href":"-z-ref/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['interface ZRefComponentWrapper<D : ZRef>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZRenderizable"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-renderizable/index"
+    url="-z-renderizable/"
     description="Defines a contract for objects that can be rendered on the screen using a rendering system. Implementing classes should provide the logic for drawing their visual representation."
   >
-    <CodeBlockComponent platform="common" code={["interface ZRenderizable"]} links={[{"text":"ZRenderizable","href":"-z-renderizable/index"}]} />
+    <CodeBlockComponent platform="common" code={['interface ZRenderizable']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZRenderizableComponent"
     tokenType="class"
     groupType="TYPE"
-    url="-z-renderizable-component/index"
+    url="-z-renderizable-component/"
     description="Represents an abstract component in the Zernikalos Engine that is renderizable, meaning it can produce a renderer to handle the rendering logic."
   >
-    <CodeBlockComponent platform="common" code={["abstract class ZRenderizableComponent<R : ZComponentRenderer> : ZBaseComponent"]} links={[{"text":"ZRenderizableComponent","href":"-z-renderizable-component/index"},{"text":"R","href":"-z-renderizable-component/index"},{"text":"ZComponentRenderer","href":"-z-component-renderer/index"},{"text":"ZBaseComponent","href":"-z-base-component/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract class ZRenderizableComponent<R : ZComponentRenderer> : ZBaseComponent']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZRenderizableImpl"
     tokenType="class"
     groupType="TYPE"
-    url="-z-renderizable-impl/index"
+    url="-z-renderizable-impl/"
     description="Implementation of the ZRenderizableMixin interface that handles renderer creation and management for components."
   >
-    <CodeBlockComponent platform="common" code={["class ZRenderizableImpl<R : ZComponentRenderer>(component: ZBaseComponent, rendererFactory: (ZRenderingContext) -> R) : ZRenderizableMixin<R>"]} links={[{"text":"ZRenderizableImpl","href":"-z-renderizable-impl/index"},{"text":"R","href":"-z-renderizable-impl/index"},{"text":"ZComponentRenderer","href":"-z-component-renderer/index"},{"text":"ZBaseComponent","href":"-z-base-component/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"R","href":"-z-renderizable-impl/index"},{"text":"ZRenderizableMixin","href":"-z-renderizable-mixin/index"},{"text":"R","href":"-z-renderizable-impl/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'class ZRenderizableImpl<R : ZComponentRenderer>(component: ZBaseComponent, rendererFactory: (ZRenderingContext) -> R) : ZRenderizableMixin<R>',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZRenderizableMixin"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-renderizable-mixin/index"
+    url="-z-renderizable-mixin/"
     description="Mixin interface for components that can be rendered."
   >
-    <CodeBlockComponent platform="common" code={["interface ZRenderizableMixin<R : ZComponentRenderer>"]} links={[{"text":"ZRenderizableMixin","href":"-z-renderizable-mixin/index"},{"text":"R","href":"-z-renderizable-mixin/index"},{"text":"ZComponentRenderer","href":"-z-component-renderer/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['interface ZRenderizableMixin<R : ZComponentRenderer>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZResizable"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-resizable/index"
+    url="-z-resizable/"
     description="An interface for objects that will listen to changes on the viewport dimensions."
   >
-    <CodeBlockComponent platform="common" code={["interface ZResizable"]} links={[{"text":"ZResizable","href":"-z-resizable/index"}]} />
+    <CodeBlockComponent platform="common" code={['interface ZResizable']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSerializableComponent"
     tokenType="class"
     groupType="TYPE"
-    url="-z-serializable-component/index"
+    url="-z-serializable-component/"
     description="Represents an abstract component in the Zernikalos Engine that can be serialized, meaning it contains data that can be persisted and restored."
   >
-    <CodeBlockComponent platform="common" code={["abstract class ZSerializableComponent<D : ZComponentData>(data: D) : ZBaseComponent"]} links={[{"text":"ZSerializableComponent","href":"-z-serializable-component/index"},{"text":"D","href":"-z-serializable-component/index"},{"text":"ZComponentData","href":"-z-component-data/index"},{"text":"D","href":"-z-serializable-component/index"},{"text":"ZBaseComponent","href":"-z-base-component/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract class ZSerializableComponent<D : ZComponentData>(data: D) : ZBaseComponent']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSerializableImpl"
     tokenType="class"
     groupType="TYPE"
-    url="-z-serializable-impl/index"
+    url="-z-serializable-impl/"
     description="Implementation of the ZSerializableMixin interface that handles data management for serializable components."
   >
-    <CodeBlockComponent platform="common" code={["class ZSerializableImpl<D : ZComponentData>(component: ZBaseComponent, val data: D) : ZSerializableMixin<D>"]} links={[{"text":"ZSerializableImpl","href":"-z-serializable-impl/index"},{"text":"D","href":"-z-serializable-impl/index"},{"text":"ZComponentData","href":"-z-component-data/index"},{"text":"ZBaseComponent","href":"-z-base-component/index"},{"text":"D","href":"-z-serializable-impl/index"},{"text":"ZSerializableMixin","href":"-z-serializable-mixin/index"},{"text":"D","href":"-z-serializable-impl/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'class ZSerializableImpl<D : ZComponentData>(component: ZBaseComponent, val data: D) : ZSerializableMixin<D>',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSerializableMixin"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-serializable-mixin/index"
+    url="-z-serializable-mixin/"
     description="Mixin interface for components that can be serialized."
   >
-    <CodeBlockComponent platform="common" code={["interface ZSerializableMixin<D : ZComponentData>"]} links={[{"text":"ZSerializableMixin","href":"-z-serializable-mixin/index"},{"text":"D","href":"-z-serializable-mixin/index"},{"text":"ZComponentData","href":"-z-component-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['interface ZSerializableMixin<D : ZComponentData>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZViewport"
     tokenType="class"
     groupType="TYPE"
-    url="-z-viewport/index"
+    url="-z-viewport/"
     description="Represents a viewport box for rendering objects in Zernikalos."
   >
-    <CodeBlockComponent platform="common" code={["@Serializable(with = ZViewportSerializer::class)","class ZViewport : ZOmniComponent<ZViewportData, ZViewportRenderer> , ZRenderizable, ZResizable"]} links={[{"text":"ZViewportSerializer::class","href":"-z-viewport-serializer/index"},{"text":"ZViewport","href":"-z-viewport/index"},{"text":"ZOmniComponent","href":"-z-omni-component/index"},{"text":"ZViewportData","href":"-z-viewport-data/index"},{"text":"ZViewportRenderer","href":"-z-viewport-renderer/index"},{"text":"ZRenderizable","href":"-z-renderizable/index"},{"text":"ZResizable","href":"-z-resizable/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable(with = ZViewportSerializer::class)',
+        'class ZViewport : ZOmniComponent<ZViewportData, ZViewportRenderer> , ZRenderizable, ZResizable',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZViewportData"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-viewport-data/index"
+    url="-z-viewport-data/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZViewportData(var clearColor: ZColor = ZColor(.2f, .2f, .2f, 1.0f)) : ZComponentData"]} links={[{"text":"ZViewportData","href":"-z-viewport-data/index"},{"text":"ZColor","href":"../zernikalos.math/-z-color/index"},{"text":"ZComponentData","href":"-z-component-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZViewportData(var clearColor: ZColor = ZColor(.2f, .2f, .2f, 1.0f)) : ZComponentData',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZViewportRenderer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-viewport-renderer/index"
+    url="-z-viewport-renderer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["expect class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData) : ZComponentRenderer"]} links={[{"text":"ZViewportRenderer","href":"-z-viewport-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZViewportData","href":"-z-viewport-data/index"},{"text":"ZComponentRenderer","href":"-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="metal" code={["actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData) : ZComponentRenderer"]} links={[{"text":"ZViewportRenderer","href":"-z-viewport-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZViewportData","href":"-z-viewport-data/index"},{"text":"ZComponentRenderer","href":"-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="ogl" code={["actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData) : ZComponentRenderer"]} links={[{"text":"ZViewportRenderer","href":"-z-viewport-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZViewportData","href":"-z-viewport-data/index"},{"text":"ZComponentRenderer","href":"-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="webgpu" code={["actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData) : ZComponentRenderer"]} links={[{"text":"ZViewportRenderer","href":"-z-viewport-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZViewportData","href":"-z-viewport-data/index"},{"text":"ZComponentRenderer","href":"-z-component-renderer/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'expect class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={[
+        'actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={[
+        'actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'actual class ZViewportRenderer(ctx: ZRenderingContext, data: ZViewportData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZViewportSerializer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-viewport-serializer/index"
+    url="-z-viewport-serializer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZViewportSerializer : ZComponentSerializer<ZViewport, ZViewportData>"]} links={[{"text":"ZViewportSerializer","href":"-z-viewport-serializer/index"},{"text":"ZComponentSerializer","href":"-z-component-serializer/index"},{"text":"ZViewport","href":"-z-viewport/index"},{"text":"ZViewportData","href":"-z-viewport-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZViewportSerializer : ZComponentSerializer<ZViewport, ZViewportData>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

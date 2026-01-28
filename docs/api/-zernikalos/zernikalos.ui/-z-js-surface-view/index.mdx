@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZJsSurfaceView"
+slug: 'zernikalos.ui/-z-js-surface-view/index.mdx/'
+title: 'ZJsSurfaceView'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZJsSurfaceView"
   namespace="Zernikalos.zernikalos.ui"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.ui","url":"/docs/api/-zernikalos.zernikalos.ui"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZJsSurfaceView","url":"#zjssurfaceview"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.ui', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,54 +26,83 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZJsSurfaceView"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-js-surface-view"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="webgpu" code={["constructor(canvas: ERROR CLASS: Symbol not found for HTMLCanvasElement)"]} links={[]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['constructor(canvas: HTMLCanvasElement)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="canvas"
     tokenType="val"
     groupType="PROPERTY"
-    url="canvas"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="webgpu" code={["val canvas: ERROR CLASS: Symbol not found for HTMLCanvasElement"]} links={[{"text":"canvas","href":"canvas"}]} />
+    <CodeBlockComponent platform="webgpu" code={['val canvas: HTMLCanvasElement']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="eventHandler"
     tokenType="var"
     groupType="PROPERTY"
-    url="event-handler"
+    url=""
     description="Event handler for surface view events (ready, resize, render). When set, automatically calls onReady() to initialize the surface."
   >
-    <CodeBlockComponent platform="webgpu" code={["open override var eventHandler: ZSurfaceViewEventHandler?"]} links={[{"text":"eventHandler","href":"event-handler"},{"text":"ZSurfaceViewEventHandler","href":"../-z-surface-view-event-handler/index"}]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['open override var eventHandler: ZSurfaceViewEventHandler?']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="eventQueue"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Event queue that accumulates user input events for synchronous processing during the game loop frame update phase. When set, the manager will enqueue all input events to this queue."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['open override var eventQueue: ZEventQueue?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="surfaceHeight"
     tokenType="val"
     groupType="PROPERTY"
-    url="surface-height"
+    url=""
     description="Current surface height in pixels"
   >
-    <CodeBlockComponent platform="webgpu" code={["open override val surfaceHeight: Int"]} links={[{"text":"surfaceHeight","href":"surface-height"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['open override val surfaceHeight: Int']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="surfaceWidth"
     tokenType="val"
     groupType="PROPERTY"
-    url="surface-width"
+    url=""
     description="Current surface width in pixels"
   >
-    <CodeBlockComponent platform="webgpu" code={["open override val surfaceWidth: Int"]} links={[{"text":"surfaceWidth","href":"surface-width"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['open override val surfaceWidth: Int']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dispose"
     tokenType="fun"
     groupType="FUNCTION"
-    url="dispose"
-    description=""
+    url="dispose/"
+    description="Disposes the surface view and releases all associated resources."
   >
-    <CodeBlockComponent platform="webgpu" code={["open override fun dispose()"]} links={[{"text":"dispose","href":"dispose"}]} />
+    <CodeBlockComponent platform="webgpu" code={['open override fun dispose()']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

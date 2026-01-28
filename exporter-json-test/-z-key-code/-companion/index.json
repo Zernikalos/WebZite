@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "routeId": "-z-key-code/-companion/index.mdx",
+  "slug": "-z-key-code/-companion/index.mdx/",
+  "outputRelativePath": "-z-key-code/-companion/index.mdx",
+  "definition": {
+    "pageType": "classlike",
+    "sourcePath": "-z-key-code/-companion/index.html",
+    "title": "Companion",
+    "mainName": "Companion",
+    "namespace": "Zernikalos.zernikalos.events.keyboard.ZKeyCode",
+    "breadcrumbs": [
+      {
+        "label": "Zernikalos",
+        "url": "../../../../"
+      },
+      {
+        "label": "zernikalos.events.keyboard",
+        "url": "../../"
+      },
+      {
+        "label": "ZKeyCode",
+        "url": "../"
+      }
+    ],
+    "documentationItems": [
+      {
+        "name": "fromDomCode",
+        "tokenType": "fun",
+        "groupType": "FUNCTION",
+        "description": "Converts a DOM key code string to a ZKeyCode.",
+        "url": "from-dom-code/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "fun fromDomCode(domCode: String): ZKeyCode"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      }
+    ],
+    "availableTokens": [
+      "CONSTRUCTOR",
+      "TYPE",
+      "PROPERTY",
+      "FUNCTION"
+    ]
+  }
+}

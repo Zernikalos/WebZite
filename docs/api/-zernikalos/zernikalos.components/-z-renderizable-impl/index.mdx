@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZRenderizableImpl"
+slug: 'zernikalos.components/-z-renderizable-impl/index.mdx/'
+title: 'ZRenderizableImpl'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZRenderizableImpl"
   namespace="Zernikalos.zernikalos.components"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components","url":"/docs/api/-zernikalos.zernikalos.components"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZRenderizableImpl","url":"#zrenderizableimpl"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,36 +26,48 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZRenderizableImpl"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-renderizable-impl"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor(component: ZBaseComponent, rendererFactory: (ZRenderingContext) -> R)"]} links={[{"text":"ZBaseComponent","href":"../-z-base-component/index"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"R","href":"index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['constructor(component: ZBaseComponent, rendererFactory: (ZRenderingContext) -> R)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isRenderizable"
     tokenType="val"
     groupType="PROPERTY"
-    url="is-renderizable"
+    url=""
     description="Indicates whether this component is renderizable."
   >
-    <CodeBlockComponent platform="common" code={["open override val isRenderizable: Boolean = true"]} links={[{"text":"isRenderizable","href":"is-renderizable"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val isRenderizable: Boolean = true']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="renderer"
     tokenType="val"
     groupType="PROPERTY"
-    url="renderer"
+    url=""
     description="Provides access to the component's renderer."
   >
-    <CodeBlockComponent platform="common" code={["open override val renderer: R"]} links={[{"text":"renderer","href":"renderer"},{"text":"R","href":"index"}]} />
+    <CodeBlockComponent platform="common" code={['open override val renderer: R']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createRenderer"
     tokenType="fun"
     groupType="FUNCTION"
-    url="create-renderer"
+    url="create-renderer/"
     description="Creates a new renderer instance for this component."
   >
-    <CodeBlockComponent platform="common" code={["open override fun createRenderer(ctx: ZRenderingContext): R"]} links={[{"text":"createRenderer","href":"create-renderer"},{"text":"ZRenderingContext","href":"../../zernikalos.context/-z-rendering-context/index"},{"text":"R","href":"index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun createRenderer(ctx: ZRenderingContext): R']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

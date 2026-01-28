@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "components.skeleton"
+slug: 'zernikalos.components.skeleton/index.mdx/'
+title: 'components.skeleton'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="components.skeleton"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.components.skeleton","url":"#zernikalos.components.skeleton"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,54 +23,90 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZBone"
     tokenType="class"
     groupType="TYPE"
-    url="-z-bone/index"
+    url="-z-bone/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable(with = ZBoneSerializer::class)","class ZBone : ZSerializableComponent<ZBoneData> , ZTreeNode<ZBone>"]} links={[{"text":"ZBoneSerializer::class","href":"-z-bone-serializer/index"},{"text":"ZBone","href":"-z-bone/index"},{"text":"ZSerializableComponent","href":"../zernikalos.components/-z-serializable-component/index"},{"text":"ZBoneData","href":"-z-bone-data/index"},{"text":"ZTreeNode","href":"../zernikalos.search/-z-tree-node/index"},{"text":"ZBone","href":"-z-bone/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable(with = ZBoneSerializer::class)',
+        'class ZBone : ZSerializableComponent<ZBoneData> , ZTreeNode<ZBone>',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBoneData"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-bone-data/index"
+    url="-z-bone-data/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZBoneData(var id: String = \"\", var name: String = \"\", var transform: ZTransform = ZTransform(), val children: ArrayList<ZBone> = arrayListOf()) : ZComponentData"]} links={[{"text":"ZBoneData","href":"-z-bone-data/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZTransform","href":"../zernikalos.math/-z-transform/index"},{"text":"ArrayList","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-array-list/index.html"},{"text":"ZBone","href":"-z-bone/index"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZBoneData(var id: String = "", var name: String = "", var transform: ZTransform = ZTransform(), val children: ArrayList<ZBone> = arrayListOf()) : ZComponentData',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBoneSerializer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-bone-serializer/index"
+    url="-z-bone-serializer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZBoneSerializer : ZComponentSerializer<ZBone, ZBoneData>"]} links={[{"text":"ZBoneSerializer","href":"-z-bone-serializer/index"},{"text":"ZComponentSerializer","href":"../zernikalos.components/-z-component-serializer/index"},{"text":"ZBone","href":"-z-bone/index"},{"text":"ZBoneData","href":"-z-bone-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZBoneSerializer : ZComponentSerializer<ZBone, ZBoneData>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSkinning"
     tokenType="class"
     groupType="TYPE"
-    url="-z-skinning/index"
+    url="-z-skinning/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable(with = ZSkinningSerializer::class)","class ZSkinning : ZSerializableComponent<ZSkinningData>"]} links={[{"text":"ZSkinningSerializer::class","href":"-z-skinning-serializer/index"},{"text":"ZSkinning","href":"-z-skinning/index"},{"text":"ZSerializableComponent","href":"../zernikalos.components/-z-serializable-component/index"},{"text":"ZSkinningData","href":"-z-skinning-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable(with = ZSkinningSerializer::class)',
+        'class ZSkinning : ZSerializableComponent<ZSkinningData>',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSkinningData"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-skinning-data/index"
+    url="-z-skinning-data/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZSkinningData(val boneIds: ArrayList<String> = ArrayList()) : ZComponentData"]} links={[{"text":"ZSkinningData","href":"-z-skinning-data/index"},{"text":"ArrayList","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-array-list/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZSkinningData(val boneIds: ArrayList<String> = ArrayList()) : ZComponentData',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSkinningSerializer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-skinning-serializer/index"
+    url="-z-skinning-serializer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZSkinningSerializer : ZComponentSerializer<ZSkinning, ZSkinningData>"]} links={[{"text":"ZSkinningSerializer","href":"-z-skinning-serializer/index"},{"text":"ZComponentSerializer","href":"../zernikalos.components/-z-component-serializer/index"},{"text":"ZSkinning","href":"-z-skinning/index"},{"text":"ZSkinningData","href":"-z-skinning-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZSkinningSerializer : ZComponentSerializer<ZSkinning, ZSkinningData>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

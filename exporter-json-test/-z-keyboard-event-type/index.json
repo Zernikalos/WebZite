@@ -1,0 +1,176 @@
+{
+  "version": 1,
+  "routeId": "-z-keyboard-event-type/index.mdx",
+  "slug": "-z-keyboard-event-type/index.mdx/",
+  "outputRelativePath": "-z-keyboard-event-type/index.mdx",
+  "definition": {
+    "pageType": "classlike",
+    "sourcePath": "-z-keyboard-event-type/index.html",
+    "title": "ZKeyboardEventType",
+    "mainName": "ZKeyboardEventType",
+    "namespace": "Zernikalos.zernikalos.events.keyboard",
+    "breadcrumbs": [
+      {
+        "label": "Zernikalos",
+        "url": "../../../"
+      },
+      {
+        "label": "zernikalos.events.keyboard",
+        "url": "../"
+      }
+    ],
+    "documentationItems": [
+      {
+        "name": "entries",
+        "tokenType": "val",
+        "groupType": "PROPERTY",
+        "description": "Returns a representation of an immutable list of all enum entries, in the order they're declared.",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "val entries: EnumEntries<ZKeyboardEventType>"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "name",
+        "tokenType": "val",
+        "groupType": "PROPERTY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "expect val name: String"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "ordinal",
+        "tokenType": "val",
+        "groupType": "PROPERTY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "expect val ordinal: Int"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "valueOf",
+        "tokenType": "fun",
+        "groupType": "FUNCTION",
+        "description": "Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)",
+        "url": "value-of/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "fun valueOf(value: String): ZKeyboardEventType"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "values",
+        "tokenType": "fun",
+        "groupType": "FUNCTION",
+        "description": "Returns an array containing the constants of this enum type, in the order they're declared.",
+        "url": "values/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "fun values(): Array<ZKeyboardEventType>"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "KEY_DOWN",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "A key has been pressed down.",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "KEY_DOWN"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "KEY_UP",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "A key has been released.",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "KEY_UP"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "KEY_PRESS",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "A character has been typed (key press with character).",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "KEY_PRESS"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      }
+    ],
+    "availableTokens": [
+      "CONSTRUCTOR",
+      "TYPE",
+      "PROPERTY",
+      "FUNCTION",
+      "ENTRY"
+    ]
+  }
+}

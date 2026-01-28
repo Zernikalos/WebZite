@@ -197,7 +197,7 @@ export class ClassPage extends DocumentationPage {
       tokens.each((i, tokenElement) => {
         try {
           const documentationItem = new DocumentationItem();
-          documentationItem.parse($, $(tokenElement));
+          documentationItem.parse($, $(tokenElement), true);
           this.documentationItems.push(documentationItem);
         } catch (error) {
           throw error;
@@ -229,7 +229,7 @@ export class PackagePage extends DocumentationPage {
       tokens.each((i, tokenElement) => {
         try {
           const documentationItem = new DocumentationItem();
-          documentationItem.parse($, $(tokenElement));
+          documentationItem.parse($, $(tokenElement), true);
           this.documentationItems.push(documentationItem);
         } catch (error) {
           throw error;
@@ -263,8 +263,15 @@ export class LibraryPage extends DocumentationPage {
     for (const token of tableRows) {
       try {
         const documentationItem = new DocumentationItem();
-        documentationItem.parse($, $(token));
+        documentationItem.parse($, $(token), true);
         documentationItem.tokenType = TokenType.PACKAGE;
+
+        // Since this page is now moved inside the -zernikalos folder,
+        // we need to remove the '-zernikalos/' prefix from links to make them relative.
+        if (documentationItem.url && documentationItem.url.startsWith('-zernikalos/')) {
+          documentationItem.url = documentationItem.url.replace(/^-zernikalos\//, '');
+        }
+
         this.documentationItems.push(documentationItem);
       } catch (error) {
         throw error;

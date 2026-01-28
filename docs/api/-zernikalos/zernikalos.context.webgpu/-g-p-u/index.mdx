@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "GPU"
+slug: 'zernikalos.context.webgpu/-g-p-u/index.mdx/'
+title: 'GPU'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="GPU"
   namespace="Zernikalos.zernikalos.context.webgpu"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context.webgpu","url":"/docs/api/-zernikalos.zernikalos.context.webgpu"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"GPU","url":"#gpu"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.context.webgpu', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,27 +26,35 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="GPU"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-g-p-u"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="webgpu" code={["constructor()"]} links={[]} />
+    <CodeBlockComponent platform="webgpu" code={['constructor()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getPreferredCanvasFormat"
     tokenType="fun"
     groupType="FUNCTION"
-    url="get-preferred-canvas-format"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="webgpu" code={["fun getPreferredCanvasFormat(): GPUTextureFormat"]} links={[{"text":"getPreferredCanvasFormat","href":"get-preferred-canvas-format"},{"text":"GPUTextureFormat","href":"../-g-p-u-texture-format/index"}]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun getPreferredCanvasFormat(): GPUTextureFormat']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="requestAdapter"
     tokenType="fun"
     groupType="FUNCTION"
-    url="request-adapter"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="webgpu" code={["fun requestAdapter(): ERROR CLASS: Symbol not found for Promise<zernikalos/context/webgpu/GPUAdapter?>"]} links={[{"text":"requestAdapter","href":"request-adapter"}]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun requestAdapter(): Promise<GPUAdapter?>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

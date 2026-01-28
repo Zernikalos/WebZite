@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZContextCreator"
+slug: 'zernikalos.context/-z-context-creator/index.mdx/'
+title: 'ZContextCreator'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZContextCreator"
   namespace="Zernikalos.zernikalos.context"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context","url":"/docs/api/-zernikalos.zernikalos.context"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZContextCreator","url":"#zcontextcreator"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.context', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,36 +26,48 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZContextCreator"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-context-creator"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+    <CodeBlockComponent platform="common" code={['constructor()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createContext"
     tokenType="fun"
     groupType="FUNCTION"
-    url="create-context"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun createContext(surfaceView: ZSurfaceView): ZContext"]} links={[{"text":"createContext","href":"create-context"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"},{"text":"ZContext","href":"../-z-context/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun createContext(surfaceView: ZSurfaceView): ZContext']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createRenderingContext"
     tokenType="fun"
     groupType="FUNCTION"
-    url="create-rendering-context"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["abstract fun createRenderingContext(surfaceView: ZSurfaceView): ZRenderingContext"]} links={[{"text":"createRenderingContext","href":"create-rendering-context"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"},{"text":"ZRenderingContext","href":"../-z-rendering-context/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract fun createRenderingContext(surfaceView: ZSurfaceView): ZRenderingContext']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createSceneContext"
     tokenType="fun"
     groupType="FUNCTION"
-    url="create-scene-context"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["abstract fun createSceneContext(surfaceView: ZSurfaceView): ZSceneContext"]} links={[{"text":"createSceneContext","href":"create-scene-context"},{"text":"ZSurfaceView","href":"../../zernikalos.ui/-z-surface-view/index"},{"text":"ZSceneContext","href":"../-z-scene-context/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract fun createSceneContext(surfaceView: ZSurfaceView): ZSceneContext']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

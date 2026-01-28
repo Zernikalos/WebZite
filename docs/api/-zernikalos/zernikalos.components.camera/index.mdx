@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "components.camera"
+slug: 'zernikalos.components.camera/index.mdx/'
+title: 'components.camera'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="components.camera"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.components.camera","url":"#zernikalos.components.camera"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,36 +23,57 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZLensData"
     tokenType="class"
     groupType="TYPE"
-    url="-z-lens-data/index"
+    url="-z-lens-data/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","abstract class ZLensData : ZComponentData"]} links={[{"text":"ZLensData","href":"-z-lens-data/index"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'abstract class ZLensData : ZComponentData']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPerspectiveLens"
     tokenType="class"
     groupType="TYPE"
-    url="-z-perspective-lens/index"
+    url="-z-perspective-lens/"
     description="Represents a perspective lens used for rendering in Zernikalos."
   >
-    <CodeBlockComponent platform="common" code={["@Serializable(with = ZPerspectiveLensSerializer::class)","open class ZPerspectiveLens : ZSerializableComponent<ZPerspectiveLensData> , ZResizable"]} links={[{"text":"ZPerspectiveLensSerializer::class","href":"-z-perspective-lens-serializer/index"},{"text":"ZPerspectiveLens","href":"-z-perspective-lens/index"},{"text":"ZSerializableComponent","href":"../zernikalos.components/-z-serializable-component/index"},{"text":"ZPerspectiveLensData","href":"-z-perspective-lens-data/index"},{"text":"ZResizable","href":"../zernikalos.components/-z-resizable/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable(with = ZPerspectiveLensSerializer::class)',
+        'open class ZPerspectiveLens : ZSerializableComponent<ZPerspectiveLensData> , ZResizable',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPerspectiveLensData"
     tokenType="class"
     groupType="TYPE"
-    url="-z-perspective-lens-data/index"
+    url="-z-perspective-lens-data/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","class ZPerspectiveLensData : ZLensData"]} links={[{"text":"ZPerspectiveLensData","href":"-z-perspective-lens-data/index"},{"text":"ZLensData","href":"-z-lens-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'class ZPerspectiveLensData : ZLensData']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPerspectiveLensSerializer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-perspective-lens-serializer/index"
+    url="-z-perspective-lens-serializer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPerspectiveLensSerializer : ZComponentSerializer<ZPerspectiveLens, ZPerspectiveLensData>"]} links={[{"text":"ZPerspectiveLensSerializer","href":"-z-perspective-lens-serializer/index"},{"text":"ZComponentSerializer","href":"../zernikalos.components/-z-component-serializer/index"},{"text":"ZPerspectiveLens","href":"-z-perspective-lens/index"},{"text":"ZPerspectiveLensData","href":"-z-perspective-lens-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'class ZPerspectiveLensSerializer : ZComponentSerializer<ZPerspectiveLens, ZPerspectiveLensData>',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

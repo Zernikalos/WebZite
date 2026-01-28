@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZSurfaceView"
+slug: 'zernikalos.ui/-z-surface-view/index.mdx/'
+title: 'ZSurfaceView'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZSurfaceView"
   namespace="Zernikalos.zernikalos.ui"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.ui","url":"/docs/api/-zernikalos.zernikalos.ui"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZSurfaceView","url":"#zsurfaceview"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.ui', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,36 +26,53 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="eventHandler"
     tokenType="var"
     groupType="PROPERTY"
-    url="event-handler"
+    url=""
     description="Represents an event handler that listens to surface-related events. Such as lifecycle and rendering updates, through ZSurfaceViewEventHandler."
   >
-    <CodeBlockComponent platform="common" code={["abstract var eventHandler: ZSurfaceViewEventHandler?"]} links={[{"text":"eventHandler","href":"event-handler"},{"text":"ZSurfaceViewEventHandler","href":"../-z-surface-view-event-handler/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract var eventHandler: ZSurfaceViewEventHandler?']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="eventQueue"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the event queue that accumulates user input events for synchronous processing during the game loop frame update phase."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract var eventQueue: ZEventQueue?']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="surfaceHeight"
     tokenType="val"
     groupType="PROPERTY"
-    url="surface-height"
+    url=""
     description="Represents the height of the rendering surface in logical pixels."
   >
-    <CodeBlockComponent platform="common" code={["abstract val surfaceHeight: Int"]} links={[{"text":"surfaceHeight","href":"surface-height"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['abstract val surfaceHeight: Int']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="surfaceWidth"
     tokenType="val"
     groupType="PROPERTY"
-    url="surface-width"
+    url=""
     description="Represents the width of the rendering surface in logical pixels."
   >
-    <CodeBlockComponent platform="common" code={["abstract val surfaceWidth: Int"]} links={[{"text":"surfaceWidth","href":"surface-width"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['abstract val surfaceWidth: Int']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="dispose"
     tokenType="fun"
     groupType="FUNCTION"
-    url="dispose"
-    description=""
+    url="dispose/"
+    description="Disposes the surface view and releases all associated resources."
   >
-    <CodeBlockComponent platform="common" code={["abstract fun dispose()"]} links={[{"text":"dispose","href":"dispose"}]} />
+    <CodeBlockComponent platform="common" code={['abstract fun dispose()']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

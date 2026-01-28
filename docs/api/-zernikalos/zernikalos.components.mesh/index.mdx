@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "components.mesh"
+slug: 'zernikalos.components.mesh/index.mdx/'
+title: 'components.mesh'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="components.mesh"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.components.mesh","url":"#zernikalos.components.mesh"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,105 +23,288 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZBuffer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-buffer/index"
-    description="Utility class for representing the mix of a ZBufferKey + ZRawBuffer in a simpler way Notice that ZBufferKey will only address one ZRawBuffer, however one ZRawBuffer can be addressed by more than one ZBufferKey"
+    url="-z-buffer/"
+    description="Utility class for representing the mix of a ZBufferKey + ZBufferContent in a simpler way Notice that ZBufferKey will only address one ZBufferContent, however one ZBufferContent can be addressed by more than one ZBufferKey"
   >
-    <CodeBlockComponent platform="common" code={["class ZBuffer : ZRenderizableComponent<ZBufferRenderer> , ZBindeable"]} links={[{"text":"ZBuffer","href":"-z-buffer/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZBufferRenderer","href":"-z-buffer-renderer/index"},{"text":"ZBindeable","href":"../zernikalos.components/-z-bindeable/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZBuffer : ZRenderizableComponent<ZBufferRenderer> , ZBindeable']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBufferContent"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-buffer-content/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable(with = ZBufferContentSerializer::class)',
+        'class ZBufferContent : ZRenderizableComponent<ZBufferContentRenderer> , ZBindeable',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBufferContentRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-buffer-content-renderer/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'expect class ZBufferContentRenderer(ctx: ZRenderingContext, data: ZBufferContentData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={[
+        'actual class ZBufferContentRenderer(ctx: ZRenderingContext, data: ZBufferContentData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={[
+        'actual class ZBufferContentRenderer(ctx: ZRenderingContext, data: ZBufferContentData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'actual class ZBufferContentRenderer(ctx: ZRenderingContext, data: ZBufferContentData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBufferContentSerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-buffer-content-serializer/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'class ZBufferContentSerializer : ZComponentSerializer<ZBufferContent, ZBufferContentData>',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBufferData"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-buffer-data/index"
+    url="-z-buffer-data/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["data class ZBufferData(var id: Int = -1, var dataType: ZDataType = ZTypes.NONE, var name: String = \"\", var size: Int = -1, var count: Int = -1, var normalized: Boolean = false, var offset: Int = -1, var stride: Int = -1, var isIndexBuffer: Boolean = false, var bufferId: Int = -1, var dataArray: ByteArray = byteArrayOf()) : ZComponentData"]} links={[{"text":"ZBufferData","href":"-z-buffer-data/index"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ZDataType","href":"../zernikalos/-z-data-type/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'data class ZBufferData(var key: ZBufferKey = ZBufferKey(), var content: ZBufferContent = ZBufferContent()) : ZComponentData',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBufferKey"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-buffer-key/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable(with = ZBufferKeySerializer::class)',
+        'class ZBufferKey : ZRenderizableComponent<ZBufferKeyRenderer> , ZBindeable',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBufferKeyRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-buffer-key-renderer/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'expect class ZBufferKeyRenderer(ctx: ZRenderingContext, data: ZBufferKeyData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={[
+        'actual class ZBufferKeyRenderer(ctx: ZRenderingContext, data: ZBufferKeyData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={[
+        'actual class ZBufferKeyRenderer(ctx: ZRenderingContext, data: ZBufferKeyData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'actual class ZBufferKeyRenderer(ctx: ZRenderingContext, data: ZBufferKeyData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBufferKeySerializer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-buffer-key-serializer/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZBufferKeySerializer : ZComponentSerializer<ZBufferKey, ZBufferKeyData>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBufferRenderer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-buffer-renderer/index"
+    url="-z-buffer-renderer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["expect class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData) : ZComponentRenderer"]} links={[{"text":"ZBufferRenderer","href":"-z-buffer-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZBufferData","href":"-z-buffer-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="metal" code={["actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData) : ZComponentRenderer"]} links={[{"text":"ZBufferRenderer","href":"-z-buffer-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZBufferData","href":"-z-buffer-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="ogl" code={["actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData) : ZComponentRenderer"]} links={[{"text":"ZBufferRenderer","href":"-z-buffer-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZBufferData","href":"-z-buffer-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="webgpu" code={["actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData) : ZComponentRenderer"]} links={[{"text":"ZBufferRenderer","href":"-z-buffer-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZBufferData","href":"-z-buffer-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'expect class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={[
+        'actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={[
+        'actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'actual class ZBufferRenderer(ctx: ZRenderingContext, data: ZBufferData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZDrawMode"
     tokenType="enum"
     groupType="TYPE"
-    url="-z-draw-mode/index"
+    url="-z-draw-mode/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["enum ZDrawMode : Enum<ZDrawMode>"]} links={[{"text":"ZDrawMode","href":"-z-draw-mode/index"},{"text":"Enum","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html"},{"text":"ZDrawMode","href":"-z-draw-mode/index"}]} />
+    <CodeBlockComponent platform="common" code={['enum ZDrawMode : Enum<ZDrawMode>']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZMesh"
     tokenType="class"
     groupType="TYPE"
-    url="-z-mesh/index"
+    url="-z-mesh/"
     description="Mesh will provide: A relationship between the BufferKey and its RawBuffers in a more cohesive way providing just Buffers"
   >
-    <CodeBlockComponent platform="common" code={["@Serializable(with = ZMeshSerializer::class)","class ZMesh : ZRenderizableComponent<ZMeshRenderer> , ZBindeable, ZRenderizable"]} links={[{"text":"ZMesh","href":"-z-mesh/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZBindeable","href":"../zernikalos.components/-z-bindeable/index"},{"text":"ZRenderizable","href":"../zernikalos.components/-z-renderizable/index"}]} />
-  </DocumentationItemComponent>
-  <DocumentationItemComponent
-    name="ZMeshRenderer"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-mesh-renderer/index"
-    description=""
-  >
-    <CodeBlockComponent platform="metal" code={["actual class ZMeshRenderer(ctx: ZRenderingContext, data: ZMeshData) : ZComponentRenderer"]} links={[{"text":"ZMeshRenderer","href":"-z-mesh-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="ogl" code={["actual class ZMeshRenderer : ZComponentRenderer"]} links={[{"text":"ZMeshRenderer","href":"-z-mesh-renderer/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="webgpu" code={["actual class ZMeshRenderer(ctx: ZRenderingContext, data: ZMeshData) : ZComponentRenderer"]} links={[{"text":"ZMeshRenderer","href":"-z-mesh-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZMesh : ZRenderizableComponent<ZMeshRenderer> , ZBindeable, ZRenderizable']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZVertexArray"
     tokenType="class"
     groupType="TYPE"
-    url="-z-vertex-array/index"
+    url="-z-vertex-array/"
     description=""
   >
-    <CodeBlockComponent platform="ogl" code={["class ZVertexArray : ZRenderizableComponent<ZVertexArrayRenderer> , ZBindeable"]} links={[{"text":"ZVertexArray","href":"-z-vertex-array/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZVertexArrayRenderer","href":"-z-vertex-array-renderer/index"},{"text":"ZBindeable","href":"../zernikalos.components/-z-bindeable/index"}]} />
+    <CodeBlockComponent
+      platform="ogl"
+      code={['class ZVertexArray : ZRenderizableComponent<ZVertexArrayRenderer> , ZBindeable']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZVertexArrayRenderer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-vertex-array-renderer/index"
+    url="-z-vertex-array-renderer/"
     description=""
   >
-    <CodeBlockComponent platform="ogl" code={["class ZVertexArrayRenderer(ctx: ZRenderingContext) : ZComponentRenderer"]} links={[{"text":"ZVertexArrayRenderer","href":"-z-vertex-array-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent
+      platform="ogl"
+      code={['class ZVertexArrayRenderer(ctx: ZRenderingContext) : ZComponentRenderer']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="convertDrawMode"
     tokenType="fun"
     groupType="FUNCTION"
-    url="[metal]convert-draw-mode"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="metal" code={["fun convertDrawMode(drawMode: ZDrawMode): ULong"]} links={[{"text":"convertDrawMode","href":"[metal]convert-draw-mode"},{"text":"ZDrawMode","href":"-z-draw-mode/index"},{"text":"ULong","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-u-long/index.html"}]} />
-    <CodeBlockComponent platform="ogl" code={["fun convertDrawMode(drawMode: ZDrawMode): DrawModes"]} links={[{"text":"convertDrawMode","href":"[ogl]convert-draw-mode"},{"text":"ZDrawMode","href":"-z-draw-mode/index"},{"text":"DrawModes","href":"../zernikalos.context/-draw-modes/index"}]} />
+    <CodeBlockComponent
+      platform="metal"
+      code={['fun convertDrawMode(drawMode: ZDrawMode): ULong']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={['fun convertDrawMode(drawMode: ZDrawMode): DrawModes']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="toMtlFormat"
     tokenType="fun"
     groupType="FUNCTION"
-    url="to-mtl-format"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="metal" code={["fun toMtlFormat(dataType: ZDataType): MTLVertexFormat"]} links={[{"text":"toMtlFormat","href":"to-mtl-format"},{"text":"ZDataType","href":"../zernikalos/-z-data-type/index"}]} />
+    <CodeBlockComponent
+      platform="metal"
+      code={['fun toMtlFormat(dataType: ZDataType): MTLVertexFormat']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="typeToWebGpuType"
     tokenType="fun"
     groupType="FUNCTION"
-    url="type-to-web-gpu-type"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="webgpu" code={["fun typeToWebGpuType(type: ZDataType): String"]} links={[{"text":"typeToWebGpuType","href":"type-to-web-gpu-type"},{"text":"ZDataType","href":"../zernikalos/-z-data-type/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun typeToWebGpuType(type: ZDataType): String']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

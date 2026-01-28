@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZContext"
+slug: 'zernikalos.context/-z-context/index.mdx/'
+title: 'ZContext'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZContext"
   namespace="Zernikalos.zernikalos.context"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.context","url":"/docs/api/-zernikalos.zernikalos.context"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZContext","url":"#zcontext"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.context', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,81 +26,107 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZContext"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-context"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor(sceneContext: ZSceneContext, renderingContext: ZRenderingContext)"]} links={[{"text":"ZSceneContext","href":"../-z-scene-context/index"},{"text":"ZRenderingContext","href":"../-z-rendering-context/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['constructor(sceneContext: ZSceneContext, renderingContext: ZRenderingContext)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="activeCamera"
     tokenType="var"
     groupType="PROPERTY"
-    url="active-camera"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["var activeCamera: ZCamera?"]} links={[{"text":"activeCamera","href":"active-camera"},{"text":"ZCamera","href":"../../zernikalos.objects/-z-camera/index"}]} />
+    <CodeBlockComponent platform="common" code={['var activeCamera: ZCamera?']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="eventQueue"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Event queue that accumulates user input events and processes them synchronously during the game loop frame update phase."
+  >
+    <CodeBlockComponent platform="common" code={['val eventQueue: ZEventQueue']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="input"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Input state container that tracks the current state of all input devices (keyboard, mouse, touch, etc.)."
+  >
+    <CodeBlockComponent platform="common" code={['val input: ZInputState']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="isInitialized"
     tokenType="val"
     groupType="PROPERTY"
-    url="is-initialized"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["val isInitialized: Boolean"]} links={[{"text":"isInitialized","href":"is-initialized"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['val isInitialized: Boolean']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="refId"
     tokenType="val"
     groupType="PROPERTY"
-    url="ref-id"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["val refId: String"]} links={[{"text":"refId","href":"ref-id"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['val refId: String']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="renderingContext"
     tokenType="val"
     groupType="PROPERTY"
-    url="rendering-context"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["val renderingContext: ZRenderingContext"]} links={[{"text":"renderingContext","href":"rendering-context"},{"text":"ZRenderingContext","href":"../-z-rendering-context/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val renderingContext: ZRenderingContext']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="scene"
     tokenType="var"
     groupType="PROPERTY"
-    url="scene"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["var scene: ZScene?"]} links={[{"text":"scene","href":"scene"},{"text":"ZScene","href":"../../zernikalos.objects/-z-scene/index"}]} />
+    <CodeBlockComponent platform="common" code={['var scene: ZScene?']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="sceneContext"
     tokenType="val"
     groupType="PROPERTY"
-    url="scene-context"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["val sceneContext: ZSceneContext"]} links={[{"text":"sceneContext","href":"scene-context"},{"text":"ZSceneContext","href":"../-z-scene-context/index"}]} />
+    <CodeBlockComponent platform="common" code={['val sceneContext: ZSceneContext']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="screenHeight"
     tokenType="var"
     groupType="PROPERTY"
-    url="screen-height"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["var screenHeight: Int"]} links={[{"text":"screenHeight","href":"screen-height"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['var screenHeight: Int']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="screenWidth"
     tokenType="var"
     groupType="PROPERTY"
-    url="screen-width"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["var screenWidth: Int"]} links={[{"text":"screenWidth","href":"screen-width"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['var screenWidth: Int']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

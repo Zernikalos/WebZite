@@ -146,7 +146,7 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
             <span className={`tw:px-2 tw:py-1 tw:rounded-md tw:text-xs tw:font-medium tw:mr-3 ${getBadgeColor()}`}>
               {tokenType}
             </span>
-            {url ? (
+            {/* {url ? (
               <Link 
                 to={url} 
                 className="tw:text-gray-900 tw:dark:text-white tw:font-medium tw:text-lg hover:tw:text-primary-600 tw:dark:hover:tw:text-primary-400 tw:transition-colors"
@@ -155,7 +155,8 @@ export const DocumentationItemComponent: React.FC<DocumentationItemComponentProp
               </Link>
             ) : (
               <h3 className="tw:text-gray-900 tw:dark:text-white tw:font-medium tw:text-lg">{name}</h3>
-            )}
+            )} */}
+            <h3 className="tw:text-gray-900 tw:dark:text-white tw:font-medium tw:text-lg">{name}</h3>
           </div>
           
           {/* Anotaciones (estilo actual) */}

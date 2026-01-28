@@ -8,8 +8,11 @@
 /i18n
 /.cache-loader
 
+tmp/
+
 # Project Specific
 /sourceDocs/*
+/sourceDocsGfm/*
 !/sourceDocs/README.md
 
 # Environment variables

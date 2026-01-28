@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "loader"
+slug: 'zernikalos.loader/index.mdx/'
+title: 'loader'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="loader"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.loader","url":"#zernikalos.loader"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,135 +23,215 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZKo"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-ko/index"
+    url="-z-ko/"
+    description="Represents the ZKo data structure exposed externally after loading a Zko file."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'data class ZKo(val header: ZkoHeader, val root: ZObject, val actions: List<ZSkeletalAction>? = null)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZkoComponentCollection"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-zko-component-collection/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["data class ZKo(val header: ZkoHeader, val root: ZObject, val actions: List<ZSkeletalAction>? = null)"]} links={[{"text":"ZKo","href":"-z-ko/index"},{"text":"ZkoHeader","href":"-zko-header/index"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZSkeletalAction","href":"../zernikalos.action/-z-skeletal-action/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZkoComponentCollection(val meshes: List<ZMesh>, val textures: List<ZTexture>)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZkoFormat"
     tokenType="data class"
     groupType="TYPE"
-    url="-zko-format/index"
+    url="-zko-format/"
     description="Zernikalos KObject file format."
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZkoFormat(val header: ZkoHeader, val textures: List<ZTexture>, val objects: List<ZkoObjectProto>, val hierarchy: ZkoHierarchyNode, val actions: List<ZSkeletalAction>? = null)"]} links={[{"text":"ZkoFormat","href":"-zko-format/index"},{"text":"ZkoHeader","href":"-zko-header/index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZTexture","href":"../zernikalos.components.material/-z-texture/index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZkoObjectProto","href":"-zko-object-proto/index"},{"text":"ZkoHierarchyNode","href":"-zko-hierarchy-node/index"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZSkeletalAction","href":"../zernikalos.action/-z-skeletal-action/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZkoFormat(val header: ZkoHeader, val components: ZkoComponentCollection, val objects: List<ZkoObjectProto>, val hierarchy: ZkoHierarchyNode, val actions: List<ZSkeletalAction>? = null)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZkoHeader"
     tokenType="data class"
     groupType="TYPE"
-    url="-zko-header/index"
+    url="-zko-header/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZkoHeader(val version: String)"]} links={[{"text":"ZkoHeader","href":"-zko-header/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'data class ZkoHeader(val version: String)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZkoHierarchyNode"
     tokenType="data class"
     groupType="TYPE"
-    url="-zko-hierarchy-node/index"
+    url="-zko-hierarchy-node/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZkoHierarchyNode(val refId: String, val children: List<ZkoHierarchyNode>? = emptyList())"]} links={[{"text":"ZkoHierarchyNode","href":"-zko-hierarchy-node/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"List","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html"},{"text":"ZkoHierarchyNode","href":"-zko-hierarchy-node/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZkoHierarchyNode(val refId: String, val children: List<ZkoHierarchyNode>? = emptyList())',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZkoLoader"
     tokenType="class"
     groupType="TYPE"
-    url="-zko-loader/index"
+    url="-zko-loader/"
     description=""
   >
-    <CodeBlockComponent platform="metal" code={["class ZkoLoader"]} links={[{"text":"ZkoLoader","href":"-zko-loader/index"}]} />
+    <CodeBlockComponent
+      platform="metal"
+      code={['@ObjCName(name = "ZkoLoader")', 'class ZkoLoader']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZkoObjectProto"
     tokenType="data class"
     groupType="TYPE"
-    url="-zko-object-proto/index"
+    url="-zko-object-proto/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZkoObjectProto(val type: String, val refId: String, val isReference: Boolean, val zObject: ZObject)"]} links={[{"text":"ZkoObjectProto","href":"-zko-object-proto/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"ZObject","href":"../zernikalos.objects/-z-object/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZkoObjectProto(val type: ZObjectType, val refId: String, val isReference: Boolean, val zObject: ZObject)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZkoObjectProtoDef"
     tokenType="data class"
     groupType="TYPE"
-    url="-zko-object-proto-def/index"
+    url="-zko-object-proto-def/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZkoObjectProtoDef(val type: String, val refId: String, val isReference: Boolean, val scene: ZScene?, val group: ZGroup?, val model: ZModel?, val camera: ZCamera?, val skeleton: ZSkeleton?)"]} links={[{"text":"ZkoObjectProtoDef","href":"-zko-object-proto-def/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Boolean","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html"},{"text":"ZScene","href":"../zernikalos.objects/-z-scene/index"},{"text":"ZGroup","href":"../zernikalos.objects/-z-group/index"},{"text":"ZModel","href":"../zernikalos.objects/-z-model/index"},{"text":"ZCamera","href":"../zernikalos.objects/-z-camera/index"},{"text":"ZSkeleton","href":"../zernikalos.objects/-z-skeleton/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZkoObjectProtoDef(val type: ZObjectType, val refId: String, val isReference: Boolean, val scene: ZScene?, val group: ZGroup?, val model: ZModel?, val camera: ZCamera?, val skeleton: ZSkeleton?, val light: ZLight?)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZkoObjectProtoSerializer"
     tokenType="class"
     groupType="TYPE"
-    url="-zko-object-proto-serializer/index"
+    url="-zko-object-proto-serializer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZkoObjectProtoSerializer(loaderContext: ZLoaderContext) : KSerializer<ZkoObjectProto>"]} links={[{"text":"ZkoObjectProtoSerializer","href":"-zko-object-proto-serializer/index"},{"text":"ZLoaderContext","href":"-z-loader-context/index"},{"text":"ZkoObjectProto","href":"-zko-object-proto/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'class ZkoObjectProtoSerializer(loaderContext: ZLoaderContext) : KSerializer<ZkoObjectProto>',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZLoaderContext"
     tokenType="class"
     groupType="TYPE"
-    url="-z-loader-context/index"
+    url="-z-loader-context/"
     description="This class is used to store the components loaded by the engine."
   >
-    <CodeBlockComponent platform="common" code={["class ZLoaderContext"]} links={[{"text":"ZLoaderContext","href":"-z-loader-context/index"}]} />
+    <CodeBlockComponent platform="common" code={['class ZLoaderContext']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createZerializerModule"
     tokenType="fun"
     groupType="FUNCTION"
-    url="create-zerializer-module"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["fun createZerializerModule(): SerializersModule"]} links={[{"text":"createZerializerModule","href":"create-zerializer-module"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun createZerializerModule(): SerializersModule']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="loadFromFile"
     tokenType="fun"
     groupType="FUNCTION"
-    url="load-from-file"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="android" code={["suspend fun loadFromFile(context: Context, fileName: String): ZKo"]} links={[{"text":"loadFromFile","href":"load-from-file"},{"text":"Context","href":"https://developer.android.com/reference/kotlin/android/content/Context.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"ZKo","href":"-z-ko/index"}]} />
+    <CodeBlockComponent
+      platform="android"
+      code={['suspend fun loadFromFile(context: Context, fileName: String): ZKo']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="loadFromProto"
     tokenType="fun"
     groupType="FUNCTION"
-    url="load-from-proto"
+    url="load-from-proto/"
     description="Decodes a ByteArray into a ZKo object."
   >
-    <CodeBlockComponent platform="common" code={["fun loadFromProto(byteArray: ByteArray): ZKo"]} links={[{"text":"loadFromProto","href":"load-from-proto"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"},{"text":"ZKo","href":"-z-ko/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['fun loadFromProto(byteArray: ByteArray): ZKo']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="loadFromUrl"
     tokenType="fun"
     groupType="FUNCTION"
-    url="load-from-url"
+    url="load-from-url/"
     description="Loads a ZObject from the specified URL."
   >
-    <CodeBlockComponent platform="js" code={["fun loadFromUrl(url: String): Promise<ZKo>"]} links={[{"text":"loadFromUrl","href":"load-from-url"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Promise","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.js/-promise/index.html"}]} />
+    <CodeBlockComponent
+      platform="js"
+      code={['fun loadFromUrl(url: String): Promise<ZKo>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZKO_VERSION"
     tokenType="val"
     groupType="PROPERTY"
-    url="-z-k-o_-v-e-r-s-i-o-n"
+    url=""
     description="Current ZKO format version"
   >
-    <CodeBlockComponent platform="common" code={["const val ZKO_VERSION: String"]} links={[{"text":"ZKO_VERSION","href":"-z-k-o_-v-e-r-s-i-o-n"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['const val ZKO_VERSION: String']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZkoVersion"
     tokenType="val"
     groupType="PROPERTY"
-    url="-zko-version"
+    url=""
     description="Current ZKO format version"
   >
-    <CodeBlockComponent platform="common" code={["val ZkoVersion: ZSemVer"]} links={[{"text":"ZkoVersion","href":"-zko-version"},{"text":"ZSemVer","href":"../zernikalos.utils/-z-sem-ver/index"}]} />
+    <CodeBlockComponent platform="common" code={['val ZkoVersion: ZSemVer']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

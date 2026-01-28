@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "logger"
+slug: 'zernikalos.logger/index.mdx/'
+title: 'logger'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="logger"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.logger","url":"#zernikalos.logger"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,94 +23,138 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="WindowConsole"
     tokenType="class"
     groupType="TYPE"
-    url="-window-console/index"
+    url="-window-console/"
     description=""
   >
-    <CodeBlockComponent platform="js" code={["abstract external class WindowConsole : Console"]} links={[{"text":"WindowConsole","href":"-window-console/index"},{"text":"Console","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.js/-console/index.html"}]} />
+    <CodeBlockComponent
+      platform="js"
+      code={['abstract external class WindowConsole : Console']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZLoggable"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-loggable/index"
+    url="-z-loggable/"
     description="Provides a common interface for all objects with zernikalos.logger.ZLogger access."
   >
-    <CodeBlockComponent platform="common" code={["interface ZLoggable"]} links={[{"text":"ZLoggable","href":"-z-loggable/index"}]} />
+    <CodeBlockComponent platform="common" code={['interface ZLoggable']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZLogger"
     tokenType="class"
     groupType="TYPE"
-    url="-z-logger/index"
+    url="-z-logger/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZLogger(clsName: String?, val instanceId: Int)"]} links={[{"text":"ZLogger","href":"-z-logger/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"Int","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZLogger(clsName: String?, val instanceId: Int)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZLoggerAdapter"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-logger-adapter/index"
+    url="-z-logger-adapter/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["interface ZLoggerAdapter"]} links={[{"text":"ZLoggerAdapter","href":"-z-logger-adapter/index"}]} />
+    <CodeBlockComponent platform="common" code={['interface ZLoggerAdapter']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZLoggerAdapterConsole"
     tokenType="class"
     groupType="TYPE"
-    url="-z-logger-adapter-console/index"
+    url="-z-logger-adapter-console/"
     description=""
   >
-    <CodeBlockComponent platform="android" code={["actual class ZLoggerAdapterConsole : ZLoggerAdapter"]} links={[{"text":"ZLoggerAdapterConsole","href":"-z-logger-adapter-console/index"},{"text":"ZLoggerAdapter","href":"-z-logger-adapter/index"}]} />
-    <CodeBlockComponent platform="common" code={["expect class ZLoggerAdapterConsole : ZLoggerAdapter"]} links={[{"text":"ZLoggerAdapterConsole","href":"-z-logger-adapter-console/index"},{"text":"ZLoggerAdapter","href":"-z-logger-adapter/index"}]} />
-    <CodeBlockComponent platform="ios" code={["actual class ZLoggerAdapterConsole : ZLoggerAdapter"]} links={[{"text":"ZLoggerAdapterConsole","href":"-z-logger-adapter-console/index"}]} />
-    <CodeBlockComponent platform="js" code={["actual class ZLoggerAdapterConsole : ZLoggerAdapter"]} links={[{"text":"ZLoggerAdapterConsole","href":"-z-logger-adapter-console/index"}]} />
-    <CodeBlockComponent platform="macosArm64" code={["actual class ZLoggerAdapterConsole : ZLoggerAdapter"]} links={[{"text":"ZLoggerAdapterConsole","href":"-z-logger-adapter-console/index"}]} />
+    <CodeBlockComponent
+      platform="android"
+      code={['actual class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="common"
+      code={['expect class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ios"
+      code={['actual class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="js"
+      code={['actual class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="macosArm64"
+      code={['actual class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZLogLevel"
     tokenType="enum"
     groupType="TYPE"
-    url="-z-log-level/index"
+    url="-z-log-level/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["enum ZLogLevel : Comparator<ZLogLevel> , Enum<ZLogLevel>"]} links={[{"text":"ZLogLevel","href":"-z-log-level/index"},{"text":"Comparator","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-comparator/index.html"},{"text":"ZLogLevel","href":"-z-log-level/index"},{"text":"Enum","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html"},{"text":"ZLogLevel","href":"-z-log-level/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['enum ZLogLevel : Comparator<ZLogLevel> , Enum<ZLogLevel>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createLazyLogger"
     tokenType="fun"
     groupType="FUNCTION"
-    url="create-lazy-logger"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["inline fun <T : ZLoggable> T.createLazyLogger(): Lazy<ZLogger>"]} links={[{"text":"T","href":"create-lazy-logger"},{"text":"ZLoggable","href":"-z-loggable/index"},{"text":"T","href":"create-lazy-logger"},{"text":"createLazyLogger","href":"create-lazy-logger"},{"text":"Lazy","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html"},{"text":"ZLogger","href":"-z-logger/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['inline fun <T : ZLoggable> T.createLazyLogger(): Lazy<ZLogger>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="createLogger"
     tokenType="fun"
     groupType="FUNCTION"
-    url="create-logger"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["inline fun <T : ZLoggable> T.createLogger(): ZLogger"]} links={[{"text":"T","href":"create-logger"},{"text":"ZLoggable","href":"-z-loggable/index"},{"text":"T","href":"create-logger"},{"text":"createLogger","href":"create-logger"},{"text":"ZLogger","href":"-z-logger/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['inline fun <T : ZLoggable> T.createLogger(): ZLogger']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="console"
     tokenType="val"
     groupType="PROPERTY"
-    url="console"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="js" code={["external val console: WindowConsole"]} links={[{"text":"console","href":"console"},{"text":"WindowConsole","href":"-window-console/index"}]} />
+    <CodeBlockComponent platform="js" code={['external val console: WindowConsole']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="logger"
     tokenType="val"
     groupType="PROPERTY"
-    url="logger"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["val <T : ZLoggable> T.logger: ZLogger"]} links={[{"text":"T","href":"logger"},{"text":"ZLoggable","href":"-z-loggable/index"},{"text":"T","href":"logger"},{"text":"logger","href":"logger"},{"text":"ZLogger","href":"-z-logger/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val <T : ZLoggable> T.logger: ZLogger']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

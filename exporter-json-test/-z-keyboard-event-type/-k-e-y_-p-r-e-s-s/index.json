@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "routeId": "-z-keyboard-event-type/-k-e-y_-p-r-e-s-s/index.mdx",
+  "slug": "-z-keyboard-event-type/-k-e-y_-p-r-e-s-s/index.mdx/",
+  "outputRelativePath": "-z-keyboard-event-type/-k-e-y_-p-r-e-s-s/index.mdx",
+  "definition": {
+    "pageType": "classlike",
+    "sourcePath": "-z-keyboard-event-type/-k-e-y_-p-r-e-s-s/index.html",
+    "title": "KEY_PRESS",
+    "mainName": "KEY_PRESS",
+    "namespace": "Zernikalos.zernikalos.events.keyboard.ZKeyboardEventType",
+    "breadcrumbs": [
+      {
+        "label": "Zernikalos",
+        "url": "../../../../"
+      },
+      {
+        "label": "zernikalos.events.keyboard",
+        "url": "../../"
+      },
+      {
+        "label": "ZKeyboardEventType",
+        "url": "../"
+      }
+    ],
+    "documentationItems": [
+      {
+        "name": "name",
+        "tokenType": "val",
+        "groupType": "PROPERTY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "expect val name: String"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "ordinal",
+        "tokenType": "val",
+        "groupType": "PROPERTY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "expect val ordinal: Int"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      }
+    ],
+    "availableTokens": [
+      "CONSTRUCTOR",
+      "TYPE",
+      "PROPERTY",
+      "FUNCTION"
+    ]
+  }
+}

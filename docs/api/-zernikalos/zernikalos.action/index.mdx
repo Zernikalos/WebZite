@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "action"
+slug: 'zernikalos.action/index.mdx/'
+title: 'action'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="action"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.action","url":"#zernikalos.action"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,90 +23,124 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZActionPlayer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-action-player/index"
+    url="-z-action-player/"
     description="Class that allows playback of skeletal actions stored in ZSkeletalAction. Provides playback control such as play, pause, and retrieving the current state of the animation at a specific moment."
   >
-    <CodeBlockComponent platform="common" code={["class ZActionPlayer"]} links={[{"text":"ZActionPlayer","href":"-z-action-player/index"}]} />
+    <CodeBlockComponent platform="common" code={['class ZActionPlayer']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBoneFrameTransform"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-bone-frame-transform/index"
+    url="-z-bone-frame-transform/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZBoneFrameTransform(var position: ZVector3? = null, var rotation: ZQuaternion? = null, var scale: ZVector3? = null)"]} links={[{"text":"ZBoneFrameTransform","href":"-z-bone-frame-transform/index"},{"text":"ZVector3","href":"../zernikalos.math/-z-vector3/index"},{"text":"ZQuaternion","href":"../zernikalos.math/-z-quaternion/index"},{"text":"ZVector3","href":"../zernikalos.math/-z-vector3/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZBoneFrameTransform(var position: ZVector3? = null, var rotation: ZQuaternion? = null, var scale: ZVector3? = null)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBoneTrack"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-bone-track/index"
+    url="-z-bone-track/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZBoneTrack(val boneName: String = \"\", val boneId: String = \"\")"]} links={[{"text":"ZBoneTrack","href":"-z-bone-track/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZBoneTrack(val boneName: String = "", val boneId: String = "")',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZKeyFrame"
     tokenType="class"
     groupType="TYPE"
-    url="-z-key-frame/index"
+    url="-z-key-frame/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","class ZKeyFrame(var time: Float)"]} links={[{"text":"ZKeyFrame","href":"-z-key-frame/index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'class ZKeyFrame(var time: Float)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPositionFrame"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-position-frame/index"
+    url="-z-position-frame/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZPositionFrame(val time: Float, val position: ZVector3) : ZTimeFrame"]} links={[{"text":"ZPositionFrame","href":"-z-position-frame/index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../zernikalos.math/-z-vector3/index"},{"text":"ZTimeFrame","href":"-z-time-frame/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZPositionFrame(val time: Float, val position: ZVector3) : ZTimeFrame',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZRotationFrame"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-rotation-frame/index"
+    url="-z-rotation-frame/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZRotationFrame(val time: Float, val rotation: ZQuaternion) : ZTimeFrame"]} links={[{"text":"ZRotationFrame","href":"-z-rotation-frame/index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZQuaternion","href":"../zernikalos.math/-z-quaternion/index"},{"text":"ZTimeFrame","href":"-z-time-frame/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZRotationFrame(val time: Float, val rotation: ZQuaternion) : ZTimeFrame',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZScaleFrame"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-scale-frame/index"
+    url="-z-scale-frame/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZScaleFrame(val time: Float, val scale: ZVector3) : ZTimeFrame"]} links={[{"text":"ZScaleFrame","href":"-z-scale-frame/index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"ZVector3","href":"../zernikalos.math/-z-vector3/index"},{"text":"ZTimeFrame","href":"-z-time-frame/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZScaleFrame(val time: Float, val scale: ZVector3) : ZTimeFrame',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZSkeletalAction"
     tokenType="class"
     groupType="TYPE"
-    url="-z-skeletal-action/index"
+    url="-z-skeletal-action/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","class ZSkeletalAction(val name: String)"]} links={[{"text":"ZSkeletalAction","href":"-z-skeletal-action/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'class ZSkeletalAction(val name: String)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZTimeFrame"
     tokenType="interface"
     groupType="TYPE"
-    url="-z-time-frame/index"
+    url="-z-time-frame/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["interface ZTimeFrame"]} links={[{"text":"ZTimeFrame","href":"-z-time-frame/index"}]} />
-  </DocumentationItemComponent>
-  <DocumentationItemComponent
-    name="currentTimeMillis"
-    tokenType="fun"
-    groupType="FUNCTION"
-    url="current-time-millis"
-    description=""
-  >
-    <CodeBlockComponent platform="common" code={["fun Clock.System.currentTimeMillis(): Long"]} links={[{"text":"Clock.System","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-clock/-system/index.html"},{"text":"currentTimeMillis","href":"current-time-millis"},{"text":"Long","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html"}]} />
+    <CodeBlockComponent platform="common" code={['interface ZTimeFrame']} links={[]} />
   </DocumentationItemComponent>
 </DocumentationItemList>

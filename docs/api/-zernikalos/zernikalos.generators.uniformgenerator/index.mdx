@@ -1,179 +1,256 @@
 ---
-slug: "index"
-title: "generators.uniformgenerator"
+slug: 'zernikalos.generators.uniformgenerator/index.mdx/'
+title: 'generators.uniformgenerator'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="generators.uniformgenerator"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.generators.uniformgenerator","url":"#zernikalos.generators.uniformgenerator"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
   <DocumentationItemComponent
-    name="ZBindMatrixGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-bind-matrix-generator/index"
+    name="ZUniformGenerator"
+    tokenType=""
+    groupType="NONE"
+    url="-z-uniform-generator/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZBindMatrixGenerator : ZUniformGenerator"]} links={[{"text":"ZBindMatrixGenerator","href":"-z-bind-matrix-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['typealias ZUniformGenerator = (ZSceneContext, ZObject) -> ZAlgebraObject']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBindMatrixGenerator"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZBindMatrixGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZBoneMatrixGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-bone-matrix-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZBoneMatrixGenerator : ZUniformGenerator"]} links={[{"text":"ZBoneMatrixGenerator","href":"-z-bone-matrix-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZBoneMatrixGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZInverseBindMatrixGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-inverse-bind-matrix-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZInverseBindMatrixGenerator : ZUniformGenerator"]} links={[{"text":"ZInverseBindMatrixGenerator","href":"-z-inverse-bind-matrix-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZInverseBindMatrixGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZModelMatrixGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-model-matrix-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZModelMatrixGenerator : ZUniformGenerator"]} links={[{"text":"ZModelMatrixGenerator","href":"-z-model-matrix-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZModelMatrixGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZModelViewProjectionMatrixGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-model-view-projection-matrix-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZModelViewProjectionMatrixGenerator : ZUniformGenerator"]} links={[{"text":"ZModelViewProjectionMatrixGenerator","href":"-z-model-view-projection-matrix-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZModelViewProjectionMatrixGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPbrColorGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-pbr-color-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPbrColorGenerator : ZUniformGenerator"]} links={[{"text":"ZPbrColorGenerator","href":"-z-pbr-color-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZPbrColorGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPbrEmissiveGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-pbr-emissive-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPbrEmissiveGenerator : ZUniformGenerator"]} links={[{"text":"ZPbrEmissiveGenerator","href":"-z-pbr-emissive-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZPbrEmissiveGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPbrEmissiveIntensityGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-pbr-emissive-intensity-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPbrEmissiveIntensityGenerator : ZUniformGenerator"]} links={[{"text":"ZPbrEmissiveIntensityGenerator","href":"-z-pbr-emissive-intensity-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZPbrEmissiveIntensityGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPbrMetalnessGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-pbr-metalness-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPbrMetalnessGenerator : ZUniformGenerator"]} links={[{"text":"ZPbrMetalnessGenerator","href":"-z-pbr-metalness-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZPbrMetalnessGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPbrRoughnessGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-pbr-roughness-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPbrRoughnessGenerator : ZUniformGenerator"]} links={[{"text":"ZPbrRoughnessGenerator","href":"-z-pbr-roughness-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZPbrRoughnessGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPhongAmbientGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-phong-ambient-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPhongAmbientGenerator : ZUniformGenerator"]} links={[{"text":"ZPhongAmbientGenerator","href":"-z-phong-ambient-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZPhongAmbientGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPhongDiffuseGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-phong-diffuse-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPhongDiffuseGenerator : ZUniformGenerator"]} links={[{"text":"ZPhongDiffuseGenerator","href":"-z-phong-diffuse-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZPhongDiffuseGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPhongShininessGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-phong-shininess-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPhongShininessGenerator : ZUniformGenerator"]} links={[{"text":"ZPhongShininessGenerator","href":"-z-phong-shininess-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZPhongShininessGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPhongSpecularGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-phong-specular-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZPhongSpecularGenerator : ZUniformGenerator"]} links={[{"text":"ZPhongSpecularGenerator","href":"-z-phong-specular-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZPhongSpecularGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZProjectionMatrixGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-projection-matrix-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZProjectionMatrixGenerator : ZUniformGenerator"]} links={[{"text":"ZProjectionMatrixGenerator","href":"-z-projection-matrix-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
-  </DocumentationItemComponent>
-  <DocumentationItemComponent
-    name="ZUniformGenerator"
-    tokenType="interface"
-    groupType="TYPE"
-    url="-z-uniform-generator/index"
-    description=""
-  >
-    <CodeBlockComponent platform="common" code={["interface ZUniformGenerator"]} links={[{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZProjectionMatrixGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZViewMatrixGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-view-matrix-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZViewMatrixGenerator : ZUniformGenerator"]} links={[{"text":"ZViewMatrixGenerator","href":"-z-view-matrix-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZViewMatrixGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZVoidGenerator"
-    tokenType="class"
-    groupType="TYPE"
-    url="-z-void-generator/index"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZVoidGenerator : ZUniformGenerator"]} links={[{"text":"ZVoidGenerator","href":"-z-void-generator/index"},{"text":"ZUniformGenerator","href":"-z-uniform-generator/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZVoidGenerator: ZUniformGenerator']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

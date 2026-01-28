@@ -6,7 +6,7 @@ import * as cheerio from 'cheerio';
 import _ from 'lodash';
 import { docTemplate } from './templates';
 import { extractData } from './extractors';
-import { DocumentationPage } from './extractors/DocumentationPage';
+import { DocumentationPage, PageType } from './extractors/DocumentationPage';
 
 /**
  * Interface for conversion result
@@ -46,16 +46,34 @@ function convertHtmlToMdx(slug: string, content: string): ConversionResult | nul
 function _generateMdx(slug: string, extractedData: DocumentationPage): ConversionResult {
   // Generate the header using DocHeader
   const breadcrumbs = [
-    { label: 'API', url: '/docs/api' },
-    { label: extractedData.namespace, url: `/docs/api/-${extractedData.namespace.toLowerCase()}` }
+    { label: 'API', url: '/api/-zernikalos/' }
   ];
+
+  if (extractedData.namespace) {
+    const parts = extractedData.namespace.split('.');
+    let url = '/api/';
+    if (parts[0] === 'Zernikalos') {
+      url += '-zernikalos/';
+      if (parts.length > 1) {
+        // Remove 'Zernikalos.' from the start and join the rest
+        url += parts.slice(1).join('.') + '/';
+      }
+    } else {
+      url += extractedData.namespace.toLowerCase() + '/';
+    }
+
+    breadcrumbs.push({ 
+      label: extractedData.namespace, 
+      url: url
+    });
+  }
   
   const typeInfo = [
     {
       type: 'actual',
-      keyword: 'package',
-      name: extractedData.mainName,
-      url: `#${extractedData.mainName.toLowerCase()}`
+      keyword: extractedData.pageType === PageType.LIBRARY ? 'library' : 'package',
+      name: extractedData.mainName || extractedData.title,
+      url: '#'
     }
   ];
   
@@ -76,8 +94,15 @@ function _generateMdx(slug: string, extractedData: DocumentationPage): Conversio
   const imports = result.split('\n\n')[0];
   const reactContent = result.substring(imports.length);
   
+  // If this is the library root, we might want to adjust the slug or title
+  const finalTitle = extractedData.pageType === PageType.LIBRARY ? 'Zernikalos API' : extractedData.title;
+  
+  // Use slug "./" for index files so they are served at the directory level 
+  // and relative links work correctly without an extra "/index/" in the URL.
+  const finalSlug = slug === 'index' ? './' : slug;
+
   // Create a new frontmatter with the requested format
-  const newFrontmatter = `---\nslug: "${slug}"\ntitle: "${extractedData.title}"\nhide_title: true\n---`;
+  const newFrontmatter = `---\nslug: "${finalSlug}"\ntitle: "${finalTitle}"\nhide_title: true\n---`;
   
   // Combine the parts
   const mdxContent = `${newFrontmatter}\n${imports}\n${reactContent}`;
@@ -85,7 +110,7 @@ function _generateMdx(slug: string, extractedData: DocumentationPage): Conversio
   return { 
     mdxContent, 
     baseName: extractedData.mainName, 
-    title: extractedData.title 
+    title: finalTitle 
   };
 }
 

@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "components.material"
+slug: 'zernikalos.components.material/index.mdx/'
+title: 'components.material'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="components.material"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.components.material","url":"#zernikalos.components.material"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,113 +23,237 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZBitmap"
     tokenType="class"
     groupType="TYPE"
-    url="-z-bitmap/index"
+    url="-z-bitmap/"
     description=""
   >
-    <CodeBlockComponent platform="android" code={["actual class ZBitmap(byteArray: ByteArray)"]} links={[{"text":"ZBitmap","href":"-z-bitmap/index"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
-    <CodeBlockComponent platform="common" code={["expect class ZBitmap(byteArray: ByteArray)"]} links={[{"text":"ZBitmap","href":"-z-bitmap/index"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
-    <CodeBlockComponent platform="metal" code={["actual class ZBitmap(val byteArray: ByteArray)"]} links={[{"text":"ZBitmap","href":"-z-bitmap/index"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
-    <CodeBlockComponent platform="webgpu" code={["actual class ZBitmap(byteArray: ByteArray)"]} links={[{"text":"ZBitmap","href":"-z-bitmap/index"},{"text":"ByteArray","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html"}]} />
+    <CodeBlockComponent
+      platform="android"
+      code={['actual class ZBitmap(byteArray: ByteArray)']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="common"
+      code={['expect class ZBitmap(byteArray: ByteArray)']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={['actual class ZBitmap(val byteArray: ByteArray)']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['actual class ZBitmap(byteArray: ByteArray)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZMaterial"
     tokenType="class"
     groupType="TYPE"
-    url="-z-material/index"
+    url="-z-material/"
     description="Represents a material component that can be applied to 3D objects for rendering."
   >
-    <CodeBlockComponent platform="common" code={["@Serializable(with = ZMaterialSerializer::class)","class ZMaterial : ZRenderizableComponent<ZMaterialRenderer> , ZBindeable"]} links={[{"text":"ZMaterialSerializer::class","href":"-z-material-serializer/index"},{"text":"ZMaterial","href":"-z-material/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZMaterialRenderer","href":"-z-material-renderer/index"},{"text":"ZBindeable","href":"../zernikalos.components/-z-bindeable/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable(with = ZMaterialSerializer::class)',
+        'class ZMaterial : ZRenderizableComponent<ZMaterialRenderer> , ZBindeable',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZMaterialData"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-material-data/index"
+    url="-z-material-data/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZMaterialData(var pbr: ZPbrMaterialData? = null, var phong: ZPhongMaterialData? = null, var texture: ZTexture? = null) : ZComponentData"]} links={[{"text":"ZMaterialData","href":"-z-material-data/index"},{"text":"ZPbrMaterialData","href":"-z-pbr-material-data/index"},{"text":"ZPhongMaterialData","href":"-z-phong-material-data/index"},{"text":"ZTexture","href":"-z-texture/index"},{"text":"ZComponentData","href":"../zernikalos.components/-z-component-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZMaterialData(var pbr: ZPbrMaterialData? = null, var phong: ZPhongMaterialData? = null, var texture: ZTexture? = null) : ZComponentData',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZMaterialRenderer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-material-renderer/index"
+    url="-z-material-renderer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZMaterialRenderer(ctx: ZRenderingContext, data: ZMaterialData) : ZComponentRenderer"]} links={[{"text":"ZMaterialRenderer","href":"-z-material-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZMaterialData","href":"-z-material-data/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'class ZMaterialRenderer(ctx: ZRenderingContext, data: ZMaterialData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZMaterialSerializer"
     tokenType="class"
     groupType="TYPE"
-    url="-z-material-serializer/index"
+    url="-z-material-serializer/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["class ZMaterialSerializer : ZComponentSerializer<ZMaterial, ZMaterialData>"]} links={[{"text":"ZMaterialSerializer","href":"-z-material-serializer/index"},{"text":"ZComponentSerializer","href":"../zernikalos.components/-z-component-serializer/index"},{"text":"ZMaterial","href":"-z-material/index"},{"text":"ZMaterialData","href":"-z-material-data/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZMaterialSerializer : ZComponentSerializer<ZMaterial, ZMaterialData>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPbrMaterialData"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-pbr-material-data/index"
+    url="-z-pbr-material-data/"
     description="Represents data describing a physically-based rendering (PBR) material."
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZPbrMaterialData(var color: ZColor, var emissive: ZColor, _emissiveIntensity: Float, _metalness: Float, _roughness: Float)"]} links={[{"text":"ZPbrMaterialData","href":"-z-pbr-material-data/index"},{"text":"ZColor","href":"../zernikalos.math/-z-color/index"},{"text":"ZColor","href":"../zernikalos.math/-z-color/index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZPbrMaterialData(var color: ZColor, var emissive: ZColor, _emissiveIntensity: Float, _metalness: Float, _roughness: Float)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPhongMaterialData"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-phong-material-data/index"
+    url="-z-phong-material-data/"
     description="Represents data describing a Phong lighting model material."
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZPhongMaterialData(var diffuse: ZColor, var ambient: ZColor, var specular: ZColor, var _shininess: Float)"]} links={[{"text":"ZPhongMaterialData","href":"-z-phong-material-data/index"},{"text":"ZColor","href":"../zernikalos.math/-z-color/index"},{"text":"ZColor","href":"../zernikalos.math/-z-color/index"},{"text":"ZColor","href":"../zernikalos.math/-z-color/index"},{"text":"Float","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZPhongMaterialData(var diffuse: ZColor, var ambient: ZColor, var specular: ZColor, var _shininess: Float)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZTexture"
     tokenType="class"
     groupType="TYPE"
-    url="-z-texture/index"
+    url="-z-texture/"
     description="Represents a texture component in the Zernikalos framework."
   >
-    <CodeBlockComponent platform="common" code={["class ZTexture : ZRenderizableComponent<ZTextureRenderer> , ZBindeable"]} links={[{"text":"ZTexture","href":"-z-texture/index"},{"text":"ZRenderizableComponent","href":"../zernikalos.components/-z-renderizable-component/index"},{"text":"ZBindeable","href":"../zernikalos.components/-z-bindeable/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZTexture : ZRenderizableComponent<ZTextureRenderer> , ZBindeable']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
-    name="ZTextureRenderer"
-    tokenType="class"
+    name="ZTextureChannels"
+    tokenType="enum"
     groupType="TYPE"
-    url="-z-texture-renderer/index"
-    description=""
+    url="-z-texture-channels/"
+    description="Texture channel format specification."
   >
-    <CodeBlockComponent platform="android" code={["actual class ZTextureRenderer(ctx: ZRenderingContext, data: ZTextureData) : ZComponentRenderer"]} links={[{"text":"ZTextureRenderer","href":"-z-texture-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="metal" code={["actual class ZTextureRenderer(ctx: ZRenderingContext, data: ZTextureData) : ZComponentRenderer"]} links={[{"text":"ZTextureRenderer","href":"-z-texture-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
-    <CodeBlockComponent platform="webgpu" code={["actual class ZTextureRenderer(ctx: ZRenderingContext, data: ZTextureData) : ZComponentRenderer"]} links={[{"text":"ZTextureRenderer","href":"-z-texture-renderer/index"},{"text":"ZRenderingContext","href":"../zernikalos.context/-z-rendering-context/index"},{"text":"ZComponentRenderer","href":"../zernikalos.components/-z-component-renderer/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'enum ZTextureChannels : Enum<ZTextureChannels>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZTextureColorSpace"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-texture-color-space/"
+    description="Texture color space specification."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'enum ZTextureColorSpace : Enum<ZTextureColorSpace>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZTextureFilterMode"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-texture-filter-mode/"
+    description="Texture filter mode for minification and magnification filtering."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'enum ZTextureFilterMode : Enum<ZTextureFilterMode>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZTextureWrapMode"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-texture-wrap-mode/"
+    description="Texture wrap mode for texture coordinate addressing."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'enum ZTextureWrapMode : Enum<ZTextureWrapMode>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="buildImage"
     tokenType="fun"
     groupType="FUNCTION"
-    url="build-image"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="webgpu" code={["fun buildImage(nativeData: ERROR CLASS: Symbol not found for ArrayBufferView): ERROR CLASS: Symbol not found for HTMLImageElement"]} links={[{"text":"buildImage","href":"build-image"}]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun buildImage(nativeData: ArrayBufferView): HTMLImageElement']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="buildImageBitmap"
     tokenType="fun"
     groupType="FUNCTION"
-    url="build-image-bitmap"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="webgpu" code={["suspend fun buildImageBitmap(dataArray: ERROR CLASS: Symbol not found for ArrayBufferView): ERROR CLASS: Symbol not found for ImageBitmap"]} links={[{"text":"buildImageBitmap","href":"build-image-bitmap"}]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['suspend fun buildImageBitmap(dataArray: ArrayBufferView): ImageBitmap']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="buildImageBitmapAsync"
     tokenType="fun"
     groupType="FUNCTION"
-    url="build-image-bitmap-async"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="webgpu" code={["fun buildImageBitmapAsync(dataArray: ERROR CLASS: Symbol not found for ArrayBufferView): ERROR CLASS: Symbol not found for Promise<ERROR CLASS: Symbol not found for ImageBitmap>"]} links={[{"text":"buildImageBitmapAsync","href":"build-image-bitmap-async"}]} />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun buildImageBitmapAsync(dataArray: ArrayBufferView): Promise<ImageBitmap>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="getFormatString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-format-string/"
+    description="Helper function to build a format string from texture components. Useful for debugging and logging."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['fun ZTextureData.getFormatString(): String']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

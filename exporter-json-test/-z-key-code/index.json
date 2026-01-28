@@ -1,0 +1,2012 @@
+{
+  "version": 1,
+  "routeId": "-z-key-code/index.mdx",
+  "slug": "-z-key-code/index.mdx/",
+  "outputRelativePath": "-z-key-code/index.mdx",
+  "definition": {
+    "pageType": "classlike",
+    "sourcePath": "-z-key-code/index.html",
+    "title": "ZKeyCode",
+    "mainName": "ZKeyCode",
+    "namespace": "Zernikalos.zernikalos.events.keyboard",
+    "breadcrumbs": [
+      {
+        "label": "Zernikalos",
+        "url": "../../../"
+      },
+      {
+        "label": "zernikalos.events.keyboard",
+        "url": "../"
+      }
+    ],
+    "documentationItems": [
+      {
+        "name": "Companion",
+        "tokenType": "object",
+        "groupType": "OBJECT",
+        "description": "",
+        "url": "-companion/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "object Companion"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "domCode",
+        "tokenType": "val",
+        "groupType": "PROPERTY",
+        "description": "Gets the DOM key code string that corresponds to this ZKeyCode. This is used for mapping from DOM events to ZKeyCode.",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "val domCode: String"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "entries",
+        "tokenType": "val",
+        "groupType": "PROPERTY",
+        "description": "Returns a representation of an immutable list of all enum entries, in the order they're declared.",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "val entries: EnumEntries<ZKeyCode>"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "name",
+        "tokenType": "val",
+        "groupType": "PROPERTY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "expect val name: String"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "ordinal",
+        "tokenType": "val",
+        "groupType": "PROPERTY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "expect val ordinal: Int"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "valueOf",
+        "tokenType": "fun",
+        "groupType": "FUNCTION",
+        "description": "Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)",
+        "url": "value-of/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "fun valueOf(value: String): ZKeyCode"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "values",
+        "tokenType": "fun",
+        "groupType": "FUNCTION",
+        "description": "Returns an array containing the constants of this enum type, in the order they're declared.",
+        "url": "values/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "fun values(): Array<ZKeyCode>"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "A",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "A"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "B",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "B"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "C",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "C"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "D",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "D"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "E",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "E"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "G",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "G"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "H",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "H"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "I",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "I"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "J",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "J"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "K",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "K"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "L",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "L"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "M",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "M"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "N",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "N"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "O",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "O"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "P",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "P"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Q",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Q"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "R",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "R"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "S",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "S"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "T",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "T"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "U",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "U"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "V",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "V"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "W",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "W"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "X",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "X"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Y",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Y"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Z",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Z"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit0",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit0"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit1",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit1"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit2",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit2"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit3",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit3"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit4",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit4"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit5",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit5"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit6",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit6"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit7",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit7"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit8",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit8"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Digit9",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Digit9"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad0",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad0"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad1",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad1"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad2",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad2"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad3",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad3"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad4",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad4"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad5",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad5"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad6",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad6"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad7",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad7"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad8",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad8"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Numpad9",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Numpad9"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "NumpadAdd",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "NumpadAdd"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "NumpadSubtract",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "NumpadSubtract"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "NumpadMultiply",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "NumpadMultiply"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "NumpadDivide",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "NumpadDivide"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "NumpadEnter",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "NumpadEnter"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "NumpadDecimal",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "NumpadDecimal"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "UpArrow",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "UpArrow"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "DownArrow",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "DownArrow"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "LeftArrow",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "LeftArrow"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "RightArrow",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "RightArrow"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F1",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F1"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F2",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F2"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F3",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F3"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F4",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F4"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F5",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F5"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F6",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F6"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F7",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F7"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F8",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F8"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F9",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F9"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F10",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F10"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F11",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F11"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "F12",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "F12"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "LeftShift",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "LeftShift"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "RightShift",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "RightShift"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "LeftControl",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "LeftControl"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "RightControl",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "RightControl"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "LeftAlt",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "LeftAlt"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "RightAlt",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "RightAlt"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "LeftMeta",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "LeftMeta"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "RightMeta",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "RightMeta"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Space",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Space"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Enter",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Enter"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Tab",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Tab"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Backspace",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Backspace"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Delete",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Delete"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Insert",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Insert"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Home",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Home"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "End",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "End"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "PageUp",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "PageUp"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "PageDown",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "PageDown"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Escape",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Escape"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "CapsLock",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "CapsLock"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "NumLock",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "NumLock"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "ScrollLock",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "ScrollLock"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Pause",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Pause"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Semicolon",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Semicolon"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Equal",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Equal"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Comma",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Comma"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Minus",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Minus"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Period",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Period"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Slash",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Slash"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Backquote",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Backquote"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "LeftBracket",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "LeftBracket"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Backslash",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Backslash"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "RightBracket",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "RightBracket"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Quote",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Quote"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "Unknown",
+        "tokenType": "enum entry",
+        "groupType": "ENUM_ENTRY",
+        "description": "",
+        "url": "",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "Unknown"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      }
+    ],
+    "availableTokens": [
+      "CONSTRUCTOR",
+      "TYPE",
+      "PROPERTY",
+      "FUNCTION",
+      "ENTRY"
+    ]
+  }
+}

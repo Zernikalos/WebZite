@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "routeId": "-zernikalos/index.mdx",
+  "slug": "index.mdx/",
+  "outputRelativePath": "-zernikalos/index.mdx",
+  "definition": {
+    "pageType": "package",
+    "sourcePath": "index.html",
+    "title": "events.keyboard",
+    "mainName": "zernikalos.events.keyboard",
+    "namespace": "Zernikalos",
+    "breadcrumbs": [
+      {
+        "label": "Zernikalos",
+        "url": "../../"
+      }
+    ],
+    "documentationItems": [
+      {
+        "name": "ZKeyboardEvent",
+        "tokenType": "data class",
+        "groupType": "TYPE",
+        "description": "Represents a keyboard event with key information and modifiers.",
+        "url": "-z-keyboard-event/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "data class ZKeyboardEvent(val key: String, val code: String, val keyCode: ZKeyCode, val char: String?, val type: ZKeyboardEventType, val timestamp: Long, val ctrlKey: Boolean, val shiftKey: Boolean, val altKey: Boolean, val metaKey: Boolean, val repeat: Boolean)"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "ZKeyboardEventType",
+        "tokenType": "enum",
+        "groupType": "TYPE",
+        "description": "Represents the type of a keyboard event.",
+        "url": "-z-keyboard-event-type/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "enum ZKeyboardEventType : Enum<ZKeyboardEventType>"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "ZKeyboardState",
+        "tokenType": "class",
+        "groupType": "TYPE",
+        "description": "Maintains the current state of pressed keyboard keys.",
+        "url": "-z-keyboard-state/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "class ZKeyboardState"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "ZKeyCode",
+        "tokenType": "enum",
+        "groupType": "TYPE",
+        "description": "Enumeration of keyboard key codes, similar to Unity's KeyCode.",
+        "url": "-z-key-code/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "enum ZKeyCode : Enum<ZKeyCode>"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      },
+      {
+        "name": "ZObjectKeyboardListener",
+        "tokenType": "interface",
+        "groupType": "TYPE",
+        "description": "Interface for handling keyboard events on ZObject instances.",
+        "url": "-z-object-keyboard-listener/",
+        "sourceUrl": "",
+        "codeBlocks": [
+          {
+            "platform": "common",
+            "code": [
+              "interface ZObjectKeyboardListener"
+            ],
+            "links": [],
+            "sourceUrl": null
+          }
+        ]
+      }
+    ],
+    "availableTokens": [
+      "TYPE"
+    ]
+  }
+}

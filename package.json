@@ -16,7 +16,12 @@
     "build:scripts": "tsc --project scripts/tsconfig.json",
     "mdx-to-react": "ts-node scripts/mdx-to-react.ts",
     "generate:docs": "rimraf ./docs/api && ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api",
-    "generate:docs:dev": "ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api"
+    "generate:docs:dev": "ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api",
+    "generate:docs:new": "rimraf ./docs/api && ts-node exporter/index.ts ./sourceDocs -o ./docs/api",
+    "generate:docs:new:dry": "ts-node exporter/index.ts ./sourceDocs -o ./docs/api --dry-run -v",
+    "generate:api:json": "ts-node scripts/export-api-json.ts ./sourceDocs -o ./docs/api --json-out ./tmp/jsonApiDocs",
+    "generate:api:from-json": "ts-node scripts/export-api-from-json.ts ./tmp/jsonApiDocs -o ./docs/api",
+    "generate:api:both": "ts-node scripts/export-api-both.ts ./sourceDocs -o ./docs/api --json-out ./tmp/jsonApiDocs"
   },
   "dependencies": { 
     "@zernikalos/zernikalos": "0.7.0",

@@ -1,16 +1,21 @@
 ---
-slug: "index"
-title: "stats"
+slug: 'zernikalos.stats/index.mdx/'
+title: 'stats'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="stats"
   namespace="Zernikalos"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos","url":"/docs/api/-zernikalos"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"zernikalos.stats","url":"#zernikalos.stats"}]}
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,58 +23,93 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="BrowserInfo"
     tokenType="interface"
     groupType="TYPE"
-    url="-browser-info/index"
+    url="-browser-info/"
     description=""
   >
-    <CodeBlockComponent platform="js" code={["external interface BrowserInfo"]} links={[{"text":"BrowserInfo","href":"-browser-info/index"}]} />
+    <CodeBlockComponent platform="js" code={['external interface BrowserInfo']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="UAParser"
     tokenType="class"
     groupType="TYPE"
-    url="-u-a-parser/index"
+    url="-u-a-parser/"
     description=""
   >
-    <CodeBlockComponent platform="js" code={["external class UAParser(userAgent: String)"]} links={[{"text":"UAParser","href":"-u-a-parser/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent
+      platform="js"
+      code={['external class UAParser(userAgent: String)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPlatformInfo"
     tokenType="data class"
     groupType="TYPE"
-    url="-z-platform-info/index"
+    url="-z-platform-info/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","data class ZPlatformInfo(val name: ZPlatformName, val version: String)"]} links={[{"text":"ZPlatformInfo","href":"-z-platform-info/index"},{"text":"ZPlatformName","href":"-z-platform-name/index"},{"text":"String","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZPlatformInfo(val name: ZPlatformName, val version: String)',
+      ]}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZPlatformName"
     tokenType="enum"
     groupType="TYPE"
-    url="-z-platform-name/index"
+    url="-z-platform-name/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","enum ZPlatformName : Enum<ZPlatformName>"]} links={[{"text":"ZPlatformName","href":"-z-platform-name/index"},{"text":"Enum","href":"https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html"},{"text":"ZPlatformName","href":"-z-platform-name/index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'enum ZPlatformName : Enum<ZPlatformName>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="ZStats"
     tokenType="class"
     groupType="TYPE"
-    url="-z-stats/index"
+    url="-z-stats/"
     description=""
   >
-    <CodeBlockComponent platform="common" code={["@Serializable","class ZStats"]} links={[{"text":"ZStats","href":"-z-stats/index"}]} />
+    <CodeBlockComponent platform="common" code={['@Serializable', 'class ZStats']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="getZPlatformInfo"
     tokenType="fun"
     groupType="FUNCTION"
-    url="get-z-platform-info"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="android" code={["actual fun getZPlatformInfo(): ZPlatformInfo"]} links={[{"text":"getZPlatformInfo","href":"get-z-platform-info"},{"text":"ZPlatformInfo","href":"-z-platform-info/index"}]} />
-    <CodeBlockComponent platform="common" code={["expect fun getZPlatformInfo(): ZPlatformInfo"]} links={[{"text":"getZPlatformInfo","href":"get-z-platform-info"},{"text":"ZPlatformInfo","href":"-z-platform-info/index"}]} />
-    <CodeBlockComponent platform="ios" code={["actual fun getZPlatformInfo(): ZPlatformInfo"]} links={[{"text":"getZPlatformInfo","href":"get-z-platform-info"}]} />
-    <CodeBlockComponent platform="js" code={["actual fun getZPlatformInfo(): ZPlatformInfo"]} links={[{"text":"getZPlatformInfo","href":"get-z-platform-info"}]} />
-    <CodeBlockComponent platform="macosArm64" code={["actual fun getZPlatformInfo(): ZPlatformInfo"]} links={[{"text":"getZPlatformInfo","href":"get-z-platform-info"}]} />
+    <CodeBlockComponent
+      platform="android"
+      code={['actual fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="common"
+      code={['expect fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ios"
+      code={['actual fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="js"
+      code={['actual fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="macosArm64"
+      code={['actual fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>

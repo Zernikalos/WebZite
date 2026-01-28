@@ -1,0 +1,39 @@
+---
+slug: 'zernikalos.components.mesh/-z-buffer/-companion/index.mdx/'
+title: 'Companion'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="Companion"
+  namespace="Zernikalos.zernikalos.components.mesh.ZBuffer"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../../' },
+    { label: 'zernikalos.components.mesh', url: '../../' },
+    { label: 'ZBuffer', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="interleave"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="interleave/"
+    description="Interleaves multiple ZBuffers by combining their data arrays into a single buffer. Each buffer's stride and offset are updated to reflect the interleaved layout. All buffers must have the same count of elements."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['fun interleave(buffers: Array<ZBuffer>)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

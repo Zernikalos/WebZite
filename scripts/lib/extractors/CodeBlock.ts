@@ -20,14 +20,37 @@ export class CodeBlock {
         codeElement.find('a').each((i: number, el: any) => {
             const link = $(el);
             let href = link.attr('href') || '';
-            // Si es relativo y termina en .html, quitamos la extensión
-            if (href && !/^https?:\/\//.test(href) && href.endsWith('.html')) {
-                href = href.slice(0, -5);
+            
+            // If it's a relative link
+            if (href && !/^https?:\/\//.test(href) && !href.startsWith('#')) {
+                // Remove .html extension
+                href = href.replace(/\.html$/, '');
+                
+                // Handle index files
+                if (href === 'index' || href.endsWith('/index')) {
+                    href = href.replace(/\/index$/, '') || './';
+                } else {
+                    // It's a link to a member page. Since we skip many redundant member pages,
+                    // we should only keep the link if we are sure it points to an existing page.
+                    // For now, to avoid broken links during build, we clear links to files 
+                    // in the same directory that are not 'index'.
+                    if (!href.includes('/')) {
+                        href = '';
+                    }
+                }
+                
+                // Ensure directory links have a trailing slash for Docusaurus consistency
+                if (href && href !== './' && !href.includes('#') && !href.endsWith('/')) {
+                    href += '/';
+                }
             }
-            links.push({
-                text: link.text().trim(),
-                href
-            });
+
+            if (href) {
+                links.push({
+                    text: link.text().trim(),
+                    href
+                });
+            }
         });
         return links;
     }
@@ -79,7 +102,9 @@ export class CodeBlock {
 
         this.code = lines.map(line => line.replace(/\s+/g, ' ').trim()).filter(line => line);
 
-        this.links = this.extractLinks($, codeElement);
+        // TODO: Workaround added until we can properly handle links in the code blocks.
+        //this.links = this.extractLinks($, codeElement);
+        this.links = [];
     }
 
     public toString(): string {

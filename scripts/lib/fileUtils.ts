@@ -253,7 +253,13 @@ function convertDirectoryToMdx(
   // Process each HTML file
   for (const htmlFile of htmlFiles) {
     // Determine the relative path from input directory
-    const relativePath = path.relative(inputDir, htmlFile);
+    let relativePath = path.relative(inputDir, htmlFile);
+    
+    // SPECIAL CASE: The root library index should be placed inside the -zernikalos folder
+    // to align with Docusaurus folder structure.
+    if (relativePath === 'index.html') {
+      relativePath = '-zernikalos/index.html';
+    }
     
     // Create the output file path with the same relative path but in output directory
     const outputRelativePath = relativePath.replace(/\.html$/i, '.mdx');

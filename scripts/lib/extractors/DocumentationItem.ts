@@ -109,9 +109,25 @@ export class DocumentationItem {
     }
     
     if (linkElement.length > 0) {
-      const href = linkElement.attr('href') || '#';
-      // Remove .html extension from the URL
-      return href.replace(/\.html$/, '');
+      let href = linkElement.attr('href') || '#';
+      
+      // If it's a relative link
+      if (href && !/^https?:\/\//.test(href) && !href.startsWith('#')) {
+        // Remove .html extension
+        href = href.replace(/\.html$/, '');
+        
+        // Handle index files
+        if (href === 'index' || href.endsWith('/index')) {
+          href = href.replace(/\/index$/, '') || './';
+        }
+        
+        // Ensure directory links have a trailing slash for Docusaurus consistency
+        if (href !== './' && !href.includes('#') && !href.endsWith('/')) {
+          href += '/';
+        }
+      }
+      
+      return href;
     }
     
     return '#';
@@ -189,7 +205,7 @@ export class DocumentationItem {
     }
   }
 
-  public parse($: cheerio.CheerioAPI, element: cheerio.Cheerio<any>): void {
+  public parse($: cheerio.CheerioAPI, element: cheerio.Cheerio<any>, isTableContext: boolean = false): void {
     let nameFromDeclaration = DocumentationItem.extractDeclarationName(element) 
     let nameFromCover = DocumentationItem.extractNameFromCover(element, $);
     const name = nameFromDeclaration || nameFromCover;
@@ -214,10 +230,22 @@ export class DocumentationItem {
     this.sourceUrl = DocumentationItem.extractSourceUrl(element);;
     this.url = this.extractDocumentationUrl(element);
 
-    // If there is no description, we clear the URL so that the index page 
-    // doesn't link to a non-existent member page.
-    if (!this.description || this.description.trim().length === 0) {
-      this.url = '';
+    // Skip links for members that are usually redundant when listed in a table (Class/Package page).
+    // This avoids generating thousands of tiny redundant pages and broken links.
+    if (isTableContext) {
+      const isRedundantMember = [
+        TokenType.VAL, 
+        TokenType.VAR, 
+        TokenType.CONSTRUCTOR, 
+        TokenType.ENUM_ENTRY
+      ].includes(this.tokenType);
+      
+      // We also skip links for simple functions that have no extra documentation
+      const isSimpleFunction = this.tokenType === TokenType.FUNCTION && (!this.description || this.description.trim().length === 0);
+
+      if (isRedundantMember || isSimpleFunction) {
+        this.url = '';
+      }
     }
   }
 

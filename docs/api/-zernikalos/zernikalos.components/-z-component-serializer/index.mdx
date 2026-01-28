@@ -1,16 +1,24 @@
 ---
-slug: "index"
-title: "ZComponentSerializer"
+slug: 'zernikalos.components/-z-component-serializer/index.mdx/'
+title: 'ZComponentSerializer'
 hide_title: true
 ---
-import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlockComponent } from '@site/src/components/Documentation';
 
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
 
 <DocHeader
   title="ZComponentSerializer"
   namespace="Zernikalos.zernikalos.components"
-  breadcrumbs={[{"label":"API","url":"/docs/api"},{"label":"Zernikalos.zernikalos.components","url":"/docs/api/-zernikalos.zernikalos.components"}]}
-  typeInfo={[{"type":"actual","keyword":"package","name":"ZComponentSerializer","url":"#zcomponentserializer"}]}
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components', url: '../' },
+  ]}
+  typeInfo={[]}
 />
 
 <DocumentationItemList>
@@ -18,45 +26,61 @@ import { DocHeader, DocumentationItemList, DocumentationItemComponent, CodeBlock
     name="ZComponentSerializer"
     tokenType="constructor"
     groupType="CONSTRUCTOR"
-    url="-z-component-serializer"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["constructor()"]} links={[]} />
+    <CodeBlockComponent platform="common" code={['constructor()']} links={[]} />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="descriptor"
     tokenType="val"
     groupType="PROPERTY"
-    url="descriptor"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["open override val descriptor: SerialDescriptor"]} links={[{"text":"descriptor","href":"descriptor"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val descriptor: SerialDescriptor']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="kSerializer"
     tokenType="val"
     groupType="PROPERTY"
-    url="k-serializer"
+    url=""
     description="The serializer for the data type associated with this component."
   >
-    <CodeBlockComponent platform="common" code={["abstract val kSerializer: KSerializer<D>"]} links={[{"text":"kSerializer","href":"k-serializer"},{"text":"D","href":"index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract val kSerializer: KSerializer<D>']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="deserialize"
     tokenType="fun"
     groupType="FUNCTION"
-    url="deserialize"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["open override fun deserialize(decoder: Decoder): T"]} links={[{"text":"deserialize","href":"deserialize"},{"text":"T","href":"index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun deserialize(decoder: Decoder): T']}
+      links={[]}
+    />
   </DocumentationItemComponent>
   <DocumentationItemComponent
     name="serialize"
     tokenType="fun"
     groupType="FUNCTION"
-    url="serialize"
+    url=""
     description=""
   >
-    <CodeBlockComponent platform="common" code={["open override fun serialize(encoder: Encoder, value: T)"]} links={[{"text":"serialize","href":"serialize"},{"text":"T","href":"index"}]} />
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun serialize(encoder: Encoder, value: T)']}
+      links={[]}
+    />
   </DocumentationItemComponent>
 </DocumentationItemList>
