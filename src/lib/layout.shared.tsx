@@ -16,9 +16,7 @@ export function baseOptions(): BaseLayoutProps {
       },
       {
         text: 'API Reference',
-        // Static files in `public/` don't always resolve directory indexes in Next dev.
-        // Point to the concrete file so it works both locally and on GitHub Pages.
-        url: '/api/index.html',
+        url: '/api/',
       },
     ],
   };
