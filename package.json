@@ -8,6 +8,8 @@
     "start": "next start",
     "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
     "postinstall": "fumadocs-mdx",
+    "links:check": "bash scripts/check-links.sh",
+    "links:check:all": "bash scripts/check-links.sh --all",
     "lint": "eslint"
   },
   "dependencies": {
