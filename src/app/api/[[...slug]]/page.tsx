@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { DocsBody, DocsPage } from 'fumadocs-ui/layouts/docs/page';
 import { type Metadata } from 'next';
 import { getApiStaticParams, getApiFileContent, processDokkaHtml } from '../apiTools';
+import ApiToggles from '../ApiToggles';
 
 export async function generateStaticParams() {
   return getApiStaticParams();
@@ -9,7 +10,17 @@ export async function generateStaticParams() {
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
-  const slug = params.slug ?? [];
+  const rawSlug = params.slug ?? [];
+
+  // Next may provide URL-encoded path segments (e.g. "%5B-android%5D-zernikalos").
+  // Decode them for filesystem lookup, while keeping the original for metadata if needed.
+  const slug = rawSlug.map((part) => {
+    try {
+      return decodeURIComponent(part);
+    } catch {
+      return part;
+    }
+  });
   
   let htmlData: { content: string, isIndex: boolean } | null = null;
   let processingSlug = slug;
@@ -33,6 +44,7 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
     <DocsPage full>
       <DocsBody className="dokka-container">
         <div dangerouslySetInnerHTML={{ __html: processedHtml }} />
+        <ApiToggles />
       </DocsBody>
     </DocsPage>
   );
@@ -40,7 +52,14 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
 
 export async function generateMetadata(props: { params: Promise<{ slug?: string[] }> }): Promise<Metadata> {
   const params = await props.params;
-  const slug = params.slug ?? [];
+  const rawSlug = params.slug ?? [];
+  const slug = rawSlug.map((part) => {
+    try {
+      return decodeURIComponent(part);
+    } catch {
+      return part;
+    }
+  });
   const title = slug.length > 0 ? slug[slug.length - 1] : 'API Reference';
   
   return {

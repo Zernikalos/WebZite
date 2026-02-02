@@ -1,6 +1,6 @@
-import CodeBlock from '@/components/CodeBlock';
 import SectionTitle from '../SectionTitle';
 import SectionText from '../SectionText';
+import CodeWindow from '@/components/CodeWindow';
 
 const sampleCode = `val zernikalos = Zernikalos()
 
@@ -22,15 +22,15 @@ zernikalos.initialize(renderSurface, object : ZSceneStateHandler {
 
 /**
  * Blazing Fast section showcasing code simplicity and performance.
- * Features a clean code block with a sample Kotlin snippet.
+ * Features a code window with a sample Kotlin snippet.
  */
 export default function BlazingFastSection() {
   return (
     <section className="py-24 w-full">
       <div className="container mx-auto px-6 md:px-8 lg:px-12 flex flex-col md:flex-row-reverse justify-between items-center gap-12">
-        {/* Code Block */}
+        {/* Code Window */}
         <div className="w-full md:w-2/3 order-2 md:order-none">
-          <CodeBlock language="kotlin" code={sampleCode} />
+          <CodeWindow language="kotlin" code={sampleCode} />
         </div>
 
         {/* Textual content */}

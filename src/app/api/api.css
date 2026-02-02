@@ -1,252 +1,434 @@
-/* Dokka API Styles */
+/* Dokka API Styles - Modern Card Edition */
 .dokka-container {
   color: hsl(var(--foreground));
 }
 
-.dokka-container .platform-tags {
+/* El contenedor principal de la lista */
+.dokka-container .table.api-cards-grid {
   display: flex;
-  gap: 0.35rem;
-  margin-bottom: 0;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  border: none;
 }
 
-.dokka-container .platform-tag {
-  padding: 0.1rem 0.6rem;
-  border-radius: 9999px;
-  font-size: 9px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-width: 1px;
-  white-space: nowrap;
-}
-
-.dokka-container .platform-tag.common-like { background-color: rgba(59, 130, 246, 0.15); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3); }
-.dokka-container .platform-tag.jvm-like { background-color: rgba(34, 197, 94, 0.15); color: #4ade80; border-color: rgba(34, 197, 94, 0.3); }
-.dokka-container .platform-tag.native-like { background-color: rgba(168, 85, 247, 0.15); color: #c084fc; border-color: rgba(168, 85, 247, 0.3); }
-.dokka-container .platform-tag.js-like { background-color: rgba(234, 179, 8, 0.15); color: #fbbf24; border-color: rgba(234, 179, 8, 0.3); }
-
-.dokka-container .symbol {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  background-color: hsl(var(--muted));
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  border-radius: 0.25rem;
-}
-
-.dokka-container .table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
+/* Cada fila ahora es una Card */
 .dokka-container .table-row {
-  border-bottom-width: 1px;
-  border-color: hsl(var(--border));
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Robust card styling (no color-mix): works everywhere */
+  background-color: var(--color-fd-card);
+  border: 1px solid var(--color-fd-border);
+  border-radius: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-shadow:
+    0 1px 0 0 rgba(0, 0, 0, 0.06),
+    0 12px 28px -22px rgba(0, 0, 0, 0.35);
 }
 
 .dokka-container .table-row:hover {
-  background-color: hsl(var(--accent) / 0.4);
-  border-color: hsl(var(--primary) / 0.3);
+  background-color: var(--color-fd-popover);
+  border-color: color-mix(in srgb, var(--color-fd-primary) 30%, var(--color-fd-border));
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-fd-primary) 22%, transparent) inset,
+    0 18px 45px -28px rgba(0, 0, 0, 0.45);
 }
 
+/* Stronger separation in dark mode */
+:root[class~="dark"] .dokka-container .table-row {
+  border-color: color-mix(in srgb, var(--color-fd-border) 70%, rgba(255, 255, 255, 0.10));
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.04) inset,
+    0 18px 60px -38px rgba(0, 0, 0, 0.75);
+}
+
+/* Layout de la Card: Nombre a la izquierda, Código/Descripción a la derecha */
 .dokka-container .main-subrow {
-  padding: 1.5rem 0.75rem;
+  padding: 1.5rem;
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 220px 1fr;
   align-items: start;
   gap: 2rem;
+}
+
+/* Ajuste específico para la lista principal (index) */
+.dokka-container .table-row_platform-tagged .main-subrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
 }
 
 @media (max-width: 1024px) {
   .dokka-container .main-subrow {
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 1.25rem;
+  }
+  
+  .dokka-container .table-row_platform-tagged .main-subrow {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
-/* Estilo para el nombre del paquete/clase */
-.dokka-container .main-subrow > div:first-child {
-  position: sticky;
-  top: 1rem;
-}
-
-/* Estilo para el nombre del paquete/clase */
+/* Estilo del nombre dentro de la Card */
 .dokka-container .main-subrow > div:first-child a {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: hsl(var(--foreground));
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.dokka-container .main-subrow > div:first-child a:hover {
-  color: hsl(var(--primary));
-}
-
-.dokka-container .breadcrumbs {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  color: hsl(var(--muted-foreground));
-  margin-bottom: 2rem;
-}
-
-.dokka-container .breadcrumbs a {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.dokka-container .breadcrumbs a:hover {
-  color: hsl(var(--primary));
-}
-
-.dokka-container .breadcrumbs .delimiter {
-  opacity: 0.5;
-}
-
-.dokka-container h1.cover {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  color: hsl(var(--fd-primary));
+  text-decoration: none;
 }
 
-.dokka-container .monospace {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.dokka-container .token.keyword { color: rgb(168 85 247); font-weight: 700; }
-.dokka-container .token.string { color: rgb(34 197 94); }
-.dokka-container .token.punctuation { color: hsl(var(--muted-foreground)); }
-.dokka-container .token.operator { color: hsl(var(--primary)); }
-
-/* Code Blocks in API (CodeBlock style) */
-.dokka-container .symbol.monospace {
-  display: block;
-  background-color: #050505; /* Near black bg like CodeBlock */
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid hsl(var(--border));
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  margin: 0.5rem 0;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-break: break-all;
-  color: #e6edf3;
-}
-
-.dokka-container .brief {
-  margin-top: 0.5rem;
-  font-size: 0.875rem;
-  color: hsl(var(--muted-foreground));
-  line-height: 1.625;
-  padding-left: 0.5rem;
-  border-left: 2px solid hsl(var(--primary) / 0.2);
-}
-
-/* Tabs / Platform Bookmarks */
-.dokka-container .tabs-section {
+/* Etiquetas de plataforma */
+.dokka-container .platform-tags {
   display: flex;
-  gap: 1rem;
-  border-bottom: 1px solid hsl(var(--border));
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  gap: 0.4rem;
+  flex-wrap: wrap;
 }
 
-.dokka-container .section-tab {
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-  color: hsl(var(--muted-foreground));
-  border-bottom: 2px solid transparent;
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s;
+.dokka-container .platform-tag {
+  padding: 0.15rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid currentColor;
 }
 
-.dokka-container .section-tab[data-active=""] {
-  color: hsl(var(--primary));
-  border-bottom: 2px solid hsl(var(--primary));
-}
+.dokka-container .platform-tag.common-like { background-color: rgba(59, 130, 246, 0.1); color: #60a5fa; }
+.dokka-container .platform-tag.jvm-like { background-color: rgba(34, 197, 94, 0.1); color: #4ade80; }
+.dokka-container .platform-tag.native-like { background-color: rgba(168, 85, 247, 0.1); color: #c084fc; }
+.dokka-container .platform-tag.js-like { background-color: rgba(234, 179, 8, 0.1); color: #fbbf24; }
 
+/* Platform selector pills (package/class platform tabs) */
 .dokka-container .platform-bookmarks-row {
   display: flex;
-  gap: 0.25rem;
-  margin-bottom: -1px;
-  position: relative;
-  z-index: 10;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .dokka-container .platform-bookmark {
-  background: hsl(var(--muted));
-  border: 1px solid hsl(var(--border));
-  border-bottom: none;
-  padding: 0.4rem 0.8rem;
-  border-radius: 0.5rem 0.5rem 0 0;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: hsl(var(--muted-foreground));
+  padding: 0.15rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid currentColor;
+  background: transparent;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: transform 150ms ease, background-color 150ms ease, opacity 150ms ease;
+  opacity: 0.9;
+}
+
+.dokka-container .platform-bookmark:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.dokka-container .platform-bookmarks-row {
+  /* On small screens keep them left-aligned for readability */
+}
+
+@media (max-width: 768px) {
+  .dokka-container .platform-bookmarks-row {
+    justify-content: flex-start;
+  }
 }
 
 .dokka-container .platform-bookmark[data-active=""] {
-  background: #0d1117;
-  color: hsl(var(--primary));
-  border-color: hsl(var(--border));
-  border-bottom-color: #0d1117;
+  opacity: 1;
+  box-shadow: 0 0 0 2px hsl(var(--fd-background)) inset;
 }
 
-.dokka-container .platform-bookmark:hover:not([data-active=""]) {
-  background: hsl(var(--accent));
-  color: hsl(var(--foreground));
+/* Color mapping based on Dokka's data-toggle */
+.dokka-container .platform-bookmark[data-toggle=":/commonMain"] {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #60a5fa;
 }
 
-/* Hide inactive content blocks (Dokka's way) */
+.dokka-container .platform-bookmark[data-toggle=":/androidMain"] {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+}
+
+.dokka-container .platform-bookmark[data-toggle=":/oglMain"] {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+}
+
+.dokka-container .platform-bookmark[data-toggle=":/metalMain"] {
+  background-color: rgba(168, 85, 247, 0.1);
+  color: #c084fc;
+}
+
+.dokka-container .platform-bookmark[data-toggle=":/webgpuMain"] {
+  background-color: rgba(234, 179, 8, 0.1);
+  color: #fbbf24;
+}
+
+/* Bloques de código dentro de la Card */
+.dokka-container .symbol.monospace {
+  display: block;
+  background-color: hsl(var(--fd-muted));
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(var(--fd-border));
+  font-family: var(
+    --font-mono,
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Liberation Mono",
+    "Courier New",
+    monospace
+  );
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 0;
+  color: hsl(var(--fd-foreground));
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  position: relative;
+}
+
+/* Slightly increase contrast for code blocks in dark mode */
+:root[class~="dark"] .dokka-container .symbol.monospace {
+  background-color: hsl(var(--fd-muted) / 0.6);
+  border-color: hsl(var(--fd-border) / 0.9);
+}
+
+/* "source" link should look like metadata (top-right) */
+.dokka-container .symbol.monospace .source-link-wrapper {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+/* Give the code a bit of headroom when a source link exists */
+.dokka-container .symbol.monospace .source-link-wrapper + * {
+  /* no-op, wrapper isn't followed by a sibling in current Dokka HTML */
+}
+
+.dokka-container .symbol.monospace:has(.source-link-wrapper) {
+  padding-top: 2.25rem;
+}
+
+.dokka-container .symbol.monospace .source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--fd-border));
+  background: hsl(var(--fd-background));
+}
+
+.dokka-container .symbol.monospace .source-link a {
+  color: hsl(var(--fd-primary));
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.dokka-container .symbol.monospace .source-link a:hover {
+  text-decoration: underline;
+}
+
+/* Prism token colors (match Dokka's original prism.css) */
+.dokka-container {
+  /* Values copied from Dokka's main.css */
+  --color-cd-punctuation: rgb(153, 153, 153);
+  --color-cd-keyword: rgb(0, 51, 179);
+  --color-cd-keyword-alternative: rgba(204, 120, 50);
+  --color-cd-builtin: rgb(6, 125, 23);
+  --color-cd-builtin-alternative: rgb(231, 191, 106);
+  --color-cd-function: rgb(0, 98, 122);
+  --color-cd-function-alternative: rgb(255, 198, 109);
+  --color-cd-operator: rgb(154, 110, 58);
+  --color-cd-operator-alternative: rgb(169, 183, 198);
+  --color-cd-number: rgba(135, 16, 148, 1);
+  --color-cd-number-alternative: rgba(109, 185, 243, 1);
+
+  /* Values copied from Dokka's prism.css */
+  --code-area-punctuation: var(--color-cd-punctuation);
+  --code-area-string: var(--color-cd-builtin);
+  --code-area-keyword: var(--color-cd-keyword);
+  --code-area-function: var(--color-cd-function);
+  --code-area-operator: var(--color-cd-operator);
+  --code-area-number: var(--color-cd-number);
+}
+
+:root[class~="dark"] .dokka-container {
+  --code-area-string: var(--color-cd-builtin-alternative);
+  --code-area-keyword: var(--color-cd-keyword-alternative);
+  --code-area-function: var(--color-cd-function-alternative);
+  --code-area-operator: var(--color-cd-operator-alternative);
+  --code-area-number: var(--color-cd-number-alternative);
+}
+
+.dokka-container code .token { white-space: pre; }
+
+.dokka-container .token.comment,
+.dokka-container .token.prolog,
+.dokka-container .token.doctype,
+.dokka-container .token.cdata,
+.dokka-container .token.punctuation {
+  color: var(--code-area-punctuation);
+}
+
+.dokka-container .token.property,
+.dokka-container .token.tag,
+.dokka-container .token.boolean,
+.dokka-container .token.number,
+.dokka-container .token.constant,
+.dokka-container .token.symbol,
+.dokka-container .token.deleted {
+  color: var(--code-area-number);
+}
+
+.dokka-container .token.selector,
+.dokka-container .token.attr-name,
+.dokka-container .token.string,
+.dokka-container .token.char,
+.dokka-container .token.builtin,
+.dokka-container .token.inserted {
+  color: var(--code-area-string);
+}
+
+.dokka-container .token.operator,
+.dokka-container .token.entity,
+.dokka-container .token.url,
+.dokka-container .language-css .token.string,
+.dokka-container .style .token.string {
+  color: var(--code-area-operator);
+  background: none;
+}
+
+.dokka-container .token.interpolation-punctuation {
+  color: var(--code-area-keyword);
+}
+
+.dokka-container .token.atrule,
+.dokka-container .token.attr-value,
+.dokka-container .token.keyword,
+.dokka-container .token.interpolation-punctuation {
+  color: var(--code-area-keyword);
+}
+
+.dokka-container .token.function {
+  color: var(--code-area-function);
+}
+
+.dokka-container .token.regex,
+.dokka-container .token.important,
+.dokka-container .token.variable {
+  color: var(--code-area-number);
+}
+
+.dokka-container .token.important,
+.dokka-container .token.bold {
+  font-weight: bold;
+}
+
+.dokka-container .token.italic {
+  font-style: italic;
+}
+
+.dokka-container .token.entity {
+  cursor: help;
+}
+
+:root[class~="dark"] .dokka-container .language-plaintext .token {
+  color: inherit !important;
+}
+
+/* Descripción breve */
+.dokka-container .brief {
+  margin-top: 1rem;
+  font-size: 0.93rem;
+  color: hsl(var(--fd-muted-foreground));
+  line-height: 1.6;
+  padding-left: 1rem;
+  border-left: 3px solid hsl(var(--fd-primary) / 0.3);
+}
+
+/* Breadcrumbs y Títulos */
+.dokka-container .breadcrumbs {
+  margin-bottom: 2.5rem;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.dokka-container h1.cover {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+/* Tabs */
+.dokka-container .tabs-section {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid hsl(var(--fd-border));
+  margin: 3rem 0 1.5rem 0;
+}
+
+/* Hide tab bodies unless active (we set data-active via ApiToggles) */
+.dokka-container .tabs-section-body > div[data-togglable]:not([data-active=""]) {
+  display: none;
+}
+
+.dokka-container .tabs-section-body > div[data-togglable][data-active=""] {
+  display: block;
+}
+
+.dokka-container .section-tab {
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  color: hsl(var(--fd-muted-foreground));
+}
+
+.dokka-container .section-tab[data-active=""] {
+  color: hsl(var(--fd-primary));
+  border-bottom-color: hsl(var(--fd-primary));
+  background-color: hsl(var(--fd-primary) / 0.05);
+}
+
+/* Hide inactive */
 .dokka-container .sourceset-dependent-content:not([data-active=""]) {
   display: none;
 }
 
-.dokka-container .sourceset-dependent-content[data-active=""] {
-  display: block;
-}
-
-/* Copy Popups and Anchors */
-.dokka-container .copy-popup-wrapper {
-  display: none;
-}
-
+/* Copy & Anchors */
+.dokka-container .copy-popup-wrapper { display: none; }
 .dokka-container .anchor-wrapper {
   margin-left: 0.5rem;
   opacity: 0;
   transition: opacity 0.2s;
 }
-
-.dokka-container .table-row:hover .anchor-wrapper,
-.dokka-container .inline-flex:hover .anchor-wrapper {
-  opacity: 1;
-}
-
+.dokka-container .table-row:hover .anchor-wrapper { opacity: 1; }
 .dokka-container .anchor-icon {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'%3E%3C/path%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'%3E%3C/path%3E%3C/svg%3E");
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'%3E%3C/path%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'%3E%3C/path%3E%3C/svg%3E");
   background-size: contain;
-  background-repeat: no-repeat;
   vertical-align: middle;
-  filter: grayscale(1) opacity(0.5);
-}
-
-.dokka-container .anchor-icon:hover {
-  filter: grayscale(0) opacity(1);
+  filter: invert(0.5);
 }
