@@ -1,0 +1,44 @@
+# Dependencies
+/node_modules
+
+# Docusaurus
+# See https://docusaurus.io/docs/site-preparation#build-output
+/build
+/.docusaurus
+/i18n
+/.cache-loader
+
+tmp/
+
+# Project Specific
+/sourceDocs/*
+/sourceDocsGfm/*
+!/sourceDocs/README.md
+
+# Environment variables
+# Keep .env in git but ignore local overrides
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE / Editor directories
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Secrets
+# IMPORTANT: Never commit authentication tokens
+.npmrc
+.certs
+
+/.docusaurus/
