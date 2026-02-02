@@ -1,0 +1,57 @@
+---
+title: Generating Zernikalos Assets
+description: How to generate compatible assets for the Zernikalos engine
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+This guide will walk you through the process of generating compatible assets for the Zernikalos engine.
+
+## Prerequisites
+
+Before starting, ensure you have:
+- A 3D model in one of the supported formats
+- [Nest App installed](/docs/quick-start/nest-install) on your system
+
+## Step 1: Prepare Your 3D Model
+
+Your 3D model should be in one of these supported formats:
+- glTF 2.0 (Recommended)
+- OBJ
+- COLLADA (.dae)
+- FBX
+
+<Callout type="info">
+We recommend using glTF 2.0 as it provides the best compatibility and performance with Zernikalos engine.
+</Callout>
+
+## Step 2: Import to Nest App
+
+1. Open Nest App
+2. Navigate to the import section
+3. Select your 3D model file
+4. Wait for the import process to complete
+
+<div className="flex justify-center gap-5 mb-5">
+  <div>
+    <img src="/docs/quick-start/images/import_file.png" alt="Nest App Import Screen" />
+    <p className="text-center">Import Screen</p>
+  </div>
+  <div>
+    <img src="/docs/quick-start/images/exported.png" alt="Imported data on editor" />
+    <p className="text-center">Imported data on editor</p>
+  </div>
+</div>
+
+## Step 3: Generate Bundle
+
+1. In Nest App, locate the "Scene" menu
+2. Click on "Bundle Scene" option
+3. Select your desired output location
+4. Wait for the bundling process to complete
+
+<Callout>
+The bundled scene is the only format compatible to be used with Zernikalos engine.
+</Callout>
+
+<img src="/docs/quick-start/images/bundle.png" alt="Bundle Scene" className="w-1/2" />

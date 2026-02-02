@@ -1,0 +1,80 @@
+---
+slug: 'zernikalos.components.shader/-z-shader-source-data/index.mdx/'
+title: 'ZShaderSourceData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZShaderSourceData"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components.shader', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZShaderSourceData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor(glsl: ZGlSLShaderSource = ZGlSLShaderSource(), metal: ZMetalShaderSource = ZMetalShaderSource(), wgpu: ZWebGpuShaderSource = ZWebGpuShaderSource())',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="glsl"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['var glsl: ZGlSLShaderSource']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="metal"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['var metal: ZMetalShaderSource']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Transient', 'open override val refId: String']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="wgpu"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['var wgpu: ZWebGpuShaderSource']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

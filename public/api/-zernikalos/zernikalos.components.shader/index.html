@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>zernikalos.components.shader</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/zk-docs-styles.css" rel="Stylesheet">
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../index.html" tabindex="1">
+                    Zernikalos
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.7.0        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector common-like" data-active="" aria-pressed="true"
+                        data-filter=":/commonMain">common</button>
+                <button class="platform-tag platform-selector native-like" data-active="" aria-pressed="true"
+                        data-filter=":/metalMain">Metal</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":/oglMain">OGL</button>
+                <button class="platform-tag platform-selector js-like" data-active="" aria-pressed="true"
+                        data-filter=":/webgpuMain">WebGPU</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":/commonMain"
+                                       data-filter=":/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option native-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":/metalMain"
+                                       data-filter=":/metalMain"/>
+                                <span class="checkbox--icon"></span>
+                                Metal
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":/oglMain"
+                                       data-filter=":/oglMain"/>
+                                <span class="checkbox--icon"></span>
+                                OGL
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option js-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":/webgpuMain"
+                                       data-filter=":/webgpuMain"/>
+                                <span class="checkbox--icon"></span>
+                                WebGPU
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Zernikalos
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="Zernikalos::zernikalos.components.shader////PointingToDeclaration//-910686856">
+  <div class="breadcrumbs"><a href="../../index.html">Zernikalos</a><span class="delimiter">/</span><span class="current">zernikalos.components.shader</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="778520652%2FClasslikes%2F1558683979" anchor-label="UNIFORM_IDS" id="778520652%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-n-i-f-o-r-m_-i-d-s/index.html"><span>UNIFORM_</span><wbr></wbr><span>IDS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="778520652%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-u-n-i-f-o-r-m_-i-d-s/index.html">UNIFORM_IDS</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-238279428%2FClasslikes%2F1558683979" anchor-label="UNIFORM_NAMES" id="-238279428%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-n-i-f-o-r-m_-n-a-m-e-s/index.html"><span>UNIFORM_</span><wbr></wbr><span>NAMES</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-238279428%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-u-n-i-f-o-r-m_-n-a-m-e-s/index.html">UNIFORM_NAMES</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1482438361%2FClasslikes%2F1558683979" anchor-label="ZAttribute" id="-1482438361%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attribute/index.html"><span><span>ZAttribute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1482438361%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-z-attribute/index.html">ZAttribute</a> : <a href="../zernikalos.components/-z-renderizable-component/index.html">ZRenderizableComponent</a><span class="token operator">&lt;</span><a href="-z-attribute-renderer/index.html">ZAttributeRenderer</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1537601949%2FClasslikes%2F1558683979" anchor-label="ZAttributeData" id="1537601949%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attribute-data/index.html"><span>ZAttribute</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1537601949%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-z-attribute-data/index.html">ZAttributeData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>attributeName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-data/index.html">ZComponentData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="806691532%2FClasslikes%2F1558683979" anchor-label="ZAttributeId" id="806691532%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attribute-id/index.html"><span>ZAttribute</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="806691532%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-z-attribute-id/index.html">ZAttributeId</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-z-attribute-id/index.html">ZAttributeId</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="349045668%2FClasslikes%2F-910686856" anchor-label="ZAttributeRenderer" id="349045668%2FClasslikes%2F-910686856" data-filterable-set=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain" data-filterable-set=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attribute-renderer/index.html"><span>ZAttribute</span><wbr></wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="349045668%2FClasslikes%2F-910686856"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain" data-active="" data-toggle=":/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":/metalMain" data-filterable-set=":/metalMain" data-toggle=":/metalMain">Metal</button><button class="platform-bookmark" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain" data-toggle=":/oglMain">OGL</button><button class="platform-bookmark" data-filterable-current=":/webgpuMain" data-filterable-set=":/webgpuMain" data-toggle=":/webgpuMain">WebGPU</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="-z-attribute-renderer/index.html">ZAttributeRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-attribute-data/index.html">ZAttributeData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/metalMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-attribute-renderer/index.html">ZAttributeRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-attribute-data/index.html">ZAttributeData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/oglMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-attribute-renderer/index.html">ZAttributeRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-attribute-data/index.html">ZAttributeData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/webgpuMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-attribute-renderer/index.html">ZAttributeRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-attribute-data/index.html">ZAttributeData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="346132352%2FClasslikes%2F1558683979" anchor-label="ZBaseUniform" id="346132352%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-base-uniform/index.html"><span>ZBase</span><wbr></wbr><span><span>Uniform</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="346132352%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-z-base-uniform/index.html">ZBaseUniform</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-854950949%2FClasslikes%2F693462213" anchor-label="ZGlShaderType" id="-854950949%2FClasslikes%2F693462213" data-filterable-set=":/oglMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-gl-shader-type/index.html"><span>ZGl</span><wbr></wbr><span>Shader</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-854950949%2FClasslikes%2F693462213"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain" data-active="" data-toggle=":/oglMain">OGL</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":/oglMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-z-gl-shader-type/index.html">ZGlShaderType</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-z-gl-shader-type/index.html">ZGlShaderType</a><span class="token operator">&gt; </span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1014772703%2FClasslikes%2F1558683979" anchor-label="ZGlSLShaderSource" id="-1014772703%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-gl-s-l-shader-source/index.html"><span>ZGl</span><wbr></wbr><span>SLShader</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1014772703%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-z-gl-s-l-shader-source/index.html">ZGlSLShaderSource</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>vertexShaderSource<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>fragmentShaderSource<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="746030876%2FClasslikes%2F1558683979" anchor-label="ZMetalShaderSource" id="746030876%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-metal-shader-source/index.html"><span>ZMetal</span><wbr></wbr><span>Shader</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="746030876%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-z-metal-shader-source/index.html">ZMetalShaderSource</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>shaderSource<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2044631361%2FClasslikes%2F693462213" anchor-label="ZProgram" id="-2044631361%2FClasslikes%2F693462213" data-filterable-set=":/oglMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-program/index.html"><span><span>ZProgram</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2044631361%2FClasslikes%2F693462213"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain" data-active="" data-toggle=":/oglMain">OGL</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":/oglMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-z-program/index.html">ZProgram</a> : <a href="../zernikalos.components/-z-renderizable-component/index.html">ZRenderizableComponent</a><span class="token operator">&lt;</span><a href="-z-program-renderer/index.html">ZProgramRenderer</a><span class="token operator">&gt; </span>, <a href="../zernikalos.components/-z-bindeable/index.html">ZBindeable</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="654346556%2FClasslikes%2F693462213" anchor-label="ZProgramRenderer" id="654346556%2FClasslikes%2F693462213" data-filterable-set=":/oglMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-program-renderer/index.html"><span>ZProgram</span><wbr></wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="654346556%2FClasslikes%2F693462213"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain" data-active="" data-toggle=":/oglMain">OGL</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":/oglMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-z-program-renderer/index.html">ZProgramRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1582427418%2FClasslikes%2F1558683979" anchor-label="ZShader" id="1582427418%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-shader/index.html"><span><span>ZShader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1582427418%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-z-shader/index.html">ZShader</a> : <a href="../zernikalos.components/-z-renderizable-component/index.html">ZRenderizableComponent</a><span class="token operator">&lt;</span><a href="-z-shader-renderer/index.html">ZShaderRenderer</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="99279888%2FClasslikes%2F1558683979" anchor-label="ZShaderData" id="99279888%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-shader-data/index.html"><span>ZShader</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="99279888%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-z-shader-data/index.html">ZShaderData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>type<span class="token operator">: </span><a href="-z-shader-type/index.html">ZShaderType</a><span class="token operator"> = </span>ZShaderType.VERTEX_SHADER</span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-data/index.html">ZComponentData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1762305724%2FClasslikes%2F1558683979" anchor-label="ZShaderProgram" id="-1762305724%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-shader-program/index.html"><span>ZShader</span><wbr></wbr><span><span>Program</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1762305724%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-z-shader-program/index.html">ZShaderProgram</a> : <a href="../zernikalos.components/-z-renderizable-component/index.html">ZRenderizableComponent</a><span class="token operator">&lt;</span><a href="-z-shader-program-renderer/index.html">ZShaderProgramRenderer</a><span class="token operator">&gt; </span>, <a href="../zernikalos.components/-z-bindeable/index.html">ZBindeable</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="692595514%2FClasslikes%2F1558683979" anchor-label="ZShaderProgramData" id="692595514%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-shader-program-data/index.html"><span>ZShader</span><wbr></wbr><span>Program</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="692595514%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-z-shader-program-data/index.html">ZShaderProgramData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>vertexShader<span class="token operator">: </span><a href="-z-shader/index.html">ZShader</a><span class="token operator"> = </span>ZShader(ZShaderType.VERTEX_SHADER)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>fragmentShader<span class="token operator">: </span><a href="-z-shader/index.html">ZShader</a><span class="token operator"> = </span>ZShader(ZShaderType.FRAGMENT_SHADER)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>shaderSource<span class="token operator">: </span><a href="-z-shader-source/index.html">ZShaderSource</a><span class="token operator"> = </span>ZShaderSource()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>attributes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-linked-hash-map/index.html">LinkedHashMap</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="-z-attribute/index.html">ZAttribute</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedHashMap()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>uniforms<span class="token operator">: </span><a href="-z-uniform-collection/index.html">ZUniformCollection</a><span class="token operator"> = </span>ZUniformCollection()</span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-data/index.html">ZComponentData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1833969345%2FClasslikes%2F-910686856" anchor-label="ZShaderProgramRenderer" id="1833969345%2FClasslikes%2F-910686856" data-filterable-set=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain" data-filterable-set=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-shader-program-renderer/index.html"><span>ZShader</span><wbr></wbr><span>Program</span><wbr></wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1833969345%2FClasslikes%2F-910686856"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain" data-active="" data-toggle=":/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":/metalMain" data-filterable-set=":/metalMain" data-toggle=":/metalMain">Metal</button><button class="platform-bookmark" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain" data-toggle=":/oglMain">OGL</button><button class="platform-bookmark" data-filterable-current=":/webgpuMain" data-filterable-set=":/webgpuMain" data-toggle=":/webgpuMain">WebGPU</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="-z-shader-program-renderer/index.html">ZShaderProgramRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-shader-program-data/index.html">ZShaderProgramData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/metalMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-shader-program-renderer/index.html">ZShaderProgramRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-shader-program-data/index.html">ZShaderProgramData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/oglMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-shader-program-renderer/index.html">ZShaderProgramRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-shader-program-data/index.html">ZShaderProgramData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/webgpuMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-shader-program-renderer/index.html">ZShaderProgramRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-shader-program-data/index.html">ZShaderProgramData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1436451991%2FClasslikes%2F-910686856" anchor-label="ZShaderRenderer" id="1436451991%2FClasslikes%2F-910686856" data-filterable-set=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain" data-filterable-set=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-shader-renderer/index.html"><span>ZShader</span><wbr></wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1436451991%2FClasslikes%2F-910686856"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain" data-active="" data-toggle=":/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":/metalMain" data-filterable-set=":/metalMain" data-toggle=":/metalMain">Metal</button><button class="platform-bookmark" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain" data-toggle=":/oglMain">OGL</button><button class="platform-bookmark" data-filterable-current=":/webgpuMain" data-filterable-set=":/webgpuMain" data-toggle=":/webgpuMain">WebGPU</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="-z-shader-renderer/index.html">ZShaderRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-shader-data/index.html">ZShaderData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/metalMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-shader-renderer/index.html">ZShaderRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-shader-data/index.html">ZShaderData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/oglMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-shader-renderer/index.html">ZShaderRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-shader-data/index.html">ZShaderData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/webgpuMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-shader-renderer/index.html">ZShaderRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-shader-data/index.html">ZShaderData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1465691775%2FClasslikes%2F1558683979" anchor-label="ZShaderSource" id="1465691775%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-shader-source/index.html"><span>ZShader</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1465691775%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-z-shader-source/index.html">ZShaderSource</a> : <a href="../zernikalos.components/-z-serializable-component/index.html">ZSerializableComponent</a><span class="token operator">&lt;</span><a href="-z-shader-source-data/index.html">ZShaderSourceData</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="255617781%2FClasslikes%2F1558683979" anchor-label="ZShaderSourceData" id="255617781%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-shader-source-data/index.html"><span>ZShader</span><wbr></wbr><span>Source</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="255617781%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-z-shader-source-data/index.html">ZShaderSourceData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>glsl<span class="token operator">: </span><a href="-z-gl-s-l-shader-source/index.html">ZGlSLShaderSource</a><span class="token operator"> = </span>ZGlSLShaderSource()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>metal<span class="token operator">: </span><a href="-z-metal-shader-source/index.html">ZMetalShaderSource</a><span class="token operator"> = </span>ZMetalShaderSource()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>wgpu<span class="token operator">: </span><a href="-z-web-gpu-shader-source/index.html">ZWebGpuShaderSource</a><span class="token operator"> = </span>ZWebGpuShaderSource()</span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-data/index.html">ZComponentData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1352853120%2FClasslikes%2F1558683979" anchor-label="ZShaderType" id="1352853120%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-shader-type/index.html"><span>ZShader</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1352853120%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-z-shader-type/index.html">ZShaderType</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-z-shader-type/index.html">ZShaderType</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1442668145%2FClasslikes%2F1558683979" anchor-label="ZUniform" id="-1442668145%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform/index.html"><span><span>ZUniform</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1442668145%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-z-uniform/index.html">ZUniform</a> : <a href="../zernikalos.components/-z-renderizable-component/index.html">ZRenderizableComponent</a><span class="token operator">&lt;</span><a href="-z-uniform-renderer/index.html">ZUniformRenderer</a><span class="token operator">&gt; </span>, <a href="../zernikalos.components/-z-bindeable/index.html">ZBindeable</a>, <a href="-z-base-uniform/index.html">ZBaseUniform</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1262532932%2FClasslikes%2F1558683979" anchor-label="ZUniformBlockData" id="-1262532932%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-block-data/index.html"><span>ZUniform</span><wbr></wbr><span>Block</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1262532932%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-z-uniform-block-data/index.html">ZUniformBlockData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>uniformBlockName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>uniforms<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-linked-hash-map/index.html">LinkedHashMap</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="-z-uniform-data/index.html">ZUniformData</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedHashMap()</span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-data/index.html">ZComponentData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1253184751%2FClasslikes%2F1558683979" anchor-label="ZUniformCollection" id="-1253184751%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-collection/index.html"><span>ZUniform</span><wbr></wbr><span><span>Collection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1253184751%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-z-uniform-collection/index.html">ZUniformCollection</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="-z-base-uniform/index.html">ZBaseUniform</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-393062907%2FClasslikes%2F1558683979" anchor-label="ZUniformData" id="-393062907%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-data/index.html"><span>ZUniform</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-393062907%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-z-uniform-data/index.html">ZUniformData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>uniformName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>count<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>dataType<span class="token operator">: </span><a href="../zernikalos/-z-data-type/index.html">ZDataType</a><span class="token operator"> = </span>ZTypes.NONE</span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-data/index.html">ZComponentData</a>, <a href="-z-base-uniform/index.html">ZBaseUniform</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-761138164%2FClasslikes%2F-910686856" anchor-label="ZUniformRenderer" id="-761138164%2FClasslikes%2F-910686856" data-filterable-set=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain" data-filterable-set=":/commonMain,:/metalMain,:/oglMain,:/webgpuMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-renderer/index.html"><span>ZUniform</span><wbr></wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-761138164%2FClasslikes%2F-910686856"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain" data-active="" data-toggle=":/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":/metalMain" data-filterable-set=":/metalMain" data-toggle=":/metalMain">Metal</button><button class="platform-bookmark" data-filterable-current=":/oglMain" data-filterable-set=":/oglMain" data-toggle=":/oglMain">OGL</button><button class="platform-bookmark" data-filterable-current=":/webgpuMain" data-filterable-set=":/webgpuMain" data-toggle=":/webgpuMain">WebGPU</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="-z-uniform-renderer/index.html">ZUniformRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-uniform-block-data/index.html">ZUniformBlockData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/metalMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-uniform-renderer/index.html">ZUniformRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-uniform-block-data/index.html">ZUniformBlockData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/oglMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-uniform-renderer/index.html">ZUniformRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-uniform-block-data/index.html">ZUniformBlockData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":/webgpuMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-z-uniform-renderer/index.html">ZUniformRenderer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="../zernikalos.context/-z-rendering-context/index.html">ZRenderingContext</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="-z-uniform-block-data/index.html">ZUniformBlockData</a></span></span><span class="token punctuation">)</span> : <a href="../zernikalos.components/-z-component-renderer/index.html">ZComponentRenderer</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1640433113%2FClasslikes%2F1558683979" anchor-label="ZWebGpuShaderSource" id="-1640433113%2FClasslikes%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-web-gpu-shader-source/index.html"><span>ZWeb</span><wbr></wbr><span>Gpu</span><wbr></wbr><span>Shader</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1640433113%2FClasslikes%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-z-web-gpu-shader-source/index.html">ZWebGpuShaderSource</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>shaderSource<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-1572097410%2FProperties%2F1558683979" anchor-label="ZAttrBoneIndices" id="-1572097410%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attr-bone-indices.html"><span>ZAttr</span><wbr></wbr><span>Bone</span><wbr></wbr><span><span>Indices</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1572097410%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-attr-bone-indices.html">ZAttrBoneIndices</a><span class="token operator">: </span><a href="-z-attribute/index.html">ZAttribute</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1902847677%2FProperties%2F1558683979" anchor-label="ZAttrBoneWeight" id="1902847677%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attr-bone-weight.html"><span>ZAttr</span><wbr></wbr><span>Bone</span><wbr></wbr><span><span>Weight</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1902847677%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-attr-bone-weight.html">ZAttrBoneWeight</a><span class="token operator">: </span><a href="-z-attribute/index.html">ZAttribute</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1135973982%2FProperties%2F1558683979" anchor-label="ZAttrColor" id="1135973982%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attr-color.html"><span>ZAttr</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1135973982%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-attr-color.html">ZAttrColor</a><span class="token operator">: </span><a href="-z-attribute/index.html">ZAttribute</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1202457190%2FProperties%2F1558683979" anchor-label="ZAttrIndices" id="-1202457190%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attr-indices.html"><span>ZAttr</span><wbr></wbr><span><span>Indices</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1202457190%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-attr-indices.html">ZAttrIndices</a><span class="token operator">: </span><a href="-z-attribute/index.html">ZAttribute</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1321017198%2FProperties%2F1558683979" anchor-label="ZAttrNormal" id="-1321017198%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attr-normal.html"><span>ZAttr</span><wbr></wbr><span><span>Normal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1321017198%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-attr-normal.html">ZAttrNormal</a><span class="token operator">: </span><a href="-z-attribute/index.html">ZAttribute</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1968139152%2FProperties%2F1558683979" anchor-label="ZAttrPosition" id="1968139152%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attr-position.html"><span>ZAttr</span><wbr></wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1968139152%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-attr-position.html">ZAttrPosition</a><span class="token operator">: </span><a href="-z-attribute/index.html">ZAttribute</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1634427416%2FProperties%2F1558683979" anchor-label="ZAttrUv" id="1634427416%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-attr-uv.html"><span>ZAttr</span><wbr></wbr><span><span>Uv</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1634427416%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-attr-uv.html">ZAttrUv</a><span class="token operator">: </span><a href="-z-attribute/index.html">ZAttribute</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="835633019%2FProperties%2F1558683979" anchor-label="ZModelViewProjectionMatrixBlock" id="835633019%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-model-view-projection-matrix-block.html"><span>ZModel</span><wbr></wbr><span>View</span><wbr></wbr><span>Projection</span><wbr></wbr><span>Matrix</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="835633019%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-model-view-projection-matrix-block.html">ZModelViewProjectionMatrixBlock</a><span class="token operator">: </span><a href="-z-uniform/index.html">ZUniform</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="939639300%2FProperties%2F1558683979" anchor-label="ZPbrMaterialBlock" id="939639300%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-pbr-material-block.html"><span>ZPbr</span><wbr></wbr><span>Material</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="939639300%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-pbr-material-block.html">ZPbrMaterialBlock</a><span class="token operator">: </span><a href="-z-uniform/index.html">ZUniform</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-527789611%2FProperties%2F1558683979" anchor-label="ZSkinningMatrixBlock" id="-527789611%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-skinning-matrix-block.html"><span>ZSkinning</span><wbr></wbr><span>Matrix</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-527789611%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-skinning-matrix-block.html">ZSkinningMatrixBlock</a><span class="token operator">: </span><a href="-z-uniform/index.html">ZUniform</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="225591840%2FProperties%2F1558683979" anchor-label="ZUniformModelViewProjectionMatrix" id="225591840%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-model-view-projection-matrix.html"><span>ZUniform</span><wbr></wbr><span>Model</span><wbr></wbr><span>View</span><wbr></wbr><span>Projection</span><wbr></wbr><span><span>Matrix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="225591840%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-model-view-projection-matrix.html">ZUniformModelViewProjectionMatrix</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-391627943%2FProperties%2F1558683979" anchor-label="ZUniformPbrColor" id="-391627943%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-pbr-color.html"><span>ZUniform</span><wbr></wbr><span>Pbr</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-391627943%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-pbr-color.html">ZUniformPbrColor</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1302244537%2FProperties%2F1558683979" anchor-label="ZUniformPbrEmissive" id="-1302244537%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-pbr-emissive.html"><span>ZUniform</span><wbr></wbr><span>Pbr</span><wbr></wbr><span><span>Emissive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1302244537%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-pbr-emissive.html">ZUniformPbrEmissive</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1830077120%2FProperties%2F1558683979" anchor-label="ZUniformPbrEmissiveIntensity" id="1830077120%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-pbr-emissive-intensity.html"><span>ZUniform</span><wbr></wbr><span>Pbr</span><wbr></wbr><span>Emissive</span><wbr></wbr><span><span>Intensity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1830077120%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-pbr-emissive-intensity.html">ZUniformPbrEmissiveIntensity</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1098734014%2FProperties%2F1558683979" anchor-label="ZUniformPbrMetalness" id="1098734014%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-pbr-metalness.html"><span>ZUniform</span><wbr></wbr><span>Pbr</span><wbr></wbr><span><span>Metalness</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1098734014%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-pbr-metalness.html">ZUniformPbrMetalness</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1618725196%2FProperties%2F1558683979" anchor-label="ZUniformPbrRoughness" id="1618725196%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-pbr-roughness.html"><span>ZUniform</span><wbr></wbr><span>Pbr</span><wbr></wbr><span><span>Roughness</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1618725196%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-pbr-roughness.html">ZUniformPbrRoughness</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1971803404%2FProperties%2F1558683979" anchor-label="ZUniformPhongAmbient" id="-1971803404%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-phong-ambient.html"><span>ZUniform</span><wbr></wbr><span>Phong</span><wbr></wbr><span><span>Ambient</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1971803404%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-phong-ambient.html">ZUniformPhongAmbient</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1712534890%2FProperties%2F1558683979" anchor-label="ZUniformPhongDiffuse" id="1712534890%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-phong-diffuse.html"><span>ZUniform</span><wbr></wbr><span>Phong</span><wbr></wbr><span><span>Diffuse</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1712534890%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-phong-diffuse.html">ZUniformPhongDiffuse</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-51469722%2FProperties%2F1558683979" anchor-label="ZUniformPhongMaterialBlock" id="-51469722%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-phong-material-block.html"><span>ZUniform</span><wbr></wbr><span>Phong</span><wbr></wbr><span>Material</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-51469722%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-phong-material-block.html">ZUniformPhongMaterialBlock</a><span class="token operator">: </span><a href="-z-uniform/index.html">ZUniform</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1505008966%2FProperties%2F1558683979" anchor-label="ZUniformPhongShininess" id="1505008966%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-phong-shininess.html"><span>ZUniform</span><wbr></wbr><span>Phong</span><wbr></wbr><span><span>Shininess</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1505008966%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-phong-shininess.html">ZUniformPhongShininess</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1054919915%2FProperties%2F1558683979" anchor-label="ZUniformPhongSpecular" id="1054919915%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-phong-specular.html"><span>ZUniform</span><wbr></wbr><span>Phong</span><wbr></wbr><span><span>Specular</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1054919915%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-phong-specular.html">ZUniformPhongSpecular</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1313054580%2FProperties%2F1558683979" anchor-label="ZUniformProjectionMatrix" id="-1313054580%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-projection-matrix.html"><span>ZUniform</span><wbr></wbr><span>Projection</span><wbr></wbr><span><span>Matrix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1313054580%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-projection-matrix.html">ZUniformProjectionMatrix</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="839147702%2FProperties%2F1558683979" anchor-label="ZUniformViewMatrix" id="839147702%2FProperties%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-uniform-view-matrix.html"><span>ZUniform</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matrix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="839147702%2FProperties%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-uniform-view-matrix.html">ZUniformViewMatrix</a><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="58601759%2FFunctions%2F1558683979" anchor-label="ZBonesMatrixArray" id="58601759%2FFunctions%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-bones-matrix-array.html"><span>ZBones</span><wbr></wbr><span>Matrix</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="58601759%2FFunctions%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-z-bones-matrix-array.html"><span class="token function">ZBonesMatrixArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">count<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="596589629%2FFunctions%2F1558683979" anchor-label="ZInverseBindMatrixArray" id="596589629%2FFunctions%2F1558683979" data-filterable-set=":/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":/commonMain" data-filterable-set=":/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-inverse-bind-matrix-array.html"><span>ZInverse</span><wbr></wbr><span>Bind</span><wbr></wbr><span>Matrix</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="596589629%2FFunctions%2F1558683979"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-z-inverse-bind-matrix-array.html"><span class="token function">ZInverseBindMatrixArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">count<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-z-uniform-data/index.html">ZUniformData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Zernikalos</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

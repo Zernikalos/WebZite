@@ -1,0 +1,74 @@
+---
+slug: 'zernikalos.events.keyboard/-z-keyboard-state/index.mdx/'
+title: 'ZKeyboardState'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZKeyboardState"
+  namespace="Zernikalos.zernikalos.events.keyboard"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.events.keyboard', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZKeyboardState"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['constructor()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="hasPressedKeys"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Returns whether any keys are currently pressed."
+  >
+    <CodeBlockComponent platform="common" code={['val hasPressedKeys: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="pressedKeyCount"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Returns the number of keys currently pressed."
+  >
+    <CodeBlockComponent platform="common" code={['val pressedKeyCount: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="clear"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="clear/"
+    description="Clears all pressed keys from the state. This can be useful for resetting the state, for example when the window loses focus or during scene transitions."
+  >
+    <CodeBlockComponent platform="common" code={['fun clear()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isKeyPressed"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="is-key-pressed/"
+    description="Checks if the specified key is currently pressed."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['fun isKeyPressed(keyCode: ZKeyCode): Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

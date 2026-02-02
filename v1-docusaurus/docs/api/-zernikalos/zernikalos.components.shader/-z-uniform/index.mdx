@@ -1,0 +1,203 @@
+---
+slug: 'zernikalos.components.shader/-z-uniform/index.mdx/'
+title: 'ZUniform'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZUniform"
+  namespace="Zernikalos.zernikalos.components.shader"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components.shader', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZUniform"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor(id: Int, uniformName: String, uniforms: LinkedHashMap<String, ZUniformData>)constructor(id: Int, uniformName: String, uniforms: List<Pair<String, ZUniformData>>)constructor(id: Int, uniformName: String, count: Int, dataType: ZDataType)constructor()',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="id"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the unique identifier for a ZUniform instance. This ID is used to differentiate between different uniform components"
+  >
+    <CodeBlockComponent platform="common" code={['open override val id: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component has been initialized."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isInitialized: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component is renderizable."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isRenderizable: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isSerializable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Indicates whether this component can be serialized."
+  >
+    <CodeBlockComponent platform="common" code={['val isSerializable: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isSingleUniform"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val isSingleUniform: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+  >
+    <CodeBlockComponent platform="common" code={['override val refId: String']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Provides access to the component's renderer."
+  >
+    <CodeBlockComponent platform="common" code={['val renderer: ZUniformRenderer']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="singleElement"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val singleElement: ZUniformData?']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="uniformName"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="This is the name within the shader source code"
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val uniformName: String']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="uniforms"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val uniforms: MutableMap<String, ZUniformData>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="value"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override var value: ZAlgebraObject']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="bind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="bind/"
+    description="Binds the renderer. This method is called to prepare the renderer for drawing."
+  >
+    <CodeBlockComponent platform="common" code={['open override fun bind()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="initialize/"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun initialize(ctx: ZRenderingContext)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun toString(): String']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="unbind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="unbind/"
+    description="Unbinds the renderer. This method is called after drawing to clean up."
+  >
+    <CodeBlockComponent platform="common" code={['open override fun unbind()']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

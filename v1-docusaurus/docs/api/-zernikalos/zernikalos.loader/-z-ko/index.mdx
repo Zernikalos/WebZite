@@ -1,0 +1,71 @@
+---
+slug: 'zernikalos.loader/-z-ko/index.mdx/'
+title: 'ZKo'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZKo"
+  namespace="Zernikalos.zernikalos.loader"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.loader', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZKo"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor(header: ZkoHeader, root: ZObject, actions: List<ZSkeletalAction>? = null)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="actions"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="An optional list of actions (ZSkeletalAction) that can be executed or associated with this ZKo object."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val actions: List<ZSkeletalAction>?']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="header"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="The metadata header associated with the ZKo object. This contains the version information and ensures compatibility."
+  >
+    <CodeBlockComponent platform="common" code={['val header: ZkoHeader']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="root"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="The root ZObject of the ZKo structure. This represents the starting point of the object hierarchy."
+  >
+    <CodeBlockComponent platform="common" code={['val root: ZObject']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

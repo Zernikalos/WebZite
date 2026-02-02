@@ -1,0 +1,95 @@
+---
+slug: 'zernikalos.events/-web-input-event-manager/index.mdx/'
+title: 'WebInputEventManager'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="WebInputEventManager"
+  namespace="Zernikalos.zernikalos.events"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.events', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="WebInputEventManager"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['constructor(canvas: HTMLCanvasElement, eventQueue: ZEventQueue?)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="dispose"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="dispose/"
+    description="Disposes the manager and removes all event listeners. Call this when the canvas is no longer needed."
+  >
+    <CodeBlockComponent platform="webgpu" code={['fun dispose()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="getEventQueue"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-event-queue/"
+    description="Gets the current event queue."
+  >
+    <CodeBlockComponent platform="webgpu" code={['fun getEventQueue(): ZEventQueue?']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="getHandler"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-handler/"
+    description="Gets the current event handler (for compatibility with ZUserInputEventHandler interface). Returns the event queue since it implements ZUserInputEventHandler."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun getHandler(): ZUserInputEventHandler?']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="setEventQueue"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-event-queue/"
+    description="Updates the event queue that receives converted events."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun setEventQueue(newQueue: ZEventQueue?)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="setHandler"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="set-handler/"
+    description="Updates the event handler (for compatibility with ZUserInputEventHandler interface). If the handler is a ZEventQueue, it will be used directly. Otherwise, it will be ignored."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun setHandler(newHandler: ZUserInputEventHandler?)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

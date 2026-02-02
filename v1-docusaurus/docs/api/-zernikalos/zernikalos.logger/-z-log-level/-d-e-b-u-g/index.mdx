@@ -1,0 +1,57 @@
+---
+slug: 'zernikalos.logger/-z-log-level/-d-e-b-u-g/index.mdx/'
+title: 'DEBUG'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="DEBUG"
+  namespace="Zernikalos.zernikalos.logger.ZLogLevel"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../../' },
+    { label: 'zernikalos.logger', url: '../../' },
+    { label: 'ZLogLevel', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="name"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['expect val name: String']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ordinal"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['expect val ordinal: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="compare"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun compare(a: ZLogLevel, b: ZLogLevel): Int']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

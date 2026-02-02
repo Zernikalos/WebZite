@@ -1,0 +1,181 @@
+---
+slug: 'zernikalos.math/index.mdx/'
+title: 'math'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="math"
+  namespace="Zernikalos"
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZAlgebraObject"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-algebra-object/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['interface ZAlgebraObject']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAlgebraObjectCollection"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-algebra-object-collection/"
+    description="A collection class for managing and storing multiple instances of ZAlgebraObject."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZAlgebraObjectCollection(byteDataSize: Int) : ZAlgebraObject']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBox2D"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-box2-d/"
+    description="Represents a 2D box with top, left, width, and height properties."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'class ZBox2D(var top: Int = 0, var left: Int = 0, var width: Int = 0, var height: Int = 0)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZColor"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-color/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable(with = ZColorSerializer::class)', 'class ZColor : ZAlgebraObject']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZEuler"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-euler/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['class ZEuler : ZAlgebraObject']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZMatrix4"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-matrix4/"
+    description="A 4x4 matrix implementation."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'class ZMatrix4 : ZAlgebraObject']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZQuaternion"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-quaternion/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable(with = ZQuaternionSerializer::class)',
+        'class ZQuaternion : ZAlgebraObject',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZScalar"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-scalar/"
+    description="Represents a scalar value in the context of the algebra system."
+  >
+    <CodeBlockComponent platform="common" code={['class ZScalar : ZAlgebraObject']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZTransform"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-transform/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['@Serializable', 'class ZTransform']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZVector2"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-vector2/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable(with = ZVector2Serializer::class)', 'class ZVector2 : ZAlgebraObject']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZVector3"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-vector3/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable(with = ZVector3Serializer::class)', 'class ZVector3 : ZAlgebraObject']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZVector4"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-vector4/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable(with = ZVector4Serializer::class)', 'class ZVector4 : ZAlgebraObject']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZVoidAlgebraObject"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-void-algebra-object/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZVoidAlgebraObject : ZAlgebraObject']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

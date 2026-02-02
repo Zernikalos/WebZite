@@ -1,0 +1,86 @@
+---
+slug: 'zernikalos.components/-z-component-serializer/index.mdx/'
+title: 'ZComponentSerializer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZComponentSerializer"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZComponentSerializer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['constructor()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="descriptor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val descriptor: SerialDescriptor']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="kSerializer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="The serializer for the data type associated with this component."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract val kSerializer: KSerializer<D>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="deserialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun deserialize(decoder: Decoder): T']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="serialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun serialize(encoder: Encoder, value: T)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

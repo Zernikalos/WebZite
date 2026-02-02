@@ -1,0 +1,262 @@
+---
+slug: 'zernikalos.math/-z-vector3/index.mdx/'
+title: 'ZVector3'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZVector3"
+  namespace="Zernikalos.zernikalos.math"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.math', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZVector3"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor()constructor(x: Float = 0.0f, y: Float = 0.0f, z: Float = 0.0f)constructor(v: Float)constructor(v4: ZVector4)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="Op"
+    tokenType="object"
+    groupType="OBJECT"
+    url="-op/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['object Op']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="byteArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val byteArray: ByteArray']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="byteSize"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['open override val byteSize: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="count"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Number of individual instances this object represents"
+  >
+    <CodeBlockComponent platform="common" code={['open override val count: Int = 1']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="dataType"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="The data type stored"
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val dataType: ZDataType']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="floatArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val floatArray: FloatArray']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="norm2"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val norm2: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="normalized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val normalized: ZVector3']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="size"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Number of elements contained within the values array with the specific type defined in dataType"
+  >
+    <CodeBlockComponent platform="common" code={['open override val size: Int = 3']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent name="x" tokenType="var" groupType="PROPERTY" url="" description="">
+    <CodeBlockComponent platform="common" code={['var x: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent name="y" tokenType="var" groupType="PROPERTY" url="" description="">
+    <CodeBlockComponent platform="common" code={['var y: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent name="z" tokenType="var" groupType="PROPERTY" url="" description="">
+    <CodeBlockComponent platform="common" code={['var z: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent name="add" tokenType="fun" groupType="FUNCTION" url="" description="">
+    <CodeBlockComponent platform="common" code={['fun add(v: ZVector3)']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="copy"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['fun copy(v: ZVector3)']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="minus"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['operator fun minus(v: ZVector3): ZVector3']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="multScalar"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['fun multScalar(scalar: Float)']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="normalize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['fun normalize()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="plus"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['operator fun plus(v: ZVector3): ZVector3']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="rotate"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['fun rotate(q: ZQuaternion)']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent name="set" tokenType="fun" groupType="FUNCTION" url="" description="">
+    <CodeBlockComponent
+      platform="common"
+      code={['operator fun set(i: Int, value: Float)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="setValues"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['fun setValues(x: Float, y: Float, z: Float)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="times"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['operator fun times(scalar: Float): ZVector3operator fun times(v: ZVector3): Float']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun toString(): String']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="zero"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['fun zero()']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

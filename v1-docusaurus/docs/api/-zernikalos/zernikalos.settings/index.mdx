@@ -1,0 +1,40 @@
+---
+slug: 'zernikalos.settings/index.mdx/'
+title: 'settings'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="settings"
+  namespace="Zernikalos"
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZLoggerSettings"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-logger-settings/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['class ZLoggerSettings']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZSettings"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-settings/"
+    description="Provides the settings for the Zernikalos Engine."
+  >
+    <CodeBlockComponent platform="common" code={['class ZSettings']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

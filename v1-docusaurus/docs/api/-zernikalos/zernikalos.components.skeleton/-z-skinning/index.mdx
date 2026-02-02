@@ -1,0 +1,127 @@
+---
+slug: 'zernikalos.components.skeleton/-z-skinning/index.mdx/'
+title: 'ZSkinning'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZSkinning"
+  namespace="Zernikalos.zernikalos.components.skeleton"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components.skeleton', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZSkinning"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['constructor()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="boneIds"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val boneIds: Array<String>']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="data"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Provides access to the component's serializable data."
+  >
+    <CodeBlockComponent platform="common" code={['val data: ZSkinningData']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component has been initialized."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isInitialized: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component is renderizable."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isRenderizable: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isSerializable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Indicates whether this component can be serialized."
+  >
+    <CodeBlockComponent platform="common" code={['val isSerializable: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+  >
+    <CodeBlockComponent platform="common" code={['override val refId: String']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="addBoneId"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['fun addBoneId(boneId: String)']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize/"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun initialize(ctx: ZRenderingContext)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="removeBoneId"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['fun removeBoneId(boneId: String)']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

@@ -1,48 +1,35 @@
-import React from 'react';
 import clsx from 'clsx';
 import Logo from './Logo';
 import Title from './Title';
-import { useMediaQuery } from '../../hooks/useMediaQuery';
 
-interface SiteConfig {
-  title: string;
-  tagline: string;
-}
-
-interface HeaderProps {
-  siteConfig: SiteConfig;
-  className?: string;
-}
-
-export default function LandingHeader({ siteConfig, className }: HeaderProps): JSX.Element {
-  const isMobile = useMediaQuery('(max-width: 768px)');
+/**
+ * Landing page header with responsive layout.
+ * Mobile: stacked layout with logo as background.
+ * Desktop: side-by-side layout.
+ */
+export default function LandingHeader() {
   return (
     <header
       className={clsx(
-        'tw:relative tw:overflow-hidden tw:flex tw:items-center',
-        isMobile
-          ? 'tw:h-[85vh] tw:pt-24' // Taller container on mobile with more top padding
-          : 'tw:min-h-3/5 tw:h-3/5 tw:py-16', // Original style for desktop
-        className
+        'relative overflow-hidden flex items-center',
+        'h-[85vh] pt-24',
+        'md:min-h-[60vh] md:h-[60vh] md:py-16 md:pt-16'
       )}
     >
-
-            <div className="tw:container tw:mx-auto tw:px-4 tw:relative">
-        {isMobile ? (
-          <>
-            <div className="tw:absolute tw:inset-0 tw:flex tw:items-center tw:justify-center tw:opacity-30">
-              <Logo isMobile />
-            </div>
-            <div className="tw:relative tw:z-10">
-              <Title />
-            </div>
-          </>
-        ) : (
-          <div className="tw:flex tw:flex-row tw:items-center tw:justify-between">
-            <Title />
-            <Logo />
+      <div className="container mx-auto px-6 md:px-8 lg:px-12 relative">
+        {/* Mobile Layout - Logo as background */}
+        <div className="md:hidden relative">
+          <div className="absolute inset-0 flex items-center justify-center opacity-30 -z-10">
+            <Logo variant="background" />
           </div>
-        )}
+          <Title />
+        </div>
+
+        {/* Desktop Layout - Side by side */}
+        <div className="hidden md:flex flex-row items-center justify-between gap-8">
+          <Title />
+          <Logo variant="inline" />
+        </div>
       </div>
     </header>
   );

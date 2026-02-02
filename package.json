@@ -1,68 +1,42 @@
 {
-  "name": "zernikalos-site",
+  "name": "webzite2",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "docusaurus": "docusaurus",
-    "dev": "docusaurus start --host 0.0.0.0",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc",
-    "build:scripts": "tsc --project scripts/tsconfig.json",
-    "mdx-to-react": "ts-node scripts/mdx-to-react.ts",
-    "generate:docs": "rimraf ./docs/api && ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api",
-    "generate:docs:dev": "ts-node scripts/mdx-to-react.ts ./sourceDocs -o ./docs/api"
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
+    "postinstall": "fumadocs-mdx",
+    "links:check": "bash scripts/check-links.sh",
+    "links:check:all": "bash scripts/check-links.sh --all",
+    "lint": "eslint"
   },
-  "dependencies": { 
-    "@zernikalos/zernikalos": "0.4.1",
-    "@docusaurus/plugin-content-docs": "3.8.1",
-    "@docusaurus/plugin-ideal-image": "3.8.1",
-    "@docusaurus/preset-classic": "3.8.1",
-    "@mdx-js/react": "3.1.1",
-    "clsx": "^2.0.0",
-    "commander": "^14.0.0",
-    "daisyui": "5.1.8",
-    "framer-motion": "^12.18.1",
-    "lodash": "^4.17.21",
-    "prism-react-renderer": "2.4.1",
-    "pug": "^3.0.3",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-icons": "^5.5.0",
-    "tailwindcss": "4.1.13",
-    "unist-util-visit": "5.0.0"
+  "dependencies": {
+    "@zernikalos/zernikalos": "0.5.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.18.0",
+    "fumadocs-core": "16.4.11",
+    "fumadocs-mdx": "14.2.6",
+    "fumadocs-ui": "16.4.11",
+    "lucide-react": "^0.563.0",
+    "next": "16.1.4",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-icons": "^5.4.0",
+    "shiki": "^3.0.0",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.8.1",
-    "@docusaurus/tsconfig": "3.8.1",
-    "@docusaurus/types": "3.8.1",
-    "@tailwindcss/postcss": "4.1.13",
-    "@types/lodash": "^4.17.17",
-    "cheerio": "1.1.2",
-    "jsdom": "^26.1.0",
-    "prettier": "^3.5.3",
-    "rimraf": "^6.0.1",
-    "ts-node": "^10.9.2",
-    "typescript": "5.9.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 3 chrome version",
-      "last 3 firefox version",
-      "last 5 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=18.0"
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^25.0.10",
+    "@types/react": "^19.2.9",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "16.1.4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
   }
 }

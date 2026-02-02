@@ -1,0 +1,73 @@
+---
+slug: 'zernikalos.components/-z-renderizable-impl/index.mdx/'
+title: 'ZRenderizableImpl'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZRenderizableImpl"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZRenderizableImpl"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['constructor(component: ZBaseComponent, rendererFactory: (ZRenderingContext) -> R)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Indicates whether this component is renderizable."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val isRenderizable: Boolean = true']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Provides access to the component's renderer."
+  >
+    <CodeBlockComponent platform="common" code={['open override val renderer: R']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="createRenderer"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="create-renderer/"
+    description="Creates a new renderer instance for this component."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun createRenderer(ctx: ZRenderingContext): R']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

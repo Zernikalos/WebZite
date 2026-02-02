@@ -1,0 +1,272 @@
+---
+slug: 'zernikalos.components.mesh/-z-buffer/index.mdx/'
+title: 'ZBuffer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZBuffer"
+  namespace="Zernikalos.zernikalos.components.mesh"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components.mesh', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZBuffer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description="Initializes a new instance of ZBuffer class. It is used to instantiate a ZBuffer object with default data values.Initializes a ZBuffer object with a ZBufferKey and ZBufferContent.Initializes a ZBuffer object with the given arguments."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor()constructor(key: ZBufferKey, content: ZBufferContent)constructor(id: Int, dataType: ZDataType, name: String, size: Int, count: Int, normalized: Boolean, offset: Int, stride: Int, isIndexBuffer: Boolean, bufferId: Int, dataArray: ByteArray)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="Companion"
+    tokenType="object"
+    groupType="OBJECT"
+    url="-companion/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['object Companion']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="attributeId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val attributeId: ZAttributeId']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="bufferId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the buffer ID associated with the ZBuffer."
+  >
+    <CodeBlockComponent platform="common" code={['val bufferId: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="count"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="How many elements of this type are stored. Example: If we store 15 Vec3 elements in the data array the count will have a value of 15."
+  >
+    <CodeBlockComponent platform="common" code={['val count: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="dataArray"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents an array of bytes for ZBufferData data."
+  >
+    <CodeBlockComponent platform="common" code={['val dataArray: ByteArray']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="dataType"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Type of data stored"
+  >
+    <CodeBlockComponent platform="common" code={['val dataType: ZDataType']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="enabled"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['var enabled: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="hasData"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Indicates whether the data has any data."
+  >
+    <CodeBlockComponent platform="common" code={['val hasData: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="id"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="ID for this Buffer."
+  >
+    <CodeBlockComponent platform="common" code={['val id: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isIndexBuffer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val isIndexBuffer: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component has been initialized."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isInitialized: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component is renderizable."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isRenderizable: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isSerializable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Indicates whether this component can be serialized."
+  >
+    <CodeBlockComponent platform="common" code={['val isSerializable: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="name"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val name: String']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="normalized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val normalized: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="offset"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val offset: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+  >
+    <CodeBlockComponent platform="common" code={['override val refId: String']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="renderer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Provides access to the component's renderer."
+  >
+    <CodeBlockComponent platform="common" code={['val renderer: ZBufferRenderer']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="size"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="How many elements are stored per data unit. Example: a Vec3 will have size equals to 3 in the same way a Scalar will be 1"
+  >
+    <CodeBlockComponent platform="common" code={['val size: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="stride"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="If the data is tightly represented within the array how many elements it requires to be jumped to the next one Example: We store a Vec3 postion and a Vec3 normal in the very same array, the stride will be 6"
+  >
+    <CodeBlockComponent platform="common" code={['val stride: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="bind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="bind/"
+    description="Binds the renderer. This method is called to prepare the renderer for drawing."
+  >
+    <CodeBlockComponent platform="common" code={['open override fun bind()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-renderizable-component/initialize/"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun initialize(ctx: ZRenderingContext)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="toString"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun toString(): String']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="unbind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="unbind/"
+    description="Unbinds the renderer. This method is called after drawing to clean up."
+  >
+    <CodeBlockComponent platform="common" code={['open override fun unbind()']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

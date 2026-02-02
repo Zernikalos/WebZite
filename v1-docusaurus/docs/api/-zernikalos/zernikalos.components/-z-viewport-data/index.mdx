@@ -1,0 +1,69 @@
+---
+slug: 'zernikalos.components/-z-viewport-data/index.mdx/'
+title: 'ZViewportData'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZViewportData"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZViewportData"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['constructor(clearColor: ZColor = ZColor(.2f, .2f, .2f, 1.0f))']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="clearColor"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['var clearColor: ZColor']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Transient', 'open override val refId: String']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="viewBox"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['var viewBox: ZBox2D']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

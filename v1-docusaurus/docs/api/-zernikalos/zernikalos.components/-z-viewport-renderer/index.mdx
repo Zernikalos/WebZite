@@ -1,0 +1,176 @@
+---
+slug: 'zernikalos.components/-z-viewport-renderer/index.mdx/'
+title: 'ZViewportRenderer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZViewportRenderer"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZViewportRenderer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['expect constructor(ctx: ZRenderingContext, data: ZViewportData)']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={['actual constructor(ctx: ZRenderingContext, data: ZViewportData)']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={['actual constructor(ctx: ZRenderingContext, data: ZViewportData)']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['actual constructor(ctx: ZRenderingContext, data: ZViewportData)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="clearMask"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="ogl" code={['var clearMask: Int']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="depthTexture"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={['var depthTexture: GPUTexture?']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="renderPassDescriptor"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['var renderPassDescriptor: GPURenderPassDescriptor?']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="bind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['open fun bind()']} links={[]} />
+    <CodeBlockComponent platform="metal" code={['open fun bind()']} links={[]} />
+    <CodeBlockComponent platform="ogl" code={['open fun bind()']} links={[]} />
+    <CodeBlockComponent platform="webgpu" code={['open fun bind()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['expect open override fun initialize()']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={['actual open override fun initialize()']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={['actual open override fun initialize()']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['actual open override fun initialize()']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="onViewportResize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['expect fun onViewportResize(width: Int, height: Int)']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={['actual fun onViewportResize(width: Int, height: Int)']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={['actual fun onViewportResize(width: Int, height: Int)']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['actual fun onViewportResize(width: Int, height: Int)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="render"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['expect open override fun render()']} links={[]} />
+    <CodeBlockComponent platform="metal" code={['actual open override fun render()']} links={[]} />
+    <CodeBlockComponent platform="ogl" code={['actual open override fun render()']} links={[]} />
+    <CodeBlockComponent platform="webgpu" code={['actual open override fun render()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="unbind"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['open fun unbind()']} links={[]} />
+    <CodeBlockComponent platform="metal" code={['open fun unbind()']} links={[]} />
+    <CodeBlockComponent platform="ogl" code={['open fun unbind()']} links={[]} />
+    <CodeBlockComponent platform="webgpu" code={['open fun unbind()']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

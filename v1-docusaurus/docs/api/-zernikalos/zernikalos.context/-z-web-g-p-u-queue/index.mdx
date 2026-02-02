@@ -1,0 +1,106 @@
+---
+slug: 'zernikalos.context/-z-web-g-p-u-queue/index.mdx/'
+title: 'ZWebGPUQueue'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZWebGPUQueue"
+  namespace="Zernikalos.zernikalos.context"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.context', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZWebGPUQueue"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={['constructor(queue: GPUQueue)']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="queue"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="The underlying native GPUQueue object"
+  >
+    <CodeBlockComponent platform="webgpu" code={['val queue: GPUQueue']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="copyExternalImageToTexture"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'fun copyExternalImageToTexture(source: GPUImageCopyExternalImage, destination: GPUImageCopyTexture, copySize: GPUExtent3D)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="getRawQueue"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="get-raw-queue/"
+    description="Copies the underlying native GPUQueue object."
+  >
+    <CodeBlockComponent platform="webgpu" code={['fun getRawQueue(): GPUQueue']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="submit"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="submit/"
+    description="Submits the given command encoders to the GPU queue for execution."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun submit(commandBuffers: Array<GPUCommandBuffer>)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="withQueue"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="with-queue/"
+    description="Provides direct access to the underlying queue for advanced operations."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['inline fun <R> withQueue(block: (GPUQueue) -> R): R']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="writeBuffer"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="write-buffer/"
+    description="Writes buffer data to the GPU."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={['fun writeBuffer(buffer: GPUBuffer, offset: Int, dataArray: Any)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

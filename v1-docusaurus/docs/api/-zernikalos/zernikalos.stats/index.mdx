@@ -1,0 +1,115 @@
+---
+slug: 'zernikalos.stats/index.mdx/'
+title: 'stats'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="stats"
+  namespace="Zernikalos"
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="BrowserInfo"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-browser-info/"
+    description=""
+  >
+    <CodeBlockComponent platform="js" code={['external interface BrowserInfo']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="UAParser"
+    tokenType="class"
+    groupType="TYPE"
+    url="-u-a-parser/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="js"
+      code={['external class UAParser(userAgent: String)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZPlatformInfo"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-platform-info/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        '@Serializable',
+        'data class ZPlatformInfo(val name: ZPlatformName, val version: String)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZPlatformName"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-platform-name/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'enum ZPlatformName : Enum<ZPlatformName>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZStats"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-stats/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['@Serializable', 'class ZStats']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="getZPlatformInfo"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="android"
+      code={['actual fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="common"
+      code={['expect fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ios"
+      code={['actual fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="js"
+      code={['actual fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="macosArm64"
+      code={['actual fun getZPlatformInfo(): ZPlatformInfo']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

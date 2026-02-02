@@ -1,0 +1,31 @@
+---
+slug: 'zernikalos.scenestatehandler/index.mdx/'
+title: 'scenestatehandler'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="scenestatehandler"
+  namespace="Zernikalos"
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZSceneStateHandler"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-scene-state-handler/"
+    description="Asynchronous state handler for managing the lifecycle events of a scene within the Zernikalos engine. This interface facilitates the handling of ready, resize, and render events in an asynchronous manner by utilizing callback functions to signal the completion of tasks."
+  >
+    <CodeBlockComponent platform="common" code={['interface ZSceneStateHandler']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

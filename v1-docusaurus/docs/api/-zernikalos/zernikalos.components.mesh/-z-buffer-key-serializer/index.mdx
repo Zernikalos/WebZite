@@ -1,0 +1,86 @@
+---
+slug: 'zernikalos.components.mesh/-z-buffer-key-serializer/index.mdx/'
+title: 'ZBufferKeySerializer'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZBufferKeySerializer"
+  namespace="Zernikalos.zernikalos.components.mesh"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components.mesh', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZBufferKeySerializer"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['constructor()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="descriptor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val descriptor: SerialDescriptor']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="kSerializer"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="The serializer for the data type associated with this component."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override val kSerializer: KSerializer<ZBufferKeyData>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="deserialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun deserialize(decoder: Decoder): ZBufferKey']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="serialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun serialize(encoder: Encoder, value: ZBufferKey)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

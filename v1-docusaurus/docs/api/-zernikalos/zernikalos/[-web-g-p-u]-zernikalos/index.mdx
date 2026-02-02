@@ -1,0 +1,85 @@
+---
+slug: 'zernikalos/[-web-g-p-u]-zernikalos/index.mdx/'
+title: '[WebGPU]Zernikalos'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="[WebGPU]Zernikalos"
+  namespace="Zernikalos.zernikalos"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="Zernikalos"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="webgpu" code={['constructor()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="context"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the primary context of the Zernikalos engine during its lifecycle."
+  >
+    <CodeBlockComponent platform="webgpu" code={['lateinit var context: ZContext']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="settings"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the settings for the Zernikalos engine. It provides centralized access to control logging levels and other related settings."
+  >
+    <CodeBlockComponent platform="webgpu" code={['val settings: ZSettings']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="stats"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Provides platform-specific information and version details for the Zernikalos engine."
+  >
+    <CodeBlockComponent platform="webgpu" code={['val stats: ZStats']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="dispose"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../-zernikalos-base/dispose/"
+    description="Disposes the Zernikalos engine and releases all associated resources."
+  >
+    <CodeBlockComponent platform="webgpu" code={['fun dispose()']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'fun initialize(canvas: HTMLCanvasElement, stateHandler: ZSceneStateHandler)fun initialize(view: ZSurfaceView, stateHandler: ZSceneStateHandler)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

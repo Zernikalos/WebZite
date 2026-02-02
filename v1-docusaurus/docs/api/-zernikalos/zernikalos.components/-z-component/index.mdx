@@ -1,0 +1,73 @@
+---
+slug: 'zernikalos.components/-z-component/index.mdx/'
+title: 'ZComponent'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZComponent"
+  namespace="Zernikalos.zernikalos.components"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component has been initialized."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract val isInitialized: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component is renderizable."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract val isRenderizable: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+  >
+    <CodeBlockComponent platform="common" code={['abstract val refId: String']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="initialize/"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['abstract fun initialize(ctx: ZRenderingContext)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

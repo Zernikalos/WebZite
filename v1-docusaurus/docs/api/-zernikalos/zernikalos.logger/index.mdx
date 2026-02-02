@@ -1,0 +1,160 @@
+---
+slug: 'zernikalos.logger/index.mdx/'
+title: 'logger'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="logger"
+  namespace="Zernikalos"
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="WindowConsole"
+    tokenType="class"
+    groupType="TYPE"
+    url="-window-console/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="js"
+      code={['abstract external class WindowConsole : Console']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZLoggable"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-loggable/"
+    description="Provides a common interface for all objects with zernikalos.logger.ZLogger access."
+  >
+    <CodeBlockComponent platform="common" code={['interface ZLoggable']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZLogger"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-logger/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZLogger(clsName: String?, val instanceId: Int)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZLoggerAdapter"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-logger-adapter/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['interface ZLoggerAdapter']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZLoggerAdapterConsole"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-logger-adapter-console/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="android"
+      code={['actual class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="common"
+      code={['expect class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ios"
+      code={['actual class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="js"
+      code={['actual class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="macosArm64"
+      code={['actual class ZLoggerAdapterConsole : ZLoggerAdapter']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZLogLevel"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-log-level/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['enum ZLogLevel : Comparator<ZLogLevel> , Enum<ZLogLevel>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="createLazyLogger"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['inline fun <T : ZLoggable> T.createLazyLogger(): Lazy<ZLogger>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="createLogger"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['inline fun <T : ZLoggable> T.createLogger(): ZLogger']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="console"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="js" code={['external val console: WindowConsole']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="logger"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val <T : ZLoggable> T.logger: ZLogger']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

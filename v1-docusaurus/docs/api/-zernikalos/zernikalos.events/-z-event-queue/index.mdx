@@ -1,0 +1,130 @@
+---
+slug: 'zernikalos.events/-z-event-queue/index.mdx/'
+title: 'ZEventQueue'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZEventQueue"
+  namespace="Zernikalos.zernikalos.events"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.events', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZEventQueue"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['constructor(context: ZContext)']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isEmpty"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Returns whether there are any events pending in the queue."
+  >
+    <CodeBlockComponent platform="common" code={['val isEmpty: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="enqueueKeyboard"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="enqueue-keyboard/"
+    description="Enqueues a keyboard event to be processed during the next frame update."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['fun enqueueKeyboard(event: ZKeyboardEvent)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="enqueueMouse"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="enqueue-mouse/"
+    description="Enqueues a mouse event to be processed during the next frame update."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['fun enqueueMouse(event: ZMouseEvent)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="enqueueTouch"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="enqueue-touch/"
+    description="Enqueues a touch event to be processed during the next frame update."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['fun enqueueTouch(event: ZTouchEvent)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="onKeyboardEvent"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-keyboard-event/"
+    description="Called when a keyboard event occurs. Enqueues the event for processing during the next frame update."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun onKeyboardEvent(event: ZKeyboardEvent)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="onMouseEvent"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-mouse-event/"
+    description="Called when a mouse event occurs. Enqueues the event for processing during the next frame update."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun onMouseEvent(event: ZMouseEvent)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="onTouchEvent"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-touch-event/"
+    description="Called when a touch event occurs. Enqueues the event for processing during the next frame update."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun onTouchEvent(event: ZTouchEvent)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="processAll"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="process-all/"
+    description="Processes all enqueued events by distributing them to objects in the scene that have registered listeners. This method should be called from the renderer's update phase to ensure events are processed synchronously with the game loop."
+  >
+    <CodeBlockComponent platform="common" code={['fun processAll()']} links={[]} />
+  </DocumentationItemComponent>
+</DocumentationItemList>

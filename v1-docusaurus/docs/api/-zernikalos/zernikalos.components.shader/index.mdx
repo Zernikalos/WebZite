@@ -1,0 +1,762 @@
+---
+slug: 'zernikalos.components.shader/index.mdx/'
+title: 'components.shader'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="components.shader"
+  namespace="Zernikalos"
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="UNIFORM_IDS"
+    tokenType="object"
+    groupType="OBJECT"
+    url="-u-n-i-f-o-r-m_-i-d-s/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['object UNIFORM_IDS']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="UNIFORM_NAMES"
+    tokenType="object"
+    groupType="OBJECT"
+    url="-u-n-i-f-o-r-m_-n-a-m-e-s/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['object UNIFORM_NAMES']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttribute"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-attribute/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZAttribute : ZRenderizableComponent<ZAttributeRenderer>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttributeData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-attribute-data/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'data class ZAttributeData(var id: Int = -1, var attributeName: String = "") : ZComponentData',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttributeId"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-attribute-id/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['enum ZAttributeId : Enum<ZAttributeId>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttributeRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-attribute-renderer/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'expect class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={[
+        'actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={[
+        'actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'actual class ZAttributeRenderer(ctx: ZRenderingContext, data: ZAttributeData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBaseUniform"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-base-uniform/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['interface ZBaseUniform']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZGlShaderType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-gl-shader-type/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="ogl"
+      code={['enum ZGlShaderType : Enum<ZGlShaderType>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZGlSLShaderSource"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-gl-s-l-shader-source/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'data class ZGlSLShaderSource(var vertexShaderSource: String = "", var fragmentShaderSource: String = "")',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZMetalShaderSource"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-metal-shader-source/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['data class ZMetalShaderSource(var shaderSource: String = "")']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZProgram"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-program/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="ogl"
+      code={['class ZProgram : ZRenderizableComponent<ZProgramRenderer> , ZBindeable']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZProgramRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-program-renderer/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="ogl"
+      code={['class ZProgramRenderer(ctx: ZRenderingContext) : ZComponentRenderer']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZShader"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZShader : ZRenderizableComponent<ZShaderRenderer>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZShaderData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-shader-data/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'data class ZShaderData(var type: ZShaderType = ZShaderType.VERTEX_SHADER) : ZComponentData',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZShaderProgram"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-program/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZShaderProgram : ZRenderizableComponent<ZShaderProgramRenderer> , ZBindeable']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZShaderProgramData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-shader-program-data/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'data class ZShaderProgramData(var vertexShader: ZShader = ZShader(ZShaderType.VERTEX_SHADER), var fragmentShader: ZShader = ZShader(ZShaderType.FRAGMENT_SHADER), var shaderSource: ZShaderSource = ZShaderSource(), val attributes: LinkedHashMap<String, ZAttribute> = LinkedHashMap(), var uniforms: ZUniformCollection = ZUniformCollection()) : ZComponentData',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZShaderProgramRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-program-renderer/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'expect class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={[
+        'actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={[
+        'actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'actual class ZShaderProgramRenderer(ctx: ZRenderingContext, data: ZShaderProgramData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZShaderRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-renderer/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'expect class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={[
+        'actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={[
+        'actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'actual class ZShaderRenderer(ctx: ZRenderingContext, data: ZShaderData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZShaderSource"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-shader-source/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZShaderSource : ZSerializableComponent<ZShaderSourceData>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZShaderSourceData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-shader-source-data/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'data class ZShaderSourceData(var glsl: ZGlSLShaderSource = ZGlSLShaderSource(), var metal: ZMetalShaderSource = ZMetalShaderSource(), var wgpu: ZWebGpuShaderSource = ZWebGpuShaderSource()) : ZComponentData',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZShaderType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-shader-type/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['enum ZShaderType : Enum<ZShaderType>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniform"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'class ZUniform : ZRenderizableComponent<ZUniformRenderer> , ZBindeable, ZBaseUniform',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformBlockData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-uniform-block-data/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'data class ZUniformBlockData(val id: Int = -1, val uniformBlockName: String = "", val uniforms: LinkedHashMap<String, ZUniformData> = LinkedHashMap()) : ZComponentData',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformCollection"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform-collection/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['class ZUniformCollection : MutableMap<String, ZBaseUniform>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformData"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-uniform-data/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'data class ZUniformData(var id: Int = -1, var uniformName: String = "", var count: Int = -1, var dataType: ZDataType = ZTypes.NONE) : ZComponentData, ZBaseUniform',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformRenderer"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-uniform-renderer/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'expect class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformBlockData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="metal"
+      code={[
+        'actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformBlockData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="ogl"
+      code={[
+        'actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformBlockData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        'actual class ZUniformRenderer(ctx: ZRenderingContext, data: ZUniformBlockData) : ZComponentRenderer',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZWebGpuShaderSource"
+    tokenType="data class"
+    groupType="TYPE"
+    url="-z-web-gpu-shader-source/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['data class ZWebGpuShaderSource(var shaderSource: String = "")']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZBonesMatrixArray"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['fun ZBonesMatrixArray(count: Int): ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZInverseBindMatrixArray"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['fun ZInverseBindMatrixArray(count: Int): ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttrBoneIndices"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val ZAttrBoneIndices: ZAttribute']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttrBoneWeight"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val ZAttrBoneWeight: ZAttribute']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttrColor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val ZAttrColor: ZAttribute']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttrIndices"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val ZAttrIndices: ZAttribute']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttrNormal"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val ZAttrNormal: ZAttribute']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttrPosition"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val ZAttrPosition: ZAttribute']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZAttrUv"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val ZAttrUv: ZAttribute']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZModelViewProjectionMatrixBlock"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZModelViewProjectionMatrixBlock: ZUniform']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZPbrMaterialBlock"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['val ZPbrMaterialBlock: ZUniform']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZSkinningMatrixBlock"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZSkinningMatrixBlock: ZUniform']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformModelViewProjectionMatrix"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformModelViewProjectionMatrix: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrColor"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPbrColor: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrEmissive"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPbrEmissive: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrEmissiveIntensity"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPbrEmissiveIntensity: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrMetalness"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPbrMetalness: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPbrRoughness"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPbrRoughness: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPhongAmbient"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPhongAmbient: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPhongDiffuse"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPhongDiffuse: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPhongMaterialBlock"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPhongMaterialBlock: ZUniform']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPhongShininess"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPhongShininess: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformPhongSpecular"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformPhongSpecular: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformProjectionMatrix"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformProjectionMatrix: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZUniformViewMatrix"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['val ZUniformViewMatrix: ZUniformData']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

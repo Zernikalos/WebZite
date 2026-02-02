@@ -1,0 +1,146 @@
+---
+slug: 'zernikalos.components.camera/-z-perspective-lens/index.mdx/'
+title: 'ZPerspectiveLens'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ZPerspectiveLens"
+  namespace="Zernikalos.zernikalos.components.camera"
+  breadcrumbs={[
+    { label: 'Zernikalos', url: '../../../' },
+    { label: 'zernikalos.components.camera', url: '../' },
+  ]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZPerspectiveLens"
+    tokenType="constructor"
+    groupType="CONSTRUCTOR"
+    url=""
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={[
+        'constructor(near: Float, far: Float, fov: Float)constructor(near: Float, far: Float, fov: Float, aspectRatio: Float)',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="Companion"
+    tokenType="object"
+    groupType="OBJECT"
+    url="-companion/"
+    description=""
+  >
+    <CodeBlockComponent platform="common" code={['object Companion']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="data"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Provides access to the component's serializable data."
+  >
+    <CodeBlockComponent platform="common" code={['val data: ZPerspectiveLensData']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="fov"
+    tokenType="var"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the field of view angle for the lens in a ZPerspectiveLens."
+  >
+    <CodeBlockComponent platform="common" code={['var fov: Float']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isInitialized"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component has been initialized."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isInitialized: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isRenderizable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents a boolean value indicating whether a component is renderizable."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['override val isRenderizable: Boolean']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="isSerializable"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Indicates whether this component can be serialized."
+  >
+    <CodeBlockComponent platform="common" code={['val isSerializable: Boolean']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="projectionMatrix"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="The projection matrix for the lens"
+  >
+    <CodeBlockComponent platform="common" code={['val projectionMatrix: ZMatrix4']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="refId"
+    tokenType="val"
+    groupType="PROPERTY"
+    url=""
+    description="Represents the unique identifier for a reference-based component. The refId is used as a distinctive key for retrieving or linking this component within reference-dependent systems."
+  >
+    <CodeBlockComponent platform="common" code={['override val refId: String']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="initialize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="../../zernikalos.components/-z-base-component/initialize/"
+    description="Initializes the ZComponent using the provided ZRenderingContext."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun initialize(ctx: ZRenderingContext)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="onViewportResize"
+    tokenType="fun"
+    groupType="FUNCTION"
+    url="on-viewport-resize/"
+    description="Notifies the listener when the viewport dimensions change."
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['open override fun onViewportResize(width: Int, height: Int)']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

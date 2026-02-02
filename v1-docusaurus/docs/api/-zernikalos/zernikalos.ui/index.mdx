@@ -1,0 +1,112 @@
+---
+slug: 'zernikalos.ui/index.mdx/'
+title: 'ui'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="ui"
+  namespace="Zernikalos"
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZAndroidSurfaceView"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-android-surface-view/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="android"
+      code={['class ZAndroidSurfaceView(view: GLSurfaceView) : ZSurfaceView']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZernikalosView"
+    tokenType="class"
+    groupType="TYPE"
+    url="-zernikalos-view/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="android"
+      code={['open class ZernikalosView : GLSurfaceView, ZSurfaceView']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZJsSurfaceView"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-js-surface-view/"
+    description="JavaScript implementation of ZSurfaceView for WebGPU rendering."
+  >
+    <CodeBlockComponent
+      platform="webgpu"
+      code={[
+        '@ExperimentalJsExport',
+        'class ZJsSurfaceView(val canvas: HTMLCanvasElement) : ZSurfaceView',
+      ]}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZMtkViewDelegate"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-mtk-view-delegate/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="metal"
+      code={['class ZMtkViewDelegate : NSObject, MTKViewDelegateProtocol']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZMtlSurfaceView"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-mtl-surface-view/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="metal"
+      code={['class ZMtlSurfaceView(view: MTKView) : ZSurfaceView']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZSurfaceView"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-surface-view/"
+    description="Represents a surface view that is used for rendering and handling events."
+  >
+    <CodeBlockComponent platform="common" code={['interface ZSurfaceView']} links={[]} />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZSurfaceViewEventHandler"
+    tokenType="interface"
+    groupType="TYPE"
+    url="-z-surface-view-event-handler/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['interface ZSurfaceViewEventHandler']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>

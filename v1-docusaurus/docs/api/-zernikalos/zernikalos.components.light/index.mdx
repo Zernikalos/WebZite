@@ -1,0 +1,87 @@
+---
+slug: 'zernikalos.components.light/index.mdx/'
+title: 'components.light'
+hide_title: true
+---
+
+import {
+  DocHeader,
+  DocumentationItemList,
+  DocumentationItemComponent,
+  CodeBlockComponent,
+} from '@site/src/components/Documentation';
+
+<DocHeader
+  title="components.light"
+  namespace="Zernikalos"
+  breadcrumbs={[{ label: 'Zernikalos', url: '../../' }]}
+  typeInfo={[]}
+/>
+
+<DocumentationItemList>
+  <DocumentationItemComponent
+    name="ZDirectionalLamp"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-directional-lamp/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'class ZDirectionalLamp : ZLamp']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZLamp"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-lamp/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'abstract class ZLamp']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZLampType"
+    tokenType="enum"
+    groupType="TYPE"
+    url="-z-lamp-type/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'enum ZLampType : Enum<ZLampType>']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZPointLamp"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-point-lamp/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'class ZPointLamp : ZLamp']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+  <DocumentationItemComponent
+    name="ZSpotLamp"
+    tokenType="class"
+    groupType="TYPE"
+    url="-z-spot-lamp/"
+    description=""
+  >
+    <CodeBlockComponent
+      platform="common"
+      code={['@Serializable', 'class ZSpotLamp : ZLamp']}
+      links={[]}
+    />
+  </DocumentationItemComponent>
+</DocumentationItemList>
