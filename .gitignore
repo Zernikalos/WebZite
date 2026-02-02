@@ -1,6 +1,9 @@
 # Dependencies
 /node_modules
 
+# Generated content
+/.source/
+
 # Docusaurus
 # See https://docusaurus.io/docs/site-preparation#build-output
 /build
@@ -15,8 +18,18 @@ tmp/
 /sourceDocsGfm/*
 !/sourceDocs/README.md
 
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Test & coverage
+/coverage
+*.tsbuildinfo
+
 # Environment variables
 # Keep .env in git but ignore local overrides
+.env*.local
 .env.local
 .env.development.local
 .env.test.local
@@ -36,8 +49,16 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
+# Package manager
+/.pnp
+.pnp.js
+
+# Hosting
+.vercel
+
 # Secrets
 # IMPORTANT: Never commit authentication tokens
 .npmrc
 .certs
+*.pem
 

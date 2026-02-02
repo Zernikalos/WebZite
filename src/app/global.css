@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+/* Custom gradient animation keyframes */
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+/* Dark mode styles for logo - using Fumadocs dark mode selector */
+:root[class~="dark"] .logo-svg linearGradient stop:first-child {
+  stop-color: #00b4d8 !important;
+}
+
+:root[class~="dark"] .logo-svg linearGradient stop:last-child {
+  stop-color: #ffffff !important;
+}
+
+/* Light mode styles for logo */
+:root:not([class~="dark"]) .logo-svg linearGradient stop:first-child {
+  stop-color: #ff4d00 !important;
+}
+
+:root:not([class~="dark"]) .logo-svg linearGradient stop:last-child {
+  stop-color: #ffcc00 !important;
+}

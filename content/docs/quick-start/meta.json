@@ -1,0 +1,10 @@
+{
+  "title": "Quick Start",
+  "pages": [
+    "index",
+    "zernikalos-install",
+    "nest-install",
+    "generating-assets",
+    "adding-zk-to-your-project"
+  ]
+}

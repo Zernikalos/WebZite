@@ -1,0 +1,64 @@
+---
+title: Installing Zernikalos Nest
+description: How to install and run the Nest application
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+## Prerequisites
+
+Before starting, make sure you have completed all steps in the [Installing Zernikalos](/docs/quick-start/zernikalos-install) guide.
+
+## Installation Steps
+
+### 1. Clone Required Repositories
+
+First, you'll need to clone two essential repositories:
+
+```bash
+# Clone ZKBuilder
+git clone https://gitlab.com/zernikalos/zkbuilder.git
+
+# Clone Nest Backend
+git clone https://gitlab.com/zernikalos/nest.git
+```
+
+### 2. Build the repositories
+
+<Callout type="warn">
+It is recommended to use PNPM package manager for Nest, as npm currently has issues with the defined workspace.
+</Callout>
+
+Build the ZkBuilder project:
+
+```bash
+cd zkbuilder
+pnpm install
+pnpm build
+```
+
+And then perform the very same operation for nest:
+
+```bash
+cd ../nest
+pnpm install
+pnpm build
+```
+
+### 3. Launch the Nest application
+
+You can start the app in dev build mode using:
+
+```bash
+pnpm run dev
+```
+
+Or using the compiled version (it will take longer to be launched):
+
+```bash
+pnpm run start
+```
+
+If everything has succeeded you will be able to see the Nest App being launched in your desktop:
+
+![Nest App](/docs/quick-start/images/nest.png)
