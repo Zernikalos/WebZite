@@ -1,81 +1,33 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
 import { notFound } from 'next/navigation';
-import { DocsBody, DocsPage, DocsTitle } from 'fumadocs-ui/layouts/docs/page';
+import { DocsBody, DocsPage } from 'fumadocs-ui/layouts/docs/page';
 import { type Metadata } from 'next';
-
-const API_DIR = path.join(process.cwd(), 'api');
-
-async function getHtmlFiles(dir: string, baseDir: string = API_DIR): Promise<string[][]> {
-  const entries = await fs.readdir(dir, { withFileTypes: true });
-  const paths: string[][] = [];
-
-  for (const entry of entries) {
-    const fullPath = path.join(dir, entry.name);
-    const relativePath = path.relative(baseDir, fullPath);
-    
-    if (entry.isDirectory()) {
-      paths.push(...await getHtmlFiles(fullPath, baseDir));
-    } else if (entry.name === 'index.html') {
-      // Para index.html, el slug es la carpeta
-      const slug = relativePath === 'index.html' ? [] : path.dirname(relativePath).split(path.sep);
-      paths.push(slug);
-    } else if (entry.name.endsWith('.html')) {
-      // Para otros .html, el slug es el nombre sin extensión
-      const slug = path.join(path.dirname(relativePath), path.basename(entry.name, '.html')).split(path.sep);
-      paths.push(slug);
-    }
-  }
-  return paths;
-}
-
-function processHtml(html: string) {
-  // 1. Limpiar enlaces de Dokka: "../../something/index.html" -> "../../something/"
-  // Pero solo para enlaces locales
-  return html.replace(/href="([^"]+)\.html"/g, (match, p1) => {
-    if (p1.startsWith('http')) return match;
-    
-    // Si termina en /index, lo quitamos
-    let newPath = p1;
-    if (newPath.endsWith('/index')) {
-      newPath = newPath.slice(0, -5);
-    }
-    
-    return `href="${newPath}/"`;
-  });
-}
+import { getApiStaticParams, getApiFileContent, processDokkaHtml } from '../apiTools';
 
 export async function generateStaticParams() {
-  const slugs = await getHtmlFiles(API_DIR);
-  return slugs.map(slug => ({ slug }));
+  return getApiStaticParams();
 }
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
   const slug = params.slug ?? [];
   
-  let filePath = path.join(API_DIR, ...slug);
-  
-  // Intentar encontrar el archivo: directo, index.html o carpeta/index.html
-  let finalPath = '';
-  const possiblePaths = [
-    filePath + '.html',
-    path.join(filePath, 'index.html'),
-    filePath // por si acaso ya tiene .html
-  ];
+  let htmlData: { content: string, isIndex: boolean } | null = null;
+  let processingSlug = slug;
 
-  for (const p of possiblePaths) {
-    try {
-      await fs.access(p);
-      finalPath = p;
-      break;
-    } catch { continue; }
+  // Caso especial: /api/-zernikalos
+  if (slug.length === 1 && slug[0] === '-zernikalos') {
+    htmlData = await getApiFileContent([]);
+    processingSlug = [];
+  } else {
+    htmlData = await getApiFileContent(slug);
+  }
+  
+  if (!htmlData) {
+    notFound();
   }
 
-  if (!finalPath) notFound();
-
-  const htmlContent = await fs.readFile(finalPath, 'utf-8');
-  const processedHtml = processHtml(htmlContent);
+  // Ahora pasamos htmlData.isIndex para que la resolución de rutas sea correcta
+  const processedHtml = processDokkaHtml(htmlData.content, processingSlug, htmlData.isIndex);
 
   return (
     <DocsPage full>

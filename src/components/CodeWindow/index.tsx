@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { codeToHtml } from 'shiki';
+import CodeBlock from '../CodeBlock';
 
 interface CodeWindowProps {
   className?: string;
@@ -8,37 +8,33 @@ interface CodeWindowProps {
 }
 
 /**
- * Code display component with macOS-style window chrome and syntax highlighting.
- * Uses Shiki for syntax highlighting with a dark theme.
+ * Code display component with macOS-style window chrome.
+ * Wraps the CodeBlock component with window decorations.
  */
-export default async function CodeWindow({
+export default function CodeWindow({
   className,
   language = 'kotlin',
   code = '',
 }: CodeWindowProps) {
-  const highlightedCode = await codeToHtml(code, {
-    lang: language,
-    theme: 'github-dark',
-  });
-
   return (
     <div
       className={clsx(
-        'rounded-lg border border-gray-700 w-full bg-gray-900 overflow-hidden',
+        'rounded-lg border border-gray-700 w-full bg-gray-900 overflow-hidden shadow-2xl',
         className
       )}
     >
       {/* Window title bar with traffic lights */}
       <div className="flex items-center gap-2 px-4 py-3 bg-gray-800 border-b border-gray-700">
-        <div className="w-3 h-3 rounded-full bg-red-500" />
-        <div className="w-3 h-3 rounded-full bg-yellow-500" />
-        <div className="w-3 h-3 rounded-full bg-green-500" />
+        <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
+        <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
+        <div className="w-3 h-3 rounded-full bg-[#27c93f]" />
       </div>
 
-      {/* Code content with syntax highlighting */}
-      <div
-        className="bg-gray-950 px-4 py-4 overflow-x-auto text-sm leading-relaxed [&_pre]:!bg-transparent [&_code]:!bg-transparent"
-        dangerouslySetInnerHTML={{ __html: highlightedCode }}
+      {/* Code content using CodeBlock (without its own border/rounded corners) */}
+      <CodeBlock 
+        language={language} 
+        code={code} 
+        className="!border-none !rounded-none !bg-gray-950/50"
       />
     </div>
   );
