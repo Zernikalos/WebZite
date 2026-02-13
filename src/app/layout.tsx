@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     description:
       'A Kotlin 3D engine for multiplatform graphics and interactive applications.',
   },
+  icons: {
+    icon: '/zklogo.svg',
+  },
 };
 
 export default function Layout({ children }: LayoutProps<'/'>) {

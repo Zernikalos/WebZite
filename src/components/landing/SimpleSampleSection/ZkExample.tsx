@@ -41,7 +41,7 @@ export default function ZkExample({ onError }: ZkExampleProps) {
 
     async function loadScene() {
       // Models should be placed in the public folder
-      return await zernikalos.zernikalos.loader.loadFromUrl('/Fox0120.zko');
+      return await zernikalos.zernikalos.loader.loadFromUrl('/Fox0150.zko');
     }
 
     try {
@@ -83,8 +83,11 @@ export default function ZkExample({ onError }: ZkExampleProps) {
               done();
             });
         },
-        onRender(_ctx: any, done: () => void) {
+        onUpdate(_ctx: any, done: () => void) {
           player.update();
+          done();
+        },
+        onRender(_ctx: any, done: () => void) {
           done();
         },
         onResize(_ctx: any, _width: number, _height: number, done: () => void) {

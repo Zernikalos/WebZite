@@ -1,21 +1,22 @@
-import CodeWindow from '@/components/CodeWindow';
 import SectionTitle from '../SectionTitle';
 import SectionText from '../SectionText';
+import CodeWindow from '@/components/CodeWindow';
 
 const sampleCode = `val zernikalos = Zernikalos()
 
 zernikalos.initialize(renderSurface, object : ZSceneStateHandler {
-    override fun onReady(context: ZContext, done: ()->Unit) {
+    override fun onReady(context: ZContext, done: () -> Unit) {
         // Create Scene and load resources
         context.scene = ZScene()
-        context.scene?.addChild(zko.root as ZGroup)
+        context.scene?.addChild(zko.root)
         // Set camera
         context.activeCamera = findFirstCamera(context.scene!!)
         done()
     }
 
-    override fun onRender(ctx: ZContext, done: ()->Unit) {
-        findFirstModel(ctx.scene)?.transform?.rotate(0.1f, 0f,1f, 0f)
+    override fun onUpdate(ctx: ZContext, done: () -> Unit) {
+        // Update logic per frame (rotation, etc.)
+        findFirstModel(ctx.scene)?.transform?.rotate(0.1f, 0f, 1f, 0f)
         done()
     }
 })`;

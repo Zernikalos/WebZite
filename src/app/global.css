@@ -36,7 +36,3 @@
 :root:not([class~="dark"]) .logo-svg linearGradient stop:first-child {
   stop-color: #ff4d00 !important;
 }
-
-:root:not([class~="dark"]) .logo-svg linearGradient stop:last-child {
-  stop-color: #ffcc00 !important;
-}

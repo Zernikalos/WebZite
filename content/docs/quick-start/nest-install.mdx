@@ -1,64 +1,62 @@
 ---
 title: Installing Zernikalos Nest
-description: How to install and run the Nest application
+description: How to install and run the Nest desktop application
 ---
 
 import { Callout } from 'fumadocs-ui/components/callout';
 
 ## Prerequisites
 
-Before starting, make sure you have completed all steps in the [Installing Zernikalos](/docs/quick-start/zernikalos-install) guide.
+No engine build is required to use Nest for asset bundling.
 
-## Installation Steps
+## Recommended: Download the desktop app (Releases)
 
-### 1. Clone Required Repositories
+Download the latest Nest release for your OS from:
 
-First, you'll need to clone two essential repositories:
+- [Nest Releases](https://github.com/Zernikalos/Nest/releases)
+
+Install / unzip it, then launch the app.
+
+If everything has succeeded you will be able to see the Nest App being launched on your desktop:
+
+![Nest App](/docs/quick-start/images/nest.png)
+
+<Callout type="info">
+Developer setup (from source) is still possible, but is not required for the Quick Start.
+</Callout>
+
+## Developer setup (from source)
+
+Use this section only if you want to contribute to Nest.
+
+### 1) Clone repositories
 
 ```bash
 # Clone ZKBuilder
-git clone https://gitlab.com/zernikalos/zkbuilder.git
+git clone https://github.com/zernikalos/zkbuilder.git
 
-# Clone Nest Backend
-git clone https://gitlab.com/zernikalos/nest.git
+# Clone Nest
+git clone https://github.com/zernikalos/nest.git
 ```
 
-### 2. Build the repositories
+### 2) Install & build (pnpm)
 
 <Callout type="warn">
-It is recommended to use PNPM package manager for Nest, as npm currently has issues with the defined workspace.
+Use `pnpm` for this monorepo.
 </Callout>
-
-Build the ZkBuilder project:
 
 ```bash
 cd zkbuilder
 pnpm install
 pnpm build
-```
 
-And then perform the very same operation for nest:
-
-```bash
 cd ../nest
 pnpm install
 pnpm build
 ```
 
-### 3. Launch the Nest application
-
-You can start the app in dev build mode using:
+### 3) Run
 
 ```bash
 pnpm run dev
 ```
-
-Or using the compiled version (it will take longer to be launched):
-
-```bash
-pnpm run start
-```
-
-If everything has succeeded you will be able to see the Nest App being launched in your desktop:
-
-![Nest App](/docs/quick-start/images/nest.png)
