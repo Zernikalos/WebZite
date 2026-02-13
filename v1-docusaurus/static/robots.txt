@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-# Block access to specific files
-Disallow: /404.html
-
-# Sitemap location
-Sitemap: https://zernikalos.dev/sitemap.xml
