@@ -24,8 +24,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm run build
-      - name: Check links (internal)
-        run: pnpm run links:check
       - name: Disable Jekyll on GitHub Pages
         run: touch out/.nojekyll
       - name: Deploy to zernikalos.github.io

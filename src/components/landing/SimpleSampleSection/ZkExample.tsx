@@ -50,7 +50,7 @@ export default function ZkExample({ onError }: ZkExampleProps) {
           loadScene()
             .then((loaded) => {
               const g = loaded.root;
-              const action = loaded.actions?.toArray?.()?.[2];
+              const action = loaded.actions?.asJsReadonlyArrayView()[2];
               const scene = new zernikalos.zernikalos.objects.ZScene();
               const camera = new zernikalos.zernikalos.objects.ZCamera();
 
