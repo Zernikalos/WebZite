@@ -13,7 +13,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@zernikalos/zernikalos": "0.5.0",
+    "@zernikalos/zernikalos": "0.8.0",
     "cheerio": "^1.2.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.0",
@@ -34,6 +34,7 @@
     "@types/node": "^25.0.10",
     "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",
+    "@types/cheerio": "0.22.35",
     "eslint": "^9.39.2",
     "eslint-config-next": "16.1.4",
     "postcss": "^8.5.6",
