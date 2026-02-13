@@ -1,27 +1,82 @@
 ---
 title: Installing Zernikalos
-description: How to install and build the Zernikalos engine
+description: How to install Zernikalos for Android, iOS, and Web
 ---
 
-## Getting the engine
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Callout } from 'fumadocs-ui/components/callout';
 
-### Basic Setup
+## Prerequisites
 
-1. Clone the repository from GitHub:
+- Java (JDK 17 recommended)
+- A Git client
+- For Web: Node.js (LTS) and a bundler (Vite recommended)
+- For iOS: Xcode and CocoaPods
 
-```bash
-git clone https://github.com/Zernikalos/Zernikalos.git
-```
+## Installation by Platform
 
-2. Build the project:
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    ### Option A: GitHub Packages (Recommended)
+    Add the repository to your `settings.gradle.kts`:
 
-   **Using IntelliJ IDEA (Recommended)**:
-   - Open the project in IntelliJ IDEA
-   - Click on the Gradle tab on the right sidebar
-   - Run the `build` task
+    ```kotlin
+    dependencyResolutionManagement {
+      repositories {
+        google()
+        mavenCentral()
+        maven(url = "https://maven.pkg.github.com/Zernikalos/Zernikalos") {
+          // Note: might not be necessary for public packages, but GPR often requires it
+          credentials {
+            username = providers.gradleProperty("gpr.user").orNull
+            password = providers.gradleProperty("gpr.key").orNull
+          }
+        }
+      }
+    }
+    ```
 
-   **Using Command Line**:
+    Then add the dependency in your `build.gradle.kts`:
+    ```kotlin
+    implementation("dev.zernikalos:zernikalos:0.7.0")
+    ```
 
-```bash
-./gradlew build
-```
+    ### Option B: Local Build
+    If you want to use the source code:
+    ```bash
+    git clone https://github.com/Zernikalos/Zernikalos.git
+    cd Zernikalos
+    ./gradlew publishToMavenLocal
+    ```
+  </Tab>
+
+  <Tab value="iOS">
+    Integrate using CocoaPods by pointing to the engine repository:
+
+    1. Add to your `Podfile`:
+    ```ruby
+    pod 'Zernikalos', :path => '../Zernikalos'
+    ```
+
+    2. Generate the framework and install:
+    ```bash
+    cd ../Zernikalos
+    ./gradlew :generateDummyFramework
+    cd -
+    pod install
+    ```
+  </Tab>
+
+  <Tab value="JavaScript">
+    Install the package from npm:
+
+    ```bash
+    npm install @zernikalos/zernikalos@0.7.0
+    ```
+
+    <Callout type="info">
+      If you use GitHub Packages for npm and get a 401, ensure your `.npmrc` is configured or force npmjs:
+      `@zernikalos:registry=https://registry.npmjs.org/`
+    </Callout>
+  </Tab>
+</Tabs>

@@ -4,6 +4,7 @@ description: How to generate compatible assets for the Zernikalos engine
 ---
 
 import { Callout } from 'fumadocs-ui/components/callout';
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
 
 This guide will walk you through the process of generating compatible assets for the Zernikalos engine.
 
@@ -41,17 +42,36 @@ We recommend using glTF 2.0 as it provides the best compatibility and performanc
     <img src="/docs/quick-start/images/exported.png" alt="Imported data on editor" />
     <p className="text-center">Imported data on editor</p>
   </div>
+  <div>
+    <img src="/docs/quick-start/images/viewer.png" alt="Scene Viewer" />
+    <p className="text-center">Scene Viewer</p>
+  </div>
 </div>
 
 ## Step 3: Generate Bundle
 
-1. In Nest App, locate the "Scene" menu
-2. Click on "Bundle Scene" option
-3. Select your desired output location
-4. Wait for the bundling process to complete
+1. In Nest App, navigate to the main menu: **Scene -> Bundle**
+2. Select your desired output location
+3. Wait for the bundling process to complete
 
 <Callout>
 The bundled scene is the only format compatible to be used with Zernikalos engine.
 </Callout>
 
-<img src="/docs/quick-start/images/bundle.png" alt="Bundle Scene" className="w-1/2" />
+## Next Steps: Where to place the bundle?
+
+Once you have your `.zko` file, place it in your project's appropriate directory:
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    Move the file to `app/src/main/assets/`.
+  </Tab>
+  <Tab value="iOS">
+    Add the file to your Xcode project resources.
+  </Tab>
+  <Tab value="JavaScript">
+    Place the file in your `public/` folder.
+  </Tab>
+</Tabs>
+
+Now you are ready to [Integrate Zernikalos](/docs/quick-start/adding-zk-to-your-project) into your application.

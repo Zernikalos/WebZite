@@ -1,150 +1,268 @@
 ---
-title: Adding Zernikalos to Your Project
-description: How to integrate Zernikalos engine into your Android or iOS project
+title: Integrating Zernikalos
+description: Learn how to initialize the engine, load resources, and implement your first scene on Android, iOS, and Web.
 ---
 
 import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
 
-## Configuration
+## 1. Engine & View Setup
 
-<Tabs items={['Android', 'iOS']}>
+The first step is to prepare the surface where the engine will render. Each platform uses its own native view.
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
   <Tab value="Android">
-    After the basic setup, you'll need to publish the library locally:
-
-    ```bash
-    ./gradlew publishToMavenLocal
-    ```
-
-    Then add the dependency to your app's `build.gradle.kts` file:
-
-    ```kotlin
-    dependencies {
-        implementation("dev.zernikalos:zernikalos:0.0.1")
-    }
-    ```
-
-    If you haven't already, make sure you have `mavenLocal()` in your project's repositories:
-
-    ```kotlin
-    repositories {
-        mavenLocal()
-        // ... other repositories
-    }
-    ```
-  </Tab>
-  <Tab value="iOS">
-    We recommend using CocoaPods for integration:
-
-    1. Add the following to your `Podfile`:
-
-    ```ruby
-    pod 'Zernikalos', :path => 'path/to/zernikalos/podspec'
-    ```
-
-    2. Run pod install:
-
-    ```bash
-    pod install
-    ```
-  </Tab>
-</Tabs>
-
-## Import the engine
-
-<Tabs items={['Android', 'iOS']}>
-  <Tab value="Android">
-    Before integrating Zernikalos, ensure you have:
-
-    1. An Android project set up
-    2. OpenGL ES 3.0 or higher declared in your AndroidManifest.xml:
+    Zernikalos provides a custom `ZernikalosView` (which wraps a `GLSurfaceView`). Add it to your layout:
 
     ```xml
-    <uses-feature android:glEsVersion="0x00030000" android:required="true" />
-    ```
-
-    3. A `GLSurfaceView` in your layout - This will be the canvas where Zernikalos renders your scene. ([Android GLSurfaceView documentation](https://developer.android.com/reference/android/opengl/GLSurfaceView))
-
-    Add a `GLSurfaceView` to your layout file:
-
-    ```xml
-    <android.opengl.GLSurfaceView
+    <zernikalos.ui.ZernikalosView
         android:id="@+id/render_surface"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     ```
 
-    Initialize Zernikalos in your Activity's `onCreate` method:
-
+    Then, initialize the engine in your Activity:
     ```kotlin
-    val zernikalos = Zernikalos()
-    val renderSurface = findViewById<GLSurfaceView>(R.id.render_surface)
-
-    zernikalos.initialize(renderSurface, object : ZSceneStateHandler {
-        // ZSceneStateHandler implementation will be covered in the next section
-    })
+    val engine = Zernikalos()
+    val renderSurface = findViewById<ZernikalosView>(R.id.render_surface)
     ```
   </Tab>
+
   <Tab value="iOS">
-    iOS documentation coming soon...
+    Zernikalos uses **MetalKit** (`MTKView`) for rendering on iOS.
+
+    ```swift
+    import MetalKit
+    import Zernikalos
+
+    // Inside your UIViewController
+    guard let mtkView = view as? MTKView else { return }
+    guard let device = MTLCreateSystemDefaultDevice() else { return }
+    mtkView.device = device
+
+    let engine = Zernikalos()
+    ```
+  </Tab>
+
+  <Tab value="JavaScript">
+    In the browser, Zernikalos renders to a standard `HTMLCanvasElement` using **WebGPU**.
+
+    ```javascript
+    import { zernikalos } from '@zernikalos/zernikalos';
+
+    const canvas = document.createElement('canvas');
+    document.body.appendChild(canvas);
+
+    const engine = new zernikalos.Zernikalos();
+    ```
   </Tab>
 </Tabs>
 
-## Implementing the ZSceneStateHandler
+## 2. Core Concepts
 
-The `ZSceneStateHandler` interface is crucial for managing the lifecycle of your Zernikalos scene. Here's a basic implementation:
+Before diving into code, here are the three pillars of a Zernikalos application:
 
-```kotlin
-zernikalos.initialize(renderSurface, object : ZSceneStateHandler {
-    private var scene: ZScene? = null
-    private var camera: ZCamera? = null
+### Loading Resources (.zko)
+All 3D assets (models, textures, animations) must be bundled into a `.zko` file using the [Nest App](/docs/quick-start/nest-install).
 
-    override fun onReady(context: ZContext, done: () -> Unit) {
-        scope.launch {
-            // Create and set up your scene
-            scene = ZScene()
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    Place your `.zko` files in the `src/main/assets/` directory of your Android project.
+  </Tab>
+  <Tab value="iOS">
+    Add your `.zko` files to your Xcode project resources and ensure they are included in the "Copy Bundle Resources" build phase.
+  </Tab>
+  <Tab value="JavaScript">
+    Place your `.zko` files in the `public/` folder of your web project (or any directory served as static content).
+  </Tab>
+</Tabs>
 
-            // Load your 3D assets
-            val zko = loadResources()
+### The ZContext
+The `ZContext` is passed to all lifecycle methods. It gives you access to the active `scene`, the `activeCamera`, and the underlying rendering state.
 
-            // Add objects to the scene
-            scene?.addChild(zko.root)
+### Lifecycle Methods
+You control the engine via the `ZSceneStateHandler` interface:
+- `onReady`: Called once when the engine is initialized. Ideal for loading models.
+- `onUpdate`: Called every frame. Use this for game logic and animations.
+- `onResize`: Called when the view dimensions change.
+- `onRender`: Called every frame for the final draw pass.
 
-            // Set the scene in the context
+## 3. Basic State Handler Snippets
+
+These snippets show the minimal logic required to get the engine running.
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    ```kotlin
+    engine.initialize(renderSurface, object : ZSceneStateHandler {
+        override fun onReady(context: ZContext, done: () -> Unit) {
+            val bytes = assets.open("model.zko").use { it.readBytes() }
+            val zko = loadFromProto(bytes)
+            
+            val scene = ZScene()
+            scene.addChild(zko.root)
+            
             context.scene = scene
+            done()
+        }
+        override fun onUpdate(context: ZContext, done: () -> Unit) = done()
+    })
+    ```
+  </Tab>
 
-            // Signal completion
+  <Tab value="iOS">
+    ```swift
+    class MyHandler: ZSceneStateHandler {
+        func onReady(context: ZContext, done: () -> Void) {
+            let zko = ZkoLoader.companion.loadFromMainBundlePathSync(fileName: "model")
+            let scene = ZScene()
+            if let root = zko?.root { scene.addChild(child: root) }
+            context.scene = scene
             done()
         }
     }
+    engine.initialize(view: mtkView, stateHandler: MyHandler())
+    ```
+  </Tab>
 
-    override fun onResize(context: ZContext, width: Int, height: Int, done: () -> Unit) {
-        done()
+  <Tab value="JavaScript">
+    ```javascript
+    engine.initializeWithCanvas(canvas, {
+        onReady: async (context, done) => {
+            const res = await fetch('/model.zko');
+            const bytes = new Int8Array(await res.arrayBuffer());
+            const zko = await zernikalos.loader.loadFromProto(bytes);
+            
+            const scene = new zernikalos.objects.ZScene();
+            scene.addChild(zko.root);
+            
+            context.scene = scene;
+            done();
+        }
+    });
+    ```
+  </Tab>
+</Tabs>
+
+## 4. Complete Samples
+
+Finally, here are full, copy-pasteable examples for each platform including camera setup and a basic rotation.
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    ```kotlin
+    import android.os.Bundle
+    import androidx.activity.ComponentActivity
+    import kotlinx.coroutines.*
+    import zernikalos.*
+    import zernikalos.context.ZContext
+    import zernikalos.loader.loadFromProto
+    import zernikalos.objects.*
+    import zernikalos.scenestatehandler.ZSceneStateHandler
+    import zernikalos.search.findFirstCamera
+    import zernikalos.ui.ZernikalosView
+
+    class MainActivity : ComponentActivity() {
+        private val scope = CoroutineScope(Job() + Dispatchers.Main)
+
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            val renderSurface = ZernikalosView(this)
+            setContentView(renderSurface)
+
+            val engine = Zernikalos()
+            engine.initialize(renderSurface, object : ZSceneStateHandler {
+                private var rootGroup: ZGroup? = null
+
+                override fun onReady(context: ZContext, done: () -> Unit) {
+                    scope.launch {
+                        val bytes = assets.open("scene.zko").use { it.readBytes() }
+                        val zko = loadFromProto(bytes)
+                        rootGroup = zko.root as? ZGroup
+
+                        val scene = ZScene()
+                        val camera = ZCamera()
+                        scene.addChild(camera)
+                        scene.addChild(zko.root)
+
+                        context.scene = scene
+                        context.activeCamera = findFirstCamera(scene)
+                        done()
+                    }
+                }
+
+                override fun onUpdate(context: ZContext, done: () -> Unit) {
+                    rootGroup?.transform?.rotate(0.1f, 0f, 1f, 0f)
+                    done()
+                }
+            })
+        }
     }
+    ```
+  </Tab>
 
-    override fun onRender(context: ZContext, done: () -> Unit) {
-        // Your per-frame updates here
-        done()
+  <Tab value="iOS">
+    ```swift
+    import MetalKit
+    import Zernikalos
+
+    class StateHandler: ZSceneStateHandler {
+        private var root: ZObject?
+        
+        func onReady(context: ZContext, done: () -> Void) {
+            let zko = ZkoLoader.companion.loadFromMainBundlePathSync(fileName: "scene")
+            self.root = zko?.root
+            
+            let scene = ZScene()
+            let camera = ZCamera.companion.DefaultPerspectiveCamera
+            if let r = root { scene.addChild(child: r) }
+            scene.addChild(child: camera)
+            
+            context.scene = scene
+            context.activeCamera = camera
+            done()
+        }
+
+        func onUpdate(context: ZContext, done: @escaping () -> Void) {
+            root?.transform.rotate(angle: 0.2, x: 0, y: 1, z: 0)
+            done()
+        }
     }
-})
-```
+    ```
+  </Tab>
 
-### Loading Resources
+  <Tab value="JavaScript">
+    ```javascript
+    import { zernikalos } from '@zernikalos/zernikalos';
 
-The most common first step is loading your 3D assets from a `.zko` file. Here's how to do it:
+    async function start() {
+        const canvas = document.createElement('canvas');
+        canvas.style.width = '100vw'; canvas.style.height = '100vh';
+        document.body.appendChild(canvas);
 
-```kotlin
-suspend fun loadResources(): ZKo = coroutineScope {
-    val data = applicationContext.assets.open("your_model.zko")
-    return@coroutineScope loadFromProto(data.readBytes())
-}
-```
+        const engine = new zernikalos.Zernikalos();
+        const res = await fetch('/scene.zko');
+        const bytes = new Int8Array(await res.arrayBuffer());
+        const zko = await zernikalos.loader.loadFromProto(bytes);
 
-### Key Components
-
-1. **Scene Setup**: In `onReady`, you create your scene and load resources
-2. **Resource Loading**: Use `.zko` resource files containing your 3D models
-3. **Scene Context**: The `ZContext` provides access to the current scene and rendering state
-4. **Lifecycle Methods**:
-   - `onReady`: Called when the engine is ready to start rendering
-   - `onResize`: Called when the surface size changes
-   - `onRender`: Called every frame for continuous updates
+        engine.initializeWithCanvas(canvas, {
+            onReady: (ctx, done) => {
+                const scene = new zernikalos.objects.ZScene();
+                const camera = new zernikalos.objects.ZCamera();
+                scene.addChild(zko.root);
+                scene.addChild(camera);
+                
+                camera.transform?.translate(0, 0, -10);
+                ctx.scene = scene;
+                ctx.activeCamera = camera;
+                done();
+            },
+            onUpdate: (ctx, done) => {
+                zko.root.transform?.rotate(0.1, 0, 1, 0);
+                done();
+            }
+        });
+    }
+    start();
+    ```
+  </Tab>
+</Tabs>
