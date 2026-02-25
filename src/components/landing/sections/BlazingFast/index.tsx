@@ -28,19 +28,22 @@ zernikalos.initialize(renderSurface, object : ZSceneStateHandler {
 export default function BlazingFastSection() {
   return (
     <section className="py-24 w-full">
-      <div className="container mx-auto px-6 md:px-8 lg:px-12 flex flex-col md:flex-row-reverse justify-between items-center gap-12">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12 flex flex-col md:flex-row-reverse justify-between items-stretch gap-8 lg:gap-10">
         {/* Code Window */}
         <div className="w-full md:w-2/3 order-2 md:order-none">
           <CodeWindow language="kotlin" code={sampleCode} />
         </div>
 
         {/* Textual content */}
-        <div className="w-full md:w-1/3 order-1 md:order-none">
-          <SectionTitle title="Blazing Fast" />
+        <div className="w-full md:w-1/3 order-1 md:order-none rounded-3xl border border-slate-200 bg-white/70 p-6 sm:p-8 backdrop-blur dark:border-white/10 dark:bg-white/5">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700 dark:text-cyan-200/90">
+            Developer Experience
+          </p>
+          <SectionTitle title="Blazing Fast" className="mt-3" />
           <SectionText>
-            Built with a unified core and minimal dependencies, Zernikalos delivers
-            lightning-fast development and runtime performance across all platforms.
-            With just a few lines of code, you can have a powerful engine up and running.
+            The goal is fast gameplay iteration: initialize a scene, attach assets, set a camera,
+            and start updating frame logic without heavy setup. The snippet below shows the API
+            shape and the kind of boilerplate you avoid.
           </SectionText>
         </div>
       </div>

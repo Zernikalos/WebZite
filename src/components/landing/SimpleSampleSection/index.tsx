@@ -21,13 +21,15 @@ export default function SimpleSampleSection() {
     <section className="py-24 w-full">
       <div className="container mx-auto px-6 md:px-8 lg:px-12 flex flex-col items-center gap-6">
         {/* Title and Description */}
-        <div className="text-center">
+        <div className="w-full max-w-4xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700 dark:text-cyan-200/90">
+            Interactive Demo
+          </p>
           <SectionTitle title="See It In Action" />
           <SectionText className="max-w-2xl mx-auto">
-            The engine seamlessly handles 3D character animations and complex scenes,
-            delivering the performance and visual fidelity your projects deserve.
-            Experience the same smooth performance across all platforms, powered by
-            cutting-edge technologies like <span className="font-semibold">WebGPU</span>.
+            This sample runs a real Zernikalos scene in the browser so you can quickly evaluate the
+            rendering feel, animation playback, and game-loop style integration experience before
+            going deeper into the docs.
           </SectionText>
         </div>
 
