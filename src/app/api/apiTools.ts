@@ -1,7 +1,33 @@
 import fs from 'node:fs/promises';
+import fsSync from 'node:fs';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 import type * as PageTree from 'fumadocs-core/page-tree';
+
+let cachedDefaultGithubRef: string | null | undefined;
+
+function getDefaultZernikalosGithubRef(): string | null {
+  if (cachedDefaultGithubRef !== undefined) return cachedDefaultGithubRef;
+  cachedDefaultGithubRef = null;
+
+  try {
+    const packageJsonPath = path.join(process.cwd(), 'package.json');
+    const raw = fsSync.readFileSync(packageJsonPath, 'utf-8');
+    const pkg = JSON.parse(raw) as { dependencies?: Record<string, string> };
+    const dep = pkg.dependencies?.['@zernikalos/zernikalos'];
+    if (!dep) return cachedDefaultGithubRef;
+
+    // Accept plain versions or common semver ranges like ^0.8.0, ~0.8.0, >=0.8.0
+    const cleaned = dep.trim().replace(/^[\^~><= ]+/, '');
+    const m = cleaned.match(/^(\d+\.\d+\.\d+)(?:[-+].*)?$/);
+    if (!m) return cachedDefaultGithubRef;
+
+    cachedDefaultGithubRef = `v${m[1]}`;
+    return cachedDefaultGithubRef;
+  } catch {
+    return cachedDefaultGithubRef;
+  }
+}
 
 /**
  * Recursively finds all HTML files in the API directory and returns their slugs.
@@ -140,7 +166,7 @@ export async function getApiNavigationTree(): Promise<PageTree.Root> {
             name: name,
             url: encodedUrl, 
             children: children,
-            defaultOpen: true 
+            defaultOpen: false
           });
         } else {
           items.push({
@@ -199,12 +225,53 @@ export function processDokkaHtml(html: string, currentSlug: string[], isIndex: b
   // Base absolute path for current page
   const slugPathParts = isIndex ? currentSlug : currentSlug.slice(0, -1);
   const currentBasePath = path.posix.join('/api', ...slugPathParts);
+  const zernikalosGithubSourcesRef =
+    process.env.ZERNIKALOS_GITHUB_SOURCES_REF?.trim() ||
+    getDefaultZernikalosGithubRef() ||
+    null;
   
   $('a').each((_, el) => {
     const $el = $(el);
     const href = $el.attr('href');
     
-    if (!href || /^(http|\/\/|#|mailto:)/.test(href)) return;
+    if (!href) return;
+
+    // Dokka source links occasionally use `/tree/` for file URLs, which 404s on GitHub.
+    if (/^https?:\/\/github\.com\//i.test(href)) {
+      try {
+        const url = new URL(href);
+        const m = url.pathname.match(/^\/Zernikalos\/Zernikalos\/(tree|blob)\/([^/]+)\/(.+)$/);
+        if (m) {
+          const kind = m[1];
+          const originalRef = m[2];
+          const rest = m[3];
+
+          // If a specific release/tag/commit is provided at build time, pin sources to it
+          // so source links don't drift when `main` changes.
+          const ref = zernikalosGithubSourcesRef || originalRef;
+
+          const lastSegment = rest.split('/').filter(Boolean).pop() ?? '';
+          const looksLikeFile = /\.[a-z0-9]+$/i.test(lastSegment);
+          const fixedKind = kind === 'tree' && looksLikeFile ? 'blob' : kind;
+
+          url.pathname = `/Zernikalos/Zernikalos/${fixedKind}/${ref}/${rest}`;
+          $el.attr('href', url.toString());
+        } else if (url.pathname.includes('/tree/')) {
+          // Generic fallback for other repos: only fix obvious "tree for file" cases.
+          const lastSegment = url.pathname.split('/').filter(Boolean).pop() ?? '';
+          const looksLikeFile = /\.[a-z0-9]+$/i.test(lastSegment);
+          if (looksLikeFile) {
+            url.pathname = url.pathname.replace('/tree/', '/blob/');
+            $el.attr('href', url.toString());
+          }
+        }
+      } catch {
+        // Leave malformed absolute URLs unchanged.
+      }
+      return;
+    }
+
+    if (/^(http|\/\/|#|mailto:)/.test(href)) return;
 
     const [urlPath, hash] = href.split('#');
     

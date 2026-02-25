@@ -22,3 +22,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm run build
+      - name: Check internal links
+        run: pnpm links:check
+      - name: Check GitHub source links (sample)
+        run: pnpm links:check:github

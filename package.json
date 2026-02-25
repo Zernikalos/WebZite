@@ -10,6 +10,7 @@
     "postinstall": "fumadocs-mdx",
     "links:check": "bash scripts/check-links.sh",
     "links:check:all": "bash scripts/check-links.sh --all",
+    "links:check:github": "node scripts/check-github-links.mjs",
     "lint": "eslint"
   },
   "dependencies": {
@@ -39,6 +40,7 @@
     "eslint-config-next": "16.1.4",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "http-server": "^14.1.1"
   }
 }
