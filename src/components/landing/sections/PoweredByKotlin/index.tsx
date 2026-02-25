@@ -12,33 +12,41 @@ import { SiOpensourceinitiative, SiKotlin } from 'react-icons/si';
 export default function PoweredByKotlinSection() {
   const title = 'Powered by Kotlin & Open Source';
   const description =
-    'The Zernikalos engine is proudly built with Kotlin Multiplatform, making it a truly versatile and modern solution. ' +
-    'As an open-source project, we welcome developers and contributors to explore the code, share ideas, and help shape its future.';
+    'Zernikalos is built on Kotlin Multiplatform and developed as an open-source project. ' +
+    'That combination makes the engine easier to inspect, extend, and improve with community feedback.';
 
   return (
     <section className="py-24 w-full">
       <div className="container mx-auto px-6 md:px-8 lg:px-12 flex flex-col items-center gap-10">
-        {/* Textual content - centered */}
-        <div className="w-full max-w-3xl text-center">
-          <SectionTitle title={title} />
-          <SectionText className="text-center">{description}</SectionText>
-        </div>
+        <div className="w-full max-w-5xl rounded-3xl border border-slate-200 bg-white/70 p-6 sm:p-8 backdrop-blur dark:border-white/10 dark:bg-white/5">
+          {/* Textual content - centered */}
+          <div className="w-full max-w-4xl mx-auto text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700 dark:text-cyan-200/90">
+              Ecosystem
+            </p>
+            <SectionTitle
+              title={title}
+              className="mt-3 text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem]"
+            />
+            <SectionText className="text-center">{description}</SectionText>
+          </div>
 
-        {/* Visual content - icons below */}
-        <div className="flex flex-row items-center justify-center gap-4 md:gap-6">
-          <SiKotlin
-            size={60}
-            className="text-purple-700 dark:text-purple-500"
-            title="Kotlin"
-          />
-          <FaHeart
-            size={30}
-            className="text-pink-500 dark:text-pink-400"
-          />
-          <SiOpensourceinitiative
-            size={60}
-            className="text-green-600 dark:text-green-400"
-          />
+          {/* Visual content - icons below */}
+          <div className="mt-8 flex flex-row items-center justify-center gap-4 md:gap-6 px-2 py-2">
+            <SiKotlin
+              size={56}
+              className="text-purple-600 dark:text-purple-500"
+              title="Kotlin"
+            />
+            <FaHeart
+              size={28}
+              className="text-pink-500 dark:text-pink-400"
+            />
+            <SiOpensourceinitiative
+              size={56}
+              className="text-green-600 dark:text-green-400"
+            />
+          </div>
         </div>
       </div>
     </section>

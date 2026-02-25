@@ -2,21 +2,19 @@ import clsx from 'clsx';
 
 interface SectionTitleProps {
   title: string;
+  className?: string;
 }
 
 /**
- * Animated gradient section title component.
- * Used for major section headings on the landing page.
+ * Shared section title style for the landing page.
  */
-export default function SectionTitle({ title }: SectionTitleProps) {
+export default function SectionTitle({ title, className }: SectionTitleProps) {
   return (
     <h2
       className={clsx(
-        'text-5xl lg:text-6xl font-extrabold tracking-tight leading-normal',
-        'bg-gradient-to-r from-cyan-400 via-sky-500 to-purple-600',
-        'bg-clip-text text-transparent',
-        'animate-[gradientShift_10s_ease-in-out_infinite]',
-        'drop-shadow-[0_0_8px_rgba(99,102,255,0.7)]'
+        'text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight',
+        'text-slate-900 dark:text-white',
+        className
       )}
     >
       {title}

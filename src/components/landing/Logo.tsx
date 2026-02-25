@@ -18,6 +18,8 @@ export default function Logo({ className, variant = 'inline' }: LogoProps) {
     <div
       className={clsx(
         'relative shrink-0',
+        // Make the SVG logo read better on light backgrounds (it is rendered as an <img>)
+        '[&_img]:brightness-[0.78] [&_img]:contrast-125 [&_img]:saturate-90 dark:[&_img]:brightness-100 dark:[&_img]:contrast-100 dark:[&_img]:saturate-100',
         isBackground && 'w-96 h-96 sm:w-[28rem] sm:h-[28rem]',
         !isBackground && 'w-[420px] h-[420px] lg:w-[520px] lg:h-[520px] xl:w-[600px] xl:h-[600px]',
         className
@@ -36,6 +38,7 @@ export default function Logo({ className, variant = 'inline' }: LogoProps) {
         priority
         sizes={isBackground ? '(max-width: 768px) 24rem, 28rem' : '600px'}
         style={{ objectFit: 'contain' }}
+        className="dark:opacity-100 opacity-95"
       />
     </div>
   );
