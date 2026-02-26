@@ -3,8 +3,25 @@ import fsSync from 'node:fs';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 import type * as PageTree from 'fumadocs-core/page-tree';
+import { glob } from 'tinyglobby';
 
 let cachedDefaultGithubRef: string | null | undefined;
+
+function safeDecode(value: string): string {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
+function encodePathSegment(value: string): string {
+  return encodeURIComponent(safeDecode(value));
+}
+
+function buildEncodedPath(segments: string[]): string {
+  return '/' + segments.map((p) => encodePathSegment(p)).join('/') + '/';
+}
 
 function getDefaultZernikalosGithubRef(): string | null {
   if (cachedDefaultGithubRef !== undefined) return cachedDefaultGithubRef;
@@ -34,32 +51,21 @@ function getDefaultZernikalosGithubRef(): string | null {
  */
 export async function getApiStaticParams(): Promise<{ slug: string[] }[]> {
   const apiRoot = path.join(process.cwd(), 'api');
-  
-  async function scan(dir: string): Promise<string[][]> {
-    const entries = await fs.readdir(dir, { withFileTypes: true });
-    const slugs: string[][] = [];
+  const files = await glob('**/*.html', { cwd: apiRoot, absolute: true, onlyFiles: true });
+  const allSlugs: string[][] = [];
 
-    for (const entry of entries) {
-      const fullPath = path.join(dir, entry.name);
-      
-      if (entry.isDirectory()) {
-        slugs.push(...await scan(fullPath));
-      } else if (entry.name.endsWith('.html')) {
-        const relPath = path.relative(apiRoot, fullPath);
-        const dirName = path.dirname(relPath);
-        const name = path.basename(relPath, '.html');
-        
-        const slugParts = name === 'index' 
-          ? (dirName === '.' ? [] : dirName.split(path.sep))
-          : [...dirName.split(path.sep).filter(p => p !== '.'), name];
-          
-        slugs.push(slugParts);
-      }
-    }
-    return slugs;
+  for (const fullPath of files) {
+    const relPath = path.relative(apiRoot, fullPath);
+    const relPosix = relPath.split(path.sep).join('/');
+    const dirName = path.posix.dirname(relPosix);
+    const name = path.posix.basename(relPosix, '.html');
+
+    const slugParts = name === 'index'
+      ? (dirName === '.' ? [] : dirName.split('/'))
+      : [...(dirName === '.' ? [] : dirName.split('/')), name];
+
+    allSlugs.push(slugParts);
   }
-
-  const allSlugs = await scan(apiRoot);
 
   // Next.js (with output: 'export') requires every visited param to exist in generateStaticParams.
   // Since our rendered HTML contains URL-encoded segments (e.g. "%5B-android%5D-zernikalos"),
@@ -143,18 +149,15 @@ export async function getApiNavigationTree(): Promise<PageTree.Root> {
         
         // Clean up the href to match our routing
         // Example: "-zernikalos/zernikalos/index.html" -> "/api/-zernikalos/zernikalos/"
-        let urlPath = rawHref
+        const urlPath = rawHref
           .replace(/index\.html$/, '')
+          .replace(/\/index$/, '')
           .replace(/\.html$/, '');
           
         // Split into parts, removing empty ones, and prefix with 'api'
         const parts = urlPath.split('/').filter(p => p !== '' && p !== '.');
         const fullPathSegments = ['api', ...parts];
-        
-        // Build the final encoded URL with trailing slash
-        const encodedUrl = '/' + fullPathSegments
-          .map(p => encodeURIComponent(decodeURIComponent(p)))
-          .join('/') + '/';
+        const encodedUrl = buildEncodedPath(fullPathSegments);
         
         // Check if it has children
         const children = buildTree($part);
@@ -274,16 +277,18 @@ export function processDokkaHtml(html: string, currentSlug: string[], isIndex: b
     if (/^(http|\/\/|#|mailto:)/.test(href)) return;
 
     const [urlPath, hash] = href.split('#');
-    
+
     let absolutePath = path.posix.join(currentBasePath, urlPath);
-    
+
     absolutePath = absolutePath
-      .replace(/(\/index)?\.html$/, '') 
-      .replace(/\/+$/, '')              
-      + '/';                            
-      
+      // Normalize Dokka "index" variants to the folder URL.
+      .replace(/(\/index)?\.html$/, '')
+      .replace(/\/index$/, '')
+      .replace(/\/+$/, '')
+      + '/';
+
     absolutePath = absolutePath.replace(/\/+/g, '/');
-    
+
     // Consistent encoding: encode each segment to match the sidebar tree
     absolutePath = absolutePath.split('/').map(p => {
       if (p === '') return '';

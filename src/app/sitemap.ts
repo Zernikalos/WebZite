@@ -29,12 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       priority: 1,
     },
-    // API docs entry point (do not enumerate all endpoints)
-    {
-      url: joinUrl(siteUrl, `${basePath}/api/`),
-      lastModified: now,
-      priority: 0.5,
-    },
   ];
 
   // `generateParams()` is already used by the docs route; leverage it here
