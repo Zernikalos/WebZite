@@ -10,6 +10,10 @@
  * Usage:
  * - node scripts/sync-demos.mjs
  * - node scripts/sync-demos.mjs --clean
+ *
+ * CI (WebZite-only checkout): if DemoApps is not present, sync is skipped and
+ * `public/demos` must already be committed. Set DEMOS_SYNC_REQUIRED=1 to fail
+ * instead (e.g. monorepo jobs that checkout both repos).
  */
 
 import fs from "node:fs";
@@ -132,13 +136,23 @@ function syncDir(srcDir, dstDir) {
 }
 
 function main() {
-  if (!isDir(srcExamplesDir)) {
-    console.error(`Missing examples source: ${srcExamplesDir}`);
-    process.exit(1);
-  }
-  if (!isDir(srcZkoDir)) {
-    console.error(`Missing zko source: ${srcZkoDir}`);
-    process.exit(1);
+  const examplesOk = isDir(srcExamplesDir);
+  const zkoOk = isDir(srcZkoDir);
+  const strict = process.env.DEMOS_SYNC_REQUIRED === "1";
+
+  if (!examplesOk || !zkoOk) {
+    const msg = !examplesOk
+      ? `Missing examples source: ${srcExamplesDir}`
+      : `Missing zko source: ${srcZkoDir}`;
+    if (strict) {
+      console.error(msg);
+      process.exit(1);
+    }
+    console.warn(`[demos:sync] ${msg}`);
+    console.warn(
+      "[demos:sync] Skipping sync (use committed public/demos). To fail when sources are missing, set DEMOS_SYNC_REQUIRED=1.",
+    );
+    process.exit(0);
   }
 
   ensureDir(dstRoot);
