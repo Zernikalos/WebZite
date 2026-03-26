@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soldier · Zernikalos Web Demo</title>
+
+  <link rel="stylesheet" href="./css/_shared.css">
+  <link rel="stylesheet" href="./css/actionSelector.css">
+  <script src="../sdk/zernikalos.js"></script>
+</head>
+<body>
+  <div class="container">
+    <main>
+      <canvas id="canvas"></canvas>
+    </main>
+  </div>
+
+  <script type="module">
+    import { mountActionSelector } from "./js/actionSelector.js";
+
+    function fitCanvas(canvas) {
+      const dpr = Math.max(1, Math.floor(window.devicePixelRatio || 1));
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(1, Math.floor(rect.width * dpr));
+      canvas.height = Math.max(1, Math.floor(rect.height * dpr));
+    }
+
+    const canvas = document.getElementById("canvas");
+    fitCanvas(canvas);
+    window.addEventListener("resize", () => fitCanvas(canvas));
+
+    const player = new zernikalos.action.ZActionPlayer();
+    const zk = new zernikalos.Zernikalos();
+    zk.settings.logLevel = zernikalos.logger.ZLogLevel.DEBUG;
+
+    let root;
+
+    zk.initializeWithCanvas(canvas, {
+      async onReady(ctx, done) {
+        const loaded = await zernikalos.loader.loadFromUrl("../zko/gltf/soldier2.zko");
+        root = loaded.root;
+
+        const scene = new zernikalos.objects.ZScene();
+        const camera = new zernikalos.objects.ZCamera();
+        scene.addChild(root);
+        scene.addChild(camera);
+        ctx.activeCamera = camera;
+        ctx.scene = scene;
+
+        const mainObj = zernikalos.search.findFirstModel(scene);
+
+        // Soldier settings (ported from Samples/web/protosample.html)
+        ctx.activeCamera?.transform?.rotate(180, 1, 0, 0);
+        ctx.activeCamera?.transform?.translate(0, -1, -3);
+
+        const actions = loaded.actions?.toArray?.()?.filter(Boolean) ?? [];
+        if (mainObj && actions.length > 0) {
+          const playAction = (action) => {
+            player.stop();
+            player.setAction(mainObj, action);
+            player.play(true);
+          };
+
+          mountActionSelector({
+            actions,
+            onSelect: playAction,
+            label: "Action",
+            initialIndex: 0,
+          });
+        }
+        done();
+      },
+      onUpdate(ctx, done) {
+        player.update();
+        if (root && ctx.input.keyboard.isKeyPressed(zernikalos.events.keyboard.ZKeyCode.LeftArrow)) {
+          root.transform.rotate(-2, 0, 1, 0);
+        }
+        if (root && ctx.input.keyboard.isKeyPressed(zernikalos.events.keyboard.ZKeyCode.RightArrow)) {
+          root.transform.rotate(2, 0, 1, 0);
+        }
+        done();
+      },
+      onRender(ctx, done) { done(); },
+      onResize(ctx, w, h, done) { done(); }
+    });
+  </script>
+</body>
+</html>
+

@@ -15,6 +15,10 @@ export function baseOptions(): BaseLayoutProps {
         url: '/docs',
       },
       {
+        text: 'Demos',
+        url: '/demos/',
+      },
+      {
         text: 'API Reference',
         url: '/api/',
       },
