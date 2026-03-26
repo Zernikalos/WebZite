@@ -1,0 +1,33 @@
+.zk-action-selector {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: rgba(10, 14, 24, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.zk-action-selector__label {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.zk-action-selector__select {
+  color: inherit;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  padding: 4px 6px;
+  outline: none;
+}
+
+.zk-action-selector__select:disabled {
+  opacity: 0.55;
+}
+

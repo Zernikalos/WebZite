@@ -28,8 +28,16 @@ export default async function CodeBlock({
   return (
     <div
       className={clsx(
-        'overflow-x-auto rounded-md border border-slate-200 bg-white px-4 py-4 text-sm leading-relaxed text-slate-900 dark:border-gray-800 dark:bg-gray-950 dark:text-slate-100 [&_pre]:!bg-transparent [&_code]:!bg-transparent',
-        '[&_pre]:!whitespace-pre [&_.shiki]:!bg-transparent [&_.shiki]:!p-0 [&_.shiki]:!m-0',
+        // Prevent typography/preset styles (e.g. `.prose code { ... }`) from
+        // treating Shiki's <code> as inline code and adding borders/background.
+        'not-prose',
+        'overflow-x-auto rounded-md border border-slate-200 bg-white px-4 py-4 text-sm leading-relaxed text-slate-900 dark:border-gray-800 dark:bg-gray-950 dark:text-slate-100 font-mono',
+        // Preserve whitespace exactly (including indentation).
+        '[&_pre]:!bg-transparent [&_code]:!bg-transparent [&_pre]:!whitespace-pre',
+        // Normalize tab width to avoid odd indentation.
+        '[&_pre]:[tab-size:2] [&_code]:[tab-size:2]',
+        // Shiki wrapper normalization.
+        '[&_.shiki]:!bg-transparent [&_.shiki]:!p-0 [&_.shiki]:!m-0',
         'dark:[&_.shiki]:[color-scheme:dark] [&_.shiki]:[color-scheme:light]',
         className
       )}
