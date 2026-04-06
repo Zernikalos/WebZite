@@ -45,14 +45,17 @@
 
         const scene = new zernikalos.objects.ZScene();
         const camera = new zernikalos.objects.ZCamera();
-        const light = new zernikalos.objects.ZLight();
-        light.directionalLamp = new zernikalos.components.light.ZDirectionalLamp();
 
-        scene.addChild(light);
+        const ambientLight = zernikalos.objects.ZLight.Companion.createAmbientLight();
+        ambientLight.intensity = 0.1;
+        const light = new zernikalos.objects.ZLight();
+        light.lamp = new zernikalos.components.light.ZDirectionalLamp();
+
         scene.addChild(root);
+        scene.addChild(ambientLight);
+        scene.addChild(light);
         scene.addChild(camera);
         ctx.activeCamera = camera;
-        ctx.activeLight = light;
         ctx.scene = scene;
 
         const mainObj = zernikalos.search.findFirstModel(scene);
