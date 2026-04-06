@@ -2,6 +2,8 @@ import fs from 'node:fs/promises';
 import fsSync from 'node:fs';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
+import type { Cheerio } from 'cheerio';
+import type { AnyNode } from 'domhandler';
 import type * as PageTree from 'fumadocs-core/page-tree';
 import { glob } from 'tinyglobby';
 
@@ -126,7 +128,7 @@ export async function getApiNavigationTree(): Promise<PageTree.Root> {
     const $ = cheerio.load(html, null, false);
     
     // Recursive function to build the tree from DOM elements
-    function buildTree($element: cheerio.Cheerio): PageTree.Item[] {
+    function buildTree($element: Cheerio<AnyNode>): PageTree.Item[] {
       const items: PageTree.Item[] = [];
       
       // Each .toc--part represents a node in the tree

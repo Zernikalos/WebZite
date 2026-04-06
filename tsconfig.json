@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "target": "ESNext",
     "lib": [
@@ -37,6 +38,7 @@
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
+    "src/**/*.d.ts",
     "source.config.ts",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"

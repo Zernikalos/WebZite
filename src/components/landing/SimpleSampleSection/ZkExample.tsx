@@ -25,6 +25,10 @@ export default function ZkExample({ onError }: ZkExampleProps) {
       return;
     }
 
+    let cancelled = false;
+    /** True only after `onReady` calls `done()` — dispose() before that throws in the engine. */
+    let readyForDispose = false;
+
     const canvas = canvasRef.current;
 
     // Initialize Zernikalos
@@ -41,7 +45,7 @@ export default function ZkExample({ onError }: ZkExampleProps) {
 
     async function loadScene() {
       // Models should be placed in the public folder
-      return await zernikalos.zernikalos.loader.loadFromUrl('/Fox0150.zko');
+      return await zernikalos.zernikalos.loader.loadFromUrl('/Fox.zko');
     }
 
     try {
@@ -49,6 +53,17 @@ export default function ZkExample({ onError }: ZkExampleProps) {
         onReady(ctx: any, done: () => void) {
           loadScene()
             .then((loaded) => {
+              if (cancelled) {
+                readyForDispose = true;
+                done();
+                try {
+                  zk.dispose();
+                } catch {
+                  /* engine may already be tearing down */
+                }
+                return;
+              }
+
               const g = loaded.root;
               const action = loaded.actions?.asJsReadonlyArrayView()[2];
               const scene = new zernikalos.zernikalos.objects.ZScene();
@@ -56,8 +71,17 @@ export default function ZkExample({ onError }: ZkExampleProps) {
 
               scene.viewport.clearColor.alpha = 0;
 
+              const ambientLight = zernikalos.zernikalos.objects.ZLight.Companion.createAmbientLight();
+              ambientLight.intensity = 0.1;
+              const light = new zernikalos.zernikalos.objects.ZLight();
+              light.lamp = new zernikalos.zernikalos.components.light.ZDirectionalLamp();
+              light.transform.rotation = zernikalos.zernikalos.math.ZQuaternion.initWithValues(0, 0, 0, 1);
+              light.intensity = 2.0;
+
               scene.addChild(g);
               scene.addChild(camera);
+              scene.addChild(ambientLight);
+              scene.addChild(light);
 
               ctx.activeCamera = camera;
 
@@ -75,16 +99,29 @@ export default function ZkExample({ onError }: ZkExampleProps) {
               ctx.activeCamera?.transform?.rotate(-45, 0, 1, 0);
 
               ctx.scene = scene;
+              readyForDispose = true;
               done();
             })
             .catch((error) => {
               console.error('Failed to load Zernikalos scene:', error);
-              onError();
+              if (!cancelled) {
+                onError();
+              }
+              readyForDispose = true;
               done();
+              if (cancelled) {
+                try {
+                  zk.dispose();
+                } catch {
+                  /* engine may already be tearing down */
+                }
+              }
             });
         },
         onUpdate(_ctx: any, done: () => void) {
-          player.update();
+          if (!cancelled) {
+            player.update();
+          }
           done();
         },
         onRender(_ctx: any, done: () => void) {
@@ -101,11 +138,22 @@ export default function ZkExample({ onError }: ZkExampleProps) {
 
     // Cleanup function
     return () => {
-      if (playerRef.current) {
-        playerRef.current.stop();
+      cancelled = true;
+      try {
+        playerRef.current?.stop();
+      } catch {
+        /* ignore */
       }
-      if (zkRef.current && typeof zkRef.current.dispose === 'function') {
-        zkRef.current.dispose();
+      playerRef.current = null;
+
+      const zkInstance = zkRef.current;
+      zkRef.current = null;
+      if (zkInstance && readyForDispose && typeof zkInstance.dispose === 'function') {
+        try {
+          zkInstance.dispose();
+        } catch {
+          /* ignore */
+        }
       }
     };
   }, [onError]);
