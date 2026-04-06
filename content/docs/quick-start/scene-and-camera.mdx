@@ -1,0 +1,114 @@
+---
+title: Scene & camera
+description: Build a scene graph, choose a camera, and wire it to the engine context.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+
+Zernikalos scenes are trees of [`ZObject`](https://github.com/Zernikalos/Zernikalos) nodes rooted at [`ZScene`](https://github.com/Zernikalos/Zernikalos/blob/main/docs/api-reference/scene-creation.md). The renderer draws whatever is under `context.scene`, using `context.activeCamera` (and the lighting setup described in [Lighting](/docs/quick-start/scene-lighting)).
+
+## Default scene vs empty scene
+
+**`ZScene.defaultScene()`** (Kotlin / JavaScript) gives you a usable perspective camera and a default ambient light—good for quick tests.
+
+For full control, use **`ZScene()`** and add your own camera and lights.
+
+<Tabs items={['Kotlin', 'JavaScript', 'Swift']} groupId="lang">
+  <Tab value="Kotlin">
+    ```kotlin
+    import zernikalos.objects.ZScene
+
+    val scene = ZScene.defaultScene()
+    // or: val scene = ZScene()
+    ```
+  </Tab>
+  <Tab value="JavaScript">
+    ```javascript
+    import { ZScene } from '@zernikalos/zernikalos';
+
+    const scene = ZScene.defaultScene();
+    // or: const scene = new ZScene();
+    ```
+  </Tab>
+  <Tab value="Swift">
+    ```swift
+    let scene = ZScene()
+    // Compose with ZCamera.companion.DefaultPerspectiveCamera and lights manually
+    ```
+  </Tab>
+</Tabs>
+
+## Hierarchy
+
+Typical layout:
+
+```
+ZScene
+├── ZCamera
+├── ZLight (ambient / directional / …)
+├── ZGroup or ZModel (loaded .zko root)
+└── ZGroup (optional, for organization)
+```
+
+Add children with `scene.addChild(node)` (or `group.addChild`). Use **`ZGroup`** to keep hierarchies tidy on larger projects.
+
+## Camera
+
+Create a **`ZCamera`**, position it (and optionally configure lens near/far/FOV), then assign it to the context.
+
+<Tabs items={['Kotlin', 'JavaScript', 'Swift']} groupId="lang">
+  <Tab value="Kotlin">
+    ```kotlin
+    import zernikalos.objects.ZCamera
+    import zernikalos.math.ZVector3
+    import zernikalos.search.findFirstCamera
+
+    val camera = ZCamera()
+    camera.transform.position = ZVector3(0f, 2f, 5f)
+    camera.lens.near = 0.1f
+    camera.lens.far = 1000f
+    camera.lens.fov = 60f
+    scene.addChild(camera)
+
+    context.activeCamera = findFirstCamera(scene)
+    ```
+  </Tab>
+  <Tab value="JavaScript">
+    ```javascript
+    import { ZCamera, ZVector3 } from '@zernikalos/zernikalos';
+
+    const camera = new ZCamera();
+    camera.transform.position = new ZVector3(0, 2, 5);
+    camera.lens.near = 0.1;
+    camera.lens.far = 1000;
+    camera.lens.fov = 60;
+    scene.addChild(camera);
+
+    ctx.activeCamera = camera;
+    ```
+  </Tab>
+  <Tab value="Swift">
+    ```swift
+    let camera = ZCamera.companion.DefaultPerspectiveCamera
+    scene.addChild(child: camera)
+    context.activeCamera = ZFinderKt.findFirstCamera(root: scene)
+    ```
+  </Tab>
+</Tabs>
+
+On **iOS**, many samples call `context.activeCamera?.internalOnViewportResize(ctx:context, width:height:)` from `onResize` so the projection matches the drawable size—mirror that when you manage cameras yourself.
+
+## Viewport
+
+The scene owns a **viewport** (clear color, dimensions). On Kotlin you can adjust `scene.viewport.clearColor`; on all platforms, surface resize flows through the engine’s lifecycle (`onResize` / canvas sizing on web).
+
+<Callout type="warn">
+  Set **`context.scene`** and a valid **`activeCamera`** in or right after **`onReady`** so the first frame has something to render.
+</Callout>
+
+## Further reading
+
+- [Scene Creation API](https://github.com/Zernikalos/Zernikalos/blob/main/docs/api-reference/scene-creation.md) (full detail, multi-language examples)
+- [Loading a model](/docs/quick-start/loading-a-model)
+- [Integrating Zernikalos](/docs/quick-start/adding-zk-to-your-project)

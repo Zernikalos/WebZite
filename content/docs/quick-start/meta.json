@@ -5,6 +5,9 @@
     "zernikalos-install",
     "nest-install",
     "generating-assets",
-    "adding-zk-to-your-project"
+    "adding-zk-to-your-project",
+    "loading-a-model",
+    "scene-and-camera",
+    "scene-lighting"
   ]
 }
