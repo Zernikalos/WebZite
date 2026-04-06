@@ -1,45 +1,85 @@
-# webzite2
+# WebZite
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+Next.js site for **Zernikalos** documentation and demos, built with [Fumadocs](https://fumadocs.dev) and [Next.js](https://nextjs.org).
 
-Run development server:
+## Requirements
+
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [pnpm](https://pnpm.io/)
+
+## Setup
 
 ```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
+pnpm install
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+## Scripts
 
-## Explore
+| Script | Description |
+| ------ | ----------- |
+| `pnpm dev` | Runs `demos:sync --clean`, then starts the Next.js dev server. |
+| `pnpm build` | Runs `demos:sync --clean`, then `next build`. |
+| `pnpm start` | Serves the production build (`next start`). |
+| `pnpm demos:sync` | Copies demo assets from DemoApps into `public/demos` (see below). |
+| `pnpm types:check` | MDX codegen, Next typegen, and `tsc --noEmit`. |
+| `pnpm lint` | ESLint. |
+| `pnpm links:check` | Internal link checks (see `scripts/check-links.sh`). |
 
-In the project, you can see:
+## Demos (`/demos`)
 
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `lib/layout.shared.tsx`: Shared options for layouts, optional but preferred to keep.
+Interactive demos live under **`public/demos`** (HTML examples, `.zko` assets, optional SDK bundle). The app serves them as static files and lists them at `/demos`.
 
-| Route                     | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
-| `app/(home)`              | The route group for your landing page and other pages. |
-| `app/docs`                | The documentation layout and pages.                    |
-| `app/api/search/route.ts` | The Route Handler for search.                          |
+### Syncing from DemoApps
 
-### Fumadocs MDX
+If a **DemoApps** checkout sits **next to** this repo (`../DemoApps`), `pnpm demos:sync` copies:
 
-A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
+- `DemoApps/web/examples/**` → `public/demos/examples/`
+- `DemoApps/assets/zko/**` → `public/demos/zko/`
+- Optional: `../Zernikalos/.../zernikalos.js` → `public/demos/sdk/zernikalos.js` when that file exists
 
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
+Pass `--clean` to mirror sources (remove files in the destination that no longer exist upstream).
 
-## Learn More
+Override the DemoApps root:
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
+```bash
+DEMOAPPS_PATH=/path/to/DemoApps pnpm demos:sync --clean
+# or
+node scripts/sync-demos.mjs --demoapps /path/to/DemoApps --clean
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.dev) - learn about Fumadocs
+### CI and WebZite-only checkouts
+
+GitHub Actions (or any job that only clones **WebZite**) usually does **not** have `../DemoApps`. In that case **`demos:sync` skips copying** and exits successfully; the build uses whatever is already committed under `public/demos`. **Keep `public/demos` up to date in git** when you change demos upstream.
+
+To **fail the job** if DemoApps sources are missing (e.g. a monorepo workflow that checks out both repos):
+
+```bash
+DEMOS_SYNC_REQUIRED=1 pnpm demos:sync
+```
+
+## Project layout
+
+| Path | Role |
+| ---- | ---- |
+| `src/app/(home)` | Landing and related pages. |
+| `src/app/docs` | Documentation (Fumadocs MDX). |
+| `src/app/demos` | Demos index and per-demo pages (iframe + code tabs). |
+| `src/app/api` | API routes (e.g. search). |
+| `lib/source.ts` | Fumadocs content source; see [`loader()`](https://fumadocs.dev/docs/headless/source-api). |
+| `lib/layout.shared.tsx` | Shared layout options for docs. |
+| `source.config.ts` | MDX / frontmatter configuration. |
+| `scripts/sync-demos.mjs` | Demo asset sync (see above). |
+
+## Local development
+
+```bash
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Learn more
+
+- [Next.js documentation](https://nextjs.org/docs)
+- [Fumadocs](https://fumadocs.dev) — MDX, layouts, search
+- [Fumadocs MDX intro](https://fumadocs.dev/docs/mdx)

@@ -3,7 +3,7 @@
  * Sync demos from DemoApps into WebZite/public/demos (single source of truth).
  *
  * Sources:
- * - ../DemoApps/webdemo/examples/**    -> public/demos/examples/**
+ * - ../DemoApps/web/examples/**    -> public/demos/examples/**
  * - ../DemoApps/assets/zko/**          -> public/demos/zko/**
  * - (optional) ../Zernikalos/.../zernikalos.js -> public/demos/sdk/zernikalos.js
  *
@@ -41,7 +41,7 @@ const demoAppsRoot =
   process.env.DEMOAPPS_PATH ||
   path.resolve(repoRoot, "DemoApps");
 
-const srcExamplesDir = path.resolve(demoAppsRoot, "webdemo", "examples");
+const srcExamplesDir = path.resolve(demoAppsRoot, "web", "examples");
 const srcZkoDir = path.resolve(demoAppsRoot, "assets", "zko");
 const srcSdkPath = path.resolve(
   repoRoot,
