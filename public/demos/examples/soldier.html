@@ -41,10 +41,9 @@
         const loaded = await zernikalos.loader.loadFromUrl("../zko/gltf/soldier2.zko");
         root = loaded.root;
 
-        const scene = new zernikalos.objects.ZScene();
-        const camera = new zernikalos.objects.ZCamera();
+        const scene = new zernikalos.objects.ZScene.Companion.defaultScene();
+        const camera = zernikalos.search.findFirstCamera(scene);
         scene.addChild(root);
-        scene.addChild(camera);
         ctx.activeCamera = camera;
         ctx.scene = scene;
 

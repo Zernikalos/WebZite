@@ -1,0 +1,120 @@
+---
+title: Loading a model (.zko)
+description: Load packaged Zernikalos assets into your scene from Android assets, the iOS bundle, or the web.
+---
+
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+
+A `.zko` file is the runtime package produced by [Nest](/docs/quick-start/nest-install). Loading it returns a [`ZKo`](https://github.com/Zernikalos/Zernikalos) object: the graph you render is typically `zko.root`, and skeletal clips (if any) live in `zko.actions`.
+
+## Where to put files
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    Copy `.zko` files into `app/src/main/assets/`. Open them with `AssetManager` and pass the bytes to `loadFromProto`.
+  </Tab>
+  <Tab value="iOS">
+    Add `.zko` files to the app target and include them in **Copy Bundle Resources**. Load by filename (without extension) via `ZkoLoader`.
+  </Tab>
+  <Tab value="JavaScript">
+    Serve `.zko` as static files (for example under `public/`). Use `fetch` + `loadFromProto`, or `loadFromUrl` when the runtime exposes it.
+  </Tab>
+</Tabs>
+
+## Loading APIs
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    ```kotlin
+    import zernikalos.loader.loadFromProto
+
+    val bytes = assets.open("Soldier0160.zko").use { it.readBytes() }
+    val zko = loadFromProto(bytes)
+    val root = zko.root // Often a ZGroup; add as child of ZScene
+    ```
+  </Tab>
+  <Tab value="iOS">
+    ```swift
+    let zko = ZkoLoader.companion.loadFromMainBundlePathSync(fileName: "Soldier0160")
+    let root = zko?.root
+    ```
+  </Tab>
+  <Tab value="JavaScript">
+    ```javascript
+    import { zernikalos } from '@zernikalos/zernikalos';
+
+    // From ArrayBuffer (typical bundled app)
+    const res = await fetch('/Fox.zko');
+    const bytes = new Int8Array(await res.arrayBuffer());
+    const zko = await zernikalos.loader.loadFromProto(bytes);
+
+    // Or URL helper (when available in your build)
+    // const zko = await zernikalos.loader.loadFromUrl('Fox.zko');
+    ```
+  </Tab>
+</Tabs>
+
+## Attach the root to your scene
+
+After loading, add `zko.root` to a [`ZScene`](https://github.com/Zernikalos/Zernikalos/blob/main/docs/api-reference/scene-creation.md) and assign `context.scene`. You usually also set [`activeCamera`](/docs/quick-start/scene-and-camera) and add at least one [light](/docs/quick-start/scene-lighting) so materials shade correctly.
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    ```kotlin
+    val scene = ZScene()
+    scene.addChild(zko.root)
+    context.scene = scene
+    ```
+  </Tab>
+  <Tab value="iOS">
+    ```swift
+    let scene = ZScene()
+    if let r = zko?.root { scene.addChild(child: r) }
+    context.scene = scene
+    ```
+  </Tab>
+  <Tab value="JavaScript">
+    ```javascript
+    const scene = new zernikalos.objects.ZScene();
+    scene.addChild(zko.root);
+    ctx.scene = scene;
+    ```
+  </Tab>
+</Tabs>
+
+## Finding the main mesh
+
+Exported files often nest meshes under groups. Use the search helpers instead of hard-coding child indices:
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    ```kotlin
+    import zernikalos.search.findFirstModel
+
+    val model = findFirstModel(scene!!)
+    model?.transform?.rotate(90f, 0f, 0f, 1f)
+    ```
+  </Tab>
+  <Tab value="iOS">
+    ```swift
+    let model = ZFinderKt.findFirstModel(root: scene)
+    model?.transform.rotate(angle: 90, x: 0, y: 0, z: 1)
+    ```
+  </Tab>
+  <Tab value="JavaScript">
+    ```javascript
+    const model = zernikalos.search.findFirstModel(scene);
+    model?.transform?.rotate(90, 0, 0, 1);
+    ```
+  </Tab>
+</Tabs>
+
+## Animations
+
+If the asset contains skeletal actions, read them from `zko.actions`, pick one, and drive it with `ZActionPlayer`.
+
+## Related
+
+- [Integrating Zernikalos](/docs/quick-start/adding-zk-to-your-project) — minimal lifecycle and full snippets
+- [Scene & camera](/docs/quick-start/scene-and-camera)
+- [Lighting](/docs/quick-start/scene-lighting)

@@ -1,0 +1,104 @@
+---
+title: Lighting your scene
+description: Add ambient, directional, point, and spot lights within engine limits.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+
+Materials need light in the scene. The lighting model is described in the engine’s [Lights Creation API](https://github.com/Zernikalos/Zernikalos/blob/main/docs/api-reference/lights-creation.md); this page summarizes what you typically wire in app code.
+
+## Light types
+
+| Type | Role |
+|------|------|
+| **Ambient** | Uniform base fill; prevents fully black shadows |
+| **Directional** | Distant sun/moon; set direction via transform rotation |
+| **Point** | Omni light at a position; range and decay on the point lamp |
+| **Spot** | Cone; inner/outer angles and falloff on the spot lamp |
+
+## Engine limits
+
+<Callout type="warn">
+  At most **one** ambient light is used (first enabled). At most **four** direct lights (**directional + point + spot** combined) participate; extras are culled in scene traversal order. Name lights and keep counts low for predictable results.
+</Callout>
+
+## Factory-style creation
+
+<Tabs items={['Kotlin', 'JavaScript', 'Swift']} groupId="lang">
+  <Tab value="Kotlin">
+    ```kotlin
+    import zernikalos.objects.ZLight
+    import zernikalos.math.ZColor
+    import zernikalos.math.ZVector3
+    import zernikalos.math.ZEulerAngles
+
+    val ambient = ZLight.createAmbientLight()
+    ambient.intensity = 0.25f
+
+    val sun = ZLight.createDirectionalLight()
+    sun.color = ZColor(1f, 0.95f, 0.85f)
+    sun.intensity = 1.2f
+    sun.transform.rotation = ZEulerAngles(-45f, 30f, 0f)
+
+    val lamp = ZLight.createPointLight()
+    lamp.transform.position = ZVector3(2f, 3f, 2f)
+    lamp.intensity = 1.5f
+
+    scene.addChild(ambient)
+    scene.addChild(sun)
+    scene.addChild(lamp)
+    ```
+  </Tab>
+  <Tab value="JavaScript">
+    ```javascript
+    import { ZLight, ZColor, ZVector3, ZEulerAngles } from '@zernikalos/zernikalos';
+
+    const ambient = ZLight.createAmbientLight();
+    ambient.intensity = 0.25;
+
+    const sun = ZLight.createDirectionalLight();
+    sun.color = new ZColor(1, 0.95, 0.85, 1);
+    sun.intensity = 1.2;
+    sun.transform.rotation = new ZEulerAngles(-45, 30, 0);
+
+    const lamp = ZLight.createPointLight();
+    lamp.transform.position = new ZVector3(2, 3, 2);
+    lamp.intensity = 1.5;
+
+    scene.addChild(ambient);
+    scene.addChild(sun);
+    scene.addChild(lamp);
+    ```
+  </Tab>
+  <Tab value="Swift">
+    ```swift
+    let ambient = ZLight()
+    ambient.ambientLamp = ZAmbientLamp()
+    ambient.color = ZColor(red: 1, green: 1, blue: 1, alpha: 1)
+    ambient.intensity = 0.25
+
+    let sun = ZLight.createDirectionalLight()
+    sun.color = ZColor(red: 1, green: 0.95, blue: 0.85, alpha: 1)
+    sun.intensity = 1.2
+    sun.transform.rotation = ZEulerAngles(pitch: -45, yaw: 30, roll: 0)
+
+    scene.addChild(child: ambient)
+    scene.addChild(child: sun)
+    ```
+  </Tab>
+</Tabs>
+
+## Platform notes
+
+- **Android / Kotlin:** A typical `onReady` path loads the `.zko`, builds a `ZScene`, then adds `createDirectionalLight`, `createAmbientLight`, a `ZCamera`, and the loaded root.
+- **iOS:** You can attach an ambient lamp to a `ZLight` and assign `context.sceneContext.activeAmbientLight` when you need explicit ambient control alongside other lights.
+- **Web:** Some integrations assign `directionalLamp` or `lamp` on a `ZLight` directly; the factory methods above keep types consistent with the official API docs.
+
+Use **`light.isEnabled`** to toggle lights without removing nodes.
+
+## Related
+
+- [Scene & camera](/docs/quick-start/scene-and-camera)
+- [Loading a model](/docs/quick-start/loading-a-model)
+- [Lights Creation API](https://github.com/Zernikalos/Zernikalos/blob/main/docs/api-reference/lights-creation.md) — three-point setups, indoor/outdoor presets, spot/point parameters
