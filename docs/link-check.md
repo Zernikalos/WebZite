@@ -48,7 +48,7 @@ The script checks that every internal link on the statically exported site (`out
 - **Default:** `pnpm links:check` only checks links that point to `http://127.0.0.1:${PORT}`. External URLs are skipped.
 - **Include externals:** `pnpm links:check:all` (runs the same script with `--all`), so linkinator also checks external links (slower and can fail on third-party sites).
 - Some Dokka-generated source links may point to GitHub and fail if the upstream URL is wrong (for example `tree` used for a file path). Those are real external-link failures, not local route failures.
-- **GitHub-only check:** `pnpm links:check:github` checks a sample of `github.com/Zernikalos/Zernikalos` links found under `out/api` without touching Kotlin/Oracle docs.
+- **GitHub-only check:** `pnpm links:check:github` checks a sample of `github.com/Zernikalos/Zernikalos` source links found under `out/api`. It asks GitHub whether each path exists at the linked ref (Contents API, then `raw.githubusercontent.com`). HTML `blob` pages are skipped because GitHub often returns 404/429 to automated clients even when the file is in the repo. Optional: `GITHUB_TOKEN` / `GH_TOKEN` to avoid unauthenticated rate limits.
 
 ## Notes
 

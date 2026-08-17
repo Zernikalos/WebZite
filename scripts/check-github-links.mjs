@@ -30,6 +30,25 @@ function walkHtmlFiles(dir, out) {
   }
 }
 
+function isGithubUnicorn(status, body) {
+  if (status !== 503 && status !== 500) return false;
+  return /unicorn/i.test(body) || /we weren't able to load that/i.test(body);
+}
+
+function describeFailure(status, body, err) {
+  if (err) return `network error: ${err}`;
+  if (isGithubUnicorn(status, body)) {
+    return `${status} GitHub unicorn (pink unicorn outage page — GitHub is down, retry later)`;
+  }
+  if (status === 404) return '404 not found';
+  if (status === 403) return '403 forbidden (rate limit or blocked)';
+  if (status === 429) return '429 too many requests (rate limited)';
+  if (status === 503) return '503 service unavailable';
+  if (status >= 500) return `${status} GitHub server error`;
+  if (status >= 400) return `${status} bad status`;
+  return `unexpected status ${status}`;
+}
+
 const htmlFiles = [];
 walkHtmlFiles(API_DIR, htmlFiles);
 
@@ -52,7 +71,7 @@ const sample = allLinks.slice(0, Math.max(0, MAX_LINKS));
 // eslint-disable-next-line no-console
 console.log(`[github-links] Found ${allLinks.length} unique GitHub links under out/api; checking ${sample.length}.`);
 
-async function fetchOk(url) {
+async function checkUrl(url) {
   // HEAD sometimes gets blocked/redirect weirdly; use GET but keep it cheap.
   const res = await fetch(url, {
     method: 'GET',
@@ -62,7 +81,9 @@ async function fetchOk(url) {
       'Accept': 'text/html,application/xhtml+xml'
     }
   });
-  return res.status >= 200 && res.status < 400;
+  const body = await res.text();
+  const ok = res.status >= 200 && res.status < 400;
+  return { url, ok, status: res.status, body };
 }
 
 async function worker(queue, failures) {
@@ -70,10 +91,16 @@ async function worker(queue, failures) {
     const url = queue.pop();
     if (!url) return;
     try {
-      const ok = await fetchOk(url);
-      if (!ok) failures.push({ url, status: 'bad-status' });
+      const result = await checkUrl(url);
+      if (!result.ok) {
+        failures.push({
+          url,
+          reason: describeFailure(result.status, result.body),
+          unicorn: isGithubUnicorn(result.status, result.body),
+        });
+      }
     } catch (err) {
-      failures.push({ url, status: 'error', err: String(err) });
+      failures.push({ url, reason: describeFailure(0, '', String(err)) });
     }
   }
 }
@@ -84,15 +111,21 @@ const workers = Array.from({ length: Math.max(1, CONCURRENCY) }, () => worker(qu
 await Promise.all(workers);
 
 if (failures.length > 0) {
+  const unicornCount = failures.filter((f) => f.unicorn).length;
   // eslint-disable-next-line no-console
   console.error(`[github-links] FAIL: ${failures.length} broken GitHub links (sample).`);
+  if (unicornCount > 0) {
+    // eslint-disable-next-line no-console
+    console.error(
+      `[github-links] ${unicornCount} hit GitHub's pink unicorn page — this is a GitHub outage, not a missing file.`,
+    );
+  }
   for (const f of failures.slice(0, 20)) {
     // eslint-disable-next-line no-console
-    console.error(`- ${f.url} (${f.status}${f.err ? `: ${f.err}` : ''})`);
+    console.error(`- ${f.url} (${f.reason})`);
   }
   process.exit(1);
 }
 
 // eslint-disable-next-line no-console
 console.log('[github-links] OK');
-
