@@ -54,9 +54,9 @@ export function syncApi({
       process.exitCode = 1;
       return { skipped: true, failed: true };
     }
-    console.warn(`[api:sync] ${msg}`);
+    console.warn(`[sync:api] ${msg}`);
     console.warn(
-      "[api:sync] Skipping sync (use committed api/). To fail when sources are missing, set API_SYNC_REQUIRED=1.",
+      "[sync:api] Skipping sync (use committed api/). To fail when sources are missing, set API_SYNC_REQUIRED=1.",
     );
     return { skipped: true, failed: false };
   }
@@ -95,12 +95,12 @@ export function syncApi({
       process.exitCode = 1;
       return { skipped: false, failed: true };
     }
-    console.warn(`[api:sync] ${msg}`);
+    console.warn(`[sync:api] ${msg}`);
   }
 
   if (anyMissing && !strict) {
     console.warn(
-      "[api:sync] Some entries were missing; partial sync completed.",
+      "[sync:api] Some entries were missing; partial sync completed.",
     );
   }
 
@@ -117,6 +117,6 @@ export function syncApi({
     }
   }
 
-  console.log("[api:sync] Done.");
+  console.log("[sync:api] Done.");
   return { skipped: false, failed: false };
 }

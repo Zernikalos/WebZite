@@ -62,9 +62,9 @@ export function syncDemos({
       process.exitCode = 1;
       return { skipped: true, failed: true };
     }
-    console.warn(`[demos:sync] ${msg}`);
+    console.warn(`[sync:demos] ${msg}`);
     console.warn(
-      "[demos:sync] Skipping sync (use committed public/demos). To fail when sources are missing, set DEMOS_SYNC_REQUIRED=1.",
+      "[sync:demos] Skipping sync (use committed public/demos). To fail when sources are missing, set DEMOS_SYNC_REQUIRED=1.",
     );
     return { skipped: true, failed: false };
   }
@@ -93,6 +93,6 @@ export function syncDemos({
     console.log(`SDK not found (skipping): ${srcSdkPath}`);
   }
 
-  console.log("[demos:sync] Done.");
+  console.log("[sync:demos] Done.");
   return { skipped: false, failed: false };
 }

@@ -5,7 +5,8 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  ci:
+    name: Build and checks
     runs-on: ubuntu-latest
 
     permissions:
@@ -13,25 +14,32 @@ jobs:
       packages: read
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
         with:
           version: 11.3.0
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
         with:
           node-version: '24'
           cache: 'pnpm'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@zernikalos'
-      - run: pnpm install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Audit dependencies
         run: pnpm audit --audit-level=high
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: pnpm run build
+      - name: Build
+        run: pnpm run build
       - name: Check internal links
-        run: pnpm links:check
-      - name: Check GitHub source links (sample)
-        run: pnpm links:check:github
+        run: pnpm checklinks
+      - name: Check GitHub source links
+        run: pnpm checklinks:github

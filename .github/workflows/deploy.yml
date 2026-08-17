@@ -1,11 +1,25 @@
-name: Deploy Website to Org Pages
+name: Deploy
 
 on:
   push:
     branches: [main]
 
 jobs:
+  pages-access:
+    name: Check Pages repository
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Verify access to zernikalos.github.io
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        run: bash scripts/check-pages-repo.sh
+
   deploy:
+    name: Build and publish
+    needs: pages-access
     runs-on: ubuntu-latest
 
     permissions:
@@ -13,33 +27,40 @@ jobs:
       packages: read
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
         with:
           version: 11.3.0
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
         with:
           node-version: '24'
           cache: 'pnpm'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@zernikalos'
-      - run: pnpm install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Audit dependencies
         run: pnpm audit --audit-level=high
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: pnpm run build
+      - name: Build
+        run: pnpm run build
       - name: Check internal links
-        run: pnpm links:check
-      - name: Check GitHub source links (sample)
-        run: pnpm links:check:github
+        run: pnpm checklinks
+      - name: Check GitHub source links
+        run: pnpm checklinks:github
       - name: Disable Jekyll on GitHub Pages
         run: touch out/.nojekyll
-      - name: Deploy to zernikalos.github.io
+      - name: Publish to zernikalos.github.io
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}

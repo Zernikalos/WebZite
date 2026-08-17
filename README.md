@@ -21,11 +21,13 @@ pnpm install
 | `pnpm build` | Runs `next build` (does **not** sync). |
 | `pnpm start` | Serves the production build (`next start`). |
 | `pnpm sync` | Syncs demos **and** API docs (see below). |
-| `pnpm sync demos` / `pnpm demos:sync` | Copies demo assets from DemoApps into `public/demos`. |
-| `pnpm sync api` / `pnpm api:sync` | Copies Dokka HTML into `api/`. |
+| `pnpm sync demos` / `pnpm sync:demos` | Copies demo assets from DemoApps into `public/demos`. |
+| `pnpm sync api` / `pnpm sync:api` | Copies Dokka HTML into `api/`. |
 | `pnpm types:check` | MDX codegen, Next typegen, and `tsc --noEmit`. |
 | `pnpm lint` | ESLint. |
-| `pnpm links:check` | Internal link checks (see `scripts/check-links.sh`). |
+| `pnpm checklinks` | Internal link checks (see `scripts/check-links.sh`). |
+| `pnpm checklinks:api` | Internal + external link checks. |
+| `pnpm checklinks:github` | Sample of GitHub source links under `out/api`. |
 
 Sync is **manual only** — run it when upstream demos or Dokka output change. Default paths live in [`sync.config.mjs`](sync.config.mjs).
 
