@@ -5,7 +5,7 @@ description: Load packaged Zernikalos assets into your scene from Android assets
 
 import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
 
-A `.zko` file is the runtime package produced by [Nest](/docs/quick-start/nest-install). Loading it returns a [`ZKo`](https://github.com/Zernikalos/Zernikalos) object: the graph you render is typically `zko.root`, and skeletal clips (if any) live in `zko.actions`.
+A `.zko` file is the runtime package produced by [Nest](/docs/quick-start/nest-install). Loading it returns a [`ZKo`](https://github.com/Zernikalos/Zernikalos) object: the graph you render is typically `zko.root`, and skeletal clips (if any) live in `zko.actions` — see [Playing skeletal animations](/docs/quick-start/skeletal-animation).
 
 ## Where to put files
 
@@ -17,7 +17,7 @@ A `.zko` file is the runtime package produced by [Nest](/docs/quick-start/nest-i
     Add `.zko` files to the app target and include them in **Copy Bundle Resources**. Load by filename (without extension) via `ZkoLoader`.
   </Tab>
   <Tab value="JavaScript">
-    Serve `.zko` as static files (for example under `public/`). Use `fetch` + `loadFromProto`, or `loadFromUrl` when the runtime exposes it.
+    Serve `.zko` as static files (for example under `public/`). Use `fetch` + `loadFromProto`, or `loadFromUrl`.
   </Tab>
 </Tabs>
 
@@ -48,7 +48,7 @@ A `.zko` file is the runtime package produced by [Nest](/docs/quick-start/nest-i
     const bytes = new Int8Array(await res.arrayBuffer());
     const zko = await zernikalos.loader.loadFromProto(bytes);
 
-    // Or URL helper (when available in your build)
+    // Or the URL helper:
     // const zko = await zernikalos.loader.loadFromUrl('Fox.zko');
     ```
   </Tab>
@@ -92,29 +92,26 @@ Exported files often nest meshes under groups. Use the search helpers instead of
     import zernikalos.search.findFirstModel
 
     val model = findFirstModel(scene!!)
-    model?.transform?.rotate(90f, 0f, 0f, 1f)
+    model?.transform?.rotateDegrees(90f, 0f, 0f, 1f)
     ```
   </Tab>
   <Tab value="iOS">
     ```swift
     let model = ZFinderKt.findFirstModel(root: scene)
-    model?.transform.rotate(angle: 90, x: 0, y: 0, z: 1)
+    model?.transform.rotateDegrees(angle: 90, x: 0, y: 0, z: 1)
     ```
   </Tab>
   <Tab value="JavaScript">
     ```javascript
     const model = zernikalos.search.findFirstModel(scene);
-    model?.transform?.rotate(90, 0, 0, 1);
+    model?.transform?.rotateDegrees(90, 0, 0, 1);
     ```
   </Tab>
 </Tabs>
 
-## Animations
-
-If the asset contains skeletal actions, read them from `zko.actions`, pick one, and drive it with `ZActionPlayer`.
-
 ## Related
 
+- [Playing skeletal animations](/docs/quick-start/skeletal-animation) — `ZActionPlayer`, clips in `zko.actions`, and `onUpdate`
 - [Integrating Zernikalos](/docs/quick-start/adding-zk-to-your-project) — minimal lifecycle and full snippets
 - [Scene & camera](/docs/quick-start/scene-and-camera)
 - [Lighting](/docs/quick-start/scene-lighting)

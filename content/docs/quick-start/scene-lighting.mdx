@@ -54,15 +54,15 @@ Materials need light in the scene. The lighting model is described in the engine
     ```javascript
     import { ZLight, ZColor, ZVector3, ZEulerAngles } from '@zernikalos/zernikalos';
 
-    const ambient = ZLight.createAmbientLight();
+    const ambient = ZLight.Companion.createAmbientLight();
     ambient.intensity = 0.25;
 
-    const sun = ZLight.createDirectionalLight();
+    const sun = ZLight.Companion.createDirectionalLight();
     sun.color = new ZColor(1, 0.95, 0.85, 1);
     sun.intensity = 1.2;
     sun.transform.rotation = new ZEulerAngles(-45, 30, 0);
 
-    const lamp = ZLight.createPointLight();
+    const lamp = ZLight.Companion.createPointLight();
     lamp.transform.position = new ZVector3(2, 3, 2);
     lamp.intensity = 1.5;
 
@@ -73,12 +73,11 @@ Materials need light in the scene. The lighting model is described in the engine
   </Tab>
   <Tab value="Swift">
     ```swift
-    let ambient = ZLight()
-    ambient.ambientLamp = ZAmbientLamp()
+    let ambient = ZLight.companion.createAmbientLight()
     ambient.color = ZColor(red: 1, green: 1, blue: 1, alpha: 1)
     ambient.intensity = 0.25
 
-    let sun = ZLight.createDirectionalLight()
+    let sun = ZLight.companion.createDirectionalLight()
     sun.color = ZColor(red: 1, green: 0.95, blue: 0.85, alpha: 1)
     sun.intensity = 1.2
     sun.transform.rotation = ZEulerAngles(pitch: -45, yaw: 30, roll: 0)
@@ -92,13 +91,14 @@ Materials need light in the scene. The lighting model is described in the engine
 ## Platform notes
 
 - **Android / Kotlin:** A typical `onReady` path loads the `.zko`, builds a `ZScene`, then adds `createDirectionalLight`, `createAmbientLight`, a `ZCamera`, and the loaded root.
-- **iOS:** You can attach an ambient lamp to a `ZLight` and assign `context.sceneContext.activeAmbientLight` when you need explicit ambient control alongside other lights.
-- **Web:** Some integrations assign `directionalLamp` or `lamp` on a `ZLight` directly; the factory methods above keep types consistent with the official API docs.
+- **iOS:** Prefer `ZLight.companion.createAmbientLight()` / `createDirectionalLight()`. Assign the lamp with `light.lamp` if you construct a `ZLight` yourself. Ambient and direct lights are discovered from the scene graph each frame.
+- **Web:** Factory methods live on `ZLight.Companion` (for example `ZLight.Companion.createAmbientLight()`). You can also set `light.lamp` to a `ZDirectionalLamp` (or another lamp type) directly.
 
-Use **`light.isEnabled`** to toggle lights without removing nodes.
+Use **`light.enable()`** / **`light.disable()`** to toggle lights without removing nodes (`isEnabled` is read-only).
 
 ## Related
 
 - [Scene & camera](/docs/quick-start/scene-and-camera)
 - [Loading a model](/docs/quick-start/loading-a-model)
+- [Playing skeletal animations](/docs/quick-start/skeletal-animation)
 - [Lights Creation API](https://github.com/Zernikalos/Zernikalos/blob/main/docs/api-reference/lights-creation.md) — three-point setups, indoor/outdoor presets, spot/point parameters

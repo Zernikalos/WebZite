@@ -82,7 +82,7 @@ The `ZContext` is passed to all lifecycle methods. It gives you access to the ac
 ### Lifecycle Methods
 You control the engine via the `ZSceneStateHandler` interface:
 - `onReady`: Called once when the engine is initialized. Ideal for loading models.
-- `onUpdate`: Called every frame. Use this for game logic and animations.
+- `onUpdate`: Called every frame. Use this for game logic and for `ZActionPlayer.update()` when playing skeletal clips (see [Playing skeletal animations](/docs/quick-start/skeletal-animation)).
 - `onResize`: Called when the view dimensions change.
 - `onRender`: Called every frame for the final draw pass.
 
@@ -270,5 +270,6 @@ Finally, here are full, copy-pasteable examples for each platform including came
 ## What's next
 
 - [Loading a model (.zko)](/docs/quick-start/loading-a-model) — assets paths, `loadFromProto` / `loadFromUrl`, and `findFirstModel`
+- [Playing skeletal animations](/docs/quick-start/skeletal-animation) — `ZActionPlayer`, clips, and `onUpdate`
 - [Scene & camera](/docs/quick-start/scene-and-camera) — scene graph, default scene, and `activeCamera`
 - [Lighting your scene](/docs/quick-start/scene-lighting) — light types and engine limits
