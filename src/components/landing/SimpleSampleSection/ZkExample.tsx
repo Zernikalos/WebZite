@@ -8,7 +8,10 @@ interface ZkExampleProps {
 }
 
 function listActions(loaded: {
-  actions?: { toArray?: () => unknown[]; asJsReadonlyArrayView?: () => unknown[] } | null;
+  actions?: {
+    toArray?: () => readonly unknown[];
+    asJsReadonlyArrayView?: () => readonly unknown[];
+  } | null;
 }): any[] {
   const actions = loaded.actions;
   if (!actions) return [];

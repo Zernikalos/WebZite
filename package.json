@@ -2,6 +2,11 @@
   "name": "webzite2",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@11.3.0",
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11.1"
+  },
   "scripts": {
     "sync": "node scripts/sync.mjs",
     "demos:sync": "node scripts/sync.mjs demos",

@@ -4,8 +4,8 @@ Next.js site for **Zernikalos** documentation and demos, built with [Fumadocs](h
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/) (LTS recommended)
-- [pnpm](https://pnpm.io/)
+- [Node.js](https://nodejs.org/) 24 or later
+- [pnpm](https://pnpm.io/) 11.1 or later (`packageManager` is pinned to 11.3.0)
 
 ## Setup
 
