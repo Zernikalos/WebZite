@@ -2,7 +2,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">Zernikalos</a><span class="delimiter">/</span><a href="../index.html">zernikalos.action</a><span class="delimiter">/</span><span class="current">ZActionPlayer</span></div>
   <div class="cover ">
     <h1 class="cover"><span>ZAction</span><wbr></wbr><span><span>Player</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ZActionPlayer</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/Zernikalos/Zernikalos/tree/main/engine/src/commonMain/kotlin/zernikalos/action/ZActionPlayer.kt#L22">source</a>)</span></span></div><p class="paragraph">Class that allows playback of skeletal actions stored in ZSkeletalAction. Provides playback control such as play, pause, and retrieving the current state of the animation at a specific moment.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ZActionPlayer</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/Zernikalos/Zernikalos/tree/main/engine/src/commonMain/kotlin/zernikalos/action/ZActionPlayer.kt#L34">source</a>)</span></span></div><p class="paragraph">Allows playback of skeletal actions stored in <a href="../-z-skeletal-action/index.html">ZSkeletalAction</a>.</p><p class="paragraph">Playback is bound to a <a href="../../zernikalos.objects/-z-skeleton/index.html">ZSkeleton</a>: this class owns the clock (time, speed, loop, play state) and commits the sampled clip pose to that skeleton inside <a href="update.html">update</a> each frame (wall clock or explicit <a href="update.html">update</a> with elapsed seconds). Typical host integration: call <a href="update.html">update</a> once per frame before skinning or render.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -26,54 +26,58 @@
           </div>
         </div>
       </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="762822296%2FProperties%2F1015982541" anchor-label="currentTime" id="762822296%2FProperties%2F1015982541" data-filterable-set=":engine/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-time.html"><span>current</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="762822296%2FProperties%2F1015982541"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="current-time.html">currentTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Current playback time in seconds (writable only inside this player).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="125681736%2FProperties%2F1015982541" anchor-label="duration" id="125681736%2FProperties%2F1015982541" data-filterable-set=":engine/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="duration.html"><span><span>duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="125681736%2FProperties%2F1015982541"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="duration.html">duration</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Total duration of the current action in seconds, or 0 if none.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="406086874%2FProperties%2F1015982541" anchor-label="isPlaying" id="406086874%2FProperties%2F1015982541" data-filterable-set=":engine/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-playing.html"><span>is</span><wbr></wbr><span><span>Playing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="406086874%2FProperties%2F1015982541"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-playing.html">isPlaying</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether the action is currently playing (writable only inside this player).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div data-togglable="FUNCTION">
         <h2 class="tableheader">Functions</h2>
-        <div class="table"><a data-name="1469674763%2FFunctions%2F1015982541" anchor-label="getCurrentKeyFrame" id="1469674763%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
-          <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="get-current-key-frame.html"><span>get</span><wbr></wbr><span>Current</span><wbr></wbr><span>Key</span><wbr></wbr><span><span>Frame</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1469674763%2FFunctions%2F1015982541"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-current-key-frame.html"><span class="token function">getCurrentKeyFrame</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-z-key-frame/index.html">ZKeyFrame</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Gets the current keyframe based on playback time</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1702849388%2FFunctions%2F1015982541" anchor-label="getCurrentTime" id="1702849388%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
-          <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="get-current-time.html"><span>get</span><wbr></wbr><span>Current</span><wbr></wbr><span><span>Time</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1702849388%2FFunctions%2F1015982541"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-current-time.html"><span class="token function">getCurrentTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-444767244%2FFunctions%2F1015982541" anchor-label="getDuration" id="-444767244%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
-          <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="get-duration.html"><span>get</span><wbr></wbr><span><span>Duration</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-444767244%2FFunctions%2F1015982541"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-duration.html"><span class="token function">getDuration</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-788914821%2FFunctions%2F1015982541" anchor-label="getProgress" id="-788914821%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
+        <div class="table"><a data-name="-788914821%2FFunctions%2F1015982541" anchor-label="getProgress" id="-788914821%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
           <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -88,21 +92,6 @@
               </div>
             </div>
           </div>
-<a data-name="406086874%2FFunctions%2F1015982541" anchor-label="isPlaying" id="406086874%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
-          <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="is-playing.html"><span>is</span><wbr></wbr><span><span>Playing</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="406086874%2FFunctions%2F1015982541"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-playing.html"><span class="token function">isPlaying</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
 <a data-name="447414088%2FFunctions%2F1015982541" anchor-label="pause" id="447414088%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
           <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
             <div class="main-subrow keyValue ">
@@ -113,7 +102,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="pause.html"><span class="token function">pause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Pauses playback</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="pause.html"><span class="token function">pause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Pauses playback without resetting <a href="current-time.html">currentTime</a>.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -128,7 +117,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="play.html"><span class="token function">play</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Starts playing the action</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="play.html"><span class="token function">play</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Starts playing the current action.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -143,7 +132,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="reset-timer.html"><span class="token function">resetTimer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Resets the internal time counter. Useful when a lot of time has passed since the last update and we don't want a large jump in the animation.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="reset-timer.html"><span class="token function">resetTimer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Resets the internal wall-clock baseline used by <a href="update.html">update</a>.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -158,22 +147,22 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="seek.html"><span class="token function">seek</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">time<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Jumps to a specific point in time</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="seek.html"><span class="token function">seek</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">time<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Seeks to <a href="seek.html">time</a> (clamped to the clip range) and reapplies the pose at that time.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1924692679%2FFunctions%2F1015982541" anchor-label="setAction" id="-1924692679%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
+<a data-name="-712329205%2FFunctions%2F1015982541" anchor-label="setAction" id="-712329205%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
           <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="set-action.html"><span>set</span><wbr></wbr><span><span>Action</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1924692679%2FFunctions%2F1015982541"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-712329205%2FFunctions%2F1015982541"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-action.html"><span class="token function">setAction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">obj<span class="token operator">: </span><a href="../../zernikalos.objects/-z-model/index.html">ZModel</a><span class="token punctuation">, </span></span><span class="parameter ">action<span class="token operator">: </span><a href="../-z-skeletal-action/index.html">ZSkeletalAction</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the action to be played</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-action.html"><span class="token function">setAction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">skeleton<span class="token operator">: </span><a href="../../zernikalos.objects/-z-skeleton/index.html">ZSkeleton</a><span class="token punctuation">, </span></span><span class="parameter ">action<span class="token operator">: </span><a href="../-z-skeletal-action/index.html">ZSkeletalAction</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the skeleton and clip to play, resets playback time to zero, and applies the pose at time 0 so the skeleton matches the start of the clip immediately.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -188,7 +177,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-playback-speed.html"><span class="token function">setPlaybackSpeed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">speed<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the playback speed</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-playback-speed.html"><span class="token function">setPlaybackSpeed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">speed<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the playback speed multiplier.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -203,22 +192,22 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="stop.html"><span class="token function">stop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Stops playback and resets the time</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="stop.html"><span class="token function">stop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Stops playback, resets time to the start of the clip, and reapplies the pose at time 0.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1617508749%2FFunctions%2F1015982541" anchor-label="update" id="-1617508749%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
+<a data-name="1356439037%2FFunctions%2F1015982541" anchor-label="update" id="1356439037%2FFunctions%2F1015982541" data-filterable-set=":engine/commonMain"></a>
           <div class="table-row table-row_content" data-filterable-current=":engine/commonMain" data-filterable-set=":engine/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="update.html"><span><span>update</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1617508749%2FFunctions%2F1015982541"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1356439037%2FFunctions%2F1015982541"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Updates the playback state by automatically calculating the time elapsed since the last call.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":engine/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Updates playback using elapsed wall time since the last call (seconds), then commits the sampled pose to <span data-unresolved-link="zernikalos.action/ZActionPlayer/skeleton/#/PointingToDeclaration/">skeleton</span>.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">deltaTimeSeconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Advances playback by <a href="update.html">deltaTimeSeconds</a> (scaled by <span data-unresolved-link="zernikalos.action/ZActionPlayer/playbackSpeed/#/PointingToDeclaration/">playbackSpeed</span> when playing), then commits the sampled pose to <span data-unresolved-link="zernikalos.action/ZActionPlayer/skeleton/#/PointingToDeclaration/">skeleton</span>. Use for fixed-step or injected delta time instead of wall-clock <a href="update.html">update</a>.</p></div></div></div>
                 </div>
               </div>
             </div>

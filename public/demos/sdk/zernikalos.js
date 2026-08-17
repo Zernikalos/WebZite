@@ -29,179 +29,184 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var THROW_IAE = kotlin_kotlin.$_$.tb;
-  var Unit_instance = kotlin_kotlin.$_$.y;
-  var Enum = kotlin_kotlin.$_$.jb;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.oc;
-  var protoOf = kotlin_kotlin.$_$.v9;
-  var defineProp = kotlin_kotlin.$_$.s8;
-  var initMetadataForClass = kotlin_kotlin.$_$.c9;
+  var THROW_IAE = kotlin_kotlin.$_$.ub;
+  var Unit_instance = kotlin_kotlin.$_$.q2;
+  var Enum = kotlin_kotlin.$_$.kb;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.pc;
+  var protoOf = kotlin_kotlin.$_$.x9;
+  var defineProp = kotlin_kotlin.$_$.u8;
+  var initMetadataForClass = kotlin_kotlin.$_$.e9;
   var VOID = kotlin_kotlin.$_$.c;
   var ProtoNumber = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_protobuf.$_$.b;
   var createAnnotatedEnumSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.e2;
-  var LazyThreadSafetyMode_PUBLICATION_getInstance = kotlin_kotlin.$_$.z;
-  var lazy = kotlin_kotlin.$_$.mc;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.d9;
+  var LazyThreadSafetyMode_PUBLICATION_getInstance = kotlin_kotlin.$_$.r2;
+  var lazy = kotlin_kotlin.$_$.nc;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.f9;
   var PluginGeneratedSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.c2;
-  var THROW_CCE = kotlin_kotlin.$_$.sb;
+  var THROW_CCE = kotlin_kotlin.$_$.tb;
   var UnknownFieldException_init_$Create$ = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.u;
   var typeParametersSerializers = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.x1;
   var GeneratedSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.y1;
-  var initMetadataForObject = kotlin_kotlin.$_$.g9;
+  var initMetadataForObject = kotlin_kotlin.$_$.i9;
   var throwMissingFieldException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h2;
-  var objectCreate = kotlin_kotlin.$_$.u9;
-  var ensureNotNull = kotlin_kotlin.$_$.jc;
-  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.v7;
-  var getKClass = kotlin_kotlin.$_$.ga;
-  var hashCode = kotlin_kotlin.$_$.b9;
-  var System_instance = kotlin_kotlin.$_$.n;
-  var subtract = kotlin_kotlin.$_$.f8;
-  var toNumber = kotlin_kotlin.$_$.g8;
-  var coerceIn = kotlin_kotlin.$_$.ba;
+  var objectCreate = kotlin_kotlin.$_$.w9;
+  var SerializableWith = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.o2;
+  var ensureNotNull = kotlin_kotlin.$_$.kc;
+  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.x7;
+  var getKClass = kotlin_kotlin.$_$.ha;
+  var hashCode = kotlin_kotlin.$_$.d9;
+  var System_instance = kotlin_kotlin.$_$.f2;
+  var subtract = kotlin_kotlin.$_$.h8;
+  var toNumber = kotlin_kotlin.$_$.i8;
+  var coerceIn = kotlin_kotlin.$_$.ca;
   var get_nullable = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.z;
-  var toString = kotlin_kotlin.$_$.qc;
-  var equals = kotlin_kotlin.$_$.u8;
+  var toString = kotlin_kotlin.$_$.rc;
+  var equals = kotlin_kotlin.$_$.w8;
   var ArrayListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.v1;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.c1;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.u2;
   var StringSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.o;
   var copyToArray = kotlin_kotlin.$_$.n5;
-  var getStringHashCode = kotlin_kotlin.$_$.a9;
+  var getStringHashCode = kotlin_kotlin.$_$.c9;
   var HashMapSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.z1;
-  var union = kotlin_kotlin.$_$.z6;
-  var HashMap_init_$Create$ = kotlin_kotlin.$_$.f1;
+  var union = kotlin_kotlin.$_$.b7;
+  var HashMap_init_$Create$ = kotlin_kotlin.$_$.x2;
   var FloatSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.m;
-  var initMetadataForInterface = kotlin_kotlin.$_$.e9;
-  var getNumberHashCode = kotlin_kotlin.$_$.y8;
-  var Exception = kotlin_kotlin.$_$.lb;
-  var last = kotlin_kotlin.$_$.a6;
-  var first = kotlin_kotlin.$_$.r5;
-  var Companion_getInstance = kotlin_kotlin.$_$.q;
-  var isInterface = kotlin_kotlin.$_$.p9;
-  var Error_init_$Create$ = kotlin_kotlin.$_$.v1;
+  var initMetadataForInterface = kotlin_kotlin.$_$.g9;
+  var getNumberHashCode = kotlin_kotlin.$_$.a9;
+  var Exception = kotlin_kotlin.$_$.mb;
+  var last = kotlin_kotlin.$_$.b6;
+  var first = kotlin_kotlin.$_$.s5;
+  var Companion_getInstance = kotlin_kotlin.$_$.i2;
+  var isInterface = kotlin_kotlin.$_$.r9;
+  var Error_init_$Create$ = kotlin_kotlin.$_$.n3;
   var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.n2;
-  var KMutableProperty0 = kotlin_kotlin.$_$.ia;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.z8;
-  var KMutableProperty1 = kotlin_kotlin.$_$.ja;
-  var toString_0 = kotlin_kotlin.$_$.y9;
+  var constructCallableReference = kotlin_kotlin.$_$.t8;
+  var KMutableProperty0 = kotlin_kotlin.$_$.ja;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.b9;
+  var KMutableProperty1 = kotlin_kotlin.$_$.ka;
+  var listOf = kotlin_kotlin.$_$.d6;
+  var toString_0 = kotlin_kotlin.$_$.aa;
   var PolymorphicSerializer_init_$Create$ = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.q;
   var SerializerFactory = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.d2;
-  var KProperty0 = kotlin_kotlin.$_$.ka;
-  var KProperty1 = kotlin_kotlin.$_$.la;
+  var KProperty0 = kotlin_kotlin.$_$.la;
+  var KProperty1 = kotlin_kotlin.$_$.ma;
   var createSimpleEnumSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.f2;
   var ContextualSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l2;
   var ByteArraySerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.k;
   var IntSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.n;
   var BooleanSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.j;
-  var getBooleanHashCode = kotlin_kotlin.$_$.x8;
-  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.b2;
-  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.b1;
-  var sum = kotlin_kotlin.$_$.o6;
-  var IndexOutOfBoundsException_init_$Create$ = kotlin_kotlin.$_$.f2;
+  var getBooleanHashCode = kotlin_kotlin.$_$.z8;
+  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.t3;
+  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.t2;
+  var sum = kotlin_kotlin.$_$.q6;
+  var IndexOutOfBoundsException_init_$Create$ = kotlin_kotlin.$_$.x3;
   var arrayCopy = kotlin_kotlin.$_$.u4;
   var collectionSizeOrDefault = kotlin_kotlin.$_$.z4;
-  var toSet = kotlin_kotlin.$_$.w6;
-  var charSequenceLength = kotlin_kotlin.$_$.p8;
-  var charCodeAt = kotlin_kotlin.$_$.o8;
-  var toString_1 = kotlin_kotlin.$_$.p2;
-  var substring = kotlin_kotlin.$_$.xa;
-  var to = kotlin_kotlin.$_$.rc;
-  var enumEntries = kotlin_kotlin.$_$.u7;
+  var toSet = kotlin_kotlin.$_$.y6;
+  var charSequenceLength = kotlin_kotlin.$_$.r8;
+  var charCodeAt = kotlin_kotlin.$_$.q8;
+  var toString_1 = kotlin_kotlin.$_$.g;
+  var substring = kotlin_kotlin.$_$.ya;
+  var to = kotlin_kotlin.$_$.sc;
+  var enumEntries = kotlin_kotlin.$_$.w7;
   var Collection = kotlin_kotlin.$_$.f4;
-  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.m1;
-  var toMap = kotlin_kotlin.$_$.u6;
-  var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.n1;
-  var linkedMapOf = kotlin_kotlin.$_$.b6;
+  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.e3;
+  var toMap = kotlin_kotlin.$_$.w6;
+  var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.f3;
+  var linkedMapOf = kotlin_kotlin.$_$.c6;
   var firstOrNull = kotlin_kotlin.$_$.q5;
-  var plus = kotlin_kotlin.$_$.g6;
+  var plus = kotlin_kotlin.$_$.i6;
   var KtMutableSet = kotlin_kotlin.$_$.r4;
-  var plus_0 = kotlin_kotlin.$_$.h6;
-  var toMutableList = kotlin_kotlin.$_$.v6;
+  var plus_0 = kotlin_kotlin.$_$.j6;
+  var toMutableList = kotlin_kotlin.$_$.x6;
   var asJsMapView = kotlin_kotlin.$_$.p4;
   var asJsReadonlyMapView = kotlin_kotlin.$_$.m4;
   var KtMutableMap = kotlin_kotlin.$_$.q4;
-  var listOf = kotlin_kotlin.$_$.c6;
-  var mapOf = kotlin_kotlin.$_$.e6;
-  var getBigIntHashCode = kotlin_kotlin.$_$.w8;
-  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.o1;
-  var toList = kotlin_kotlin.$_$.t6;
-  var sortedWith = kotlin_kotlin.$_$.n6;
-  var FunctionAdapter = kotlin_kotlin.$_$.h8;
-  var Comparator = kotlin_kotlin.$_$.ib;
-  var compareValues = kotlin_kotlin.$_$.b7;
+  var listOf_0 = kotlin_kotlin.$_$.e6;
+  var mapOf = kotlin_kotlin.$_$.g6;
+  var getBigIntHashCode = kotlin_kotlin.$_$.y8;
+  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.g3;
+  var intersect = kotlin_kotlin.$_$.y5;
+  var joinToString = kotlin_kotlin.$_$.z5;
+  var toList = kotlin_kotlin.$_$.v6;
+  var sortedWith = kotlin_kotlin.$_$.p6;
+  var FunctionAdapter = kotlin_kotlin.$_$.j8;
+  var Comparator = kotlin_kotlin.$_$.jb;
+  var compareValues = kotlin_kotlin.$_$.d7;
   var emptyList = kotlin_kotlin.$_$.o5;
-  var take = kotlin_kotlin.$_$.p6;
+  var take = kotlin_kotlin.$_$.r6;
   var checkIndexOverflow = kotlin_kotlin.$_$.y4;
-  var getOrNull = kotlin_kotlin.$_$.s5;
+  var getOrNull = kotlin_kotlin.$_$.t5;
+  var toShort = kotlin_kotlin.$_$.z9;
   var SerializationException_init_$Create$ = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s;
-  var mapCapacity = kotlin_kotlin.$_$.d6;
-  var coerceAtLeast = kotlin_kotlin.$_$.z9;
-  var LinkedHashMap_init_$Create$_1 = kotlin_kotlin.$_$.l1;
+  var mapCapacity = kotlin_kotlin.$_$.f6;
+  var coerceAtLeast = kotlin_kotlin.$_$.ba;
+  var LinkedHashMap_init_$Create$_1 = kotlin_kotlin.$_$.d3;
   var SerializersModuleBuilder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.k2;
   var PolymorphicModuleBuilder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.j2;
-  var arrayOf = kotlin_kotlin.$_$.gc;
-  var createKType = kotlin_kotlin.$_$.ea;
-  var serializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r2;
+  var arrayOf = kotlin_kotlin.$_$.hc;
+  var createKType = kotlin_kotlin.$_$.fa;
+  var serializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s2;
   var ProtoBuf = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_protobuf.$_$.a;
-  var NotImplementedError = kotlin_kotlin.$_$.nb;
-  var NoSuchElementException_init_$Create$ = kotlin_kotlin.$_$.g2;
-  var compareTo = kotlin_kotlin.$_$.r8;
-  var repeat = kotlin_kotlin.$_$.ua;
-  var getValue = kotlin_kotlin.$_$.t5;
-  var HashSet_init_$Create$ = kotlin_kotlin.$_$.j1;
-  var Regex_init_$Create$ = kotlin_kotlin.$_$.s1;
-  var shiftRight = kotlin_kotlin.$_$.e8;
-  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.n2;
-  var charArrayOf = kotlin_kotlin.$_$.m8;
-  var trim = kotlin_kotlin.$_$.cb;
-  var toLong = kotlin_kotlin.$_$.ab;
-  var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.u1;
-  var numberToInt = kotlin_kotlin.$_$.t9;
+  var NotImplementedError = kotlin_kotlin.$_$.ob;
+  var NoSuchElementException_init_$Create$ = kotlin_kotlin.$_$.y3;
+  var compareTo = kotlin_kotlin.$_$.s8;
+  var repeat = kotlin_kotlin.$_$.va;
+  var getValue = kotlin_kotlin.$_$.u5;
+  var HashSet_init_$Create$ = kotlin_kotlin.$_$.b3;
+  var Regex_init_$Create$ = kotlin_kotlin.$_$.k3;
+  var shiftRight = kotlin_kotlin.$_$.g8;
+  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.e;
+  var charArrayOf = kotlin_kotlin.$_$.o8;
+  var trim = kotlin_kotlin.$_$.db;
+  var toLong = kotlin_kotlin.$_$.bb;
+  var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.m3;
+  var numberToInt = kotlin_kotlin.$_$.v9;
   var FloatArraySerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l;
-  var getKClassFromExpression = kotlin_kotlin.$_$.fa;
+  var getKClassFromExpression = kotlin_kotlin.$_$.ga;
   var contentEquals = kotlin_kotlin.$_$.b5;
   var contentHashCode = kotlin_kotlin.$_$.d5;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.d2;
-  var intersect = kotlin_kotlin.$_$.x5;
-  var joinToString = kotlin_kotlin.$_$.y5;
-  var isBlank = kotlin_kotlin.$_$.ra;
-  var substring_0 = kotlin_kotlin.$_$.ya;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.v3;
+  var isBlank = kotlin_kotlin.$_$.sa;
+  var substring_0 = kotlin_kotlin.$_$.za;
   var arrayListOf = kotlin_kotlin.$_$.v4;
-  var asSequence = kotlin_kotlin.$_$.na;
-  var toList_0 = kotlin_kotlin.$_$.pa;
-  var removeFirst = kotlin_kotlin.$_$.j6;
+  var asSequence = kotlin_kotlin.$_$.oa;
+  var toList_0 = kotlin_kotlin.$_$.qa;
+  var removeFirst = kotlin_kotlin.$_$.l6;
   var addAll = kotlin_kotlin.$_$.t4;
   var Default_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.a;
-  var serializer_0 = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s2;
-  var split = kotlin_kotlin.$_$.va;
-  var toInt = kotlin_kotlin.$_$.za;
-  var NumberFormatException = kotlin_kotlin.$_$.ob;
-  var toBits = kotlin_kotlin.$_$.pc;
-  var toByte = kotlin_kotlin.$_$.w9;
-  var FloatCompanionObject_instance = kotlin_kotlin.$_$.i;
-  var floatFromBits = kotlin_kotlin.$_$.v8;
-  var isByteArray = kotlin_kotlin.$_$.j9;
-  var toTypedArray = kotlin_kotlin.$_$.y6;
+  var serializer_0 = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t2;
+  var split = kotlin_kotlin.$_$.wa;
+  var toInt = kotlin_kotlin.$_$.ab;
+  var NumberFormatException = kotlin_kotlin.$_$.pb;
+  var toBits = kotlin_kotlin.$_$.qc;
+  var toByte = kotlin_kotlin.$_$.y9;
+  var FloatCompanionObject_instance = kotlin_kotlin.$_$.a2;
+  var floatFromBits = kotlin_kotlin.$_$.x8;
+  var isByteArray = kotlin_kotlin.$_$.l9;
+  var first_0 = kotlin_kotlin.$_$.r5;
+  var toTypedArray = kotlin_kotlin.$_$.a7;
   var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e;
-  var CoroutineImpl = kotlin_kotlin.$_$.s7;
+  var CoroutineImpl = kotlin_kotlin.$_$.u7;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.d7;
-  var initMetadataForLambda = kotlin_kotlin.$_$.f9;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.f7;
+  var initMetadataForLambda = kotlin_kotlin.$_$.h9;
   var Dispatchers_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.a;
   var CoroutineScope_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
   var await_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var copyOf = kotlin_kotlin.$_$.j5;
-  var sortedWith_0 = kotlin_kotlin.$_$.m6;
-  var RuntimeException_init_$Create$ = kotlin_kotlin.$_$.i2;
-  var numberToLong = kotlin_kotlin.$_$.c8;
-  var lines = kotlin_kotlin.$_$.sa;
-  var ArrayDeque_init_$Create$ = kotlin_kotlin.$_$.a1;
-  var isCharSequence = kotlin_kotlin.$_$.l9;
-  var trim_0 = kotlin_kotlin.$_$.db;
-  var removePrefix = kotlin_kotlin.$_$.ta;
-  var startsWith = kotlin_kotlin.$_$.wa;
-  var trimEnd = kotlin_kotlin.$_$.bb;
-  var map = kotlin_kotlin.$_$.oa;
-  var mutableListOf = kotlin_kotlin.$_$.f6;
+  var sortedWith_0 = kotlin_kotlin.$_$.o6;
+  var RuntimeException_init_$Create$ = kotlin_kotlin.$_$.a4;
+  var numberToLong = kotlin_kotlin.$_$.e8;
+  var lines = kotlin_kotlin.$_$.ta;
+  var ArrayDeque_init_$Create$ = kotlin_kotlin.$_$.s2;
+  var isCharSequence = kotlin_kotlin.$_$.n9;
+  var trim_0 = kotlin_kotlin.$_$.eb;
+  var removePrefix = kotlin_kotlin.$_$.ua;
+  var startsWith = kotlin_kotlin.$_$.xa;
+  var trimEnd = kotlin_kotlin.$_$.cb;
+  var map = kotlin_kotlin.$_$.pa;
+  var mutableListOf = kotlin_kotlin.$_$.h6;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(ZBaseType, 'ZBaseType', VOID, Enum);
@@ -377,6 +382,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(ZSkinningSerializer, 'ZSkinningSerializer', ZSkinningSerializer, ZComponentSerializer);
   initMetadataForClass(ZContext, 'ZContext');
   initMetadataForClass(ZContextCreator, 'ZContextCreator');
+  initMetadataForClass(ZLoadOp, 'ZLoadOp', VOID, Enum);
+  initMetadataForClass(ZStoreOp, 'ZStoreOp', VOID, Enum);
+  initMetadataForClass(ZGpuColorAttachmentDesc, 'ZGpuColorAttachmentDesc');
+  initMetadataForClass(ZGpuDepthStencilAttachmentDesc, 'ZGpuDepthStencilAttachmentDesc', ZGpuDepthStencilAttachmentDesc);
+  initMetadataForClass(ZGpuRenderPassDescriptor, 'ZGpuRenderPassDescriptor');
   initMetadataForInterface(ZRenderingContext, 'ZRenderingContext');
   initMetadataForClass(ZSceneContext, 'ZSceneContext', ZSceneContext);
   initMetadataForClass(ZSceneContextDefault, 'ZSceneContextDefault', ZSceneContextDefault, ZSceneContext);
@@ -402,106 +412,115 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(ZShaderGenerator, 'ZShaderGenerator', VOID, VOID, [ZLoggable]);
   initMetadataForClass(ZShaderGeneratorType, 'ZShaderGeneratorType', VOID, Enum);
   initMetadataForClass(ZShaderProgramParameters, 'ZShaderProgramParameters', ZShaderProgramParameters);
+  initMetadataForObject(PipelineCapabilitiesBuilderLogger, 'PipelineCapabilitiesBuilderLogger', VOID, VOID, [ZLoggable]);
   initMetadataForClass(sam$kotlin_Comparator$0, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
   initMetadataForClass(sam$kotlin_Comparator$0_0, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
-  initMetadataForClass(ZLoaderContext, 'ZLoaderContext', ZLoaderContext);
+  initMetadataForObject(GeometryMeshes, 'GeometryMeshes');
   initMetadataForCompanion(Companion_38);
   initMetadataForObject($serializer_22, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZkoHeader, 'ZkoHeader', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_22});
+  initMetadataForClass(ZObject, 'ZObject', VOID, VOID, [ZRef, ZTreeNode, ZLoggable], VOID, VOID, {0: Companion_getInstance_61});
+  initMetadataForClass(ZModel, 'ZModel', ZModel, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_41});
+  initMetadataForClass(ZCube, 'ZCube', ZCube, ZModel, VOID, VOID, VOID, {0: $serializer_getInstance_22});
   initMetadataForCompanion(Companion_39);
   initMetadataForObject($serializer_23, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZkoComponentCollection, 'ZkoComponentCollection', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_23});
+  initMetadataForClass(ZPlane, 'ZPlane', ZPlane, ZModel, VOID, VOID, VOID, {0: $serializer_getInstance_23});
+  initMetadataForClass(ZLoaderContext, 'ZLoaderContext', ZLoaderContext);
   initMetadataForCompanion(Companion_40);
   initMetadataForObject($serializer_24, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZkoFormat, 'ZkoFormat', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_24});
+  initMetadataForClass(ZkoHeader, 'ZkoHeader', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_24});
   initMetadataForCompanion(Companion_41);
   initMetadataForObject($serializer_25, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZkoHierarchyNode, 'ZkoHierarchyNode', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_25});
-  initMetadataForClass(ZKo, 'ZKo');
+  initMetadataForClass(ZkoComponentCollection, 'ZkoComponentCollection', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_25});
   initMetadataForCompanion(Companion_42);
   initMetadataForObject($serializer_26, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZkoObjectProto, 'ZkoObjectProto', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_26});
+  initMetadataForClass(ZkoFormat, 'ZkoFormat', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_26});
   initMetadataForCompanion(Companion_43);
   initMetadataForObject($serializer_27, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZkoObjectProtoDef, 'ZkoObjectProtoDef', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_27});
+  initMetadataForClass(ZkoHierarchyNode, 'ZkoHierarchyNode', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_27});
+  initMetadataForClass(ZKo, 'ZKo');
+  initMetadataForCompanion(Companion_44);
+  initMetadataForObject($serializer_28, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZkoObjectProto, 'ZkoObjectProto', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_28});
+  initMetadataForCompanion(Companion_45);
+  initMetadataForObject($serializer_29, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZkoObjectProtoDef, 'ZkoObjectProtoDef', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_29});
   initMetadataForClass(ZkoObjectProtoSerializer, 'ZkoObjectProtoSerializer', VOID, VOID, [KSerializer]);
   initMetadataForClass(ZLogLevel, 'ZLogLevel', VOID, Enum, [Comparator]);
-  initMetadataForCompanion(Companion_44);
+  initMetadataForCompanion(Companion_46);
   initMetadataForClass(ZLogger, 'ZLogger');
   initMetadataForInterface(ZLoggerAdapter, 'ZLoggerAdapter');
+  initMetadataForObject(Angles, 'Angles');
   initMetadataForInterface(ZAlgebraObject, 'ZAlgebraObject');
   initMetadataForClass(ZAlgebraObjectCollection, 'ZAlgebraObjectCollection', VOID, VOID, [ZAlgebraObject]);
-  initMetadataForCompanion(Companion_45);
-  initMetadataForObject($serializer_28, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZBox2D, 'ZBox2D', ZBox2D, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_28});
-  initMetadataForCompanion(Companion_46);
-  initMetadataForClass(ZColor, 'ZColor', ZColor, VOID, [ZAlgebraObject]);
   initMetadataForCompanion(Companion_47);
-  initMetadataForObject($serializer_29, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZColorSurrogate, 'ZColorSurrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_29});
+  initMetadataForObject($serializer_30, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZBox2D, 'ZBox2D', ZBox2D, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_30});
+  initMetadataForCompanion(Companion_48);
+  initMetadataForClass(ZColor, 'ZColor', ZColor, VOID, [ZAlgebraObject]);
+  initMetadataForCompanion(Companion_49);
+  initMetadataForObject($serializer_31, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZColorSurrogate, 'ZColorSurrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_31});
   initMetadataForClass(ZColorSerializer, 'ZColorSerializer', ZColorSerializer, VOID, [KSerializer]);
   initMetadataForObject(Op, 'Op');
   initMetadataForClass(ZEuler, 'ZEuler', ZEuler, VOID, [ZAlgebraObject]);
   initMetadataForObject(Op_0, 'Op');
   initMetadataForClass(ZMatrix4, 'ZMatrix4', ZMatrix4, VOID, [ZAlgebraObject]);
-  initMetadataForCompanion(Companion_48);
-  initMetadataForObject($serializer_30, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZMatrix4Surrogate, 'ZMatrix4Surrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_30});
+  initMetadataForCompanion(Companion_50);
+  initMetadataForObject($serializer_32, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZMatrix4Surrogate, 'ZMatrix4Surrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_32});
   initMetadataForClass(ZMatrix4Serializer, 'ZMatrix4Serializer', ZMatrix4Serializer, VOID, [KSerializer]);
   initMetadataForObject(Op_1, 'Op');
   initMetadataForClass(ZQuaternion, 'ZQuaternion', VOID, VOID, [ZAlgebraObject]);
-  initMetadataForCompanion(Companion_49);
-  initMetadataForObject($serializer_31, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZQuaternionSurrogate, 'ZQuaternionSurrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_31});
-  initMetadataForClass(ZQuaternionSerializer, 'ZQuaternionSerializer', ZQuaternionSerializer, VOID, [KSerializer]);
-  initMetadataForClass(ZScalar, 'ZScalar', ZScalar, VOID, [ZAlgebraObject]);
-  initMetadataForCompanion(Companion_50);
-  initMetadataForObject($serializer_32, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZTransform, 'ZTransform', ZTransform, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_32});
-  initMetadataForObject(Op_2, 'Op');
-  initMetadataForClass(ZVector2, 'ZVector2', VOID, VOID, [ZAlgebraObject]);
   initMetadataForCompanion(Companion_51);
   initMetadataForObject($serializer_33, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZVector2Surrogate, 'ZVector2Surrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_33});
+  initMetadataForClass(ZQuaternionSurrogate, 'ZQuaternionSurrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_33});
+  initMetadataForClass(ZQuaternionSerializer, 'ZQuaternionSerializer', ZQuaternionSerializer, VOID, [KSerializer]);
+  initMetadataForClass(ZScalar, 'ZScalar', ZScalar, VOID, [ZAlgebraObject]);
+  initMetadataForCompanion(Companion_52);
+  initMetadataForObject($serializer_34, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZTransform, 'ZTransform', ZTransform, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_34});
+  initMetadataForObject(Op_2, 'Op');
+  initMetadataForClass(ZVector2, 'ZVector2', VOID, VOID, [ZAlgebraObject]);
+  initMetadataForCompanion(Companion_53);
+  initMetadataForObject($serializer_35, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZVector2Surrogate, 'ZVector2Surrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_35});
   initMetadataForClass(ZVector2Serializer, 'ZVector2Serializer', ZVector2Serializer, VOID, [KSerializer]);
   initMetadataForObject(Op_3, 'Op');
   initMetadataForClass(ZVector3, 'ZVector3', VOID, VOID, [ZAlgebraObject]);
-  initMetadataForCompanion(Companion_52);
-  initMetadataForObject($serializer_34, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZVector3Surrogate, 'ZVector3Surrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_34});
+  initMetadataForCompanion(Companion_54);
+  initMetadataForObject($serializer_36, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZVector3Surrogate, 'ZVector3Surrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_36});
   initMetadataForClass(ZVector3Serializer, 'ZVector3Serializer', ZVector3Serializer, VOID, [KSerializer]);
   initMetadataForObject(Op_4, 'Op');
   initMetadataForClass(ZVector4, 'ZVector4', VOID, VOID, [ZAlgebraObject]);
-  initMetadataForCompanion(Companion_53);
-  initMetadataForObject($serializer_35, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZVector4Surrogate, 'ZVector4Surrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_35});
-  initMetadataForClass(ZVector4Serializer, 'ZVector4Serializer', ZVector4Serializer, VOID, [KSerializer]);
-  initMetadataForClass(ZVoidAlgebraObject, 'ZVoidAlgebraObject', ZVoidAlgebraObject, VOID, [ZAlgebraObject]);
-  initMetadataForCompanion(Companion_54);
-  initMetadataForObject($serializer_36, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZObject, 'ZObject', VOID, VOID, [ZRef, ZTreeNode, ZLoggable], VOID, VOID, {0: Companion_getInstance_59});
-  initMetadataForClass(ZCamera, 'ZCamera', ZCamera, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_36});
   initMetadataForCompanion(Companion_55);
   initMetadataForObject($serializer_37, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZGroup, 'ZGroup', ZGroup, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_37});
+  initMetadataForClass(ZVector4Surrogate, 'ZVector4Surrogate', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_37});
+  initMetadataForClass(ZVector4Serializer, 'ZVector4Serializer', ZVector4Serializer, VOID, [KSerializer]);
+  initMetadataForClass(ZVoidAlgebraObject, 'ZVoidAlgebraObject', ZVoidAlgebraObject, VOID, [ZAlgebraObject]);
   initMetadataForCompanion(Companion_56);
   initMetadataForObject($serializer_38, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZLight, 'ZLight', ZLight, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_38});
+  initMetadataForClass(ZCamera, 'ZCamera', ZCamera, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_38});
   initMetadataForCompanion(Companion_57);
   initMetadataForObject($serializer_39, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZModel, 'ZModel', ZModel, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_39});
-  initMetadataForCompanion(Companion_58, VOID, [SerializerFactory]);
-  initMetadataForCompanion(Companion_59, VOID, [SerializerFactory]);
-  initMetadataForClass(ZObjectType, 'ZObjectType', VOID, Enum, VOID, VOID, VOID, {0: Companion_getInstance_60});
-  initMetadataForCompanion(Companion_60);
+  initMetadataForClass(ZGroup, 'ZGroup', ZGroup, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_39});
+  initMetadataForCompanion(Companion_58);
   initMetadataForObject($serializer_40, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZScene, 'ZScene', ZScene, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_40});
-  initMetadataForCompanion(Companion_61);
+  initMetadataForClass(ZLight, 'ZLight', ZLight, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_40});
+  initMetadataForCompanion(Companion_59);
   initMetadataForObject($serializer_41, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZSkeleton, 'ZSkeleton', ZSkeleton, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_41});
+  initMetadataForCompanion(Companion_60, VOID, [SerializerFactory]);
+  initMetadataForCompanion(Companion_61, VOID, [SerializerFactory]);
+  initMetadataForClass(ZObjectType, 'ZObjectType', VOID, Enum, VOID, VOID, VOID, {0: Companion_getInstance_62});
   initMetadataForCompanion(Companion_62);
   initMetadataForObject($serializer_42, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZSkeletonProtoRef, 'ZSkeletonProtoRef', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_42});
+  initMetadataForClass(ZScene, 'ZScene', ZScene, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_42});
+  initMetadataForCompanion(Companion_63);
+  initMetadataForObject($serializer_43, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZSkeleton, 'ZSkeleton', ZSkeleton, ZObject, VOID, VOID, VOID, {0: $serializer_getInstance_43});
+  initMetadataForCompanion(Companion_64);
+  initMetadataForObject($serializer_44, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZSkeletonProtoRef, 'ZSkeletonProtoRef', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_44});
   initMetadataForClass(ZSkeletonSerializer, 'ZSkeletonSerializer', VOID, VOID, [KSerializer]);
   initMetadataForClass(ZRendererBase, 'ZRendererBase', VOID, VOID, [ZLoggable]);
   initMetadataForClass(InitState, 'InitState', VOID, Enum);
@@ -519,20 +538,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForInterface(ZSceneStateHandler, 'ZSceneStateHandler');
   initMetadataForClass(treeTraverse$1);
   initMetadataForClass(ZLoggerSettings, 'ZLoggerSettings', ZLoggerSettings);
-  initMetadataForCompanion(Companion_63);
-  initMetadataForClass(ZSettings, 'ZSettings');
-  initMetadataForCompanion(Companion_64, VOID, [SerializerFactory]);
-  initMetadataForClass(ZPlatformName, 'ZPlatformName', VOID, Enum, VOID, VOID, VOID, {0: Companion_getInstance_65});
   initMetadataForCompanion(Companion_65);
-  initMetadataForObject($serializer_43, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZPlatformInfo, 'ZPlatformInfo', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_43});
-  initMetadataForCompanion(Companion_66);
-  initMetadataForObject($serializer_44, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZStats, 'ZStats', ZStats, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_44});
-  initMetadataForInterface(ZSurfaceView, 'ZSurfaceView');
+  initMetadataForClass(ZSettings, 'ZSettings');
+  initMetadataForCompanion(Companion_66, VOID, [SerializerFactory]);
+  initMetadataForClass(ZPlatformName, 'ZPlatformName', VOID, Enum, VOID, VOID, VOID, {0: Companion_getInstance_67});
   initMetadataForCompanion(Companion_67);
   initMetadataForObject($serializer_45, '$serializer', VOID, VOID, [GeneratedSerializer]);
-  initMetadataForClass(ZSemVer, 'ZSemVer', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_45});
+  initMetadataForClass(ZPlatformInfo, 'ZPlatformInfo', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_45});
+  initMetadataForCompanion(Companion_68);
+  initMetadataForObject($serializer_46, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZStats, 'ZStats', ZStats, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_46});
+  initMetadataForInterface(ZSurfaceView, 'ZSurfaceView');
+  initMetadataForCompanion(Companion_69);
+  initMetadataForObject($serializer_47, '$serializer', VOID, VOID, [GeneratedSerializer]);
+  initMetadataForClass(ZSemVer, 'ZSemVer', VOID, VOID, VOID, VOID, VOID, {0: $serializer_getInstance_47});
   initMetadataForClass(ZLoggerAdapterConsole, 'ZLoggerAdapterConsole', ZLoggerAdapterConsole, VOID, [ZLoggerAdapter]);
   initMetadataForClass(MapPairJs, 'MapPairJs');
   initMetadataForClass(Zernikalos, 'Zernikalos', Zernikalos, ZernikalosBase);
@@ -550,10 +569,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(ZShaderRenderer, 'ZShaderRenderer', VOID, ZComponentRenderer);
   initMetadataForClass(ZUniformRenderer, 'ZUniformRenderer', VOID, ZComponentRenderer);
   initMetadataForClass(ZDefaultContextCreator, 'ZDefaultContextCreator', ZDefaultContextCreator, ZContextCreator);
-  initMetadataForClass(ZWebGPURenderingContext$initWithSurfaceView$2$2$1);
+  initMetadataForClass(ZWebGPURenderingContext$initWithSurfaceView$1$1$1);
   initMetadataForClass(ZWebGPURenderingContext, 'ZWebGPURenderingContext', VOID, VOID, [ZRenderingContext]);
   initMetadataForClass(ZWebGPUDevice, 'ZWebGPUDevice');
   initMetadataForClass(ZWebGPUQueue, 'ZWebGPUQueue');
+  initMetadataForClass(ZGpuCommandEncoder, 'ZGpuCommandEncoder');
+  initMetadataForClass(ZGpuFrame, 'ZGpuFrame');
+  initMetadataForClass(ZGpuRenderPass, 'ZGpuRenderPass');
   initMetadataForClass(GPUBindGroupLayout, 'GPUBindGroupLayout');
   initMetadataForClass(GPUBufferDescriptor, 'GPUBufferDescriptor');
   initMetadataForClass(GPUBindGroupDescriptor, 'GPUBindGroupDescriptor');
@@ -1326,7 +1348,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return nextValue;
   };
   function version() {
-    this.VERSION = '0.9.0';
+    this.VERSION = '0.10.1';
     this.ZKO_VERSION = '0.16.0';
   }
   protoOf(version).get_VERSION_iyczin_k$ = function () {
@@ -1340,7 +1362,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Version_instance;
   }
   function ZernikalosBase() {
-    this.settings = Companion_getInstance_64().getInstance();
+    this.settings = Companion_getInstance_66().getInstance();
     this.stats = new ZStats();
   }
   protoOf(ZernikalosBase).set_surfaceView_y7pcm3_k$ = function (_set____db54di) {
@@ -1376,55 +1398,89 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZernikalosBase).internalInitialize = function (view, contextCreator, stateHandler) {
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZernikalosBase).get_simpleName_r6f8py_k$(), hashCode(this)).info('Zernikalos Engine is ready!');
+    Companion_getInstance_47().getLogger(getKClass(ZernikalosBase).get_simpleName_r6f8py_k$(), hashCode(this)).info('Zernikalos Engine is ready!');
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZernikalosBase).get_simpleName_r6f8py_k$(), hashCode(this)).info(this.stats.toJson());
+    Companion_getInstance_47().getLogger(getKClass(ZernikalosBase).get_simpleName_r6f8py_k$(), hashCode(this)).info(this.stats.toJson());
     this.stateHandler_1 = stateHandler;
     this.surfaceView_1 = view;
     this.context_1 = contextCreator.createContext_pondx7_k$(this.get_surfaceView_o3wvgv_k$());
     this.get_surfaceView_o3wvgv_k$().set_eventHandler_vextgu_k$(createSurfaceViewEventHandler(this.context, stateHandler));
     this.get_surfaceView_o3wvgv_k$().set_eventQueue_efg7jk_k$(this.context.eventQueue);
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZernikalosBase).get_simpleName_r6f8py_k$(), hashCode(this)).info('View attached');
+    Companion_getInstance_47().getLogger(getKClass(ZernikalosBase).get_simpleName_r6f8py_k$(), hashCode(this)).info('View attached');
   };
-  function updateWithDeltaTime($this, deltaTime) {
-    if (!$this.isPlaying_1 || $this.currentAction_1 == null)
+  function stepPlaybackClock($this, deltaSeconds) {
+    if (!$this.isPlaying || $this.currentAction_1 == null)
       return Unit_instance;
-    $this.currentTime_1 = $this.currentTime_1 + deltaTime * $this.playbackSpeed_1;
-    $this.getCurrentKeyFrame();
-    if ($this.currentTime_1 > ensureNotNull($this.currentAction_1).duration) {
+    $this.currentTime = $this.currentTime + deltaSeconds * $this.playbackSpeed_1;
+    if ($this.currentTime > ensureNotNull($this.currentAction_1).duration) {
       if ($this.isLooping_1) {
-        $this.currentTime_1 = $this.currentTime_1 % ensureNotNull($this.currentAction_1).duration;
+        $this.currentTime = $this.currentTime % ensureNotNull($this.currentAction_1).duration;
       } else {
-        $this.currentTime_1 = ensureNotNull($this.currentAction_1).duration;
-        $this.isPlaying_1 = false;
+        $this.currentTime = ensureNotNull($this.currentAction_1).duration;
+        $this.isPlaying = false;
       }
     }
   }
+  function sampleCurrent($this) {
+    var tmp0_safe_receiver = $this.currentAction_1;
+    return tmp0_safe_receiver == null ? null : tmp0_safe_receiver.sampleAt($this.currentTime);
+  }
+  function applyCurrentPose($this) {
+    var tmp0_elvis_lhs = sampleCurrent($this);
+    var tmp;
+    if (tmp0_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp = tmp0_elvis_lhs;
+    }
+    var kf = tmp;
+    var tmp1_elvis_lhs = $this.skeleton_1;
+    var tmp_0;
+    if (tmp1_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp_0 = tmp1_elvis_lhs;
+    }
+    var sk = tmp_0;
+    sk.applyKeyFrame(kf, Op_instance_0.Identity);
+  }
   function ZActionPlayer() {
     this.currentAction_1 = null;
-    this.currentTime_1 = 0.0;
-    this.isPlaying_1 = false;
+    this.currentTime = 0.0;
+    this.isPlaying = false;
     this.playbackSpeed_1 = 1.0;
     this.isLooping_1 = false;
-    this.obj_1 = null;
+    this.skeleton_1 = null;
     this.lastUpdateTimeMs_1 = 0n;
   }
-  protoOf(ZActionPlayer).setAction = function (obj, action) {
-    this.obj_1 = obj;
-    obj.action = action;
+  protoOf(ZActionPlayer).get_currentTime_nu5t31_k$ = function () {
+    return this.currentTime;
+  };
+  protoOf(ZActionPlayer).get_isPlaying_98in7p_k$ = function () {
+    return this.isPlaying;
+  };
+  protoOf(ZActionPlayer).get_duration_6a6kpp_k$ = function () {
+    var tmp0_safe_receiver = this.currentAction_1;
+    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.duration;
+    return tmp1_elvis_lhs == null ? 0.0 : tmp1_elvis_lhs;
+  };
+  protoOf(ZActionPlayer).setAction = function (skeleton, action) {
+    this.skeleton_1 = skeleton;
     this.currentAction_1 = action;
-    this.currentTime_1 = 0.0;
+    this.currentTime = 0.0;
     this.lastUpdateTimeMs_1 = currentTimeMillis(System_instance);
+    applyCurrentPose(this);
   };
   protoOf(ZActionPlayer).play_sia68x_k$ = function (loop) {
     if (this.currentAction_1 == null)
       return Unit_instance;
-    if (!this.isPlaying_1) {
+    if (!this.isPlaying) {
       this.lastUpdateTimeMs_1 = currentTimeMillis(System_instance);
     }
-    this.isPlaying_1 = true;
+    this.isPlaying = true;
     this.isLooping_1 = loop;
+    applyCurrentPose(this);
   };
   protoOf(ZActionPlayer).play = function (loop, $super) {
     loop = loop === VOID ? false : loop;
@@ -1438,12 +1494,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return tmp;
   };
   protoOf(ZActionPlayer).pause = function () {
-    this.isPlaying_1 = false;
+    this.isPlaying = false;
   };
   protoOf(ZActionPlayer).stop = function () {
-    this.isPlaying_1 = false;
-    this.currentTime_1 = 0.0;
+    this.isPlaying = false;
+    this.currentTime = 0.0;
     this.lastUpdateTimeMs_1 = currentTimeMillis(System_instance);
+    applyCurrentPose(this);
   };
   protoOf(ZActionPlayer).update = function () {
     var currentTimeMs = currentTimeMillis(System_instance);
@@ -1451,20 +1508,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var this_0 = subtract(currentTimeMs, this.lastUpdateTimeMs_1);
     var deltaTime = toNumber(this_0) / 1000.0;
     this.lastUpdateTimeMs_1 = currentTimeMs;
-    updateWithDeltaTime(this, deltaTime);
+    stepPlaybackClock(this, deltaTime);
+    applyCurrentPose(this);
   };
-  protoOf(ZActionPlayer).getCurrentKeyFrame = function () {
-    var tmp0_safe_receiver = this.currentAction_1;
-    var kf = ensureNotNull(tmp0_safe_receiver == null ? null : tmp0_safe_receiver.getKeyFrame(this.currentTime_1));
-    var tmp1_safe_receiver = this.obj_1;
-    var tmp2_safe_receiver = tmp1_safe_receiver == null ? null : tmp1_safe_receiver.skeleton;
-    var tmp3_safe_receiver = tmp2_safe_receiver == null ? null : tmp2_safe_receiver.root;
-    if (tmp3_safe_receiver == null)
-      null;
-    else {
-      tmp3_safe_receiver.computePoseFromKeyFrame(kf, Op_instance_0.Identity);
-    }
-    return kf;
+  protoOf(ZActionPlayer).updateWithDelta = function (deltaTimeSeconds) {
+    stepPlaybackClock(this, deltaTimeSeconds);
+    applyCurrentPose(this);
   };
   protoOf(ZActionPlayer).setPlaybackSpeed = function (speed) {
     this.playbackSpeed_1 = speed;
@@ -1472,22 +1521,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZActionPlayer).seek = function (time) {
     if (this.currentAction_1 == null)
       return Unit_instance;
-    this.currentTime_1 = coerceIn(time, 0.0, ensureNotNull(this.currentAction_1).duration);
-  };
-  protoOf(ZActionPlayer).isPlaying = function () {
-    return this.isPlaying_1;
-  };
-  protoOf(ZActionPlayer).getCurrentTime = function () {
-    return this.currentTime_1;
-  };
-  protoOf(ZActionPlayer).getDuration = function () {
-    var tmp0_safe_receiver = this.currentAction_1;
-    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.duration;
-    return tmp1_elvis_lhs == null ? 0.0 : tmp1_elvis_lhs;
+    this.currentTime = coerceIn(time, 0.0, ensureNotNull(this.currentAction_1).duration);
+    applyCurrentPose(this);
   };
   protoOf(ZActionPlayer).getProgress = function () {
-    var duration = this.getDuration();
-    return duration > 0 ? this.currentTime_1 / duration : 0.0;
+    var d = this.duration;
+    return d > 0 ? this.currentTime / d : 0.0;
   };
   protoOf(ZActionPlayer).resetTimer = function () {
     this.lastUpdateTimeMs_1 = currentTimeMillis(System_instance);
@@ -2750,7 +2789,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZSkeletalAction).addTrack = function (track) {
     this._tracks_1.add_utx5q5_k$(track);
   };
-  protoOf(ZSkeletalAction).getKeyFrame = function (time) {
+  protoOf(ZSkeletalAction).sampleAt = function (time) {
     var kf = new ZKeyFrame(time);
     var indexedObject = this.tracks;
     var inductionVariable = 0;
@@ -2883,13 +2922,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
               var tmp_3;
               try {
                 tmp_3 = interpolateFrames_0(clampedT_0, prev_0, next_0);
-              } catch ($p) {
+              } catch ($p_0) {
                 var tmp_4;
-                if ($p instanceof Exception) {
-                  var e_0 = $p;
+                if ($p_0 instanceof Exception) {
+                  var e_0 = $p_0;
                   tmp_4 = prev_0;
                 } else {
-                  throw $p;
+                  throw $p_0;
                 }
                 tmp_3 = tmp_4;
               }
@@ -2954,13 +2993,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
               var tmp_6;
               try {
                 tmp_6 = interpolateFrames_1(clampedT_1, prev_1, next_1);
-              } catch ($p) {
+              } catch ($p_1) {
                 var tmp_7;
-                if ($p instanceof Exception) {
-                  var e_1 = $p;
+                if ($p_1 instanceof Exception) {
+                  var e_1 = $p_1;
                   tmp_7 = prev_1;
                 } else {
-                  throw $p;
+                  throw $p_1;
                 }
                 tmp_6 = tmp_7;
               }
@@ -3027,7 +3066,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function ZRenderCapability() {
   }
   function setupInitialize($this) {
-    if ($this.initialized_1) {
+    if ($this.initialized_1 || $this._disposed_1) {
       return false;
     }
     $this.initialized_1 = true;
@@ -3056,6 +3095,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBaseComponent).get_isInitialized_44jfmn_k$ = function () {
     return this.initialized_1;
   };
+  protoOf(ZBaseComponent).get_isDisposed_skr1u0_k$ = function () {
+    return this._disposed_1;
+  };
   protoOf(ZBaseComponent).dispose = function () {
     if (this._disposed_1)
       return Unit_instance;
@@ -3080,6 +3122,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this._renderer_1 = null;
   }
   protoOf(ZRenderizableComponent).get_renderer_v1k1vw_k$ = function () {
+    if (this.get_isDisposed_skr1u0_k$()) {
+      throw Error_init_$Create$('The component has been disposed prior to access the renderer');
+    }
     if (!this.isInitialized) {
       throw Error_init_$Create$('The component has not been initialized prior to access the renderer');
     }
@@ -3094,12 +3139,29 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZRenderizableComponent).initialize = function (ctx) {
     protoOf(ZBaseComponent).initialize.call(this, ctx);
+    if (!this.isInitialized) {
+      return Unit_instance;
+    }
     if (this._renderer_1 == null) {
-      var tmp = this;
-      // Inline function 'kotlin.also' call
-      var this_0 = this.createRenderer_ta2mc7_k$(ctx);
-      this_0.initialize();
-      tmp._renderer_1 = this_0;
+      var newRenderer = this.createRenderer_ta2mc7_k$(ctx);
+      this._renderer_1 = newRenderer;
+      newRenderer.initialize();
+    }
+  };
+  protoOf(ZRenderizableComponent).dispose = function () {
+    if (this.get_isDisposed_skr1u0_k$()) {
+      return Unit_instance;
+    }
+    var renderer = this._renderer_1;
+    try {
+      protoOf(ZBaseComponent).dispose.call(this);
+    }finally {
+      this._renderer_1 = null;
+      if (renderer == null)
+        null;
+      else {
+        renderer.dispose();
+      }
     }
   };
   function ZSerializableComponent(data) {
@@ -3117,6 +3179,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this._renderer_1 = null;
   }
   protoOf(ZDataRenderComponent).get_renderer_v1k1vw_k$ = function () {
+    if (this.get_isDisposed_skr1u0_k$()) {
+      throw Error_init_$Create$('The component has been disposed prior to access the renderer');
+    }
     if (!this.isInitialized) {
       throw Error_init_$Create$('The component has not been initialized prior to access the renderer');
     }
@@ -3131,12 +3196,29 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZDataRenderComponent).initialize = function (ctx) {
     protoOf(ZSerializableComponent).initialize.call(this, ctx);
+    if (!this.isInitialized) {
+      return Unit_instance;
+    }
     if (this._renderer_1 == null) {
-      var tmp = this;
-      // Inline function 'kotlin.also' call
-      var this_0 = this.createRenderer_ta2mc7_k$(ctx);
-      this_0.initialize();
-      tmp._renderer_1 = this_0;
+      var newRenderer = this.createRenderer_ta2mc7_k$(ctx);
+      this._renderer_1 = newRenderer;
+      newRenderer.initialize();
+    }
+  };
+  protoOf(ZDataRenderComponent).dispose = function () {
+    if (this.get_isDisposed_skr1u0_k$()) {
+      return Unit_instance;
+    }
+    var renderer = this._renderer_1;
+    try {
+      protoOf(ZSerializableComponent).dispose.call(this);
+    }finally {
+      this._renderer_1 = null;
+      if (renderer == null)
+        null;
+      else {
+        renderer.dispose();
+      }
     }
   };
   function ZComponentSerializer() {
@@ -3176,70 +3258,48 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_7;
   }
   function ZViewportData$_get_clearColor_$ref_6tip5u(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.clearColor_1;
-    };
+    }, 0, 0, 11, VOID, [p0]);
   }
   function ZViewportData$_set_clearColor_$ref_wcm57a(p0) {
-    return function (_this__u8e3s4) {
-      p0.clearColor_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.clearColor_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 12, VOID, [p0]);
   }
   function ZViewport$_get_clearColor_$ref_9exbxk() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.clearColor;
-    };
+    }, 1, 0, 13);
   }
   function ZViewport$_set_clearColor_$ref_g4643w() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_clearColor_bqyb70_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZViewport$_get_clearColor_$ref_9exbxk_0() {
-    return function (p0) {
-      return p0.clearColor;
-    };
-  }
-  function ZViewport$_set_clearColor_$ref_g4643w_0() {
-    return function (p0, p1) {
-      p0.set_clearColor_bqyb70_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 14);
   }
   function ZViewportData$_get_viewBox_$ref_kejvk(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.viewBox_1;
-    };
+    }, 0, 0, 15, VOID, [p0]);
   }
   function ZViewportData$_set_viewBox_$ref_tpzmgc(p0) {
-    return function (_this__u8e3s4) {
-      p0.viewBox_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.viewBox_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 16, VOID, [p0]);
   }
   function ZViewport$_get_viewBox_$ref_2fz4ye() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.viewBox;
-    };
+    }, 1, 0, 17);
   }
   function ZViewport$_set_viewBox_$ref_ruf1di() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_viewBox_2y56pi_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZViewport$_get_viewBox_$ref_2fz4ye_0() {
-    return function (p0) {
-      return p0.viewBox;
-    };
-  }
-  function ZViewport$_set_viewBox_$ref_ruf1di_0() {
-    return function (p0, p1) {
-      p0.set_viewBox_2y56pi_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 18);
   }
   function ZViewport(data) {
     ZDataRenderComponent.call(this, data);
@@ -3255,9 +3315,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZViewport).set_clearColor_bqyb70_k$ = function (_set____db54di) {
     var tmp0 = this.clearColor$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZViewport$_get_clearColor_$ref_9exbxk_0();
+    var tmp_0 = ZViewport$_get_clearColor_$ref_9exbxk();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('clearColor', 1, tmp, tmp_0, ZViewport$_set_clearColor_$ref_g4643w_0());
+    getPropertyCallableRef('clearColor', 1, tmp, tmp_0, ZViewport$_set_clearColor_$ref_g4643w());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -3272,9 +3332,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZViewport).set_viewBox_2y56pi_k$ = function (_set____db54di) {
     var tmp0 = this.viewBox$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZViewport$_get_viewBox_$ref_2fz4ye_0();
+    var tmp_0 = ZViewport$_get_viewBox_$ref_2fz4ye();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('viewBox', 1, tmp, tmp_0, ZViewport$_set_viewBox_$ref_ruf1di_0());
+    getPropertyCallableRef('viewBox', 1, tmp, tmp_0, ZViewport$_set_viewBox_$ref_ruf1di());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -3297,11 +3357,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZViewport).render_dje1iy_k$ = function () {
     return this.get_renderer_v1k1vw_k$().render();
   };
-  protoOf(ZViewport).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
+  protoOf(ZViewport).buildRenderPassDescriptor = function () {
+    return this.get_renderer_v1k1vw_k$().buildRenderPassDescriptor_f1nkyk_k$();
   };
+  function buildSwapchainPassDescriptor(clearColor) {
+    return new ZGpuRenderPassDescriptor('Main viewport pass', listOf(new ZGpuColorAttachmentDesc(ZLoadOp_Clear_getInstance(), ZStoreOp_Store_getInstance(), clearColor)), new ZGpuDepthStencilAttachmentDesc(ZLoadOp_Clear_getInstance(), ZStoreOp_Store_getInstance(), 1.0));
+  }
   function ZViewportData$Companion$$childSerializers$_anonymous__lcdcv4() {
-    return Companion_getInstance_47().serializer_9w0wvi_k$();
+    return Companion_getInstance_49().serializer_9w0wvi_k$();
   }
   function Companion_8() {
     Companion_instance_8 = this;
@@ -3336,7 +3399,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, tmp2_cached[0].get_value_j01efc_k$(), value.clearColor_1);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 1) ? true : !equals(value.viewBox_1, new ZBox2D(0, 0, 0, 0))) {
-      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, $serializer_getInstance_28(), value.viewBox_1);
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, $serializer_getInstance_30(), value.viewBox_1);
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
@@ -3355,7 +3418,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     if (tmp6_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, tmp7_cached[0].get_value_j01efc_k$(), tmp4_local0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
-      tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_28(), tmp5_local1);
+      tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_30(), tmp5_local1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
     } else
       while (tmp1_flag) {
@@ -3369,7 +3432,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 1;
             break;
           case 1:
-            tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_28(), tmp5_local1);
+            tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_30(), tmp5_local1);
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           default:
@@ -3386,7 +3449,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [Companion_getInstance_9().$childSerializers_1[0].get_value_j01efc_k$(), $serializer_getInstance_28()];
+    return [Companion_getInstance_9().$childSerializers_1[0].get_value_j01efc_k$(), $serializer_getInstance_30()];
   };
   var $serializer_instance_7;
   function $serializer_getInstance_7() {
@@ -3544,7 +3607,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function Companion_10() {
   }
   protoOf(Companion_10).get_Default_goqax4_k$ = function () {
-    return init_0(1.0, 100.0, 45.0);
+    return init_0(1.0, 100.0, 3.141592653589793 / 4.0);
+  };
+  protoOf(Companion_10).fromVerticalFovDegrees = function (near, far, verticalFovDegrees) {
+    return init_0(near, far, Angles_instance.degreesToRadians_37s4mg_k$(verticalFovDegrees));
+  };
+  protoOf(Companion_10).fromVerticalFovDegreesWithAspect = function (near, far, verticalFovDegrees, aspectRatio) {
+    return initWithAspect(near, far, Angles_instance.degreesToRadians_37s4mg_k$(verticalFovDegrees), aspectRatio);
   };
   protoOf(Companion_10).serializer_9w0wvi_k$ = function () {
     return new ZPerspectiveLensSerializer();
@@ -3554,47 +3623,36 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_10;
   }
   function ZPerspectiveLensData$_get_fov_$ref_9z7pg9(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.fov_1;
-    };
+    }, 0, 0, 19, VOID, [p0]);
   }
   function ZPerspectiveLensData$_set_fov_$ref_zfo25v(p0) {
-    return function (_this__u8e3s4) {
-      p0.fov_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.fov_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 20, VOID, [p0]);
   }
   function ZPerspectiveLens$_get_fov_$ref_on368f() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.fov;
-    };
+    }, 1, 0, 21);
   }
   function ZPerspectiveLens$_set_fov_$ref_krsldp() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_fov_d83jk8_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZPerspectiveLens$_get_fov_$ref_on368f_0() {
-    return function (p0) {
-      return p0.fov;
-    };
-  }
-  function ZPerspectiveLens$_set_fov_$ref_krsldp_0() {
-    return function (p0, p1) {
-      p0.set_fov_d83jk8_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 22);
   }
   function ZPerspectiveLensData$_get_projectionMatrix_$ref_65dqro(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.get_projectionMatrix_blkd6h_k$();
-    };
+    }, 0, 0, 23, VOID, [p0]);
   }
   function ZPerspectiveLens$_get_projectionMatrix_$ref_rjd4qa() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.projectionMatrix;
-    };
+    }, 1, 0, 24);
   }
   function ZPerspectiveLens(data) {
     ZSerializableComponent.call(this, data);
@@ -3609,9 +3667,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZPerspectiveLens).set_fov_d83jk8_k$ = function (_set____db54di) {
     var tmp0 = this.fov$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZPerspectiveLens$_get_fov_$ref_on368f_0();
+    var tmp_0 = ZPerspectiveLens$_get_fov_$ref_on368f();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('fov', 1, tmp, tmp_0, ZPerspectiveLens$_set_fov_$ref_krsldp_0());
+    getPropertyCallableRef('fov', 1, tmp, tmp_0, ZPerspectiveLens$_set_fov_$ref_krsldp());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -3629,6 +3687,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.getValue' call
     getPropertyCallableRef('projectionMatrix', 1, tmp, ZPerspectiveLens$_get_projectionMatrix_$ref_rjd4qa(), null);
     return tmp0.get();
+  };
+  protoOf(ZPerspectiveLens).setVerticalFovDegrees = function (verticalFovDegrees) {
+    this.set_fov_d83jk8_k$(Angles_instance.degreesToRadians_37s4mg_k$(verticalFovDegrees));
   };
   protoOf(ZPerspectiveLens).onViewportResize_p57obb_k$ = function (width, height) {
     this.data_1.setDimensions_m9bkqn_k$(width, height);
@@ -4476,103 +4537,70 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_18;
   }
   function ZMaterialData$_get_texture_$ref_bzxf04(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.texture;
-    };
+    }, 0, 0, 25, VOID, [p0]);
   }
   function ZMaterialData$_set_texture_$ref_sqsgn4(p0) {
-    return function (_this__u8e3s4) {
-      p0.texture = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.texture = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 26, VOID, [p0]);
   }
   function ZMaterial$_get_texture_$ref_xfwxry() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.texture;
-    };
+    }, 1, 0, 27);
   }
   function ZMaterial$_set_texture_$ref_7asxva() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_texture_c9iy7k_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZMaterial$_get_texture_$ref_xfwxry_0() {
-    return function (p0) {
-      return p0.texture;
-    };
-  }
-  function ZMaterial$_set_texture_$ref_7asxva_0() {
-    return function (p0, p1) {
-      p0.set_texture_c9iy7k_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 28);
   }
   function ZMaterialData$_get_pbr_$ref_qodayh(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.pbr;
-    };
+    }, 0, 0, 29, VOID, [p0]);
   }
   function ZMaterialData$_set_pbr_$ref_1250lh(p0) {
-    return function (_this__u8e3s4) {
-      p0.pbr = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.pbr = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 30, VOID, [p0]);
   }
   function ZMaterial$_get_pbr_$ref_abr531() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.pbr;
-    };
+    }, 1, 0, 31);
   }
   function ZMaterial$_set_pbr_$ref_z34mj3() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_pbr_1hy563_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZMaterial$_get_pbr_$ref_abr531_0() {
-    return function (p0) {
-      return p0.pbr;
-    };
-  }
-  function ZMaterial$_set_pbr_$ref_z34mj3_0() {
-    return function (p0, p1) {
-      p0.set_pbr_1hy563_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 32);
   }
   function ZMaterialData$_get_phong_$ref_lzhtd5(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.phong;
-    };
+    }, 0, 0, 33, VOID, [p0]);
   }
   function ZMaterialData$_set_phong_$ref_jqrs7f(p0) {
-    return function (_this__u8e3s4) {
-      p0.phong = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.phong = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 34, VOID, [p0]);
   }
   function ZMaterial$_get_phong_$ref_muuz0t() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.phong;
-    };
+    }, 1, 0, 35);
   }
   function ZMaterial$_set_phong_$ref_6fzhdr() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_phong_1cl57_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZMaterial$_get_phong_$ref_muuz0t_0() {
-    return function (p0) {
-      return p0.phong;
-    };
-  }
-  function ZMaterial$_set_phong_$ref_6fzhdr_0() {
-    return function (p0, p1) {
-      p0.set_phong_1cl57_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 36);
   }
   function ZMaterial(data) {
     ZDataRenderComponent.call(this, data);
@@ -4592,9 +4620,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZMaterial).set_texture_c9iy7k_k$ = function (_set____db54di) {
     var tmp0 = this.texture$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZMaterial$_get_texture_$ref_xfwxry_0();
+    var tmp_0 = ZMaterial$_get_texture_$ref_xfwxry();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('texture', 1, tmp, tmp_0, ZMaterial$_set_texture_$ref_7asxva_0());
+    getPropertyCallableRef('texture', 1, tmp, tmp_0, ZMaterial$_set_texture_$ref_7asxva());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -4609,9 +4637,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZMaterial).set_pbr_1hy563_k$ = function (_set____db54di) {
     var tmp0 = this.pbr$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZMaterial$_get_pbr_$ref_abr531_0();
+    var tmp_0 = ZMaterial$_get_pbr_$ref_abr531();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('pbr', 1, tmp, tmp_0, ZMaterial$_set_pbr_$ref_z34mj3_0());
+    getPropertyCallableRef('pbr', 1, tmp, tmp_0, ZMaterial$_set_pbr_$ref_z34mj3());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -4626,9 +4654,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZMaterial).set_phong_1cl57_k$ = function (_set____db54di) {
     var tmp0 = this.phong$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZMaterial$_get_phong_$ref_muuz0t_0();
+    var tmp_0 = ZMaterial$_get_phong_$ref_muuz0t();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('phong', 1, tmp, tmp_0, ZMaterial$_set_phong_$ref_6fzhdr_0());
+    getPropertyCallableRef('phong', 1, tmp, tmp_0, ZMaterial$_set_phong_$ref_6fzhdr());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -4655,17 +4683,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZMaterial).unbind_ylwmfa_k$ = function () {
     return this.get_renderer_v1k1vw_k$().unbind();
   };
-  protoOf(ZMaterial).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
-  };
   function ZPhongMaterialData$Companion$$childSerializers$_anonymous__djnloj() {
-    return Companion_getInstance_47().serializer_9w0wvi_k$();
+    return Companion_getInstance_49().serializer_9w0wvi_k$();
   }
   function ZPhongMaterialData$Companion$$childSerializers$_anonymous__djnloj_0() {
-    return Companion_getInstance_47().serializer_9w0wvi_k$();
+    return Companion_getInstance_49().serializer_9w0wvi_k$();
   }
   function ZPhongMaterialData$Companion$$childSerializers$_anonymous__djnloj_1() {
-    return Companion_getInstance_47().serializer_9w0wvi_k$();
+    return Companion_getInstance_49().serializer_9w0wvi_k$();
   }
   function Companion_19() {
     Companion_instance_19 = this;
@@ -4695,7 +4720,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(2));
     tmp0_serialDesc.addElement_5pzumi_k$('specular', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(3));
-    tmp0_serialDesc.addElement_5pzumi_k$('_shininess', false);
+    tmp0_serialDesc.addElement_5pzumi_k$('shiny', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(4));
     this.descriptor_1 = tmp0_serialDesc;
   }
@@ -4706,7 +4731,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, tmp2_cached[0].get_value_j01efc_k$(), value.diffuse);
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, tmp2_cached[1].get_value_j01efc_k$(), value.ambient);
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, tmp2_cached[2].get_value_j01efc_k$(), value.specular);
-    tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 3, value._shininess);
+    tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 3, value.shiny_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
   protoOf($serializer_13).serialize_5ase3y_k$ = function (encoder, value) {
@@ -4778,27 +4803,27 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       new $serializer_13();
     return $serializer_instance_13;
   }
-  function ZPhongMaterialData_init_$Init$(seen0, diffuse, ambient, specular, _shininess, serializationConstructorMarker, $this) {
+  function ZPhongMaterialData_init_$Init$(seen0, diffuse, ambient, specular, shiny, serializationConstructorMarker, $this) {
     if (!(15 === (15 & seen0))) {
       throwMissingFieldException(seen0, 15, $serializer_getInstance_13().descriptor_1);
     }
     $this.diffuse = diffuse;
     $this.ambient = ambient;
     $this.specular = specular;
-    $this._shininess = _shininess;
-    $this.set_shininess_8fm0td_k$($this._shininess);
+    $this.shiny_1 = shiny;
+    $this.set_shininess_8fm0td_k$(coerceIn($this.shiny_1, 0.0, 500.0));
     return $this;
   }
-  function ZPhongMaterialData_init_$Create$(seen0, diffuse, ambient, specular, _shininess, serializationConstructorMarker) {
-    return ZPhongMaterialData_init_$Init$(seen0, diffuse, ambient, specular, _shininess, serializationConstructorMarker, objectCreate(protoOf(ZPhongMaterialData)));
+  function ZPhongMaterialData_init_$Create$(seen0, diffuse, ambient, specular, shiny, serializationConstructorMarker) {
+    return ZPhongMaterialData_init_$Init$(seen0, diffuse, ambient, specular, shiny, serializationConstructorMarker, objectCreate(protoOf(ZPhongMaterialData)));
   }
-  function ZPhongMaterialData(diffuse, ambient, specular, _shininess) {
+  function ZPhongMaterialData(diffuse, ambient, specular, shiny) {
     Companion_getInstance_20();
     this.diffuse = diffuse;
     this.ambient = ambient;
     this.specular = specular;
-    this._shininess = _shininess;
-    this.set_shininess_8fm0td_k$(this._shininess);
+    this.shiny_1 = shiny;
+    this.set_shininess_8fm0td_k$(coerceIn(this.shiny_1, 0.0, 500.0));
   }
   protoOf(ZPhongMaterialData).set_diffuse_d3cfz6_k$ = function (_set____db54di) {
     this.diffuse = _set____db54di;
@@ -4818,17 +4843,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZPhongMaterialData).get_specular_3yj6ks_k$ = function () {
     return this.specular;
   };
-  protoOf(ZPhongMaterialData).set__shininess_3nuzdo_k$ = function (_set____db54di) {
-    this._shininess = _set____db54di;
-  };
-  protoOf(ZPhongMaterialData).get__shininess_qe2qi8_k$ = function () {
-    return this._shininess;
-  };
   protoOf(ZPhongMaterialData).set_shininess_8fm0td_k$ = function (value) {
-    this._shininess = coerceIn(value, 0.0, 500.0);
+    this.shiny_1 = coerceIn(value, 0.0, 500.0);
   };
   protoOf(ZPhongMaterialData).get_shininess_qx5qjh_k$ = function () {
-    return this._shininess;
+    return this.shiny_1;
   };
   protoOf(ZPhongMaterialData).component1_7eebsc_k$ = function () {
     return this.diffuse;
@@ -4839,27 +4858,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZPhongMaterialData).component3_7eebsa_k$ = function () {
     return this.specular;
   };
-  protoOf(ZPhongMaterialData).component4_7eebs9_k$ = function () {
-    return this._shininess;
+  protoOf(ZPhongMaterialData).copy_t40t1k_k$ = function (diffuse, ambient, specular, shiny) {
+    return new ZPhongMaterialData(diffuse, ambient, specular, shiny);
   };
-  protoOf(ZPhongMaterialData).copy_t40t1k_k$ = function (diffuse, ambient, specular, _shininess) {
-    return new ZPhongMaterialData(diffuse, ambient, specular, _shininess);
-  };
-  protoOf(ZPhongMaterialData).copy = function (diffuse, ambient, specular, _shininess, $super) {
+  protoOf(ZPhongMaterialData).copy = function (diffuse, ambient, specular, shiny, $super) {
     diffuse = diffuse === VOID ? this.diffuse : diffuse;
     ambient = ambient === VOID ? this.ambient : ambient;
     specular = specular === VOID ? this.specular : specular;
-    _shininess = _shininess === VOID ? this._shininess : _shininess;
-    return $super === VOID ? this.copy_t40t1k_k$(diffuse, ambient, specular, _shininess) : $super.copy_t40t1k_k$.call(this, diffuse, ambient, specular, _shininess);
+    shiny = shiny === VOID ? this.shiny_1 : shiny;
+    return $super === VOID ? this.copy_t40t1k_k$(diffuse, ambient, specular, shiny) : $super.copy_t40t1k_k$.call(this, diffuse, ambient, specular, shiny);
   };
   protoOf(ZPhongMaterialData).toString = function () {
-    return 'ZPhongMaterialData(diffuse=' + toString_0(this.diffuse) + ', ambient=' + toString_0(this.ambient) + ', specular=' + toString_0(this.specular) + ', _shininess=' + this._shininess + ')';
+    return 'ZPhongMaterialData(diffuse=' + toString_0(this.diffuse) + ', ambient=' + toString_0(this.ambient) + ', specular=' + toString_0(this.specular) + ', shiny=' + this.shiny_1 + ')';
   };
   protoOf(ZPhongMaterialData).hashCode = function () {
     var result = hashCode(this.diffuse);
     result = imul(result, 31) + hashCode(this.ambient) | 0;
     result = imul(result, 31) + hashCode(this.specular) | 0;
-    result = imul(result, 31) + getNumberHashCode(this._shininess) | 0;
+    result = imul(result, 31) + getNumberHashCode(this.shiny_1) | 0;
     return result;
   };
   protoOf(ZPhongMaterialData).equals = function (other) {
@@ -4873,15 +4889,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return false;
     if (!equals(this.specular, other.specular))
       return false;
-    if (!equals(this._shininess, other._shininess))
+    if (!equals(this.shiny_1, other.shiny_1))
       return false;
     return true;
   };
   function ZPbrMaterialData$Companion$$childSerializers$_anonymous__kzb80d() {
-    return Companion_getInstance_47().serializer_9w0wvi_k$();
+    return Companion_getInstance_49().serializer_9w0wvi_k$();
   }
   function ZPbrMaterialData$Companion$$childSerializers$_anonymous__kzb80d_0() {
-    return Companion_getInstance_47().serializer_9w0wvi_k$();
+    return Companion_getInstance_49().serializer_9w0wvi_k$();
   }
   function Companion_20() {
     Companion_instance_20 = this;
@@ -5643,466 +5659,312 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZTexture_init_$Init$_0(id, width, height, flipX, flipY, dataArray, objectCreate(protoOf(ZTexture)));
   }
   function ZTextureData$_get_id_$ref_ayklpk(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.id_1;
-    };
+    }, 0, 0, 37, VOID, [p0]);
   }
   function ZTextureData$_set_id_$ref_cfb6cc(p0) {
-    return function (_this__u8e3s4) {
-      p0.id_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.id_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 38, VOID, [p0]);
   }
   function ZTexture$_get_id_$ref_4kj7q6() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.id;
-    };
+    }, 1, 0, 39);
   }
   function ZTexture$_set_id_$ref_619scy() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_id_36n2qa_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_id_$ref_4kj7q6_0() {
-    return function (p0) {
-      return p0.id;
-    };
-  }
-  function ZTexture$_set_id_$ref_619scy_0() {
-    return function (p0, p1) {
-      p0.set_id_36n2qa_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 40);
   }
   function ZTextureData$_get_width_$ref_isua81(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.width_1;
-    };
+    }, 0, 0, 41, VOID, [p0]);
   }
   function ZTextureData$_set_width_$ref_ai066j(p0) {
-    return function (_this__u8e3s4) {
-      p0.width_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.width_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 42, VOID, [p0]);
   }
   function ZTexture$_get_width_$ref_j9xkon() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.width;
-    };
+    }, 1, 0, 43);
   }
   function ZTexture$_set_width_$ref_a0wvpx() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_width_2l5qrj_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_width_$ref_j9xkon_0() {
-    return function (p0) {
-      return p0.width;
-    };
-  }
-  function ZTexture$_set_width_$ref_a0wvpx_0() {
-    return function (p0, p1) {
-      p0.set_width_2l5qrj_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 44);
   }
   function ZTextureData$_get_height_$ref_ov9rw4(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.height_1;
-    };
+    }, 0, 0, 45, VOID, [p0]);
   }
   function ZTextureData$_set_height_$ref_9t16qw(p0) {
-    return function (_this__u8e3s4) {
-      p0.height_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.height_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 46, VOID, [p0]);
   }
   function ZTexture$_get_height_$ref_a5frl6() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.height;
-    };
+    }, 1, 0, 47);
   }
   function ZTexture$_set_height_$ref_4wstk2() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_height_ubp1uk_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_height_$ref_a5frl6_0() {
-    return function (p0) {
-      return p0.height;
-    };
-  }
-  function ZTexture$_set_height_$ref_4wstk2_0() {
-    return function (p0, p1) {
-      p0.set_height_ubp1uk_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 48);
   }
   function ZTextureData$_get_flipX_$ref_8tt4kk(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.flipX_1;
-    };
+    }, 0, 0, 49, VOID, [p0]);
   }
   function ZTextureData$_set_flipX_$ref_wwgh00(p0) {
-    return function (_this__u8e3s4) {
-      p0.flipX_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.flipX_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 50, VOID, [p0]);
   }
   function ZTexture$_get_flipX_$ref_8cpu3y() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.flipX;
-    };
+    }, 1, 0, 51);
   }
   function ZTexture$_set_flipX_$ref_xdjrgm() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_flipX_s3wld3_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_flipX_$ref_8cpu3y_0() {
-    return function (p0) {
-      return p0.flipX;
-    };
-  }
-  function ZTexture$_set_flipX_$ref_xdjrgm_0() {
-    return function (p0, p1) {
-      p0.set_flipX_s3wld3_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 52);
   }
   function ZTextureData$_get_flipY_$ref_8cri6d(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.flipY_1;
-    };
+    }, 0, 0, 53, VOID, [p0]);
   }
   function ZTextureData$_set_flipY_$ref_xdi3e7(p0) {
-    return function (_this__u8e3s4) {
-      p0.flipY_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.flipY_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 54, VOID, [p0]);
   }
   function ZTexture$_get_flipY_$ref_7vo7pr() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.flipY;
-    };
+    }, 1, 0, 55);
   }
   function ZTexture$_set_flipY_$ref_xuldut() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_flipY_dgjqgq_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_flipY_$ref_7vo7pr_0() {
-    return function (p0) {
-      return p0.flipY;
-    };
-  }
-  function ZTexture$_set_flipY_$ref_xuldut_0() {
-    return function (p0, p1) {
-      p0.set_flipY_dgjqgq_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 56);
   }
   function ZTextureData$_get_dataArray_$ref_cxqtyg(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.dataArray_1;
-    };
+    }, 0, 0, 57, VOID, [p0]);
   }
   function ZTextureData$_set_dataArray_$ref_2a0ojw(p0) {
-    return function (_this__u8e3s4) {
-      p0.dataArray_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.dataArray_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 58, VOID, [p0]);
   }
   function ZTexture$_get_dataArray_$ref_yq7ype() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.dataArray;
-    };
+    }, 1, 0, 59);
   }
   function ZTexture$_set_dataArray_$ref_jigg72() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_dataArray_i70sw2_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_dataArray_$ref_yq7ype_0() {
-    return function (p0) {
-      return p0.dataArray;
-    };
-  }
-  function ZTexture$_set_dataArray_$ref_jigg72_0() {
-    return function (p0, p1) {
-      p0.set_dataArray_i70sw2_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 60);
   }
   function ZTextureData$_get_minFilter_$ref_re92ar(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.minFilter_1;
-    };
+    }, 0, 0, 61, VOID, [p0]);
   }
   function ZTextureData$_set_minFilter_$ref_c6hjsf(p0) {
-    return function (_this__u8e3s4) {
-      p0.minFilter_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.minFilter_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 62, VOID, [p0]);
   }
   function ZTexture$_get_minFilter_$ref_luduxf() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.minFilter;
-    };
+    }, 1, 0, 63);
   }
   function ZTexture$_set_minFilter_$ref_xyyojd() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_minFilter_io9hva_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_minFilter_$ref_luduxf_0() {
-    return function (p0) {
-      return p0.minFilter;
-    };
-  }
-  function ZTexture$_set_minFilter_$ref_xyyojd_0() {
-    return function (p0, p1) {
-      p0.set_minFilter_io9hva_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 64);
   }
   function ZTextureData$_get_magFilter_$ref_3iqqo4(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.magFilter_1;
-    };
+    }, 0, 0, 65, VOID, [p0]);
   }
   function ZTextureData$_set_magFilter_$ref_bp0ru8(p0) {
-    return function (_this__u8e3s4) {
-      p0.magFilter_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.magFilter_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 66, VOID, [p0]);
   }
   function ZTexture$_get_magFilter_$ref_pb7vf2() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.magFilter;
-    };
+    }, 1, 0, 67);
   }
   function ZTexture$_set_magFilter_$ref_a3gcwq() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_magFilter_gnoijb_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_magFilter_$ref_pb7vf2_0() {
-    return function (p0) {
-      return p0.magFilter;
-    };
-  }
-  function ZTexture$_set_magFilter_$ref_a3gcwq_0() {
-    return function (p0, p1) {
-      p0.set_magFilter_gnoijb_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 68);
   }
   function ZTextureData$_get_wrapModeU_$ref_dnva73(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.wrapModeU_1;
-    };
+    }, 0, 0, 69, VOID, [p0]);
   }
   function ZTextureData$_set_wrapModeU_$ref_svmspf(p0) {
-    return function (_this__u8e3s4) {
-      p0.wrapModeU_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.wrapModeU_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 70, VOID, [p0]);
   }
   function ZTexture$_get_wrapModeU_$ref_84lujv() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.wrapModeU;
-    };
+    }, 1, 0, 71);
   }
   function ZTexture$_set_wrapModeU_$ref_735nyh() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_wrapModeU_3fbmii_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_wrapModeU_$ref_84lujv_0() {
-    return function (p0) {
-      return p0.wrapModeU;
-    };
-  }
-  function ZTexture$_set_wrapModeU_$ref_735nyh_0() {
-    return function (p0, p1) {
-      p0.set_wrapModeU_3fbmii_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 72);
   }
   function ZTextureData$_get_wrapModeV_$ref_e4wwla(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.wrapModeV_1;
-    };
+    }, 0, 0, 73, VOID, [p0]);
   }
   function ZTextureData$_set_wrapModeV_$ref_tcof3m(p0) {
-    return function (_this__u8e3s4) {
-      p0.wrapModeV_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.wrapModeV_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 74, VOID, [p0]);
   }
   function ZTexture$_get_wrapModeV_$ref_7nk85o() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.wrapModeV;
-    };
+    }, 1, 0, 75);
   }
   function ZTexture$_set_wrapModeV_$ref_7k7aco() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_wrapModeV_60s9rb_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_wrapModeV_$ref_7nk85o_0() {
-    return function (p0) {
-      return p0.wrapModeV;
-    };
-  }
-  function ZTexture$_set_wrapModeV_$ref_7k7aco_0() {
-    return function (p0, p1) {
-      p0.set_wrapModeV_60s9rb_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 76);
   }
   function ZTextureData$_get_pixelType_$ref_gcutuh(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.pixelType_1;
-    };
+    }, 0, 0, 77, VOID, [p0]);
   }
   function ZTextureData$_set_pixelType_$ref_153bc5(p0) {
-    return function (_this__u8e3s4) {
-      p0.pixelType_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.pixelType_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 78, VOID, [p0]);
   }
   function ZTexture$_get_pixelType_$ref_wvs3dp() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.pixelType;
-    };
+    }, 1, 0, 79);
   }
   function ZTexture$_set_pixelType_$ref_mxkg33() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_pixelType_bjv1s_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_pixelType_$ref_wvs3dp_0() {
-    return function (p0) {
-      return p0.pixelType;
-    };
-  }
-  function ZTexture$_set_pixelType_$ref_mxkg33_0() {
-    return function (p0, p1) {
-      p0.set_pixelType_bjv1s_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 80);
   }
   function ZTextureData$_get_channels_$ref_t7cw77(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.channels_1;
-    };
+    }, 0, 0, 81, VOID, [p0]);
   }
   function ZTextureData$_set_channels_$ref_dnm5n3(p0) {
-    return function (_this__u8e3s4) {
-      p0.channels_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.channels_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 82, VOID, [p0]);
   }
   function ZTexture$_get_channels_$ref_xd3ypf() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.channels;
-    };
+    }, 1, 0, 83);
   }
   function ZTexture$_set_channels_$ref_m49cpl() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_channels_ndcjv9_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_channels_$ref_xd3ypf_0() {
-    return function (p0) {
-      return p0.channels;
-    };
-  }
-  function ZTexture$_set_channels_$ref_m49cpl_0() {
-    return function (p0, p1) {
-      p0.set_channels_ndcjv9_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 84);
   }
   function ZTextureData$_get_colorSpace_$ref_e6uvcg(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.colorSpace_1;
-    };
+    }, 0, 0, 85, VOID, [p0]);
   }
   function ZTextureData$_set_colorSpace_$ref_vb5ql8(p0) {
-    return function (_this__u8e3s4) {
-      p0.colorSpace_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.colorSpace_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 86, VOID, [p0]);
   }
   function ZTexture$_get_colorSpace_$ref_klil7e() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.colorSpace;
-    };
+    }, 1, 0, 87);
   }
   function ZTexture$_set_colorSpace_$ref_4xkuu2() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_colorSpace_ai91wv_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_colorSpace_$ref_klil7e_0() {
-    return function (p0) {
-      return p0.colorSpace;
-    };
-  }
-  function ZTexture$_set_colorSpace_$ref_4xkuu2_0() {
-    return function (p0, p1) {
-      p0.set_colorSpace_ai91wv_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 88);
   }
   function ZTextureData$_get_normalized_$ref_oddhl0(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.normalized_1;
-    };
+    }, 0, 0, 89, VOID, [p0]);
   }
   function ZTextureData$_set_normalized_$ref_l4n4co(p0) {
-    return function (_this__u8e3s4) {
-      p0.normalized_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.normalized_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 90, VOID, [p0]);
   }
   function ZTexture$_get_normalized_$ref_aezyyu() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.normalized;
-    };
+    }, 1, 0, 91);
   }
   function ZTexture$_set_normalized_$ref_f43h2m() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_normalized_6f6hzz_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZTexture$_get_normalized_$ref_aezyyu_0() {
-    return function (p0) {
-      return p0.normalized;
-    };
-  }
-  function ZTexture$_set_normalized_$ref_f43h2m_0() {
-    return function (p0, p1) {
-      p0.set_normalized_6f6hzz_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 92);
   }
   function ZTexture(data) {
     ZDataRenderComponent.call(this, data);
@@ -6166,9 +6028,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_id_36n2qa_k$ = function (_set____db54di) {
     var tmp0 = this.id$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_id_$ref_4kj7q6_0();
+    var tmp_0 = ZTexture$_get_id_$ref_4kj7q6();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('id', 1, tmp, tmp_0, ZTexture$_set_id_$ref_619scy_0());
+    getPropertyCallableRef('id', 1, tmp, tmp_0, ZTexture$_set_id_$ref_619scy());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6183,9 +6045,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_width_2l5qrj_k$ = function (_set____db54di) {
     var tmp0 = this.width$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_width_$ref_j9xkon_0();
+    var tmp_0 = ZTexture$_get_width_$ref_j9xkon();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('width', 1, tmp, tmp_0, ZTexture$_set_width_$ref_a0wvpx_0());
+    getPropertyCallableRef('width', 1, tmp, tmp_0, ZTexture$_set_width_$ref_a0wvpx());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6200,9 +6062,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_height_ubp1uk_k$ = function (_set____db54di) {
     var tmp0 = this.height$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_height_$ref_a5frl6_0();
+    var tmp_0 = ZTexture$_get_height_$ref_a5frl6();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('height', 1, tmp, tmp_0, ZTexture$_set_height_$ref_4wstk2_0());
+    getPropertyCallableRef('height', 1, tmp, tmp_0, ZTexture$_set_height_$ref_4wstk2());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6217,9 +6079,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_flipX_s3wld3_k$ = function (_set____db54di) {
     var tmp0 = this.flipX$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_flipX_$ref_8cpu3y_0();
+    var tmp_0 = ZTexture$_get_flipX_$ref_8cpu3y();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('flipX', 1, tmp, tmp_0, ZTexture$_set_flipX_$ref_xdjrgm_0());
+    getPropertyCallableRef('flipX', 1, tmp, tmp_0, ZTexture$_set_flipX_$ref_xdjrgm());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6234,9 +6096,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_flipY_dgjqgq_k$ = function (_set____db54di) {
     var tmp0 = this.flipY$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_flipY_$ref_7vo7pr_0();
+    var tmp_0 = ZTexture$_get_flipY_$ref_7vo7pr();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('flipY', 1, tmp, tmp_0, ZTexture$_set_flipY_$ref_xuldut_0());
+    getPropertyCallableRef('flipY', 1, tmp, tmp_0, ZTexture$_set_flipY_$ref_xuldut());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6251,9 +6113,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_dataArray_i70sw2_k$ = function (_set____db54di) {
     var tmp0 = this.dataArray$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_dataArray_$ref_yq7ype_0();
+    var tmp_0 = ZTexture$_get_dataArray_$ref_yq7ype();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('dataArray', 1, tmp, tmp_0, ZTexture$_set_dataArray_$ref_jigg72_0());
+    getPropertyCallableRef('dataArray', 1, tmp, tmp_0, ZTexture$_set_dataArray_$ref_jigg72());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6268,9 +6130,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_minFilter_io9hva_k$ = function (_set____db54di) {
     var tmp0 = this.minFilter$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_minFilter_$ref_luduxf_0();
+    var tmp_0 = ZTexture$_get_minFilter_$ref_luduxf();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('minFilter', 1, tmp, tmp_0, ZTexture$_set_minFilter_$ref_xyyojd_0());
+    getPropertyCallableRef('minFilter', 1, tmp, tmp_0, ZTexture$_set_minFilter_$ref_xyyojd());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6285,9 +6147,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_magFilter_gnoijb_k$ = function (_set____db54di) {
     var tmp0 = this.magFilter$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_magFilter_$ref_pb7vf2_0();
+    var tmp_0 = ZTexture$_get_magFilter_$ref_pb7vf2();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('magFilter', 1, tmp, tmp_0, ZTexture$_set_magFilter_$ref_a3gcwq_0());
+    getPropertyCallableRef('magFilter', 1, tmp, tmp_0, ZTexture$_set_magFilter_$ref_a3gcwq());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6302,9 +6164,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_wrapModeU_3fbmii_k$ = function (_set____db54di) {
     var tmp0 = this.wrapModeU$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_wrapModeU_$ref_84lujv_0();
+    var tmp_0 = ZTexture$_get_wrapModeU_$ref_84lujv();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('wrapModeU', 1, tmp, tmp_0, ZTexture$_set_wrapModeU_$ref_735nyh_0());
+    getPropertyCallableRef('wrapModeU', 1, tmp, tmp_0, ZTexture$_set_wrapModeU_$ref_735nyh());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6319,9 +6181,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_wrapModeV_60s9rb_k$ = function (_set____db54di) {
     var tmp0 = this.wrapModeV$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_wrapModeV_$ref_7nk85o_0();
+    var tmp_0 = ZTexture$_get_wrapModeV_$ref_7nk85o();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('wrapModeV', 1, tmp, tmp_0, ZTexture$_set_wrapModeV_$ref_7k7aco_0());
+    getPropertyCallableRef('wrapModeV', 1, tmp, tmp_0, ZTexture$_set_wrapModeV_$ref_7k7aco());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6336,9 +6198,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_pixelType_bjv1s_k$ = function (_set____db54di) {
     var tmp0 = this.pixelType$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_pixelType_$ref_wvs3dp_0();
+    var tmp_0 = ZTexture$_get_pixelType_$ref_wvs3dp();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('pixelType', 1, tmp, tmp_0, ZTexture$_set_pixelType_$ref_mxkg33_0());
+    getPropertyCallableRef('pixelType', 1, tmp, tmp_0, ZTexture$_set_pixelType_$ref_mxkg33());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6353,9 +6215,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_channels_ndcjv9_k$ = function (_set____db54di) {
     var tmp0 = this.channels$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_channels_$ref_xd3ypf_0();
+    var tmp_0 = ZTexture$_get_channels_$ref_xd3ypf();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('channels', 1, tmp, tmp_0, ZTexture$_set_channels_$ref_m49cpl_0());
+    getPropertyCallableRef('channels', 1, tmp, tmp_0, ZTexture$_set_channels_$ref_m49cpl());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6370,9 +6232,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_colorSpace_ai91wv_k$ = function (_set____db54di) {
     var tmp0 = this.colorSpace$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_colorSpace_$ref_klil7e_0();
+    var tmp_0 = ZTexture$_get_colorSpace_$ref_klil7e();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('colorSpace', 1, tmp, tmp_0, ZTexture$_set_colorSpace_$ref_4xkuu2_0());
+    getPropertyCallableRef('colorSpace', 1, tmp, tmp_0, ZTexture$_set_colorSpace_$ref_4xkuu2());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6387,9 +6249,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZTexture).set_normalized_6f6hzz_k$ = function (_set____db54di) {
     var tmp0 = this.normalized$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZTexture$_get_normalized_$ref_aezyyu_0();
+    var tmp_0 = ZTexture$_get_normalized_$ref_aezyyu();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('normalized', 1, tmp, tmp_0, ZTexture$_set_normalized_$ref_f43h2m_0());
+    getPropertyCallableRef('normalized', 1, tmp, tmp_0, ZTexture$_set_normalized_$ref_f43h2m());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -6406,16 +6268,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZTexture).internalInitialize_26ha9x_k$ = function (ctx) {
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZTexture).get_simpleName_r6f8py_k$(), hashCode(this)).debug('Initializing texture ' + this.refId);
+    Companion_getInstance_47().getLogger(getKClass(ZTexture).get_simpleName_r6f8py_k$(), hashCode(this)).debug('Initializing texture ' + this.refId);
   };
   protoOf(ZTexture).bind_svxwgj_k$ = function () {
     return this.get_renderer_v1k1vw_k$().bind();
   };
   protoOf(ZTexture).unbind_ylwmfa_k$ = function () {
     return this.get_renderer_v1k1vw_k$().unbind();
-  };
-  protoOf(ZTexture).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
   };
   function ZTextureData$Companion$$childSerializers$_anonymous__cvv2xr() {
     return Companion_getInstance_23().serializer_9w0wvi_k$();
@@ -7093,200 +6952,200 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_27;
   }
   function ZBufferData$_get_attributeId_$ref_z1qmv(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.get_attributeId_8rp9wu_k$();
-    };
+    }, 0, 0, 93, VOID, [p0]);
   }
   function ZBuffer$_get_attributeId_$ref_ruauld() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.get_attributeId_8rp9wu_k$();
-    };
+    }, 1, 0, 94);
   }
   function ZBufferData$_get_id_$ref_bmdwv5(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.id;
-    };
+    }, 0, 0, 95, VOID, [p0]);
   }
   function ZBufferData$_set_id_$ref_d34hhx(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_id_kpjn9s_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_id_kpjn9s_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 96, VOID, [p0]);
   }
   function ZBuffer$_get_id_$ref_er4vfb() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.id;
-    };
+    }, 1, 0, 97);
   }
   function ZBufferData$_get_isIndexBuffer_$ref_e4si2g(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.isIndexBuffer;
-    };
+    }, 0, 0, 98, VOID, [p0]);
   }
   function ZBufferData$_set_isIndexBuffer_$ref_z6inmc(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_isIndexBuffer_gbxa6u_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_isIndexBuffer_gbxa6u_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 99, VOID, [p0]);
   }
   function ZBuffer$_get_isIndexBuffer_$ref_lxi8uq() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.isIndexBuffer;
-    };
+    }, 1, 0, 100);
   }
   function ZBufferData$_get_dataType_$ref_s2vjje(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.dataType;
-    };
+    }, 0, 0, 101, VOID, [p0]);
   }
   function ZBufferData$_set_dataType_$ref_rehrvm(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_dataType_uo9u8e_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_dataType_uo9u8e_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 102, VOID, [p0]);
   }
   function ZBuffer$_get_dataType_$ref_imhiu8() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.dataType;
-    };
+    }, 1, 0, 103);
   }
   function ZBufferData$_get_name_$ref_u33bkh(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.name;
-    };
+    }, 0, 0, 104, VOID, [p0]);
   }
   function ZBufferData$_set_name_$ref_ha703p(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_name_aqnlwe_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_name_aqnlwe_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 105, VOID, [p0]);
   }
   function ZBuffer$_get_name_$ref_eh2h15() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.name;
-    };
+    }, 1, 0, 106);
   }
   function ZBufferData$_get_size_$ref_sr5vy1(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.size;
-    };
+    }, 0, 0, 107, VOID, [p0]);
   }
   function ZBufferData$_set_size_$ref_th1ukb(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_size_e2677a_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_size_e2677a_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 108, VOID, [p0]);
   }
   function ZBuffer$_get_size_$ref_2a7mkj() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.size;
-    };
+    }, 1, 0, 109);
   }
   function ZBufferData$_get_count_$ref_3e1vdb(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.count;
-    };
+    }, 0, 0, 110, VOID, [p0]);
   }
   function ZBufferData$_set_count_$ref_wowbrv(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_count_k2eul2_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_count_k2eul2_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 111, VOID, [p0]);
   }
   function ZBuffer$_get_count_$ref_sdsppj() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.count;
-    };
+    }, 1, 0, 112);
   }
   function ZBufferData$_get_normalized_$ref_vnoem5(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.normalized;
-    };
+    }, 0, 0, 113, VOID, [p0]);
   }
   function ZBufferData$_set_normalized_$ref_duc7bj(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_normalized_6f6hzz_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_normalized_6f6hzz_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 114, VOID, [p0]);
   }
   function ZBuffer$_get_normalized_$ref_xx9abx() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.normalized;
-    };
+    }, 1, 0, 115);
   }
   function ZBufferData$_get_offset_$ref_y7q0m1(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.offset;
-    };
+    }, 0, 0, 116, VOID, [p0]);
   }
   function ZBufferData$_set_offset_$ref_j5hfgt(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_offset_az57y0_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_offset_az57y0_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 117, VOID, [p0]);
   }
   function ZBuffer$_get_offset_$ref_rd5f5d() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.offset;
-    };
+    }, 1, 0, 118);
   }
   function ZBufferData$_get_stride_$ref_exg4db(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.stride;
-    };
+    }, 0, 0, 119, VOID, [p0]);
   }
   function ZBufferData$_set_stride_$ref_4sgrx(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_stride_h3i26m_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_stride_h3i26m_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 120, VOID, [p0]);
   }
   function ZBuffer$_get_stride_$ref_odoql1() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.stride;
-    };
+    }, 1, 0, 121);
   }
   function ZBufferData$_get_bufferId_$ref_6bvcg1(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.bufferId;
-    };
+    }, 0, 0, 122, VOID, [p0]);
   }
   function ZBufferData$_set_bufferId_$ref_lvm305(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_bufferId_837ei8_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_bufferId_837ei8_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 123, VOID, [p0]);
   }
   function ZBuffer$_get_bufferId_$ref_34io95() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.bufferId;
-    };
+    }, 1, 0, 124);
   }
   function ZBufferData$_get_dataArray_$ref_4098pb(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.dataArray;
-    };
+    }, 0, 0, 125, VOID, [p0]);
   }
   function ZBufferData$_set_dataArray_$ref_b7i9t1(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_dataArray_i70sw2_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_dataArray_i70sw2_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 126, VOID, [p0]);
   }
   function ZBuffer$_get_dataArray_$ref_4zd52f() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.dataArray;
-    };
+    }, 1, 0, 127);
   }
   function ZBufferData$_get_hasData_$ref_hudnno(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.hasData;
-    };
+    }, 0, 0, 128, VOID, [p0]);
   }
   function ZBuffer$_get_hasData_$ref_qpckem() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.hasData;
-    };
+    }, 1, 0, 129);
   }
   function ZBuffer(data) {
     ZDataRenderComponent.call(this, data);
@@ -7448,9 +7307,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBuffer).unbind_ylwmfa_k$ = function () {
     return this.get_renderer_v1k1vw_k$().unbind();
   };
-  protoOf(ZBuffer).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
-  };
   protoOf(ZBuffer).toString = function () {
     return 'ZBuffer(attributeId=' + this.get_attributeId_8rp9wu_k$().toString() + ', bufferId=' + this.data_1.bufferId + ')';
   };
@@ -7461,368 +7317,126 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function initWithData(id, dataType, name, size, count, normalized, offset, stride, isIndexBuffer, bufferId, dataArray) {
     return ZBufferData_init_$Init$(id, dataType, name, size, count, normalized, offset, stride, isIndexBuffer, bufferId, dataArray, objectCreate(protoOf(ZBufferData)));
   }
-  function ZBufferKey$_get_id_$ref_1qqrb6(p0) {
-    return function () {
-      return p0.id;
-    };
-  }
-  function ZBufferKey$_set_id_$ref_37hbxy(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_id_kpjn9s_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
-  }
   function ZBufferData$_get_id_$ref_bmdwv5_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.id;
-    };
+    }, 1, 0, 95);
   }
   function ZBufferData$_set_id_$ref_d34hhx_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_id_kpjn9s_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_id_$ref_bmdwv5_1() {
-    return function (p0) {
-      return p0.id;
-    };
-  }
-  function ZBufferData$_set_id_$ref_d34hhx_1() {
-    return function (p0, p1) {
-      p0.set_id_kpjn9s_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_dataType_$ref_6i1gqd(p0) {
-    return function () {
-      return p0.dataType;
-    };
-  }
-  function ZBufferKey$_set_dataType_$ref_91p9tr(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_dataType_uo9u8e_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 96);
   }
   function ZBufferData$_get_dataType_$ref_s2vjje_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.dataType;
-    };
+    }, 1, 0, 101);
   }
   function ZBufferData$_set_dataType_$ref_rehrvm_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_dataType_uo9u8e_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_dataType_$ref_s2vjje_1() {
-    return function (p0) {
-      return p0.dataType;
-    };
-  }
-  function ZBufferData$_set_dataType_$ref_rehrvm_1() {
-    return function (p0, p1) {
-      p0.set_dataType_uo9u8e_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_name_$ref_gi0nv2(p0) {
-    return function () {
-      return p0.name;
-    };
-  }
-  function ZBufferKey$_set_name_$ref_tawzbu(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_name_aqnlwe_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 102);
   }
   function ZBufferData$_get_name_$ref_u33bkh_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.name;
-    };
+    }, 1, 0, 104);
   }
   function ZBufferData$_set_name_$ref_ha703p_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_name_aqnlwe_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_name_$ref_u33bkh_1() {
-    return function (p0) {
-      return p0.name;
-    };
-  }
-  function ZBufferData$_set_name_$ref_ha703p_1() {
-    return function (p0, p1) {
-      p0.set_name_aqnlwe_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_size_$ref_4b5teg(p0) {
-    return function () {
-      return p0.size;
-    };
-  }
-  function ZBufferKey$_set_size_$ref_h424v8(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_size_e2677a_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 105);
   }
   function ZBufferData$_get_size_$ref_sr5vy1_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.size;
-    };
+    }, 1, 0, 107);
   }
   function ZBufferData$_set_size_$ref_th1ukb_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_size_e2677a_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_size_$ref_sr5vy1_1() {
-    return function (p0) {
-      return p0.size;
-    };
-  }
-  function ZBufferData$_set_size_$ref_th1ukb_1() {
-    return function (p0, p1) {
-      p0.set_size_e2677a_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_count_$ref_k64jhu(p0) {
-    return function () {
-      return p0.count;
-    };
-  }
-  function ZBufferKey$_set_count_$ref_94pwwq(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_count_k2eul2_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 108);
   }
   function ZBufferData$_get_count_$ref_3e1vdb_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.count;
-    };
+    }, 1, 0, 110);
   }
   function ZBufferData$_set_count_$ref_wowbrv_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_count_k2eul2_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_count_$ref_3e1vdb_1() {
-    return function (p0) {
-      return p0.count;
-    };
-  }
-  function ZBufferData$_set_count_$ref_wowbrv_1() {
-    return function (p0, p1) {
-      p0.set_count_k2eul2_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_normalized_$ref_t9u76q(p0) {
-    return function () {
-      return p0.normalized;
-    };
-  }
-  function ZBufferKey$_set_normalized_$ref_3qqr5a(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_normalized_6f6hzz_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 111);
   }
   function ZBufferData$_get_normalized_$ref_vnoem5_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.normalized;
-    };
+    }, 1, 0, 113);
   }
   function ZBufferData$_set_normalized_$ref_duc7bj_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_normalized_6f6hzz_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_normalized_$ref_vnoem5_1() {
-    return function (p0) {
-      return p0.normalized;
-    };
-  }
-  function ZBufferData$_set_normalized_$ref_duc7bj_1() {
-    return function (p0, p1) {
-      p0.set_normalized_6f6hzz_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_offset_$ref_e5brju(p0) {
-    return function () {
-      return p0.offset;
-    };
-  }
-  function ZBufferKey$_set_offset_$ref_wwtle(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_offset_az57y0_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 114);
   }
   function ZBufferData$_get_offset_$ref_y7q0m1_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.offset;
-    };
+    }, 1, 0, 116);
   }
   function ZBufferData$_set_offset_$ref_j5hfgt_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_offset_az57y0_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_offset_$ref_y7q0m1_1() {
-    return function (p0) {
-      return p0.offset;
-    };
-  }
-  function ZBufferData$_set_offset_$ref_j5hfgt_1() {
-    return function (p0, p1) {
-      p0.set_offset_az57y0_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_stride_$ref_54y4ow(p0) {
-    return function () {
-      return p0.stride;
-    };
-  }
-  function ZBufferKey$_set_stride_$ref_k76pu4(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_stride_h3i26m_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 117);
   }
   function ZBufferData$_get_stride_$ref_exg4db_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.stride;
-    };
+    }, 1, 0, 119);
   }
   function ZBufferData$_set_stride_$ref_4sgrx_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_stride_h3i26m_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_stride_$ref_exg4db_1() {
-    return function (p0) {
-      return p0.stride;
-    };
-  }
-  function ZBufferData$_set_stride_$ref_4sgrx_1() {
-    return function (p0, p1) {
-      p0.set_stride_h3i26m_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd(p0) {
-    return function () {
-      return p0.isIndexBuffer;
-    };
-  }
-  function ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_isIndexBuffer_gbxa6u_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 120);
   }
   function ZBufferData$_get_isIndexBuffer_$ref_e4si2g_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.isIndexBuffer;
-    };
+    }, 1, 0, 98);
   }
   function ZBufferData$_set_isIndexBuffer_$ref_z6inmc_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_isIndexBuffer_gbxa6u_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_isIndexBuffer_$ref_e4si2g_1() {
-    return function (p0) {
-      return p0.isIndexBuffer;
-    };
-  }
-  function ZBufferData$_set_isIndexBuffer_$ref_z6inmc_1() {
-    return function (p0, p1) {
-      p0.set_isIndexBuffer_gbxa6u_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_bufferId_$ref_s91ntq(p0) {
-    return function () {
-      return p0.bufferId;
-    };
-  }
-  function ZBufferKey$_set_bufferId_$ref_cpax9m(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_bufferId_837ei8_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 99);
   }
   function ZBufferData$_get_bufferId_$ref_6bvcg1_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.bufferId;
-    };
+    }, 1, 0, 122);
   }
   function ZBufferData$_set_bufferId_$ref_lvm305_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_bufferId_837ei8_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_bufferId_$ref_6bvcg1_1() {
-    return function (p0) {
-      return p0.bufferId;
-    };
-  }
-  function ZBufferData$_set_bufferId_$ref_lvm305_1() {
-    return function (p0, p1) {
-      p0.set_bufferId_837ei8_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZBufferContent$_get_dataArray_$ref_iojymk(p0) {
-    return function () {
-      return p0.dataArray;
-    };
-  }
-  function ZBufferContent$_set_dataArray_$ref_xwbh4w(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_dataArray_i70sw2_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
+    }, 2, 0, 123);
   }
   function ZBufferData$_get_dataArray_$ref_4098pb_0() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.dataArray;
-    };
+    }, 1, 0, 125);
   }
   function ZBufferData$_set_dataArray_$ref_b7i9t1_0() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_dataArray_i70sw2_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferData$_get_dataArray_$ref_4098pb_1() {
-    return function (p0) {
-      return p0.dataArray;
-    };
-  }
-  function ZBufferData$_set_dataArray_$ref_b7i9t1_1() {
-    return function (p0, p1) {
-      p0.set_dataArray_i70sw2_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 126);
   }
   function ZBufferData(key, content) {
     key = key === VOID ? init_5() : key;
@@ -7833,58 +7447,58 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp = this;
     var tmp0 = this.key;
     var tmp_0 = KMutableProperty0;
-    var tmp_1 = ZBufferKey$_get_id_$ref_1qqrb6(tmp0);
-    tmp.id$delegate_1 = getPropertyCallableRef('id', 0, tmp_0, tmp_1, ZBufferKey$_set_id_$ref_37hbxy(tmp0));
+    var tmp_1 = ZBufferKey$_get_id_$ref_1qqrb6_0(tmp0);
+    tmp.id$delegate_1 = getPropertyCallableRef('id', 0, tmp_0, tmp_1, ZBufferKey$_set_id_$ref_37hbxy_0(tmp0));
     var tmp_2 = this;
     var tmp0_0 = this.key;
     var tmp_3 = KMutableProperty0;
-    var tmp_4 = ZBufferKey$_get_dataType_$ref_6i1gqd(tmp0_0);
-    tmp_2.dataType$delegate_1 = getPropertyCallableRef('dataType', 0, tmp_3, tmp_4, ZBufferKey$_set_dataType_$ref_91p9tr(tmp0_0));
+    var tmp_4 = ZBufferKey$_get_dataType_$ref_6i1gqd_0(tmp0_0);
+    tmp_2.dataType$delegate_1 = getPropertyCallableRef('dataType', 0, tmp_3, tmp_4, ZBufferKey$_set_dataType_$ref_91p9tr_0(tmp0_0));
     var tmp_5 = this;
     var tmp0_1 = this.key;
     var tmp_6 = KMutableProperty0;
-    var tmp_7 = ZBufferKey$_get_name_$ref_gi0nv2(tmp0_1);
-    tmp_5.name$delegate_1 = getPropertyCallableRef('name', 0, tmp_6, tmp_7, ZBufferKey$_set_name_$ref_tawzbu(tmp0_1));
+    var tmp_7 = ZBufferKey$_get_name_$ref_gi0nv2_0(tmp0_1);
+    tmp_5.name$delegate_1 = getPropertyCallableRef('name', 0, tmp_6, tmp_7, ZBufferKey$_set_name_$ref_tawzbu_0(tmp0_1));
     var tmp_8 = this;
     var tmp0_2 = this.key;
     var tmp_9 = KMutableProperty0;
-    var tmp_10 = ZBufferKey$_get_size_$ref_4b5teg(tmp0_2);
-    tmp_8.size$delegate_1 = getPropertyCallableRef('size', 0, tmp_9, tmp_10, ZBufferKey$_set_size_$ref_h424v8(tmp0_2));
+    var tmp_10 = ZBufferKey$_get_size_$ref_4b5teg_0(tmp0_2);
+    tmp_8.size$delegate_1 = getPropertyCallableRef('size', 0, tmp_9, tmp_10, ZBufferKey$_set_size_$ref_h424v8_0(tmp0_2));
     var tmp_11 = this;
     var tmp0_3 = this.key;
     var tmp_12 = KMutableProperty0;
-    var tmp_13 = ZBufferKey$_get_count_$ref_k64jhu(tmp0_3);
-    tmp_11.count$delegate_1 = getPropertyCallableRef('count', 0, tmp_12, tmp_13, ZBufferKey$_set_count_$ref_94pwwq(tmp0_3));
+    var tmp_13 = ZBufferKey$_get_count_$ref_k64jhu_0(tmp0_3);
+    tmp_11.count$delegate_1 = getPropertyCallableRef('count', 0, tmp_12, tmp_13, ZBufferKey$_set_count_$ref_94pwwq_0(tmp0_3));
     var tmp_14 = this;
     var tmp0_4 = this.key;
     var tmp_15 = KMutableProperty0;
-    var tmp_16 = ZBufferKey$_get_normalized_$ref_t9u76q(tmp0_4);
-    tmp_14.normalized$delegate_1 = getPropertyCallableRef('normalized', 0, tmp_15, tmp_16, ZBufferKey$_set_normalized_$ref_3qqr5a(tmp0_4));
+    var tmp_16 = ZBufferKey$_get_normalized_$ref_t9u76q_0(tmp0_4);
+    tmp_14.normalized$delegate_1 = getPropertyCallableRef('normalized', 0, tmp_15, tmp_16, ZBufferKey$_set_normalized_$ref_3qqr5a_0(tmp0_4));
     var tmp_17 = this;
     var tmp0_5 = this.key;
     var tmp_18 = KMutableProperty0;
-    var tmp_19 = ZBufferKey$_get_offset_$ref_e5brju(tmp0_5);
-    tmp_17.offset$delegate_1 = getPropertyCallableRef('offset', 0, tmp_18, tmp_19, ZBufferKey$_set_offset_$ref_wwtle(tmp0_5));
+    var tmp_19 = ZBufferKey$_get_offset_$ref_e5brju_0(tmp0_5);
+    tmp_17.offset$delegate_1 = getPropertyCallableRef('offset', 0, tmp_18, tmp_19, ZBufferKey$_set_offset_$ref_wwtle_0(tmp0_5));
     var tmp_20 = this;
     var tmp0_6 = this.key;
     var tmp_21 = KMutableProperty0;
-    var tmp_22 = ZBufferKey$_get_stride_$ref_54y4ow(tmp0_6);
-    tmp_20.stride$delegate_1 = getPropertyCallableRef('stride', 0, tmp_21, tmp_22, ZBufferKey$_set_stride_$ref_k76pu4(tmp0_6));
+    var tmp_22 = ZBufferKey$_get_stride_$ref_54y4ow_0(tmp0_6);
+    tmp_20.stride$delegate_1 = getPropertyCallableRef('stride', 0, tmp_21, tmp_22, ZBufferKey$_set_stride_$ref_k76pu4_0(tmp0_6));
     var tmp_23 = this;
     var tmp0_7 = this.key;
     var tmp_24 = KMutableProperty0;
-    var tmp_25 = ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd(tmp0_7);
-    tmp_23.isIndexBuffer$delegate_1 = getPropertyCallableRef('isIndexBuffer', 0, tmp_24, tmp_25, ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f(tmp0_7));
+    var tmp_25 = ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd_0(tmp0_7);
+    tmp_23.isIndexBuffer$delegate_1 = getPropertyCallableRef('isIndexBuffer', 0, tmp_24, tmp_25, ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f_0(tmp0_7));
     var tmp_26 = this;
     var tmp0_8 = this.key;
     var tmp_27 = KMutableProperty0;
-    var tmp_28 = ZBufferKey$_get_bufferId_$ref_s91ntq(tmp0_8);
-    tmp_26.bufferId$delegate_1 = getPropertyCallableRef('bufferId', 0, tmp_27, tmp_28, ZBufferKey$_set_bufferId_$ref_cpax9m(tmp0_8));
+    var tmp_28 = ZBufferKey$_get_bufferId_$ref_s91ntq_0(tmp0_8);
+    tmp_26.bufferId$delegate_1 = getPropertyCallableRef('bufferId', 0, tmp_27, tmp_28, ZBufferKey$_set_bufferId_$ref_cpax9m_0(tmp0_8));
     var tmp_29 = this;
     var tmp0_9 = this.content;
     var tmp_30 = KMutableProperty0;
-    var tmp_31 = ZBufferContent$_get_dataArray_$ref_iojymk(tmp0_9);
-    tmp_29.dataArray$delegate_1 = getPropertyCallableRef('dataArray', 0, tmp_30, tmp_31, ZBufferContent$_set_dataArray_$ref_xwbh4w(tmp0_9));
+    var tmp_31 = ZBufferContent$_get_dataArray_$ref_iojymk_0(tmp0_9);
+    tmp_29.dataArray$delegate_1 = getPropertyCallableRef('dataArray', 0, tmp_30, tmp_31, ZBufferContent$_set_dataArray_$ref_xwbh4w_0(tmp0_9));
   }
   protoOf(ZBufferData).set_key_l33zxd_k$ = function (_set____db54di) {
     this.key = _set____db54di;
@@ -7901,9 +7515,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_id_kpjn9s_k$ = function (_set____db54di) {
     var tmp0 = this.id$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_id_$ref_bmdwv5_1();
+    var tmp_0 = ZBufferData$_get_id_$ref_bmdwv5_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBufferData$_set_id_$ref_d34hhx_1());
+    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBufferData$_set_id_$ref_d34hhx_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -7918,9 +7532,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_dataType_uo9u8e_k$ = function (_set____db54di) {
     var tmp0 = this.dataType$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_dataType_$ref_s2vjje_1();
+    var tmp_0 = ZBufferData$_get_dataType_$ref_s2vjje_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('dataType', 1, tmp, tmp_0, ZBufferData$_set_dataType_$ref_rehrvm_1());
+    getPropertyCallableRef('dataType', 1, tmp, tmp_0, ZBufferData$_set_dataType_$ref_rehrvm_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -7935,9 +7549,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_name_aqnlwe_k$ = function (_set____db54di) {
     var tmp0 = this.name$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_name_$ref_u33bkh_1();
+    var tmp_0 = ZBufferData$_get_name_$ref_u33bkh_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('name', 1, tmp, tmp_0, ZBufferData$_set_name_$ref_ha703p_1());
+    getPropertyCallableRef('name', 1, tmp, tmp_0, ZBufferData$_set_name_$ref_ha703p_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -7952,9 +7566,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_size_e2677a_k$ = function (_set____db54di) {
     var tmp0 = this.size$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_size_$ref_sr5vy1_1();
+    var tmp_0 = ZBufferData$_get_size_$ref_sr5vy1_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('size', 1, tmp, tmp_0, ZBufferData$_set_size_$ref_th1ukb_1());
+    getPropertyCallableRef('size', 1, tmp, tmp_0, ZBufferData$_set_size_$ref_th1ukb_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -7969,9 +7583,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_count_k2eul2_k$ = function (_set____db54di) {
     var tmp0 = this.count$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_count_$ref_3e1vdb_1();
+    var tmp_0 = ZBufferData$_get_count_$ref_3e1vdb_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('count', 1, tmp, tmp_0, ZBufferData$_set_count_$ref_wowbrv_1());
+    getPropertyCallableRef('count', 1, tmp, tmp_0, ZBufferData$_set_count_$ref_wowbrv_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -7986,9 +7600,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_normalized_6f6hzz_k$ = function (_set____db54di) {
     var tmp0 = this.normalized$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_normalized_$ref_vnoem5_1();
+    var tmp_0 = ZBufferData$_get_normalized_$ref_vnoem5_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('normalized', 1, tmp, tmp_0, ZBufferData$_set_normalized_$ref_duc7bj_1());
+    getPropertyCallableRef('normalized', 1, tmp, tmp_0, ZBufferData$_set_normalized_$ref_duc7bj_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -8003,9 +7617,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_offset_az57y0_k$ = function (_set____db54di) {
     var tmp0 = this.offset$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_offset_$ref_y7q0m1_1();
+    var tmp_0 = ZBufferData$_get_offset_$ref_y7q0m1_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('offset', 1, tmp, tmp_0, ZBufferData$_set_offset_$ref_j5hfgt_1());
+    getPropertyCallableRef('offset', 1, tmp, tmp_0, ZBufferData$_set_offset_$ref_j5hfgt_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -8020,9 +7634,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_stride_h3i26m_k$ = function (_set____db54di) {
     var tmp0 = this.stride$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_stride_$ref_exg4db_1();
+    var tmp_0 = ZBufferData$_get_stride_$ref_exg4db_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('stride', 1, tmp, tmp_0, ZBufferData$_set_stride_$ref_4sgrx_1());
+    getPropertyCallableRef('stride', 1, tmp, tmp_0, ZBufferData$_set_stride_$ref_4sgrx_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -8037,9 +7651,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_isIndexBuffer_gbxa6u_k$ = function (_set____db54di) {
     var tmp0 = this.isIndexBuffer$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_isIndexBuffer_$ref_e4si2g_1();
+    var tmp_0 = ZBufferData$_get_isIndexBuffer_$ref_e4si2g_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('isIndexBuffer', 1, tmp, tmp_0, ZBufferData$_set_isIndexBuffer_$ref_z6inmc_1());
+    getPropertyCallableRef('isIndexBuffer', 1, tmp, tmp_0, ZBufferData$_set_isIndexBuffer_$ref_z6inmc_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -8054,9 +7668,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_bufferId_837ei8_k$ = function (_set____db54di) {
     var tmp0 = this.bufferId$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_bufferId_$ref_6bvcg1_1();
+    var tmp_0 = ZBufferData$_get_bufferId_$ref_6bvcg1_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('bufferId', 1, tmp, tmp_0, ZBufferData$_set_bufferId_$ref_lvm305_1());
+    getPropertyCallableRef('bufferId', 1, tmp, tmp_0, ZBufferData$_set_bufferId_$ref_lvm305_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -8071,9 +7685,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferData).set_dataArray_i70sw2_k$ = function (_set____db54di) {
     var tmp0 = this.dataArray$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferData$_get_dataArray_$ref_4098pb_1();
+    var tmp_0 = ZBufferData$_get_dataArray_$ref_4098pb_0();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('dataArray', 1, tmp, tmp_0, ZBufferData$_set_dataArray_$ref_b7i9t1_1());
+    getPropertyCallableRef('dataArray', 1, tmp, tmp_0, ZBufferData$_set_dataArray_$ref_b7i9t1_0());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -8166,70 +7780,48 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_28;
   }
   function ZBufferContentData$_get_id_$ref_7bp0va(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.id;
-    };
+    }, 0, 0, 130, VOID, [p0]);
   }
   function ZBufferContentData$_set_id_$ref_8sfli2(p0) {
-    return function (_this__u8e3s4) {
-      p0.id = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.id = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 131, VOID, [p0]);
   }
   function ZBufferContent$_get_id_$ref_6kzf6k() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.id;
-    };
+    }, 1, 0, 132);
   }
   function ZBufferContent$_set_id_$ref_81pztc() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_id_kpjn9s_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferContent$_get_id_$ref_6kzf6k_0() {
-    return function (p0) {
-      return p0.id;
-    };
-  }
-  function ZBufferContent$_set_id_$ref_81pztc_0() {
-    return function (p0, p1) {
-      p0.set_id_kpjn9s_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 133);
   }
   function ZBufferContentData$_get_dataArray_$ref_9n9qhi(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.dataArray;
-    };
+    }, 0, 0, 134, VOID, [p0]);
   }
   function ZBufferContentData$_set_dataArray_$ref_ov18zu(p0) {
-    return function (_this__u8e3s4) {
-      p0.dataArray = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.dataArray = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 135, VOID, [p0]);
   }
-  function ZBufferContent$_get_dataArray_$ref_iojymk_0() {
-    return function (p0) {
+  function ZBufferContent$_get_dataArray_$ref_iojymk() {
+    return constructCallableReference(function (p0) {
       return p0.dataArray;
-    };
+    }, 1, 0, 136);
   }
-  function ZBufferContent$_set_dataArray_$ref_xwbh4w_0() {
-    return function (p0, p1) {
+  function ZBufferContent$_set_dataArray_$ref_xwbh4w() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_dataArray_i70sw2_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferContent$_get_dataArray_$ref_iojymk_1() {
-    return function (p0) {
-      return p0.dataArray;
-    };
-  }
-  function ZBufferContent$_set_dataArray_$ref_xwbh4w_1() {
-    return function (p0, p1) {
-      p0.set_dataArray_i70sw2_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 137);
   }
   function ZBufferContent(data) {
     ZDataRenderComponent.call(this, data);
@@ -8245,9 +7837,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferContent).set_id_kpjn9s_k$ = function (_set____db54di) {
     var tmp0 = this.id$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferContent$_get_id_$ref_6kzf6k_0();
+    var tmp_0 = ZBufferContent$_get_id_$ref_6kzf6k();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBufferContent$_set_id_$ref_81pztc_0());
+    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBufferContent$_set_id_$ref_81pztc());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -8262,18 +7854,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferContent).set_dataArray_i70sw2_k$ = function (_set____db54di) {
     var tmp0 = this.dataArray$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferContent$_get_dataArray_$ref_iojymk_1();
+    var tmp_0 = ZBufferContent$_get_dataArray_$ref_iojymk();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('dataArray', 1, tmp, tmp_0, ZBufferContent$_set_dataArray_$ref_xwbh4w_1());
+    getPropertyCallableRef('dataArray', 1, tmp, tmp_0, ZBufferContent$_set_dataArray_$ref_xwbh4w());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferContent).get_dataArray_21nhuu_k$ = function () {
     var tmp0 = this.dataArray$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferContent$_get_dataArray_$ref_iojymk_0();
+    var tmp_0 = ZBufferContent$_get_dataArray_$ref_iojymk();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('dataArray', 1, tmp, tmp_0, ZBufferContent$_set_dataArray_$ref_xwbh4w_0());
+    getPropertyCallableRef('dataArray', 1, tmp, tmp_0, ZBufferContent$_set_dataArray_$ref_xwbh4w());
     return tmp0.get();
   };
   protoOf(ZBufferContent).get_hasData_cs7g57_k$ = function () {
@@ -8289,9 +7881,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZBufferContent).unbind_ylwmfa_k$ = function () {
     return this.get_renderer_v1k1vw_k$().unbind();
-  };
-  protoOf(ZBufferContent).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
   };
   protoOf(ZBufferContent).toString = function () {
     return 'ZBufferContent(id=' + this.data_1.id + ', size=' + this.data_1.dataArray.length + ')';
@@ -8479,6 +8068,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferContentSerializer).createComponentInstance_2ckoo_k$ = function (data) {
     return this.createComponentInstance_y64z59_k$(data instanceof ZBufferContentData ? data : THROW_CCE());
   };
+  function ZBufferContent$_get_dataArray_$ref_iojymk_0(p0) {
+    return constructCallableReference(function () {
+      return p0.dataArray;
+    }, 0, 0, 136, VOID, [p0]);
+  }
+  function ZBufferContent$_set_dataArray_$ref_xwbh4w_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_dataArray_i70sw2_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 137, VOID, [p0]);
+  }
   function ZBufferKey_init_$Init$($this) {
     ZBufferKey.call($this, new ZBufferKeyData());
     return $this;
@@ -8503,334 +8103,224 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_30;
   }
   function ZBufferKeyData$_get_id_$ref_hw8yes(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.id;
-    };
+    }, 0, 0, 138, VOID, [p0]);
   }
   function ZBufferKeyData$_set_id_$ref_gfids0(p0) {
-    return function (_this__u8e3s4) {
-      p0.id = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.id = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 139, VOID, [p0]);
   }
-  function ZBufferKey$_get_id_$ref_1qqrb6_0() {
-    return function (p0) {
+  function ZBufferKey$_get_id_$ref_1qqrb6() {
+    return constructCallableReference(function (p0) {
       return p0.id;
-    };
+    }, 1, 0, 140);
   }
-  function ZBufferKey$_set_id_$ref_37hbxy_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_id_$ref_37hbxy() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_id_kpjn9s_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_id_$ref_1qqrb6_1() {
-    return function (p0) {
-      return p0.id;
-    };
-  }
-  function ZBufferKey$_set_id_$ref_37hbxy_1() {
-    return function (p0, p1) {
-      p0.set_id_kpjn9s_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 141);
   }
   function ZBufferKeyData$_get_dataType_$ref_maj0r9(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.dataType;
-    };
+    }, 0, 0, 142, VOID, [p0]);
   }
   function ZBufferKeyData$_set_dataType_$ref_x6uanr(p0) {
-    return function (_this__u8e3s4) {
-      p0.dataType = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.dataType = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 143, VOID, [p0]);
   }
-  function ZBufferKey$_get_dataType_$ref_6i1gqd_0() {
-    return function (p0) {
+  function ZBufferKey$_get_dataType_$ref_6i1gqd() {
+    return constructCallableReference(function (p0) {
       return p0.dataType;
-    };
+    }, 1, 0, 144);
   }
-  function ZBufferKey$_set_dataType_$ref_91p9tr_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_dataType_$ref_91p9tr() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_dataType_uo9u8e_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_dataType_$ref_6i1gqd_1() {
-    return function (p0) {
-      return p0.dataType;
-    };
-  }
-  function ZBufferKey$_set_dataType_$ref_91p9tr_1() {
-    return function (p0, p1) {
-      p0.set_dataType_uo9u8e_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 145);
   }
   function ZBufferKeyData$_get_name_$ref_4ykbzw(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.name;
-    };
+    }, 0, 0, 146, VOID, [p0]);
   }
   function ZBufferKeyData$_set_name_$ref_7ubzgw(p0) {
-    return function (_this__u8e3s4) {
-      p0.name = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.name = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 147, VOID, [p0]);
   }
-  function ZBufferKey$_get_name_$ref_gi0nv2_0() {
-    return function (p0) {
+  function ZBufferKey$_get_name_$ref_gi0nv2() {
+    return constructCallableReference(function (p0) {
       return p0.name;
-    };
+    }, 1, 0, 148);
   }
-  function ZBufferKey$_set_name_$ref_tawzbu_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_name_$ref_tawzbu() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_name_aqnlwe_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_name_$ref_gi0nv2_1() {
-    return function (p0) {
-      return p0.name;
-    };
-  }
-  function ZBufferKey$_set_name_$ref_tawzbu_1() {
-    return function (p0, p1) {
-      p0.set_name_aqnlwe_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 149);
   }
   function ZBufferKeyData$_get_size_$ref_h5f6gi(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.size;
-    };
+    }, 0, 0, 150, VOID, [p0]);
   }
   function ZBufferKeyData$_set_size_$ref_4ciuzq(p0) {
-    return function (_this__u8e3s4) {
-      p0.size = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.size = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 151, VOID, [p0]);
   }
-  function ZBufferKey$_get_size_$ref_4b5teg_0() {
-    return function (p0) {
+  function ZBufferKey$_get_size_$ref_4b5teg() {
+    return constructCallableReference(function (p0) {
       return p0.size;
-    };
+    }, 1, 0, 152);
   }
-  function ZBufferKey$_set_size_$ref_h424v8_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_size_$ref_h424v8() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_size_e2677a_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_size_$ref_4b5teg_1() {
-    return function (p0) {
-      return p0.size;
-    };
-  }
-  function ZBufferKey$_set_size_$ref_h424v8_1() {
-    return function (p0, p1) {
-      p0.set_size_e2677a_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 153);
   }
   function ZBufferKeyData$_get_count_$ref_5txudg(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.count;
-    };
+    }, 0, 0, 154, VOID, [p0]);
   }
   function ZBufferKeyData$_set_count_$ref_z4sas0(p0) {
-    return function (_this__u8e3s4) {
-      p0.count = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.count = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 155, VOID, [p0]);
   }
-  function ZBufferKey$_get_count_$ref_k64jhu_0() {
-    return function (p0) {
+  function ZBufferKey$_get_count_$ref_k64jhu() {
+    return constructCallableReference(function (p0) {
       return p0.count;
-    };
+    }, 1, 0, 156);
   }
-  function ZBufferKey$_set_count_$ref_94pwwq_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_count_$ref_94pwwq() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_count_k2eul2_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_count_$ref_k64jhu_1() {
-    return function (p0) {
-      return p0.count;
-    };
-  }
-  function ZBufferKey$_set_count_$ref_94pwwq_1() {
-    return function (p0, p1) {
-      p0.set_count_k2eul2_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 157);
   }
   function ZBufferKeyData$_get_normalized_$ref_ac7bjc(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.normalized;
-    };
+    }, 0, 0, 158, VOID, [p0]);
   }
   function ZBufferKeyData$_set_normalized_$ref_z5taec(p0) {
-    return function (_this__u8e3s4) {
-      p0.normalized = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.normalized = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 159, VOID, [p0]);
   }
-  function ZBufferKey$_get_normalized_$ref_t9u76q_0() {
-    return function (p0) {
+  function ZBufferKey$_get_normalized_$ref_t9u76q() {
+    return constructCallableReference(function (p0) {
       return p0.normalized;
-    };
+    }, 1, 0, 160);
   }
-  function ZBufferKey$_set_normalized_$ref_3qqr5a_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_normalized_$ref_3qqr5a() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_normalized_6f6hzz_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_normalized_$ref_t9u76q_1() {
-    return function (p0) {
-      return p0.normalized;
-    };
-  }
-  function ZBufferKey$_set_normalized_$ref_3qqr5a_1() {
-    return function (p0, p1) {
-      p0.set_normalized_6f6hzz_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 161);
   }
   function ZBufferKeyData$_get_offset_$ref_w5yy7w(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.offset;
-    };
+    }, 0, 0, 162, VOID, [p0]);
   }
   function ZBufferKeyData$_set_offset_$ref_nswim0(p0) {
-    return function (_this__u8e3s4) {
-      p0.offset = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.offset = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 163, VOID, [p0]);
   }
-  function ZBufferKey$_get_offset_$ref_e5brju_0() {
-    return function (p0) {
+  function ZBufferKey$_get_offset_$ref_e5brju() {
+    return constructCallableReference(function (p0) {
       return p0.offset;
-    };
+    }, 1, 0, 164);
   }
-  function ZBufferKey$_set_offset_$ref_wwtle_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_offset_$ref_wwtle() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_offset_az57y0_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_offset_$ref_e5brju_1() {
-    return function (p0) {
-      return p0.offset;
-    };
-  }
-  function ZBufferKey$_set_offset_$ref_wwtle_1() {
-    return function (p0, p1) {
-      p0.set_offset_az57y0_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 165);
   }
   function ZBufferKeyData$_get_stride_$ref_jkv7ii(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.stride;
-    };
+    }, 0, 0, 166, VOID, [p0]);
   }
   function ZBufferKeyData$_set_stride_$ref_4immda(p0) {
-    return function (_this__u8e3s4) {
-      p0.stride = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.stride = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 167, VOID, [p0]);
   }
-  function ZBufferKey$_get_stride_$ref_54y4ow_0() {
-    return function (p0) {
+  function ZBufferKey$_get_stride_$ref_54y4ow() {
+    return constructCallableReference(function (p0) {
       return p0.stride;
-    };
+    }, 1, 0, 168);
   }
-  function ZBufferKey$_set_stride_$ref_k76pu4_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_stride_$ref_k76pu4() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_stride_h3i26m_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_stride_$ref_54y4ow_1() {
-    return function (p0) {
-      return p0.stride;
-    };
-  }
-  function ZBufferKey$_set_stride_$ref_k76pu4_1() {
-    return function (p0, p1) {
-      p0.set_stride_h3i26m_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 169);
   }
   function ZBufferKeyData$_get_isIndexBuffer_$ref_xcfzib(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.isIndexBuffer;
-    };
+    }, 0, 0, 170, VOID, [p0]);
   }
   function ZBufferKeyData$_set_isIndexBuffer_$ref_fyv66h(p0) {
-    return function (_this__u8e3s4) {
-      p0.isIndexBuffer = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.isIndexBuffer = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 171, VOID, [p0]);
   }
-  function ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd_0() {
-    return function (p0) {
+  function ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd() {
+    return constructCallableReference(function (p0) {
       return p0.isIndexBuffer;
-    };
+    }, 1, 0, 172);
   }
-  function ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_isIndexBuffer_gbxa6u_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd_1() {
-    return function (p0) {
-      return p0.isIndexBuffer;
-    };
-  }
-  function ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f_1() {
-    return function (p0, p1) {
-      p0.set_isIndexBuffer_gbxa6u_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 173);
   }
   function ZBufferKeyData$_get_bufferId_$ref_jitnw(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.bufferId;
-    };
+    }, 0, 0, 174, VOID, [p0]);
   }
   function ZBufferKeyData$_set_bufferId_$ref_g39k80(p0) {
-    return function (_this__u8e3s4) {
-      p0.bufferId = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.bufferId = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 175, VOID, [p0]);
   }
-  function ZBufferKey$_get_bufferId_$ref_s91ntq_0() {
-    return function (p0) {
+  function ZBufferKey$_get_bufferId_$ref_s91ntq() {
+    return constructCallableReference(function (p0) {
       return p0.bufferId;
-    };
+    }, 1, 0, 176);
   }
-  function ZBufferKey$_set_bufferId_$ref_cpax9m_0() {
-    return function (p0, p1) {
+  function ZBufferKey$_set_bufferId_$ref_cpax9m() {
+    return constructCallableReference(function (p0, p1) {
       p0.set_bufferId_837ei8_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBufferKey$_get_bufferId_$ref_s91ntq_1() {
-    return function (p0) {
-      return p0.bufferId;
-    };
-  }
-  function ZBufferKey$_set_bufferId_$ref_cpax9m_1() {
-    return function (p0, p1) {
-      p0.set_bufferId_837ei8_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 177);
   }
   function ZBufferKey(data) {
     ZDataRenderComponent.call(this, data);
@@ -8878,171 +8368,171 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferKey).set_id_kpjn9s_k$ = function (_set____db54di) {
     var tmp0 = this.id$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_id_$ref_1qqrb6_1();
+    var tmp_0 = ZBufferKey$_get_id_$ref_1qqrb6();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBufferKey$_set_id_$ref_37hbxy_1());
+    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBufferKey$_set_id_$ref_37hbxy());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_id_kntnx8_k$ = function () {
     var tmp0 = this.id$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_id_$ref_1qqrb6_0();
+    var tmp_0 = ZBufferKey$_get_id_$ref_1qqrb6();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBufferKey$_set_id_$ref_37hbxy_0());
+    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBufferKey$_set_id_$ref_37hbxy());
     return tmp0.get();
   };
   protoOf(ZBufferKey).set_dataType_uo9u8e_k$ = function (_set____db54di) {
     var tmp0 = this.dataType$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_dataType_$ref_6i1gqd_1();
+    var tmp_0 = ZBufferKey$_get_dataType_$ref_6i1gqd();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('dataType', 1, tmp, tmp_0, ZBufferKey$_set_dataType_$ref_91p9tr_1());
+    getPropertyCallableRef('dataType', 1, tmp, tmp_0, ZBufferKey$_set_dataType_$ref_91p9tr());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_dataType_27rqr7_k$ = function () {
     var tmp0 = this.dataType$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_dataType_$ref_6i1gqd_0();
+    var tmp_0 = ZBufferKey$_get_dataType_$ref_6i1gqd();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('dataType', 1, tmp, tmp_0, ZBufferKey$_set_dataType_$ref_91p9tr_0());
+    getPropertyCallableRef('dataType', 1, tmp, tmp_0, ZBufferKey$_set_dataType_$ref_91p9tr());
     return tmp0.get();
   };
   protoOf(ZBufferKey).set_name_aqnlwe_k$ = function (_set____db54di) {
     var tmp0 = this.name$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_name_$ref_gi0nv2_1();
+    var tmp_0 = ZBufferKey$_get_name_$ref_gi0nv2();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('name', 1, tmp, tmp_0, ZBufferKey$_set_name_$ref_tawzbu_1());
+    getPropertyCallableRef('name', 1, tmp, tmp_0, ZBufferKey$_set_name_$ref_tawzbu());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_name_woqyms_k$ = function () {
     var tmp0 = this.name$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_name_$ref_gi0nv2_0();
+    var tmp_0 = ZBufferKey$_get_name_$ref_gi0nv2();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('name', 1, tmp, tmp_0, ZBufferKey$_set_name_$ref_tawzbu_0());
+    getPropertyCallableRef('name', 1, tmp, tmp_0, ZBufferKey$_set_name_$ref_tawzbu());
     return tmp0.get();
   };
   protoOf(ZBufferKey).set_size_e2677a_k$ = function (_set____db54di) {
     var tmp0 = this.size$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_size_$ref_4b5teg_1();
+    var tmp_0 = ZBufferKey$_get_size_$ref_4b5teg();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('size', 1, tmp, tmp_0, ZBufferKey$_set_size_$ref_h424v8_1());
+    getPropertyCallableRef('size', 1, tmp, tmp_0, ZBufferKey$_set_size_$ref_h424v8());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_size_woubt6_k$ = function () {
     var tmp0 = this.size$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_size_$ref_4b5teg_0();
+    var tmp_0 = ZBufferKey$_get_size_$ref_4b5teg();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('size', 1, tmp, tmp_0, ZBufferKey$_set_size_$ref_h424v8_0());
+    getPropertyCallableRef('size', 1, tmp, tmp_0, ZBufferKey$_set_size_$ref_h424v8());
     return tmp0.get();
   };
   protoOf(ZBufferKey).set_count_k2eul2_k$ = function (_set____db54di) {
     var tmp0 = this.count$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_count_$ref_k64jhu_1();
+    var tmp_0 = ZBufferKey$_get_count_$ref_k64jhu();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('count', 1, tmp, tmp_0, ZBufferKey$_set_count_$ref_94pwwq_1());
+    getPropertyCallableRef('count', 1, tmp, tmp_0, ZBufferKey$_set_count_$ref_94pwwq());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_count_ipufhi_k$ = function () {
     var tmp0 = this.count$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_count_$ref_k64jhu_0();
+    var tmp_0 = ZBufferKey$_get_count_$ref_k64jhu();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('count', 1, tmp, tmp_0, ZBufferKey$_set_count_$ref_94pwwq_0());
+    getPropertyCallableRef('count', 1, tmp, tmp_0, ZBufferKey$_set_count_$ref_94pwwq());
     return tmp0.get();
   };
   protoOf(ZBufferKey).set_normalized_6f6hzz_k$ = function (_set____db54di) {
     var tmp0 = this.normalized$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_normalized_$ref_t9u76q_1();
+    var tmp_0 = ZBufferKey$_get_normalized_$ref_t9u76q();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('normalized', 1, tmp, tmp_0, ZBufferKey$_set_normalized_$ref_3qqr5a_1());
+    getPropertyCallableRef('normalized', 1, tmp, tmp_0, ZBufferKey$_set_normalized_$ref_3qqr5a());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_normalized_u3mzcw_k$ = function () {
     var tmp0 = this.normalized$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_normalized_$ref_t9u76q_0();
+    var tmp_0 = ZBufferKey$_get_normalized_$ref_t9u76q();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('normalized', 1, tmp, tmp_0, ZBufferKey$_set_normalized_$ref_3qqr5a_0());
+    getPropertyCallableRef('normalized', 1, tmp, tmp_0, ZBufferKey$_set_normalized_$ref_3qqr5a());
     return tmp0.get();
   };
   protoOf(ZBufferKey).set_offset_az57y0_k$ = function (_set____db54di) {
     var tmp0 = this.offset$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_offset_$ref_e5brju_1();
+    var tmp_0 = ZBufferKey$_get_offset_$ref_e5brju();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('offset', 1, tmp, tmp_0, ZBufferKey$_set_offset_$ref_wwtle_1());
+    getPropertyCallableRef('offset', 1, tmp, tmp_0, ZBufferKey$_set_offset_$ref_wwtle());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_offset_hjmqak_k$ = function () {
     var tmp0 = this.offset$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_offset_$ref_e5brju_0();
+    var tmp_0 = ZBufferKey$_get_offset_$ref_e5brju();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('offset', 1, tmp, tmp_0, ZBufferKey$_set_offset_$ref_wwtle_0());
+    getPropertyCallableRef('offset', 1, tmp, tmp_0, ZBufferKey$_set_offset_$ref_wwtle());
     return tmp0.get();
   };
   protoOf(ZBufferKey).set_stride_h3i26m_k$ = function (_set____db54di) {
     var tmp0 = this.stride$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_stride_$ref_54y4ow_1();
+    var tmp_0 = ZBufferKey$_get_stride_$ref_54y4ow();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('stride', 1, tmp, tmp_0, ZBufferKey$_set_stride_$ref_k76pu4_1());
+    getPropertyCallableRef('stride', 1, tmp, tmp_0, ZBufferKey$_set_stride_$ref_k76pu4());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_stride_jnpski_k$ = function () {
     var tmp0 = this.stride$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_stride_$ref_54y4ow_0();
+    var tmp_0 = ZBufferKey$_get_stride_$ref_54y4ow();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('stride', 1, tmp, tmp_0, ZBufferKey$_set_stride_$ref_k76pu4_0());
+    getPropertyCallableRef('stride', 1, tmp, tmp_0, ZBufferKey$_set_stride_$ref_k76pu4());
     return tmp0.get();
   };
   protoOf(ZBufferKey).set_isIndexBuffer_gbxa6u_k$ = function (_set____db54di) {
     var tmp0 = this.isIndexBuffer$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd_1();
+    var tmp_0 = ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('isIndexBuffer', 1, tmp, tmp_0, ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f_1());
+    getPropertyCallableRef('isIndexBuffer', 1, tmp, tmp_0, ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_isIndexBuffer_acskxt_k$ = function () {
     var tmp0 = this.isIndexBuffer$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd_0();
+    var tmp_0 = ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('isIndexBuffer', 1, tmp, tmp_0, ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f_0());
+    getPropertyCallableRef('isIndexBuffer', 1, tmp, tmp_0, ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f());
     return tmp0.get();
   };
   protoOf(ZBufferKey).set_bufferId_837ei8_k$ = function (_set____db54di) {
     var tmp0 = this.bufferId$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_bufferId_$ref_s91ntq_1();
+    var tmp_0 = ZBufferKey$_get_bufferId_$ref_s91ntq();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('bufferId', 1, tmp, tmp_0, ZBufferKey$_set_bufferId_$ref_cpax9m_1());
+    getPropertyCallableRef('bufferId', 1, tmp, tmp_0, ZBufferKey$_set_bufferId_$ref_cpax9m());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
   protoOf(ZBufferKey).get_bufferId_e1zrr8_k$ = function () {
     var tmp0 = this.bufferId$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBufferKey$_get_bufferId_$ref_s91ntq_0();
+    var tmp_0 = ZBufferKey$_get_bufferId_$ref_s91ntq();
     // Inline function 'kotlin.getValue' call
-    getPropertyCallableRef('bufferId', 1, tmp, tmp_0, ZBufferKey$_set_bufferId_$ref_cpax9m_0());
+    getPropertyCallableRef('bufferId', 1, tmp, tmp_0, ZBufferKey$_set_bufferId_$ref_cpax9m());
     return tmp0.get();
   };
   protoOf(ZBufferKey).createRenderer_ta2mc7_k$ = function (ctx) {
@@ -9053,9 +8543,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZBufferKey).unbind_ylwmfa_k$ = function () {
     return this.get_renderer_v1k1vw_k$().unbind();
-  };
-  protoOf(ZBufferKey).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
   };
   protoOf(ZBufferKey).toString = function () {
     return 'ZBufferKey(id=' + this.data_1.id + ', name=' + this.data_1.name + ', bufferId=' + this.data_1.bufferId + ')';
@@ -9473,6 +8960,116 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBufferKeySerializer).createComponentInstance_2ckoo_k$ = function (data) {
     return this.createComponentInstance_e30qjx_k$(data instanceof ZBufferKeyData ? data : THROW_CCE());
   };
+  function ZBufferKey$_get_id_$ref_1qqrb6_0(p0) {
+    return constructCallableReference(function () {
+      return p0.id;
+    }, 0, 0, 140, VOID, [p0]);
+  }
+  function ZBufferKey$_set_id_$ref_37hbxy_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_id_kpjn9s_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 141, VOID, [p0]);
+  }
+  function ZBufferKey$_get_dataType_$ref_6i1gqd_0(p0) {
+    return constructCallableReference(function () {
+      return p0.dataType;
+    }, 0, 0, 144, VOID, [p0]);
+  }
+  function ZBufferKey$_set_dataType_$ref_91p9tr_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_dataType_uo9u8e_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 145, VOID, [p0]);
+  }
+  function ZBufferKey$_get_name_$ref_gi0nv2_0(p0) {
+    return constructCallableReference(function () {
+      return p0.name;
+    }, 0, 0, 148, VOID, [p0]);
+  }
+  function ZBufferKey$_set_name_$ref_tawzbu_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_name_aqnlwe_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 149, VOID, [p0]);
+  }
+  function ZBufferKey$_get_size_$ref_4b5teg_0(p0) {
+    return constructCallableReference(function () {
+      return p0.size;
+    }, 0, 0, 152, VOID, [p0]);
+  }
+  function ZBufferKey$_set_size_$ref_h424v8_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_size_e2677a_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 153, VOID, [p0]);
+  }
+  function ZBufferKey$_get_count_$ref_k64jhu_0(p0) {
+    return constructCallableReference(function () {
+      return p0.count;
+    }, 0, 0, 156, VOID, [p0]);
+  }
+  function ZBufferKey$_set_count_$ref_94pwwq_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_count_k2eul2_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 157, VOID, [p0]);
+  }
+  function ZBufferKey$_get_normalized_$ref_t9u76q_0(p0) {
+    return constructCallableReference(function () {
+      return p0.normalized;
+    }, 0, 0, 160, VOID, [p0]);
+  }
+  function ZBufferKey$_set_normalized_$ref_3qqr5a_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_normalized_6f6hzz_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 161, VOID, [p0]);
+  }
+  function ZBufferKey$_get_offset_$ref_e5brju_0(p0) {
+    return constructCallableReference(function () {
+      return p0.offset;
+    }, 0, 0, 164, VOID, [p0]);
+  }
+  function ZBufferKey$_set_offset_$ref_wwtle_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_offset_az57y0_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 165, VOID, [p0]);
+  }
+  function ZBufferKey$_get_stride_$ref_54y4ow_0(p0) {
+    return constructCallableReference(function () {
+      return p0.stride;
+    }, 0, 0, 168, VOID, [p0]);
+  }
+  function ZBufferKey$_set_stride_$ref_k76pu4_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_stride_h3i26m_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 169, VOID, [p0]);
+  }
+  function ZBufferKey$_get_isIndexBuffer_$ref_ff1tfd_0(p0) {
+    return constructCallableReference(function () {
+      return p0.isIndexBuffer;
+    }, 0, 0, 172, VOID, [p0]);
+  }
+  function ZBufferKey$_set_isIndexBuffer_$ref_xw9c9f_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_isIndexBuffer_gbxa6u_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 173, VOID, [p0]);
+  }
+  function ZBufferKey$_get_bufferId_$ref_s91ntq_0(p0) {
+    return constructCallableReference(function () {
+      return p0.bufferId;
+    }, 0, 0, 176, VOID, [p0]);
+  }
+  function ZBufferKey$_set_bufferId_$ref_cpax9m_0(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_bufferId_837ei8_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 177, VOID, [p0]);
+  }
   var ZDrawMode_POINTS_instance;
   var ZDrawMode_LINES_instance;
   var ZDrawMode_TRIANGLES_instance;
@@ -9541,67 +9138,56 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZMesh_init_$Init$(objectCreate(protoOf(ZMesh)));
   }
   function ZMeshData$_get_buffers_$ref_osyewq(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.buffers_1;
-    };
+    }, 0, 0, 178, VOID, [p0]);
   }
   function ZMesh$_get_buffers_$ref_93u5e8() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.buffers;
-    };
+    }, 1, 0, 179);
   }
   function ZMeshData$_get_indexBuffer_$ref_9stqn9(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.get_indexBuffer_s2nfih_k$();
-    };
+    }, 0, 0, 180, VOID, [p0]);
   }
   function ZMesh$_get_indexBuffer_$ref_97nwtr() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.indexBuffer;
-    };
+    }, 1, 0, 181);
   }
   function ZMeshData$_get_hasIndexBuffer_$ref_67xjfv(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.get_hasIndexBuffer_p604zj_k$();
-    };
+    }, 0, 0, 182, VOID, [p0]);
   }
   function ZMesh$_get_hasIndexBuffer_$ref_w8gdpb() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.hasIndexBuffer;
-    };
+    }, 1, 0, 183);
   }
   function ZMeshData$_get_drawMode_$ref_2sh76i(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.drawMode_1;
-    };
+    }, 0, 0, 184, VOID, [p0]);
   }
   function ZMeshData$_set_drawMode_$ref_ic7xqm(p0) {
-    return function (_this__u8e3s4) {
-      p0.drawMode_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.drawMode_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 185, VOID, [p0]);
   }
   function ZMesh$_get_drawMode_$ref_bfm50w() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.drawMode;
-    };
+    }, 1, 0, 186);
   }
   function ZMesh$_set_drawMode_$ref_444lj8() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_drawMode_uv6qiq_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZMesh$_get_drawMode_$ref_bfm50w_0() {
-    return function (p0) {
-      return p0.drawMode;
-    };
-  }
-  function ZMesh$_set_drawMode_$ref_444lj8_0() {
-    return function (p0, p1) {
-      p0.set_drawMode_uv6qiq_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 187);
   }
   function ZMesh(data) {
     ZDataRenderComponent.call(this, data);
@@ -9643,9 +9229,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZMesh).set_drawMode_uv6qiq_k$ = function (_set____db54di) {
     var tmp0 = this.drawMode$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZMesh$_get_drawMode_$ref_bfm50w_0();
+    var tmp_0 = ZMesh$_get_drawMode_$ref_bfm50w();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('drawMode', 1, tmp, tmp_0, ZMesh$_set_drawMode_$ref_444lj8_0());
+    getPropertyCallableRef('drawMode', 1, tmp, tmp_0, ZMesh$_set_drawMode_$ref_444lj8());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -9730,6 +9316,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var key = buffer.name;
     tmp0.put_4fpzoq_k$(key, buffer);
   };
+  protoOf(ZMesh).addVec3Buffer = function (attr, vertexCount, data) {
+    this.addBuffer(initWithArgs_0(attr.id, ZTypes_getInstance().VEC3F, attr.attrName, 3, vertexCount, false, 0, 0, false, attr.id, toByteArray(data)));
+  };
+  protoOf(ZMesh).addVec2Buffer = function (attr, vertexCount, data) {
+    this.addBuffer(initWithArgs_0(attr.id, ZTypes_getInstance().VEC2F, attr.attrName, 2, vertexCount, false, 0, 0, false, attr.id, toByteArray(data)));
+  };
+  protoOf(ZMesh).addUShortIndexBuffer = function (indices) {
+    this.addBuffer(initWithArgs_0(ZAttributeId_INDICES_getInstance().id, ZTypes_getInstance().USHORT, ZAttributeId_INDICES_getInstance().attrName, 1, indices.length, false, 0, 0, true, ZAttributeId_INDICES_getInstance().id, toByteArray_0(indices)));
+  };
   protoOf(ZMesh).bind_svxwgj_k$ = function () {
     return this.get_renderer_v1k1vw_k$().bind();
   };
@@ -9738,9 +9333,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZMesh).render_dje1iy_k$ = function () {
     return this.get_renderer_v1k1vw_k$().render();
-  };
-  protoOf(ZMesh).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
   };
   function ZMeshData(drawMode, buffers) {
     drawMode = drawMode === VOID ? ZDrawMode_TRIANGLES_getInstance() : drawMode;
@@ -10262,70 +9854,48 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZAttribute_init_$Init$_1(attrId, objectCreate(protoOf(ZAttribute)));
   }
   function ZAttributeData$_get_id_$ref_4mcw9(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.id_1;
-    };
+    }, 0, 0, 188, VOID, [p0]);
   }
   function ZAttributeData$_set_id_$ref_1lcxj1(p0) {
-    return function (_this__u8e3s4) {
-      p0.id_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.id_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 189, VOID, [p0]);
   }
   function ZAttribute$_get_id_$ref_pyj9a9() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.id;
-    };
+    }, 1, 0, 190);
   }
   function ZAttribute$_set_id_$ref_ohsonh() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_id_kpjn9s_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZAttribute$_get_id_$ref_pyj9a9_0() {
-    return function (p0) {
-      return p0.id;
-    };
-  }
-  function ZAttribute$_set_id_$ref_ohsonh_0() {
-    return function (p0, p1) {
-      p0.set_id_kpjn9s_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 191);
   }
   function ZAttributeData$_get_attributeName_$ref_us3di7(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.attributeName_1;
-    };
+    }, 0, 0, 192, VOID, [p0]);
   }
   function ZAttributeData$_set_attributeName_$ref_92ah7v(p0) {
-    return function (_this__u8e3s4) {
-      p0.attributeName_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.attributeName_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 193, VOID, [p0]);
   }
   function ZAttribute$_get_attributeName_$ref_t6izu1() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.attributeName;
-    };
+    }, 1, 0, 194);
   }
   function ZAttribute$_set_attributeName_$ref_7gq3jp() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_attributeName_32yog0_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZAttribute$_get_attributeName_$ref_t6izu1_0() {
-    return function (p0) {
-      return p0.attributeName;
-    };
-  }
-  function ZAttribute$_set_attributeName_$ref_7gq3jp_0() {
-    return function (p0, p1) {
-      p0.set_attributeName_32yog0_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 195);
   }
   function ZAttribute(data) {
     ZRenderizableComponent.call(this);
@@ -10344,9 +9914,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZAttribute).set_id_kpjn9s_k$ = function (_set____db54di) {
     var tmp0 = this.id$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZAttribute$_get_id_$ref_pyj9a9_0();
+    var tmp_0 = ZAttribute$_get_id_$ref_pyj9a9();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('id', 1, tmp, tmp_0, ZAttribute$_set_id_$ref_ohsonh_0());
+    getPropertyCallableRef('id', 1, tmp, tmp_0, ZAttribute$_set_id_$ref_ohsonh());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -10361,9 +9931,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZAttribute).set_attributeName_32yog0_k$ = function (_set____db54di) {
     var tmp0 = this.attributeName$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZAttribute$_get_attributeName_$ref_t6izu1_0();
+    var tmp_0 = ZAttribute$_get_attributeName_$ref_t6izu1();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('attributeName', 1, tmp, tmp_0, ZAttribute$_set_attributeName_$ref_7gq3jp_0());
+    getPropertyCallableRef('attributeName', 1, tmp, tmp_0, ZAttribute$_set_attributeName_$ref_7gq3jp());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -10402,9 +9972,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return false;
     }
     return this.data_1.equals(other.data_1);
-  };
-  protoOf(ZAttribute).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
   };
   function get_ZAttrIndices() {
     return initWithAttrId(ZAttributeId_INDICES_getInstance());
@@ -10530,20 +10097,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZShader_init_$Init$_0(type, objectCreate(protoOf(ZShader)));
   }
   function ZShaderData$_get_type_$ref_7qqaud(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.type_1;
-    };
+    }, 0, 0, 196, VOID, [p0]);
   }
   function ZShaderData$_set_type_$ref_5260mf(p0) {
-    return function (_this__u8e3s4) {
-      p0.type_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.type_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 197, VOID, [p0]);
   }
   function ZShader$_get_type_$ref_vc8btn() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.type;
-    };
+    }, 1, 0, 198);
   }
   function ZShader(data) {
     ZRenderizableComponent.call(this);
@@ -10566,9 +10133,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZShader).createRenderer_ta2mc7_k$ = function (ctx) {
     return new ZShaderRenderer(ctx, this.data_1);
-  };
-  protoOf(ZShader).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
   };
   function ZShaderData(type) {
     type = type === VOID ? ZShaderType_VERTEX_SHADER_getInstance() : type;
@@ -10606,46 +10170,46 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZShaderProgram_init_$Init$(objectCreate(protoOf(ZShaderProgram)));
   }
   function ZShaderProgramData$_get_shaderSource_$ref_bcvvzj(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.shaderSource_1;
-    };
+    }, 0, 0, 199, VOID, [p0]);
   }
   function ZShaderProgramData$_set_shaderSource_$ref_hq8d39(p0) {
-    return function (_this__u8e3s4) {
-      p0.shaderSource_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.shaderSource_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 200, VOID, [p0]);
   }
   function ZShaderProgram$_get_shaderSource_$ref_gp9e0p() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.shaderSource;
-    };
+    }, 1, 0, 201);
   }
   function ZShaderProgramData$_get_attributes_$ref_cf6548(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.attributes_1;
-    };
+    }, 0, 0, 202, VOID, [p0]);
   }
   function ZShaderProgram$_get_attributes_$ref_uyyxlu() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.attributes;
-    };
+    }, 1, 0, 203);
   }
   function ZShaderProgramData$_get_uniforms_$ref_r6z3yo(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.uniforms_1;
-    };
+    }, 0, 0, 204, VOID, [p0]);
   }
   function ZShaderProgramData$_set_uniforms_$ref_sae7gc(p0) {
-    return function (_this__u8e3s4) {
-      p0.uniforms_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.uniforms_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 205, VOID, [p0]);
   }
   function ZShaderProgram$_get_uniforms_$ref_7t8zwa() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.uniforms;
-    };
+    }, 1, 0, 206);
   }
   function ZShaderProgram(data) {
     ZRenderizableComponent.call(this);
@@ -10760,9 +10324,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZShaderProgram).unbind_ylwmfa_k$ = function () {
     return this.get_renderer_v1k1vw_k$().unbind();
   };
-  protoOf(ZShaderProgram).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
-  };
   protoOf(ZShaderProgram).createRenderer_ta2mc7_k$ = function (ctx) {
     return new ZShaderProgramRenderer(ctx, this.data_1);
   };
@@ -10817,9 +10378,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function _set_glslShaderSource__vfbgtj($this, _set____db54di) {
     var tmp0 = $this.glslShaderSource$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZShaderSource$_get_glslShaderSource_$ref_7m3afa_0();
+    var tmp_0 = ZShaderSource$_get_glslShaderSource_$ref_7m3afa();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('glslShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_glslShaderSource_$ref_lk5yfm_0());
+    getPropertyCallableRef('glslShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_glslShaderSource_$ref_lk5yfm());
     tmp0.set(_set____db54di);
     return Unit_instance;
   }
@@ -10834,9 +10395,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function _set__metalShaderSource__hk99n3($this, _set____db54di) {
     var tmp0 = $this._metalShaderSource$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZShaderSource$_get__metalShaderSource_$ref_uk5vy4_0();
+    var tmp_0 = ZShaderSource$_get__metalShaderSource_$ref_uk5vy4();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('_metalShaderSource', 1, tmp, tmp_0, ZShaderSource$_set__metalShaderSource_$ref_8b2fig_0());
+    getPropertyCallableRef('_metalShaderSource', 1, tmp, tmp_0, ZShaderSource$_set__metalShaderSource_$ref_8b2fig());
     tmp0.set(_set____db54di);
     return Unit_instance;
   }
@@ -10851,9 +10412,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function _set__wgpuShaderSource__rweodr($this, _set____db54di) {
     var tmp0 = $this._wgpuShaderSource$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZShaderSource$_get__wgpuShaderSource_$ref_fw1av6_0();
+    var tmp_0 = ZShaderSource$_get__wgpuShaderSource_$ref_fw1av6();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('_wgpuShaderSource', 1, tmp, tmp_0, ZShaderSource$_set__wgpuShaderSource_$ref_m1nnau_0());
+    getPropertyCallableRef('_wgpuShaderSource', 1, tmp, tmp_0, ZShaderSource$_set__wgpuShaderSource_$ref_m1nnau());
     tmp0.set(_set____db54di);
     return Unit_instance;
   }
@@ -10866,235 +10427,158 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return tmp0.get();
   }
   function ZShaderSourceData$_get_glsl_$ref_qs067w(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.glsl;
-    };
+    }, 0, 0, 207, VOID, [p0]);
   }
   function ZShaderSourceData$_set_glsl_$ref_vg7kag(p0) {
-    return function (_this__u8e3s4) {
-      p0.glsl = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.glsl = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 208, VOID, [p0]);
   }
   function ZShaderSource$_get_glslShaderSource_$ref_7m3afa() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return _get_glslShaderSource__2c77qr(p0);
-    };
+    }, 1, 0, 209);
   }
   function ZShaderSource$_set_glslShaderSource_$ref_lk5yfm() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       _set_glslShaderSource__vfbgtj(p0, p1);
       return Unit_instance;
-    };
-  }
-  function ZShaderSource$_get_glslShaderSource_$ref_7m3afa_0() {
-    return function (p0) {
-      return _get_glslShaderSource__2c77qr(p0);
-    };
-  }
-  function ZShaderSource$_set_glslShaderSource_$ref_lk5yfm_0() {
-    return function (p0, p1) {
-      _set_glslShaderSource__vfbgtj(p0, p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 210);
   }
   function ZShaderSourceData$_get_metal_$ref_e19x7r(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.metal;
-    };
+    }, 0, 0, 211, VOID, [p0]);
   }
   function ZShaderSourceData$_set_metal_$ref_rozoct(p0) {
-    return function (_this__u8e3s4) {
-      p0.metal = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.metal = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 212, VOID, [p0]);
   }
   function ZShaderSource$_get__metalShaderSource_$ref_uk5vy4() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return _get__metalShaderSource__gdm1h9(p0);
-    };
+    }, 1, 0, 213);
   }
   function ZShaderSource$_set__metalShaderSource_$ref_8b2fig() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       _set__metalShaderSource__hk99n3(p0, p1);
       return Unit_instance;
-    };
-  }
-  function ZShaderSource$_get__metalShaderSource_$ref_uk5vy4_0() {
-    return function (p0) {
-      return _get__metalShaderSource__gdm1h9(p0);
-    };
-  }
-  function ZShaderSource$_set__metalShaderSource_$ref_8b2fig_0() {
-    return function (p0, p1) {
-      _set__metalShaderSource__hk99n3(p0, p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 214);
   }
   function ZShaderSourceData$_get_wgpu_$ref_3wboxx(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.wgpu;
-    };
+    }, 0, 0, 215, VOID, [p0]);
   }
   function ZShaderSourceData$_set_wgpu_$ref_gp80ep(p0) {
-    return function (_this__u8e3s4) {
-      p0.wgpu = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.wgpu = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 216, VOID, [p0]);
   }
   function ZShaderSource$_get__wgpuShaderSource_$ref_fw1av6() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return _get__wgpuShaderSource__lewhb1(p0);
-    };
+    }, 1, 0, 217);
   }
   function ZShaderSource$_set__wgpuShaderSource_$ref_m1nnau() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       _set__wgpuShaderSource__rweodr(p0, p1);
       return Unit_instance;
-    };
-  }
-  function ZShaderSource$_get__wgpuShaderSource_$ref_fw1av6_0() {
-    return function (p0) {
-      return _get__wgpuShaderSource__lewhb1(p0);
-    };
-  }
-  function ZShaderSource$_set__wgpuShaderSource_$ref_m1nnau_0() {
-    return function (p0, p1) {
-      _set__wgpuShaderSource__rweodr(p0, p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 218);
   }
   function ZGlSLShaderSource$_get_vertexShaderSource_$ref_emkxoi(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.vertexShaderSource;
-    };
+    }, 0, 0, 219, VOID, [p0]);
   }
   function ZGlSLShaderSource$_set_vertexShaderSource_$ref_7miir6(p0) {
-    return function (_this__u8e3s4) {
-      p0.vertexShaderSource = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.vertexShaderSource = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 220, VOID, [p0]);
   }
   function ZShaderSource$_get_glslVertexShaderSource_$ref_hjc70i() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.glslVertexShaderSource;
-    };
+    }, 1, 0, 221);
   }
   function ZShaderSource$_set_glslVertexShaderSource_$ref_g4iglq() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_glslVertexShaderSource_uma9kl_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZShaderSource$_get_glslVertexShaderSource_$ref_hjc70i_0() {
-    return function (p0) {
-      return p0.glslVertexShaderSource;
-    };
-  }
-  function ZShaderSource$_set_glslVertexShaderSource_$ref_g4iglq_0() {
-    return function (p0, p1) {
-      p0.set_glslVertexShaderSource_uma9kl_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 222);
   }
   function ZGlSLShaderSource$_get_fragmentShaderSource_$ref_96yuc6(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.fragmentShaderSource;
-    };
+    }, 0, 0, 223, VOID, [p0]);
   }
   function ZGlSLShaderSource$_set_fragmentShaderSource_$ref_4olmoy(p0) {
-    return function (_this__u8e3s4) {
-      p0.fragmentShaderSource = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.fragmentShaderSource = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 224, VOID, [p0]);
   }
   function ZShaderSource$_get_glslFragmentShaderSource_$ref_zf8umu() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.glslFragmentShaderSource;
-    };
+    }, 1, 0, 225);
   }
   function ZShaderSource$_set_glslFragmentShaderSource_$ref_s8nvoi() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_glslFragmentShaderSource_m0vdy9_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZShaderSource$_get_glslFragmentShaderSource_$ref_zf8umu_0() {
-    return function (p0) {
-      return p0.glslFragmentShaderSource;
-    };
-  }
-  function ZShaderSource$_set_glslFragmentShaderSource_$ref_s8nvoi_0() {
-    return function (p0, p1) {
-      p0.set_glslFragmentShaderSource_m0vdy9_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 226);
   }
   function ZMetalShaderSource$_get_shaderSource_$ref_kclnu7(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.shaderSource;
-    };
+    }, 0, 0, 227, VOID, [p0]);
   }
   function ZMetalShaderSource$_set_shaderSource_$ref_lle525(p0) {
-    return function (_this__u8e3s4) {
-      p0.shaderSource = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.shaderSource = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 228, VOID, [p0]);
   }
   function ZShaderSource$_get_metalShaderSource_$ref_z7waj3() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.metalShaderSource;
-    };
+    }, 1, 0, 229);
   }
   function ZShaderSource$_set_metalShaderSource_$ref_tnlf0d() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_metalShaderSource_olh6v4_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZShaderSource$_get_metalShaderSource_$ref_z7waj3_0() {
-    return function (p0) {
-      return p0.metalShaderSource;
-    };
-  }
-  function ZShaderSource$_set_metalShaderSource_$ref_tnlf0d_0() {
-    return function (p0, p1) {
-      p0.set_metalShaderSource_olh6v4_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 230);
   }
   function ZWebGpuShaderSource$_get_shaderSource_$ref_rtyh9w(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.shaderSource;
-    };
+    }, 0, 0, 231, VOID, [p0]);
   }
   function ZWebGpuShaderSource$_set_shaderSource_$ref_e41bmg(p0) {
-    return function (_this__u8e3s4) {
-      p0.shaderSource = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.shaderSource = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 232, VOID, [p0]);
   }
   function ZShaderSource$_get_wgpuShaderSource_$ref_95wynl() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.wgpuShaderSource;
-    };
+    }, 1, 0, 233);
   }
   function ZShaderSource$_set_wgpuShaderSource_$ref_4s5pcr() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_wgpuShaderSource_po9b54_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZShaderSource$_get_wgpuShaderSource_$ref_95wynl_0() {
-    return function (p0) {
-      return p0.wgpuShaderSource;
-    };
-  }
-  function ZShaderSource$_set_wgpuShaderSource_$ref_4s5pcr_0() {
-    return function (p0, p1) {
-      p0.set_wgpuShaderSource_po9b54_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 234);
   }
   function ZShaderSource(data) {
     ZSerializableComponent.call(this, data);
@@ -11134,9 +10618,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZShaderSource).set_glslVertexShaderSource_uma9kl_k$ = function (_set____db54di) {
     var tmp0 = this.glslVertexShaderSource$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZShaderSource$_get_glslVertexShaderSource_$ref_hjc70i_0();
+    var tmp_0 = ZShaderSource$_get_glslVertexShaderSource_$ref_hjc70i();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('glslVertexShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_glslVertexShaderSource_$ref_g4iglq_0());
+    getPropertyCallableRef('glslVertexShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_glslVertexShaderSource_$ref_g4iglq());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -11151,9 +10635,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZShaderSource).set_glslFragmentShaderSource_m0vdy9_k$ = function (_set____db54di) {
     var tmp0 = this.glslFragmentShaderSource$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZShaderSource$_get_glslFragmentShaderSource_$ref_zf8umu_0();
+    var tmp_0 = ZShaderSource$_get_glslFragmentShaderSource_$ref_zf8umu();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('glslFragmentShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_glslFragmentShaderSource_$ref_s8nvoi_0());
+    getPropertyCallableRef('glslFragmentShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_glslFragmentShaderSource_$ref_s8nvoi());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -11168,9 +10652,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZShaderSource).set_metalShaderSource_olh6v4_k$ = function (_set____db54di) {
     var tmp0 = this.metalShaderSource$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZShaderSource$_get_metalShaderSource_$ref_z7waj3_0();
+    var tmp_0 = ZShaderSource$_get_metalShaderSource_$ref_z7waj3();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('metalShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_metalShaderSource_$ref_tnlf0d_0());
+    getPropertyCallableRef('metalShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_metalShaderSource_$ref_tnlf0d());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -11185,9 +10669,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZShaderSource).set_wgpuShaderSource_po9b54_k$ = function (_set____db54di) {
     var tmp0 = this.wgpuShaderSource$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZShaderSource$_get_wgpuShaderSource_$ref_95wynl_0();
+    var tmp_0 = ZShaderSource$_get_wgpuShaderSource_$ref_95wynl();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('wgpuShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_wgpuShaderSource_$ref_4s5pcr_0());
+    getPropertyCallableRef('wgpuShaderSource', 1, tmp, tmp_0, ZShaderSource$_set_wgpuShaderSource_$ref_4s5pcr());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -11411,67 +10895,56 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZUniform_init_$Init$_1(objectCreate(protoOf(ZUniform)));
   }
   function ZUniformBlockData$_get_uniforms_$ref_f8vtk2(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.uniforms_1;
-    };
+    }, 0, 0, 235, VOID, [p0]);
   }
   function ZUniform$_get_uniforms_$ref_xx42md() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.uniforms;
-    };
+    }, 1, 0, 236);
   }
   function ZUniformBlockData$_get_id_$ref_ubevwa(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.id_1;
-    };
+    }, 0, 0, 237, VOID, [p0]);
   }
   function ZUniform$_get_id_$ref_65i1nb() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.id;
-    };
+    }, 1, 0, 238);
   }
   function ZUniformBlockData$_get_uniformBlockName_$ref_4gwr6r(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.uniformBlockName_1;
-    };
+    }, 0, 0, 239, VOID, [p0]);
   }
   function ZUniform$_get_uniformName_$ref_2grd1z() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.uniformName;
-    };
+    }, 1, 0, 240);
   }
   function ZUniformBlockData$_get_value_$ref_iqf48o(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.get_value_j01efc_k$();
-    };
+    }, 0, 0, 241, VOID, [p0]);
   }
   function ZUniformBlockData$_set_value_$ref_mzuhbw(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_value_enpno5_k$(_this__u8e3s4);
+    return constructCallableReference(function (p0_0) {
+      p0.set_value_enpno5_k$(p0_0);
       return Unit_instance;
-    };
+    }, 1, 0, 242, VOID, [p0]);
   }
   function ZUniform$_get_value_$ref_ulcwqt() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.value;
-    };
+    }, 1, 0, 243);
   }
   function ZUniform$_set_value_$ref_1aigc9() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_value_enpno5_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZUniform$_get_value_$ref_ulcwqt_0() {
-    return function (p0) {
-      return p0.value;
-    };
-  }
-  function ZUniform$_set_value_$ref_1aigc9_0() {
-    return function (p0, p1) {
-      p0.set_value_enpno5_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 244);
   }
   function ZUniform(data) {
     ZRenderizableComponent.call(this);
@@ -11521,9 +10994,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZUniform).set_value_enpno5_k$ = function (_set____db54di) {
     var tmp0 = this.value$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZUniform$_get_value_$ref_ulcwqt_0();
+    var tmp_0 = ZUniform$_get_value_$ref_ulcwqt();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('value', 1, tmp, tmp_0, ZUniform$_set_value_$ref_1aigc9_0());
+    getPropertyCallableRef('value', 1, tmp, tmp_0, ZUniform$_set_value_$ref_1aigc9());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -11561,16 +11034,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZUniform).initialize = function (ctx) {
     protoOf(ZRenderizableComponent).initialize.call(this, ctx);
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZUniform).get_simpleName_r6f8py_k$(), hashCode(this)).debug('Initialized uniform: ' + this.data_1.uniformBlockName_1 + ' (' + this.data_1.get_byteSize_8c84c2_k$() + ' bytes)');
+    Companion_getInstance_47().getLogger(getKClass(ZUniform).get_simpleName_r6f8py_k$(), hashCode(this)).debug('Initialized uniform: ' + this.data_1.uniformBlockName_1 + ' (' + this.data_1.get_byteSize_8c84c2_k$() + ' bytes)');
   };
   protoOf(ZUniform).bind_svxwgj_k$ = function () {
     return this.get_renderer_v1k1vw_k$().bind();
   };
   protoOf(ZUniform).unbind_ylwmfa_k$ = function () {
     return this.get_renderer_v1k1vw_k$().unbind();
-  };
-  protoOf(ZUniform).internalDispose_6lcvrm_k$ = function () {
-    return this.get_renderer_v1k1vw_k$().dispose();
   };
   protoOf(ZUniform).toString = function () {
     return this.data_1.toString();
@@ -11911,7 +11381,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function SceneMatrixUniforms() {
     SceneMatrixUniforms_instance = this;
-    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_SCENE_MATRIX_1, 'u_sceneMatrixBlock', listOf([new UniformMember(UNIFORM_KEYS_getInstance().PROJECTION_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_projMatrix'), new UniformMember(UNIFORM_KEYS_getInstance().VIEW_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_viewMatrix'), new UniformMember(UNIFORM_KEYS_getInstance().MODEL_VIEW_PROJECTION_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_mvpMatrix')]), mapOf([to(UNIFORM_KEYS_getInstance().PROJECTION_MATRIX_1.name_1, get_ZProjectionMatrixGenerator()), to(UNIFORM_KEYS_getInstance().VIEW_MATRIX_1.name_1, get_ZViewMatrixGenerator()), to(UNIFORM_KEYS_getInstance().MODEL_VIEW_PROJECTION_MATRIX_1.name_1, get_ZModelViewProjectionMatrixGenerator())]));
+    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_SCENE_MATRIX_1, 'u_sceneMatrixBlock', listOf_0([new UniformMember(UNIFORM_KEYS_getInstance().PROJECTION_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_projMatrix'), new UniformMember(UNIFORM_KEYS_getInstance().VIEW_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_viewMatrix'), new UniformMember(UNIFORM_KEYS_getInstance().MODEL_VIEW_PROJECTION_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_mvpMatrix')]), mapOf([to(UNIFORM_KEYS_getInstance().PROJECTION_MATRIX_1.name_1, get_ZProjectionMatrixGenerator()), to(UNIFORM_KEYS_getInstance().VIEW_MATRIX_1.name_1, get_ZViewMatrixGenerator()), to(UNIFORM_KEYS_getInstance().MODEL_VIEW_PROJECTION_MATRIX_1.name_1, get_ZModelViewProjectionMatrixGenerator())]));
   }
   var SceneMatrixUniforms_instance;
   function SceneMatrixUniforms_getInstance() {
@@ -11924,7 +11394,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function SkinningUniforms() {
     SkinningUniforms_instance = this;
-    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_SKINNING_MATRIX_1, 'u_skinningMatrixBlock', listOf([new UniformMember(UNIFORM_KEYS_getInstance().BONES_1, ZTypes_getInstance().MAT4F, 100, 'u_bones'), new UniformMember(UNIFORM_KEYS_getInstance().INVERSE_BIND_MATRIX_1, ZTypes_getInstance().MAT4F, 100, 'u_invBindMatrix')]), mapOf([to(UNIFORM_KEYS_getInstance().BONES_1.name_1, get_ZBoneMatrixGenerator()), to(UNIFORM_KEYS_getInstance().INVERSE_BIND_MATRIX_1.name_1, get_ZInverseBindMatrixGenerator())]));
+    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_SKINNING_MATRIX_1, 'u_skinningMatrixBlock', listOf_0([new UniformMember(UNIFORM_KEYS_getInstance().BONES_1, ZTypes_getInstance().MAT4F, 100, 'u_bones'), new UniformMember(UNIFORM_KEYS_getInstance().INVERSE_BIND_MATRIX_1, ZTypes_getInstance().MAT4F, 100, 'u_invBindMatrix')]), mapOf([to(UNIFORM_KEYS_getInstance().BONES_1.name_1, get_ZBoneMatrixGenerator()), to(UNIFORM_KEYS_getInstance().INVERSE_BIND_MATRIX_1.name_1, get_ZInverseBindMatrixGenerator())]));
   }
   var SkinningUniforms_instance;
   function SkinningUniforms_getInstance() {
@@ -11937,7 +11407,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function ModelSkinningUniforms() {
     ModelSkinningUniforms_instance = this;
-    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_MODEL_SKINNING_MATRIX_1, 'u_modelSkinningMatrixBlock', listOf([new UniformMember(UNIFORM_KEYS_getInstance().MODEL_SKINNING_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_modelSkinningMatrix'), new UniformMember(UNIFORM_KEYS_getInstance().INVERSE_MODEL_SKINNING_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_modelSkinningMatrixInverse')]), mapOf([to(UNIFORM_KEYS_getInstance().MODEL_SKINNING_MATRIX_1.name_1, get_ZModelSkinningMatrixGenerator()), to(UNIFORM_KEYS_getInstance().INVERSE_MODEL_SKINNING_MATRIX_1.name_1, get_ZInverseModelSkinningMatrixGenerator())]));
+    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_MODEL_SKINNING_MATRIX_1, 'u_modelSkinningMatrixBlock', listOf_0([new UniformMember(UNIFORM_KEYS_getInstance().MODEL_SKINNING_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_modelSkinningMatrix'), new UniformMember(UNIFORM_KEYS_getInstance().INVERSE_MODEL_SKINNING_MATRIX_1, ZTypes_getInstance().MAT4F, 1, 'u_modelSkinningMatrixInverse')]), mapOf([to(UNIFORM_KEYS_getInstance().MODEL_SKINNING_MATRIX_1.name_1, get_ZModelSkinningMatrixGenerator()), to(UNIFORM_KEYS_getInstance().INVERSE_MODEL_SKINNING_MATRIX_1.name_1, get_ZInverseModelSkinningMatrixGenerator())]));
   }
   var ModelSkinningUniforms_instance;
   function ModelSkinningUniforms_getInstance() {
@@ -11950,7 +11420,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function PbrMaterialUniforms() {
     PbrMaterialUniforms_instance = this;
-    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_PBR_MATERIAL_1, 'u_pbrMaterialBlock', listOf([new UniformMember(UNIFORM_KEYS_getInstance().PBR_COLOR_1, ZTypes_getInstance().VEC4F, 1, 'u_pbrColor'), new UniformMember(UNIFORM_KEYS_getInstance().PBR_EMISSIVE_1, ZTypes_getInstance().VEC4F, 1, 'u_pbrEmissive'), new UniformMember(UNIFORM_KEYS_getInstance().PBR_EMISSIVE_INTENSITY_1, ZTypes_getInstance().FLOAT, 1, 'u_pbrEmissiveIntensity'), new UniformMember(UNIFORM_KEYS_getInstance().PBR_METALNESS_1, ZTypes_getInstance().FLOAT, 1, 'u_pbrMetalness'), new UniformMember(UNIFORM_KEYS_getInstance().PBR_ROUGHNESS_1, ZTypes_getInstance().FLOAT, 1, 'u_pbrRoughness')]), mapOf([to(UNIFORM_KEYS_getInstance().PBR_COLOR_1.name_1, get_ZPbrColorGenerator()), to(UNIFORM_KEYS_getInstance().PBR_EMISSIVE_1.name_1, get_ZPbrEmissiveGenerator()), to(UNIFORM_KEYS_getInstance().PBR_EMISSIVE_INTENSITY_1.name_1, get_ZPbrEmissiveIntensityGenerator()), to(UNIFORM_KEYS_getInstance().PBR_METALNESS_1.name_1, get_ZPbrMetalnessGenerator()), to(UNIFORM_KEYS_getInstance().PBR_ROUGHNESS_1.name_1, get_ZPbrRoughnessGenerator())]));
+    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_PBR_MATERIAL_1, 'u_pbrMaterialBlock', listOf_0([new UniformMember(UNIFORM_KEYS_getInstance().PBR_COLOR_1, ZTypes_getInstance().VEC4F, 1, 'u_pbrColor'), new UniformMember(UNIFORM_KEYS_getInstance().PBR_EMISSIVE_1, ZTypes_getInstance().VEC4F, 1, 'u_pbrEmissive'), new UniformMember(UNIFORM_KEYS_getInstance().PBR_EMISSIVE_INTENSITY_1, ZTypes_getInstance().FLOAT, 1, 'u_pbrEmissiveIntensity'), new UniformMember(UNIFORM_KEYS_getInstance().PBR_METALNESS_1, ZTypes_getInstance().FLOAT, 1, 'u_pbrMetalness'), new UniformMember(UNIFORM_KEYS_getInstance().PBR_ROUGHNESS_1, ZTypes_getInstance().FLOAT, 1, 'u_pbrRoughness')]), mapOf([to(UNIFORM_KEYS_getInstance().PBR_COLOR_1.name_1, get_ZPbrColorGenerator()), to(UNIFORM_KEYS_getInstance().PBR_EMISSIVE_1.name_1, get_ZPbrEmissiveGenerator()), to(UNIFORM_KEYS_getInstance().PBR_EMISSIVE_INTENSITY_1.name_1, get_ZPbrEmissiveIntensityGenerator()), to(UNIFORM_KEYS_getInstance().PBR_METALNESS_1.name_1, get_ZPbrMetalnessGenerator()), to(UNIFORM_KEYS_getInstance().PBR_ROUGHNESS_1.name_1, get_ZPbrRoughnessGenerator())]));
   }
   var PbrMaterialUniforms_instance;
   function PbrMaterialUniforms_getInstance() {
@@ -11963,7 +11433,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function PhongMaterialUniforms() {
     PhongMaterialUniforms_instance = this;
-    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_PHONG_MATERIAL_1, 'u_phongMaterialBlock', listOf([new UniformMember(UNIFORM_KEYS_getInstance().PHONG_AMBIENT_1, ZTypes_getInstance().VEC4F, 1, 'u_phongAmbient'), new UniformMember(UNIFORM_KEYS_getInstance().PHONG_DIFFUSE_1, ZTypes_getInstance().VEC4F, 1, 'u_phongDiffuse'), new UniformMember(UNIFORM_KEYS_getInstance().PHONG_SPECULAR_1, ZTypes_getInstance().VEC4F, 1, 'u_phongSpecular'), new UniformMember(UNIFORM_KEYS_getInstance().PHONG_SHININESS_1, ZTypes_getInstance().FLOAT, 1, 'u_phongShininess')]), mapOf([to(UNIFORM_KEYS_getInstance().PHONG_AMBIENT_1.name_1, get_ZPhongAmbientGenerator()), to(UNIFORM_KEYS_getInstance().PHONG_DIFFUSE_1.name_1, get_ZPhongDiffuseGenerator()), to(UNIFORM_KEYS_getInstance().PHONG_SPECULAR_1.name_1, get_ZPhongSpecularGenerator()), to(UNIFORM_KEYS_getInstance().PHONG_SHININESS_1.name_1, get_ZPhongShininessGenerator())]));
+    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_PHONG_MATERIAL_1, 'u_phongMaterialBlock', listOf_0([new UniformMember(UNIFORM_KEYS_getInstance().PHONG_AMBIENT_1, ZTypes_getInstance().VEC4F, 1, 'u_phongAmbient'), new UniformMember(UNIFORM_KEYS_getInstance().PHONG_DIFFUSE_1, ZTypes_getInstance().VEC4F, 1, 'u_phongDiffuse'), new UniformMember(UNIFORM_KEYS_getInstance().PHONG_SPECULAR_1, ZTypes_getInstance().VEC4F, 1, 'u_phongSpecular'), new UniformMember(UNIFORM_KEYS_getInstance().PHONG_SHININESS_1, ZTypes_getInstance().FLOAT, 1, 'u_phongShininess')]), mapOf([to(UNIFORM_KEYS_getInstance().PHONG_AMBIENT_1.name_1, get_ZPhongAmbientGenerator()), to(UNIFORM_KEYS_getInstance().PHONG_DIFFUSE_1.name_1, get_ZPhongDiffuseGenerator()), to(UNIFORM_KEYS_getInstance().PHONG_SPECULAR_1.name_1, get_ZPhongSpecularGenerator()), to(UNIFORM_KEYS_getInstance().PHONG_SHININESS_1.name_1, get_ZPhongShininessGenerator())]));
   }
   var PhongMaterialUniforms_instance;
   function PhongMaterialUniforms_getInstance() {
@@ -11976,7 +11446,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function LightUniformsDef() {
     LightUniformsDef_instance = this;
-    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_LIGHT_1, 'u_lightBlock', listOf([new UniformMember(UNIFORM_KEYS_getInstance().DIRECT_LIGHTS_1, ZTypes_getInstance().FLOAT, 80, 'lights'), new UniformMember(UNIFORM_KEYS_getInstance().LIGHT_DIRECT_COUNT_1, ZTypes_getInstance().FLOAT, 1, 'directCount')]), mapOf([to(UNIFORM_KEYS_getInstance().DIRECT_LIGHTS_1.name_1, get_ZDirectLightsArrayGenerator()), to(UNIFORM_KEYS_getInstance().LIGHT_DIRECT_COUNT_1.name_1, get_ZLightDirectCountGenerator())]));
+    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_LIGHT_1, 'u_lightBlock', listOf_0([new UniformMember(UNIFORM_KEYS_getInstance().DIRECT_LIGHTS_1, ZTypes_getInstance().FLOAT, 80, 'lights'), new UniformMember(UNIFORM_KEYS_getInstance().LIGHT_DIRECT_COUNT_1, ZTypes_getInstance().FLOAT, 1, 'directCount')]), mapOf([to(UNIFORM_KEYS_getInstance().DIRECT_LIGHTS_1.name_1, get_ZDirectLightsArrayGenerator()), to(UNIFORM_KEYS_getInstance().LIGHT_DIRECT_COUNT_1.name_1, get_ZLightDirectCountGenerator())]));
   }
   var LightUniformsDef_instance;
   function LightUniformsDef_getInstance() {
@@ -11989,7 +11459,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function AmbientLightUniforms() {
     AmbientLightUniforms_instance = this;
-    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_AMBIENT_LIGHT_1, 'u_ambientLightBlock', listOf([new UniformMember(UNIFORM_KEYS_getInstance().AMBIENT_LIGHT_COLOR_1, ZTypes_getInstance().VEC4F, 1, 'ambientColor'), new UniformMember(UNIFORM_KEYS_getInstance().AMBIENT_LIGHT_PARAMS_1, ZTypes_getInstance().FLOAT, 1, 'ambientIntensity')]), mapOf([to(UNIFORM_KEYS_getInstance().AMBIENT_LIGHT_COLOR_1.name_1, get_ZAmbientLightColorGenerator()), to(UNIFORM_KEYS_getInstance().AMBIENT_LIGHT_PARAMS_1.name_1, get_ZAmbientLightParamsGenerator())]));
+    UniformBlockDef.call(this, UNIFORM_KEYS_getInstance().BLOCK_AMBIENT_LIGHT_1, 'u_ambientLightBlock', listOf_0([new UniformMember(UNIFORM_KEYS_getInstance().AMBIENT_LIGHT_COLOR_1, ZTypes_getInstance().VEC4F, 1, 'ambientColor'), new UniformMember(UNIFORM_KEYS_getInstance().AMBIENT_LIGHT_PARAMS_1, ZTypes_getInstance().FLOAT, 1, 'ambientIntensity')]), mapOf([to(UNIFORM_KEYS_getInstance().AMBIENT_LIGHT_COLOR_1.name_1, get_ZAmbientLightColorGenerator()), to(UNIFORM_KEYS_getInstance().AMBIENT_LIGHT_PARAMS_1.name_1, get_ZAmbientLightParamsGenerator())]));
   }
   var AmbientLightUniforms_instance;
   function AmbientLightUniforms_getInstance() {
@@ -12030,103 +11500,70 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_33;
   }
   function ZBoneData$_get_id_$ref_wcbig5(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.id_1;
-    };
+    }, 0, 0, 245, VOID, [p0]);
   }
   function ZBoneData$_set_id_$ref_xt232x(p0) {
-    return function (_this__u8e3s4) {
-      p0.id_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.id_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 246, VOID, [p0]);
   }
   function ZBone$_get_id_$ref_8ik3ob() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.id;
-    };
+    }, 1, 0, 247);
   }
   function ZBone$_set_id_$ref_9zaob3() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_id_36n2qa_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBone$_get_id_$ref_8ik3ob_0() {
-    return function (p0) {
-      return p0.id;
-    };
-  }
-  function ZBone$_set_id_$ref_9zaob3_0() {
-    return function (p0, p1) {
-      p0.set_id_36n2qa_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 248);
   }
   function ZBoneData$_get_name_$ref_hbmxwr(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.name_1;
-    };
+    }, 0, 0, 249, VOID, [p0]);
   }
   function ZBoneData$_set_name_$ref_u4j9dj(p0) {
-    return function (_this__u8e3s4) {
-      p0.name_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.name_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 250, VOID, [p0]);
   }
   function ZBone$_get_name_$ref_s71f4b() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.name;
-    };
+    }, 1, 0, 251);
   }
   function ZBone$_set_name_$ref_fe53nj() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_name_aqnlwe_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBone$_get_name_$ref_s71f4b_0() {
-    return function (p0) {
-      return p0.name;
-    };
-  }
-  function ZBone$_set_name_$ref_fe53nj_0() {
-    return function (p0, p1) {
-      p0.set_name_aqnlwe_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 252);
   }
   function ZBoneData$_get_transform_$ref_ylt16g(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.transform_1;
-    };
+    }, 0, 0, 253, VOID, [p0]);
   }
   function ZBoneData$_set_transform_$ref_l7jiac(p0) {
-    return function (_this__u8e3s4) {
-      p0.transform_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.transform_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 254, VOID, [p0]);
   }
   function ZBone$_get_transform_$ref_mg5lea() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.transform;
-    };
+    }, 1, 0, 255);
   }
   function ZBone$_set_transform_$ref_78e2vy() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_transform_pz4y3l_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZBone$_get_transform_$ref_mg5lea_0() {
-    return function (p0) {
-      return p0.transform;
-    };
-  }
-  function ZBone$_set_transform_$ref_78e2vy_0() {
-    return function (p0, p1) {
-      p0.set_transform_pz4y3l_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 256);
   }
   function ZBone(data) {
     ZSerializableComponent.call(this, data);
@@ -12159,9 +11596,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBone).set_id_36n2qa_k$ = function (_set____db54di) {
     var tmp0 = this.id$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBone$_get_id_$ref_8ik3ob_0();
+    var tmp_0 = ZBone$_get_id_$ref_8ik3ob();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBone$_set_id_$ref_9zaob3_0());
+    getPropertyCallableRef('id', 1, tmp, tmp_0, ZBone$_set_id_$ref_9zaob3());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -12176,9 +11613,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBone).set_name_aqnlwe_k$ = function (_set____db54di) {
     var tmp0 = this.name$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBone$_get_name_$ref_s71f4b_0();
+    var tmp_0 = ZBone$_get_name_$ref_s71f4b();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('name', 1, tmp, tmp_0, ZBone$_set_name_$ref_fe53nj_0());
+    getPropertyCallableRef('name', 1, tmp, tmp_0, ZBone$_set_name_$ref_fe53nj());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -12193,9 +11630,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZBone).set_transform_pz4y3l_k$ = function (_set____db54di) {
     var tmp0 = this.transform$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZBone$_get_transform_$ref_mg5lea_0();
+    var tmp_0 = ZBone$_get_transform_$ref_mg5lea();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('transform', 1, tmp, tmp_0, ZBone$_set_transform_$ref_78e2vy_0());
+    getPropertyCallableRef('transform', 1, tmp, tmp_0, ZBone$_set_transform_$ref_78e2vy());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -12259,43 +11696,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       computeInverseBindMatrix(this, Op_instance_0.Identity);
     }
   };
-  protoOf(ZBone).computePoseFromKeyFrame = function (keyFrame, parentPoseMatrix) {
-    var boneTransform = keyFrame.getBoneTransform(this.id);
-    var merged = initWithArgs_4(this.transform.position, this.transform.rotation, this.transform.scale);
-    if (!(boneTransform == null)) {
-      var tmp0_safe_receiver = boneTransform.position;
-      if (tmp0_safe_receiver == null)
-        null;
-      else {
-        // Inline function 'kotlin.let' call
-        merged.set_position_93de32_k$(tmp0_safe_receiver);
-      }
-      var tmp1_safe_receiver = boneTransform.rotation;
-      if (tmp1_safe_receiver == null)
-        null;
-      else {
-        // Inline function 'kotlin.let' call
-        merged.set_rotation_uwstg3_k$(tmp1_safe_receiver);
-      }
-      var tmp2_safe_receiver = boneTransform.scale;
-      if (tmp2_safe_receiver == null)
-        null;
-      else {
-        // Inline function 'kotlin.let' call
-        merged.set_scale_e8k661_k$(tmp2_safe_receiver);
-      }
-    }
-    var localPoseMat = merged.matrix;
-    Op_instance_0.mult(this.poseMatrix, parentPoseMatrix, localPoseMat);
-    var indexedObject = this.children;
-    var inductionVariable = 0;
-    var last = indexedObject.length;
-    while (inductionVariable < last) {
-      var child = indexedObject[inductionVariable];
-      inductionVariable = inductionVariable + 1 | 0;
-      child.computePoseFromKeyFrame(keyFrame, this.poseMatrix);
-    }
-  };
   function ZBoneData$Companion$$childSerializers$_anonymous__m13ohq() {
     return new ArrayListSerializer(Companion_instance_33.serializer_9w0wvi_k$());
   }
@@ -12341,7 +11741,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name_1);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 2) ? true : !equals(value.transform_1, new ZTransform())) {
-      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_32(), value.transform_1);
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_34(), value.transform_1);
     }
     var tmp;
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3)) {
@@ -12375,7 +11775,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
       tmp5_local1 = tmp8_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
-      tmp6_local2 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+      tmp6_local2 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
       tmp7_local3 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp9_cached[3].get_value_j01efc_k$(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
@@ -12395,7 +11795,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           case 2:
-            tmp6_local2 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+            tmp6_local2 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
@@ -12417,7 +11817,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_32(), tmp0_cached[3].get_value_j01efc_k$()];
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_34(), tmp0_cached[3].get_value_j01efc_k$()];
   };
   var $serializer_instance_20;
   function $serializer_getInstance_20() {
@@ -12526,47 +11926,36 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_35;
   }
   function ZSkinningData$_get_modelSkinBindMatrix_$ref_a8b1al(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.modelSkinBindMatrix_1;
-    };
+    }, 0, 0, 257, VOID, [p0]);
   }
   function ZSkinningData$_set_modelSkinBindMatrix_$ref_upgfk1(p0) {
-    return function (_this__u8e3s4) {
-      p0.modelSkinBindMatrix_1 = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.modelSkinBindMatrix_1 = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 258, VOID, [p0]);
   }
   function ZSkinning$_get_modelSkinBindMatrix_$ref_qjp18d() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.modelSkinBindMatrix;
-    };
+    }, 1, 0, 259);
   }
   function ZSkinning$_set_modelSkinBindMatrix_$ref_62jmyx() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_modelSkinBindMatrix_610k7k_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZSkinning$_get_modelSkinBindMatrix_$ref_qjp18d_0() {
-    return function (p0) {
-      return p0.modelSkinBindMatrix;
-    };
-  }
-  function ZSkinning$_set_modelSkinBindMatrix_$ref_62jmyx_0() {
-    return function (p0, p1) {
-      p0.set_modelSkinBindMatrix_610k7k_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 260);
   }
   function ZSkinningData$_get_inverseModelSkinBindMatrix_$ref_tvzbfv(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.get_inverseModelSkinBindMatrix_5yq0sd_k$();
-    };
+    }, 0, 0, 261, VOID, [p0]);
   }
   function ZSkinning$_get_inverseModelSkinBindMatrix_$ref_hba8gv() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.inverseModelSkinBindMatrix;
-    };
+    }, 1, 0, 262);
   }
   function ZSkinning(data) {
     ZSerializableComponent.call(this, data);
@@ -12581,9 +11970,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZSkinning).set_modelSkinBindMatrix_610k7k_k$ = function (_set____db54di) {
     var tmp0 = this.modelSkinBindMatrix$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZSkinning$_get_modelSkinBindMatrix_$ref_qjp18d_0();
+    var tmp_0 = ZSkinning$_get_modelSkinBindMatrix_$ref_qjp18d();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('modelSkinBindMatrix', 1, tmp, tmp_0, ZSkinning$_set_modelSkinBindMatrix_$ref_62jmyx_0());
+    getPropertyCallableRef('modelSkinBindMatrix', 1, tmp, tmp_0, ZSkinning$_set_modelSkinBindMatrix_$ref_62jmyx());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -12817,81 +12206,32 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZSkinningSerializer).createComponentInstance_2ckoo_k$ = function (data) {
     return this.createComponentInstance_aznvhx_k$(data instanceof ZSkinningData ? data : THROW_CCE());
   };
-  function ZSceneContext$_get_scene_$ref_uxepgz(p0) {
-    return function () {
-      return p0.scene;
-    };
-  }
-  function ZSceneContext$_set_scene_$ref_asuw3l(p0) {
-    return function (_this__u8e3s4) {
-      p0.set_scene_modrxs_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
-  }
   function ZContext$_get_scene_$ref_vacwhx() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.scene;
-    };
+    }, 1, 0, 263);
   }
   function ZContext$_set_scene_$ref_1zig3d() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_scene_modrxs_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZContext$_get_scene_$ref_vacwhx_0() {
-    return function (p0) {
-      return p0.scene;
-    };
-  }
-  function ZContext$_set_scene_$ref_1zig3d_0() {
-    return function (p0, p1) {
-      p0.set_scene_modrxs_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZSceneContext$_get_activeCamera_$ref_bk70dm(p0) {
-    return function () {
-      return p0.activeCamera;
-    };
-  }
-  function ZSceneContext$_set_activeCamera_$ref_udssiq(p0) {
-    return function (_this__u8e3s4) {
-      p0.activeCamera = _this__u8e3s4;
-      return Unit_instance;
-    };
+    }, 2, 0, 264);
   }
   function ZContext$_get_activeCamera_$ref_5mrkpu() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.activeCamera;
-    };
+    }, 1, 0, 265);
   }
   function ZContext$_set_activeCamera_$ref_ypvtsm() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_activeCamera_so7x6o_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZContext$_get_activeCamera_$ref_5mrkpu_0() {
-    return function (p0) {
-      return p0.activeCamera;
-    };
-  }
-  function ZContext$_set_activeCamera_$ref_ypvtsm_0() {
-    return function (p0, p1) {
-      p0.set_activeCamera_so7x6o_k$(p1);
-      return Unit_instance;
-    };
-  }
-  function ZSceneContext$_get_isInitialized_$ref_oldklr(p0) {
-    return function () {
-      return p0.isInitialized;
-    };
+    }, 2, 0, 266);
   }
   function ZContext$_get_isInitialized_$ref_4po3uh() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.isInitialized;
-    };
+    }, 1, 0, 267);
   }
   function ZContext(sceneContext, renderingContext) {
     this.sceneContext = sceneContext;
@@ -12939,9 +12279,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZContext).set_scene_modrxs_k$ = function (_set____db54di) {
     var tmp0 = this.scene$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZContext$_get_scene_$ref_vacwhx_0();
+    var tmp_0 = ZContext$_get_scene_$ref_vacwhx();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('scene', 1, tmp, tmp_0, ZContext$_set_scene_$ref_1zig3d_0());
+    getPropertyCallableRef('scene', 1, tmp, tmp_0, ZContext$_set_scene_$ref_1zig3d());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -12956,9 +12296,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZContext).set_activeCamera_so7x6o_k$ = function (_set____db54di) {
     var tmp0 = this.activeCamera$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZContext$_get_activeCamera_$ref_5mrkpu_0();
+    var tmp_0 = ZContext$_get_activeCamera_$ref_5mrkpu();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('activeCamera', 1, tmp, tmp_0, ZContext$_set_activeCamera_$ref_ypvtsm_0());
+    getPropertyCallableRef('activeCamera', 1, tmp, tmp_0, ZContext$_set_activeCamera_$ref_ypvtsm());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -12990,6 +12330,128 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var renderingContext = this.createRenderingContext_58gipz_k$(surfaceView);
     return new ZContext(sceneContext, renderingContext);
   };
+  var ZLoadOp_Load_instance;
+  var ZLoadOp_Clear_instance;
+  var ZLoadOp_entriesInitialized;
+  function ZLoadOp_initEntries() {
+    if (ZLoadOp_entriesInitialized)
+      return Unit_instance;
+    ZLoadOp_entriesInitialized = true;
+    ZLoadOp_Load_instance = new ZLoadOp('Load', 0);
+    ZLoadOp_Clear_instance = new ZLoadOp('Clear', 1);
+  }
+  function ZLoadOp(name, ordinal) {
+    Enum.call(this, name, ordinal);
+  }
+  var ZStoreOp_Store_instance;
+  var ZStoreOp_Discard_instance;
+  var ZStoreOp_entriesInitialized;
+  function ZStoreOp_initEntries() {
+    if (ZStoreOp_entriesInitialized)
+      return Unit_instance;
+    ZStoreOp_entriesInitialized = true;
+    ZStoreOp_Store_instance = new ZStoreOp('Store', 0);
+    ZStoreOp_Discard_instance = new ZStoreOp('Discard', 1);
+  }
+  function ZStoreOp(name, ordinal) {
+    Enum.call(this, name, ordinal);
+  }
+  function ZGpuColorAttachmentDesc(loadOp, storeOp, clearValue) {
+    loadOp = loadOp === VOID ? ZLoadOp_Clear_getInstance() : loadOp;
+    storeOp = storeOp === VOID ? ZStoreOp_Store_getInstance() : storeOp;
+    this.loadOp_1 = loadOp;
+    this.storeOp_1 = storeOp;
+    this.clearValue_1 = clearValue;
+  }
+  protoOf(ZGpuColorAttachmentDesc).toString = function () {
+    return 'ZGpuColorAttachmentDesc(loadOp=' + this.loadOp_1.toString() + ', storeOp=' + this.storeOp_1.toString() + ', clearValue=' + toString_0(this.clearValue_1) + ')';
+  };
+  protoOf(ZGpuColorAttachmentDesc).hashCode = function () {
+    var result = this.loadOp_1.hashCode();
+    result = imul(result, 31) + this.storeOp_1.hashCode() | 0;
+    result = imul(result, 31) + hashCode(this.clearValue_1) | 0;
+    return result;
+  };
+  protoOf(ZGpuColorAttachmentDesc).equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof ZGpuColorAttachmentDesc))
+      return false;
+    if (!this.loadOp_1.equals(other.loadOp_1))
+      return false;
+    if (!this.storeOp_1.equals(other.storeOp_1))
+      return false;
+    if (!equals(this.clearValue_1, other.clearValue_1))
+      return false;
+    return true;
+  };
+  function ZGpuDepthStencilAttachmentDesc(depthLoadOp, depthStoreOp, depthClearValue) {
+    depthLoadOp = depthLoadOp === VOID ? ZLoadOp_Clear_getInstance() : depthLoadOp;
+    depthStoreOp = depthStoreOp === VOID ? ZStoreOp_Store_getInstance() : depthStoreOp;
+    depthClearValue = depthClearValue === VOID ? 1.0 : depthClearValue;
+    this.depthLoadOp_1 = depthLoadOp;
+    this.depthStoreOp_1 = depthStoreOp;
+    this.depthClearValue_1 = depthClearValue;
+  }
+  protoOf(ZGpuDepthStencilAttachmentDesc).toString = function () {
+    return 'ZGpuDepthStencilAttachmentDesc(depthLoadOp=' + this.depthLoadOp_1.toString() + ', depthStoreOp=' + this.depthStoreOp_1.toString() + ', depthClearValue=' + this.depthClearValue_1 + ')';
+  };
+  protoOf(ZGpuDepthStencilAttachmentDesc).hashCode = function () {
+    var result = this.depthLoadOp_1.hashCode();
+    result = imul(result, 31) + this.depthStoreOp_1.hashCode() | 0;
+    result = imul(result, 31) + getNumberHashCode(this.depthClearValue_1) | 0;
+    return result;
+  };
+  protoOf(ZGpuDepthStencilAttachmentDesc).equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof ZGpuDepthStencilAttachmentDesc))
+      return false;
+    if (!this.depthLoadOp_1.equals(other.depthLoadOp_1))
+      return false;
+    if (!this.depthStoreOp_1.equals(other.depthStoreOp_1))
+      return false;
+    if (!equals(this.depthClearValue_1, other.depthClearValue_1))
+      return false;
+    return true;
+  };
+  function ZGpuRenderPassDescriptor(label, colorAttachments, depthStencilAttachment) {
+    label = label === VOID ? null : label;
+    depthStencilAttachment = depthStencilAttachment === VOID ? null : depthStencilAttachment;
+    this.label_1 = label;
+    this.colorAttachments_1 = colorAttachments;
+    this.depthStencilAttachment_1 = depthStencilAttachment;
+  }
+  protoOf(ZGpuRenderPassDescriptor).toString = function () {
+    return 'ZGpuRenderPassDescriptor(label=' + this.label_1 + ', colorAttachments=' + toString_0(this.colorAttachments_1) + ', depthStencilAttachment=' + toString(this.depthStencilAttachment_1) + ')';
+  };
+  protoOf(ZGpuRenderPassDescriptor).hashCode = function () {
+    var result = this.label_1 == null ? 0 : getStringHashCode(this.label_1);
+    result = imul(result, 31) + hashCode(this.colorAttachments_1) | 0;
+    result = imul(result, 31) + (this.depthStencilAttachment_1 == null ? 0 : this.depthStencilAttachment_1.hashCode()) | 0;
+    return result;
+  };
+  protoOf(ZGpuRenderPassDescriptor).equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof ZGpuRenderPassDescriptor))
+      return false;
+    if (!(this.label_1 == other.label_1))
+      return false;
+    if (!equals(this.colorAttachments_1, other.colorAttachments_1))
+      return false;
+    if (!equals(this.depthStencilAttachment_1, other.depthStencilAttachment_1))
+      return false;
+    return true;
+  };
+  function ZLoadOp_Clear_getInstance() {
+    ZLoadOp_initEntries();
+    return ZLoadOp_Clear_instance;
+  }
+  function ZStoreOp_Store_getInstance() {
+    ZStoreOp_initEntries();
+    return ZStoreOp_Store_instance;
+  }
   function ZRenderingContext() {
   }
   function ZSceneContext() {
@@ -13031,6 +12493,33 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function ZSceneContextDefault() {
     ZSceneContext.call(this);
+  }
+  function ZSceneContext$_get_scene_$ref_uxepgz(p0) {
+    return constructCallableReference(function () {
+      return p0.scene;
+    }, 0, 0, 268, VOID, [p0]);
+  }
+  function ZSceneContext$_set_scene_$ref_asuw3l(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.set_scene_modrxs_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 269, VOID, [p0]);
+  }
+  function ZSceneContext$_get_activeCamera_$ref_bk70dm(p0) {
+    return constructCallableReference(function () {
+      return p0.activeCamera;
+    }, 0, 0, 270, VOID, [p0]);
+  }
+  function ZSceneContext$_set_activeCamera_$ref_udssiq(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.activeCamera = p0_0;
+      return Unit_instance;
+    }, 1, 0, 271, VOID, [p0]);
+  }
+  function ZSceneContext$_get_isInitialized_$ref_oldklr(p0) {
+    return constructCallableReference(function () {
+      return p0.isInitialized;
+    }, 0, 0, 272, VOID, [p0]);
   }
   function ZEventManager$addTouchListener$wrapper$1($listener) {
     this.$listener_1 = $listener;
@@ -15199,6 +14688,106 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.flipTextureY_1 = false;
     this.maxBones_1 = 0;
   }
+  function PipelineCapabilitiesBuilderLogger() {
+  }
+  var PipelineCapabilitiesBuilderLogger_instance;
+  function PipelineCapabilitiesBuilderLogger_getInstance() {
+    return PipelineCapabilitiesBuilderLogger_instance;
+  }
+  function pipelineCapabilitiesBuilder(model, shaderProgram) {
+    var shaderParameters = ZShaderProgramParameters_init_$Create$(intersect(model.mesh.attributeIds, shaderProgram.attributeIds));
+    shaderParameters.usePosition_1 = model.mesh.contains(ZAttributeId_POSITION_getInstance());
+    shaderParameters.useColors_1 = model.mesh.contains(ZAttributeId_COLOR_getInstance());
+    shaderParameters.useNormals_1 = model.mesh.contains(ZAttributeId_NORMAL_getInstance());
+    if (model.hasTextures) {
+      shaderParameters.useTextures_1 = true;
+      var tmp0_safe_receiver = model.material;
+      var tmp1_safe_receiver = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.texture;
+      if ((tmp1_safe_receiver == null ? null : tmp1_safe_receiver.flipY) === true) {
+        shaderParameters.flipTextureY_1 = true;
+      }
+    }
+    if (model.hasSkeleton) {
+      shaderParameters.useSkinning_1 = true;
+      shaderParameters.maxBones_1 = ensureNotNull(model.skeleton).bones.length;
+    }
+    var tmp2_safe_receiver = model.material;
+    if ((tmp2_safe_receiver == null ? null : tmp2_safe_receiver.usesPbr) === true) {
+      shaderParameters.usePbrMaterial_1 = true;
+    }
+    var tmp3_safe_receiver = model.material;
+    if ((tmp3_safe_receiver == null ? null : tmp3_safe_receiver.usesPhong) === true) {
+      shaderParameters.usePhongMaterial_1 = true;
+    }
+    if (shaderParameters.useNormals_1 && (shaderParameters.usePbrMaterial_1 || shaderParameters.usePhongMaterial_1)) {
+      shaderParameters.useLighting_1 = true;
+    }
+    enableRequiredBuffers(model, shaderParameters);
+    // Inline function 'zernikalos.logger.logger' call
+    var tmp = Companion_getInstance_47().getLogger(getKClass(PipelineCapabilitiesBuilderLogger).get_simpleName_r6f8py_k$(), hashCode(PipelineCapabilitiesBuilderLogger_instance));
+    var tmp_0 = model.name;
+    // Inline function 'kotlin.collections.filter' call
+    var tmp0 = model.mesh.buffers.get_values_ksazhn_k$();
+    // Inline function 'kotlin.collections.filterTo' call
+    var destination = ArrayList_init_$Create$();
+    var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
+      if (element.enabled) {
+        destination.add_utx5q5_k$(element);
+      }
+    }
+    var tmp_1 = destination;
+    tmp.debug('[' + tmp_0 + '] Enabled buffers:\n' + joinToString(tmp_1, ',\n', VOID, VOID, VOID, VOID, pipelineCapabilitiesBuilder$lambda));
+    return shaderParameters;
+  }
+  function enableRequiredBuffers(model, shaderParameters) {
+    var tmp0_safe_receiver = model.mesh.indexBuffer;
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.enabled = true;
+    }
+    var tmp1_safe_receiver = model.mesh.position;
+    if (tmp1_safe_receiver == null)
+      null;
+    else {
+      tmp1_safe_receiver.enabled = shaderParameters.usePosition_1;
+    }
+    var tmp2_safe_receiver = model.mesh.normal;
+    if (tmp2_safe_receiver == null)
+      null;
+    else {
+      tmp2_safe_receiver.enabled = shaderParameters.useNormals_1;
+    }
+    var tmp3_safe_receiver = model.mesh.uv;
+    if (tmp3_safe_receiver == null)
+      null;
+    else {
+      tmp3_safe_receiver.enabled = shaderParameters.useTextures_1;
+    }
+    var tmp4_safe_receiver = model.mesh.color;
+    if (tmp4_safe_receiver == null)
+      null;
+    else {
+      tmp4_safe_receiver.enabled = shaderParameters.useColors_1;
+    }
+    var tmp5_safe_receiver = model.mesh.boneWeight;
+    if (tmp5_safe_receiver == null)
+      null;
+    else {
+      tmp5_safe_receiver.enabled = shaderParameters.useSkinning_1;
+    }
+    var tmp6_safe_receiver = model.mesh.boneIndex;
+    if (tmp6_safe_receiver == null)
+      null;
+    else {
+      tmp6_safe_receiver.enabled = shaderParameters.useSkinning_1;
+    }
+  }
+  function pipelineCapabilitiesBuilder$lambda(it) {
+    return it.toString();
+  }
   function get_ZAmbientLightColorGenerator() {
     _init_properties_ZAmbientLightUniformGenerators_kt__s3uxi4();
     return ZAmbientLightColorGenerator;
@@ -15214,11 +14803,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var scene = sceneContext.scene;
     var tmp;
     if (scene == null) {
-      tmp = Companion_getInstance_47().BLACK;
+      tmp = Companion_getInstance_49().BLACK;
     } else {
       var tmp0_safe_receiver = findAmbientLight(scene);
       var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.color;
-      tmp = tmp1_elvis_lhs == null ? Companion_getInstance_47().BLACK : tmp1_elvis_lhs;
+      tmp = tmp1_elvis_lhs == null ? Companion_getInstance_49().BLACK : tmp1_elvis_lhs;
     }
     return tmp;
   }
@@ -15270,13 +14859,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var _iterator__ex2g4s = sortedBones.iterator_jk1svi_k$();
     while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
       var item = _iterator__ex2g4s.next_20eer_k$();
-      var tmp_0;
-      if (obj.action == null) {
-        tmp_0 = item.bindMatrix;
-      } else {
-        tmp_0 = item.poseMatrix;
-      }
-      var tmp$ret$4 = tmp_0;
+      var tmp$ret$4 = item.poseMatrix;
       destination.add_utx5q5_k$(tmp$ret$4);
     }
     var boneMatrices = destination;
@@ -15596,12 +15179,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var ZModelViewProjectionMatrixGenerator;
   function ZModelViewProjectionMatrixGenerator$lambda(sceneContext, obj) {
     _init_properties_ZModelViewProjectionMatrixGenerator_kt__gz2zvn();
-    var tmp = get_ZModelMatrixGenerator()(sceneContext, obj);
-    var modelMatrix = tmp instanceof ZMatrix4 ? tmp : THROW_CCE();
-    var tmp0_safe_receiver = sceneContext.activeCamera;
-    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.viewProjectionMatrix;
-    var viewProjectionMatrix = tmp1_elvis_lhs == null ? Op_instance_0.Identity : tmp1_elvis_lhs;
-    return viewProjectionMatrix.times(modelMatrix);
+    var camera = sceneContext.activeCamera;
+    var tmp;
+    if (camera == null) {
+      tmp = Op_instance_0.Identity;
+    } else {
+      var tmp_0 = get_ZModelMatrixGenerator()(sceneContext, obj);
+      var modelMatrix = tmp_0 instanceof ZMatrix4 ? tmp_0 : THROW_CCE();
+      var correctedProjection = backendCorrectionMatrix().times(camera.projectionMatrix);
+      tmp = correctedProjection.times(camera.viewMatrix).times(modelMatrix);
+    }
+    return tmp;
   }
   var properties_initialized_ZModelViewProjectionMatrixGenerator_kt_y3s09r;
   function _init_properties_ZModelViewProjectionMatrixGenerator_kt__gz2zvn() {
@@ -16047,7 +15635,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var activeCamera = sceneContext.activeCamera;
     var tmp;
     if (!(activeCamera == null)) {
-      tmp = activeCamera.projectionMatrix;
+      tmp = backendCorrectionMatrix().times(activeCamera.projectionMatrix);
     } else {
       tmp = Op_instance_0.Identity;
     }
@@ -16084,6 +15672,537 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       ZViewMatrixGenerator = ZViewMatrixGenerator$lambda;
     }
   }
+  function GeometryMeshes() {
+    this.DEFAULT_HALF_EXTENT_1 = 0.5;
+  }
+  protoOf(GeometryMeshes).requirePositiveHalfExtent_pcljq3_k$ = function (halfExtent) {
+    // Inline function 'kotlin.require' call
+    if (!(halfExtent > 0.0)) {
+      var message = 'halfExtent must be positive, was ' + halfExtent;
+      throw IllegalArgumentException_init_$Create$(toString_0(message));
+    }
+    return halfExtent;
+  };
+  protoOf(GeometryMeshes).buildCubeMesh_nef68g_k$ = function (halfExtent) {
+    var h = this.requirePositiveHalfExtent_pcljq3_k$(halfExtent);
+    var mesh = init_6();
+    mesh.set_drawMode_uv6qiq_k$(ZDrawMode_TRIANGLES_getInstance());
+    // Inline function 'kotlin.floatArrayOf' call
+    var positions = new Float32Array([-h, -h, h, h, -h, h, h, h, h, -h, h, h, h, -h, -h, -h, -h, -h, -h, h, -h, h, h, -h, h, -h, -h, h, -h, h, h, h, h, h, h, -h, -h, -h, h, -h, -h, -h, -h, h, -h, -h, h, h, -h, h, -h, -h, h, h, h, h, h, h, h, -h, -h, -h, h, -h, -h, -h, h, -h, -h, h, -h, h]);
+    // Inline function 'kotlin.floatArrayOf' call
+    var normals = new Float32Array([0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0, 0.0, -1.0, 0.0]);
+    // Inline function 'kotlin.floatArrayOf' call
+    var uvs = new Float32Array([0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]);
+    var vertexCount = 24;
+    mesh.addVec3Buffer(ZAttributeId_POSITION_getInstance(), vertexCount, positions);
+    mesh.addVec3Buffer(ZAttributeId_NORMAL_getInstance(), vertexCount, normals);
+    mesh.addVec2Buffer(ZAttributeId_UV_getInstance(), vertexCount, uvs);
+    var indexData = new Int16Array(36);
+    var w = 0;
+    var inductionVariable = 0;
+    if (inductionVariable < 6)
+      do {
+        var face = inductionVariable;
+        inductionVariable = inductionVariable + 1 | 0;
+        var base = imul(face, 4);
+        var _unary__edvuaz = w;
+        w = _unary__edvuaz + 1 | 0;
+        indexData[_unary__edvuaz] = toShort(base);
+        var _unary__edvuaz_0 = w;
+        w = _unary__edvuaz_0 + 1 | 0;
+        indexData[_unary__edvuaz_0] = toShort(base + 1 | 0);
+        var _unary__edvuaz_1 = w;
+        w = _unary__edvuaz_1 + 1 | 0;
+        indexData[_unary__edvuaz_1] = toShort(base + 2 | 0);
+        var _unary__edvuaz_2 = w;
+        w = _unary__edvuaz_2 + 1 | 0;
+        indexData[_unary__edvuaz_2] = toShort(base);
+        var _unary__edvuaz_3 = w;
+        w = _unary__edvuaz_3 + 1 | 0;
+        indexData[_unary__edvuaz_3] = toShort(base + 2 | 0);
+        var _unary__edvuaz_4 = w;
+        w = _unary__edvuaz_4 + 1 | 0;
+        indexData[_unary__edvuaz_4] = toShort(base + 3 | 0);
+      }
+       while (inductionVariable < 6);
+    mesh.addUShortIndexBuffer(indexData);
+    return mesh;
+  };
+  protoOf(GeometryMeshes).buildPlaneMeshXZ_yy242l_k$ = function (halfExtent) {
+    var w = this.requirePositiveHalfExtent_pcljq3_k$(halfExtent);
+    var mesh = init_6();
+    mesh.set_drawMode_uv6qiq_k$(ZDrawMode_TRIANGLES_getInstance());
+    // Inline function 'kotlin.floatArrayOf' call
+    var positions = new Float32Array([-w, 0.0, -w, w, 0.0, -w, w, 0.0, w, -w, 0.0, w]);
+    // Inline function 'kotlin.floatArrayOf' call
+    var normals = new Float32Array([0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]);
+    // Inline function 'kotlin.floatArrayOf' call
+    var uvs = new Float32Array([0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]);
+    var vertexCount = 4;
+    mesh.addVec3Buffer(ZAttributeId_POSITION_getInstance(), vertexCount, positions);
+    mesh.addVec3Buffer(ZAttributeId_NORMAL_getInstance(), vertexCount, normals);
+    mesh.addVec2Buffer(ZAttributeId_UV_getInstance(), vertexCount, uvs);
+    // Inline function 'kotlin.shortArrayOf' call
+    var indexData = new Int16Array([0, 1, 2, 0, 2, 3]);
+    mesh.addUShortIndexBuffer(indexData);
+    return mesh;
+  };
+  var GeometryMeshes_instance;
+  function GeometryMeshes_getInstance() {
+    return GeometryMeshes_instance;
+  }
+  function ZCube$Companion$$childSerializers$_anonymous__8wsxnp() {
+    var tmp = getKClass(ZMesh);
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$0 = [];
+    return new ContextualSerializer(tmp, null, tmp$ret$0);
+  }
+  function ZCube$Companion$$childSerializers$_anonymous__8wsxnp_0() {
+    var tmp = getKClass(ZMaterial);
+    var tmp_0 = get_nullable(Companion_instance_18.serializer_9w0wvi_k$());
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$0 = [];
+    return new ContextualSerializer(tmp, tmp_0, tmp$ret$0);
+  }
+  function ZCube$Companion$$childSerializers$_anonymous__8wsxnp_1() {
+    var tmp = getKClass(ZSkeleton);
+    var tmp_0 = get_nullable($serializer_getInstance_43());
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$0 = [];
+    return new ContextualSerializer(tmp, tmp_0, tmp$ret$0);
+  }
+  function ZCube$Companion$$childSerializers$_anonymous__8wsxnp_2() {
+    return Companion_instance_35.serializer_9w0wvi_k$();
+  }
+  function Companion_38() {
+    Companion_instance_38 = this;
+    var tmp = this;
+    var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
+    var tmp_1 = lazy(tmp_0, ZCube$Companion$$childSerializers$_anonymous__8wsxnp);
+    var tmp_2 = LazyThreadSafetyMode_PUBLICATION_getInstance();
+    var tmp_3 = lazy(tmp_2, ZCube$Companion$$childSerializers$_anonymous__8wsxnp_0);
+    var tmp_4 = LazyThreadSafetyMode_PUBLICATION_getInstance();
+    var tmp_5 = lazy(tmp_4, ZCube$Companion$$childSerializers$_anonymous__8wsxnp_1);
+    var tmp_6 = LazyThreadSafetyMode_PUBLICATION_getInstance();
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp.$childSerializers_1 = [null, null, null, tmp_1, tmp_3, tmp_5, lazy(tmp_6, ZCube$Companion$$childSerializers$_anonymous__8wsxnp_2), null];
+  }
+  var Companion_instance_38;
+  function Companion_getInstance_39() {
+    if (Companion_instance_38 == null)
+      new Companion_38();
+    return Companion_instance_38;
+  }
+  function $serializer_22() {
+    $serializer_instance_22 = this;
+    var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.geometries.ZCube', this, 8);
+    tmp0_serialDesc.addElement_5pzumi_k$('refId', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
+    tmp0_serialDesc.addElement_5pzumi_k$('name', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(2));
+    tmp0_serialDesc.addElement_5pzumi_k$('transform', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(3));
+    tmp0_serialDesc.addElement_5pzumi_k$('mesh', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(4));
+    tmp0_serialDesc.addElement_5pzumi_k$('material', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(6));
+    tmp0_serialDesc.addElement_5pzumi_k$('skeleton', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(7));
+    tmp0_serialDesc.addElement_5pzumi_k$('skinning', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(8));
+    tmp0_serialDesc.addElement_5pzumi_k$('halfExtent', true);
+    this.descriptor_1 = tmp0_serialDesc;
+  }
+  protoOf($serializer_22).serialize_scn002_k$ = function (encoder, value) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
+    var tmp2_cached = Companion_getInstance_39().$childSerializers_1;
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !(value.refId === genRefId())) {
+      tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.refId);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 1) ? true : !(value.name === '')) {
+      tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 2) ? true : !equals(value.transform, new ZTransform())) {
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_34(), value.transform);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3) ? true : !equals(value.mesh, init_6())) {
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, tmp2_cached[3].get_value_j01efc_k$(), value.mesh);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 4) ? true : !(value.material == null)) {
+      tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 4, tmp2_cached[4].get_value_j01efc_k$(), value.material);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 5) ? true : !(value.skeleton == null)) {
+      tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 5, tmp2_cached[5].get_value_j01efc_k$(), value.skeleton);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 6) ? true : !(value.skinning == null)) {
+      tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 6, tmp2_cached[6].get_value_j01efc_k$(), value.skinning);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 7) ? true : !equals(value.halfExtent, 0.5)) {
+      tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 7, value.halfExtent);
+    }
+    tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
+  };
+  protoOf($serializer_22).serialize_5ase3y_k$ = function (encoder, value) {
+    return this.serialize_scn002_k$(encoder, value instanceof ZCube ? value : THROW_CCE());
+  };
+  protoOf($serializer_22).deserialize_sy6x50_k$ = function (decoder) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_flag = true;
+    var tmp2_index = 0;
+    var tmp3_bitMask0 = 0;
+    var tmp4_local0 = null;
+    var tmp5_local1 = null;
+    var tmp6_local2 = null;
+    var tmp7_local3 = null;
+    var tmp8_local4 = null;
+    var tmp9_local5 = null;
+    var tmp10_local6 = null;
+    var tmp11_local7 = 0.0;
+    var tmp12_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
+    var tmp13_cached = Companion_getInstance_39().$childSerializers_1;
+    if (tmp12_input.decodeSequentially_xlblqy_k$()) {
+      tmp4_local0 = tmp12_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
+      tmp3_bitMask0 = tmp3_bitMask0 | 1;
+      tmp5_local1 = tmp12_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+      tmp3_bitMask0 = tmp3_bitMask0 | 2;
+      tmp6_local2 = tmp12_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
+      tmp3_bitMask0 = tmp3_bitMask0 | 4;
+      tmp7_local3 = tmp12_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp13_cached[3].get_value_j01efc_k$(), tmp7_local3);
+      tmp3_bitMask0 = tmp3_bitMask0 | 8;
+      tmp8_local4 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, tmp13_cached[4].get_value_j01efc_k$(), tmp8_local4);
+      tmp3_bitMask0 = tmp3_bitMask0 | 16;
+      tmp9_local5 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, tmp13_cached[5].get_value_j01efc_k$(), tmp9_local5);
+      tmp3_bitMask0 = tmp3_bitMask0 | 32;
+      tmp10_local6 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, tmp13_cached[6].get_value_j01efc_k$(), tmp10_local6);
+      tmp3_bitMask0 = tmp3_bitMask0 | 64;
+      tmp11_local7 = tmp12_input.decodeFloatElement_p2q55h_k$(tmp0_desc, 7);
+      tmp3_bitMask0 = tmp3_bitMask0 | 128;
+    } else
+      while (tmp1_flag) {
+        tmp2_index = tmp12_input.decodeElementIndex_bstkhp_k$(tmp0_desc);
+        switch (tmp2_index) {
+          case -1:
+            tmp1_flag = false;
+            break;
+          case 0:
+            tmp4_local0 = tmp12_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
+            tmp3_bitMask0 = tmp3_bitMask0 | 1;
+            break;
+          case 1:
+            tmp5_local1 = tmp12_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+            tmp3_bitMask0 = tmp3_bitMask0 | 2;
+            break;
+          case 2:
+            tmp6_local2 = tmp12_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
+            tmp3_bitMask0 = tmp3_bitMask0 | 4;
+            break;
+          case 3:
+            tmp7_local3 = tmp12_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp13_cached[3].get_value_j01efc_k$(), tmp7_local3);
+            tmp3_bitMask0 = tmp3_bitMask0 | 8;
+            break;
+          case 4:
+            tmp8_local4 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, tmp13_cached[4].get_value_j01efc_k$(), tmp8_local4);
+            tmp3_bitMask0 = tmp3_bitMask0 | 16;
+            break;
+          case 5:
+            tmp9_local5 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, tmp13_cached[5].get_value_j01efc_k$(), tmp9_local5);
+            tmp3_bitMask0 = tmp3_bitMask0 | 32;
+            break;
+          case 6:
+            tmp10_local6 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, tmp13_cached[6].get_value_j01efc_k$(), tmp10_local6);
+            tmp3_bitMask0 = tmp3_bitMask0 | 64;
+            break;
+          case 7:
+            tmp11_local7 = tmp12_input.decodeFloatElement_p2q55h_k$(tmp0_desc, 7);
+            tmp3_bitMask0 = tmp3_bitMask0 | 128;
+            break;
+          default:
+            throw UnknownFieldException_init_$Create$(tmp2_index);
+        }
+      }
+    tmp12_input.endStructure_1xqz0n_k$(tmp0_desc);
+    return ZCube_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, tmp9_local5, tmp10_local6, tmp11_local7, null);
+  };
+  protoOf($serializer_22).get_descriptor_wjt6a0_k$ = function () {
+    return this.descriptor_1;
+  };
+  protoOf($serializer_22).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_39().$childSerializers_1;
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_34(), tmp0_cached[3].get_value_j01efc_k$(), get_nullable(tmp0_cached[4].get_value_j01efc_k$()), get_nullable(tmp0_cached[5].get_value_j01efc_k$()), get_nullable(tmp0_cached[6].get_value_j01efc_k$()), FloatSerializer_getInstance()];
+  };
+  var $serializer_instance_22;
+  function $serializer_getInstance_22() {
+    if ($serializer_instance_22 == null)
+      new $serializer_22();
+    return $serializer_instance_22;
+  }
+  function ZCube_init_$Init$(seen0, refId, name, transform, mesh, material, skeleton, skinning, halfExtent, serializationConstructorMarker, $this) {
+    if (!(0 === (0 & seen0))) {
+      throwMissingFieldException(seen0, 0, $serializer_getInstance_22().descriptor_1);
+    }
+    ZModel_init_$Init$(seen0, refId, name, transform, mesh, material, skeleton, skinning, serializationConstructorMarker, $this);
+    if (0 === (seen0 & 128))
+      $this.halfExtent = 0.5;
+    else
+      $this.halfExtent = halfExtent;
+    GeometryMeshes_instance.requirePositiveHalfExtent_pcljq3_k$($this.halfExtent);
+    $this.name_1 = 'Cube';
+    $this.mesh = GeometryMeshes_instance.buildCubeMesh_nef68g_k$($this.halfExtent);
+    return $this;
+  }
+  function ZCube_init_$Create$(seen0, refId, name, transform, mesh, material, skeleton, skinning, halfExtent, serializationConstructorMarker) {
+    return ZCube_init_$Init$(seen0, refId, name, transform, mesh, material, skeleton, skinning, halfExtent, serializationConstructorMarker, objectCreate(protoOf(ZCube)));
+  }
+  function ZCube(halfExtent) {
+    Companion_getInstance_39();
+    halfExtent = halfExtent === VOID ? 0.5 : halfExtent;
+    ZModel.call(this);
+    this.halfExtent = halfExtent;
+    GeometryMeshes_instance.requirePositiveHalfExtent_pcljq3_k$(this.halfExtent);
+    this.name_1 = 'Cube';
+    this.mesh = GeometryMeshes_instance.buildCubeMesh_nef68g_k$(this.halfExtent);
+  }
+  protoOf(ZCube).get_halfExtent_xr573u_k$ = function () {
+    return this.halfExtent;
+  };
+  function ZPlane$Companion$$childSerializers$_anonymous__427meg() {
+    var tmp = getKClass(ZMesh);
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$0 = [];
+    return new ContextualSerializer(tmp, null, tmp$ret$0);
+  }
+  function ZPlane$Companion$$childSerializers$_anonymous__427meg_0() {
+    var tmp = getKClass(ZMaterial);
+    var tmp_0 = get_nullable(Companion_instance_18.serializer_9w0wvi_k$());
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$0 = [];
+    return new ContextualSerializer(tmp, tmp_0, tmp$ret$0);
+  }
+  function ZPlane$Companion$$childSerializers$_anonymous__427meg_1() {
+    var tmp = getKClass(ZSkeleton);
+    var tmp_0 = get_nullable($serializer_getInstance_43());
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$0 = [];
+    return new ContextualSerializer(tmp, tmp_0, tmp$ret$0);
+  }
+  function ZPlane$Companion$$childSerializers$_anonymous__427meg_2() {
+    return Companion_instance_35.serializer_9w0wvi_k$();
+  }
+  function Companion_39() {
+    Companion_instance_39 = this;
+    var tmp = this;
+    var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
+    var tmp_1 = lazy(tmp_0, ZPlane$Companion$$childSerializers$_anonymous__427meg);
+    var tmp_2 = LazyThreadSafetyMode_PUBLICATION_getInstance();
+    var tmp_3 = lazy(tmp_2, ZPlane$Companion$$childSerializers$_anonymous__427meg_0);
+    var tmp_4 = LazyThreadSafetyMode_PUBLICATION_getInstance();
+    var tmp_5 = lazy(tmp_4, ZPlane$Companion$$childSerializers$_anonymous__427meg_1);
+    var tmp_6 = LazyThreadSafetyMode_PUBLICATION_getInstance();
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp.$childSerializers_1 = [null, null, null, tmp_1, tmp_3, tmp_5, lazy(tmp_6, ZPlane$Companion$$childSerializers$_anonymous__427meg_2), null];
+  }
+  var Companion_instance_39;
+  function Companion_getInstance_40() {
+    if (Companion_instance_39 == null)
+      new Companion_39();
+    return Companion_instance_39;
+  }
+  function $serializer_23() {
+    $serializer_instance_23 = this;
+    var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.geometries.ZPlane', this, 8);
+    tmp0_serialDesc.addElement_5pzumi_k$('refId', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
+    tmp0_serialDesc.addElement_5pzumi_k$('name', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(2));
+    tmp0_serialDesc.addElement_5pzumi_k$('transform', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(3));
+    tmp0_serialDesc.addElement_5pzumi_k$('mesh', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(4));
+    tmp0_serialDesc.addElement_5pzumi_k$('material', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(6));
+    tmp0_serialDesc.addElement_5pzumi_k$('skeleton', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(7));
+    tmp0_serialDesc.addElement_5pzumi_k$('skinning', true);
+    tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(8));
+    tmp0_serialDesc.addElement_5pzumi_k$('halfExtent', true);
+    this.descriptor_1 = tmp0_serialDesc;
+  }
+  protoOf($serializer_23).serialize_6km92h_k$ = function (encoder, value) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
+    var tmp2_cached = Companion_getInstance_40().$childSerializers_1;
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !(value.refId === genRefId())) {
+      tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.refId);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 1) ? true : !(value.name === '')) {
+      tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 2) ? true : !equals(value.transform, new ZTransform())) {
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_34(), value.transform);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3) ? true : !equals(value.mesh, init_6())) {
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, tmp2_cached[3].get_value_j01efc_k$(), value.mesh);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 4) ? true : !(value.material == null)) {
+      tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 4, tmp2_cached[4].get_value_j01efc_k$(), value.material);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 5) ? true : !(value.skeleton == null)) {
+      tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 5, tmp2_cached[5].get_value_j01efc_k$(), value.skeleton);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 6) ? true : !(value.skinning == null)) {
+      tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 6, tmp2_cached[6].get_value_j01efc_k$(), value.skinning);
+    }
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 7) ? true : !equals(value.halfExtent, 0.5)) {
+      tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 7, value.halfExtent);
+    }
+    tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
+  };
+  protoOf($serializer_23).serialize_5ase3y_k$ = function (encoder, value) {
+    return this.serialize_6km92h_k$(encoder, value instanceof ZPlane ? value : THROW_CCE());
+  };
+  protoOf($serializer_23).deserialize_sy6x50_k$ = function (decoder) {
+    var tmp0_desc = this.descriptor_1;
+    var tmp1_flag = true;
+    var tmp2_index = 0;
+    var tmp3_bitMask0 = 0;
+    var tmp4_local0 = null;
+    var tmp5_local1 = null;
+    var tmp6_local2 = null;
+    var tmp7_local3 = null;
+    var tmp8_local4 = null;
+    var tmp9_local5 = null;
+    var tmp10_local6 = null;
+    var tmp11_local7 = 0.0;
+    var tmp12_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
+    var tmp13_cached = Companion_getInstance_40().$childSerializers_1;
+    if (tmp12_input.decodeSequentially_xlblqy_k$()) {
+      tmp4_local0 = tmp12_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
+      tmp3_bitMask0 = tmp3_bitMask0 | 1;
+      tmp5_local1 = tmp12_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+      tmp3_bitMask0 = tmp3_bitMask0 | 2;
+      tmp6_local2 = tmp12_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
+      tmp3_bitMask0 = tmp3_bitMask0 | 4;
+      tmp7_local3 = tmp12_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp13_cached[3].get_value_j01efc_k$(), tmp7_local3);
+      tmp3_bitMask0 = tmp3_bitMask0 | 8;
+      tmp8_local4 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, tmp13_cached[4].get_value_j01efc_k$(), tmp8_local4);
+      tmp3_bitMask0 = tmp3_bitMask0 | 16;
+      tmp9_local5 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, tmp13_cached[5].get_value_j01efc_k$(), tmp9_local5);
+      tmp3_bitMask0 = tmp3_bitMask0 | 32;
+      tmp10_local6 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, tmp13_cached[6].get_value_j01efc_k$(), tmp10_local6);
+      tmp3_bitMask0 = tmp3_bitMask0 | 64;
+      tmp11_local7 = tmp12_input.decodeFloatElement_p2q55h_k$(tmp0_desc, 7);
+      tmp3_bitMask0 = tmp3_bitMask0 | 128;
+    } else
+      while (tmp1_flag) {
+        tmp2_index = tmp12_input.decodeElementIndex_bstkhp_k$(tmp0_desc);
+        switch (tmp2_index) {
+          case -1:
+            tmp1_flag = false;
+            break;
+          case 0:
+            tmp4_local0 = tmp12_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
+            tmp3_bitMask0 = tmp3_bitMask0 | 1;
+            break;
+          case 1:
+            tmp5_local1 = tmp12_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+            tmp3_bitMask0 = tmp3_bitMask0 | 2;
+            break;
+          case 2:
+            tmp6_local2 = tmp12_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
+            tmp3_bitMask0 = tmp3_bitMask0 | 4;
+            break;
+          case 3:
+            tmp7_local3 = tmp12_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp13_cached[3].get_value_j01efc_k$(), tmp7_local3);
+            tmp3_bitMask0 = tmp3_bitMask0 | 8;
+            break;
+          case 4:
+            tmp8_local4 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, tmp13_cached[4].get_value_j01efc_k$(), tmp8_local4);
+            tmp3_bitMask0 = tmp3_bitMask0 | 16;
+            break;
+          case 5:
+            tmp9_local5 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, tmp13_cached[5].get_value_j01efc_k$(), tmp9_local5);
+            tmp3_bitMask0 = tmp3_bitMask0 | 32;
+            break;
+          case 6:
+            tmp10_local6 = tmp12_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, tmp13_cached[6].get_value_j01efc_k$(), tmp10_local6);
+            tmp3_bitMask0 = tmp3_bitMask0 | 64;
+            break;
+          case 7:
+            tmp11_local7 = tmp12_input.decodeFloatElement_p2q55h_k$(tmp0_desc, 7);
+            tmp3_bitMask0 = tmp3_bitMask0 | 128;
+            break;
+          default:
+            throw UnknownFieldException_init_$Create$(tmp2_index);
+        }
+      }
+    tmp12_input.endStructure_1xqz0n_k$(tmp0_desc);
+    return ZPlane_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, tmp9_local5, tmp10_local6, tmp11_local7, null);
+  };
+  protoOf($serializer_23).get_descriptor_wjt6a0_k$ = function () {
+    return this.descriptor_1;
+  };
+  protoOf($serializer_23).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_40().$childSerializers_1;
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_34(), tmp0_cached[3].get_value_j01efc_k$(), get_nullable(tmp0_cached[4].get_value_j01efc_k$()), get_nullable(tmp0_cached[5].get_value_j01efc_k$()), get_nullable(tmp0_cached[6].get_value_j01efc_k$()), FloatSerializer_getInstance()];
+  };
+  var $serializer_instance_23;
+  function $serializer_getInstance_23() {
+    if ($serializer_instance_23 == null)
+      new $serializer_23();
+    return $serializer_instance_23;
+  }
+  function ZPlane_init_$Init$(seen0, refId, name, transform, mesh, material, skeleton, skinning, halfExtent, serializationConstructorMarker, $this) {
+    if (!(0 === (0 & seen0))) {
+      throwMissingFieldException(seen0, 0, $serializer_getInstance_23().descriptor_1);
+    }
+    ZModel_init_$Init$(seen0, refId, name, transform, mesh, material, skeleton, skinning, serializationConstructorMarker, $this);
+    if (0 === (seen0 & 128))
+      $this.halfExtent = 0.5;
+    else
+      $this.halfExtent = halfExtent;
+    GeometryMeshes_instance.requirePositiveHalfExtent_pcljq3_k$($this.halfExtent);
+    $this.name_1 = 'PlaneXZ';
+    $this.mesh = GeometryMeshes_instance.buildPlaneMeshXZ_yy242l_k$($this.halfExtent);
+    return $this;
+  }
+  function ZPlane_init_$Create$(seen0, refId, name, transform, mesh, material, skeleton, skinning, halfExtent, serializationConstructorMarker) {
+    return ZPlane_init_$Init$(seen0, refId, name, transform, mesh, material, skeleton, skinning, halfExtent, serializationConstructorMarker, objectCreate(protoOf(ZPlane)));
+  }
+  function ZPlane(halfExtent) {
+    Companion_getInstance_40();
+    halfExtent = halfExtent === VOID ? 0.5 : halfExtent;
+    ZModel.call(this);
+    this.halfExtent = halfExtent;
+    GeometryMeshes_instance.requirePositiveHalfExtent_pcljq3_k$(this.halfExtent);
+    this.name_1 = 'PlaneXZ';
+    this.mesh = GeometryMeshes_instance.buildPlaneMeshXZ_yy242l_k$(this.halfExtent);
+  }
+  protoOf(ZPlane).get_halfExtent_xr573u_k$ = function () {
+    return this.halfExtent;
+  };
   function ZLoaderContext() {
     var tmp = this;
     // Inline function 'kotlin.collections.hashMapOf' call
@@ -16110,33 +16229,33 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZkoVersion;
   }
   var ZkoVersion;
-  function Companion_38() {
+  function Companion_40() {
   }
-  var Companion_instance_38;
-  function Companion_getInstance_39() {
-    return Companion_instance_38;
+  var Companion_instance_40;
+  function Companion_getInstance_41() {
+    return Companion_instance_40;
   }
-  function $serializer_22() {
-    $serializer_instance_22 = this;
+  function $serializer_24() {
+    $serializer_instance_24 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.loader.ZkoHeader', this, 2);
     tmp0_serialDesc.addElement_5pzumi_k$('version', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
     tmp0_serialDesc.addElement_5pzumi_k$('currentVersion', true);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_22).serialize_7ljpcv_k$ = function (encoder, value) {
+  protoOf($serializer_24).serialize_7ljpcv_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.version);
-    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 1) ? true : !value.currentVersion.equals(Companion_instance_67.parse_pc1q8p_k$(value.version))) {
-      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, $serializer_getInstance_45(), value.currentVersion);
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 1) ? true : !value.currentVersion.equals(Companion_instance_69.parse_pc1q8p_k$(value.version))) {
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, $serializer_getInstance_47(), value.currentVersion);
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_22).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_24).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_7ljpcv_k$(encoder, value instanceof ZkoHeader ? value : THROW_CCE());
   };
-  protoOf($serializer_22).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_24).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -16147,7 +16266,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     if (tmp6_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp6_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
-      tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_45(), tmp5_local1);
+      tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_47(), tmp5_local1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
     } else
       while (tmp1_flag) {
@@ -16161,7 +16280,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 1;
             break;
           case 1:
-            tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_45(), tmp5_local1);
+            tmp5_local1 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_47(), tmp5_local1);
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           default:
@@ -16171,28 +16290,28 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp6_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZkoHeader_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, null);
   };
-  protoOf($serializer_22).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_24).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_22).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_24).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), $serializer_getInstance_45()];
+    return [StringSerializer_getInstance(), $serializer_getInstance_47()];
   };
-  var $serializer_instance_22;
-  function $serializer_getInstance_22() {
-    if ($serializer_instance_22 == null)
-      new $serializer_22();
-    return $serializer_instance_22;
+  var $serializer_instance_24;
+  function $serializer_getInstance_24() {
+    if ($serializer_instance_24 == null)
+      new $serializer_24();
+    return $serializer_instance_24;
   }
   function ZkoHeader_init_$Init$(seen0, version, currentVersion, serializationConstructorMarker, $this) {
     if (!(1 === (1 & seen0))) {
-      throwMissingFieldException(seen0, 1, $serializer_getInstance_22().descriptor_1);
+      throwMissingFieldException(seen0, 1, $serializer_getInstance_24().descriptor_1);
     }
     $this.version = version;
     if (0 === (seen0 & 2))
-      $this.currentVersion = Companion_instance_67.parse_pc1q8p_k$($this.version);
+      $this.currentVersion = Companion_instance_69.parse_pc1q8p_k$($this.version);
     else
       $this.currentVersion = currentVersion;
     // Inline function 'kotlin.require' call
@@ -16206,7 +16325,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function ZkoHeader(version) {
     this.version = version;
-    this.currentVersion = Companion_instance_67.parse_pc1q8p_k$(this.version);
+    this.currentVersion = Companion_instance_69.parse_pc1q8p_k$(this.version);
     // Inline function 'kotlin.require' call
     if (!get_ZkoVersion().isCompatibleWith_mkuz3v_k$(this.currentVersion)) {
       throw SerializationException_init_$Create$('Wrong ZKO file version, ' + ('expecting ' + get_ZkoVersion().toString() + ' compatible version, ') + ('got ' + this.currentVersion.toString()));
@@ -16259,8 +16378,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp$ret$0 = [];
     return new ArrayListSerializer(new ContextualSerializer(tmp, null, tmp$ret$0));
   }
-  function Companion_39() {
-    Companion_instance_39 = this;
+  function Companion_41() {
+    Companion_instance_41 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     var tmp_1 = lazy(tmp_0, ZkoComponentCollection$Companion$$childSerializers$_anonymous__uya6tv);
@@ -16270,14 +16389,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [tmp_1, lazy(tmp_2, ZkoComponentCollection$Companion$$childSerializers$_anonymous__uya6tv_0)];
   }
-  var Companion_instance_39;
-  function Companion_getInstance_40() {
-    if (Companion_instance_39 == null)
-      new Companion_39();
-    return Companion_instance_39;
+  var Companion_instance_41;
+  function Companion_getInstance_42() {
+    if (Companion_instance_41 == null)
+      new Companion_41();
+    return Companion_instance_41;
   }
-  function $serializer_23() {
-    $serializer_instance_23 = this;
+  function $serializer_25() {
+    $serializer_instance_25 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.loader.ZkoComponentCollection', this, 2);
     tmp0_serialDesc.addElement_5pzumi_k$('meshes', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -16285,18 +16404,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(2));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_23).serialize_j2978f_k$ = function (encoder, value) {
+  protoOf($serializer_25).serialize_j2978f_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_40().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_42().$childSerializers_1;
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, tmp2_cached[0].get_value_j01efc_k$(), value.meshes_1);
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, tmp2_cached[1].get_value_j01efc_k$(), value.textures_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_23).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_25).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_j2978f_k$(encoder, value instanceof ZkoComponentCollection ? value : THROW_CCE());
   };
-  protoOf($serializer_23).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_25).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -16304,7 +16423,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp4_local0 = null;
     var tmp5_local1 = null;
     var tmp6_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp7_cached = Companion_getInstance_40().$childSerializers_1;
+    var tmp7_cached = Companion_getInstance_42().$childSerializers_1;
     if (tmp6_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, tmp7_cached[0].get_value_j01efc_k$(), tmp4_local0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
@@ -16332,25 +16451,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp6_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZkoComponentCollection_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, null);
   };
-  protoOf($serializer_23).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_25).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_23).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_40().$childSerializers_1;
+  protoOf($serializer_25).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_42().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [tmp0_cached[0].get_value_j01efc_k$(), tmp0_cached[1].get_value_j01efc_k$()];
   };
-  var $serializer_instance_23;
-  function $serializer_getInstance_23() {
-    if ($serializer_instance_23 == null)
-      new $serializer_23();
-    return $serializer_instance_23;
+  var $serializer_instance_25;
+  function $serializer_getInstance_25() {
+    if ($serializer_instance_25 == null)
+      new $serializer_25();
+    return $serializer_instance_25;
   }
   function ZkoComponentCollection_init_$Init$(seen0, meshes, textures, serializationConstructorMarker, $this) {
     if (!(3 === (3 & seen0))) {
-      throwMissingFieldException(seen0, 3, $serializer_getInstance_23().descriptor_1);
+      throwMissingFieldException(seen0, 3, $serializer_getInstance_25().descriptor_1);
     }
     $this.meshes_1 = meshes;
     $this.textures_1 = textures;
@@ -16382,7 +16501,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function ZkoFormat$Companion$$childSerializers$_anonymous__kcxd3f() {
     var tmp = getKClass(ZkoObjectProto);
-    var tmp_0 = $serializer_getInstance_26();
+    var tmp_0 = $serializer_getInstance_28();
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
@@ -16392,8 +16511,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function ZkoFormat$Companion$$childSerializers$_anonymous__kcxd3f_0() {
     return new ArrayListSerializer($serializer_getInstance_6());
   }
-  function Companion_40() {
-    Companion_instance_40 = this;
+  function Companion_42() {
+    Companion_instance_42 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     var tmp_1 = lazy(tmp_0, ZkoFormat$Companion$$childSerializers$_anonymous__kcxd3f);
@@ -16403,17 +16522,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [null, null, tmp_1, null, lazy(tmp_2, ZkoFormat$Companion$$childSerializers$_anonymous__kcxd3f_0)];
   }
-  protoOf(Companion_40).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_24();
+  protoOf(Companion_42).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_26();
   };
-  var Companion_instance_40;
-  function Companion_getInstance_41() {
-    if (Companion_instance_40 == null)
-      new Companion_40();
-    return Companion_instance_40;
+  var Companion_instance_42;
+  function Companion_getInstance_43() {
+    if (Companion_instance_42 == null)
+      new Companion_42();
+    return Companion_instance_42;
   }
-  function $serializer_24() {
-    $serializer_instance_24 = this;
+  function $serializer_26() {
+    $serializer_instance_26 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.loader.ZkoFormat', this, 5);
     tmp0_serialDesc.addElement_5pzumi_k$('header', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -16427,23 +16546,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(5));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_24).serialize_6ipugl_k$ = function (encoder, value) {
+  protoOf($serializer_26).serialize_6ipugl_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_41().$childSerializers_1;
-    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, $serializer_getInstance_22(), value.header_1);
-    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, $serializer_getInstance_23(), value.components_1);
+    var tmp2_cached = Companion_getInstance_43().$childSerializers_1;
+    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, $serializer_getInstance_24(), value.header_1);
+    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 1, $serializer_getInstance_25(), value.components_1);
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, tmp2_cached[2].get_value_j01efc_k$(), value.objects_1);
-    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, $serializer_getInstance_25(), value.hierarchy_1);
+    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, $serializer_getInstance_27(), value.hierarchy_1);
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 4) ? true : !(value.actions_1 == null)) {
       tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 4, tmp2_cached[4].get_value_j01efc_k$(), value.actions_1);
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_24).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_26).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_6ipugl_k$(encoder, value instanceof ZkoFormat ? value : THROW_CCE());
   };
-  protoOf($serializer_24).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_26).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -16454,15 +16573,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp7_local3 = null;
     var tmp8_local4 = null;
     var tmp9_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp10_cached = Companion_getInstance_41().$childSerializers_1;
+    var tmp10_cached = Companion_getInstance_43().$childSerializers_1;
     if (tmp9_input.decodeSequentially_xlblqy_k$()) {
-      tmp4_local0 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, $serializer_getInstance_22(), tmp4_local0);
+      tmp4_local0 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, $serializer_getInstance_24(), tmp4_local0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
-      tmp5_local1 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_23(), tmp5_local1);
+      tmp5_local1 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_25(), tmp5_local1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
       tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, tmp10_cached[2].get_value_j01efc_k$(), tmp6_local2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
-      tmp7_local3 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, $serializer_getInstance_25(), tmp7_local3);
+      tmp7_local3 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, $serializer_getInstance_27(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
       tmp8_local4 = tmp9_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, tmp10_cached[4].get_value_j01efc_k$(), tmp8_local4);
       tmp3_bitMask0 = tmp3_bitMask0 | 16;
@@ -16474,11 +16593,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp1_flag = false;
             break;
           case 0:
-            tmp4_local0 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, $serializer_getInstance_22(), tmp4_local0);
+            tmp4_local0 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, $serializer_getInstance_24(), tmp4_local0);
             tmp3_bitMask0 = tmp3_bitMask0 | 1;
             break;
           case 1:
-            tmp5_local1 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_23(), tmp5_local1);
+            tmp5_local1 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 1, $serializer_getInstance_25(), tmp5_local1);
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           case 2:
@@ -16486,7 +16605,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
-            tmp7_local3 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, $serializer_getInstance_25(), tmp7_local3);
+            tmp7_local3 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, $serializer_getInstance_27(), tmp7_local3);
             tmp3_bitMask0 = tmp3_bitMask0 | 8;
             break;
           case 4:
@@ -16500,25 +16619,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp9_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZkoFormat_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, null);
   };
-  protoOf($serializer_24).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_26).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_24).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_41().$childSerializers_1;
+  protoOf($serializer_26).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_43().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [$serializer_getInstance_22(), $serializer_getInstance_23(), tmp0_cached[2].get_value_j01efc_k$(), $serializer_getInstance_25(), get_nullable(tmp0_cached[4].get_value_j01efc_k$())];
+    return [$serializer_getInstance_24(), $serializer_getInstance_25(), tmp0_cached[2].get_value_j01efc_k$(), $serializer_getInstance_27(), get_nullable(tmp0_cached[4].get_value_j01efc_k$())];
   };
-  var $serializer_instance_24;
-  function $serializer_getInstance_24() {
-    if ($serializer_instance_24 == null)
-      new $serializer_24();
-    return $serializer_instance_24;
+  var $serializer_instance_26;
+  function $serializer_getInstance_26() {
+    if ($serializer_instance_26 == null)
+      new $serializer_26();
+    return $serializer_instance_26;
   }
   function ZkoFormat_init_$Init$(seen0, header, components, objects, hierarchy, actions, serializationConstructorMarker, $this) {
     if (!(15 === (15 & seen0))) {
-      throwMissingFieldException(seen0, 15, $serializer_getInstance_24().descriptor_1);
+      throwMissingFieldException(seen0, 15, $serializer_getInstance_26().descriptor_1);
     }
     $this.header_1 = header;
     $this.components_1 = components;
@@ -16567,7 +16686,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function _init_properties_ZkoFormat_kt__x47czn() {
     if (!properties_initialized_ZkoFormat_kt_cxit6j) {
       properties_initialized_ZkoFormat_kt_cxit6j = true;
-      ZkoVersion = Companion_instance_67.parse_pc1q8p_k$('0.16.0');
+      ZkoVersion = Companion_instance_69.parse_pc1q8p_k$('0.16.0');
     }
   }
   function internalTransformHierarchy($this, hierarchyNode, objectsMap) {
@@ -16588,16 +16707,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       var _iterator__ex2g4s = tmp1_safe_receiver.iterator_jk1svi_k$();
       while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
         var element = _iterator__ex2g4s.next_20eer_k$();
-        obj.addChild(internalTransformHierarchy(Companion_getInstance_42(), element, objectsMap));
+        obj.addChild(internalTransformHierarchy(Companion_getInstance_44(), element, objectsMap));
       }
     }
     return obj;
   }
   function ZkoHierarchyNode$Companion$$childSerializers$_anonymous__3y3z73() {
-    return new ArrayListSerializer($serializer_getInstance_25());
+    return new ArrayListSerializer($serializer_getInstance_27());
   }
-  function Companion_41() {
-    Companion_instance_41 = this;
+  function Companion_43() {
+    Companion_instance_43 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     // Inline function 'kotlin.arrayOf' call
@@ -16605,7 +16724,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [null, lazy(tmp_0, ZkoHierarchyNode$Companion$$childSerializers$_anonymous__3y3z73)];
   }
-  protoOf(Companion_41).transformHierarchy_y0343v_k$ = function (hierarchyNode, objects) {
+  protoOf(Companion_43).transformHierarchy_y0343v_k$ = function (hierarchyNode, objects) {
     // Inline function 'kotlin.collections.associateBy' call
     var capacity = coerceAtLeast(mapCapacity(collectionSizeOrDefault(objects, 10)), 16);
     // Inline function 'kotlin.collections.associateByTo' call
@@ -16619,14 +16738,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var objectsMap = destination;
     return internalTransformHierarchy(this, hierarchyNode, objectsMap);
   };
-  var Companion_instance_41;
-  function Companion_getInstance_42() {
-    if (Companion_instance_41 == null)
-      new Companion_41();
-    return Companion_instance_41;
+  var Companion_instance_43;
+  function Companion_getInstance_44() {
+    if (Companion_instance_43 == null)
+      new Companion_43();
+    return Companion_instance_43;
   }
-  function $serializer_25() {
-    $serializer_instance_25 = this;
+  function $serializer_27() {
+    $serializer_instance_27 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.loader.ZkoHierarchyNode', this, 2);
     tmp0_serialDesc.addElement_5pzumi_k$('refId', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -16634,20 +16753,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(100));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_25).serialize_gv1bjx_k$ = function (encoder, value) {
+  protoOf($serializer_27).serialize_gv1bjx_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_42().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_44().$childSerializers_1;
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.refId_1);
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 1) ? true : !equals(value.children_1, emptyList())) {
       tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 1, tmp2_cached[1].get_value_j01efc_k$(), value.children_1);
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_25).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_27).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_gv1bjx_k$(encoder, value instanceof ZkoHierarchyNode ? value : THROW_CCE());
   };
-  protoOf($serializer_25).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_27).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -16655,7 +16774,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp4_local0 = null;
     var tmp5_local1 = null;
     var tmp6_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp7_cached = Companion_getInstance_42().$childSerializers_1;
+    var tmp7_cached = Companion_getInstance_44().$childSerializers_1;
     if (tmp6_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp6_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
@@ -16683,25 +16802,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp6_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZkoHierarchyNode_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, null);
   };
-  protoOf($serializer_25).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_27).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_25).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_42().$childSerializers_1;
+  protoOf($serializer_27).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_44().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [StringSerializer_getInstance(), get_nullable(tmp0_cached[1].get_value_j01efc_k$())];
   };
-  var $serializer_instance_25;
-  function $serializer_getInstance_25() {
-    if ($serializer_instance_25 == null)
-      new $serializer_25();
-    return $serializer_instance_25;
+  var $serializer_instance_27;
+  function $serializer_getInstance_27() {
+    if ($serializer_instance_27 == null)
+      new $serializer_27();
+    return $serializer_instance_27;
   }
   function ZkoHierarchyNode_init_$Init$(seen0, refId, children, serializationConstructorMarker, $this) {
     if (!(1 === (1 & seen0))) {
-      throwMissingFieldException(seen0, 1, $serializer_getInstance_25().descriptor_1);
+      throwMissingFieldException(seen0, 1, $serializer_getInstance_27().descriptor_1);
     }
     $this.refId_1 = refId;
     if (0 === (seen0 & 2))
@@ -16791,9 +16910,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function loadFromProto(byteArray) {
     var protoFormat = createProtoSerializersModule();
-    var zkoFormat = protoFormat.decodeFromByteArray_8opj5c_k$(Companion_getInstance_41().serializer_9w0wvi_k$(), byteArray);
+    var zkoFormat = protoFormat.decodeFromByteArray_8opj5c_k$(Companion_getInstance_43().serializer_9w0wvi_k$(), byteArray);
     var header = zkoFormat.header_1;
-    var obj = Companion_getInstance_42().transformHierarchy_y0343v_k$(zkoFormat.hierarchy_1, zkoFormat.objects_1);
+    var obj = Companion_getInstance_44().transformHierarchy_y0343v_k$(zkoFormat.hierarchy_1, zkoFormat.objects_1);
     var actions = zkoFormat.actions_1;
     return new ZKo(header, obj, actions);
   }
@@ -16890,7 +17009,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return protoFormat;
   }
   function createZerializerModule$lambda(it) {
-    return Companion_getInstance_56().serializer_9w0wvi_k$();
+    return Companion_getInstance_58().serializer_9w0wvi_k$();
   }
   function createZerializerModule$lambda_0($loaderContext) {
     return function (_unused_var__etf5q3) {
@@ -16920,13 +17039,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function ZkoObjectProto$Companion$$childSerializers$_anonymous__2bwmm9() {
-    return Companion_getInstance_60().serializer_9w0wvi_k$();
+    return Companion_getInstance_62().serializer_9w0wvi_k$();
   }
   function ZkoObjectProto$Companion$$childSerializers$_anonymous__2bwmm9_0() {
-    return Companion_getInstance_59().serializer_9w0wvi_k$();
+    return Companion_getInstance_61().serializer_9w0wvi_k$();
   }
-  function Companion_42() {
-    Companion_instance_42 = this;
+  function Companion_44() {
+    Companion_instance_44 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     var tmp_1 = lazy(tmp_0, ZkoObjectProto$Companion$$childSerializers$_anonymous__2bwmm9);
@@ -16936,14 +17055,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [tmp_1, null, null, lazy(tmp_2, ZkoObjectProto$Companion$$childSerializers$_anonymous__2bwmm9_0)];
   }
-  var Companion_instance_42;
-  function Companion_getInstance_43() {
-    if (Companion_instance_42 == null)
-      new Companion_42();
-    return Companion_instance_42;
+  var Companion_instance_44;
+  function Companion_getInstance_45() {
+    if (Companion_instance_44 == null)
+      new Companion_44();
+    return Companion_instance_44;
   }
-  function $serializer_26() {
-    $serializer_instance_26 = this;
+  function $serializer_28() {
+    $serializer_instance_28 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.loader.ZkoObjectProto', this, 4);
     tmp0_serialDesc.addElement_5pzumi_k$('type', false);
     tmp0_serialDesc.addElement_5pzumi_k$('refId', false);
@@ -16951,20 +17070,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.addElement_5pzumi_k$('zObject', false);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_26).serialize_3h7vpr_k$ = function (encoder, value) {
+  protoOf($serializer_28).serialize_3h7vpr_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_43().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_45().$childSerializers_1;
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, tmp2_cached[0].get_value_j01efc_k$(), value.type_1);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.refId_1);
     tmp1_output.encodeBooleanElement_ydht7q_k$(tmp0_desc, 2, value.isReference_1);
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, tmp2_cached[3].get_value_j01efc_k$(), value.zObject_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_26).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_28).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_3h7vpr_k$(encoder, value instanceof ZkoObjectProto ? value : THROW_CCE());
   };
-  protoOf($serializer_26).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_28).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -16974,7 +17093,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp6_local2 = false;
     var tmp7_local3 = null;
     var tmp8_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp9_cached = Companion_getInstance_43().$childSerializers_1;
+    var tmp9_cached = Companion_getInstance_45().$childSerializers_1;
     if (tmp8_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, tmp9_cached[0].get_value_j01efc_k$(), tmp4_local0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
@@ -17014,25 +17133,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp8_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZkoObjectProto_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  protoOf($serializer_26).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_28).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_26).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_43().$childSerializers_1;
+  protoOf($serializer_28).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_45().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [tmp0_cached[0].get_value_j01efc_k$(), StringSerializer_getInstance(), BooleanSerializer_getInstance(), tmp0_cached[3].get_value_j01efc_k$()];
   };
-  var $serializer_instance_26;
-  function $serializer_getInstance_26() {
-    if ($serializer_instance_26 == null)
-      new $serializer_26();
-    return $serializer_instance_26;
+  var $serializer_instance_28;
+  function $serializer_getInstance_28() {
+    if ($serializer_instance_28 == null)
+      new $serializer_28();
+    return $serializer_instance_28;
   }
   function ZkoObjectProto_init_$Init$(seen0, type, refId, isReference, zObject, serializationConstructorMarker, $this) {
     if (!(15 === (15 & seen0))) {
-      throwMissingFieldException(seen0, 15, $serializer_getInstance_26().descriptor_1);
+      throwMissingFieldException(seen0, 15, $serializer_getInstance_28().descriptor_1);
     }
     $this.type_1 = type;
     $this.refId_1 = refId;
@@ -17044,7 +17163,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZkoObjectProto_init_$Init$(seen0, type, refId, isReference, zObject, serializationConstructorMarker, objectCreate(protoOf(ZkoObjectProto)));
   }
   function ZkoObjectProto(type, refId, isReference, zObject) {
-    Companion_getInstance_43();
+    Companion_getInstance_45();
     this.type_1 = type;
     this.refId_1 = refId;
     this.isReference_1 = isReference;
@@ -17076,10 +17195,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return true;
   };
   function ZkoObjectProtoDef$Companion$$childSerializers$_anonymous__yhf21c() {
-    return Companion_getInstance_60().serializer_9w0wvi_k$();
+    return Companion_getInstance_62().serializer_9w0wvi_k$();
   }
-  function Companion_43() {
-    Companion_instance_43 = this;
+  function Companion_45() {
+    Companion_instance_45 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     // Inline function 'kotlin.arrayOf' call
@@ -17087,17 +17206,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [lazy(tmp_0, ZkoObjectProtoDef$Companion$$childSerializers$_anonymous__yhf21c), null, null, null, null, null, null, null, null];
   }
-  protoOf(Companion_43).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_27();
+  protoOf(Companion_45).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_29();
   };
-  var Companion_instance_43;
-  function Companion_getInstance_44() {
-    if (Companion_instance_43 == null)
-      new Companion_43();
-    return Companion_instance_43;
+  var Companion_instance_45;
+  function Companion_getInstance_46() {
+    if (Companion_instance_45 == null)
+      new Companion_45();
+    return Companion_instance_45;
   }
-  function $serializer_27() {
-    $serializer_instance_27 = this;
+  function $serializer_29() {
+    $serializer_instance_29 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.loader.ZkoObjectProtoDef', this, 9);
     tmp0_serialDesc.addElement_5pzumi_k$('type', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -17119,25 +17238,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(106));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_27).serialize_yk178w_k$ = function (encoder, value) {
+  protoOf($serializer_29).serialize_yk178w_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_44().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_46().$childSerializers_1;
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, tmp2_cached[0].get_value_j01efc_k$(), value.type_1);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.refId_1);
     tmp1_output.encodeBooleanElement_ydht7q_k$(tmp0_desc, 2, value.isReference_1);
-    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 3, $serializer_getInstance_40(), value.scene_1);
-    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 4, $serializer_getInstance_37(), value.group_1);
-    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 5, $serializer_getInstance_39(), value.model_1);
-    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 6, $serializer_getInstance_36(), value.camera_1);
-    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 7, $serializer_getInstance_41(), value.skeleton_1);
-    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 8, $serializer_getInstance_38(), value.light_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 3, $serializer_getInstance_42(), value.scene_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 4, $serializer_getInstance_39(), value.group_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 5, $serializer_getInstance_41(), value.model_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 6, $serializer_getInstance_38(), value.camera_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 7, $serializer_getInstance_43(), value.skeleton_1);
+    tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 8, $serializer_getInstance_40(), value.light_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_27).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_29).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_yk178w_k$(encoder, value instanceof ZkoObjectProtoDef ? value : THROW_CCE());
   };
-  protoOf($serializer_27).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_29).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -17152,7 +17271,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp11_local7 = null;
     var tmp12_local8 = null;
     var tmp13_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp14_cached = Companion_getInstance_44().$childSerializers_1;
+    var tmp14_cached = Companion_getInstance_46().$childSerializers_1;
     if (tmp13_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp13_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, tmp14_cached[0].get_value_j01efc_k$(), tmp4_local0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
@@ -17160,17 +17279,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
       tmp6_local2 = tmp13_input.decodeBooleanElement_vuyhtj_k$(tmp0_desc, 2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
-      tmp7_local3 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_40(), tmp7_local3);
+      tmp7_local3 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_42(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
-      tmp8_local4 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, $serializer_getInstance_37(), tmp8_local4);
+      tmp8_local4 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, $serializer_getInstance_39(), tmp8_local4);
       tmp3_bitMask0 = tmp3_bitMask0 | 16;
-      tmp9_local5 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, $serializer_getInstance_39(), tmp9_local5);
+      tmp9_local5 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, $serializer_getInstance_41(), tmp9_local5);
       tmp3_bitMask0 = tmp3_bitMask0 | 32;
-      tmp10_local6 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, $serializer_getInstance_36(), tmp10_local6);
+      tmp10_local6 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, $serializer_getInstance_38(), tmp10_local6);
       tmp3_bitMask0 = tmp3_bitMask0 | 64;
-      tmp11_local7 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 7, $serializer_getInstance_41(), tmp11_local7);
+      tmp11_local7 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 7, $serializer_getInstance_43(), tmp11_local7);
       tmp3_bitMask0 = tmp3_bitMask0 | 128;
-      tmp12_local8 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 8, $serializer_getInstance_38(), tmp12_local8);
+      tmp12_local8 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 8, $serializer_getInstance_40(), tmp12_local8);
       tmp3_bitMask0 = tmp3_bitMask0 | 256;
     } else
       while (tmp1_flag) {
@@ -17192,27 +17311,27 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
-            tmp7_local3 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_40(), tmp7_local3);
+            tmp7_local3 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_42(), tmp7_local3);
             tmp3_bitMask0 = tmp3_bitMask0 | 8;
             break;
           case 4:
-            tmp8_local4 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, $serializer_getInstance_37(), tmp8_local4);
+            tmp8_local4 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, $serializer_getInstance_39(), tmp8_local4);
             tmp3_bitMask0 = tmp3_bitMask0 | 16;
             break;
           case 5:
-            tmp9_local5 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, $serializer_getInstance_39(), tmp9_local5);
+            tmp9_local5 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, $serializer_getInstance_41(), tmp9_local5);
             tmp3_bitMask0 = tmp3_bitMask0 | 32;
             break;
           case 6:
-            tmp10_local6 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, $serializer_getInstance_36(), tmp10_local6);
+            tmp10_local6 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, $serializer_getInstance_38(), tmp10_local6);
             tmp3_bitMask0 = tmp3_bitMask0 | 64;
             break;
           case 7:
-            tmp11_local7 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 7, $serializer_getInstance_41(), tmp11_local7);
+            tmp11_local7 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 7, $serializer_getInstance_43(), tmp11_local7);
             tmp3_bitMask0 = tmp3_bitMask0 | 128;
             break;
           case 8:
-            tmp12_local8 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 8, $serializer_getInstance_38(), tmp12_local8);
+            tmp12_local8 = tmp13_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 8, $serializer_getInstance_40(), tmp12_local8);
             tmp3_bitMask0 = tmp3_bitMask0 | 256;
             break;
           default:
@@ -17222,24 +17341,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp13_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZkoObjectProtoDef_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, tmp9_local5, tmp10_local6, tmp11_local7, tmp12_local8, null);
   };
-  protoOf($serializer_27).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_29).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_27).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_29).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [Companion_getInstance_44().$childSerializers_1[0].get_value_j01efc_k$(), StringSerializer_getInstance(), BooleanSerializer_getInstance(), get_nullable($serializer_getInstance_40()), get_nullable($serializer_getInstance_37()), get_nullable($serializer_getInstance_39()), get_nullable($serializer_getInstance_36()), get_nullable($serializer_getInstance_41()), get_nullable($serializer_getInstance_38())];
+    return [Companion_getInstance_46().$childSerializers_1[0].get_value_j01efc_k$(), StringSerializer_getInstance(), BooleanSerializer_getInstance(), get_nullable($serializer_getInstance_42()), get_nullable($serializer_getInstance_39()), get_nullable($serializer_getInstance_41()), get_nullable($serializer_getInstance_38()), get_nullable($serializer_getInstance_43()), get_nullable($serializer_getInstance_40())];
   };
-  var $serializer_instance_27;
-  function $serializer_getInstance_27() {
-    if ($serializer_instance_27 == null)
-      new $serializer_27();
-    return $serializer_instance_27;
+  var $serializer_instance_29;
+  function $serializer_getInstance_29() {
+    if ($serializer_instance_29 == null)
+      new $serializer_29();
+    return $serializer_instance_29;
   }
   function ZkoObjectProtoDef_init_$Init$(seen0, type, refId, isReference, scene, group, model, camera, skeleton, light, serializationConstructorMarker, $this) {
     if (!(511 === (511 & seen0))) {
-      throwMissingFieldException(seen0, 511, $serializer_getInstance_27().descriptor_1);
+      throwMissingFieldException(seen0, 511, $serializer_getInstance_29().descriptor_1);
     }
     $this.type_1 = type;
     $this.refId_1 = refId;
@@ -17320,7 +17439,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.loaderContext_1 = loaderContext;
   }
   protoOf(ZkoObjectProtoSerializer).get_descriptor_wjt6a0_k$ = function () {
-    return Companion_getInstance_44().serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
+    return Companion_getInstance_46().serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
   };
   protoOf(ZkoObjectProtoSerializer).serialize_3h7vpr_k$ = function (encoder, value) {
     // Inline function 'kotlin.TODO' call
@@ -17331,7 +17450,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return this.serialize_3h7vpr_k$(encoder, value instanceof ZkoObjectProto ? value : THROW_CCE());
   };
   protoOf(ZkoObjectProtoSerializer).deserialize_sy6x50_k$ = function (decoder) {
-    var data = decoder.decodeSerializableValue_xpnpad_k$(Companion_getInstance_44().serializer_9w0wvi_k$());
+    var data = decoder.decodeSerializableValue_xpnpad_k$(Companion_getInstance_46().serializer_9w0wvi_k$());
     var zobj = detectZObject(this, data);
     this.loaderContext_1.addComponent_pg22c0_k$(zobj.refId, zobj);
     return new ZkoObjectProto(data.type_1, data.refId_1, data.isReference_1, zobj);
@@ -17476,13 +17595,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var extraSpaces = max.length - levelName.length | 0;
     return '[Zernikalos - ' + levelName + ']' + repeat(' ', extraSpaces);
   }
-  function Companion_44() {
-    Companion_instance_44 = this;
+  function Companion_46() {
+    Companion_instance_46 = this;
     var tmp = this;
     // Inline function 'kotlin.collections.hashMapOf' call
     tmp.instances_1 = HashMap_init_$Create$();
   }
-  protoOf(Companion_44).getLogger = function (clsName, instanceId) {
+  protoOf(Companion_46).getLogger = function (clsName, instanceId) {
     if (this.instances_1.containsKey_aw81wo_k$(instanceId)) {
       return getValue(this.instances_1, instanceId);
     }
@@ -17491,18 +17610,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.instances_1.put_4fpzoq_k$(instanceId, logger);
     return logger;
   };
-  var Companion_instance_44;
-  function Companion_getInstance_45() {
-    if (Companion_instance_44 == null)
-      new Companion_44();
-    return Companion_instance_44;
+  var Companion_instance_46;
+  function Companion_getInstance_47() {
+    if (Companion_instance_46 == null)
+      new Companion_46();
+    return Companion_instance_46;
   }
   function ZLogger(clsName, instanceId) {
-    Companion_getInstance_45();
+    Companion_getInstance_47();
     this.clsName_1 = clsName;
     this.instanceId = instanceId;
     this.logOnceSet_1 = HashSet_init_$Create$();
-    this.settings_1 = Companion_getInstance_64().getInstance().loggerSettings;
+    this.settings_1 = Companion_getInstance_66().getInstance().loggerSettings;
   }
   protoOf(ZLogger).get_instanceId_597k6f_k$ = function () {
     return this.instanceId;
@@ -17527,6 +17646,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     fireMessage(this, message, ZLogLevel_ERROR_getInstance());
   };
   function ZLoggerAdapter() {
+  }
+  function Angles() {
+  }
+  protoOf(Angles).degreesToRadians_37s4mg_k$ = function (degrees) {
+    return degrees * (3.141592653589793 / 180.0);
+  };
+  protoOf(Angles).radiansToDegrees_ergaqm_k$ = function (radians) {
+    return radians * (180.0 / 3.141592653589793);
+  };
+  var Angles_instance;
+  function Angles_getInstance() {
+    return Angles_instance;
   }
   function ZAlgebraObject() {
   }
@@ -17588,14 +17719,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZAlgebraObjectCollection).copyAll = function (values) {
     copyAllFromIndex(this, 0, values);
   };
-  function Companion_45() {
+  function Companion_47() {
   }
-  var Companion_instance_45;
-  function Companion_getInstance_46() {
-    return Companion_instance_45;
+  var Companion_instance_47;
+  function Companion_getInstance_48() {
+    return Companion_instance_47;
   }
-  function $serializer_28() {
-    $serializer_instance_28 = this;
+  function $serializer_30() {
+    $serializer_instance_30 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.math.ZBox2D', this, 4);
     tmp0_serialDesc.addElement_5pzumi_k$('top', true);
     tmp0_serialDesc.addElement_5pzumi_k$('left', true);
@@ -17603,7 +17734,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.addElement_5pzumi_k$('height', true);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_28).serialize_scdg0e_k$ = function (encoder, value) {
+  protoOf($serializer_30).serialize_scdg0e_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !(value.top === 0)) {
@@ -17620,10 +17751,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_28).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_30).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_scdg0e_k$(encoder, value instanceof ZBox2D ? value : THROW_CCE());
   };
-  protoOf($serializer_28).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_30).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -17672,24 +17803,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp8_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZBox2D_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  protoOf($serializer_28).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_30).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_28).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_30).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [IntSerializer_getInstance(), IntSerializer_getInstance(), IntSerializer_getInstance(), IntSerializer_getInstance()];
   };
-  var $serializer_instance_28;
-  function $serializer_getInstance_28() {
-    if ($serializer_instance_28 == null)
-      new $serializer_28();
-    return $serializer_instance_28;
+  var $serializer_instance_30;
+  function $serializer_getInstance_30() {
+    if ($serializer_instance_30 == null)
+      new $serializer_30();
+    return $serializer_instance_30;
   }
   function ZBox2D_init_$Init$(seen0, top, left, width, height, serializationConstructorMarker, $this) {
     if (!(0 === (0 & seen0))) {
-      throwMissingFieldException(seen0, 0, $serializer_getInstance_28().descriptor_1);
+      throwMissingFieldException(seen0, 0, $serializer_getInstance_30().descriptor_1);
     }
     if (0 === (seen0 & 1))
       $this.top = 0;
@@ -17808,40 +17939,40 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp$ret$3 = toNumber(this_3) / 255.0;
     $this.set_alpha_tvzcqh_k$(tmp$ret$3);
   }
-  function Companion_46() {
-    Companion_instance_46 = this;
+  function Companion_48() {
+    Companion_instance_48 = this;
     this.WHITE = initWithValues(1.0, 1.0, 1.0, 1.0);
     this.BLACK = initWithValues(0.0, 0.0, 0.0, 1.0);
     this.RED = initWithValues(1.0, 0.0, 0.0, 1.0);
     this.GREEN = initWithValues(0.0, 1.0, 0.0, 1.0);
     this.BLUE = initWithValues(0.0, 0.0, 1.0, 1.0);
   }
-  protoOf(Companion_46).get_WHITE_iij2lc_k$ = function () {
+  protoOf(Companion_48).get_WHITE_iij2lc_k$ = function () {
     return this.WHITE;
   };
-  protoOf(Companion_46).get_BLACK_i71rqu_k$ = function () {
+  protoOf(Companion_48).get_BLACK_i71rqu_k$ = function () {
     return this.BLACK;
   };
-  protoOf(Companion_46).get_RED_18jlko_k$ = function () {
+  protoOf(Companion_48).get_RED_18jlko_k$ = function () {
     return this.RED;
   };
-  protoOf(Companion_46).get_GREEN_i9wnne_k$ = function () {
+  protoOf(Companion_48).get_GREEN_i9wnne_k$ = function () {
     return this.GREEN;
   };
-  protoOf(Companion_46).get_BLUE_wnyf1f_k$ = function () {
+  protoOf(Companion_48).get_BLUE_wnyf1f_k$ = function () {
     return this.BLUE;
   };
-  protoOf(Companion_46).serializer_9w0wvi_k$ = function () {
+  protoOf(Companion_48).serializer_9w0wvi_k$ = function () {
     return new ZColorSerializer();
   };
-  var Companion_instance_46;
-  function Companion_getInstance_47() {
-    if (Companion_instance_46 == null)
-      new Companion_46();
-    return Companion_instance_46;
+  var Companion_instance_48;
+  function Companion_getInstance_49() {
+    if (Companion_instance_48 == null)
+      new Companion_48();
+    return Companion_instance_48;
   }
   function ZColor() {
-    Companion_getInstance_47();
+    Companion_getInstance_49();
     var tmp = this;
     // Inline function 'kotlin.floatArrayOf' call
     tmp._values_1 = new Float32Array([0.0, 0.0, 0.0, 0.0]);
@@ -17983,17 +18114,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       setColorsRGBA(this, colorValue);
     }
   };
-  function Companion_47() {
+  function Companion_49() {
   }
-  protoOf(Companion_47).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_29();
+  protoOf(Companion_49).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_31();
   };
-  var Companion_instance_47;
-  function Companion_getInstance_48() {
-    return Companion_instance_47;
+  var Companion_instance_49;
+  function Companion_getInstance_50() {
+    return Companion_instance_49;
   }
-  function $serializer_29() {
-    $serializer_instance_29 = this;
+  function $serializer_31() {
+    $serializer_instance_31 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.math.ZColorSurrogate', this, 4);
     tmp0_serialDesc.addElement_5pzumi_k$('red', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -18005,7 +18136,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(4));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_29).serialize_4b1n7q_k$ = function (encoder, value) {
+  protoOf($serializer_31).serialize_4b1n7q_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 0, value.red_1);
@@ -18014,10 +18145,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 3, value.alpha_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_29).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_31).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_4b1n7q_k$(encoder, value instanceof ZColorSurrogate ? value : THROW_CCE());
   };
-  protoOf($serializer_29).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_31).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -18066,24 +18197,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp8_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZColorSurrogate_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  protoOf($serializer_29).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_31).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_29).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_31).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [FloatSerializer_getInstance(), FloatSerializer_getInstance(), FloatSerializer_getInstance(), FloatSerializer_getInstance()];
   };
-  var $serializer_instance_29;
-  function $serializer_getInstance_29() {
-    if ($serializer_instance_29 == null)
-      new $serializer_29();
-    return $serializer_instance_29;
+  var $serializer_instance_31;
+  function $serializer_getInstance_31() {
+    if ($serializer_instance_31 == null)
+      new $serializer_31();
+    return $serializer_instance_31;
   }
   function ZColorSurrogate_init_$Init$(seen0, red, green, blue, alpha, serializationConstructorMarker, $this) {
     if (!(15 === (15 & seen0))) {
-      throwMissingFieldException(seen0, 15, $serializer_getInstance_29().descriptor_1);
+      throwMissingFieldException(seen0, 15, $serializer_getInstance_31().descriptor_1);
     }
     $this.red_1 = red;
     $this.green_1 = green;
@@ -18128,15 +18259,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function ZColorSerializer() {
   }
   protoOf(ZColorSerializer).get_descriptor_wjt6a0_k$ = function () {
-    return Companion_instance_47.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
+    return Companion_instance_49.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
   };
   protoOf(ZColorSerializer).deserialize_sy6x50_k$ = function (decoder) {
-    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_47.serializer_9w0wvi_k$());
+    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_49.serializer_9w0wvi_k$());
     return initWithValues(surrogate.red_1, surrogate.green_1, surrogate.blue_1, surrogate.alpha_1);
   };
   protoOf(ZColorSerializer).serialize_7ooopy_k$ = function (encoder, value) {
     var surrogate = new ZColorSurrogate(value.red, value.green, value.blue, value.alpha);
-    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_47.serializer_9w0wvi_k$(), surrogate);
+    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_49.serializer_9w0wvi_k$(), surrogate);
   };
   protoOf(ZColorSerializer).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_7ooopy_k$(encoder, value instanceof ZColor ? value : THROW_CCE());
@@ -18153,8 +18284,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function Op() {
   }
+  protoOf(Op).fromDegrees_dtjrph_k$ = function (roll, pitch, yaw) {
+    return ZEuler_init_$Create$(Angles_instance.degreesToRadians_37s4mg_k$(roll), Angles_instance.degreesToRadians_37s4mg_k$(pitch), Angles_instance.degreesToRadians_37s4mg_k$(yaw));
+  };
   protoOf(Op).fromQuaternion_oll9nn_k$ = function (result, q) {
-    var radToDeg = 180.0 / 3.141592653589793;
+    var halfPi = 3.141592653589793 / 2.0;
     var w = q.w;
     var x = q.x;
     var y = q.y;
@@ -18163,22 +18297,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var cosr_cosp = 1.0 - 2.0 * (y * y + z * z);
     // Inline function 'kotlin.math.atan2' call
     var tmp$ret$0 = Math.atan2(sinr_cosp, cosr_cosp);
-    result.set_roll_imxicu_k$(tmp$ret$0 * radToDeg);
+    result.set_roll_imxicu_k$(tmp$ret$0);
     var sinp = 2.0 * (w * y - z * x);
     var tmp;
     // Inline function 'kotlin.math.abs' call
     if (Math.abs(sinp) >= 1.0) {
-      tmp = sinp > 0 ? 90.0 : -90.0;
+      tmp = sinp > 0 ? halfPi : -halfPi;
     } else {
       // Inline function 'kotlin.math.asin' call
-      tmp = Math.asin(sinp) * radToDeg;
+      tmp = Math.asin(sinp);
     }
     result.set_pitch_mk8py3_k$(tmp);
     var siny_cosp = 2.0 * (w * z + x * y);
     var cosy_cosp = 1.0 - 2.0 * (y * y + z * z);
     // Inline function 'kotlin.math.atan2' call
     var tmp$ret$3 = Math.atan2(siny_cosp, cosy_cosp);
-    result.set_yaw_89cbze_k$(tmp$ret$3 * radToDeg);
+    result.set_yaw_89cbze_k$(tmp$ret$3);
   };
   var Op_instance;
   function Op_getInstance() {
@@ -18537,29 +18671,60 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     result.set(15, dst15 * invDet);
     return true;
   };
-  protoOf(Op_0).lookAt = function (result, eye, center, up) {
-    var f = center.minus(eye);
+  protoOf(Op_0).lookAt = function (result, eye, look, up) {
+    var f = new ZVector3();
+    Op_instance_3.subtract(f, look, eye);
+    if (Op_instance_3.dot(f, f) <= 1.0E-20) {
+      this.identity(result);
+      return Unit_instance;
+    }
     f.normalize();
-    var s = new ZVector3();
-    Op_instance_3.cross(s, f, up);
-    s.normalize();
+    var upOrtho = initWithValues_3(up.x, up.y, up.z);
+    var upDotF = Op_instance_3.dot(upOrtho, f);
+    upOrtho.set_x_t61dkd_k$(upOrtho.x - f.x * upDotF);
+    upOrtho.set_y_niwx4k_k$(upOrtho.y - f.y * upDotF);
+    upOrtho.set_z_56r5ud_k$(upOrtho.z - f.z * upDotF);
+    if (Op_instance_3.dot(upOrtho, upOrtho) <= 1.0E-20) {
+      upOrtho.copy(Op_instance_3.Up);
+      upDotF = Op_instance_3.dot(upOrtho, f);
+      upOrtho.set_x_t61dkd_k$(upOrtho.x - f.x * upDotF);
+      upOrtho.set_y_niwx4k_k$(upOrtho.y - f.y * upDotF);
+      upOrtho.set_z_56r5ud_k$(upOrtho.z - f.z * upDotF);
+    }
+    if (Op_instance_3.dot(upOrtho, upOrtho) <= 1.0E-20) {
+      upOrtho.copy(Op_instance_3.Right);
+      upDotF = Op_instance_3.dot(upOrtho, f);
+      upOrtho.set_x_t61dkd_k$(upOrtho.x - f.x * upDotF);
+      upOrtho.set_y_niwx4k_k$(upOrtho.y - f.y * upDotF);
+      upOrtho.set_z_56r5ud_k$(upOrtho.z - f.z * upDotF);
+    }
+    if (Op_instance_3.dot(upOrtho, upOrtho) <= 1.0E-20) {
+      this.identity(result);
+      return Unit_instance;
+    }
+    upOrtho.normalize();
+    var r = new ZVector3();
+    Op_instance_3.cross(r, upOrtho, f);
+    r.normalize();
     var u = new ZVector3();
-    Op_instance_3.cross(u, s, f);
-    result.set(0, s.x);
-    result.set(4, s.y);
-    result.set(8, s.z);
-    result.set(12, -Op_instance_3.dot(s, eye));
-    result.set(1, u.x);
-    result.set(5, u.y);
-    result.set(9, u.z);
-    result.set(13, -Op_instance_3.dot(u, eye));
-    result.set(2, -f.x);
-    result.set(6, -f.y);
-    result.set(10, -f.z);
-    result.set(14, Op_instance_3.dot(f, eye));
+    Op_instance_3.cross(u, f, r);
+    u.normalize();
+    this.identity(result);
+    result.set(0, r.x);
+    result.set(1, r.y);
+    result.set(2, r.z);
     result.set(3, 0.0);
+    result.set(4, u.x);
+    result.set(5, u.y);
+    result.set(6, u.z);
     result.set(7, 0.0);
+    result.set(8, f.x);
+    result.set(9, f.y);
+    result.set(10, f.z);
     result.set(11, 0.0);
+    result.set(12, 0.0);
+    result.set(13, 0.0);
+    result.set(14, 0.0);
     result.set(15, 1.0);
   };
   protoOf(Op_0).fromQuaternionIp = function (q) {
@@ -18593,9 +18758,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     result.setIJ(2, 2, 1 - 2 * (xx + yy));
   };
   protoOf(Op_0).perspective = function (result, fov, aspect, near, far) {
+    var halfFov = fov * 0.5;
     // Inline function 'kotlin.math.tan' call
-    var x = fov * (3.141592653589793 / 360.0);
-    var f = 1.0 / Math.tan(x);
+    var f = 1.0 / Math.tan(halfFov);
     var rangeReciprocal = 1.0 / (near - far);
     result.set(0, f / aspect);
     result.set(1, 0.0);
@@ -18724,32 +18889,32 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
        while (inductionVariable <= 3);
     return this_0.toString();
   };
-  function Companion_48() {
+  function Companion_50() {
   }
-  protoOf(Companion_48).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_30();
+  protoOf(Companion_50).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_32();
   };
-  var Companion_instance_48;
-  function Companion_getInstance_49() {
-    return Companion_instance_48;
+  var Companion_instance_50;
+  function Companion_getInstance_51() {
+    return Companion_instance_50;
   }
-  function $serializer_30() {
-    $serializer_instance_30 = this;
+  function $serializer_32() {
+    $serializer_instance_32 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.math.ZMatrix4Surrogate', this, 1);
     tmp0_serialDesc.addElement_5pzumi_k$('floatArray', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(10));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_30).serialize_4dxvd6_k$ = function (encoder, value) {
+  protoOf($serializer_32).serialize_4dxvd6_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, FloatArraySerializer_getInstance(), value.floatArray_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_30).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_32).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_4dxvd6_k$(encoder, value instanceof ZMatrix4Surrogate ? value : THROW_CCE());
   };
-  protoOf($serializer_30).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_32).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -18777,24 +18942,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp5_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZMatrix4Surrogate_init_$Create$(tmp3_bitMask0, tmp4_local0, null);
   };
-  protoOf($serializer_30).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_32).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_30).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_32).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [FloatArraySerializer_getInstance()];
   };
-  var $serializer_instance_30;
-  function $serializer_getInstance_30() {
-    if ($serializer_instance_30 == null)
-      new $serializer_30();
-    return $serializer_instance_30;
+  var $serializer_instance_32;
+  function $serializer_getInstance_32() {
+    if ($serializer_instance_32 == null)
+      new $serializer_32();
+    return $serializer_instance_32;
   }
   function ZMatrix4Surrogate_init_$Init$(seen0, floatArray, serializationConstructorMarker, $this) {
     if (!(1 === (1 & seen0))) {
-      throwMissingFieldException(seen0, 1, $serializer_getInstance_30().descriptor_1);
+      throwMissingFieldException(seen0, 1, $serializer_getInstance_32().descriptor_1);
     }
     $this.floatArray_1 = floatArray;
     return $this;
@@ -18823,7 +18988,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return 'ZMatrix4Surrogate(floatArray=' + toString_0(this.floatArray_1) + ')';
   };
   function ZMatrix4Serializer() {
-    this.serializer_1 = Companion_instance_48.serializer_9w0wvi_k$();
+    this.serializer_1 = Companion_instance_50.serializer_9w0wvi_k$();
     this.descriptor_1 = this.serializer_1.get_descriptor_wjt6a0_k$();
   }
   protoOf(ZMatrix4Serializer).get_descriptor_wjt6a0_k$ = function () {
@@ -18942,11 +19107,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var xn = x * norm;
     var yn = y * norm;
     var zn = z * norm;
-    var a = angle / 2.0 * (3.141592653589793 / 180);
+    var halfAngle = angle * 0.5;
     // Inline function 'kotlin.math.cos' call
-    var c = Math.cos(a);
+    var c = Math.cos(halfAngle);
     // Inline function 'kotlin.math.sin' call
-    var s = Math.sin(a);
+    var s = Math.sin(halfAngle);
     result.set_w_atvma6_k$(c);
     result.set_x_t61dkd_k$(s * xn);
     result.set_y_niwx4k_k$(s * yn);
@@ -19016,24 +19181,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     result.set_z_56r5ud_k$(qz);
   };
   protoOf(Op_1).fromEuler = function (result, euler) {
-    var degToRad = 3.141592653589793 / 180.0;
     // Inline function 'kotlin.math.cos' call
-    var x = euler.get_roll_wotsxy_k$() * degToRad * 0.5;
+    var x = euler.get_roll_wotsxy_k$() * 0.5;
     var cr = Math.cos(x);
     // Inline function 'kotlin.math.cos' call
-    var x_0 = euler.get_pitch_iwvw9j_k$() * degToRad * 0.5;
+    var x_0 = euler.get_pitch_iwvw9j_k$() * 0.5;
     var cp = Math.cos(x_0);
     // Inline function 'kotlin.math.cos' call
-    var x_1 = euler.get_yaw_18iry2_k$() * degToRad * 0.5;
+    var x_1 = euler.get_yaw_18iry2_k$() * 0.5;
     var cy = Math.cos(x_1);
     // Inline function 'kotlin.math.sin' call
-    var x_2 = euler.get_roll_wotsxy_k$() * degToRad * 0.5;
+    var x_2 = euler.get_roll_wotsxy_k$() * 0.5;
     var sr = Math.sin(x_2);
     // Inline function 'kotlin.math.sin' call
-    var x_3 = euler.get_pitch_iwvw9j_k$() * degToRad * 0.5;
+    var x_3 = euler.get_pitch_iwvw9j_k$() * 0.5;
     var sp = Math.sin(x_3);
     // Inline function 'kotlin.math.sin' call
-    var x_4 = euler.get_yaw_18iry2_k$() * degToRad * 0.5;
+    var x_4 = euler.get_yaw_18iry2_k$() * 0.5;
     var sy = Math.sin(x_4);
     result.set_w_atvma6_k$(cr * cp * cy + sr * sp * sy);
     result.set_x_t61dkd_k$(sr * cp * cy - cr * sp * sy);
@@ -19247,17 +19411,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZQuaternion).toString = function () {
     return '[' + this.w + ' : ' + this.x + ', ' + this.y + ', ' + this.z + ']';
   };
-  function Companion_49() {
+  function Companion_51() {
   }
-  protoOf(Companion_49).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_31();
+  protoOf(Companion_51).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_33();
   };
-  var Companion_instance_49;
-  function Companion_getInstance_50() {
-    return Companion_instance_49;
+  var Companion_instance_51;
+  function Companion_getInstance_52() {
+    return Companion_instance_51;
   }
-  function $serializer_31() {
-    $serializer_instance_31 = this;
+  function $serializer_33() {
+    $serializer_instance_33 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.math.ZQuaternionSurrogate', this, 4);
     tmp0_serialDesc.addElement_5pzumi_k$('w', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -19269,7 +19433,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(4));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_31).serialize_2z103z_k$ = function (encoder, value) {
+  protoOf($serializer_33).serialize_2z103z_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 0, value.w_1);
@@ -19278,10 +19442,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 3, value.z_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_31).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_33).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_2z103z_k$(encoder, value instanceof ZQuaternionSurrogate ? value : THROW_CCE());
   };
-  protoOf($serializer_31).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_33).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -19330,24 +19494,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp8_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZQuaternionSurrogate_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  protoOf($serializer_31).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_33).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_31).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_33).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [FloatSerializer_getInstance(), FloatSerializer_getInstance(), FloatSerializer_getInstance(), FloatSerializer_getInstance()];
   };
-  var $serializer_instance_31;
-  function $serializer_getInstance_31() {
-    if ($serializer_instance_31 == null)
-      new $serializer_31();
-    return $serializer_instance_31;
+  var $serializer_instance_33;
+  function $serializer_getInstance_33() {
+    if ($serializer_instance_33 == null)
+      new $serializer_33();
+    return $serializer_instance_33;
   }
   function ZQuaternionSurrogate_init_$Init$(seen0, w, x, y, z, serializationConstructorMarker, $this) {
     if (!(15 === (15 & seen0))) {
-      throwMissingFieldException(seen0, 15, $serializer_getInstance_31().descriptor_1);
+      throwMissingFieldException(seen0, 15, $serializer_getInstance_33().descriptor_1);
     }
     $this.w_1 = w;
     $this.x_1 = x;
@@ -19392,15 +19556,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function ZQuaternionSerializer() {
   }
   protoOf(ZQuaternionSerializer).get_descriptor_wjt6a0_k$ = function () {
-    return Companion_instance_49.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
+    return Companion_instance_51.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
   };
   protoOf(ZQuaternionSerializer).deserialize_sy6x50_k$ = function (decoder) {
-    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_49.serializer_9w0wvi_k$());
+    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_51.serializer_9w0wvi_k$());
     return initWithValues_1(surrogate.w_1, surrogate.x_1, surrogate.y_1, surrogate.z_1);
   };
   protoOf(ZQuaternionSerializer).serialize_pdtulh_k$ = function (encoder, value) {
     var surrogate = new ZQuaternionSurrogate(value.w, value.x, value.y, value.z);
-    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_49.serializer_9w0wvi_k$(), surrogate);
+    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_51.serializer_9w0wvi_k$(), surrogate);
   };
   protoOf(ZQuaternionSerializer).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_pdtulh_k$(encoder, value instanceof ZQuaternion ? value : THROW_CCE());
@@ -19459,8 +19623,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     Op_instance_3.rotateVector($this._right_1, $this._rotation_1, Op_instance_3.Right);
     Op_instance_3.rotateVector($this._up_1, $this._rotation_1, Op_instance_3.Up);
   }
-  function Companion_50() {
-    Companion_instance_50 = this;
+  function Companion_52() {
+    Companion_instance_52 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     var tmp_1 = lazy(tmp_0, ZTransform$Companion$$childSerializers$_anonymous__7nuj1k);
@@ -19472,14 +19636,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [tmp_1, tmp_3, lazy(tmp_4, ZTransform$Companion$$childSerializers$_anonymous__7nuj1k_1)];
   }
-  var Companion_instance_50;
-  function Companion_getInstance_51() {
-    if (Companion_instance_50 == null)
-      new Companion_50();
-    return Companion_instance_50;
+  var Companion_instance_52;
+  function Companion_getInstance_53() {
+    if (Companion_instance_52 == null)
+      new Companion_52();
+    return Companion_instance_52;
   }
-  function $serializer_32() {
-    $serializer_instance_32 = this;
+  function $serializer_34() {
+    $serializer_instance_34 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.math.ZTransform', this, 3);
     tmp0_serialDesc.addElement_5pzumi_k$('position', true);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -19489,10 +19653,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(3));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_32).serialize_kzgqht_k$ = function (encoder, value) {
+  protoOf($serializer_34).serialize_kzgqht_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_51().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_53().$childSerializers_1;
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !equals(value._position_1, Op_instance_3.Zero)) {
       tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, tmp2_cached[0].get_value_j01efc_k$(), value._position_1);
     }
@@ -19504,10 +19668,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_32).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_34).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_kzgqht_k$(encoder, value instanceof ZTransform ? value : THROW_CCE());
   };
-  protoOf($serializer_32).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_34).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -19516,7 +19680,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp5_local1 = null;
     var tmp6_local2 = null;
     var tmp11_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp12_cached = Companion_getInstance_51().$childSerializers_1;
+    var tmp12_cached = Companion_getInstance_53().$childSerializers_1;
     if (tmp11_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp11_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, tmp12_cached[0].get_value_j01efc_k$(), tmp4_local0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
@@ -19550,25 +19714,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp11_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZTransform_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, null);
   };
-  protoOf($serializer_32).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_34).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_32).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_51().$childSerializers_1;
+  protoOf($serializer_34).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_53().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [tmp0_cached[0].get_value_j01efc_k$(), tmp0_cached[1].get_value_j01efc_k$(), tmp0_cached[2].get_value_j01efc_k$()];
   };
-  var $serializer_instance_32;
-  function $serializer_getInstance_32() {
-    if ($serializer_instance_32 == null)
-      new $serializer_32();
-    return $serializer_instance_32;
+  var $serializer_instance_34;
+  function $serializer_getInstance_34() {
+    if ($serializer_instance_34 == null)
+      new $serializer_34();
+    return $serializer_instance_34;
   }
   function ZTransform_init_$Init$_0(seen0, _position, _rotation, _scale, serializationConstructorMarker, $this) {
     if (!(0 === (0 & seen0))) {
-      throwMissingFieldException(seen0, 0, $serializer_getInstance_32().descriptor_1);
+      throwMissingFieldException(seen0, 0, $serializer_getInstance_34().descriptor_1);
     }
     $this._matrix_1 = Op_instance_0.Identity;
     if (0 === (seen0 & 1))
@@ -19592,7 +19756,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZTransform_init_$Init$_0(seen0, _position, _rotation, _scale, serializationConstructorMarker, objectCreate(protoOf(ZTransform)));
   }
   function ZTransform() {
-    Companion_getInstance_51();
+    Companion_getInstance_53();
     this._matrix_1 = Op_instance_0.Identity;
     this._position_1 = Op_instance_3.Zero;
     this._rotation_1 = Op_instance_1.Identity;
@@ -19603,9 +19767,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   protoOf(ZTransform).set_forward_krhjws_k$ = function (value) {
     this._forward_1 = value.normalized;
-    Op_instance_3.cross(this._right_1, this._forward_1, this._up_1);
+    Op_instance_3.cross(this._right_1, this._up_1, this._forward_1);
     this._right_1.normalize();
-    Op_instance_3.cross(this._up_1, this._right_1, this._forward_1);
+    Op_instance_3.cross(this._up_1, this._forward_1, this._right_1);
     this._up_1.normalize();
   };
   protoOf(ZTransform).get_forward_9xln38_k$ = function () {
@@ -19613,9 +19777,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZTransform).set_right_eq1rez_k$ = function (value) {
     this._right_1 = value.normalized;
-    Op_instance_3.cross(this._up_1, this._right_1, this._forward_1);
+    Op_instance_3.cross(this._up_1, this._forward_1, this._right_1);
     this._up_1.normalize();
-    Op_instance_3.cross(this._forward_1, this._up_1, this._right_1);
+    Op_instance_3.cross(this._forward_1, this._right_1, this._up_1);
     this._forward_1.normalize();
   };
   protoOf(ZTransform).get_right_ixz7xv_k$ = function () {
@@ -19623,9 +19787,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZTransform).set_up_52j90c_k$ = function (value) {
     this._up_1 = value.normalized;
-    Op_instance_3.cross(this._forward_1, this._up_1, this._right_1);
+    Op_instance_3.cross(this._forward_1, this._right_1, this._up_1);
     this._forward_1.normalize();
-    Op_instance_3.cross(this._right_1, this._forward_1, this._up_1);
+    Op_instance_3.cross(this._right_1, this._up_1, this._forward_1);
     this._right_1.normalize();
   };
   protoOf(ZTransform).get_up_kntnmk_k$ = function () {
@@ -19659,6 +19823,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZTransform).get_roll_wotsxy_k$ = function () {
     return this.rotationEuler.get_roll_wotsxy_k$();
+  };
+  protoOf(ZTransform).set_rotationEulerDegrees_vo66jw_k$ = function (value) {
+    Op_instance_1.fromEuler(this._rotation_1, Op_instance.fromDegrees_dtjrph_k$(value.get_roll_wotsxy_k$(), value.get_pitch_iwvw9j_k$(), value.get_yaw_18iry2_k$()));
+  };
+  protoOf(ZTransform).get_rotationEulerDegrees_u4emw5_k$ = function () {
+    var e = this.rotationEuler;
+    return ZEuler_init_$Create$(Angles_instance.radiansToDegrees_ergaqm_k$(e.get_roll_wotsxy_k$()), Angles_instance.radiansToDegrees_ergaqm_k$(e.get_pitch_iwvw9j_k$()), Angles_instance.radiansToDegrees_ergaqm_k$(e.get_yaw_18iry2_k$()));
+  };
+  protoOf(ZTransform).get_yawDegrees_s0r9s1_k$ = function () {
+    return Angles_instance.radiansToDegrees_ergaqm_k$(this.yaw);
+  };
+  protoOf(ZTransform).get_pitchDegrees_xzmc5s_k$ = function () {
+    return Angles_instance.radiansToDegrees_ergaqm_k$(this.pitch);
+  };
+  protoOf(ZTransform).get_rollDegrees_wgk8e7_k$ = function () {
+    return Angles_instance.radiansToDegrees_ergaqm_k$(this.roll);
   };
   protoOf(ZTransform).set_scale_e8k661_k$ = function (value) {
     this._scale_1.copy(value);
@@ -19742,6 +19922,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZTransform).rotateAround = function (angle, point, axis) {
     this.rotateAroundPointAxesThrough(angle, point, axis, this._position_1);
+  };
+  protoOf(ZTransform).setRotationDegrees = function (angle, x, y, z) {
+    this.setRotation(Angles_instance.degreesToRadians_37s4mg_k$(angle), x, y, z);
+  };
+  protoOf(ZTransform).setRotationDegreesByVector = function (angle, axis) {
+    this.rotateByVector(Angles_instance.degreesToRadians_37s4mg_k$(angle), axis);
+  };
+  protoOf(ZTransform).rotateDegrees = function (angle, x, y, z) {
+    this.rotate(Angles_instance.degreesToRadians_37s4mg_k$(angle), x, y, z);
+  };
+  protoOf(ZTransform).rotateDegreesByAngleAxisVector = function (angle, axis) {
+    this.rotateByAngleAxisVector(Angles_instance.degreesToRadians_37s4mg_k$(angle), axis);
+  };
+  protoOf(ZTransform).rotateAroundDegreesPointAxesThrough = function (angle, point, axis, through) {
+    this.rotateAroundPointAxesThrough(Angles_instance.degreesToRadians_37s4mg_k$(angle), point, axis, through);
+  };
+  protoOf(ZTransform).rotateAroundDegrees = function (angle, point, axis) {
+    this.rotateAround(Angles_instance.degreesToRadians_37s4mg_k$(angle), point, axis);
   };
   protoOf(ZTransform).pan = function (offsetRight, offsetUp) {
     var rightMove = this._right_1.timesScalar(offsetRight);
@@ -19937,17 +20135,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZVector2).toString = function () {
     return '[' + this.x + ', ' + this.y + ']';
   };
-  function Companion_51() {
+  function Companion_53() {
   }
-  protoOf(Companion_51).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_33();
+  protoOf(Companion_53).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_35();
   };
-  var Companion_instance_51;
-  function Companion_getInstance_52() {
-    return Companion_instance_51;
+  var Companion_instance_53;
+  function Companion_getInstance_54() {
+    return Companion_instance_53;
   }
-  function $serializer_33() {
-    $serializer_instance_33 = this;
+  function $serializer_35() {
+    $serializer_instance_35 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.math.ZVector2Surrogate', this, 2);
     tmp0_serialDesc.addElement_5pzumi_k$('x', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -19955,17 +20153,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(2));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_33).serialize_j0sqj2_k$ = function (encoder, value) {
+  protoOf($serializer_35).serialize_j0sqj2_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 0, value.x_1);
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 1, value.y_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_33).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_35).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_j0sqj2_k$(encoder, value instanceof ZVector2Surrogate ? value : THROW_CCE());
   };
-  protoOf($serializer_33).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_35).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -20000,24 +20198,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp6_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZVector2Surrogate_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, null);
   };
-  protoOf($serializer_33).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_35).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_33).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_35).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [FloatSerializer_getInstance(), FloatSerializer_getInstance()];
   };
-  var $serializer_instance_33;
-  function $serializer_getInstance_33() {
-    if ($serializer_instance_33 == null)
-      new $serializer_33();
-    return $serializer_instance_33;
+  var $serializer_instance_35;
+  function $serializer_getInstance_35() {
+    if ($serializer_instance_35 == null)
+      new $serializer_35();
+    return $serializer_instance_35;
   }
   function ZVector2Surrogate_init_$Init$(seen0, x, y, serializationConstructorMarker, $this) {
     if (!(3 === (3 & seen0))) {
-      throwMissingFieldException(seen0, 3, $serializer_getInstance_33().descriptor_1);
+      throwMissingFieldException(seen0, 3, $serializer_getInstance_35().descriptor_1);
     }
     $this.x_1 = x;
     $this.y_1 = y;
@@ -20052,15 +20250,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function ZVector2Serializer() {
   }
   protoOf(ZVector2Serializer).get_descriptor_wjt6a0_k$ = function () {
-    return Companion_instance_51.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
+    return Companion_instance_53.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
   };
   protoOf(ZVector2Serializer).deserialize_sy6x50_k$ = function (decoder) {
-    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_51.serializer_9w0wvi_k$());
+    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_53.serializer_9w0wvi_k$());
     return initWithValues_2(surrogate.x_1, surrogate.y_1);
   };
   protoOf(ZVector2Serializer).serialize_w5kvy2_k$ = function (encoder, value) {
     var surrogate = new ZVector2Surrogate(value.x, value.y);
-    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_51.serializer_9w0wvi_k$(), surrogate);
+    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_53.serializer_9w0wvi_k$(), surrogate);
   };
   protoOf(ZVector2Serializer).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_w5kvy2_k$(encoder, value instanceof ZVector2 ? value : THROW_CCE());
@@ -20099,14 +20297,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(Op_3).get_Ones_wo7fhy_k$ = function () {
     return initWithValue_0(1.0);
   };
-  protoOf(Op_3).get_Forward_hlhnlo_k$ = function () {
+  protoOf(Op_3).get_Right_igdsyb_k$ = function () {
     return initWithValues_3(1.0, 0.0, 0.0);
   };
-  protoOf(Op_3).get_Right_igdsyb_k$ = function () {
-    return initWithValues_3(0.0, 1.0, 0.0);
+  protoOf(Op_3).get_Left_wo5bw0_k$ = function () {
+    return initWithValues_3(-1.0, 0.0, 0.0);
   };
   protoOf(Op_3).get_Up_kntoe4_k$ = function () {
+    return initWithValues_3(0.0, 1.0, 0.0);
+  };
+  protoOf(Op_3).get_Down_wo0ft7_k$ = function () {
+    return initWithValues_3(0.0, -1.0, 0.0);
+  };
+  protoOf(Op_3).get_Forward_hlhnlo_k$ = function () {
     return initWithValues_3(0.0, 0.0, 1.0);
+  };
+  protoOf(Op_3).get_Back_wnyuz4_k$ = function () {
+    return initWithValues_3(0.0, 0.0, -1.0);
   };
   protoOf(Op_3).copy = function (result, v) {
     result.set_x_t61dkd_k$(v.x);
@@ -20320,17 +20527,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZVector3).toString = function () {
     return '[' + this.x + ', ' + this.y + ', ' + this.z + ']';
   };
-  function Companion_52() {
+  function Companion_54() {
   }
-  protoOf(Companion_52).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_34();
+  protoOf(Companion_54).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_36();
   };
-  var Companion_instance_52;
-  function Companion_getInstance_53() {
-    return Companion_instance_52;
+  var Companion_instance_54;
+  function Companion_getInstance_55() {
+    return Companion_instance_54;
   }
-  function $serializer_34() {
-    $serializer_instance_34 = this;
+  function $serializer_36() {
+    $serializer_instance_36 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.math.ZVector3Surrogate', this, 3);
     tmp0_serialDesc.addElement_5pzumi_k$('x', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -20340,7 +20547,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(3));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_34).serialize_dkgpn1_k$ = function (encoder, value) {
+  protoOf($serializer_36).serialize_dkgpn1_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 0, value.x_1);
@@ -20348,10 +20555,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 2, value.z_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_34).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_36).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_dkgpn1_k$(encoder, value instanceof ZVector3Surrogate ? value : THROW_CCE());
   };
-  protoOf($serializer_34).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_36).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -20393,24 +20600,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp7_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZVector3Surrogate_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, null);
   };
-  protoOf($serializer_34).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_36).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_34).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_36).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [FloatSerializer_getInstance(), FloatSerializer_getInstance(), FloatSerializer_getInstance()];
   };
-  var $serializer_instance_34;
-  function $serializer_getInstance_34() {
-    if ($serializer_instance_34 == null)
-      new $serializer_34();
-    return $serializer_instance_34;
+  var $serializer_instance_36;
+  function $serializer_getInstance_36() {
+    if ($serializer_instance_36 == null)
+      new $serializer_36();
+    return $serializer_instance_36;
   }
   function ZVector3Surrogate_init_$Init$(seen0, x, y, z, serializationConstructorMarker, $this) {
     if (!(7 === (7 & seen0))) {
-      throwMissingFieldException(seen0, 7, $serializer_getInstance_34().descriptor_1);
+      throwMissingFieldException(seen0, 7, $serializer_getInstance_36().descriptor_1);
     }
     $this.x_1 = x;
     $this.y_1 = y;
@@ -20450,15 +20657,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function ZVector3Serializer() {
   }
   protoOf(ZVector3Serializer).get_descriptor_wjt6a0_k$ = function () {
-    return Companion_instance_52.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
+    return Companion_instance_54.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
   };
   protoOf(ZVector3Serializer).deserialize_sy6x50_k$ = function (decoder) {
-    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_52.serializer_9w0wvi_k$());
+    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_54.serializer_9w0wvi_k$());
     return initWithValues_3(surrogate.x_1, surrogate.y_1, surrogate.z_1);
   };
   protoOf(ZVector3Serializer).serialize_mu9oiv_k$ = function (encoder, value) {
     var surrogate = new ZVector3Surrogate(value.x, value.y, value.z);
-    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_52.serializer_9w0wvi_k$(), surrogate);
+    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_54.serializer_9w0wvi_k$(), surrogate);
   };
   protoOf(ZVector3Serializer).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_mu9oiv_k$(encoder, value instanceof ZVector3 ? value : THROW_CCE());
@@ -20663,17 +20870,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZVector4).toString = function () {
     return '[' + this.w + ', ' + this.x + ', ' + this.y + ', ' + this.z + ']';
   };
-  function Companion_53() {
+  function Companion_55() {
   }
-  protoOf(Companion_53).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_35();
+  protoOf(Companion_55).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_37();
   };
-  var Companion_instance_53;
-  function Companion_getInstance_54() {
-    return Companion_instance_53;
+  var Companion_instance_55;
+  function Companion_getInstance_56() {
+    return Companion_instance_55;
   }
-  function $serializer_35() {
-    $serializer_instance_35 = this;
+  function $serializer_37() {
+    $serializer_instance_37 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.math.ZVector4Surrogate', this, 4);
     tmp0_serialDesc.addElement_5pzumi_k$('x', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -20685,7 +20892,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(4));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_35).serialize_844or0_k$ = function (encoder, value) {
+  protoOf($serializer_37).serialize_844or0_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 0, value.x_1);
@@ -20694,10 +20901,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp1_output.encodeFloatElement_oe8hn_k$(tmp0_desc, 3, value.w_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_35).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_37).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_844or0_k$(encoder, value instanceof ZVector4Surrogate ? value : THROW_CCE());
   };
-  protoOf($serializer_35).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_37).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -20746,24 +20953,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp8_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZVector4Surrogate_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  protoOf($serializer_35).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_37).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_35).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_37).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [FloatSerializer_getInstance(), FloatSerializer_getInstance(), FloatSerializer_getInstance(), FloatSerializer_getInstance()];
   };
-  var $serializer_instance_35;
-  function $serializer_getInstance_35() {
-    if ($serializer_instance_35 == null)
-      new $serializer_35();
-    return $serializer_instance_35;
+  var $serializer_instance_37;
+  function $serializer_getInstance_37() {
+    if ($serializer_instance_37 == null)
+      new $serializer_37();
+    return $serializer_instance_37;
   }
   function ZVector4Surrogate_init_$Init$(seen0, x, y, z, w, serializationConstructorMarker, $this) {
     if (!(15 === (15 & seen0))) {
-      throwMissingFieldException(seen0, 15, $serializer_getInstance_35().descriptor_1);
+      throwMissingFieldException(seen0, 15, $serializer_getInstance_37().descriptor_1);
     }
     $this.x_1 = x;
     $this.y_1 = y;
@@ -20808,15 +21015,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function ZVector4Serializer() {
   }
   protoOf(ZVector4Serializer).get_descriptor_wjt6a0_k$ = function () {
-    return Companion_instance_53.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
+    return Companion_instance_55.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
   };
   protoOf(ZVector4Serializer).deserialize_sy6x50_k$ = function (decoder) {
-    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_53.serializer_9w0wvi_k$());
+    var surrogate = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_55.serializer_9w0wvi_k$());
     return initWithValues_4(surrogate.x_1, surrogate.y_1, surrogate.z_1, surrogate.w_1);
   };
   protoOf(ZVector4Serializer).serialize_6t070o_k$ = function (encoder, value) {
     var surrogate = new ZVector4Surrogate(value.x, value.y, value.z, value.w);
-    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_53.serializer_9w0wvi_k$(), surrogate);
+    encoder.encodeSerializableValue_3uuzip_k$(Companion_instance_55.serializer_9w0wvi_k$(), surrogate);
   };
   protoOf(ZVector4Serializer).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_6t070o_k$(encoder, value instanceof ZVector4 ? value : THROW_CCE());
@@ -20856,6 +21063,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function ZCamera_init_$Init$(lookAt, up, lens, $this) {
     ZCamera.call($this);
+    $this.transform.translateByVector(Op_instance_3.Back);
     $this.transform.setLookAtUp(lookAt, up);
     $this.lens = lens;
     return $this;
@@ -20865,6 +21073,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function ZCamera_init_$Init$_0(lookAt, up, $this) {
     ZCamera.call($this);
+    $this.transform.translateByVector(Op_instance_3.Back);
     $this.transform.setLookAtUp(lookAt, up);
     $this.lens = Companion_instance_10.Default;
     return $this;
@@ -20872,8 +21081,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function initWithLookUp(lookAt, up) {
     return ZCamera_init_$Init$_0(lookAt, up, objectCreate(protoOf(ZCamera)));
   }
-  function Companion_54() {
-    Companion_instance_54 = this;
+  function Companion_56() {
+    Companion_instance_56 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     // Inline function 'kotlin.arrayOf' call
@@ -20881,20 +21090,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [null, null, null, lazy(tmp_0, ZCamera$Companion$$childSerializers$_anonymous__7ubpw5)];
   }
-  protoOf(Companion_54).get_DefaultPerspectiveCamera_3f22p5_k$ = function () {
+  protoOf(Companion_56).get_DefaultPerspectiveCamera_3f22p5_k$ = function () {
     return initWithLookUp(Op_instance_3.Zero, Op_instance_3.Up);
   };
-  protoOf(Companion_54).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_36();
+  protoOf(Companion_56).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_38();
   };
-  var Companion_instance_54;
-  function Companion_getInstance_55() {
-    if (Companion_instance_54 == null)
-      new Companion_54();
-    return Companion_instance_54;
+  var Companion_instance_56;
+  function Companion_getInstance_57() {
+    if (Companion_instance_56 == null)
+      new Companion_56();
+    return Companion_instance_56;
   }
-  function $serializer_36() {
-    $serializer_instance_36 = this;
+  function $serializer_38() {
+    $serializer_instance_38 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.objects.ZCamera', this, 4);
     tmp0_serialDesc.addElement_5pzumi_k$('refId', true);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -20906,10 +21115,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(4));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_36).serialize_956vbw_k$ = function (encoder, value) {
+  protoOf($serializer_38).serialize_956vbw_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_55().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_57().$childSerializers_1;
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !(value.refId === genRefId())) {
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.refId);
     }
@@ -20917,15 +21126,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 2) ? true : !equals(value.transform, new ZTransform())) {
-      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_32(), value.transform);
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_34(), value.transform);
     }
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, tmp2_cached[3].get_value_j01efc_k$(), value.lens);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_36).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_38).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_956vbw_k$(encoder, value instanceof ZCamera ? value : THROW_CCE());
   };
-  protoOf($serializer_36).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_38).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -20935,13 +21144,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp6_local2 = null;
     var tmp7_local3 = null;
     var tmp9_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp10_cached = Companion_getInstance_55().$childSerializers_1;
+    var tmp10_cached = Companion_getInstance_57().$childSerializers_1;
     if (tmp9_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp9_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
       tmp5_local1 = tmp9_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
-      tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+      tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
       tmp7_local3 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp10_cached[3].get_value_j01efc_k$(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
@@ -20961,7 +21170,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           case 2:
-            tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+            tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
@@ -20975,29 +21184,30 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp9_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZCamera_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  protoOf($serializer_36).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_38).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_36).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_55().$childSerializers_1;
+  protoOf($serializer_38).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_57().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_32(), tmp0_cached[3].get_value_j01efc_k$()];
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_34(), tmp0_cached[3].get_value_j01efc_k$()];
   };
-  var $serializer_instance_36;
-  function $serializer_getInstance_36() {
-    if ($serializer_instance_36 == null)
-      new $serializer_36();
-    return $serializer_instance_36;
+  var $serializer_instance_38;
+  function $serializer_getInstance_38() {
+    if ($serializer_instance_38 == null)
+      new $serializer_38();
+    return $serializer_instance_38;
   }
   function ZCamera_init_$Init$_1(seen0, refId, name, transform, lens, serializationConstructorMarker, $this) {
     if (!(8 === (8 & seen0))) {
-      throwMissingFieldException(seen0, 8, $serializer_getInstance_36().descriptor_1);
+      throwMissingFieldException(seen0, 8, $serializer_getInstance_38().descriptor_1);
     }
     ZObject_init_$Init$(seen0, refId, name, transform, serializationConstructorMarker, $this);
     $this.type_1 = ZObjectType_CAMERA_getInstance();
     $this.lens = lens;
+    $this.transform.translateByVector(Op_instance_3.Back);
     $this.transform.setLookAtUp(Op_instance_3.Zero, Op_instance_3.Up);
     $this.lens = Companion_instance_10.Default;
     return $this;
@@ -21006,9 +21216,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZCamera_init_$Init$_1(seen0, refId, name, transform, lens, serializationConstructorMarker, objectCreate(protoOf(ZCamera)));
   }
   function ZCamera() {
-    Companion_getInstance_55();
+    Companion_getInstance_57();
     ZObject.call(this);
     this.type_1 = ZObjectType_CAMERA_getInstance();
+    this.transform.translateByVector(Op_instance_3.Back);
     this.transform.setLookAtUp(Op_instance_3.Zero, Op_instance_3.Up);
     this.lens = Companion_instance_10.Default;
   }
@@ -21043,10 +21254,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZCamera).internalDispose = function (ctx) {
   };
   function ZGroup$Companion$$childSerializers$_anonymous__a4skcl() {
-    return Companion_getInstance_60().serializer_9w0wvi_k$();
+    return Companion_getInstance_62().serializer_9w0wvi_k$();
   }
-  function Companion_55() {
-    Companion_instance_55 = this;
+  function Companion_57() {
+    Companion_instance_57 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     // Inline function 'kotlin.arrayOf' call
@@ -21054,17 +21265,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [null, null, null, lazy(tmp_0, ZGroup$Companion$$childSerializers$_anonymous__a4skcl)];
   }
-  protoOf(Companion_55).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_37();
+  protoOf(Companion_57).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_39();
   };
-  var Companion_instance_55;
-  function Companion_getInstance_56() {
-    if (Companion_instance_55 == null)
-      new Companion_55();
-    return Companion_instance_55;
+  var Companion_instance_57;
+  function Companion_getInstance_58() {
+    if (Companion_instance_57 == null)
+      new Companion_57();
+    return Companion_instance_57;
   }
-  function $serializer_37() {
-    $serializer_instance_37 = this;
+  function $serializer_39() {
+    $serializer_instance_39 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('Group', this, 4);
     tmp0_serialDesc.addElement_5pzumi_k$('refId', true);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -21075,10 +21286,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.addElement_5pzumi_k$('type', true);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_37).serialize_3gc0qe_k$ = function (encoder, value) {
+  protoOf($serializer_39).serialize_3gc0qe_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_56().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_58().$childSerializers_1;
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !(value.refId === genRefId())) {
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.refId);
     }
@@ -21086,17 +21297,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 2) ? true : !equals(value.transform, new ZTransform())) {
-      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_32(), value.transform);
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_34(), value.transform);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3) ? true : !value.type_1.equals(ZObjectType_GROUP_getInstance())) {
       tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, tmp2_cached[3].get_value_j01efc_k$(), value.type_1);
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_37).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_39).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_3gc0qe_k$(encoder, value instanceof ZGroup ? value : THROW_CCE());
   };
-  protoOf($serializer_37).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_39).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -21106,13 +21317,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp6_local2 = null;
     var tmp7_local3 = null;
     var tmp8_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp9_cached = Companion_getInstance_56().$childSerializers_1;
+    var tmp9_cached = Companion_getInstance_58().$childSerializers_1;
     if (tmp8_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp8_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
       tmp5_local1 = tmp8_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
-      tmp6_local2 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+      tmp6_local2 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
       tmp7_local3 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp9_cached[3].get_value_j01efc_k$(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
@@ -21132,7 +21343,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           case 2:
-            tmp6_local2 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+            tmp6_local2 = tmp8_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
@@ -21146,25 +21357,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp8_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZGroup_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  protoOf($serializer_37).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_39).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_37).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_56().$childSerializers_1;
+  protoOf($serializer_39).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_58().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_32(), tmp0_cached[3].get_value_j01efc_k$()];
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_34(), tmp0_cached[3].get_value_j01efc_k$()];
   };
-  var $serializer_instance_37;
-  function $serializer_getInstance_37() {
-    if ($serializer_instance_37 == null)
-      new $serializer_37();
-    return $serializer_instance_37;
+  var $serializer_instance_39;
+  function $serializer_getInstance_39() {
+    if ($serializer_instance_39 == null)
+      new $serializer_39();
+    return $serializer_instance_39;
   }
   function ZGroup_init_$Init$(seen0, refId, name, transform, type, serializationConstructorMarker, $this) {
     if (!(0 === (0 & seen0))) {
-      throwMissingFieldException(seen0, 0, $serializer_getInstance_37().descriptor_1);
+      throwMissingFieldException(seen0, 0, $serializer_getInstance_39().descriptor_1);
     }
     ZObject_init_$Init$(seen0, refId, name, transform, serializationConstructorMarker, $this);
     if (0 === (seen0 & 8))
@@ -21177,7 +21388,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZGroup_init_$Init$(seen0, refId, name, transform, type, serializationConstructorMarker, objectCreate(protoOf(ZGroup)));
   }
   function ZGroup() {
-    Companion_getInstance_56();
+    Companion_getInstance_58();
     ZObject.call(this);
     this.type_1 = ZObjectType_GROUP_getInstance();
   }
@@ -21191,7 +21402,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZGroup).internalDispose = function (ctx) {
   };
   function ZLight$Companion$$childSerializers$_anonymous__mktgtq() {
-    return Companion_getInstance_47().serializer_9w0wvi_k$();
+    return Companion_getInstance_49().serializer_9w0wvi_k$();
   }
   function ZLight$Companion$$childSerializers$_anonymous__mktgtq_0() {
     var tmp = getKClass(ZLamp);
@@ -21202,8 +21413,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp$ret$0 = [];
     return new ContextualSerializer(tmp, tmp_0, tmp$ret$0);
   }
-  function Companion_56() {
-    Companion_instance_56 = this;
+  function Companion_58() {
+    Companion_instance_58 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     var tmp_1 = lazy(tmp_0, ZLight$Companion$$childSerializers$_anonymous__mktgtq);
@@ -21213,44 +21424,44 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [null, null, null, tmp_1, null, lazy(tmp_2, ZLight$Companion$$childSerializers$_anonymous__mktgtq_0)];
   }
-  protoOf(Companion_56).get_DefaultAmbientLight_btsga_k$ = function () {
+  protoOf(Companion_58).get_DefaultAmbientLight_btsga_k$ = function () {
     return this.createAmbientLight();
   };
-  protoOf(Companion_56).createAmbientLight = function () {
+  protoOf(Companion_58).createAmbientLight = function () {
     // Inline function 'kotlin.apply' call
     var this_0 = new ZLight();
     this_0.lamp = new ZAmbientLamp();
     return this_0;
   };
-  protoOf(Companion_56).createDirectionalLight = function () {
+  protoOf(Companion_58).createDirectionalLight = function () {
     // Inline function 'kotlin.apply' call
     var this_0 = new ZLight();
     this_0.lamp = new ZDirectionalLamp();
     return this_0;
   };
-  protoOf(Companion_56).createPointLight = function () {
+  protoOf(Companion_58).createPointLight = function () {
     // Inline function 'kotlin.apply' call
     var this_0 = new ZLight();
     this_0.lamp = new ZPointLamp();
     return this_0;
   };
-  protoOf(Companion_56).createSpotLight = function () {
+  protoOf(Companion_58).createSpotLight = function () {
     // Inline function 'kotlin.apply' call
     var this_0 = new ZLight();
     this_0.lamp = new ZSpotLamp();
     return this_0;
   };
-  protoOf(Companion_56).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_38();
+  protoOf(Companion_58).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_40();
   };
-  var Companion_instance_56;
-  function Companion_getInstance_57() {
-    if (Companion_instance_56 == null)
-      new Companion_56();
-    return Companion_instance_56;
+  var Companion_instance_58;
+  function Companion_getInstance_59() {
+    if (Companion_instance_58 == null)
+      new Companion_58();
+    return Companion_instance_58;
   }
-  function $serializer_38() {
-    $serializer_instance_38 = this;
+  function $serializer_40() {
+    $serializer_instance_40 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.objects.ZLight', this, 6);
     tmp0_serialDesc.addElement_5pzumi_k$('refId', true);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -21266,10 +21477,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(10));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_38).serialize_vlrkxr_k$ = function (encoder, value) {
+  protoOf($serializer_40).serialize_vlrkxr_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_57().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_59().$childSerializers_1;
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !(value.refId === genRefId())) {
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.refId);
     }
@@ -21277,9 +21488,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 2) ? true : !equals(value.transform, new ZTransform())) {
-      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_32(), value.transform);
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_34(), value.transform);
     }
-    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3) ? true : !equals(value.color, Companion_getInstance_47().WHITE)) {
+    if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3) ? true : !equals(value.color, Companion_getInstance_49().WHITE)) {
       tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, tmp2_cached[3].get_value_j01efc_k$(), value.color);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 4) ? true : !equals(value.intensity, 1.0)) {
@@ -21290,10 +21501,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_38).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_40).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_vlrkxr_k$(encoder, value instanceof ZLight ? value : THROW_CCE());
   };
-  protoOf($serializer_38).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_40).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -21305,13 +21516,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp8_local4 = 0.0;
     var tmp9_local5 = null;
     var tmp11_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp12_cached = Companion_getInstance_57().$childSerializers_1;
+    var tmp12_cached = Companion_getInstance_59().$childSerializers_1;
     if (tmp11_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp11_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
       tmp5_local1 = tmp11_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
-      tmp6_local2 = tmp11_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+      tmp6_local2 = tmp11_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
       tmp7_local3 = tmp11_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp12_cached[3].get_value_j01efc_k$(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
@@ -21335,7 +21546,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           case 2:
-            tmp6_local2 = tmp11_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+            tmp6_local2 = tmp11_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
@@ -21357,30 +21568,30 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp11_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZLight_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, tmp9_local5, null);
   };
-  protoOf($serializer_38).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_40).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_38).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_57().$childSerializers_1;
+  protoOf($serializer_40).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_59().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_32(), tmp0_cached[3].get_value_j01efc_k$(), FloatSerializer_getInstance(), get_nullable(tmp0_cached[5].get_value_j01efc_k$())];
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_34(), tmp0_cached[3].get_value_j01efc_k$(), FloatSerializer_getInstance(), get_nullable(tmp0_cached[5].get_value_j01efc_k$())];
   };
-  var $serializer_instance_38;
-  function $serializer_getInstance_38() {
-    if ($serializer_instance_38 == null)
-      new $serializer_38();
-    return $serializer_instance_38;
+  var $serializer_instance_40;
+  function $serializer_getInstance_40() {
+    if ($serializer_instance_40 == null)
+      new $serializer_40();
+    return $serializer_instance_40;
   }
   function ZLight_init_$Init$(seen0, refId, name, transform, color, intensity, lamp, serializationConstructorMarker, $this) {
     if (!(0 === (0 & seen0))) {
-      throwMissingFieldException(seen0, 0, $serializer_getInstance_38().descriptor_1);
+      throwMissingFieldException(seen0, 0, $serializer_getInstance_40().descriptor_1);
     }
     ZObject_init_$Init$(seen0, refId, name, transform, serializationConstructorMarker, $this);
     $this.type_1 = ZObjectType_LIGHT_getInstance();
     if (0 === (seen0 & 8))
-      $this.color = Companion_getInstance_47().WHITE;
+      $this.color = Companion_getInstance_49().WHITE;
     else
       $this.color = color;
     if (0 === (seen0 & 16))
@@ -21397,10 +21608,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZLight_init_$Init$(seen0, refId, name, transform, color, intensity, lamp, serializationConstructorMarker, objectCreate(protoOf(ZLight)));
   }
   function ZLight() {
-    Companion_getInstance_57();
+    Companion_getInstance_59();
     ZObject.call(this);
     this.type_1 = ZObjectType_LIGHT_getInstance();
-    this.color = Companion_getInstance_47().WHITE;
+    this.color = Companion_getInstance_49().WHITE;
     this.intensity = 1.0;
     this.lamp = null;
   }
@@ -21461,7 +21672,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function ZModel$Companion$$childSerializers$_anonymous__m8q2jf_1() {
     var tmp = getKClass(ZSkeleton);
-    var tmp_0 = get_nullable($serializer_getInstance_41());
+    var tmp_0 = get_nullable($serializer_getInstance_43());
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
@@ -21471,82 +21682,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function ZModel$Companion$$childSerializers$_anonymous__m8q2jf_2() {
     return Companion_instance_35.serializer_9w0wvi_k$();
   }
-  function enableRequiredBuffers($this, shaderParameters) {
-    var tmp0_safe_receiver = $this.mesh.indexBuffer;
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.enabled = true;
-    }
-    var tmp1_safe_receiver = $this.mesh.position;
-    if (tmp1_safe_receiver == null)
-      null;
-    else {
-      tmp1_safe_receiver.enabled = shaderParameters.usePosition_1;
-    }
-    var tmp2_safe_receiver = $this.mesh.normal;
-    if (tmp2_safe_receiver == null)
-      null;
-    else {
-      tmp2_safe_receiver.enabled = shaderParameters.useNormals_1;
-    }
-    var tmp3_safe_receiver = $this.mesh.uv;
-    if (tmp3_safe_receiver == null)
-      null;
-    else {
-      tmp3_safe_receiver.enabled = shaderParameters.useTextures_1;
-    }
-    var tmp4_safe_receiver = $this.mesh.color;
-    if (tmp4_safe_receiver == null)
-      null;
-    else {
-      tmp4_safe_receiver.enabled = shaderParameters.useColors_1;
-    }
-    var tmp5_safe_receiver = $this.mesh.boneWeight;
-    if (tmp5_safe_receiver == null)
-      null;
-    else {
-      tmp5_safe_receiver.enabled = shaderParameters.useSkinning_1;
-    }
-    var tmp6_safe_receiver = $this.mesh.boneIndex;
-    if (tmp6_safe_receiver == null)
-      null;
-    else {
-      tmp6_safe_receiver.enabled = shaderParameters.useSkinning_1;
-    }
-  }
-  function buildShaderParameters($this) {
-    var shaderParameters = ZShaderProgramParameters_init_$Create$(intersect($this.mesh.attributeIds, $this.shaderProgram.attributeIds));
-    shaderParameters.usePosition_1 = $this.mesh.contains(ZAttributeId_POSITION_getInstance());
-    shaderParameters.useColors_1 = $this.mesh.contains(ZAttributeId_COLOR_getInstance());
-    shaderParameters.useNormals_1 = $this.mesh.contains(ZAttributeId_NORMAL_getInstance());
-    if ($this.hasTextures) {
-      shaderParameters.useTextures_1 = $this.hasTextures;
-      var tmp0_safe_receiver = $this.material;
-      var tmp1_safe_receiver = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.texture;
-      if ((tmp1_safe_receiver == null ? null : tmp1_safe_receiver.flipY) === true) {
-        shaderParameters.flipTextureY_1 = true;
-      }
-    }
-    if ($this.hasSkeleton) {
-      shaderParameters.useSkinning_1 = true;
-      shaderParameters.maxBones_1 = ensureNotNull($this.skeleton).bones.length;
-    }
-    var tmp2_safe_receiver = $this.material;
-    if ((tmp2_safe_receiver == null ? null : tmp2_safe_receiver.usesPbr) === true) {
-      shaderParameters.usePbrMaterial_1 = true;
-    }
-    var tmp3_safe_receiver = $this.material;
-    if ((tmp3_safe_receiver == null ? null : tmp3_safe_receiver.usesPhong) === true) {
-      shaderParameters.usePhongMaterial_1 = true;
-    }
-    if (shaderParameters.useNormals_1 && (shaderParameters.usePbrMaterial_1 || shaderParameters.usePhongMaterial_1)) {
-      shaderParameters.useLighting_1 = true;
-    }
-    return shaderParameters;
-  }
-  function Companion_57() {
-    Companion_instance_57 = this;
+  function Companion_59() {
+    Companion_instance_59 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     var tmp_1 = lazy(tmp_0, ZModel$Companion$$childSerializers$_anonymous__m8q2jf);
@@ -21560,14 +21697,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [null, null, null, tmp_1, tmp_3, tmp_5, lazy(tmp_6, ZModel$Companion$$childSerializers$_anonymous__m8q2jf_2)];
   }
-  var Companion_instance_57;
-  function Companion_getInstance_58() {
-    if (Companion_instance_57 == null)
-      new Companion_57();
-    return Companion_instance_57;
+  var Companion_instance_59;
+  function Companion_getInstance_60() {
+    if (Companion_instance_59 == null)
+      new Companion_59();
+    return Companion_instance_59;
   }
-  function $serializer_39() {
-    $serializer_instance_39 = this;
+  function $serializer_41() {
+    $serializer_instance_41 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.objects.ZModel', this, 7);
     tmp0_serialDesc.addElement_5pzumi_k$('refId', true);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -21585,10 +21722,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(8));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_39).serialize_onv4jw_k$ = function (encoder, value) {
+  protoOf($serializer_41).serialize_onv4jw_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_58().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_60().$childSerializers_1;
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !(value.refId === genRefId())) {
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.refId);
     }
@@ -21596,7 +21733,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 2) ? true : !equals(value.transform, new ZTransform())) {
-      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_32(), value.transform);
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_34(), value.transform);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3) ? true : !equals(value.mesh, init_6())) {
       tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, tmp2_cached[3].get_value_j01efc_k$(), value.mesh);
@@ -21612,10 +21749,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_39).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_41).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_onv4jw_k$(encoder, value instanceof ZModel ? value : THROW_CCE());
   };
-  protoOf($serializer_39).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_41).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -21627,84 +21764,84 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp8_local4 = null;
     var tmp9_local5 = null;
     var tmp10_local6 = null;
-    var tmp15_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp16_cached = Companion_getInstance_58().$childSerializers_1;
-    if (tmp15_input.decodeSequentially_xlblqy_k$()) {
-      tmp4_local0 = tmp15_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
+    var tmp14_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
+    var tmp15_cached = Companion_getInstance_60().$childSerializers_1;
+    if (tmp14_input.decodeSequentially_xlblqy_k$()) {
+      tmp4_local0 = tmp14_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
-      tmp5_local1 = tmp15_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+      tmp5_local1 = tmp14_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
-      tmp6_local2 = tmp15_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+      tmp6_local2 = tmp14_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
-      tmp7_local3 = tmp15_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp16_cached[3].get_value_j01efc_k$(), tmp7_local3);
+      tmp7_local3 = tmp14_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp15_cached[3].get_value_j01efc_k$(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
-      tmp8_local4 = tmp15_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, tmp16_cached[4].get_value_j01efc_k$(), tmp8_local4);
+      tmp8_local4 = tmp14_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, tmp15_cached[4].get_value_j01efc_k$(), tmp8_local4);
       tmp3_bitMask0 = tmp3_bitMask0 | 16;
-      tmp9_local5 = tmp15_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, tmp16_cached[5].get_value_j01efc_k$(), tmp9_local5);
+      tmp9_local5 = tmp14_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, tmp15_cached[5].get_value_j01efc_k$(), tmp9_local5);
       tmp3_bitMask0 = tmp3_bitMask0 | 32;
-      tmp10_local6 = tmp15_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, tmp16_cached[6].get_value_j01efc_k$(), tmp10_local6);
+      tmp10_local6 = tmp14_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, tmp15_cached[6].get_value_j01efc_k$(), tmp10_local6);
       tmp3_bitMask0 = tmp3_bitMask0 | 64;
     } else
       while (tmp1_flag) {
-        tmp2_index = tmp15_input.decodeElementIndex_bstkhp_k$(tmp0_desc);
+        tmp2_index = tmp14_input.decodeElementIndex_bstkhp_k$(tmp0_desc);
         switch (tmp2_index) {
           case -1:
             tmp1_flag = false;
             break;
           case 0:
-            tmp4_local0 = tmp15_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
+            tmp4_local0 = tmp14_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
             tmp3_bitMask0 = tmp3_bitMask0 | 1;
             break;
           case 1:
-            tmp5_local1 = tmp15_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
+            tmp5_local1 = tmp14_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           case 2:
-            tmp6_local2 = tmp15_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+            tmp6_local2 = tmp14_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
-            tmp7_local3 = tmp15_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp16_cached[3].get_value_j01efc_k$(), tmp7_local3);
+            tmp7_local3 = tmp14_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp15_cached[3].get_value_j01efc_k$(), tmp7_local3);
             tmp3_bitMask0 = tmp3_bitMask0 | 8;
             break;
           case 4:
-            tmp8_local4 = tmp15_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, tmp16_cached[4].get_value_j01efc_k$(), tmp8_local4);
+            tmp8_local4 = tmp14_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 4, tmp15_cached[4].get_value_j01efc_k$(), tmp8_local4);
             tmp3_bitMask0 = tmp3_bitMask0 | 16;
             break;
           case 5:
-            tmp9_local5 = tmp15_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, tmp16_cached[5].get_value_j01efc_k$(), tmp9_local5);
+            tmp9_local5 = tmp14_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 5, tmp15_cached[5].get_value_j01efc_k$(), tmp9_local5);
             tmp3_bitMask0 = tmp3_bitMask0 | 32;
             break;
           case 6:
-            tmp10_local6 = tmp15_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, tmp16_cached[6].get_value_j01efc_k$(), tmp10_local6);
+            tmp10_local6 = tmp14_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 6, tmp15_cached[6].get_value_j01efc_k$(), tmp10_local6);
             tmp3_bitMask0 = tmp3_bitMask0 | 64;
             break;
           default:
             throw UnknownFieldException_init_$Create$(tmp2_index);
         }
       }
-    tmp15_input.endStructure_1xqz0n_k$(tmp0_desc);
+    tmp14_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZModel_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, tmp9_local5, tmp10_local6, null);
   };
-  protoOf($serializer_39).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_41).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_39).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_58().$childSerializers_1;
+  protoOf($serializer_41).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_60().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_32(), tmp0_cached[3].get_value_j01efc_k$(), get_nullable(tmp0_cached[4].get_value_j01efc_k$()), get_nullable(tmp0_cached[5].get_value_j01efc_k$()), get_nullable(tmp0_cached[6].get_value_j01efc_k$())];
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_34(), tmp0_cached[3].get_value_j01efc_k$(), get_nullable(tmp0_cached[4].get_value_j01efc_k$()), get_nullable(tmp0_cached[5].get_value_j01efc_k$()), get_nullable(tmp0_cached[6].get_value_j01efc_k$())];
   };
-  var $serializer_instance_39;
-  function $serializer_getInstance_39() {
-    if ($serializer_instance_39 == null)
-      new $serializer_39();
-    return $serializer_instance_39;
+  var $serializer_instance_41;
+  function $serializer_getInstance_41() {
+    if ($serializer_instance_41 == null)
+      new $serializer_41();
+    return $serializer_instance_41;
   }
   function ZModel_init_$Init$(seen0, refId, name, transform, mesh, material, skeleton, skinning, serializationConstructorMarker, $this) {
     if (!(0 === (0 & seen0))) {
-      throwMissingFieldException(seen0, 0, $serializer_getInstance_39().descriptor_1);
+      throwMissingFieldException(seen0, 0, $serializer_getInstance_41().descriptor_1);
     }
     ZObject_init_$Init$(seen0, refId, name, transform, serializationConstructorMarker, $this);
     $this.type_1 = ZObjectType_MODEL_getInstance();
@@ -21725,17 +21862,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       $this.skinning = null;
     else
       $this.skinning = skinning;
-    $this.action = null;
     return $this;
   }
   function ZModel_init_$Create$(seen0, refId, name, transform, mesh, material, skeleton, skinning, serializationConstructorMarker) {
     return ZModel_init_$Init$(seen0, refId, name, transform, mesh, material, skeleton, skinning, serializationConstructorMarker, objectCreate(protoOf(ZModel)));
   }
-  function ZModel$internalInitialize$lambda(it) {
-    return it.toString();
-  }
   function ZModel() {
-    Companion_getInstance_58();
+    Companion_getInstance_60();
     ZObject.call(this);
     this.type_1 = ZObjectType_MODEL_getInstance();
     this.mesh = init_6();
@@ -21743,7 +21876,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.material = null;
     this.skeleton = null;
     this.skinning = null;
-    this.action = null;
   }
   protoOf(ZModel).get_type_wovaf7_k$ = function () {
     return this.type_1;
@@ -21808,15 +21940,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       throwUninitializedPropertyAccessException('renderer');
     }
   };
-  protoOf(ZModel).set_action_qkuhkf_k$ = function (_set____db54di) {
-    this.action = _set____db54di;
-  };
-  protoOf(ZModel).get_action_avldmn_k$ = function () {
-    return this.action;
-  };
   protoOf(ZModel).internalInitialize = function (ctx) {
     this.renderer_1 = new ZModelRenderer(ctx.renderingContext, this);
-    var shaderProgramParams = buildShaderParameters(this);
+    var shaderProgramParams = pipelineCapabilitiesBuilder(this, this.shaderProgram);
     if (this.hasSkeleton) {
       var tmp0_safe_receiver = this.skeleton;
       if (tmp0_safe_receiver == null)
@@ -21824,33 +21950,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       else {
         tmp0_safe_receiver.initialize(ctx);
       }
+      var tmp1_safe_receiver = this.skeleton;
+      if (tmp1_safe_receiver == null)
+        null;
+      else {
+        tmp1_safe_receiver.applyKeyFrame(new ZKeyFrame(0.0), Op_instance_0.Identity);
+      }
     }
     var shaderSourceGenerator = createShaderGenerator(ZShaderGeneratorType_DEFAULT_getInstance());
     shaderSourceGenerator.generate_pog173_k$(shaderProgramParams, this.shaderProgram);
-    enableRequiredBuffers(this, shaderProgramParams);
-    // Inline function 'zernikalos.logger.logger' call
-    var tmp = Companion_getInstance_45().getLogger(getKClass(ZModel).get_simpleName_r6f8py_k$(), hashCode(this));
-    var tmp_0 = this.name;
-    // Inline function 'kotlin.collections.filter' call
-    var tmp0 = this.mesh.buffers.get_values_ksazhn_k$();
-    // Inline function 'kotlin.collections.filterTo' call
-    var destination = ArrayList_init_$Create$();
-    var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
-    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
-      var element = _iterator__ex2g4s.next_20eer_k$();
-      if (element.enabled) {
-        destination.add_utx5q5_k$(element);
-      }
-    }
-    var tmp_1 = destination;
-    tmp.debug('[' + tmp_0 + '] Enabled buffers:\n' + joinToString(tmp_1, ',\n', VOID, VOID, VOID, VOID, ZModel$internalInitialize$lambda));
     this.shaderProgram.initialize(ctx.renderingContext);
     this.mesh.initialize(ctx.renderingContext);
-    var tmp1_safe_receiver = this.material;
-    if (tmp1_safe_receiver == null)
+    var tmp2_safe_receiver = this.material;
+    if (tmp2_safe_receiver == null)
       null;
     else {
-      tmp1_safe_receiver.initialize(ctx.renderingContext);
+      tmp2_safe_receiver.initialize(ctx.renderingContext);
     }
     this.renderer.initialize_o9rygw_k$();
   };
@@ -21905,23 +22020,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function reparent($this, obj) {
     obj._parent_1 = $this;
   }
-  function Companion_58() {
-    Companion_instance_58 = this;
+  function Companion_60() {
+    Companion_instance_60 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     tmp.$cachedSerializer$delegate_1 = lazy(tmp_0, ZObject$Companion$_anonymous__s40r3q);
   }
-  protoOf(Companion_58).serializer_9w0wvi_k$ = function () {
+  protoOf(Companion_60).serializer_9w0wvi_k$ = function () {
     return _get_$cachedSerializer__te6jhj_6(this);
   };
-  protoOf(Companion_58).serializer_nv39qc_k$ = function (typeParamsSerializers) {
+  protoOf(Companion_60).serializer_nv39qc_k$ = function (typeParamsSerializers) {
     return this.serializer_9w0wvi_k$();
   };
-  var Companion_instance_58;
-  function Companion_getInstance_59() {
-    if (Companion_instance_58 == null)
-      new Companion_58();
-    return Companion_instance_58;
+  var Companion_instance_60;
+  function Companion_getInstance_61() {
+    if (Companion_instance_60 == null)
+      new Companion_60();
+    return Companion_instance_60;
   }
   function ZObject_init_$Init$(seen0, refId, name, transform, serializationConstructorMarker, $this) {
     if (0 === (seen0 & 1))
@@ -21947,7 +22062,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return $this;
   }
   function ZObject() {
-    Companion_getInstance_59();
+    Companion_getInstance_61();
     this.refId_1 = genRefId();
     this.name_1 = '';
     this.transform = new ZTransform();
@@ -22136,24 +22251,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         break;
     }
   }
-  function Companion_59() {
-    Companion_instance_59 = this;
+  function Companion_61() {
+    Companion_instance_61 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     tmp.$cachedSerializer$delegate_1 = lazy(tmp_0, ZObjectType$Companion$_anonymous__ryg9ic);
   }
-  protoOf(Companion_59).serializer_9w0wvi_k$ = function () {
+  protoOf(Companion_61).serializer_9w0wvi_k$ = function () {
     return _get_$cachedSerializer__te6jhj_7(this);
   };
-  protoOf(Companion_59).serializer_nv39qc_k$ = function (typeParamsSerializers) {
+  protoOf(Companion_61).serializer_nv39qc_k$ = function (typeParamsSerializers) {
     return this.serializer_9w0wvi_k$();
   };
-  var Companion_instance_59;
-  function Companion_getInstance_60() {
+  var Companion_instance_61;
+  function Companion_getInstance_62() {
     ZObjectType_initEntries();
-    if (Companion_instance_59 == null)
-      new Companion_59();
-    return Companion_instance_59;
+    if (Companion_instance_61 == null)
+      new Companion_61();
+    return Companion_instance_61;
   }
   var ZObjectType_entriesInitialized;
   function ZObjectType_initEntries() {
@@ -22166,7 +22281,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     ZObjectType_CAMERA_instance = new ZObjectType('CAMERA', 3);
     ZObjectType_SKELETON_instance = new ZObjectType('SKELETON', 4);
     ZObjectType_LIGHT_instance = new ZObjectType('LIGHT', 5);
-    Companion_getInstance_60();
+    Companion_getInstance_62();
   }
   function ZObjectType(name, ordinal) {
     Enum.call(this, name, ordinal);
@@ -22196,13 +22311,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZObjectType_LIGHT_instance;
   }
   function ZScene$Companion$$childSerializers$_anonymous__ye6a6g() {
-    return Companion_getInstance_60().serializer_9w0wvi_k$();
+    return Companion_getInstance_62().serializer_9w0wvi_k$();
   }
   function ZScene$Companion$$childSerializers$_anonymous__ye6a6g_0() {
     return Companion_instance_7.serializer_9w0wvi_k$();
   }
-  function Companion_60() {
-    Companion_instance_60 = this;
+  function Companion_62() {
+    Companion_instance_62 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     var tmp_1 = lazy(tmp_0, ZScene$Companion$$childSerializers$_anonymous__ye6a6g);
@@ -22212,24 +22327,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [null, null, null, tmp_1, lazy(tmp_2, ZScene$Companion$$childSerializers$_anonymous__ye6a6g_0)];
   }
-  protoOf(Companion_60).defaultScene = function () {
+  protoOf(Companion_62).defaultScene = function () {
     var scene = new ZScene();
     scene.name_1 = 'DefaultScene';
-    scene.addChild(Companion_getInstance_55().DefaultPerspectiveCamera);
-    scene.addChild(Companion_getInstance_57().DefaultAmbientLight);
+    scene.addChild(Companion_getInstance_57().DefaultPerspectiveCamera);
+    scene.addChild(Companion_getInstance_59().DefaultAmbientLight);
     return scene;
   };
-  protoOf(Companion_60).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_40();
+  protoOf(Companion_62).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_42();
   };
-  var Companion_instance_60;
-  function Companion_getInstance_61() {
-    if (Companion_instance_60 == null)
-      new Companion_60();
-    return Companion_instance_60;
+  var Companion_instance_62;
+  function Companion_getInstance_63() {
+    if (Companion_instance_62 == null)
+      new Companion_62();
+    return Companion_instance_62;
   }
-  function $serializer_40() {
-    $serializer_instance_40 = this;
+  function $serializer_42() {
+    $serializer_instance_42 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.objects.ZScene', this, 5);
     tmp0_serialDesc.addElement_5pzumi_k$('refId', true);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -22241,10 +22356,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.addElement_5pzumi_k$('viewport', true);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_40).serialize_1tkjux_k$ = function (encoder, value) {
+  protoOf($serializer_42).serialize_1tkjux_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_61().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_63().$childSerializers_1;
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !(value.refId === genRefId())) {
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.refId);
     }
@@ -22252,7 +22367,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 2) ? true : !equals(value.transform, new ZTransform())) {
-      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_32(), value.transform);
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_34(), value.transform);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3) ? true : !value.type_1.equals(ZObjectType_SCENE_getInstance())) {
       tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, tmp2_cached[3].get_value_j01efc_k$(), value.type_1);
@@ -22262,10 +22377,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_40).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_42).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_1tkjux_k$(encoder, value instanceof ZScene ? value : THROW_CCE());
   };
-  protoOf($serializer_40).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_42).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -22276,13 +22391,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp7_local3 = null;
     var tmp8_local4 = null;
     var tmp9_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp10_cached = Companion_getInstance_61().$childSerializers_1;
+    var tmp10_cached = Companion_getInstance_63().$childSerializers_1;
     if (tmp9_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp9_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
       tmp5_local1 = tmp9_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
-      tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+      tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
       tmp7_local3 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp10_cached[3].get_value_j01efc_k$(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
@@ -22304,7 +22419,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           case 2:
-            tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+            tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
@@ -22322,25 +22437,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp9_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZScene_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, null);
   };
-  protoOf($serializer_40).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_42).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_40).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_61().$childSerializers_1;
+  protoOf($serializer_42).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_63().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_32(), tmp0_cached[3].get_value_j01efc_k$(), tmp0_cached[4].get_value_j01efc_k$()];
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_34(), tmp0_cached[3].get_value_j01efc_k$(), tmp0_cached[4].get_value_j01efc_k$()];
   };
-  var $serializer_instance_40;
-  function $serializer_getInstance_40() {
-    if ($serializer_instance_40 == null)
-      new $serializer_40();
-    return $serializer_instance_40;
+  var $serializer_instance_42;
+  function $serializer_getInstance_42() {
+    if ($serializer_instance_42 == null)
+      new $serializer_42();
+    return $serializer_instance_42;
   }
   function ZScene_init_$Init$(seen0, refId, name, transform, type, viewport, serializationConstructorMarker, $this) {
     if (!(0 === (0 & seen0))) {
-      throwMissingFieldException(seen0, 0, $serializer_getInstance_40().descriptor_1);
+      throwMissingFieldException(seen0, 0, $serializer_getInstance_42().descriptor_1);
     }
     ZObject_init_$Init$(seen0, refId, name, transform, serializationConstructorMarker, $this);
     if (0 === (seen0 & 8))
@@ -22357,7 +22472,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZScene_init_$Init$(seen0, refId, name, transform, type, viewport, serializationConstructorMarker, objectCreate(protoOf(ZScene)));
   }
   function ZScene() {
-    Companion_getInstance_61();
+    Companion_getInstance_63();
     ZObject.call(this);
     this.type_1 = ZObjectType_SCENE_getInstance();
     this.viewport = init();
@@ -22384,13 +22499,50 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.viewport.dispose();
   };
   function ZSkeleton$Companion$$childSerializers$_anonymous__b9tlrx() {
-    return Companion_getInstance_60().serializer_9w0wvi_k$();
+    return Companion_getInstance_62().serializer_9w0wvi_k$();
   }
   function ZSkeleton$Companion$$childSerializers$_anonymous__b9tlrx_0() {
     return Companion_instance_33.serializer_9w0wvi_k$();
   }
-  function Companion_61() {
-    Companion_instance_61 = this;
+  function applyKeyFrameToBone($this, bone, keyFrame, parentWorldPose) {
+    var boneTransform = keyFrame.getBoneTransform(bone.id);
+    var merged = initWithArgs_4(bone.transform.position, bone.transform.rotation, bone.transform.scale);
+    if (!(boneTransform == null)) {
+      var tmp0_safe_receiver = boneTransform.position;
+      if (tmp0_safe_receiver == null)
+        null;
+      else {
+        // Inline function 'kotlin.let' call
+        merged.set_position_93de32_k$(tmp0_safe_receiver);
+      }
+      var tmp1_safe_receiver = boneTransform.rotation;
+      if (tmp1_safe_receiver == null)
+        null;
+      else {
+        // Inline function 'kotlin.let' call
+        merged.set_rotation_uwstg3_k$(tmp1_safe_receiver);
+      }
+      var tmp2_safe_receiver = boneTransform.scale;
+      if (tmp2_safe_receiver == null)
+        null;
+      else {
+        // Inline function 'kotlin.let' call
+        merged.set_scale_e8k661_k$(tmp2_safe_receiver);
+      }
+    }
+    var localPoseMat = merged.matrix;
+    Op_instance_0.mult(bone.poseMatrix, parentWorldPose, localPoseMat);
+    var indexedObject = bone.children;
+    var inductionVariable = 0;
+    var last = indexedObject.length;
+    while (inductionVariable < last) {
+      var child = indexedObject[inductionVariable];
+      inductionVariable = inductionVariable + 1 | 0;
+      applyKeyFrameToBone($this, child, keyFrame, bone.poseMatrix);
+    }
+  }
+  function Companion_63() {
+    Companion_instance_63 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     var tmp_1 = lazy(tmp_0, ZSkeleton$Companion$$childSerializers$_anonymous__b9tlrx);
@@ -22400,14 +22552,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [null, null, null, tmp_1, lazy(tmp_2, ZSkeleton$Companion$$childSerializers$_anonymous__b9tlrx_0)];
   }
-  var Companion_instance_61;
-  function Companion_getInstance_62() {
-    if (Companion_instance_61 == null)
-      new Companion_61();
-    return Companion_instance_61;
+  var Companion_instance_63;
+  function Companion_getInstance_64() {
+    if (Companion_instance_63 == null)
+      new Companion_63();
+    return Companion_instance_63;
   }
-  function $serializer_41() {
-    $serializer_instance_41 = this;
+  function $serializer_43() {
+    $serializer_instance_43 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.objects.ZSkeleton', this, 5);
     tmp0_serialDesc.addElement_5pzumi_k$('refId', true);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -22420,10 +22572,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(101));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_41).serialize_gj7tro_k$ = function (encoder, value) {
+  protoOf($serializer_43).serialize_gj7tro_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_62().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_64().$childSerializers_1;
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 0) ? true : !(value.refId === genRefId())) {
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.refId);
     }
@@ -22431,7 +22583,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.name);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 2) ? true : !equals(value.transform, new ZTransform())) {
-      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_32(), value.transform);
+      tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 2, $serializer_getInstance_34(), value.transform);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3) ? true : !value.type_1.equals(ZObjectType_SKELETON_getInstance())) {
       tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 3, tmp2_cached[3].get_value_j01efc_k$(), value.type_1);
@@ -22441,10 +22593,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_41).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_43).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_gj7tro_k$(encoder, value instanceof ZSkeleton ? value : THROW_CCE());
   };
-  protoOf($serializer_41).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_43).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -22455,13 +22607,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp7_local3 = null;
     var tmp8_local4 = null;
     var tmp9_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp10_cached = Companion_getInstance_62().$childSerializers_1;
+    var tmp10_cached = Companion_getInstance_64().$childSerializers_1;
     if (tmp9_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp9_input.decodeStringElement_3oenpg_k$(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
       tmp5_local1 = tmp9_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
-      tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+      tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
       tmp7_local3 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 3, tmp10_cached[3].get_value_j01efc_k$(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
@@ -22483,7 +22635,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           case 2:
-            tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_32(), tmp6_local2);
+            tmp6_local2 = tmp9_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 2, $serializer_getInstance_34(), tmp6_local2);
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
@@ -22501,25 +22653,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp9_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZSkeleton_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, tmp8_local4, null);
   };
-  protoOf($serializer_41).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_43).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_41).childSerializers_5ghqw5_k$ = function () {
-    var tmp0_cached = Companion_getInstance_62().$childSerializers_1;
+  protoOf($serializer_43).childSerializers_5ghqw5_k$ = function () {
+    var tmp0_cached = Companion_getInstance_64().$childSerializers_1;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_32(), tmp0_cached[3].get_value_j01efc_k$(), tmp0_cached[4].get_value_j01efc_k$()];
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), $serializer_getInstance_34(), tmp0_cached[3].get_value_j01efc_k$(), tmp0_cached[4].get_value_j01efc_k$()];
   };
-  var $serializer_instance_41;
-  function $serializer_getInstance_41() {
-    if ($serializer_instance_41 == null)
-      new $serializer_41();
-    return $serializer_instance_41;
+  var $serializer_instance_43;
+  function $serializer_getInstance_43() {
+    if ($serializer_instance_43 == null)
+      new $serializer_43();
+    return $serializer_instance_43;
   }
   function ZSkeleton_init_$Init$(seen0, refId, name, transform, type, root, serializationConstructorMarker, $this) {
     if (!(0 === (0 & seen0))) {
-      throwMissingFieldException(seen0, 0, $serializer_getInstance_41().descriptor_1);
+      throwMissingFieldException(seen0, 0, $serializer_getInstance_43().descriptor_1);
     }
     ZObject_init_$Init$(seen0, refId, name, transform, serializationConstructorMarker, $this);
     if (0 === (seen0 & 8))
@@ -22541,7 +22693,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function ZSkeleton() {
-    Companion_getInstance_62();
+    Companion_getInstance_64();
     ZObject.call(this);
     this.type_1 = ZObjectType_SKELETON_getInstance();
     this.root = init_12();
@@ -22564,6 +22716,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp = this.root;
     return findInTree(tmp, ZSkeleton$findBoneByName$lambda(name));
   };
+  protoOf(ZSkeleton).applyKeyFrame_jrbc7r_k$ = function (keyFrame, parentWorldPose) {
+    applyKeyFrameToBone(this, this.root, keyFrame, parentWorldPose);
+  };
+  protoOf(ZSkeleton).applyKeyFrame = function (keyFrame, parentWorldPose, $super) {
+    parentWorldPose = parentWorldPose === VOID ? Op_instance_0.Identity : parentWorldPose;
+    var tmp;
+    if ($super === VOID) {
+      this.applyKeyFrame_jrbc7r_k$(keyFrame, parentWorldPose);
+      tmp = Unit_instance;
+    } else {
+      tmp = $super.applyKeyFrame_jrbc7r_k$.call(this, keyFrame, parentWorldPose);
+    }
+    return tmp;
+  };
   protoOf(ZSkeleton).internalInitialize = function (ctx) {
     this.root.initialize(ctx.renderingContext);
   };
@@ -22571,17 +22737,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(ZSkeleton).internalDispose = function (ctx) {
   };
-  function Companion_62() {
+  function Companion_64() {
   }
-  protoOf(Companion_62).serializer_9w0wvi_k$ = function () {
-    return $serializer_getInstance_42();
+  protoOf(Companion_64).serializer_9w0wvi_k$ = function () {
+    return $serializer_getInstance_44();
   };
-  var Companion_instance_62;
-  function Companion_getInstance_63() {
-    return Companion_instance_62;
+  var Companion_instance_64;
+  function Companion_getInstance_65() {
+    return Companion_instance_64;
   }
-  function $serializer_42() {
-    $serializer_instance_42 = this;
+  function $serializer_44() {
+    $serializer_instance_44 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.objects.ZSkeletonProtoRef', this, 4);
     tmp0_serialDesc.addElement_5pzumi_k$('type', false);
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(1));
@@ -22593,7 +22759,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp0_serialDesc.pushAnnotation_fm15ho_k$(new ProtoNumber(100));
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_42).serialize_dd748x_k$ = function (encoder, value) {
+  protoOf($serializer_44).serialize_dd748x_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 0, value.type_1);
@@ -22604,14 +22770,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp1_output.encodeBooleanElement_ydht7q_k$(tmp0_desc, 2, value.isReference_1);
     }
     if (tmp1_output.shouldEncodeElementDefault_x8eyid_k$(tmp0_desc, 3) ? true : !(value.data_1 == null)) {
-      tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 3, $serializer_getInstance_41(), value.data_1);
+      tmp1_output.encodeNullableSerializableElement_5lquiv_k$(tmp0_desc, 3, $serializer_getInstance_43(), value.data_1);
     }
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_42).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_44).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_dd748x_k$(encoder, value instanceof ZSkeletonProtoRef ? value : THROW_CCE());
   };
-  protoOf($serializer_42).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_44).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -22628,7 +22794,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
       tmp6_local2 = tmp8_input.decodeBooleanElement_vuyhtj_k$(tmp0_desc, 2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
-      tmp7_local3 = tmp8_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_41(), tmp7_local3);
+      tmp7_local3 = tmp8_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_43(), tmp7_local3);
       tmp3_bitMask0 = tmp3_bitMask0 | 8;
     } else
       while (tmp1_flag) {
@@ -22650,7 +22816,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
             break;
           case 3:
-            tmp7_local3 = tmp8_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_41(), tmp7_local3);
+            tmp7_local3 = tmp8_input.decodeNullableSerializableElement_k2y6ab_k$(tmp0_desc, 3, $serializer_getInstance_43(), tmp7_local3);
             tmp3_bitMask0 = tmp3_bitMask0 | 8;
             break;
           default:
@@ -22660,24 +22826,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp8_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZSkeletonProtoRef_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  protoOf($serializer_42).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_44).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_42).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_44).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [StringSerializer_getInstance(), StringSerializer_getInstance(), BooleanSerializer_getInstance(), get_nullable($serializer_getInstance_41())];
+    return [StringSerializer_getInstance(), StringSerializer_getInstance(), BooleanSerializer_getInstance(), get_nullable($serializer_getInstance_43())];
   };
-  var $serializer_instance_42;
-  function $serializer_getInstance_42() {
-    if ($serializer_instance_42 == null)
-      new $serializer_42();
-    return $serializer_instance_42;
+  var $serializer_instance_44;
+  function $serializer_getInstance_44() {
+    if ($serializer_instance_44 == null)
+      new $serializer_44();
+    return $serializer_instance_44;
   }
   function ZSkeletonProtoRef_init_$Init$(seen0, type, refId, isReference, data, serializationConstructorMarker, $this) {
     if (!(1 === (1 & seen0))) {
-      throwMissingFieldException(seen0, 1, $serializer_getInstance_42().descriptor_1);
+      throwMissingFieldException(seen0, 1, $serializer_getInstance_44().descriptor_1);
     }
     $this.type_1 = type;
     if (0 === (seen0 & 2))
@@ -22728,7 +22894,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.loaderContext_1 = loaderContext;
   }
   protoOf(ZSkeletonSerializer).get_descriptor_wjt6a0_k$ = function () {
-    return Companion_instance_62.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
+    return Companion_instance_64.serializer_9w0wvi_k$().get_descriptor_wjt6a0_k$();
   };
   protoOf(ZSkeletonSerializer).serialize_gj7tro_k$ = function (encoder, value) {
     // Inline function 'kotlin.TODO' call
@@ -22739,7 +22905,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return this.serialize_gj7tro_k$(encoder, value instanceof ZSkeleton ? value : THROW_CCE());
   };
   protoOf(ZSkeletonSerializer).deserialize_sy6x50_k$ = function (decoder) {
-    var data = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_62.serializer_9w0wvi_k$());
+    var data = decoder.decodeSerializableValue_xpnpad_k$(Companion_instance_64.serializer_9w0wvi_k$());
     var tmp;
     if (data.isReference_1) {
       var tmp_0 = this.loaderContext_1.getComponent_rvxp77_k$(data.refId_1);
@@ -22751,12 +22917,96 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     return tmp;
   };
+  function ZRendererBase$renderViewports$lambda(this$0) {
+    return function () {
+      this$0.configureRenderState_6v6scb_k$();
+      this$0.renderScene_p3co92_k$();
+      return Unit_instance;
+    };
+  }
   function ZRendererBase(ctx) {
     this.ctx_1 = ctx;
   }
+  protoOf(ZRendererBase).initialize_o9rygw_k$ = function () {
+    var scene = this.ctx_1.sceneContext.scene;
+    if (scene == null)
+      null;
+    else {
+      scene.initialize(this.ctx_1);
+    }
+  };
   protoOf(ZRendererBase).update_7s7093_k$ = function () {
     if (!this.ctx_1.eventQueue.isEmpty) {
       this.ctx_1.eventQueue.processAll();
+    }
+  };
+  protoOf(ZRendererBase).createGpuFrame_3lkwjn_k$ = function () {
+    return null;
+  };
+  protoOf(ZRendererBase).renderFrame_lmboo7_k$ = function () {
+    var gpuFrame = this.createGpuFrame_3lkwjn_k$();
+    if (gpuFrame == null) {
+      this.renderScene_p3co92_k$();
+      return Unit_instance;
+    }
+    if (!gpuFrame.begin_1jqisp_k$())
+      return Unit_instance;
+    try {
+      var tmp0_elvis_lhs = gpuFrame.beginRecording_s1tv0o_k$();
+      var tmp;
+      if (tmp0_elvis_lhs == null) {
+        return Unit_instance;
+      } else {
+        tmp = tmp0_elvis_lhs;
+      }
+      var encoder = tmp;
+      this.renderViewports_5l7u72_k$(encoder);
+      encoder.finish_mh2air_k$();
+      gpuFrame.submit_ahy0u5_k$(encoder);
+    }finally {
+      gpuFrame.end_kqfg1h_k$();
+    }
+  };
+  protoOf(ZRendererBase).renderViewports_5l7u72_k$ = function (encoder) {
+    var tmp0_safe_receiver = this.ctx_1.scene;
+    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.viewport;
+    var tmp;
+    if (tmp1_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp = tmp1_elvis_lhs;
+    }
+    var viewport = tmp;
+    var tmp2_elvis_lhs = viewport.buildRenderPassDescriptor();
+    var tmp_0;
+    if (tmp2_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp_0 = tmp2_elvis_lhs;
+    }
+    var desc = tmp_0;
+    var tmp3_elvis_lhs = encoder.beginRenderPass_5ndist_k$(desc);
+    var tmp_1;
+    if (tmp3_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp_1 = tmp3_elvis_lhs;
+    }
+    var pass = tmp_1;
+    try {
+      this.ctx_1.renderingContext.withActivePass(pass, ZRendererBase$renderViewports$lambda(this));
+    }finally {
+      pass.end_kqfg1h_k$();
+    }
+  };
+  protoOf(ZRendererBase).configureRenderState_6v6scb_k$ = function () {
+  };
+  protoOf(ZRendererBase).renderScene_p3co92_k$ = function () {
+    var tmp0_safe_receiver = this.ctx_1.scene;
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.render(this.ctx_1);
     }
   };
   var InitState_NOT_STARTED_instance;
@@ -23047,54 +23297,43 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp$ret$2 = [adapter];
     tmp.adapters = tmp$ret$1.concat(tmp$ret$2);
   };
-  function Companion_63() {
-    Companion_instance_63 = this;
-    this.instance_1 = new ZSettings();
-  }
-  protoOf(Companion_63).getInstance = function () {
-    return this.instance_1;
-  };
-  var Companion_instance_63;
-  function Companion_getInstance_64() {
-    if (Companion_instance_63 == null)
-      new Companion_63();
-    return Companion_instance_63;
-  }
   function ZLoggerSettings$_get_logLevel_$ref_7msk41(p0) {
-    return function () {
+    return constructCallableReference(function () {
       return p0.logLevel;
-    };
+    }, 0, 0, 273, VOID, [p0]);
   }
   function ZLoggerSettings$_set_logLevel_$ref_7wy6g3(p0) {
-    return function (_this__u8e3s4) {
-      p0.logLevel = _this__u8e3s4;
+    return constructCallableReference(function (p0_0) {
+      p0.logLevel = p0_0;
       return Unit_instance;
-    };
+    }, 1, 0, 274, VOID, [p0]);
+  }
+  function Companion_65() {
+    Companion_instance_65 = this;
+    this.instance_1 = new ZSettings();
+  }
+  protoOf(Companion_65).getInstance = function () {
+    return this.instance_1;
+  };
+  var Companion_instance_65;
+  function Companion_getInstance_66() {
+    if (Companion_instance_65 == null)
+      new Companion_65();
+    return Companion_instance_65;
   }
   function ZSettings$_get_logLevel_$ref_oxphbz() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.logLevel;
-    };
+    }, 1, 0, 275);
   }
   function ZSettings$_set_logLevel_$ref_ujnu31() {
-    return function (p0, p1) {
+    return constructCallableReference(function (p0, p1) {
       p0.set_logLevel_l8vgpw_k$(p1);
       return Unit_instance;
-    };
-  }
-  function ZSettings$_get_logLevel_$ref_oxphbz_0() {
-    return function (p0) {
-      return p0.logLevel;
-    };
-  }
-  function ZSettings$_set_logLevel_$ref_ujnu31_0() {
-    return function (p0, p1) {
-      p0.set_logLevel_l8vgpw_k$(p1);
-      return Unit_instance;
-    };
+    }, 2, 0, 276);
   }
   function ZSettings() {
-    Companion_getInstance_64();
+    Companion_getInstance_66();
     this.loggerSettings = new ZLoggerSettings();
     var tmp = this;
     var tmp0 = this.loggerSettings;
@@ -23108,9 +23347,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZSettings).set_logLevel_l8vgpw_k$ = function (_set____db54di) {
     var tmp0 = this.logLevel$delegate_1;
     var tmp = KMutableProperty1;
-    var tmp_0 = ZSettings$_get_logLevel_$ref_oxphbz_0();
+    var tmp_0 = ZSettings$_get_logLevel_$ref_oxphbz();
     // Inline function 'kotlin.setValue' call
-    getPropertyCallableRef('logLevel', 1, tmp, tmp_0, ZSettings$_set_logLevel_$ref_ujnu31_0());
+    getPropertyCallableRef('logLevel', 1, tmp, tmp_0, ZSettings$_set_logLevel_$ref_ujnu31());
     tmp0.set(_set____db54di);
     return Unit_instance;
   };
@@ -23148,24 +23387,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         break;
     }
   }
-  function Companion_64() {
-    Companion_instance_64 = this;
+  function Companion_66() {
+    Companion_instance_66 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     tmp.$cachedSerializer$delegate_1 = lazy(tmp_0, ZPlatformName$Companion$_anonymous__ljf2ax);
   }
-  protoOf(Companion_64).serializer_9w0wvi_k$ = function () {
+  protoOf(Companion_66).serializer_9w0wvi_k$ = function () {
     return _get_$cachedSerializer__te6jhj_8(this);
   };
-  protoOf(Companion_64).serializer_nv39qc_k$ = function (typeParamsSerializers) {
+  protoOf(Companion_66).serializer_nv39qc_k$ = function (typeParamsSerializers) {
     return this.serializer_9w0wvi_k$();
   };
-  var Companion_instance_64;
-  function Companion_getInstance_65() {
+  var Companion_instance_66;
+  function Companion_getInstance_67() {
     ZPlatformName_initEntries();
-    if (Companion_instance_64 == null)
-      new Companion_64();
-    return Companion_instance_64;
+    if (Companion_instance_66 == null)
+      new Companion_66();
+    return Companion_instance_66;
   }
   var ZPlatformName_entriesInitialized;
   function ZPlatformName_initEntries() {
@@ -23175,16 +23414,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     ZPlatformName_ANDROID_instance = new ZPlatformName('ANDROID', 0);
     ZPlatformName_IOS_instance = new ZPlatformName('IOS', 1);
     ZPlatformName_WEB_instance = new ZPlatformName('WEB', 2);
-    Companion_getInstance_65();
+    Companion_getInstance_67();
   }
   function ZPlatformName(name, ordinal) {
     Enum.call(this, name, ordinal);
   }
   function ZPlatformInfo$Companion$$childSerializers$_anonymous__7fhxxr() {
-    return Companion_getInstance_65().serializer_9w0wvi_k$();
+    return Companion_getInstance_67().serializer_9w0wvi_k$();
   }
-  function Companion_65() {
-    Companion_instance_65 = this;
+  function Companion_67() {
+    Companion_instance_67 = this;
     var tmp = this;
     var tmp_0 = LazyThreadSafetyMode_PUBLICATION_getInstance();
     // Inline function 'kotlin.arrayOf' call
@@ -23192,31 +23431,31 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     tmp.$childSerializers_1 = [lazy(tmp_0, ZPlatformInfo$Companion$$childSerializers$_anonymous__7fhxxr), null];
   }
-  var Companion_instance_65;
-  function Companion_getInstance_66() {
-    if (Companion_instance_65 == null)
-      new Companion_65();
-    return Companion_instance_65;
+  var Companion_instance_67;
+  function Companion_getInstance_68() {
+    if (Companion_instance_67 == null)
+      new Companion_67();
+    return Companion_instance_67;
   }
-  function $serializer_43() {
-    $serializer_instance_43 = this;
+  function $serializer_45() {
+    $serializer_instance_45 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.stats.ZPlatformInfo', this, 2);
     tmp0_serialDesc.addElement_5pzumi_k$('name', false);
     tmp0_serialDesc.addElement_5pzumi_k$('version', false);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_43).serialize_ugmwb7_k$ = function (encoder, value) {
+  protoOf($serializer_45).serialize_ugmwb7_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp2_cached = Companion_getInstance_66().$childSerializers_1;
+    var tmp2_cached = Companion_getInstance_68().$childSerializers_1;
     tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, tmp2_cached[0].get_value_j01efc_k$(), value.name);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.version);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_43).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_45).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_ugmwb7_k$(encoder, value instanceof ZPlatformInfo ? value : THROW_CCE());
   };
-  protoOf($serializer_43).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_45).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -23224,7 +23463,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp4_local0 = null;
     var tmp5_local1 = null;
     var tmp6_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
-    var tmp7_cached = Companion_getInstance_66().$childSerializers_1;
+    var tmp7_cached = Companion_getInstance_68().$childSerializers_1;
     if (tmp6_input.decodeSequentially_xlblqy_k$()) {
       tmp4_local0 = tmp6_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, tmp7_cached[0].get_value_j01efc_k$(), tmp4_local0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
@@ -23252,24 +23491,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp6_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZPlatformInfo_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, null);
   };
-  protoOf($serializer_43).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_45).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_43).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_45).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [Companion_getInstance_66().$childSerializers_1[0].get_value_j01efc_k$(), StringSerializer_getInstance()];
+    return [Companion_getInstance_68().$childSerializers_1[0].get_value_j01efc_k$(), StringSerializer_getInstance()];
   };
-  var $serializer_instance_43;
-  function $serializer_getInstance_43() {
-    if ($serializer_instance_43 == null)
-      new $serializer_43();
-    return $serializer_instance_43;
+  var $serializer_instance_45;
+  function $serializer_getInstance_45() {
+    if ($serializer_instance_45 == null)
+      new $serializer_45();
+    return $serializer_instance_45;
   }
   function ZPlatformInfo_init_$Init$(seen0, name, version, serializationConstructorMarker, $this) {
     if (!(3 === (3 & seen0))) {
-      throwMissingFieldException(seen0, 3, $serializer_getInstance_43().descriptor_1);
+      throwMissingFieldException(seen0, 3, $serializer_getInstance_45().descriptor_1);
     }
     $this.name = name;
     $this.version = version;
@@ -23279,7 +23518,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return ZPlatformInfo_init_$Init$(seen0, name, version, serializationConstructorMarker, objectCreate(protoOf(ZPlatformInfo)));
   }
   function ZPlatformInfo(name, version) {
-    Companion_getInstance_66();
+    Companion_getInstance_68();
     this.name = name;
     this.version = version;
   }
@@ -23322,32 +23561,32 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return false;
     return true;
   };
-  function Companion_66() {
+  function Companion_68() {
   }
-  var Companion_instance_66;
-  function Companion_getInstance_67() {
-    return Companion_instance_66;
+  var Companion_instance_68;
+  function Companion_getInstance_69() {
+    return Companion_instance_68;
   }
-  function $serializer_44() {
-    $serializer_instance_44 = this;
+  function $serializer_46() {
+    $serializer_instance_46 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.stats.ZStats', this, 3);
     tmp0_serialDesc.addElement_5pzumi_k$('platform', false);
     tmp0_serialDesc.addElement_5pzumi_k$('version', false);
     tmp0_serialDesc.addElement_5pzumi_k$('zkoVersion', false);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_44).serialize_rj42ux_k$ = function (encoder, value) {
+  protoOf($serializer_46).serialize_rj42ux_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
-    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, $serializer_getInstance_43(), value.platform);
+    tmp1_output.encodeSerializableElement_isqxcl_k$(tmp0_desc, 0, $serializer_getInstance_45(), value.platform);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 1, value.version);
     tmp1_output.encodeStringElement_1n5wu2_k$(tmp0_desc, 2, value.zkoVersion);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_44).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_46).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_rj42ux_k$(encoder, value instanceof ZStats ? value : THROW_CCE());
   };
-  protoOf($serializer_44).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_46).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -23357,7 +23596,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp6_local2 = null;
     var tmp7_input = decoder.beginStructure_yljocp_k$(tmp0_desc);
     if (tmp7_input.decodeSequentially_xlblqy_k$()) {
-      tmp4_local0 = tmp7_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, $serializer_getInstance_43(), tmp4_local0);
+      tmp4_local0 = tmp7_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, $serializer_getInstance_45(), tmp4_local0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
       tmp5_local1 = tmp7_input.decodeStringElement_3oenpg_k$(tmp0_desc, 1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
@@ -23371,7 +23610,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp1_flag = false;
             break;
           case 0:
-            tmp4_local0 = tmp7_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, $serializer_getInstance_43(), tmp4_local0);
+            tmp4_local0 = tmp7_input.decodeSerializableElement_uahnnv_k$(tmp0_desc, 0, $serializer_getInstance_45(), tmp4_local0);
             tmp3_bitMask0 = tmp3_bitMask0 | 1;
             break;
           case 1:
@@ -23389,30 +23628,30 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp7_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZStats_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, null);
   };
-  protoOf($serializer_44).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_46).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_44).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_46).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return [$serializer_getInstance_43(), StringSerializer_getInstance(), StringSerializer_getInstance()];
+    return [$serializer_getInstance_45(), StringSerializer_getInstance(), StringSerializer_getInstance()];
   };
-  var $serializer_instance_44;
-  function $serializer_getInstance_44() {
-    if ($serializer_instance_44 == null)
-      new $serializer_44();
-    return $serializer_instance_44;
+  var $serializer_instance_46;
+  function $serializer_getInstance_46() {
+    if ($serializer_instance_46 == null)
+      new $serializer_46();
+    return $serializer_instance_46;
   }
   function ZStats_init_$Init$(seen0, platform, version, zkoVersion, serializationConstructorMarker, $this) {
     if (!(7 === (7 & seen0))) {
-      throwMissingFieldException(seen0, 7, $serializer_getInstance_44().descriptor_1);
+      throwMissingFieldException(seen0, 7, $serializer_getInstance_46().descriptor_1);
     }
     $this.platform = platform;
     $this.version = version;
     $this.zkoVersion = zkoVersion;
     $this.platform = getZPlatformInfo();
-    $this.version = '0.9.0';
+    $this.version = '0.10.1';
     $this.zkoVersion = '0.16.0';
     return $this;
   }
@@ -23421,7 +23660,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function ZStats() {
     this.platform = getZPlatformInfo();
-    this.version = '0.9.0';
+    this.version = '0.10.1';
     this.zkoVersion = '0.16.0';
   }
   protoOf(ZStats).get_platform_ssr7o_k$ = function () {
@@ -23462,9 +23701,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function ZSurfaceViewEventHandler() {
   }
-  function Companion_67() {
+  function Companion_69() {
   }
-  protoOf(Companion_67).parse_pc1q8p_k$ = function (version) {
+  protoOf(Companion_69).parse_pc1q8p_k$ = function (version) {
     var parts = split(version, ['.']);
     // Inline function 'kotlin.require' call
     if (!(parts.get_size_woubt6_k$() === 3)) {
@@ -23485,19 +23724,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     return tmp;
   };
-  var Companion_instance_67;
-  function Companion_getInstance_68() {
-    return Companion_instance_67;
+  var Companion_instance_69;
+  function Companion_getInstance_70() {
+    return Companion_instance_69;
   }
-  function $serializer_45() {
-    $serializer_instance_45 = this;
+  function $serializer_47() {
+    $serializer_instance_47 = this;
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('zernikalos.utils.ZSemVer', this, 3);
     tmp0_serialDesc.addElement_5pzumi_k$('major', false);
     tmp0_serialDesc.addElement_5pzumi_k$('minor', false);
     tmp0_serialDesc.addElement_5pzumi_k$('patch', false);
     this.descriptor_1 = tmp0_serialDesc;
   }
-  protoOf($serializer_45).serialize_vab2lw_k$ = function (encoder, value) {
+  protoOf($serializer_47).serialize_vab2lw_k$ = function (encoder, value) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_output = encoder.beginStructure_yljocp_k$(tmp0_desc);
     tmp1_output.encodeIntElement_krhhce_k$(tmp0_desc, 0, value.major_1);
@@ -23505,10 +23744,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp1_output.encodeIntElement_krhhce_k$(tmp0_desc, 2, value.patch_1);
     tmp1_output.endStructure_1xqz0n_k$(tmp0_desc);
   };
-  protoOf($serializer_45).serialize_5ase3y_k$ = function (encoder, value) {
+  protoOf($serializer_47).serialize_5ase3y_k$ = function (encoder, value) {
     return this.serialize_vab2lw_k$(encoder, value instanceof ZSemVer ? value : THROW_CCE());
   };
-  protoOf($serializer_45).deserialize_sy6x50_k$ = function (decoder) {
+  protoOf($serializer_47).deserialize_sy6x50_k$ = function (decoder) {
     var tmp0_desc = this.descriptor_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
@@ -23550,24 +23789,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp7_input.endStructure_1xqz0n_k$(tmp0_desc);
     return ZSemVer_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, null);
   };
-  protoOf($serializer_45).get_descriptor_wjt6a0_k$ = function () {
+  protoOf($serializer_47).get_descriptor_wjt6a0_k$ = function () {
     return this.descriptor_1;
   };
-  protoOf($serializer_45).childSerializers_5ghqw5_k$ = function () {
+  protoOf($serializer_47).childSerializers_5ghqw5_k$ = function () {
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return [IntSerializer_getInstance(), IntSerializer_getInstance(), IntSerializer_getInstance()];
   };
-  var $serializer_instance_45;
-  function $serializer_getInstance_45() {
-    if ($serializer_instance_45 == null)
-      new $serializer_45();
-    return $serializer_instance_45;
+  var $serializer_instance_47;
+  function $serializer_getInstance_47() {
+    if ($serializer_instance_47 == null)
+      new $serializer_47();
+    return $serializer_instance_47;
   }
   function ZSemVer_init_$Init$(seen0, major, minor, patch, serializationConstructorMarker, $this) {
     if (!(7 === (7 & seen0))) {
-      throwMissingFieldException(seen0, 7, $serializer_getInstance_45().descriptor_1);
+      throwMissingFieldException(seen0, 7, $serializer_getInstance_47().descriptor_1);
     }
     $this.major_1 = major;
     $this.minor_1 = minor;
@@ -23631,6 +23870,30 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         byteArray[baseIndex + 1 | 0] = toByte(intBits >> 16 & 255);
         byteArray[baseIndex + 2 | 0] = toByte(intBits >> 8 & 255);
         byteArray[baseIndex + 3 | 0] = toByte(intBits & 255);
+      }
+    }
+    return byteArray;
+  }
+  function toByteArray_0(_this__u8e3s4, littleEndian) {
+    littleEndian = littleEndian === VOID ? true : littleEndian;
+    var byteArray = new Int8Array(imul(_this__u8e3s4.length, 2));
+    // Inline function 'kotlin.collections.forEachIndexed' call
+    var index = 0;
+    var inductionVariable = 0;
+    var last = _this__u8e3s4.length;
+    while (inductionVariable < last) {
+      var item = _this__u8e3s4[inductionVariable];
+      inductionVariable = inductionVariable + 1 | 0;
+      var _unary__edvuaz = index;
+      index = _unary__edvuaz + 1 | 0;
+      var intBits = item;
+      var baseIndex = imul(_unary__edvuaz, 2);
+      if (littleEndian) {
+        byteArray[baseIndex + 0 | 0] = toByte(intBits & 255);
+        byteArray[baseIndex + 1 | 0] = toByte(intBits >> 8 & 255);
+      } else {
+        byteArray[baseIndex + 0 | 0] = toByte(intBits >> 8 & 255);
+        byteArray[baseIndex + 1 | 0] = toByte(intBits & 255);
       }
     }
     return byteArray;
@@ -23819,36 +24082,33 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     if (height === 0) {
       height = 100;
     }
-    $this.depthTexture_1 = $this.ctx.get_device_cbv3of_k$().createTexture_k7h8qt_k$((new GPUTextureDescriptor(new GPUExtent3D(width, height), 'depth24plus', GPUTextureUsage.RENDER_ATTACHMENT)).toGpu_1tsjsh_k$());
-  }
-  function createRenderPassDescriptor($this) {
-    var tmp = $this.ctx;
-    if (!(tmp instanceof ZWebGPURenderingContext))
-      THROW_CCE();
-    if ($this.data_1.viewBox_1.width <= 0 || $this.data_1.viewBox_1.height <= 0) {
-      $this.renderPassDescriptor_1 = null;
-      return Unit_instance;
+    var tmp0_safe_receiver = $this.depthTexture_1;
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.destroy();
     }
-    var tmp0_safe_receiver = $this.ctx.webGPUContext_1;
-    var tmp1_safe_receiver = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.getCurrentTexture();
-    var textureView = tmp1_safe_receiver == null ? null : tmp1_safe_receiver.createView();
-    var tmp2_safe_receiver = $this.depthTexture_1;
-    var depthView = tmp2_safe_receiver == null ? null : tmp2_safe_receiver.createView();
-    var clearColor = $this.data_1.clearColor_1;
-    var colorAttachment = new GPURenderPassColorAttachment(ensureNotNull(textureView), 'clear', 'store', new GPUColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a));
-    var depthAttachment = new GPURenderPassDepthStencilAttachment(ensureNotNull(depthView), 'clear', 'store', 1.0);
-    var tmp_0 = $this;
-    // Inline function 'kotlin.arrayOf' call
-    // Inline function 'kotlin.js.unsafeCast' call
-    // Inline function 'kotlin.js.asDynamic' call
-    var tmp$ret$0 = [colorAttachment];
-    tmp_0.renderPassDescriptor_1 = new GPURenderPassDescriptor(tmp$ret$0, depthAttachment);
+    $this.depthTexture_1 = $this.ctx.get_device_cbv3of_k$().createTexture_k7h8qt_k$((new GPUTextureDescriptor(new GPUExtent3D(width, height), 'depth24plus', GPUTextureUsage.RENDER_ATTACHMENT)).toGpu_1tsjsh_k$());
+    invalidateDescriptorCache($this);
+  }
+  function invalidateDescriptorCache($this) {
+    $this.lastSwapchainTexture_1 = null;
+    $this.lastBuiltWidth_1 = -1;
+    $this.lastBuiltHeight_1 = -1;
+    $this.colorAttachment_1 = null;
+    $this.depthAttachment_1 = null;
+    $this.cachedPassDescriptor_1 = null;
   }
   function ZViewportRenderer(ctx, data) {
     ZComponentRenderer.call(this, ctx);
     this.data_1 = data;
     this.depthTexture_1 = null;
-    this.renderPassDescriptor_1 = null;
+    this.cachedPassDescriptor_1 = null;
+    this.colorAttachment_1 = null;
+    this.depthAttachment_1 = null;
+    this.lastSwapchainTexture_1 = null;
+    this.lastBuiltWidth_1 = -1;
+    this.lastBuiltHeight_1 = -1;
   }
   protoOf(ZViewportRenderer).initialize = function () {
     var tmp = this.ctx;
@@ -23856,11 +24116,75 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       THROW_CCE();
     createDepthTexture(this);
   };
-  protoOf(ZViewportRenderer).render = function () {
+  protoOf(ZViewportRenderer).buildRenderPassDescriptor_f1nkyk_k$ = function () {
     var tmp = this.ctx;
     if (!(tmp instanceof ZWebGPURenderingContext))
       THROW_CCE();
-    createRenderPassDescriptor(this);
+    if (this.data_1.viewBox_1.width <= 0 || this.data_1.viewBox_1.height <= 0) {
+      this.cachedPassDescriptor_1 = null;
+      return null;
+    }
+    var tmp0_safe_receiver = this.ctx.webGPUContext_1;
+    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.getCurrentTexture();
+    var tmp_0;
+    if (tmp1_elvis_lhs == null) {
+      // Inline function 'kotlin.run' call
+      this.cachedPassDescriptor_1 = null;
+      return null;
+    } else {
+      tmp_0 = tmp1_elvis_lhs;
+    }
+    var swapchainTexture = tmp_0;
+    var tmp2_safe_receiver = this.depthTexture_1;
+    var tmp3_elvis_lhs = tmp2_safe_receiver == null ? null : tmp2_safe_receiver.createView();
+    var tmp_1;
+    if (tmp3_elvis_lhs == null) {
+      // Inline function 'kotlin.run' call
+      this.cachedPassDescriptor_1 = null;
+      return null;
+    } else {
+      tmp_1 = tmp3_elvis_lhs;
+    }
+    var depthView = tmp_1;
+    var passDescriptor = buildSwapchainPassDescriptor(this.data_1.clearColor_1);
+    var needsFullRebuild = this.cachedPassDescriptor_1 == null || !(this.lastSwapchainTexture_1 === swapchainTexture) || !(this.lastBuiltWidth_1 === this.data_1.viewBox_1.width) || !(this.lastBuiltHeight_1 === this.data_1.viewBox_1.height) || this.colorAttachment_1 == null || this.depthAttachment_1 == null;
+    if (needsFullRebuild) {
+      var textureView = swapchainTexture.createView();
+      var clearColor = first_0(passDescriptor.colorAttachments_1).clearValue_1;
+      this.colorAttachment_1 = new GPURenderPassColorAttachment(textureView, 'clear', 'store', new GPUColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a));
+      this.depthAttachment_1 = new GPURenderPassDepthStencilAttachment(depthView, 'clear', 'store', 1.0);
+      this.lastSwapchainTexture_1 = swapchainTexture;
+      this.lastBuiltWidth_1 = this.data_1.viewBox_1.width;
+      this.lastBuiltHeight_1 = this.data_1.viewBox_1.height;
+    } else {
+      var clearColor_0 = first_0(passDescriptor.colorAttachments_1).clearValue_1;
+      ensureNotNull(this.colorAttachment_1).view = swapchainTexture.createView();
+      ensureNotNull(this.colorAttachment_1).clearValue = new GPUColor(clearColor_0.r, clearColor_0.g, clearColor_0.b, clearColor_0.a);
+      ensureNotNull(this.depthAttachment_1).view = depthView;
+    }
+    this.cachedPassDescriptor_1 = passDescriptor;
+    return this.cachedPassDescriptor_1;
+  };
+  protoOf(ZViewportRenderer).encodeNativeRenderPass_23l1i7_k$ = function (desc) {
+    var tmp0_elvis_lhs = this.colorAttachment_1;
+    var tmp;
+    if (tmp0_elvis_lhs == null) {
+      return null;
+    } else {
+      tmp = tmp0_elvis_lhs;
+    }
+    var color = tmp;
+    var tmp1_elvis_lhs = this.depthAttachment_1;
+    var tmp_0;
+    if (tmp1_elvis_lhs == null) {
+      return null;
+    } else {
+      tmp_0 = tmp1_elvis_lhs;
+    }
+    var depth = tmp_0;
+    return encodeWebGPURenderPassDescriptor(desc, color, depth);
+  };
+  protoOf(ZViewportRenderer).render = function () {
   };
   protoOf(ZViewportRenderer).onViewportResize_p57obb_k$ = function (width, height) {
     var tmp = this.ctx;
@@ -23876,7 +24200,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp0_safe_receiver.destroy();
     }
     this.depthTexture_1 = null;
-    this.renderPassDescriptor_1 = null;
+    invalidateDescriptorCache(this);
   };
   function ZBitmap_init_$Init$(byteArray, $this) {
     ZBitmap.call($this);
@@ -23944,11 +24268,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function ZBitmap$_init_$slambda_cfmmcj_0(this$0, resultContinuation) {
     var i = new ZBitmap$_init_$slambda_cfmmcj(this$0, resultContinuation);
-    var l = function ($this$launch, $completion) {
+    return constructCallableReference(function ($this$launch, $completion) {
       return i.invoke_d9fzmj_k$($this$launch, $completion);
-    };
-    l.$arity = 1;
-    return l;
+    }, 1);
   }
   function ZBitmap$_init_$lambda$lambda_29qsib(this$0, $res) {
     return function (img) {
@@ -24040,7 +24362,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       var imageBitmap = ensureNotNull($bitmap.imageBitmap);
       // Inline function 'zernikalos.logger.logger' call
       var this_0 = this$0;
-      Companion_getInstance_45().getLogger(getKClass(ZTextureRenderer).get_simpleName_r6f8py_k$(), hashCode(this_0)).debug('[ZTextureRenderer] Bitmap loaded: imageBitmap.width=' + imageBitmap.width + ', imageBitmap.height=' + imageBitmap.height);
+      Companion_getInstance_47().getLogger(getKClass(ZTextureRenderer).get_simpleName_r6f8py_k$(), hashCode(this_0)).debug('[ZTextureRenderer] Bitmap loaded: imageBitmap.width=' + imageBitmap.width + ', imageBitmap.height=' + imageBitmap.height);
       this$0.ctx.get_queue_ixn208_k$().copyExternalImageToTexture_2m60pd_k$(new GPUImageCopyExternalImage(imageBitmap), new GPUImageCopyTexture(ensureNotNull(this$0.texture_1)), new GPUExtent3D(this$0.data_1.width_1, this$0.data_1.height_1, 1));
       $bitmap.dispose();
       return Unit_instance;
@@ -24060,14 +24382,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       THROW_CCE();
     var device = this.ctx.get_device_cbv3of_k$();
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZTextureRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).debug('[ZTextureRenderer] Initializing texture id=' + this.data_1.id_1);
+    Companion_getInstance_47().getLogger(getKClass(ZTextureRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).debug('[ZTextureRenderer] Initializing texture id=' + this.data_1.id_1);
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZTextureRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).debug('[ZTextureRenderer] data.width=' + this.data_1.width_1 + ', data.height=' + this.data_1.height_1);
+    Companion_getInstance_47().getLogger(getKClass(ZTextureRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).debug('[ZTextureRenderer] data.width=' + this.data_1.width_1 + ', data.height=' + this.data_1.height_1);
     var bitmap = initWithByteArray(this.data_1.dataArray_1);
     var textureFormat = mapTextureFormat(this.data_1);
     if (this.data_1.width_1 === 0 || this.data_1.height_1 === 0) {
       // Inline function 'zernikalos.logger.logger' call
-      Companion_getInstance_45().getLogger(getKClass(ZTextureRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).error('[ZTextureRenderer] ERROR: width or height is 0! Texture will fail.');
+      Companion_getInstance_47().getLogger(getKClass(ZTextureRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).error('[ZTextureRenderer] ERROR: width or height is 0! Texture will fail.');
     }
     this.texture_1 = device.createTexture_k7h8qt_k$(new GPUTextureDescriptor(new GPUExtent3D(this.data_1.width_1, this.data_1.height_1, 1), textureFormat, GPUTextureUsage.TEXTURE_BINDING | GPUTextureUsage.COPY_DST | GPUTextureUsage.RENDER_ATTACHMENT));
     this.sampler_1 = this.ctx.get_device_cbv3of_k$().createSampler_uwfrl1_k$(new GPUSamplerDescriptor(mapAddressMode(this.data_1.wrapModeU_1), mapAddressMode(this.data_1.wrapModeV_1), VOID, mapFilterMode(this.data_1.magFilter_1), mapFilterMode(this.data_1.minFilter_1)));
@@ -24193,18 +24515,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.wgpuBuffer_1 = this.ctx.get_device_cbv3of_k$().createBuffer_ye4jzy_k$(_get_alignedSize__b3y94c(this), this.get_usage_izsv3s_k$(), false, 'Buffer' + this.data_1.id);
     this.ctx.get_queue_ixn208_k$().writeBuffer_a4xlta_k$(this.get_wgpuBuffer_13i3ni_k$(), 0, _get_alignedData__avk3s3(this));
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZBufferContentRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).debug('Init Buffer content: [' + this.data_1.id + '] ' + hashCode(this.data_1.dataArray));
+    Companion_getInstance_47().getLogger(getKClass(ZBufferContentRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).debug('Init Buffer content: [' + this.data_1.id + '] ' + hashCode(this.data_1.dataArray));
   };
   protoOf(ZBufferContentRenderer).bind = function () {
-    var tmp = this.ctx;
-    if (!(tmp instanceof ZWebGPURenderingContext))
-      THROW_CCE();
-    var tmp0_safe_receiver = this.ctx.renderPass_1;
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.setVertexBuffer(this.attributeId_1, this.get_wgpuBuffer_13i3ni_k$());
+    var tmp0_elvis_lhs = this.ctx.activePass;
+    var tmp;
+    if (tmp0_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp = tmp0_elvis_lhs;
     }
+    var pass = tmp;
+    pass.setVertexBuffer_u5fno5_k$(this.attributeId_1, this.get_wgpuBuffer_13i3ni_k$());
   };
   protoOf(ZBufferContentRenderer).unbind = function () {
   };
@@ -24242,26 +24564,26 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return new GPUVertexBufferLayout(strideBytes, tmp1_stepMode, tmp0_attributes);
   };
   protoOf(ZBufferRenderer).bind = function () {
-    var tmp = this.ctx;
-    if (!(tmp instanceof ZWebGPURenderingContext))
-      THROW_CCE();
-    var tmp0_safe_receiver = this.ctx.renderPass_1;
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.setVertexBuffer(this.data_1.get_attributeId_8rp9wu_k$().id, this.data_1.content.get_renderer_v1k1vw_k$().get_wgpuBuffer_13i3ni_k$());
+    var tmp0_elvis_lhs = this.ctx.activePass;
+    var tmp;
+    if (tmp0_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp = tmp0_elvis_lhs;
     }
+    var pass = tmp;
+    pass.setVertexBuffer_u5fno5_k$(this.data_1.get_attributeId_8rp9wu_k$().id, this.data_1.content.get_renderer_v1k1vw_k$().get_wgpuBuffer_13i3ni_k$());
   };
   protoOf(ZBufferRenderer).bindIndexBuffer_cqdxuj_k$ = function () {
-    var tmp = this.ctx;
-    if (!(tmp instanceof ZWebGPURenderingContext))
-      THROW_CCE();
-    var tmp0_safe_receiver = this.ctx.renderPass_1;
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.setIndexBuffer(this.data_1.content.get_renderer_v1k1vw_k$().get_wgpuBuffer_13i3ni_k$(), 'uint16');
+    var tmp0_elvis_lhs = this.ctx.activePass;
+    var tmp;
+    if (tmp0_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp = tmp0_elvis_lhs;
     }
+    var pass = tmp;
+    pass.setIndexBuffer$default_4rs5iv_k$(this.data_1.content.get_renderer_v1k1vw_k$().get_wgpuBuffer_13i3ni_k$());
   };
   protoOf(ZBufferRenderer).unbind = function () {
   };
@@ -24376,34 +24698,31 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.vertexBuffersLayout_1 = buildVertexBuffersLayout(this);
   };
   protoOf(ZMeshRenderer).bind = function () {
-    var tmp = this.ctx;
-    if (!(tmp instanceof ZWebGPURenderingContext))
-      THROW_CCE();
-    var indices = ensureNotNull(this.data_1.get_indexBuffer_s2nfih_k$());
     // Inline function 'kotlin.collections.sortedBy' call
     var this_0 = this.get_enabledVertexBuffers_34acfr_k$();
     // Inline function 'kotlin.comparisons.compareBy' call
-    var tmp_0 = ZMeshRenderer$bind$lambda;
-    var tmp$ret$1 = new sam$kotlin_Comparator$0_1(tmp_0);
+    var tmp = ZMeshRenderer$bind$lambda;
+    var tmp$ret$1 = new sam$kotlin_Comparator$0_1(tmp);
     // Inline function 'kotlin.collections.forEach' call
     var _iterator__ex2g4s = sortedWith_0(this_0, tmp$ret$1).iterator_jk1svi_k$();
     while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
       var element = _iterator__ex2g4s.next_20eer_k$();
       element.bind_svxwgj_k$();
     }
+    var indices = ensureNotNull(this.data_1.get_indexBuffer_s2nfih_k$());
     indices.get_renderer_v1k1vw_k$().bindIndexBuffer_cqdxuj_k$();
   };
   protoOf(ZMeshRenderer).render = function () {
-    var tmp = this.ctx;
-    if (!(tmp instanceof ZWebGPURenderingContext))
-      THROW_CCE();
-    var indices = ensureNotNull(this.data_1.get_indexBuffer_s2nfih_k$());
-    var tmp0_safe_receiver = this.ctx.renderPass_1;
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.drawIndexed(indices.count);
+    var tmp0_elvis_lhs = this.ctx.activePass;
+    var tmp;
+    if (tmp0_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp = tmp0_elvis_lhs;
     }
+    var pass = tmp;
+    var indices = ensureNotNull(this.data_1.get_indexBuffer_s2nfih_k$());
+    pass.drawIndexed_pur2n9_k$(indices.count);
   };
   protoOf(ZMeshRenderer).dispose = function () {
     // Inline function 'kotlin.collections.filter' call
@@ -24491,10 +24810,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     if (!(tmp instanceof ZWebGPURenderingContext))
       THROW_CCE();
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZShaderProgramRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).info('Initializing shader program...');
+    Companion_getInstance_47().getLogger(getKClass(ZShaderProgramRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).info('Initializing shader program...');
     this.shaderModule_1 = this.ctx.get_device_cbv3of_k$().createShaderModule_iisewj_k$(this.data_1.shaderSource_1.wgpuShaderSource);
     // Inline function 'zernikalos.logger.logger' call
-    Companion_getInstance_45().getLogger(getKClass(ZShaderProgramRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).debug(this.data_1.shaderSource_1.wgpuShaderSource);
+    Companion_getInstance_47().getLogger(getKClass(ZShaderProgramRenderer).get_simpleName_r6f8py_k$(), hashCode(this)).debug(this.data_1.shaderSource_1.wgpuShaderSource);
     // Inline function 'kotlin.collections.forEach' call
     // Inline function 'kotlin.collections.iterator' call
     var _iterator__ex2g4s = this.data_1.uniforms_1.get_all_18j9hk_k$();
@@ -24576,6 +24895,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.bindGroupLayoutEntry_1 = null;
     this.bindGroupEntry_1 = null;
   };
+  function get_correction() {
+    _init_properties_BackendCorrectionMatrix_webgpu_kt__qn4uwd();
+    return correction;
+  }
+  var correction;
+  function backendCorrectionMatrix() {
+    _init_properties_BackendCorrectionMatrix_webgpu_kt__qn4uwd();
+    return get_correction();
+  }
+  var properties_initialized_BackendCorrectionMatrix_webgpu_kt_h3h9t7;
+  function _init_properties_BackendCorrectionMatrix_webgpu_kt__qn4uwd() {
+    if (!properties_initialized_BackendCorrectionMatrix_webgpu_kt_h3h9t7) {
+      properties_initialized_BackendCorrectionMatrix_webgpu_kt_h3h9t7 = true;
+      correction = Op_instance_0.Identity;
+    }
+  }
   function ZDefaultContextCreator() {
     ZContextCreator.call(this);
   }
@@ -24602,7 +24937,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function requestDevice($this) {
     return ensureNotNull($this.adapter_1).requestDevice();
   }
-  function ZWebGPURenderingContext$initWithSurfaceView$2$2$1(this$0, $preferredFormat) {
+  function ZWebGPURenderingContext$initWithSurfaceView$1$1$1(this$0, $preferredFormat) {
     this.device_1 = ensureNotNull(this$0.nativeDevice_1);
     this.format_1 = $preferredFormat;
     this.alphaMode_1 = 'premultiplied';
@@ -24610,22 +24945,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     delete this.format;
     delete this.alphaMode;
   }
-  protoOf(ZWebGPURenderingContext$initWithSurfaceView$2$2$1).set_device_3mvwta_k$ = function (_set____db54di) {
+  protoOf(ZWebGPURenderingContext$initWithSurfaceView$1$1$1).set_device_3mvwta_k$ = function (_set____db54di) {
     this.device_1 = _set____db54di;
   };
-  protoOf(ZWebGPURenderingContext$initWithSurfaceView$2$2$1).get_device_cbv3of_k$ = function () {
+  protoOf(ZWebGPURenderingContext$initWithSurfaceView$1$1$1).get_device_cbv3of_k$ = function () {
     return this.device_1;
   };
-  protoOf(ZWebGPURenderingContext$initWithSurfaceView$2$2$1).set_format_d2o5pe_k$ = function (_set____db54di) {
+  protoOf(ZWebGPURenderingContext$initWithSurfaceView$1$1$1).set_format_d2o5pe_k$ = function (_set____db54di) {
     this.format_1 = _set____db54di;
   };
-  protoOf(ZWebGPURenderingContext$initWithSurfaceView$2$2$1).get_format_dfdtds_k$ = function () {
+  protoOf(ZWebGPURenderingContext$initWithSurfaceView$1$1$1).get_format_dfdtds_k$ = function () {
     return this.format_1;
   };
-  protoOf(ZWebGPURenderingContext$initWithSurfaceView$2$2$1).set_alphaMode_ytlwz1_k$ = function (_set____db54di) {
+  protoOf(ZWebGPURenderingContext$initWithSurfaceView$1$1$1).set_alphaMode_ytlwz1_k$ = function (_set____db54di) {
     this.alphaMode_1 = _set____db54di;
   };
-  protoOf(ZWebGPURenderingContext$initWithSurfaceView$2$2$1).get_alphaMode_1b1jt4_k$ = function () {
+  protoOf(ZWebGPURenderingContext$initWithSurfaceView$1$1$1).get_alphaMode_1b1jt4_k$ = function () {
     return this.alphaMode_1;
   };
   function ZWebGPURenderingContext$initWithSurfaceView$lambda$lambda(this$0) {
@@ -24643,7 +24978,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       if (tmp0_safe_receiver == null) {
         tmp_1 = null;
       } else {
-        tmp_1 = tmp0_safe_receiver.configure(new ZWebGPURenderingContext$initWithSurfaceView$2$2$1(this$0, preferredFormat));
+        tmp_1 = tmp0_safe_receiver.configure(new ZWebGPURenderingContext$initWithSurfaceView$1$1$1(this$0, preferredFormat));
       }
       tmp_0.swapChain_1 = tmp_1;
       return Unit_instance;
@@ -24665,10 +25000,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.depthTexture_1 = null;
     this.depthTextureView_1 = null;
     this.commandEncoder_1 = null;
-    this.renderPass_1 = null;
+    this.nativeRenderPass_1 = null;
     this.adapter_1 = null;
+    this.activePass_1 = null;
     this.initWithSurfaceView(this.surfaceView_1);
   }
+  protoOf(ZWebGPURenderingContext).get_activePass_dmlbr4_k$ = function () {
+    return this.activePass_1;
+  };
   protoOf(ZWebGPURenderingContext).get_device_cbv3of_k$ = function () {
     return new ZWebGPUDevice(ensureNotNull(this.nativeDevice_1));
   };
@@ -24686,15 +25025,28 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZWebGPURenderingContext).getPreferredCanvasFormat_6f31ei_k$ = function () {
     return ensureNotNull(get_gpu(window.navigator)).getPreferredCanvasFormat();
   };
-  protoOf(ZWebGPURenderingContext).createCommandEncoder_f5r3h_k$ = function () {
+  protoOf(ZWebGPURenderingContext).withActivePass = function (pass, block) {
+    var previous = this.activePass_1;
+    this.activePass_1 = pass;
+    try {
+      return block();
+    }finally {
+      this.activePass_1 = previous;
+    }
+  };
+  protoOf(ZWebGPURenderingContext).createCommandEncoder_etahuz_k$ = function () {
     this.commandEncoder_1 = this.get_device_cbv3of_k$().createCommandEncoder_f5r3h_k$();
     return this.commandEncoder_1;
   };
-  protoOf(ZWebGPURenderingContext).createRenderPass_ud0ehv_k$ = function (descriptor) {
+  protoOf(ZWebGPURenderingContext).beginRenderPass_r3jb08_k$ = function (descriptor) {
     var tmp = this;
     var tmp0_safe_receiver = this.commandEncoder_1;
-    tmp.renderPass_1 = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.beginRenderPass(descriptor);
-    return this.renderPass_1;
+    tmp.nativeRenderPass_1 = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.beginRenderPass(descriptor);
+    return this.nativeRenderPass_1;
+  };
+  protoOf(ZWebGPURenderingContext).clearActivePass_ay6qbo_k$ = function () {
+    this.activePass_1 = null;
+    this.nativeRenderPass_1 = null;
   };
   function ZWebGPUDevice(nativeDevice) {
     this.nativeDevice_1 = nativeDevice;
@@ -24739,6 +25091,159 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ZWebGPUQueue).copyExternalImageToTexture_2m60pd_k$ = function (source, destination, copySize) {
     this.queue_1.copyExternalImageToTexture(source, destination, copySize);
   };
+  function ZGpuCommandEncoder(ctx, gpuCtx) {
+    this.ctx_1 = ctx;
+    this.gpuCtx_1 = gpuCtx;
+  }
+  protoOf(ZGpuCommandEncoder).beginRenderPass_5ndist_k$ = function (descriptor) {
+    var tmp0_safe_receiver = this.ctx_1.scene;
+    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.viewport;
+    var tmp;
+    if (tmp1_elvis_lhs == null) {
+      return null;
+    } else {
+      tmp = tmp1_elvis_lhs;
+    }
+    var viewport = tmp;
+    var tmp_0 = viewport.get_renderer_v1k1vw_k$();
+    var viewportRenderer = tmp_0 instanceof ZViewportRenderer ? tmp_0 : THROW_CCE();
+    var tmp2_elvis_lhs = viewportRenderer.encodeNativeRenderPass_23l1i7_k$(descriptor);
+    var tmp_1;
+    if (tmp2_elvis_lhs == null) {
+      return null;
+    } else {
+      tmp_1 = tmp2_elvis_lhs;
+    }
+    var nativeDesc = tmp_1;
+    var tmp3_elvis_lhs = this.gpuCtx_1.beginRenderPass_r3jb08_k$(nativeDesc.toGpu_1tsjsh_k$());
+    var tmp_2;
+    if (tmp3_elvis_lhs == null) {
+      return null;
+    } else {
+      tmp_2 = tmp3_elvis_lhs;
+    }
+    var nativePass = tmp_2;
+    return new ZGpuRenderPass(nativePass, this.gpuCtx_1);
+  };
+  protoOf(ZGpuCommandEncoder).finish_mh2air_k$ = function () {
+  };
+  function ZGpuFrame(ctx) {
+    this.ctx_1 = ctx;
+    var tmp = this;
+    var tmp_0 = this.ctx_1.renderingContext;
+    tmp.gpuCtx_1 = tmp_0 instanceof ZWebGPURenderingContext ? tmp_0 : THROW_CCE();
+  }
+  protoOf(ZGpuFrame).begin_1jqisp_k$ = function () {
+    return !(this.gpuCtx_1.createCommandEncoder_etahuz_k$() == null);
+  };
+  protoOf(ZGpuFrame).beginRecording_s1tv0o_k$ = function () {
+    if (this.gpuCtx_1.commandEncoder_1 == null) {
+      return null;
+    }
+    return new ZGpuCommandEncoder(this.ctx_1, this.gpuCtx_1);
+  };
+  protoOf(ZGpuFrame).submit_ahy0u5_k$ = function (encoder) {
+    var tmp0_safe_receiver = this.gpuCtx_1.commandEncoder_1;
+    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.finish();
+    var tmp;
+    if (tmp1_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp = tmp1_elvis_lhs;
+    }
+    var commandBuffer = tmp;
+    var tmp_0 = this.gpuCtx_1.get_queue_ixn208_k$();
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$0 = [commandBuffer];
+    tmp_0.submit_pdqjgi_k$(tmp$ret$0);
+    this.gpuCtx_1.commandEncoder_1 = null;
+  };
+  protoOf(ZGpuFrame).end_kqfg1h_k$ = function () {
+    this.gpuCtx_1.commandEncoder_1 = null;
+  };
+  function ZGpuRenderPass(encoder, renderingContext) {
+    this.encoder_1 = encoder;
+    this.renderingContext_1 = renderingContext;
+  }
+  protoOf(ZGpuRenderPass).end_kqfg1h_k$ = function () {
+    this.encoder_1.end();
+    this.renderingContext_1.clearActivePass_ay6qbo_k$();
+  };
+  protoOf(ZGpuRenderPass).setPipeline_z6ipxx_k$ = function (pipeline) {
+    this.encoder_1.setPipeline(pipeline);
+  };
+  protoOf(ZGpuRenderPass).setVertexBuffer_u5fno5_k$ = function (slot, buffer) {
+    this.encoder_1.setVertexBuffer(slot, buffer);
+  };
+  protoOf(ZGpuRenderPass).setIndexBuffer_d4g60z_k$ = function (buffer, format) {
+    this.encoder_1.setIndexBuffer(buffer, format);
+  };
+  protoOf(ZGpuRenderPass).setIndexBuffer$default_4rs5iv_k$ = function (buffer, format, $super) {
+    format = format === VOID ? 'uint16' : format;
+    var tmp;
+    if ($super === VOID) {
+      this.setIndexBuffer_d4g60z_k$(buffer, format);
+      tmp = Unit_instance;
+    } else {
+      tmp = $super.setIndexBuffer_d4g60z_k$.call(this, buffer, format);
+    }
+    return tmp;
+  };
+  protoOf(ZGpuRenderPass).drawIndexed_pur2n9_k$ = function (indexCount) {
+    this.encoder_1.drawIndexed(indexCount);
+  };
+  protoOf(ZGpuRenderPass).setBindGroup_28xcid_k$ = function (index, group) {
+    this.encoder_1.setBindGroup(index, group);
+  };
+  function toWebGpu(_this__u8e3s4) {
+    var tmp;
+    switch (_this__u8e3s4.ordinal_1) {
+      case 0:
+        tmp = 'load';
+        break;
+      case 1:
+        tmp = 'clear';
+        break;
+      default:
+        noWhenBranchMatchedException();
+        break;
+    }
+    return tmp;
+  }
+  function toWebGpu_0(_this__u8e3s4) {
+    var tmp;
+    switch (_this__u8e3s4.ordinal_1) {
+      case 0:
+        tmp = 'store';
+        break;
+      case 1:
+        tmp = 'discard';
+        break;
+      default:
+        noWhenBranchMatchedException();
+        break;
+    }
+    return tmp;
+  }
+  function encodeWebGPURenderPassDescriptor(desc, colorAttachment, depthAttachment) {
+    var colorDesc = first_0(desc.colorAttachments_1);
+    colorAttachment.loadOp = toWebGpu(colorDesc.loadOp_1);
+    colorAttachment.storeOp = toWebGpu_0(colorDesc.storeOp_1);
+    colorAttachment.clearValue = new GPUColor(colorDesc.clearValue_1.r, colorDesc.clearValue_1.g, colorDesc.clearValue_1.b, colorDesc.clearValue_1.a);
+    var depthDesc = desc.depthStencilAttachment_1;
+    if (!(depthDesc == null)) {
+      depthAttachment.depthLoadOp = toWebGpu(depthDesc.depthLoadOp_1);
+      depthAttachment.depthStoreOp = toWebGpu_0(depthDesc.depthStoreOp_1);
+      depthAttachment.depthClearValue = depthDesc.depthClearValue_1;
+    }
+    // Inline function 'kotlin.arrayOf' call
+    // Inline function 'kotlin.js.unsafeCast' call
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$0 = [colorAttachment];
+    return new GPURenderPassDescriptor(tmp$ret$0, depthAttachment);
+  }
   function get_gpu(_this__u8e3s4) {
     // Inline function 'kotlin.js.asDynamic' call
     return window.navigator.gpu;
@@ -27006,33 +27511,44 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.pipeline_1 = this.ctx_1.get_device_cbv3of_k$().createRenderPipeline_3ctd17_k$(renderPipelineDescriptor.toGpu_1tsjsh_k$());
   };
   protoOf(ZModelRenderer).render_dje1iy_k$ = function () {
-    var tmp = this.ctx_1;
-    if (!(tmp instanceof ZWebGPURenderingContext))
-      THROW_CCE();
-    if (this.pipeline_1 == null) {
+    var tmp0_elvis_lhs = this.ctx_1.activePass;
+    var tmp;
+    if (tmp0_elvis_lhs == null) {
       return Unit_instance;
+    } else {
+      tmp = tmp0_elvis_lhs;
     }
-    var tmp0_safe_receiver = this.ctx_1.renderPass_1;
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.setPipeline(ensureNotNull(this.pipeline_1));
+    var pass = tmp;
+    var tmp1_elvis_lhs = this.pipeline_1;
+    var tmp_0;
+    if (tmp1_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp_0 = tmp1_elvis_lhs;
     }
-    var tmp1_safe_receiver = this.ctx_1.renderPass_1;
-    if (tmp1_safe_receiver == null)
-      null;
-    else {
-      tmp1_safe_receiver.setBindGroup(0, ensureNotNull(this.bindGroup_1));
+    var gpuPipeline = tmp_0;
+    var tmp2_elvis_lhs = this.bindGroup_1;
+    var tmp_1;
+    if (tmp2_elvis_lhs == null) {
+      return Unit_instance;
+    } else {
+      tmp_1 = tmp2_elvis_lhs;
     }
-    var tmp2_safe_receiver = this.model_1.material;
-    var texture = tmp2_safe_receiver == null ? null : tmp2_safe_receiver.texture;
+    var uniformBindGroup = tmp_1;
+    pass.setPipeline_z6ipxx_k$(gpuPipeline);
+    pass.setBindGroup_28xcid_k$(0, uniformBindGroup);
+    var tmp3_safe_receiver = this.model_1.material;
+    var texture = tmp3_safe_receiver == null ? null : tmp3_safe_receiver.texture;
     if (!(texture == null)) {
-      var tmp3_safe_receiver = this.ctx_1.renderPass_1;
-      if (tmp3_safe_receiver == null)
-        null;
-      else {
-        tmp3_safe_receiver.setBindGroup(1, ensureNotNull(texture.get_renderer_v1k1vw_k$().textureBindGroup_1));
+      var tmp4_elvis_lhs = texture.get_renderer_v1k1vw_k$().textureBindGroup_1;
+      var tmp_2;
+      if (tmp4_elvis_lhs == null) {
+        return Unit_instance;
+      } else {
+        tmp_2 = tmp4_elvis_lhs;
       }
+      var textureBindGroup = tmp_2;
+      pass.setBindGroup_28xcid_k$(1, textureBindGroup);
     }
     this.model_1.shaderProgram.bind_svxwgj_k$();
     this.model_1.mesh.bind_svxwgj_k$();
@@ -27044,32 +27560,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function ZRenderer(ctx) {
     ZRendererBase.call(this, ctx);
+    this.gpuFrame_1 = new ZGpuFrame(ctx);
   }
-  protoOf(ZRenderer).initialize_o9rygw_k$ = function () {
-    ensureNotNull(this.ctx_1.scene).initialize(this.ctx_1);
-  };
   protoOf(ZRenderer).render_dje1iy_k$ = function () {
-    var tmp = this.ctx_1.renderingContext;
-    var gpuCtx = tmp instanceof ZWebGPURenderingContext ? tmp : THROW_CCE();
-    gpuCtx.createCommandEncoder_f5r3h_k$();
-    ensureNotNull(this.ctx_1.scene).viewport.render_dje1iy_k$();
-    var descriptor = ensureNotNull(this.ctx_1.scene).viewport.get_renderer_v1k1vw_k$().renderPassDescriptor_1;
-    if (descriptor == null)
-      return Unit_instance;
-    gpuCtx.createRenderPass_ud0ehv_k$(descriptor.toGpu_1tsjsh_k$());
-    ensureNotNull(this.ctx_1.scene).render(this.ctx_1);
-    var tmp0_safe_receiver = gpuCtx.renderPass_1;
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.end();
-    }
-    var tmp_0 = gpuCtx.get_queue_ixn208_k$();
-    // Inline function 'kotlin.arrayOf' call
-    // Inline function 'kotlin.js.unsafeCast' call
-    // Inline function 'kotlin.js.asDynamic' call
-    var tmp$ret$0 = [ensureNotNull(gpuCtx.commandEncoder_1).finish()];
-    tmp_0.submit_pdqjgi_k$(tmp$ret$0);
+    this.renderFrame_lmboo7_k$();
+  };
+  protoOf(ZRenderer).createGpuFrame_3lkwjn_k$ = function () {
+    return this.gpuFrame_1;
   };
   protoOf(ZRenderer).onViewportResize_p57obb_k$ = function (width, height) {
     var tmp0_safe_receiver = this.ctx_1.scene;
@@ -27225,6 +27722,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZDataType), 'size', protoOf(ZDataType).get_size_woubt6_k$);
   defineProp(protoOf(ZDataType), 'byteSize', protoOf(ZDataType).get_byteSize_8c84c2_k$);
   defineProp(protoOf(ZernikalosBase), 'context', protoOf(ZernikalosBase).get_context_h02k06_k$, protoOf(ZernikalosBase).set_context_h6n9t8_k$);
+  defineProp(protoOf(ZActionPlayer), 'duration', protoOf(ZActionPlayer).get_duration_6a6kpp_k$);
   protoOf($serializer_0).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZBoneFrameTransform), 'hasPosition', protoOf(ZBoneFrameTransform).get_hasPosition_2roube_k$);
   defineProp(protoOf(ZBoneFrameTransform), 'hasRotation', protoOf(ZBoneFrameTransform).get_hasRotation_a9izw1_k$);
@@ -27446,11 +27944,61 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZTouchEventType), 'name', protoOf(ZTouchEventType).get_name_woqyms_k$);
   defineProp(protoOf(ZTouchEventType), 'ordinal', protoOf(ZTouchEventType).get_ordinal_ip24qg_k$);
   protoOf($serializer_22).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf(ZObject).get_hasParent_2autdn_k$ = get_hasParent;
+  protoOf(ZObject).get_isRoot_ew5h6d_k$ = get_isRoot;
+  defineProp(protoOf(ZObject), 'refId', function () {
+    return this.get_refId_ixwmhx_k$();
+  });
+  defineProp(protoOf(ZObject), 'name', protoOf(ZObject).get_name_woqyms_k$, protoOf(ZObject).set_name_aqnlwe_k$);
+  defineProp(protoOf(ZObject), 'children', function () {
+    return this.get_children_4cwbp4_k$();
+  }, function (value) {
+    this.set_children_sucokp_k$(value);
+  });
+  defineProp(protoOf(ZObject), 'type', function () {
+    return this.get_type_wovaf7_k$();
+  });
+  defineProp(protoOf(ZObject), 'parent', function () {
+    return this.get_parent_hy4reb_k$();
+  });
+  defineProp(protoOf(ZObject), 'isInitialized', protoOf(ZObject).get_isInitialized_44jfmn_k$);
+  defineProp(protoOf(ZObject), 'isEnabled', protoOf(ZObject).get_isEnabled_roz1ma_k$);
+  defineProp(protoOf(ZObject), 'isVisible', protoOf(ZObject).get_isVisible_6n82m7_k$);
+  defineProp(protoOf(ZObject), 'hasParent', function () {
+    return this.get_hasParent_2autdn_k$();
+  });
+  defineProp(protoOf(ZObject), 'isRoot', function () {
+    return this.get_isRoot_ew5h6d_k$();
+  });
+  defineProp(protoOf(ZModel), 'hasTextures', protoOf(ZModel).get_hasTextures_q6hfqv_k$);
+  defineProp(protoOf(ZModel), 'hasSkeleton', protoOf(ZModel).get_hasSkeleton_nxqg7y_k$);
+  defineProp(protoOf(ZModel), 'drawMode', protoOf(ZModel).get_drawMode_pjqw28_k$, protoOf(ZModel).set_drawMode_uv6qiq_k$);
+  defineProp(protoOf(ZModel), 'renderer', protoOf(ZModel).get_renderer_v1k1vw_k$, protoOf(ZModel).set_renderer_8nojle_k$);
+  defineProp(protoOf(ZModel), 'hasParent', function () {
+    return this.get_hasParent_2autdn_k$();
+  });
+  defineProp(protoOf(ZModel), 'isRoot', function () {
+    return this.get_isRoot_ew5h6d_k$();
+  });
+  defineProp(protoOf(ZCube), 'hasParent', function () {
+    return this.get_hasParent_2autdn_k$();
+  });
+  defineProp(protoOf(ZCube), 'isRoot', function () {
+    return this.get_isRoot_ew5h6d_k$();
+  });
   protoOf($serializer_23).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  defineProp(protoOf(ZPlane), 'hasParent', function () {
+    return this.get_hasParent_2autdn_k$();
+  });
+  defineProp(protoOf(ZPlane), 'isRoot', function () {
+    return this.get_isRoot_ew5h6d_k$();
+  });
   protoOf($serializer_24).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   protoOf($serializer_25).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   protoOf($serializer_26).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   protoOf($serializer_27).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_28).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_29).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZLogLevel), 'name', protoOf(ZLogLevel).get_name_woqyms_k$);
   defineProp(protoOf(ZLogLevel), 'ordinal', protoOf(ZLogLevel).get_ordinal_ip24qg_k$);
   defineProp(protoOf(ZAlgebraObjectCollection), 'byteArray', function () {
@@ -27471,7 +28019,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZAlgebraObjectCollection), 'byteSize', function () {
     return this.get_byteSize_8c84c2_k$();
   });
-  protoOf($serializer_28).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_30).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZColor), 'dataType', function () {
     return this.get_dataType_27rqr7_k$();
   });
@@ -27498,7 +28046,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZColor), 'g', protoOf(ZColor).get_g_1mhr5q_k$, protoOf(ZColor).set_g_1jrpni_k$);
   defineProp(protoOf(ZColor), 'b', protoOf(ZColor).get_b_1mhr5l_k$, protoOf(ZColor).set_b_j3x0sd_k$);
   defineProp(protoOf(ZColor), 'a', protoOf(ZColor).get_a_1mhr5k_k$, protoOf(ZColor).set_a_xl19wk_k$);
-  protoOf($serializer_29).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_31).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZEuler), 'dataType', function () {
     return this.get_dataType_27rqr7_k$();
   });
@@ -27536,7 +28084,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZMatrix4), 'byteSize', function () {
     return this.get_byteSize_8c84c2_k$();
   });
-  protoOf($serializer_30).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_32).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(Op_1), 'Identity', protoOf(Op_1).get_Identity_wza1cp_k$);
   defineProp(protoOf(ZQuaternion), 'w', protoOf(ZQuaternion).get_w_1mhr66_k$, protoOf(ZQuaternion).set_w_atvma6_k$);
   defineProp(protoOf(ZQuaternion), 'x', protoOf(ZQuaternion).get_x_1mhr67_k$, protoOf(ZQuaternion).set_x_t61dkd_k$);
@@ -27562,7 +28110,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   });
   defineProp(protoOf(ZQuaternion), 'norm2', protoOf(ZQuaternion).get_norm2_ivw3pp_k$);
   defineProp(protoOf(ZQuaternion), 'isNormalized', protoOf(ZQuaternion).get_isNormalized_jp277u_k$);
-  protoOf($serializer_31).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_33).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZScalar), 'dataType', function () {
     return this.get_dataType_27rqr7_k$();
   });
@@ -27581,7 +28129,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZScalar), 'count', function () {
     return this.get_count_ipufhi_k$();
   });
-  protoOf($serializer_32).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_34).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZTransform), 'forward', protoOf(ZTransform).get_forward_9xln38_k$, protoOf(ZTransform).set_forward_krhjws_k$);
   defineProp(protoOf(ZTransform), 'right', protoOf(ZTransform).get_right_ixz7xv_k$, protoOf(ZTransform).set_right_eq1rez_k$);
   defineProp(protoOf(ZTransform), 'up', protoOf(ZTransform).get_up_kntnmk_k$, protoOf(ZTransform).set_up_52j90c_k$);
@@ -27591,6 +28139,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZTransform), 'yaw', protoOf(ZTransform).get_yaw_18iry2_k$);
   defineProp(protoOf(ZTransform), 'pitch', protoOf(ZTransform).get_pitch_iwvw9j_k$);
   defineProp(protoOf(ZTransform), 'roll', protoOf(ZTransform).get_roll_wotsxy_k$);
+  defineProp(protoOf(ZTransform), 'rotationEulerDegrees', protoOf(ZTransform).get_rotationEulerDegrees_u4emw5_k$, protoOf(ZTransform).set_rotationEulerDegrees_vo66jw_k$);
+  defineProp(protoOf(ZTransform), 'yawDegrees', protoOf(ZTransform).get_yawDegrees_s0r9s1_k$);
+  defineProp(protoOf(ZTransform), 'pitchDegrees', protoOf(ZTransform).get_pitchDegrees_xzmc5s_k$);
+  defineProp(protoOf(ZTransform), 'rollDegrees', protoOf(ZTransform).get_rollDegrees_wgk8e7_k$);
   defineProp(protoOf(ZTransform), 'scale', protoOf(ZTransform).get_scale_iyf28x_k$, protoOf(ZTransform).set_scale_e8k661_k$);
   defineProp(protoOf(ZTransform), 'matrix', protoOf(ZTransform).get_matrix_gj1fpm_k$);
   defineProp(protoOf(Op_2), 'Zero', protoOf(Op_2).get_Zero_woe9zl_k$);
@@ -27620,12 +28172,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return this.get_dataType_27rqr7_k$();
   });
   defineProp(protoOf(ZVector2), 'normalized', protoOf(ZVector2).get_normalized_u3mzcw_k$);
-  protoOf($serializer_33).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_35).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(Op_3), 'Zero', protoOf(Op_3).get_Zero_woe9zl_k$);
   defineProp(protoOf(Op_3), 'Ones', protoOf(Op_3).get_Ones_wo7fhy_k$);
-  defineProp(protoOf(Op_3), 'Forward', protoOf(Op_3).get_Forward_hlhnlo_k$);
   defineProp(protoOf(Op_3), 'Right', protoOf(Op_3).get_Right_igdsyb_k$);
+  defineProp(protoOf(Op_3), 'Left', protoOf(Op_3).get_Left_wo5bw0_k$);
   defineProp(protoOf(Op_3), 'Up', protoOf(Op_3).get_Up_kntoe4_k$);
+  defineProp(protoOf(Op_3), 'Down', protoOf(Op_3).get_Down_wo0ft7_k$);
+  defineProp(protoOf(Op_3), 'Forward', protoOf(Op_3).get_Forward_hlhnlo_k$);
+  defineProp(protoOf(Op_3), 'Back', protoOf(Op_3).get_Back_wnyuz4_k$);
   defineProp(protoOf(ZVector3), 'x', protoOf(ZVector3).get_x_1mhr67_k$, protoOf(ZVector3).set_x_t61dkd_k$);
   defineProp(protoOf(ZVector3), 'y', protoOf(ZVector3).get_y_1mhr68_k$, protoOf(ZVector3).set_y_niwx4k_k$);
   defineProp(protoOf(ZVector3), 'z', protoOf(ZVector3).get_z_1mhr69_k$, protoOf(ZVector3).set_z_56r5ud_k$);
@@ -27649,7 +28204,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return this.get_dataType_27rqr7_k$();
   });
   defineProp(protoOf(ZVector3), 'normalized', protoOf(ZVector3).get_normalized_u3mzcw_k$);
-  protoOf($serializer_34).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_36).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZVector4), 'x', protoOf(ZVector4).get_x_1mhr67_k$, protoOf(ZVector4).set_x_t61dkd_k$);
   defineProp(protoOf(ZVector4), 'y', protoOf(ZVector4).get_y_1mhr68_k$, protoOf(ZVector4).set_y_niwx4k_k$);
   defineProp(protoOf(ZVector4), 'z', protoOf(ZVector4).get_z_1mhr69_k$, protoOf(ZVector4).set_z_56r5ud_k$);
@@ -27673,7 +28228,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZVector4), 'dataType', function () {
     return this.get_dataType_27rqr7_k$();
   });
-  protoOf($serializer_35).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_37).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZVoidAlgebraObject), 'dataType', function () {
     return this.get_dataType_27rqr7_k$();
   });
@@ -27692,34 +28247,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZVoidAlgebraObject), 'count', function () {
     return this.get_count_ipufhi_k$();
   });
-  defineProp(protoOf(Companion_54), 'DefaultPerspectiveCamera', protoOf(Companion_54).get_DefaultPerspectiveCamera_3f22p5_k$);
-  protoOf($serializer_36).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
-  protoOf(ZObject).get_hasParent_2autdn_k$ = get_hasParent;
-  protoOf(ZObject).get_isRoot_ew5h6d_k$ = get_isRoot;
-  defineProp(protoOf(ZObject), 'refId', function () {
-    return this.get_refId_ixwmhx_k$();
-  });
-  defineProp(protoOf(ZObject), 'name', protoOf(ZObject).get_name_woqyms_k$, protoOf(ZObject).set_name_aqnlwe_k$);
-  defineProp(protoOf(ZObject), 'children', function () {
-    return this.get_children_4cwbp4_k$();
-  }, function (value) {
-    this.set_children_sucokp_k$(value);
-  });
-  defineProp(protoOf(ZObject), 'type', function () {
-    return this.get_type_wovaf7_k$();
-  });
-  defineProp(protoOf(ZObject), 'parent', function () {
-    return this.get_parent_hy4reb_k$();
-  });
-  defineProp(protoOf(ZObject), 'isInitialized', protoOf(ZObject).get_isInitialized_44jfmn_k$);
-  defineProp(protoOf(ZObject), 'isEnabled', protoOf(ZObject).get_isEnabled_roz1ma_k$);
-  defineProp(protoOf(ZObject), 'isVisible', protoOf(ZObject).get_isVisible_6n82m7_k$);
-  defineProp(protoOf(ZObject), 'hasParent', function () {
-    return this.get_hasParent_2autdn_k$();
-  });
-  defineProp(protoOf(ZObject), 'isRoot', function () {
-    return this.get_isRoot_ew5h6d_k$();
-  });
+  defineProp(protoOf(Companion_56), 'DefaultPerspectiveCamera', protoOf(Companion_56).get_DefaultPerspectiveCamera_3f22p5_k$);
+  protoOf($serializer_38).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZCamera), 'projectionMatrix', protoOf(ZCamera).get_projectionMatrix_blkd6h_k$);
   defineProp(protoOf(ZCamera), 'viewMatrix', protoOf(ZCamera).get_viewMatrix_gxissv_k$);
   defineProp(protoOf(ZCamera), 'viewProjectionMatrix', protoOf(ZCamera).get_viewProjectionMatrix_6k6txa_k$);
@@ -27729,15 +28258,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZCamera), 'isRoot', function () {
     return this.get_isRoot_ew5h6d_k$();
   });
-  protoOf($serializer_37).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_39).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZGroup), 'hasParent', function () {
     return this.get_hasParent_2autdn_k$();
   });
   defineProp(protoOf(ZGroup), 'isRoot', function () {
     return this.get_isRoot_ew5h6d_k$();
   });
-  defineProp(protoOf(Companion_56), 'DefaultAmbientLight', protoOf(Companion_56).get_DefaultAmbientLight_btsga_k$);
-  protoOf($serializer_38).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  defineProp(protoOf(Companion_58), 'DefaultAmbientLight', protoOf(Companion_58).get_DefaultAmbientLight_btsga_k$);
+  protoOf($serializer_40).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZLight), 'lampType', protoOf(ZLight).get_lampType_c6tfy3_k$);
   defineProp(protoOf(ZLight), 'hasParent', function () {
     return this.get_hasParent_2autdn_k$();
@@ -27745,27 +28274,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZLight), 'isRoot', function () {
     return this.get_isRoot_ew5h6d_k$();
   });
-  protoOf($serializer_39).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
-  defineProp(protoOf(ZModel), 'hasTextures', protoOf(ZModel).get_hasTextures_q6hfqv_k$);
-  defineProp(protoOf(ZModel), 'hasSkeleton', protoOf(ZModel).get_hasSkeleton_nxqg7y_k$);
-  defineProp(protoOf(ZModel), 'drawMode', protoOf(ZModel).get_drawMode_pjqw28_k$, protoOf(ZModel).set_drawMode_uv6qiq_k$);
-  defineProp(protoOf(ZModel), 'renderer', protoOf(ZModel).get_renderer_v1k1vw_k$, protoOf(ZModel).set_renderer_8nojle_k$);
-  defineProp(protoOf(ZModel), 'hasParent', function () {
-    return this.get_hasParent_2autdn_k$();
-  });
-  defineProp(protoOf(ZModel), 'isRoot', function () {
-    return this.get_isRoot_ew5h6d_k$();
-  });
+  protoOf($serializer_41).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZObjectType), 'name', protoOf(ZObjectType).get_name_woqyms_k$);
   defineProp(protoOf(ZObjectType), 'ordinal', protoOf(ZObjectType).get_ordinal_ip24qg_k$);
-  protoOf($serializer_40).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_42).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZScene), 'hasParent', function () {
     return this.get_hasParent_2autdn_k$();
   });
   defineProp(protoOf(ZScene), 'isRoot', function () {
     return this.get_isRoot_ew5h6d_k$();
   });
-  protoOf($serializer_41).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_43).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZSkeleton), 'bones', protoOf(ZSkeleton).get_bones_ipahhi_k$);
   defineProp(protoOf(ZSkeleton), 'hasParent', function () {
     return this.get_hasParent_2autdn_k$();
@@ -27773,28 +28292,31 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   defineProp(protoOf(ZSkeleton), 'isRoot', function () {
     return this.get_isRoot_ew5h6d_k$();
   });
-  protoOf($serializer_42).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_44).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZSettings), 'logLevel', protoOf(ZSettings).get_logLevel_179ppl_k$, protoOf(ZSettings).set_logLevel_l8vgpw_k$);
   defineProp(protoOf(ZPlatformName), 'name', protoOf(ZPlatformName).get_name_woqyms_k$);
   defineProp(protoOf(ZPlatformName), 'ordinal', protoOf(ZPlatformName).get_ordinal_ip24qg_k$);
-  protoOf($serializer_43).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
-  protoOf($serializer_44).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   protoOf($serializer_45).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_46).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
+  protoOf($serializer_47).typeParametersSerializers_fr94fx_k$ = typeParametersSerializers;
   defineProp(protoOf(ZBitmap), 'imageBitmap', protoOf(ZBitmap).get_imageBitmap_tdjdof_k$);
-  defineProp(protoOf(ZWebGPURenderingContext$initWithSurfaceView$2$2$1), 'device', function () {
+  defineProp(protoOf(ZWebGPURenderingContext$initWithSurfaceView$1$1$1), 'device', function () {
     return this.get_device_cbv3of_k$();
   }, function (value) {
     this.set_device_3mvwta_k$(value);
   });
-  defineProp(protoOf(ZWebGPURenderingContext$initWithSurfaceView$2$2$1), 'format', function () {
+  defineProp(protoOf(ZWebGPURenderingContext$initWithSurfaceView$1$1$1), 'format', function () {
     return this.get_format_dfdtds_k$();
   }, function (value) {
     this.set_format_d2o5pe_k$(value);
   });
-  defineProp(protoOf(ZWebGPURenderingContext$initWithSurfaceView$2$2$1), 'alphaMode', function () {
+  defineProp(protoOf(ZWebGPURenderingContext$initWithSurfaceView$1$1$1), 'alphaMode', function () {
     return this.get_alphaMode_1b1jt4_k$();
   }, function (value) {
     this.set_alphaMode_ytlwz1_k$(value);
+  });
+  defineProp(protoOf(ZWebGPURenderingContext), 'activePass', function () {
+    return this.get_activePass_dmlbr4_k$();
   });
   defineProp(protoOf(ZJsSurfaceView), 'eventHandler', function () {
     return this.get_eventHandler_v0sk9l_k$();
@@ -27828,23 +28350,26 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   Companion_instance_33 = new Companion_33();
   Companion_instance_35 = new Companion_35();
   Companion_instance_37 = new Companion_37();
-  Companion_instance_38 = new Companion_38();
-  Companion_instance_45 = new Companion_45();
+  PipelineCapabilitiesBuilderLogger_instance = new PipelineCapabilitiesBuilderLogger();
+  GeometryMeshes_instance = new GeometryMeshes();
+  Companion_instance_40 = new Companion_40();
+  Angles_instance = new Angles();
   Companion_instance_47 = new Companion_47();
+  Companion_instance_49 = new Companion_49();
   Op_instance = new Op();
   Op_instance_0 = new Op_0();
-  Companion_instance_48 = new Companion_48();
+  Companion_instance_50 = new Companion_50();
   Op_instance_1 = new Op_1();
-  Companion_instance_49 = new Companion_49();
-  Op_instance_2 = new Op_2();
   Companion_instance_51 = new Companion_51();
-  Op_instance_3 = new Op_3();
-  Companion_instance_52 = new Companion_52();
-  Op_instance_4 = new Op_4();
+  Op_instance_2 = new Op_2();
   Companion_instance_53 = new Companion_53();
-  Companion_instance_62 = new Companion_62();
-  Companion_instance_66 = new Companion_66();
-  Companion_instance_67 = new Companion_67();
+  Op_instance_3 = new Op_3();
+  Companion_instance_54 = new Companion_54();
+  Op_instance_4 = new Op_4();
+  Companion_instance_55 = new Companion_55();
+  Companion_instance_64 = new Companion_64();
+  Companion_instance_68 = new Companion_68();
+  Companion_instance_69 = new Companion_69();
   GPUBufferBindingType_instance = new GPUBufferBindingType();
   GPUVertexFormat_instance = new GPUVertexFormat();
   GPUVertexStepMode_instance = new GPUVertexStepMode();
@@ -28262,14 +28787,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     defineProp(touch_1.ZTouchEventType, 'MOVE', ZTouchEventType_MOVE_getInstance, VOID, true);
     defineProp(touch_1.ZTouchEventType, 'CANCEL', ZTouchEventType_CANCEL_getInstance, VOID, true);
     var zernikalos_44 = _.zernikalos || (_.zernikalos = {});
-    var loader = zernikalos_44.loader || (zernikalos_44.loader = {});
-    loader.ZkoHeader = ZkoHeader;
+    var geometries = zernikalos_44.geometries || (zernikalos_44.geometries = {});
+    geometries.ZCube = ZCube;
     var zernikalos_45 = _.zernikalos || (_.zernikalos = {});
-    var loader_0 = zernikalos_45.loader || (zernikalos_45.loader = {});
+    var geometries_0 = zernikalos_45.geometries || (zernikalos_45.geometries = {});
+    geometries_0.ZPlane = ZPlane;
+    var zernikalos_46 = _.zernikalos || (_.zernikalos = {});
+    var loader = zernikalos_46.loader || (zernikalos_46.loader = {});
+    loader.ZkoHeader = ZkoHeader;
+    var zernikalos_47 = _.zernikalos || (_.zernikalos = {});
+    var loader_0 = zernikalos_47.loader || (zernikalos_47.loader = {});
     loader_0.ZKo = ZKo;
     loader_0.loadFromProto = loadFromProto;
-    var zernikalos_46 = _.zernikalos || (_.zernikalos = {});
-    var logger = zernikalos_46.logger || (zernikalos_46.logger = {});
+    var zernikalos_48 = _.zernikalos || (_.zernikalos = {});
+    var logger = zernikalos_48.logger || (zernikalos_48.logger = {});
     logger.ZLogLevel = ZLogLevel;
     logger.ZLogLevel.values = values_13;
     logger.ZLogLevel.valueOf = valueOf_13;
@@ -28277,86 +28808,86 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     defineProp(logger.ZLogLevel, 'INFO', ZLogLevel_INFO_getInstance, VOID, true);
     defineProp(logger.ZLogLevel, 'WARNING', ZLogLevel_WARNING_getInstance, VOID, true);
     defineProp(logger.ZLogLevel, 'ERROR', ZLogLevel_ERROR_getInstance, VOID, true);
-    var zernikalos_47 = _.zernikalos || (_.zernikalos = {});
-    var logger_0 = zernikalos_47.logger || (zernikalos_47.logger = {});
-    var zernikalos_48 = _.zernikalos || (_.zernikalos = {});
-    var logger_1 = zernikalos_48.logger || (zernikalos_48.logger = {});
-    logger_1.ZLogger = ZLogger;
-    defineProp(logger_1.ZLogger, 'Companion', Companion_getInstance_45, VOID, true);
     var zernikalos_49 = _.zernikalos || (_.zernikalos = {});
-    var logger_2 = zernikalos_49.logger || (zernikalos_49.logger = {});
+    var logger_0 = zernikalos_49.logger || (zernikalos_49.logger = {});
     var zernikalos_50 = _.zernikalos || (_.zernikalos = {});
-    var math = zernikalos_50.math || (zernikalos_50.math = {});
+    var logger_1 = zernikalos_50.logger || (zernikalos_50.logger = {});
+    logger_1.ZLogger = ZLogger;
+    defineProp(logger_1.ZLogger, 'Companion', Companion_getInstance_47, VOID, true);
     var zernikalos_51 = _.zernikalos || (_.zernikalos = {});
-    var math_0 = zernikalos_51.math || (zernikalos_51.math = {});
+    var logger_2 = zernikalos_51.logger || (zernikalos_51.logger = {});
+    var zernikalos_52 = _.zernikalos || (_.zernikalos = {});
+    var math = zernikalos_52.math || (zernikalos_52.math = {});
+    var zernikalos_53 = _.zernikalos || (_.zernikalos = {});
+    var math_0 = zernikalos_53.math || (zernikalos_53.math = {});
     math_0.ZAlgebraObjectCollection = ZAlgebraObjectCollection;
     math_0.ZAlgebraObjectCollection.initWithDataTypeAndCount = initWithDataTypeAndCount;
-    var zernikalos_52 = _.zernikalos || (_.zernikalos = {});
-    var math_1 = zernikalos_52.math || (zernikalos_52.math = {});
+    var zernikalos_54 = _.zernikalos || (_.zernikalos = {});
+    var math_1 = zernikalos_54.math || (zernikalos_54.math = {});
     math_1.ZBox2D = ZBox2D;
-    var zernikalos_53 = _.zernikalos || (_.zernikalos = {});
-    var math_2 = zernikalos_53.math || (zernikalos_53.math = {});
+    var zernikalos_55 = _.zernikalos || (_.zernikalos = {});
+    var math_2 = zernikalos_55.math || (zernikalos_55.math = {});
     math_2.ZColor = ZColor;
     math_2.ZColor.initWithValues = initWithValues;
     math_2.ZColor.initWithByteValues = initWithByteValues;
     math_2.ZColor.initWithHex = initWithHex;
-    defineProp(math_2.ZColor, 'Companion', Companion_getInstance_47, VOID, true);
-    var zernikalos_54 = _.zernikalos || (_.zernikalos = {});
-    var math_3 = zernikalos_54.math || (zernikalos_54.math = {});
+    defineProp(math_2.ZColor, 'Companion', Companion_getInstance_49, VOID, true);
+    var zernikalos_56 = _.zernikalos || (_.zernikalos = {});
+    var math_3 = zernikalos_56.math || (zernikalos_56.math = {});
     math_3.ZMatrix4 = ZMatrix4;
     math_3.ZMatrix4.initWithValues = initWithValues_0;
     math_3.ZMatrix4.initWithFloatArray = initWithFloatArray;
     defineProp(math_3.ZMatrix4, 'Op', Op_getInstance_0, VOID, true);
-    var zernikalos_55 = _.zernikalos || (_.zernikalos = {});
-    var math_4 = zernikalos_55.math || (zernikalos_55.math = {});
+    var zernikalos_57 = _.zernikalos || (_.zernikalos = {});
+    var math_4 = zernikalos_57.math || (zernikalos_57.math = {});
     math_4.ZQuaternion = ZQuaternion;
     math_4.ZQuaternion.initWithValues = initWithValues_1;
     defineProp(math_4.ZQuaternion, 'Op', Op_getInstance_1, VOID, true);
-    var zernikalos_56 = _.zernikalos || (_.zernikalos = {});
-    var math_5 = zernikalos_56.math || (zernikalos_56.math = {});
+    var zernikalos_58 = _.zernikalos || (_.zernikalos = {});
+    var math_5 = zernikalos_58.math || (zernikalos_58.math = {});
     math_5.ZTransform = ZTransform;
     math_5.ZTransform.initWithArgs = initWithArgs_4;
-    var zernikalos_57 = _.zernikalos || (_.zernikalos = {});
-    var math_6 = zernikalos_57.math || (zernikalos_57.math = {});
+    var zernikalos_59 = _.zernikalos || (_.zernikalos = {});
+    var math_6 = zernikalos_59.math || (zernikalos_59.math = {});
     math_6.ZVector2 = ZVector2;
     math_6.ZVector2.initWithValues = initWithValues_2;
     math_6.ZVector2.initWithValue = initWithValue;
     defineProp(math_6.ZVector2, 'Op', Op_getInstance_2, VOID, true);
-    var zernikalos_58 = _.zernikalos || (_.zernikalos = {});
-    var math_7 = zernikalos_58.math || (zernikalos_58.math = {});
+    var zernikalos_60 = _.zernikalos || (_.zernikalos = {});
+    var math_7 = zernikalos_60.math || (zernikalos_60.math = {});
     math_7.ZVector3 = ZVector3;
     math_7.ZVector3.initWithValues = initWithValues_3;
     math_7.ZVector3.initWithValue = initWithValue_0;
     math_7.ZVector3.initWithVec4 = initWithVec4;
     defineProp(math_7.ZVector3, 'Op', Op_getInstance_3, VOID, true);
-    var zernikalos_59 = _.zernikalos || (_.zernikalos = {});
-    var math_8 = zernikalos_59.math || (zernikalos_59.math = {});
+    var zernikalos_61 = _.zernikalos || (_.zernikalos = {});
+    var math_8 = zernikalos_61.math || (zernikalos_61.math = {});
     math_8.ZVector4 = ZVector4;
     math_8.ZVector4.initWithValues = initWithValues_4;
     math_8.ZVector4.initWithValue = initWithValue_1;
     math_8.ZVector4.initWithVec3 = initWithVec3;
     defineProp(math_8.ZVector4, 'Op', Op_getInstance_4, VOID, true);
-    var zernikalos_60 = _.zernikalos || (_.zernikalos = {});
-    var objects = zernikalos_60.objects || (zernikalos_60.objects = {});
+    var zernikalos_62 = _.zernikalos || (_.zernikalos = {});
+    var objects = zernikalos_62.objects || (zernikalos_62.objects = {});
     objects.ZCamera = ZCamera;
     objects.ZCamera.initWithLens = initWithLens;
     objects.ZCamera.initWithLookUp = initWithLookUp;
-    defineProp(objects.ZCamera, 'Companion', Companion_getInstance_55, VOID, true);
-    var zernikalos_61 = _.zernikalos || (_.zernikalos = {});
-    var objects_0 = zernikalos_61.objects || (zernikalos_61.objects = {});
-    objects_0.ZGroup = ZGroup;
-    var zernikalos_62 = _.zernikalos || (_.zernikalos = {});
-    var objects_1 = zernikalos_62.objects || (zernikalos_62.objects = {});
-    objects_1.ZLight = ZLight;
-    defineProp(objects_1.ZLight, 'Companion', Companion_getInstance_57, VOID, true);
+    defineProp(objects.ZCamera, 'Companion', Companion_getInstance_57, VOID, true);
     var zernikalos_63 = _.zernikalos || (_.zernikalos = {});
-    var objects_2 = zernikalos_63.objects || (zernikalos_63.objects = {});
-    objects_2.ZModel = ZModel;
+    var objects_0 = zernikalos_63.objects || (zernikalos_63.objects = {});
+    objects_0.ZGroup = ZGroup;
     var zernikalos_64 = _.zernikalos || (_.zernikalos = {});
-    var objects_3 = zernikalos_64.objects || (zernikalos_64.objects = {});
-    objects_3.ZObject = ZObject;
+    var objects_1 = zernikalos_64.objects || (zernikalos_64.objects = {});
+    objects_1.ZLight = ZLight;
+    defineProp(objects_1.ZLight, 'Companion', Companion_getInstance_59, VOID, true);
     var zernikalos_65 = _.zernikalos || (_.zernikalos = {});
-    var objects_4 = zernikalos_65.objects || (zernikalos_65.objects = {});
+    var objects_2 = zernikalos_65.objects || (zernikalos_65.objects = {});
+    objects_2.ZModel = ZModel;
+    var zernikalos_66 = _.zernikalos || (_.zernikalos = {});
+    var objects_3 = zernikalos_66.objects || (zernikalos_66.objects = {});
+    objects_3.ZObject = ZObject;
+    var zernikalos_67 = _.zernikalos || (_.zernikalos = {});
+    var objects_4 = zernikalos_67.objects || (zernikalos_67.objects = {});
     objects_4.ZObjectType = ZObjectType;
     objects_4.ZObjectType.values = values_14;
     objects_4.ZObjectType.valueOf = valueOf_14;
@@ -28366,17 +28897,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     defineProp(objects_4.ZObjectType, 'CAMERA', ZObjectType_CAMERA_getInstance, VOID, true);
     defineProp(objects_4.ZObjectType, 'SKELETON', ZObjectType_SKELETON_getInstance, VOID, true);
     defineProp(objects_4.ZObjectType, 'LIGHT', ZObjectType_LIGHT_getInstance, VOID, true);
-    var zernikalos_66 = _.zernikalos || (_.zernikalos = {});
-    var objects_5 = zernikalos_66.objects || (zernikalos_66.objects = {});
-    objects_5.ZScene = ZScene;
-    defineProp(objects_5.ZScene, 'Companion', Companion_getInstance_61, VOID, true);
-    var zernikalos_67 = _.zernikalos || (_.zernikalos = {});
-    var objects_6 = zernikalos_67.objects || (zernikalos_67.objects = {});
-    objects_6.ZSkeleton = ZSkeleton;
     var zernikalos_68 = _.zernikalos || (_.zernikalos = {});
-    var scenestatehandler = zernikalos_68.scenestatehandler || (zernikalos_68.scenestatehandler = {});
+    var objects_5 = zernikalos_68.objects || (zernikalos_68.objects = {});
+    objects_5.ZScene = ZScene;
+    defineProp(objects_5.ZScene, 'Companion', Companion_getInstance_63, VOID, true);
     var zernikalos_69 = _.zernikalos || (_.zernikalos = {});
-    var search = zernikalos_69.search || (zernikalos_69.search = {});
+    var objects_6 = zernikalos_69.objects || (zernikalos_69.objects = {});
+    objects_6.ZSkeleton = ZSkeleton;
+    var zernikalos_70 = _.zernikalos || (_.zernikalos = {});
+    var scenestatehandler = zernikalos_70.scenestatehandler || (zernikalos_70.scenestatehandler = {});
+    var zernikalos_71 = _.zernikalos || (_.zernikalos = {});
+    var search = zernikalos_71.search || (zernikalos_71.search = {});
     search.findObjectByName = findObjectByName;
     search.findFirstModel = findFirstModel;
     search.findFirstCamera = findFirstCamera;
@@ -28384,23 +28915,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     search.findAllLights = findAllLights;
     search.findAllDirectLights = findAllDirectLights;
     search.findAmbientLight = findAmbientLight;
-    var zernikalos_70 = _.zernikalos || (_.zernikalos = {});
-    var search_0 = zernikalos_70.search || (zernikalos_70.search = {});
-    var zernikalos_71 = _.zernikalos || (_.zernikalos = {});
-    var search_1 = zernikalos_71.search || (zernikalos_71.search = {});
-    search_1.findInTree = findInTree;
     var zernikalos_72 = _.zernikalos || (_.zernikalos = {});
-    var search_2 = zernikalos_72.search || (zernikalos_72.search = {});
-    search_2.treeAsList = treeAsList;
+    var search_0 = zernikalos_72.search || (zernikalos_72.search = {});
     var zernikalos_73 = _.zernikalos || (_.zernikalos = {});
-    var settings = zernikalos_73.settings || (zernikalos_73.settings = {});
-    settings.ZLoggerSettings = ZLoggerSettings;
+    var search_1 = zernikalos_73.search || (zernikalos_73.search = {});
+    search_1.findInTree = findInTree;
     var zernikalos_74 = _.zernikalos || (_.zernikalos = {});
-    var settings_0 = zernikalos_74.settings || (zernikalos_74.settings = {});
-    settings_0.ZSettings = ZSettings;
-    defineProp(settings_0.ZSettings, 'Companion', Companion_getInstance_64, VOID, true);
+    var search_2 = zernikalos_74.search || (zernikalos_74.search = {});
+    search_2.treeAsList = treeAsList;
     var zernikalos_75 = _.zernikalos || (_.zernikalos = {});
-    var stats = zernikalos_75.stats || (zernikalos_75.stats = {});
+    var settings = zernikalos_75.settings || (zernikalos_75.settings = {});
+    settings.ZLoggerSettings = ZLoggerSettings;
+    var zernikalos_76 = _.zernikalos || (_.zernikalos = {});
+    var settings_0 = zernikalos_76.settings || (zernikalos_76.settings = {});
+    settings_0.ZSettings = ZSettings;
+    defineProp(settings_0.ZSettings, 'Companion', Companion_getInstance_66, VOID, true);
+    var zernikalos_77 = _.zernikalos || (_.zernikalos = {});
+    var stats = zernikalos_77.stats || (zernikalos_77.stats = {});
     stats.ZPlatformName = ZPlatformName;
     stats.ZPlatformName.values = values_15;
     stats.ZPlatformName.valueOf = valueOf_15;
@@ -28409,35 +28940,35 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     defineProp(stats.ZPlatformName, 'WEB', ZPlatformName_WEB_getInstance, VOID, true);
     stats.ZPlatformInfo = ZPlatformInfo;
     stats.ZStats = ZStats;
-    var zernikalos_76 = _.zernikalos || (_.zernikalos = {});
-    var ui = zernikalos_76.ui || (zernikalos_76.ui = {});
-    var zernikalos_77 = _.zernikalos || (_.zernikalos = {});
-    var ui_0 = zernikalos_77.ui || (zernikalos_77.ui = {});
     var zernikalos_78 = _.zernikalos || (_.zernikalos = {});
-    var loader_1 = zernikalos_78.loader || (zernikalos_78.loader = {});
-    loader_1.loadFromUrl = loadFromUrl;
+    var ui = zernikalos_78.ui || (zernikalos_78.ui = {});
     var zernikalos_79 = _.zernikalos || (_.zernikalos = {});
-    var utils = zernikalos_79.utils || (zernikalos_79.utils = {});
+    var ui_0 = zernikalos_79.ui || (zernikalos_79.ui = {});
+    var zernikalos_80 = _.zernikalos || (_.zernikalos = {});
+    var loader_1 = zernikalos_80.loader || (zernikalos_80.loader = {});
+    loader_1.loadFromUrl = loadFromUrl;
+    var zernikalos_81 = _.zernikalos || (_.zernikalos = {});
+    var utils = zernikalos_81.utils || (zernikalos_81.utils = {});
     utils.MapPairJs = MapPairJs;
     utils.mapFlatJs = mapFlatJs;
-    var zernikalos_80 = _.zernikalos || (_.zernikalos = {});
-    zernikalos_80.Zernikalos = Zernikalos;
-    var zernikalos_81 = _.zernikalos || (_.zernikalos = {});
-    var components_18 = zernikalos_81.components || (zernikalos_81.components = {});
+    var zernikalos_82 = _.zernikalos || (_.zernikalos = {});
+    zernikalos_82.Zernikalos = Zernikalos;
+    var zernikalos_83 = _.zernikalos || (_.zernikalos = {});
+    var components_18 = zernikalos_83.components || (zernikalos_83.components = {});
     var material_1 = components_18.material || (components_18.material = {});
     material_1.ZBitmap = ZBitmap;
     material_1.ZBitmap.initWithByteArray = initWithByteArray;
-    var zernikalos_82 = _.zernikalos || (_.zernikalos = {});
-    var events_14 = zernikalos_82.events || (zernikalos_82.events = {});
-    events_14.WebInputEventManager = WebInputEventManager;
-    var zernikalos_83 = _.zernikalos || (_.zernikalos = {});
-    var events_15 = zernikalos_83.events || (zernikalos_83.events = {});
-    events_15.WebKeyboardEventAdapter = WebKeyboardEventAdapter;
     var zernikalos_84 = _.zernikalos || (_.zernikalos = {});
-    var events_16 = zernikalos_84.events || (zernikalos_84.events = {});
-    events_16.WebMouseEventAdapter = WebMouseEventAdapter;
+    var events_14 = zernikalos_84.events || (zernikalos_84.events = {});
+    events_14.WebInputEventManager = WebInputEventManager;
     var zernikalos_85 = _.zernikalos || (_.zernikalos = {});
-    var ui_1 = zernikalos_85.ui || (zernikalos_85.ui = {});
+    var events_15 = zernikalos_85.events || (zernikalos_85.events = {});
+    events_15.WebKeyboardEventAdapter = WebKeyboardEventAdapter;
+    var zernikalos_86 = _.zernikalos || (_.zernikalos = {});
+    var events_16 = zernikalos_86.events || (zernikalos_86.events = {});
+    events_16.WebMouseEventAdapter = WebMouseEventAdapter;
+    var zernikalos_87 = _.zernikalos || (_.zernikalos = {});
+    var ui_1 = zernikalos_87.ui || (zernikalos_87.ui = {});
     ui_1.ZJsSurfaceView = ZJsSurfaceView;
   }
   $jsExportAll$(_);
@@ -28685,9 +29216,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(Error_0, 'Error', Error_init_$Create$, Error);
   initMetadataForClass(NumberFormatException, 'NumberFormatException', NumberFormatException_init_$Create$, IllegalArgumentException);
   initMetadataForClass(AssertionError, 'AssertionError', AssertionError_init_$Create$, Error_0);
+  initMetadataForClass(UninitializedPropertyAccessException, 'UninitializedPropertyAccessException', UninitializedPropertyAccessException_init_$Create$, RuntimeException);
   initMetadataForClass(ArithmeticException, 'ArithmeticException', ArithmeticException_init_$Create$, RuntimeException);
   initMetadataForClass(ConcurrentModificationException, 'ConcurrentModificationException', ConcurrentModificationException_init_$Create$, RuntimeException);
-  initMetadataForClass(UninitializedPropertyAccessException, 'UninitializedPropertyAccessException', UninitializedPropertyAccessException_init_$Create$, RuntimeException);
   initMetadataForClass(NoWhenBranchMatchedException, 'NoWhenBranchMatchedException', NoWhenBranchMatchedException_init_$Create$, RuntimeException);
   initMetadataForClass(NullPointerException, 'NullPointerException', NullPointerException_init_$Create$, RuntimeException);
   initMetadataForClass(ClassCastException, 'ClassCastException', ClassCastException_init_$Create$, RuntimeException);
@@ -28836,19 +29367,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(Uuid, 'Uuid', VOID, VOID, [Comparable]);
   initMetadataForCompanion(Companion_21);
   initMetadataForClass(UByte, 'UByte', VOID, VOID, [Comparable]);
-  initMetadataForClass(Iterator, 'Iterator');
+  initMetadataForClass(Iterator_0, 'Iterator');
   initMetadataForClass(UByteArray, 'UByteArray', VOID, VOID, [Collection]);
   initMetadataForCompanion(Companion_22);
   initMetadataForClass(UInt, 'UInt', VOID, VOID, [Comparable]);
-  initMetadataForClass(Iterator_0, 'Iterator');
+  initMetadataForClass(Iterator_1, 'Iterator');
   initMetadataForClass(UIntArray, 'UIntArray', VOID, VOID, [Collection]);
   initMetadataForCompanion(Companion_23);
   initMetadataForClass(ULong, 'ULong', VOID, VOID, [Comparable]);
-  initMetadataForClass(Iterator_1, 'Iterator');
+  initMetadataForClass(Iterator_2, 'Iterator');
   initMetadataForClass(ULongArray, 'ULongArray', VOID, VOID, [Collection]);
   initMetadataForCompanion(Companion_24);
   initMetadataForClass(UShort, 'UShort', VOID, VOID, [Comparable]);
-  initMetadataForClass(Iterator_2, 'Iterator');
+  initMetadataForClass(Iterator_3, 'Iterator');
   initMetadataForClass(UShortArray, 'UShortArray', VOID, VOID, [Collection]);
   //endregion
   function CharSequence() {
@@ -29405,6 +29936,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
       return result_0;
     }
   }
+  function intersect(_this__u8e3s4, other) {
+    var otherCollection = convertToListIfNotCollection(other);
+    // Inline function 'kotlin.collections.mutableSetOf' call
+    var set = LinkedHashSet_init_$Create$();
+    var _iterator__ex2g4s = _this__u8e3s4.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var e = _iterator__ex2g4s.next_20eer_k$();
+      if (otherCollection.contains_aljjnj_k$(e)) {
+        set.add_utx5q5_k$(e);
+      }
+    }
+    return set;
+  }
   function take(_this__u8e3s4, n) {
     // Inline function 'kotlin.require' call
     if (!(n >= 0)) {
@@ -29417,7 +29961,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
       if (n >= _this__u8e3s4.get_size_woubt6_k$())
         return toList_0(_this__u8e3s4);
       if (n === 1)
-        return listOf(first_0(_this__u8e3s4));
+        return listOf(first_1(_this__u8e3s4));
     }
     var count = 0;
     var list = ArrayList_init_$Create$_0(n);
@@ -29431,18 +29975,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return optimizeReadOnlyList(list);
   }
-  function intersect(_this__u8e3s4, other) {
-    var otherCollection = convertToListIfNotCollection(other);
-    // Inline function 'kotlin.collections.mutableSetOf' call
-    var set = LinkedHashSet_init_$Create$();
-    var _iterator__ex2g4s = _this__u8e3s4.iterator_jk1svi_k$();
-    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
-      var e = _iterator__ex2g4s.next_20eer_k$();
-      if (otherCollection.contains_aljjnj_k$(e)) {
-        set.add_utx5q5_k$(e);
-      }
-    }
-    return set;
+  function first_0(_this__u8e3s4) {
+    if (_this__u8e3s4.isEmpty_y1axqb_k$())
+      throw NoSuchElementException_init_$Create$_0('List is empty.');
+    return _this__u8e3s4.get_c1px32_k$(0);
   }
   function toCollection_0(_this__u8e3s4, destination) {
     var _iterator__ex2g4s = _this__u8e3s4.iterator_jk1svi_k$();
@@ -29486,9 +30022,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return optimizeReadOnlyList(toMutableList_0(_this__u8e3s4));
   }
-  function first_0(_this__u8e3s4) {
+  function first_1(_this__u8e3s4) {
     if (isInterface(_this__u8e3s4, KtList))
-      return first_1(_this__u8e3s4);
+      return first_0(_this__u8e3s4);
     else {
       var iterator = _this__u8e3s4.iterator_jk1svi_k$();
       if (!iterator.hasNext_bitz1p_k$())
@@ -29516,11 +30052,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
     if (isInterface(_this__u8e3s4, Collection))
       return toMutableList(_this__u8e3s4);
     return toCollection_0(_this__u8e3s4, ArrayList_init_$Create$());
-  }
-  function first_1(_this__u8e3s4) {
-    if (_this__u8e3s4.isEmpty_y1axqb_k$())
-      throw NoSuchElementException_init_$Create$_0('List is empty.');
-    return _this__u8e3s4.get_c1px32_k$(0);
   }
   function single(_this__u8e3s4) {
     if (isInterface(_this__u8e3s4, KtList))
@@ -30324,9 +30855,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
     // Inline function 'kotlin.js.asDynamic' call
     var tmp_1 = UNSUPPORTED_OPERATION$ref();
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp_2 = UNSUPPORTED_OPERATION$ref_0();
+    var tmp_2 = UNSUPPORTED_OPERATION$ref();
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp$ret$2 = UNSUPPORTED_OPERATION$ref_1();
+    var tmp$ret$2 = UNSUPPORTED_OPERATION$ref();
     return createJsArrayViewWith(tmp, tmp_0, tmp_1, tmp_2, tmp$ret$2);
   }
   function createJsArrayViewWith(listSize, listGet, listSet, listDecreaseSize, listIncreaseSize) {
@@ -30376,11 +30907,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
     var tmp_0 = createJsReadonlyMapViewFrom$lambda_0(map);
     var tmp_1 = createJsReadonlyMapViewFrom$lambda_1(map);
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp_2 = UNSUPPORTED_OPERATION$ref_2();
+    var tmp_2 = UNSUPPORTED_OPERATION$ref();
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp_3 = UNSUPPORTED_OPERATION$ref_3();
+    var tmp_3 = UNSUPPORTED_OPERATION$ref();
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp_4 = UNSUPPORTED_OPERATION$ref_4();
+    var tmp_4 = UNSUPPORTED_OPERATION$ref();
     var tmp_5 = createJsReadonlyMapViewFrom$lambda_2(map);
     var tmp_6 = createJsReadonlyMapViewFrom$lambda_3(map);
     var tmp_7 = createJsReadonlyMapViewFrom$lambda_4(map);
@@ -30401,11 +30932,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
   function createJsReadonlySetViewFrom(set) {
     var tmp = createJsReadonlySetViewFrom$lambda(set);
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp_0 = UNSUPPORTED_OPERATION$ref_5();
+    var tmp_0 = UNSUPPORTED_OPERATION$ref();
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp_1 = UNSUPPORTED_OPERATION$ref_6();
+    var tmp_1 = UNSUPPORTED_OPERATION$ref();
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp_2 = UNSUPPORTED_OPERATION$ref_7();
+    var tmp_2 = UNSUPPORTED_OPERATION$ref();
     var tmp_3 = createJsReadonlySetViewFrom$lambda_0(set);
     var tmp_4 = createJsReadonlySetViewFrom$lambda_1(set);
     var tmp_5 = createJsReadonlySetViewFrom$lambda_2(set);
@@ -30434,12 +30965,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
     transform = tmp;
     var iteratorNext = createJsIteratorFrom$lambda_0(iterator);
     var iteratorHasNext = createJsIteratorFrom$lambda_1(iterator);
-    var jsIterator = {next: function () {
+    var iteratorConstructor = typeof Iterator === 'function' ? Iterator : Object;
+    var jsIterator = Object.create(iteratorConstructor.prototype);
+    jsIterator.next = function () {
       var result = {done: !iteratorHasNext()};
       if (!result.done)
         result.value = transform(iteratorNext());
       return result;
-    }};
+    };
     jsIterator[Symbol.iterator] = function () {
       return this;
     };
@@ -30512,28 +31045,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
     };
   }
   function UNSUPPORTED_OPERATION$ref() {
-    var l = function () {
+    return constructCallableReference(function () {
       UNSUPPORTED_OPERATION();
       return Unit_instance;
-    };
-    l.callableName = 'UNSUPPORTED_OPERATION';
-    return l;
-  }
-  function UNSUPPORTED_OPERATION$ref_0() {
-    var l = function () {
-      UNSUPPORTED_OPERATION();
-      return Unit_instance;
-    };
-    l.callableName = 'UNSUPPORTED_OPERATION';
-    return l;
-  }
-  function UNSUPPORTED_OPERATION$ref_1() {
-    var l = function () {
-      UNSUPPORTED_OPERATION();
-      return Unit_instance;
-    };
-    l.callableName = 'UNSUPPORTED_OPERATION';
-    return l;
+    }, 0, 0, 0, 'UNSUPPORTED_OPERATION');
   }
   function createJsReadonlyMapViewFrom$lambda($map) {
     return function () {
@@ -30549,30 +31064,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return function (k) {
       return $map.containsKey_aw81wo_k$(k);
     };
-  }
-  function UNSUPPORTED_OPERATION$ref_2() {
-    var l = function () {
-      UNSUPPORTED_OPERATION();
-      return Unit_instance;
-    };
-    l.callableName = 'UNSUPPORTED_OPERATION';
-    return l;
-  }
-  function UNSUPPORTED_OPERATION$ref_3() {
-    var l = function () {
-      UNSUPPORTED_OPERATION();
-      return Unit_instance;
-    };
-    l.callableName = 'UNSUPPORTED_OPERATION';
-    return l;
-  }
-  function UNSUPPORTED_OPERATION$ref_4() {
-    var l = function () {
-      UNSUPPORTED_OPERATION();
-      return Unit_instance;
-    };
-    l.callableName = 'UNSUPPORTED_OPERATION';
-    return l;
   }
   function createJsReadonlyMapViewFrom$lambda_2($map) {
     return function () {
@@ -30663,30 +31154,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return function () {
       return $set.get_size_woubt6_k$();
     };
-  }
-  function UNSUPPORTED_OPERATION$ref_5() {
-    var l = function () {
-      UNSUPPORTED_OPERATION();
-      return Unit_instance;
-    };
-    l.callableName = 'UNSUPPORTED_OPERATION';
-    return l;
-  }
-  function UNSUPPORTED_OPERATION$ref_6() {
-    var l = function () {
-      UNSUPPORTED_OPERATION();
-      return Unit_instance;
-    };
-    l.callableName = 'UNSUPPORTED_OPERATION';
-    return l;
-  }
-  function UNSUPPORTED_OPERATION$ref_7() {
-    var l = function () {
-      UNSUPPORTED_OPERATION();
-      return Unit_instance;
-    };
-    l.callableName = 'UNSUPPORTED_OPERATION';
-    return l;
   }
   function createJsReadonlySetViewFrom$lambda_0($set) {
     return function (v) {
@@ -30884,6 +31351,27 @@ if (typeof String.prototype.startsWith === 'undefined') {
       }
       return tmp;
     }
+    if (isCallableReference(obj1) && isCallableReference(obj2)) {
+      if (obj1 === obj2)
+        return true;
+      if (obj1.$id != obj2.$id)
+        return false;
+      if (obj1.$flags != obj2.$flags)
+        return false;
+      if (obj1.$arity != obj2.$arity)
+        return false;
+      if (obj1.$bound == null && obj2.$bound == null)
+        return true;
+      if (obj1.$bound === obj2.$bound)
+        return true;
+      if (!isJsArray(obj1.$bound) || !isJsArray(obj2.$bound))
+        return false;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var bound1 = obj1.$bound;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var bound2 = obj2.$bound;
+      return contentEqualsInternal(bound1, bound2);
+    }
     return obj1 === obj2;
   }
   function hashCode(obj) {
@@ -30896,7 +31384,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
         tmp = 'function' === typeof obj.hashCode ? obj.hashCode() : getObjectHashCode(obj);
         break;
       case 'function':
-        tmp = getObjectHashCode(obj);
+        tmp = isCallableReference(obj) ? getCallableReferenceHashCode(obj) : getObjectHashCode(obj);
         break;
       case 'number':
         tmp = getNumberHashCode(obj);
@@ -30927,6 +31415,22 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function anyToString(o) {
     return Object.prototype.toString.call(o);
+  }
+  function getCallableReferenceHashCode(obj) {
+    // Inline function 'kotlin.js.unsafeCast' call
+    var hash = obj.$flags;
+    hash = imul(31, hash) + hashCode(obj.$id) | 0;
+    var tmp = imul(31, hash);
+    var tmp0_elvis_lhs = obj.$arity;
+    // Inline function 'kotlin.js.unsafeCast' call
+    hash = tmp + (tmp0_elvis_lhs == null ? -1 : tmp0_elvis_lhs) | 0;
+    var bound = obj.$bound;
+    if (bound != null && isJsArray(bound)) {
+      // Inline function 'kotlin.js.unsafeCast' call
+      var boundArray = bound;
+      hash = imul(31, hash) + contentHashCodeInternal(boundArray) | 0;
+    }
+    return hash;
   }
   function getBooleanHashCode(value) {
     return value ? 1231 : 1237;
@@ -31077,6 +31581,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
       tmp = v;
     }
     return tmp;
+  }
+  function isLongCompiledToBigInt() {
+    return typeof 2n === 'bigint';
   }
   function jsGenerateInterfaceSymbol() {
     return generateInterfaceSymbolById();
@@ -31658,6 +32165,15 @@ if (typeof String.prototype.startsWith === 'undefined') {
     _init_properties_reflectRuntime_kt__5r4uu3();
     return get_propertyRefClassMetadataCache()[paramCount][setter == null ? 0 : 1];
   }
+  function constructCallableReference(callable, arity, flags, signatureId, name, bounds) {
+    _init_properties_reflectRuntime_kt__5r4uu3();
+    callable.callableName = name;
+    callable.$flags = flags;
+    callable.$arity = arity;
+    callable.$id = signatureId;
+    callable.$bound = bounds;
+    return callable;
+  }
   var properties_initialized_reflectRuntime_kt_inkhwd;
   function _init_properties_reflectRuntime_kt__5r4uu3() {
     if (!properties_initialized_reflectRuntime_kt_inkhwd) {
@@ -31681,6 +32197,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function isArrayish(o) {
     return isJsArray(o) || isView(o);
+  }
+  function isCallableReference(value) {
+    return typeof value === 'function' && value.$flags != null && value.$arity != null;
   }
   function isJsArray(obj) {
     // Inline function 'kotlin.js.unsafeCast' call
@@ -31797,11 +32316,24 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var message = 'Invalid new array size: ' + newSize + '.';
       throw IllegalArgumentException_init_$Create$_0(toString_1(message));
     }
-    var tmp0 = 'CharArray';
+    var size = _this__u8e3s4.length;
+    var tmp;
+    if (newSize < 16 || size < 16) {
+      tmp = fillFrom(_this__u8e3s4, charArray(newSize));
+    } else if (newSize > size) {
+      // Inline function 'kotlin.also' call
+      var this_0 = charArray(newSize);
+      // Inline function 'kotlin.js.asDynamic' call
+      this_0.set(_this__u8e3s4);
+      tmp = this_0;
+    } else {
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = _this__u8e3s4.slice(0, newSize);
+    }
+    var copy = tmp;
     // Inline function 'withType' call
-    var array = fillFrom(_this__u8e3s4, charArray(newSize));
-    array.$type$ = tmp0;
-    return array;
+    copy.$type$ = 'CharArray';
+    return copy;
   }
   function copyOf_0(_this__u8e3s4, newSize) {
     // Inline function 'kotlin.require' call
@@ -31809,7 +32341,21 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var message = 'Invalid new array size: ' + newSize + '.';
       throw IllegalArgumentException_init_$Create$_0(toString_1(message));
     }
-    return fillFrom(_this__u8e3s4, new Float64Array(newSize));
+    var size = _this__u8e3s4.length;
+    var tmp;
+    if (newSize < 16 || size < 16) {
+      tmp = fillFrom(_this__u8e3s4, new Float64Array(newSize));
+    } else if (newSize > size) {
+      // Inline function 'kotlin.also' call
+      var this_0 = new Float64Array(newSize);
+      // Inline function 'kotlin.js.asDynamic' call
+      this_0.set(_this__u8e3s4);
+      tmp = this_0;
+    } else {
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = _this__u8e3s4.slice(0, newSize);
+    }
+    return tmp;
   }
   function copyOf_1(_this__u8e3s4, newSize) {
     // Inline function 'kotlin.require' call
@@ -31817,7 +32363,21 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var message = 'Invalid new array size: ' + newSize + '.';
       throw IllegalArgumentException_init_$Create$_0(toString_1(message));
     }
-    return fillFrom(_this__u8e3s4, new Float32Array(newSize));
+    var size = _this__u8e3s4.length;
+    var tmp;
+    if (newSize < 16 || size < 16) {
+      tmp = fillFrom(_this__u8e3s4, new Float32Array(newSize));
+    } else if (newSize > size) {
+      // Inline function 'kotlin.also' call
+      var this_0 = new Float32Array(newSize);
+      // Inline function 'kotlin.js.asDynamic' call
+      this_0.set(_this__u8e3s4);
+      tmp = this_0;
+    } else {
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = _this__u8e3s4.slice(0, newSize);
+    }
+    return tmp;
   }
   function copyOf_2(_this__u8e3s4, newSize) {
     // Inline function 'kotlin.require' call
@@ -31825,7 +32385,24 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var message = 'Invalid new array size: ' + newSize + '.';
       throw IllegalArgumentException_init_$Create$_0(toString_1(message));
     }
-    return fillFrom(_this__u8e3s4, new BigInt64Array(newSize));
+    if (false)
+      // removed by dead control flow
+{}
+    var size = _this__u8e3s4.length;
+    var tmp;
+    if (newSize < 16 || size < 16) {
+      tmp = fillFrom(_this__u8e3s4, new BigInt64Array(newSize));
+    } else if (newSize > size) {
+      // Inline function 'kotlin.also' call
+      var this_0 = new BigInt64Array(newSize);
+      // Inline function 'kotlin.js.asDynamic' call
+      this_0.set(_this__u8e3s4);
+      tmp = this_0;
+    } else {
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = _this__u8e3s4.slice(0, newSize);
+    }
+    return tmp;
   }
   function copyOf_3(_this__u8e3s4, newSize) {
     // Inline function 'kotlin.require' call
@@ -31833,7 +32410,21 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var message = 'Invalid new array size: ' + newSize + '.';
       throw IllegalArgumentException_init_$Create$_0(toString_1(message));
     }
-    return fillFrom(_this__u8e3s4, new Int32Array(newSize));
+    var size = _this__u8e3s4.length;
+    var tmp;
+    if (newSize < 16 || size < 16) {
+      tmp = fillFrom(_this__u8e3s4, new Int32Array(newSize));
+    } else if (newSize > size) {
+      // Inline function 'kotlin.also' call
+      var this_0 = new Int32Array(newSize);
+      // Inline function 'kotlin.js.asDynamic' call
+      this_0.set(_this__u8e3s4);
+      tmp = this_0;
+    } else {
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = _this__u8e3s4.slice(0, newSize);
+    }
+    return tmp;
   }
   function copyOf_4(_this__u8e3s4, newSize) {
     // Inline function 'kotlin.require' call
@@ -31841,7 +32432,21 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var message = 'Invalid new array size: ' + newSize + '.';
       throw IllegalArgumentException_init_$Create$_0(toString_1(message));
     }
-    return fillFrom(_this__u8e3s4, new Int16Array(newSize));
+    var size = _this__u8e3s4.length;
+    var tmp;
+    if (newSize < 16 || size < 16) {
+      tmp = fillFrom(_this__u8e3s4, new Int16Array(newSize));
+    } else if (newSize > size) {
+      // Inline function 'kotlin.also' call
+      var this_0 = new Int16Array(newSize);
+      // Inline function 'kotlin.js.asDynamic' call
+      this_0.set(_this__u8e3s4);
+      tmp = this_0;
+    } else {
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = _this__u8e3s4.slice(0, newSize);
+    }
+    return tmp;
   }
   function copyOf_5(_this__u8e3s4, newSize) {
     // Inline function 'kotlin.require' call
@@ -31849,7 +32454,21 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var message = 'Invalid new array size: ' + newSize + '.';
       throw IllegalArgumentException_init_$Create$_0(toString_1(message));
     }
-    return fillFrom(_this__u8e3s4, new Int8Array(newSize));
+    var size = _this__u8e3s4.length;
+    var tmp;
+    if (newSize < 16 || size < 16) {
+      tmp = fillFrom(_this__u8e3s4, new Int8Array(newSize));
+    } else if (newSize > size) {
+      // Inline function 'kotlin.also' call
+      var this_0 = new Int8Array(newSize);
+      // Inline function 'kotlin.js.asDynamic' call
+      this_0.set(_this__u8e3s4);
+      tmp = this_0;
+    } else {
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = _this__u8e3s4.slice(0, newSize);
+    }
+    return tmp;
   }
   function copyOf_6(_this__u8e3s4, newSize) {
     // Inline function 'kotlin.require' call
@@ -34270,6 +34889,29 @@ if (typeof String.prototype.startsWith === 'undefined') {
   function AssertionError() {
     captureStack(this, AssertionError);
   }
+  function UninitializedPropertyAccessException_init_$Init$($this) {
+    RuntimeException_init_$Init$($this);
+    UninitializedPropertyAccessException.call($this);
+    return $this;
+  }
+  function UninitializedPropertyAccessException_init_$Create$() {
+    var tmp = UninitializedPropertyAccessException_init_$Init$(objectCreate(protoOf(UninitializedPropertyAccessException)));
+    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$);
+    return tmp;
+  }
+  function UninitializedPropertyAccessException_init_$Init$_0(message, $this) {
+    RuntimeException_init_$Init$_0(message, $this);
+    UninitializedPropertyAccessException.call($this);
+    return $this;
+  }
+  function UninitializedPropertyAccessException_init_$Create$_0(message) {
+    var tmp = UninitializedPropertyAccessException_init_$Init$_0(message, objectCreate(protoOf(UninitializedPropertyAccessException)));
+    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$_0);
+    return tmp;
+  }
+  function UninitializedPropertyAccessException() {
+    captureStack(this, UninitializedPropertyAccessException);
+  }
   function ArithmeticException_init_$Init$($this) {
     RuntimeException_init_$Init$($this);
     ArithmeticException.call($this);
@@ -34315,29 +34957,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function ConcurrentModificationException() {
     captureStack(this, ConcurrentModificationException);
-  }
-  function UninitializedPropertyAccessException_init_$Init$($this) {
-    RuntimeException_init_$Init$($this);
-    UninitializedPropertyAccessException.call($this);
-    return $this;
-  }
-  function UninitializedPropertyAccessException_init_$Create$() {
-    var tmp = UninitializedPropertyAccessException_init_$Init$(objectCreate(protoOf(UninitializedPropertyAccessException)));
-    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$);
-    return tmp;
-  }
-  function UninitializedPropertyAccessException_init_$Init$_0(message, $this) {
-    RuntimeException_init_$Init$_0(message, $this);
-    UninitializedPropertyAccessException.call($this);
-    return $this;
-  }
-  function UninitializedPropertyAccessException_init_$Create$_0(message) {
-    var tmp = UninitializedPropertyAccessException_init_$Init$_0(message, objectCreate(protoOf(UninitializedPropertyAccessException)));
-    captureStack(tmp, UninitializedPropertyAccessException_init_$Create$_0);
-    return tmp;
-  }
-  function UninitializedPropertyAccessException() {
-    captureStack(this, UninitializedPropertyAccessException);
   }
   function NoWhenBranchMatchedException_init_$Init$($this) {
     RuntimeException_init_$Init$($this);
@@ -34437,7 +35056,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return tmp;
   }
   function abs_1(n) {
-    return n < 0 ? -n | 0 | 0 : n;
+    return n < 0 ? -n | 0 : n;
   }
   function get_js(_this__u8e3s4) {
     return (_this__u8e3s4 instanceof KClassImpl ? _this__u8e3s4 : THROW_CCE()).get_jClass_i6cf5d_k$();
@@ -34601,6 +35220,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   function PrimitiveClasses$intArrayClass$lambda(it) {
     return !(it == null) ? isIntArray(it) : false;
   }
+  function PrimitiveClasses$bigintClass$lambda(it) {
+    return typeof it === 'bigint';
+  }
   function PrimitiveClasses$floatArrayClass$lambda(it) {
     return !(it == null) ? isFloatArray(it) : false;
   }
@@ -34693,12 +35315,17 @@ if (typeof String.prototype.startsWith === 'undefined') {
     tmp_31.intArrayClass = new PrimitiveKClassImpl(tmp_32, 'IntArray', PrimitiveClasses$intArrayClass$lambda);
     var tmp_33 = this;
     // Inline function 'kotlin.js.unsafeCast' call
-    var tmp_34 = Float32Array;
-    tmp_33.floatArrayClass = new PrimitiveKClassImpl(tmp_34, 'FloatArray', PrimitiveClasses$floatArrayClass$lambda);
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp_34 = typeof BigInt === 'undefined' ? VOID : BigInt;
+    tmp_33.bigIntClass = new PrimitiveKClassImpl(tmp_34, 'BigInt', PrimitiveClasses$bigintClass$lambda);
     var tmp_35 = this;
     // Inline function 'kotlin.js.unsafeCast' call
-    var tmp_36 = Float64Array;
-    tmp_35.doubleArrayClass = new PrimitiveKClassImpl(tmp_36, 'DoubleArray', PrimitiveClasses$doubleArrayClass$lambda);
+    var tmp_36 = Float32Array;
+    tmp_35.floatArrayClass = new PrimitiveKClassImpl(tmp_36, 'FloatArray', PrimitiveClasses$floatArrayClass$lambda);
+    var tmp_37 = this;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp_38 = Float64Array;
+    tmp_37.doubleArrayClass = new PrimitiveKClassImpl(tmp_38, 'DoubleArray', PrimitiveClasses$doubleArrayClass$lambda);
   }
   protoOf(PrimitiveClasses).get_anyClass_x0jl4l_k$ = function () {
     return this.anyClass;
@@ -34753,6 +35380,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   protoOf(PrimitiveClasses).get_intArrayClass_h44pbv_k$ = function () {
     return this.intArrayClass;
+  };
+  protoOf(PrimitiveClasses).get_bigIntClass_d3z5a8_k$ = function () {
+    return this.bigIntClass;
   };
   protoOf(PrimitiveClasses).get_floatArrayClass_qngmha_k$ = function () {
     return this.floatArrayClass;
@@ -34834,6 +35464,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
         }
 
         tmp = tmp_0;
+        break;
+      case 'bigint':
+        tmp =  true && BigInt.asIntN(64, e) === e ? PrimitiveClasses_getInstance().longClass : PrimitiveClasses_getInstance().bigIntClass;
         break;
       case 'boolean':
         tmp = PrimitiveClasses_getInstance().booleanClass;
@@ -37273,7 +37906,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
       return _this__u8e3s4.getOrImplicitDefault_figf1n_k$(key);
     var tmp$ret$0;
     $l$block_0: {
-      // Inline function 'kotlin.collections.getOrElseNullable' call
+      // Inline function 'kotlin.collections.getOrElseIfMissing' call
       var value = _this__u8e3s4.get_wei43m_k$(key);
       if (value == null && !_this__u8e3s4.containsKey_aw81wo_k$(key)) {
         throw NoSuchElementException_init_$Create$_0('Key ' + toString_0(key) + ' is missing in the map.');
@@ -37595,10 +38228,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return EmptySet_instance;
   }
   function compareValues(a, b) {
-    if (a === b)
-      return 0;
     if (a == null)
-      return -1;
+      return b == null ? 0 : -1;
     if (b == null)
       return 1;
     return compareTo((!(a == null) ? isComparable(a) : false) ? a : THROW_CCE(), b);
@@ -38311,8 +38942,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
     limit = limit === VOID ? 0 : limit;
     if (delimiters.length === 1) {
       var delimiter = delimiters[0];
-      // Inline function 'kotlin.text.isEmpty' call
-      if (!(charSequenceLength(delimiter) === 0)) {
+      // Inline function 'kotlin.text.isNotEmpty' call
+      if (charSequenceLength(delimiter) > 0) {
         return split_0(_this__u8e3s4, delimiter, ignoreCase, limit);
       }
     }
@@ -41237,16 +41868,16 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return _UByteArray___get_storage__impl__d4kctt($this).length;
   }
   function UByteArray__iterator_impl_509y1p($this) {
-    return new Iterator(_UByteArray___get_storage__impl__d4kctt($this));
+    return new Iterator_0(_UByteArray___get_storage__impl__d4kctt($this));
   }
-  function Iterator(array) {
+  function Iterator_0(array) {
     this.array_1 = array;
     this.index_1 = 0;
   }
-  protoOf(Iterator).hasNext_bitz1p_k$ = function () {
+  protoOf(Iterator_0).hasNext_bitz1p_k$ = function () {
     return this.index_1 < this.array_1.length;
   };
-  protoOf(Iterator).next_mib1ya_k$ = function () {
+  protoOf(Iterator_0).next_mib1ya_k$ = function () {
     var tmp;
     if (this.index_1 < this.array_1.length) {
       var _unary__edvuaz = this.index_1;
@@ -41259,7 +41890,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return tmp;
   };
-  protoOf(Iterator).next_20eer_k$ = function () {
+  protoOf(Iterator_0).next_20eer_k$ = function () {
     return new UByte(this.next_mib1ya_k$());
   };
   function UByteArray__contains_impl_njh19q($this, element) {
@@ -41400,16 +42031,16 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return _UIntArray___get_storage__impl__92a0v0($this).length;
   }
   function UIntArray__iterator_impl_tkdv7k($this) {
-    return new Iterator_0(_UIntArray___get_storage__impl__92a0v0($this));
+    return new Iterator_1(_UIntArray___get_storage__impl__92a0v0($this));
   }
-  function Iterator_0(array) {
+  function Iterator_1(array) {
     this.array_1 = array;
     this.index_1 = 0;
   }
-  protoOf(Iterator_0).hasNext_bitz1p_k$ = function () {
+  protoOf(Iterator_1).hasNext_bitz1p_k$ = function () {
     return this.index_1 < this.array_1.length;
   };
-  protoOf(Iterator_0).next_30mexz_k$ = function () {
+  protoOf(Iterator_1).next_30mexz_k$ = function () {
     var tmp;
     if (this.index_1 < this.array_1.length) {
       var _unary__edvuaz = this.index_1;
@@ -41422,7 +42053,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return tmp;
   };
-  protoOf(Iterator_0).next_20eer_k$ = function () {
+  protoOf(Iterator_1).next_20eer_k$ = function () {
     return new UInt(this.next_30mexz_k$());
   };
   function UIntArray__contains_impl_b16rzj($this, element) {
@@ -41562,16 +42193,16 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return _ULongArray___get_storage__impl__28e64j($this).length;
   }
   function ULongArray__iterator_impl_cq4d2h($this) {
-    return new Iterator_1(_ULongArray___get_storage__impl__28e64j($this));
+    return new Iterator_2(_ULongArray___get_storage__impl__28e64j($this));
   }
-  function Iterator_1(array) {
+  function Iterator_2(array) {
     this.array_1 = array;
     this.index_1 = 0;
   }
-  protoOf(Iterator_1).hasNext_bitz1p_k$ = function () {
+  protoOf(Iterator_2).hasNext_bitz1p_k$ = function () {
     return this.index_1 < this.array_1.length;
   };
-  protoOf(Iterator_1).next_mi4vn2_k$ = function () {
+  protoOf(Iterator_2).next_mi4vn2_k$ = function () {
     var tmp;
     if (this.index_1 < this.array_1.length) {
       var _unary__edvuaz = this.index_1;
@@ -41584,7 +42215,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return tmp;
   };
-  protoOf(Iterator_1).next_20eer_k$ = function () {
+  protoOf(Iterator_2).next_20eer_k$ = function () {
     return new ULong(this.next_mi4vn2_k$());
   };
   function ULongArray__contains_impl_v9bgai($this, element) {
@@ -41727,16 +42358,16 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return _UShortArray___get_storage__impl__t2jpv5($this).length;
   }
   function UShortArray__iterator_impl_ktpenn($this) {
-    return new Iterator_2(_UShortArray___get_storage__impl__t2jpv5($this));
+    return new Iterator_3(_UShortArray___get_storage__impl__t2jpv5($this));
   }
-  function Iterator_2(array) {
+  function Iterator_3(array) {
     this.array_1 = array;
     this.index_1 = 0;
   }
-  protoOf(Iterator_2).hasNext_bitz1p_k$ = function () {
+  protoOf(Iterator_3).hasNext_bitz1p_k$ = function () {
     return this.index_1 < this.array_1.length;
   };
-  protoOf(Iterator_2).next_csnf8m_k$ = function () {
+  protoOf(Iterator_3).next_csnf8m_k$ = function () {
     var tmp;
     if (this.index_1 < this.array_1.length) {
       var _unary__edvuaz = this.index_1;
@@ -41749,7 +42380,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return tmp;
   };
-  protoOf(Iterator_2).next_20eer_k$ = function () {
+  protoOf(Iterator_3).next_20eer_k$ = function () {
     return new UShort(this.next_csnf8m_k$());
   };
   function UShortArray__contains_impl_vo7k3g($this, element) {
@@ -41884,111 +42515,111 @@ if (typeof String.prototype.startsWith === 'undefined') {
   _.$_$.a = findAssociatedObject;
   _.$_$.b = primitiveArrayConcat;
   _.$_$.c = VOID;
-  _.$_$.d = Key_instance;
-  _.$_$.e = EmptyCoroutineContext_instance;
-  _.$_$.f = BooleanCompanionObject_instance;
-  _.$_$.g = ByteCompanionObject_instance;
-  _.$_$.h = DoubleCompanionObject_instance;
-  _.$_$.i = FloatCompanionObject_instance;
-  _.$_$.j = IntCompanionObject_instance;
-  _.$_$.k = ShortCompanionObject_instance;
-  _.$_$.l = StringCompanionObject_instance;
-  _.$_$.m = PrimitiveClasses_getInstance;
-  _.$_$.n = System_instance;
-  _.$_$.o = Companion_getInstance_15;
-  _.$_$.p = Companion_getInstance_17;
-  _.$_$.q = Companion_getInstance_20;
-  _.$_$.r = Companion_getInstance;
-  _.$_$.s = Companion_instance_5;
-  _.$_$.t = Companion_instance_19;
-  _.$_$.u = Companion_getInstance_21;
-  _.$_$.v = Companion_getInstance_22;
-  _.$_$.w = Companion_getInstance_23;
-  _.$_$.x = Companion_getInstance_24;
-  _.$_$.y = Unit_instance;
-  _.$_$.z = LazyThreadSafetyMode_PUBLICATION_getInstance;
-  _.$_$.a1 = ArrayDeque_init_$Create$;
-  _.$_$.b1 = ArrayList_init_$Create$_0;
-  _.$_$.c1 = ArrayList_init_$Create$;
-  _.$_$.d1 = ArrayList_init_$Create$_1;
-  _.$_$.e1 = HashMap_init_$Create$_1;
-  _.$_$.f1 = HashMap_init_$Create$;
-  _.$_$.g1 = HashMap_init_$Create$_2;
-  _.$_$.h1 = HashMap_init_$Create$_0;
-  _.$_$.i1 = HashSet_init_$Create$_1;
-  _.$_$.j1 = HashSet_init_$Create$;
-  _.$_$.k1 = HashSet_init_$Create$_0;
-  _.$_$.l1 = LinkedHashMap_init_$Create$_0;
-  _.$_$.m1 = LinkedHashMap_init_$Create$;
-  _.$_$.n1 = LinkedHashMap_init_$Create$_1;
-  _.$_$.o1 = LinkedHashSet_init_$Create$;
-  _.$_$.p1 = LinkedHashSet_init_$Create$_0;
-  _.$_$.q1 = CancellationException_init_$Create$_0;
-  _.$_$.r1 = CancellationException_init_$Init$_1;
-  _.$_$.s1 = Regex_init_$Create$;
-  _.$_$.t1 = StringBuilder_init_$Create$;
-  _.$_$.u1 = StringBuilder_init_$Create$_0;
-  _.$_$.v1 = Error_init_$Create$_0;
-  _.$_$.w1 = Error_init_$Init$_1;
-  _.$_$.x1 = Exception_init_$Create$_0;
-  _.$_$.y1 = Exception_init_$Init$_1;
-  _.$_$.z1 = IllegalArgumentException_init_$Init$;
-  _.$_$.a2 = IllegalArgumentException_init_$Init$_0;
-  _.$_$.b2 = IllegalArgumentException_init_$Create$_0;
-  _.$_$.c2 = IllegalArgumentException_init_$Init$_1;
-  _.$_$.d2 = IllegalStateException_init_$Create$_0;
-  _.$_$.e2 = IllegalStateException_init_$Create$_1;
-  _.$_$.f2 = IndexOutOfBoundsException_init_$Create$_0;
-  _.$_$.g2 = NoSuchElementException_init_$Create$;
-  _.$_$.h2 = RuntimeException_init_$Init$_0;
-  _.$_$.i2 = RuntimeException_init_$Create$_0;
-  _.$_$.j2 = RuntimeException_init_$Init$_1;
-  _.$_$.k2 = RuntimeException_init_$Create$_1;
-  _.$_$.l2 = UnsupportedOperationException_init_$Create$_0;
-  _.$_$.m2 = Duration__toIsoString_impl_9h6wsm;
-  _.$_$.n2 = _Char___init__impl__6a9atx;
-  _.$_$.o2 = Char__toInt_impl_vasixd;
-  _.$_$.p2 = toString;
-  _.$_$.q2 = _Result___init__impl__xyqfz8;
-  _.$_$.r2 = Result__exceptionOrNull_impl_p6xea9;
-  _.$_$.s2 = _Result___get_isFailure__impl__jpiriv;
-  _.$_$.t2 = _Result___get_value__impl__bjfvqg;
-  _.$_$.u2 = _UByte___init__impl__g9hnc4;
-  _.$_$.v2 = _UByte___get_data__impl__jof9qr;
-  _.$_$.w2 = UByte__toString_impl_v72jg;
-  _.$_$.x2 = _UByteArray___init__impl__ip4y9n;
-  _.$_$.y2 = _UByteArray___init__impl__ip4y9n_0;
-  _.$_$.z2 = UByteArray__get_impl_t5f3hv;
-  _.$_$.a3 = UByteArray__set_impl_jvcicn;
-  _.$_$.b3 = _UByteArray___get_size__impl__h6pkdv;
-  _.$_$.c3 = _UByteArray___get_storage__impl__d4kctt;
-  _.$_$.d3 = _UInt___init__impl__l7qpdl;
-  _.$_$.e3 = _UInt___get_data__impl__f0vqqw;
-  _.$_$.f3 = UInt__toString_impl_dbgl21;
-  _.$_$.g3 = _UIntArray___init__impl__ghjpc6_0;
-  _.$_$.h3 = _UIntArray___init__impl__ghjpc6;
-  _.$_$.i3 = UIntArray__get_impl_gp5kza;
-  _.$_$.j3 = UIntArray__set_impl_7f2zu2;
-  _.$_$.k3 = _UIntArray___get_size__impl__r6l8ci;
-  _.$_$.l3 = _UIntArray___get_storage__impl__92a0v0;
-  _.$_$.m3 = _ULong___init__impl__c78o9k;
-  _.$_$.n3 = _ULong___get_data__impl__fggpzb;
-  _.$_$.o3 = ULong__toString_impl_f9au7k;
-  _.$_$.p3 = _ULongArray___init__impl__twm1l3_0;
-  _.$_$.q3 = _ULongArray___init__impl__twm1l3;
-  _.$_$.r3 = ULongArray__get_impl_pr71q9;
-  _.$_$.s3 = ULongArray__set_impl_z19mvh;
-  _.$_$.t3 = _ULongArray___get_size__impl__ju6dtr;
-  _.$_$.u3 = _ULongArray___get_storage__impl__28e64j;
-  _.$_$.v3 = _UShort___init__impl__jigrne;
-  _.$_$.w3 = _UShort___get_data__impl__g0245;
-  _.$_$.x3 = UShort__toString_impl_edaoee;
-  _.$_$.y3 = _UShortArray___init__impl__9b26ef_0;
-  _.$_$.z3 = _UShortArray___init__impl__9b26ef;
-  _.$_$.a4 = UShortArray__get_impl_fnbhmx;
-  _.$_$.b4 = UShortArray__set_impl_6d8whp;
-  _.$_$.c4 = _UShortArray___get_size__impl__jqto1b;
-  _.$_$.d4 = _UShortArray___get_storage__impl__t2jpv5;
+  _.$_$.d = Duration__toIsoString_impl_9h6wsm;
+  _.$_$.e = _Char___init__impl__6a9atx;
+  _.$_$.f = Char__toInt_impl_vasixd;
+  _.$_$.g = toString;
+  _.$_$.h = _Result___init__impl__xyqfz8;
+  _.$_$.i = Result__exceptionOrNull_impl_p6xea9;
+  _.$_$.j = _Result___get_isFailure__impl__jpiriv;
+  _.$_$.k = _Result___get_value__impl__bjfvqg;
+  _.$_$.l = _UByte___init__impl__g9hnc4;
+  _.$_$.m = _UByte___get_data__impl__jof9qr;
+  _.$_$.n = UByte__toString_impl_v72jg;
+  _.$_$.o = _UByteArray___init__impl__ip4y9n;
+  _.$_$.p = _UByteArray___init__impl__ip4y9n_0;
+  _.$_$.q = UByteArray__get_impl_t5f3hv;
+  _.$_$.r = UByteArray__set_impl_jvcicn;
+  _.$_$.s = _UByteArray___get_size__impl__h6pkdv;
+  _.$_$.t = _UByteArray___get_storage__impl__d4kctt;
+  _.$_$.u = _UInt___init__impl__l7qpdl;
+  _.$_$.v = _UInt___get_data__impl__f0vqqw;
+  _.$_$.w = UInt__toString_impl_dbgl21;
+  _.$_$.x = _UIntArray___init__impl__ghjpc6_0;
+  _.$_$.y = _UIntArray___init__impl__ghjpc6;
+  _.$_$.z = UIntArray__get_impl_gp5kza;
+  _.$_$.a1 = UIntArray__set_impl_7f2zu2;
+  _.$_$.b1 = _UIntArray___get_size__impl__r6l8ci;
+  _.$_$.c1 = _UIntArray___get_storage__impl__92a0v0;
+  _.$_$.d1 = _ULong___init__impl__c78o9k;
+  _.$_$.e1 = _ULong___get_data__impl__fggpzb;
+  _.$_$.f1 = ULong__toString_impl_f9au7k;
+  _.$_$.g1 = _ULongArray___init__impl__twm1l3_0;
+  _.$_$.h1 = _ULongArray___init__impl__twm1l3;
+  _.$_$.i1 = ULongArray__get_impl_pr71q9;
+  _.$_$.j1 = ULongArray__set_impl_z19mvh;
+  _.$_$.k1 = _ULongArray___get_size__impl__ju6dtr;
+  _.$_$.l1 = _ULongArray___get_storage__impl__28e64j;
+  _.$_$.m1 = _UShort___init__impl__jigrne;
+  _.$_$.n1 = _UShort___get_data__impl__g0245;
+  _.$_$.o1 = UShort__toString_impl_edaoee;
+  _.$_$.p1 = _UShortArray___init__impl__9b26ef_0;
+  _.$_$.q1 = _UShortArray___init__impl__9b26ef;
+  _.$_$.r1 = UShortArray__get_impl_fnbhmx;
+  _.$_$.s1 = UShortArray__set_impl_6d8whp;
+  _.$_$.t1 = _UShortArray___get_size__impl__jqto1b;
+  _.$_$.u1 = _UShortArray___get_storage__impl__t2jpv5;
+  _.$_$.v1 = Key_instance;
+  _.$_$.w1 = EmptyCoroutineContext_instance;
+  _.$_$.x1 = BooleanCompanionObject_instance;
+  _.$_$.y1 = ByteCompanionObject_instance;
+  _.$_$.z1 = DoubleCompanionObject_instance;
+  _.$_$.a2 = FloatCompanionObject_instance;
+  _.$_$.b2 = IntCompanionObject_instance;
+  _.$_$.c2 = ShortCompanionObject_instance;
+  _.$_$.d2 = StringCompanionObject_instance;
+  _.$_$.e2 = PrimitiveClasses_getInstance;
+  _.$_$.f2 = System_instance;
+  _.$_$.g2 = Companion_getInstance_15;
+  _.$_$.h2 = Companion_getInstance_17;
+  _.$_$.i2 = Companion_getInstance_20;
+  _.$_$.j2 = Companion_getInstance;
+  _.$_$.k2 = Companion_instance_5;
+  _.$_$.l2 = Companion_instance_19;
+  _.$_$.m2 = Companion_getInstance_21;
+  _.$_$.n2 = Companion_getInstance_22;
+  _.$_$.o2 = Companion_getInstance_23;
+  _.$_$.p2 = Companion_getInstance_24;
+  _.$_$.q2 = Unit_instance;
+  _.$_$.r2 = LazyThreadSafetyMode_PUBLICATION_getInstance;
+  _.$_$.s2 = ArrayDeque_init_$Create$;
+  _.$_$.t2 = ArrayList_init_$Create$_0;
+  _.$_$.u2 = ArrayList_init_$Create$;
+  _.$_$.v2 = ArrayList_init_$Create$_1;
+  _.$_$.w2 = HashMap_init_$Create$_1;
+  _.$_$.x2 = HashMap_init_$Create$;
+  _.$_$.y2 = HashMap_init_$Create$_2;
+  _.$_$.z2 = HashMap_init_$Create$_0;
+  _.$_$.a3 = HashSet_init_$Create$_1;
+  _.$_$.b3 = HashSet_init_$Create$;
+  _.$_$.c3 = HashSet_init_$Create$_0;
+  _.$_$.d3 = LinkedHashMap_init_$Create$_0;
+  _.$_$.e3 = LinkedHashMap_init_$Create$;
+  _.$_$.f3 = LinkedHashMap_init_$Create$_1;
+  _.$_$.g3 = LinkedHashSet_init_$Create$;
+  _.$_$.h3 = LinkedHashSet_init_$Create$_0;
+  _.$_$.i3 = CancellationException_init_$Create$_0;
+  _.$_$.j3 = CancellationException_init_$Init$_1;
+  _.$_$.k3 = Regex_init_$Create$;
+  _.$_$.l3 = StringBuilder_init_$Create$;
+  _.$_$.m3 = StringBuilder_init_$Create$_0;
+  _.$_$.n3 = Error_init_$Create$_0;
+  _.$_$.o3 = Error_init_$Init$_1;
+  _.$_$.p3 = Exception_init_$Create$_0;
+  _.$_$.q3 = Exception_init_$Init$_1;
+  _.$_$.r3 = IllegalArgumentException_init_$Init$;
+  _.$_$.s3 = IllegalArgumentException_init_$Init$_0;
+  _.$_$.t3 = IllegalArgumentException_init_$Create$_0;
+  _.$_$.u3 = IllegalArgumentException_init_$Init$_1;
+  _.$_$.v3 = IllegalStateException_init_$Create$_0;
+  _.$_$.w3 = IllegalStateException_init_$Create$_1;
+  _.$_$.x3 = IndexOutOfBoundsException_init_$Create$_0;
+  _.$_$.y3 = NoSuchElementException_init_$Create$;
+  _.$_$.z3 = RuntimeException_init_$Init$_0;
+  _.$_$.a4 = RuntimeException_init_$Create$_0;
+  _.$_$.b4 = RuntimeException_init_$Init$_1;
+  _.$_$.c4 = RuntimeException_init_$Create$_1;
+  _.$_$.d4 = UnsupportedOperationException_init_$Create$_0;
   _.$_$.e4 = ArrayList;
   _.$_$.f4 = Collection;
   _.$_$.g4 = HashMap;
@@ -42028,189 +42659,190 @@ if (typeof String.prototype.startsWith === 'undefined') {
   _.$_$.o5 = emptyList;
   _.$_$.p5 = emptyMap;
   _.$_$.q5 = firstOrNull;
-  _.$_$.r5 = first;
-  _.$_$.s5 = getOrNull;
-  _.$_$.t5 = getValue;
-  _.$_$.u5 = indexOf;
-  _.$_$.v5 = get_indices_0;
-  _.$_$.w5 = get_indices;
-  _.$_$.x5 = intersect;
-  _.$_$.y5 = joinToString_1;
-  _.$_$.z5 = get_lastIndex_1;
-  _.$_$.a6 = last;
-  _.$_$.b6 = linkedMapOf;
-  _.$_$.c6 = listOf_0;
-  _.$_$.d6 = mapCapacity;
-  _.$_$.e6 = mapOf_0;
-  _.$_$.f6 = mutableListOf;
-  _.$_$.g6 = plus_1;
-  _.$_$.h6 = plus_0;
-  _.$_$.i6 = removeFirstOrNull;
-  _.$_$.j6 = removeFirst;
-  _.$_$.k6 = setOf_0;
-  _.$_$.l6 = singleOrNull;
-  _.$_$.m6 = sortedWith_0;
-  _.$_$.n6 = sortedWith;
-  _.$_$.o6 = sum;
-  _.$_$.p6 = take;
-  _.$_$.q6 = toBooleanArray;
-  _.$_$.r6 = toHashSet;
-  _.$_$.s6 = toList_0;
-  _.$_$.t6 = toList;
-  _.$_$.u6 = toMap;
-  _.$_$.v6 = toMutableList;
-  _.$_$.w6 = toSet_0;
-  _.$_$.x6 = toSet;
-  _.$_$.y6 = toTypedArray;
-  _.$_$.z6 = union;
-  _.$_$.a7 = withIndex;
-  _.$_$.b7 = compareValues;
-  _.$_$.c7 = CancellationException;
-  _.$_$.d7 = get_COROUTINE_SUSPENDED;
-  _.$_$.e7 = createCoroutineUnintercepted;
-  _.$_$.f7 = intercepted;
-  _.$_$.g7 = startCoroutineUninterceptedOrReturnNonGeneratorVersion;
-  _.$_$.h7 = AbstractCoroutineContextElement;
-  _.$_$.i7 = AbstractCoroutineContextKey;
-  _.$_$.j7 = get_0;
-  _.$_$.k7 = minusKey_0;
-  _.$_$.l7 = ContinuationInterceptor;
-  _.$_$.m7 = Continuation;
-  _.$_$.n7 = fold;
-  _.$_$.o7 = get;
-  _.$_$.p7 = minusKey;
-  _.$_$.q7 = Element;
-  _.$_$.r7 = plus;
-  _.$_$.s7 = CoroutineImpl;
-  _.$_$.t7 = startCoroutine;
-  _.$_$.u7 = enumEntries;
-  _.$_$.v7 = throwUninitializedPropertyAccessException;
-  _.$_$.w7 = add_0;
-  _.$_$.x7 = convertToInt;
-  _.$_$.y7 = fromInt_0;
-  _.$_$.z7 = isLongArray;
-  _.$_$.a8 = get_longArrayClass;
-  _.$_$.b8 = negate_0;
-  _.$_$.c8 = numberToLong;
-  _.$_$.d8 = shiftLeft;
-  _.$_$.e8 = shiftRight;
-  _.$_$.f8 = subtract_0;
-  _.$_$.g8 = toNumber_0;
-  _.$_$.h8 = FunctionAdapter;
-  _.$_$.i8 = anyToString;
-  _.$_$.j8 = arrayIterator;
-  _.$_$.k8 = booleanArray;
-  _.$_$.l8 = captureStack;
-  _.$_$.m8 = charArrayOf;
-  _.$_$.n8 = charArray;
-  _.$_$.o8 = charCodeAt;
-  _.$_$.p8 = charSequenceLength;
-  _.$_$.q8 = charSequenceSubSequence;
-  _.$_$.r8 = compareTo;
-  _.$_$.s8 = defineProp;
-  _.$_$.t8 = doubleFromBits;
-  _.$_$.u8 = equals;
-  _.$_$.v8 = floatFromBits;
-  _.$_$.w8 = getBigIntHashCode;
-  _.$_$.x8 = getBooleanHashCode;
-  _.$_$.y8 = getNumberHashCode;
-  _.$_$.z8 = getPropertyCallableRef;
-  _.$_$.a9 = getStringHashCode;
-  _.$_$.b9 = hashCode;
-  _.$_$.c9 = initMetadataForClass;
-  _.$_$.d9 = initMetadataForCompanion;
-  _.$_$.e9 = initMetadataForInterface;
-  _.$_$.f9 = initMetadataForLambda;
-  _.$_$.g9 = initMetadataForObject;
-  _.$_$.h9 = isArray;
-  _.$_$.i9 = isBooleanArray;
-  _.$_$.j9 = isByteArray;
-  _.$_$.k9 = isCharArray;
-  _.$_$.l9 = isCharSequence;
-  _.$_$.m9 = isDoubleArray;
-  _.$_$.n9 = isFloatArray;
-  _.$_$.o9 = isIntArray;
-  _.$_$.p9 = isInterface;
-  _.$_$.q9 = isShortArray;
-  _.$_$.r9 = get_js;
-  _.$_$.s9 = numberToChar;
-  _.$_$.t9 = numberToInt;
-  _.$_$.u9 = objectCreate;
-  _.$_$.v9 = protoOf;
-  _.$_$.w9 = toByte;
-  _.$_$.x9 = toShort;
-  _.$_$.y9 = toString_1;
-  _.$_$.z9 = coerceAtLeast;
-  _.$_$.aa = coerceAtMost;
-  _.$_$.ba = coerceIn_0;
-  _.$_$.ca = step;
-  _.$_$.da = until;
-  _.$_$.ea = createKType;
-  _.$_$.fa = getKClassFromExpression;
-  _.$_$.ga = getKClass;
-  _.$_$.ha = KClass;
-  _.$_$.ia = KMutableProperty0;
-  _.$_$.ja = KMutableProperty1;
-  _.$_$.ka = KProperty0;
-  _.$_$.la = KProperty1;
-  _.$_$.ma = KTypeParameter;
-  _.$_$.na = asSequence_1;
-  _.$_$.oa = map;
-  _.$_$.pa = toList_1;
-  _.$_$.qa = decodeToString_0;
-  _.$_$.ra = isBlank;
-  _.$_$.sa = lines;
-  _.$_$.ta = removePrefix;
-  _.$_$.ua = repeat;
-  _.$_$.va = split;
-  _.$_$.wa = startsWith;
-  _.$_$.xa = substring_0;
-  _.$_$.ya = substring;
-  _.$_$.za = toInt;
-  _.$_$.ab = toLong;
-  _.$_$.bb = trimEnd;
-  _.$_$.cb = trim;
-  _.$_$.db = trim_0;
-  _.$_$.eb = Duration;
-  _.$_$.fb = Instant;
-  _.$_$.gb = Uuid;
-  _.$_$.hb = Char;
-  _.$_$.ib = Comparator;
-  _.$_$.jb = Enum;
-  _.$_$.kb = Error_0;
-  _.$_$.lb = Exception;
-  _.$_$.mb = IllegalArgumentException;
-  _.$_$.nb = NotImplementedError;
-  _.$_$.ob = NumberFormatException;
-  _.$_$.pb = Pair;
-  _.$_$.qb = Result;
-  _.$_$.rb = RuntimeException;
-  _.$_$.sb = THROW_CCE;
-  _.$_$.tb = THROW_IAE;
-  _.$_$.ub = Triple;
-  _.$_$.vb = UByteArray;
-  _.$_$.wb = UByte;
-  _.$_$.xb = UIntArray;
-  _.$_$.yb = UInt;
-  _.$_$.zb = ULongArray;
-  _.$_$.ac = ULong;
-  _.$_$.bc = UShortArray;
-  _.$_$.cc = UShort;
-  _.$_$.dc = Unit;
-  _.$_$.ec = UnsupportedOperationException;
-  _.$_$.fc = addSuppressed;
-  _.$_$.gc = arrayOf;
-  _.$_$.hc = countTrailingZeroBits;
-  _.$_$.ic = createFailure;
-  _.$_$.jc = ensureNotNull;
-  _.$_$.kc = isFinite;
-  _.$_$.lc = isFinite_0;
-  _.$_$.mc = lazy;
-  _.$_$.nc = lazy_0;
-  _.$_$.oc = noWhenBranchMatchedException;
-  _.$_$.pc = toBits;
-  _.$_$.qc = toString_0;
-  _.$_$.rc = to;
+  _.$_$.r5 = first_0;
+  _.$_$.s5 = first;
+  _.$_$.t5 = getOrNull;
+  _.$_$.u5 = getValue;
+  _.$_$.v5 = indexOf;
+  _.$_$.w5 = get_indices_0;
+  _.$_$.x5 = get_indices;
+  _.$_$.y5 = intersect;
+  _.$_$.z5 = joinToString_1;
+  _.$_$.a6 = get_lastIndex_1;
+  _.$_$.b6 = last;
+  _.$_$.c6 = linkedMapOf;
+  _.$_$.d6 = listOf;
+  _.$_$.e6 = listOf_0;
+  _.$_$.f6 = mapCapacity;
+  _.$_$.g6 = mapOf_0;
+  _.$_$.h6 = mutableListOf;
+  _.$_$.i6 = plus_1;
+  _.$_$.j6 = plus_0;
+  _.$_$.k6 = removeFirstOrNull;
+  _.$_$.l6 = removeFirst;
+  _.$_$.m6 = setOf_0;
+  _.$_$.n6 = singleOrNull;
+  _.$_$.o6 = sortedWith_0;
+  _.$_$.p6 = sortedWith;
+  _.$_$.q6 = sum;
+  _.$_$.r6 = take;
+  _.$_$.s6 = toBooleanArray;
+  _.$_$.t6 = toHashSet;
+  _.$_$.u6 = toList_0;
+  _.$_$.v6 = toList;
+  _.$_$.w6 = toMap;
+  _.$_$.x6 = toMutableList;
+  _.$_$.y6 = toSet_0;
+  _.$_$.z6 = toSet;
+  _.$_$.a7 = toTypedArray;
+  _.$_$.b7 = union;
+  _.$_$.c7 = withIndex;
+  _.$_$.d7 = compareValues;
+  _.$_$.e7 = CancellationException;
+  _.$_$.f7 = get_COROUTINE_SUSPENDED;
+  _.$_$.g7 = createCoroutineUnintercepted;
+  _.$_$.h7 = intercepted;
+  _.$_$.i7 = startCoroutineUninterceptedOrReturnNonGeneratorVersion;
+  _.$_$.j7 = AbstractCoroutineContextElement;
+  _.$_$.k7 = AbstractCoroutineContextKey;
+  _.$_$.l7 = get_0;
+  _.$_$.m7 = minusKey_0;
+  _.$_$.n7 = ContinuationInterceptor;
+  _.$_$.o7 = Continuation;
+  _.$_$.p7 = fold;
+  _.$_$.q7 = get;
+  _.$_$.r7 = minusKey;
+  _.$_$.s7 = Element;
+  _.$_$.t7 = plus;
+  _.$_$.u7 = CoroutineImpl;
+  _.$_$.v7 = startCoroutine;
+  _.$_$.w7 = enumEntries;
+  _.$_$.x7 = throwUninitializedPropertyAccessException;
+  _.$_$.y7 = add_0;
+  _.$_$.z7 = convertToInt;
+  _.$_$.a8 = fromInt_0;
+  _.$_$.b8 = isLongArray;
+  _.$_$.c8 = get_longArrayClass;
+  _.$_$.d8 = negate_0;
+  _.$_$.e8 = numberToLong;
+  _.$_$.f8 = shiftLeft;
+  _.$_$.g8 = shiftRight;
+  _.$_$.h8 = subtract_0;
+  _.$_$.i8 = toNumber_0;
+  _.$_$.j8 = FunctionAdapter;
+  _.$_$.k8 = anyToString;
+  _.$_$.l8 = arrayIterator;
+  _.$_$.m8 = booleanArray;
+  _.$_$.n8 = captureStack;
+  _.$_$.o8 = charArrayOf;
+  _.$_$.p8 = charArray;
+  _.$_$.q8 = charCodeAt;
+  _.$_$.r8 = charSequenceLength;
+  _.$_$.s8 = compareTo;
+  _.$_$.t8 = constructCallableReference;
+  _.$_$.u8 = defineProp;
+  _.$_$.v8 = doubleFromBits;
+  _.$_$.w8 = equals;
+  _.$_$.x8 = floatFromBits;
+  _.$_$.y8 = getBigIntHashCode;
+  _.$_$.z8 = getBooleanHashCode;
+  _.$_$.a9 = getNumberHashCode;
+  _.$_$.b9 = getPropertyCallableRef;
+  _.$_$.c9 = getStringHashCode;
+  _.$_$.d9 = hashCode;
+  _.$_$.e9 = initMetadataForClass;
+  _.$_$.f9 = initMetadataForCompanion;
+  _.$_$.g9 = initMetadataForInterface;
+  _.$_$.h9 = initMetadataForLambda;
+  _.$_$.i9 = initMetadataForObject;
+  _.$_$.j9 = isArray;
+  _.$_$.k9 = isBooleanArray;
+  _.$_$.l9 = isByteArray;
+  _.$_$.m9 = isCharArray;
+  _.$_$.n9 = isCharSequence;
+  _.$_$.o9 = isDoubleArray;
+  _.$_$.p9 = isFloatArray;
+  _.$_$.q9 = isIntArray;
+  _.$_$.r9 = isInterface;
+  _.$_$.s9 = isShortArray;
+  _.$_$.t9 = get_js;
+  _.$_$.u9 = numberToChar;
+  _.$_$.v9 = numberToInt;
+  _.$_$.w9 = objectCreate;
+  _.$_$.x9 = protoOf;
+  _.$_$.y9 = toByte;
+  _.$_$.z9 = toShort;
+  _.$_$.aa = toString_1;
+  _.$_$.ba = coerceAtLeast;
+  _.$_$.ca = coerceIn_0;
+  _.$_$.da = step;
+  _.$_$.ea = until;
+  _.$_$.fa = createKType;
+  _.$_$.ga = getKClassFromExpression;
+  _.$_$.ha = getKClass;
+  _.$_$.ia = KClass;
+  _.$_$.ja = KMutableProperty0;
+  _.$_$.ka = KMutableProperty1;
+  _.$_$.la = KProperty0;
+  _.$_$.ma = KProperty1;
+  _.$_$.na = KTypeParameter;
+  _.$_$.oa = asSequence_1;
+  _.$_$.pa = map;
+  _.$_$.qa = toList_1;
+  _.$_$.ra = decodeToString_0;
+  _.$_$.sa = isBlank;
+  _.$_$.ta = lines;
+  _.$_$.ua = removePrefix;
+  _.$_$.va = repeat;
+  _.$_$.wa = split;
+  _.$_$.xa = startsWith;
+  _.$_$.ya = substring_0;
+  _.$_$.za = substring;
+  _.$_$.ab = toInt;
+  _.$_$.bb = toLong;
+  _.$_$.cb = trimEnd;
+  _.$_$.db = trim;
+  _.$_$.eb = trim_0;
+  _.$_$.fb = Duration;
+  _.$_$.gb = Instant;
+  _.$_$.hb = Uuid;
+  _.$_$.ib = Char;
+  _.$_$.jb = Comparator;
+  _.$_$.kb = Enum;
+  _.$_$.lb = Error_0;
+  _.$_$.mb = Exception;
+  _.$_$.nb = IllegalArgumentException;
+  _.$_$.ob = NotImplementedError;
+  _.$_$.pb = NumberFormatException;
+  _.$_$.qb = Pair;
+  _.$_$.rb = Result;
+  _.$_$.sb = RuntimeException;
+  _.$_$.tb = THROW_CCE;
+  _.$_$.ub = THROW_IAE;
+  _.$_$.vb = Triple;
+  _.$_$.wb = UByteArray;
+  _.$_$.xb = UByte;
+  _.$_$.yb = UIntArray;
+  _.$_$.zb = UInt;
+  _.$_$.ac = ULongArray;
+  _.$_$.bc = ULong;
+  _.$_$.cc = UShortArray;
+  _.$_$.dc = UShort;
+  _.$_$.ec = Unit;
+  _.$_$.fc = UnsupportedOperationException;
+  _.$_$.gc = addSuppressed;
+  _.$_$.hc = arrayOf;
+  _.$_$.ic = countTrailingZeroBits;
+  _.$_$.jc = createFailure;
+  _.$_$.kc = ensureNotNull;
+  _.$_$.lc = isFinite;
+  _.$_$.mc = isFinite_0;
+  _.$_$.nc = lazy;
+  _.$_$.oc = lazy_0;
+  _.$_$.pc = noWhenBranchMatchedException;
+  _.$_$.qc = toBits;
+  _.$_$.rc = toString_0;
+  _.$_$.sc = to;
   //endregion
   return _;
 }));
@@ -42237,11 +42869,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }(function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.v9;
-  var initMetadataForObject = kotlin_kotlin.$_$.g9;
+  var protoOf = kotlin_kotlin.$_$.x9;
+  var initMetadataForObject = kotlin_kotlin.$_$.i9;
   var VOID = kotlin_kotlin.$_$.c;
-  var initMetadataForClass = kotlin_kotlin.$_$.c9;
-  var toString = kotlin_kotlin.$_$.qc;
+  var initMetadataForClass = kotlin_kotlin.$_$.e9;
+  var toString = kotlin_kotlin.$_$.rc;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(atomicfu$TraceBase, 'TraceBase');
@@ -42419,81 +43051,82 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var Unit_instance = kotlin_kotlin.$_$.y;
-  var protoOf = kotlin_kotlin.$_$.v9;
-  var Element = kotlin_kotlin.$_$.q7;
-  var Continuation = kotlin_kotlin.$_$.m7;
-  var initMetadataForClass = kotlin_kotlin.$_$.c9;
+  var Unit_instance = kotlin_kotlin.$_$.q2;
+  var protoOf = kotlin_kotlin.$_$.x9;
+  var Element = kotlin_kotlin.$_$.s7;
+  var Continuation = kotlin_kotlin.$_$.o7;
+  var initMetadataForClass = kotlin_kotlin.$_$.e9;
   var VOID = kotlin_kotlin.$_$.c;
-  var EmptyCoroutineContext_instance = kotlin_kotlin.$_$.e;
-  var createCoroutineUnintercepted = kotlin_kotlin.$_$.e7;
-  var isInterface = kotlin_kotlin.$_$.p9;
-  var THROW_CCE = kotlin_kotlin.$_$.sb;
-  var toString = kotlin_kotlin.$_$.y9;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.d2;
-  var toString_0 = kotlin_kotlin.$_$.qc;
+  var EmptyCoroutineContext_instance = kotlin_kotlin.$_$.w1;
+  var createCoroutineUnintercepted = kotlin_kotlin.$_$.g7;
+  var isInterface = kotlin_kotlin.$_$.r9;
+  var THROW_CCE = kotlin_kotlin.$_$.tb;
+  var toString = kotlin_kotlin.$_$.aa;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.v3;
+  var toString_0 = kotlin_kotlin.$_$.rc;
   var atomic$int$1 = kotlin_org_jetbrains_kotlinx_atomicfu.$_$.c;
   var atomic$ref$1 = kotlin_org_jetbrains_kotlinx_atomicfu.$_$.b;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.d7;
-  var initMetadataForInterface = kotlin_kotlin.$_$.e9;
-  var initMetadataForObject = kotlin_kotlin.$_$.g9;
-  var hashCode = kotlin_kotlin.$_$.b9;
-  var equals = kotlin_kotlin.$_$.u8;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.f7;
+  var initMetadataForInterface = kotlin_kotlin.$_$.g9;
+  var initMetadataForObject = kotlin_kotlin.$_$.i9;
+  var hashCode = kotlin_kotlin.$_$.d9;
+  var equals = kotlin_kotlin.$_$.w8;
   var atomic$boolean$1 = kotlin_org_jetbrains_kotlinx_atomicfu.$_$.a;
-  var CancellationException_init_$Create$ = kotlin_kotlin.$_$.q1;
-  var Result__exceptionOrNull_impl_p6xea9 = kotlin_kotlin.$_$.r2;
-  var _Result___get_value__impl__bjfvqg = kotlin_kotlin.$_$.t2;
-  var AbstractCoroutineContextKey = kotlin_kotlin.$_$.i7;
-  var Key_instance = kotlin_kotlin.$_$.d;
-  var AbstractCoroutineContextElement = kotlin_kotlin.$_$.h7;
-  var get = kotlin_kotlin.$_$.j7;
-  var minusKey = kotlin_kotlin.$_$.k7;
-  var ContinuationInterceptor = kotlin_kotlin.$_$.l7;
-  var RuntimeException_init_$Create$ = kotlin_kotlin.$_$.k2;
-  var addSuppressed = kotlin_kotlin.$_$.fc;
-  var Enum = kotlin_kotlin.$_$.jb;
-  var startCoroutine = kotlin_kotlin.$_$.t7;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.oc;
-  var ArrayDeque_init_$Create$ = kotlin_kotlin.$_$.a1;
-  var add = kotlin_kotlin.$_$.w7;
-  var subtract = kotlin_kotlin.$_$.f8;
-  var RuntimeException = kotlin_kotlin.$_$.rb;
-  var RuntimeException_init_$Init$ = kotlin_kotlin.$_$.j2;
-  var captureStack = kotlin_kotlin.$_$.l8;
-  var Error_0 = kotlin_kotlin.$_$.kb;
-  var Error_init_$Init$ = kotlin_kotlin.$_$.w1;
-  var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.u1;
-  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.v7;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.b1;
-  var CancellationException = kotlin_kotlin.$_$.c7;
+  var CancellationException_init_$Create$ = kotlin_kotlin.$_$.i3;
+  var Result__exceptionOrNull_impl_p6xea9 = kotlin_kotlin.$_$.i;
+  var _Result___get_value__impl__bjfvqg = kotlin_kotlin.$_$.k;
+  var AbstractCoroutineContextKey = kotlin_kotlin.$_$.k7;
+  var Key_instance = kotlin_kotlin.$_$.v1;
+  var AbstractCoroutineContextElement = kotlin_kotlin.$_$.j7;
+  var get = kotlin_kotlin.$_$.l7;
+  var minusKey = kotlin_kotlin.$_$.m7;
+  var ContinuationInterceptor = kotlin_kotlin.$_$.n7;
+  var RuntimeException_init_$Create$ = kotlin_kotlin.$_$.c4;
+  var addSuppressed = kotlin_kotlin.$_$.gc;
+  var Enum = kotlin_kotlin.$_$.kb;
+  var startCoroutine = kotlin_kotlin.$_$.v7;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.pc;
+  var ArrayDeque_init_$Create$ = kotlin_kotlin.$_$.s2;
+  var add = kotlin_kotlin.$_$.y7;
+  var subtract = kotlin_kotlin.$_$.h8;
+  var RuntimeException = kotlin_kotlin.$_$.sb;
+  var RuntimeException_init_$Init$ = kotlin_kotlin.$_$.b4;
+  var captureStack = kotlin_kotlin.$_$.n8;
+  var Error_0 = kotlin_kotlin.$_$.lb;
+  var Error_init_$Init$ = kotlin_kotlin.$_$.o3;
+  var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.m3;
+  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.x7;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.t2;
+  var CancellationException = kotlin_kotlin.$_$.e7;
   var ArrayList = kotlin_kotlin.$_$.e4;
-  var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.e2;
-  var plus = kotlin_kotlin.$_$.r7;
-  var get_0 = kotlin_kotlin.$_$.o7;
-  var fold = kotlin_kotlin.$_$.n7;
-  var minusKey_0 = kotlin_kotlin.$_$.p7;
-  var anyToString = kotlin_kotlin.$_$.i8;
-  var UnsupportedOperationException = kotlin_kotlin.$_$.ec;
-  var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.l2;
-  var Exception = kotlin_kotlin.$_$.lb;
-  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.b2;
-  var Companion_instance = kotlin_kotlin.$_$.t;
-  var createFailure = kotlin_kotlin.$_$.ic;
-  var _Result___init__impl__xyqfz8 = kotlin_kotlin.$_$.q2;
-  var Exception_init_$Init$ = kotlin_kotlin.$_$.y1;
-  var defineProp = kotlin_kotlin.$_$.s8;
-  var intercepted = kotlin_kotlin.$_$.f7;
-  var startCoroutineUninterceptedOrReturnNonGeneratorVersion = kotlin_kotlin.$_$.g7;
-  var getKClassFromExpression = kotlin_kotlin.$_$.fa;
-  var Exception_init_$Create$ = kotlin_kotlin.$_$.x1;
-  var removeFirstOrNull = kotlin_kotlin.$_$.i6;
+  var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.w3;
+  var plus = kotlin_kotlin.$_$.t7;
+  var get_0 = kotlin_kotlin.$_$.q7;
+  var fold = kotlin_kotlin.$_$.p7;
+  var minusKey_0 = kotlin_kotlin.$_$.r7;
+  var anyToString = kotlin_kotlin.$_$.k8;
+  var constructCallableReference = kotlin_kotlin.$_$.t8;
+  var UnsupportedOperationException = kotlin_kotlin.$_$.fc;
+  var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.d4;
+  var Exception = kotlin_kotlin.$_$.mb;
+  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.t3;
+  var Companion_instance = kotlin_kotlin.$_$.l2;
+  var createFailure = kotlin_kotlin.$_$.jc;
+  var _Result___init__impl__xyqfz8 = kotlin_kotlin.$_$.h;
+  var Exception_init_$Init$ = kotlin_kotlin.$_$.q3;
+  var defineProp = kotlin_kotlin.$_$.u8;
+  var intercepted = kotlin_kotlin.$_$.h7;
+  var startCoroutineUninterceptedOrReturnNonGeneratorVersion = kotlin_kotlin.$_$.i7;
+  var getKClassFromExpression = kotlin_kotlin.$_$.ga;
+  var Exception_init_$Create$ = kotlin_kotlin.$_$.p3;
+  var removeFirstOrNull = kotlin_kotlin.$_$.k6;
   var KtMutableList = kotlin_kotlin.$_$.o4;
-  var CancellationException_init_$Init$ = kotlin_kotlin.$_$.r1;
-  var ensureNotNull = kotlin_kotlin.$_$.jc;
-  var getStringHashCode = kotlin_kotlin.$_$.a9;
-  var HashSet_init_$Create$ = kotlin_kotlin.$_$.i1;
-  var RuntimeException_init_$Init$_0 = kotlin_kotlin.$_$.h2;
-  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.o1;
+  var CancellationException_init_$Init$ = kotlin_kotlin.$_$.j3;
+  var ensureNotNull = kotlin_kotlin.$_$.kc;
+  var getStringHashCode = kotlin_kotlin.$_$.c9;
+  var HashSet_init_$Create$ = kotlin_kotlin.$_$.a3;
+  var RuntimeException_init_$Init$_0 = kotlin_kotlin.$_$.z3;
+  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.g3;
   //endregion
   //region block: pre-declaration
   initMetadataForInterface(ParentJob, 'ParentJob', VOID, VOID, [Element], [0]);
@@ -43474,14 +44107,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function Job(parent) {
     parent = parent === VOID ? null : parent;
     return new JobImpl(parent);
-  }
-  function JobNode$invoke$ref(p0) {
-    var l = function (_this__u8e3s4) {
-      p0.invoke_py2q9a_k$(_this__u8e3s4);
-      return Unit_instance;
-    };
-    l.callableName = 'invoke';
-    return l;
   }
   function get_COMPLETING_ALREADY() {
     _init_properties_JobSupport_kt__68f172();
@@ -44805,6 +45430,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       EMPTY_ACTIVE = new Empty(true);
     }
   }
+  function JobNode$invoke$ref(p0) {
+    return constructCallableReference(function (p0_0) {
+      p0.invoke_py2q9a_k$(p0_0);
+      return Unit_instance;
+    }, 1, 0, 1, 'invoke', [p0]);
+  }
   function MainCoroutineDispatcher() {
     CoroutineDispatcher.call(this);
   }
@@ -44892,11 +45523,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     try {
       addSuppressed(exception, new DiagnosticCoroutineContextException(context));
-    } catch ($p) {
-      if ($p instanceof Error) {
-        var e = $p;
+    } catch ($p_0) {
+      if ($p_0 instanceof Error) {
+        var e = $p_0;
       } else {
-        throw $p;
+        throw $p_0;
       }
     }
     propagateExceptionFinalResort(exception);
@@ -45973,33 +46604,34 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   //region block: imports
   var imul = Math.imul;
   var emptyList = kotlin_kotlin.$_$.o5;
-  var Unit_instance = kotlin_kotlin.$_$.y;
+  var Unit_instance = kotlin_kotlin.$_$.q2;
   var asList = kotlin_kotlin.$_$.w4;
-  var protoOf = kotlin_kotlin.$_$.v9;
-  var THROW_CCE = kotlin_kotlin.$_$.sb;
-  var initMetadataForClass = kotlin_kotlin.$_$.c9;
+  var protoOf = kotlin_kotlin.$_$.x9;
+  var THROW_CCE = kotlin_kotlin.$_$.tb;
+  var initMetadataForClass = kotlin_kotlin.$_$.e9;
   var VOID = kotlin_kotlin.$_$.c;
-  var initMetadataForInterface = kotlin_kotlin.$_$.e9;
-  var objectCreate = kotlin_kotlin.$_$.u9;
-  var StringCompanionObject_instance = kotlin_kotlin.$_$.l;
-  var LazyThreadSafetyMode_PUBLICATION_getInstance = kotlin_kotlin.$_$.z;
-  var lazy = kotlin_kotlin.$_$.mc;
-  var KProperty1 = kotlin_kotlin.$_$.la;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.z8;
-  var toString = kotlin_kotlin.$_$.y9;
-  var getKClassFromExpression = kotlin_kotlin.$_$.fa;
-  var IllegalArgumentException_init_$Init$ = kotlin_kotlin.$_$.z1;
-  var captureStack = kotlin_kotlin.$_$.l8;
-  var IllegalArgumentException_init_$Init$_0 = kotlin_kotlin.$_$.a2;
-  var IllegalArgumentException_init_$Init$_1 = kotlin_kotlin.$_$.c2;
-  var IllegalArgumentException = kotlin_kotlin.$_$.mb;
+  var initMetadataForInterface = kotlin_kotlin.$_$.g9;
+  var objectCreate = kotlin_kotlin.$_$.w9;
+  var StringCompanionObject_instance = kotlin_kotlin.$_$.d2;
+  var constructCallableReference = kotlin_kotlin.$_$.t8;
+  var LazyThreadSafetyMode_PUBLICATION_getInstance = kotlin_kotlin.$_$.r2;
+  var lazy = kotlin_kotlin.$_$.nc;
+  var KProperty1 = kotlin_kotlin.$_$.ma;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.b9;
+  var toString = kotlin_kotlin.$_$.aa;
+  var getKClassFromExpression = kotlin_kotlin.$_$.ga;
+  var IllegalArgumentException_init_$Init$ = kotlin_kotlin.$_$.r3;
+  var captureStack = kotlin_kotlin.$_$.n8;
+  var IllegalArgumentException_init_$Init$_0 = kotlin_kotlin.$_$.s3;
+  var IllegalArgumentException_init_$Init$_1 = kotlin_kotlin.$_$.u3;
+  var IllegalArgumentException = kotlin_kotlin.$_$.nb;
   var collectionSizeOrDefault = kotlin_kotlin.$_$.z4;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.b1;
-  var KClass = kotlin_kotlin.$_$.ha;
-  var isInterface = kotlin_kotlin.$_$.p9;
-  var Triple = kotlin_kotlin.$_$.ub;
-  var getKClass = kotlin_kotlin.$_$.ga;
-  var Pair = kotlin_kotlin.$_$.pb;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.t2;
+  var KClass = kotlin_kotlin.$_$.ia;
+  var isInterface = kotlin_kotlin.$_$.r9;
+  var Triple = kotlin_kotlin.$_$.vb;
+  var getKClass = kotlin_kotlin.$_$.ha;
+  var Pair = kotlin_kotlin.$_$.qb;
   var Entry = kotlin_kotlin.$_$.l4;
   var KtMap = kotlin_kotlin.$_$.n4;
   var KtMutableMap = kotlin_kotlin.$_$.q4;
@@ -46014,146 +46646,146 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var KtMutableList = kotlin_kotlin.$_$.o4;
   var ArrayList = kotlin_kotlin.$_$.e4;
   var copyToArray = kotlin_kotlin.$_$.n5;
-  var _Result___get_value__impl__bjfvqg = kotlin_kotlin.$_$.t2;
-  var _Result___get_isFailure__impl__jpiriv = kotlin_kotlin.$_$.s2;
-  var Result = kotlin_kotlin.$_$.qb;
-  var ensureNotNull = kotlin_kotlin.$_$.jc;
-  var equals = kotlin_kotlin.$_$.u8;
-  var getStringHashCode = kotlin_kotlin.$_$.a9;
-  var isBlank = kotlin_kotlin.$_$.ra;
-  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.b2;
-  var toList = kotlin_kotlin.$_$.t6;
-  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.c1;
-  var HashSet_init_$Create$ = kotlin_kotlin.$_$.j1;
-  var toHashSet = kotlin_kotlin.$_$.r6;
-  var toBooleanArray = kotlin_kotlin.$_$.q6;
-  var withIndex = kotlin_kotlin.$_$.a7;
-  var to = kotlin_kotlin.$_$.rc;
-  var toMap = kotlin_kotlin.$_$.u6;
-  var lazy_0 = kotlin_kotlin.$_$.nc;
+  var _Result___get_value__impl__bjfvqg = kotlin_kotlin.$_$.k;
+  var _Result___get_isFailure__impl__jpiriv = kotlin_kotlin.$_$.j;
+  var Result = kotlin_kotlin.$_$.rb;
+  var ensureNotNull = kotlin_kotlin.$_$.kc;
+  var equals = kotlin_kotlin.$_$.w8;
+  var getStringHashCode = kotlin_kotlin.$_$.c9;
+  var isBlank = kotlin_kotlin.$_$.sa;
+  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.t3;
+  var toList = kotlin_kotlin.$_$.v6;
+  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.u2;
+  var HashSet_init_$Create$ = kotlin_kotlin.$_$.b3;
+  var toHashSet = kotlin_kotlin.$_$.t6;
+  var toBooleanArray = kotlin_kotlin.$_$.s6;
+  var withIndex = kotlin_kotlin.$_$.c7;
+  var to = kotlin_kotlin.$_$.sc;
+  var toMap = kotlin_kotlin.$_$.w6;
+  var lazy_0 = kotlin_kotlin.$_$.oc;
   var contentEquals = kotlin_kotlin.$_$.a5;
-  var initMetadataForObject = kotlin_kotlin.$_$.g9;
-  var Char = kotlin_kotlin.$_$.hb;
-  var Duration__toIsoString_impl_9h6wsm = kotlin_kotlin.$_$.m2;
-  var Duration = kotlin_kotlin.$_$.eb;
-  var Companion_getInstance = kotlin_kotlin.$_$.o;
-  var Instant = kotlin_kotlin.$_$.fb;
-  var Companion_getInstance_0 = kotlin_kotlin.$_$.p;
-  var Uuid = kotlin_kotlin.$_$.gb;
-  var Companion_getInstance_1 = kotlin_kotlin.$_$.q;
-  var hashCode = kotlin_kotlin.$_$.b9;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.d2;
-  var ArrayList_init_$Create$_1 = kotlin_kotlin.$_$.d1;
-  var HashSet_init_$Create$_0 = kotlin_kotlin.$_$.k1;
-  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.o1;
-  var LinkedHashSet_init_$Create$_0 = kotlin_kotlin.$_$.p1;
-  var HashMap_init_$Create$ = kotlin_kotlin.$_$.f1;
-  var HashMap_init_$Create$_0 = kotlin_kotlin.$_$.g1;
-  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.m1;
-  var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.n1;
-  var isArray = kotlin_kotlin.$_$.h9;
-  var arrayIterator = kotlin_kotlin.$_$.j8;
-  var until = kotlin_kotlin.$_$.da;
-  var step = kotlin_kotlin.$_$.ca;
-  var getValue = kotlin_kotlin.$_$.t5;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.d9;
-  var get_lastIndex = kotlin_kotlin.$_$.z5;
-  var shiftLeft = kotlin_kotlin.$_$.d8;
-  var countTrailingZeroBits = kotlin_kotlin.$_$.hc;
-  var getOrNull = kotlin_kotlin.$_$.s5;
-  var joinToString = kotlin_kotlin.$_$.y5;
-  var indexOf = kotlin_kotlin.$_$.u5;
+  var initMetadataForObject = kotlin_kotlin.$_$.i9;
+  var Char = kotlin_kotlin.$_$.ib;
+  var Duration__toIsoString_impl_9h6wsm = kotlin_kotlin.$_$.d;
+  var Duration = kotlin_kotlin.$_$.fb;
+  var Companion_getInstance = kotlin_kotlin.$_$.g2;
+  var Instant = kotlin_kotlin.$_$.gb;
+  var Companion_getInstance_0 = kotlin_kotlin.$_$.h2;
+  var Uuid = kotlin_kotlin.$_$.hb;
+  var Companion_getInstance_1 = kotlin_kotlin.$_$.i2;
+  var hashCode = kotlin_kotlin.$_$.d9;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.v3;
+  var ArrayList_init_$Create$_1 = kotlin_kotlin.$_$.v2;
+  var HashSet_init_$Create$_0 = kotlin_kotlin.$_$.c3;
+  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.g3;
+  var LinkedHashSet_init_$Create$_0 = kotlin_kotlin.$_$.h3;
+  var HashMap_init_$Create$ = kotlin_kotlin.$_$.x2;
+  var HashMap_init_$Create$_0 = kotlin_kotlin.$_$.y2;
+  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.e3;
+  var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.f3;
+  var isArray = kotlin_kotlin.$_$.j9;
+  var arrayIterator = kotlin_kotlin.$_$.l8;
+  var until = kotlin_kotlin.$_$.ea;
+  var step = kotlin_kotlin.$_$.da;
+  var getValue = kotlin_kotlin.$_$.u5;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.f9;
+  var get_lastIndex = kotlin_kotlin.$_$.a6;
+  var shiftLeft = kotlin_kotlin.$_$.f8;
+  var countTrailingZeroBits = kotlin_kotlin.$_$.ic;
+  var getOrNull = kotlin_kotlin.$_$.t5;
+  var joinToString = kotlin_kotlin.$_$.z5;
+  var indexOf = kotlin_kotlin.$_$.v5;
   var contentToString = kotlin_kotlin.$_$.e5;
-  var Enum = kotlin_kotlin.$_$.jb;
-  var HashSet_init_$Create$_1 = kotlin_kotlin.$_$.i1;
-  var toString_0 = kotlin_kotlin.$_$.qc;
-  var KTypeParameter = kotlin_kotlin.$_$.ma;
-  var booleanArray = kotlin_kotlin.$_$.k8;
+  var Enum = kotlin_kotlin.$_$.kb;
+  var HashSet_init_$Create$_1 = kotlin_kotlin.$_$.a3;
+  var toString_0 = kotlin_kotlin.$_$.rc;
+  var KTypeParameter = kotlin_kotlin.$_$.na;
+  var booleanArray = kotlin_kotlin.$_$.m8;
   var emptyMap = kotlin_kotlin.$_$.p5;
   var contentHashCode = kotlin_kotlin.$_$.c5;
-  var Companion_getInstance_2 = kotlin_kotlin.$_$.r;
-  var isCharArray = kotlin_kotlin.$_$.k9;
-  var charArray = kotlin_kotlin.$_$.n8;
-  var DoubleCompanionObject_instance = kotlin_kotlin.$_$.h;
-  var isDoubleArray = kotlin_kotlin.$_$.m9;
-  var FloatCompanionObject_instance = kotlin_kotlin.$_$.i;
-  var isFloatArray = kotlin_kotlin.$_$.n9;
-  var Companion_instance = kotlin_kotlin.$_$.s;
-  var isLongArray = kotlin_kotlin.$_$.z7;
-  var Companion_getInstance_3 = kotlin_kotlin.$_$.w;
-  var _ULongArray___get_size__impl__ju6dtr = kotlin_kotlin.$_$.t3;
-  var ULongArray = kotlin_kotlin.$_$.zb;
-  var _ULongArray___init__impl__twm1l3 = kotlin_kotlin.$_$.p3;
-  var _ULong___init__impl__c78o9k = kotlin_kotlin.$_$.m3;
-  var ULongArray__get_impl_pr71q9 = kotlin_kotlin.$_$.r3;
-  var _ULong___get_data__impl__fggpzb = kotlin_kotlin.$_$.n3;
-  var IntCompanionObject_instance = kotlin_kotlin.$_$.j;
-  var isIntArray = kotlin_kotlin.$_$.o9;
-  var Companion_getInstance_4 = kotlin_kotlin.$_$.v;
-  var _UIntArray___get_size__impl__r6l8ci = kotlin_kotlin.$_$.k3;
-  var UIntArray = kotlin_kotlin.$_$.xb;
-  var _UIntArray___init__impl__ghjpc6 = kotlin_kotlin.$_$.g3;
-  var _UInt___init__impl__l7qpdl = kotlin_kotlin.$_$.d3;
-  var UIntArray__get_impl_gp5kza = kotlin_kotlin.$_$.i3;
-  var _UInt___get_data__impl__f0vqqw = kotlin_kotlin.$_$.e3;
-  var ShortCompanionObject_instance = kotlin_kotlin.$_$.k;
-  var isShortArray = kotlin_kotlin.$_$.q9;
-  var Companion_getInstance_5 = kotlin_kotlin.$_$.x;
-  var _UShortArray___get_size__impl__jqto1b = kotlin_kotlin.$_$.c4;
-  var UShortArray = kotlin_kotlin.$_$.bc;
-  var _UShortArray___init__impl__9b26ef = kotlin_kotlin.$_$.y3;
-  var _UShort___init__impl__jigrne = kotlin_kotlin.$_$.v3;
-  var UShortArray__get_impl_fnbhmx = kotlin_kotlin.$_$.a4;
-  var _UShort___get_data__impl__g0245 = kotlin_kotlin.$_$.w3;
-  var ByteCompanionObject_instance = kotlin_kotlin.$_$.g;
-  var isByteArray = kotlin_kotlin.$_$.j9;
-  var Companion_getInstance_6 = kotlin_kotlin.$_$.u;
-  var _UByteArray___get_size__impl__h6pkdv = kotlin_kotlin.$_$.b3;
-  var UByteArray = kotlin_kotlin.$_$.vb;
-  var _UByteArray___init__impl__ip4y9n = kotlin_kotlin.$_$.y2;
-  var _UByte___init__impl__g9hnc4 = kotlin_kotlin.$_$.u2;
-  var UByteArray__get_impl_t5f3hv = kotlin_kotlin.$_$.z2;
-  var _UByte___get_data__impl__jof9qr = kotlin_kotlin.$_$.v2;
-  var BooleanCompanionObject_instance = kotlin_kotlin.$_$.f;
-  var isBooleanArray = kotlin_kotlin.$_$.i9;
-  var coerceAtLeast = kotlin_kotlin.$_$.z9;
+  var Companion_getInstance_2 = kotlin_kotlin.$_$.j2;
+  var isCharArray = kotlin_kotlin.$_$.m9;
+  var charArray = kotlin_kotlin.$_$.p8;
+  var DoubleCompanionObject_instance = kotlin_kotlin.$_$.z1;
+  var isDoubleArray = kotlin_kotlin.$_$.o9;
+  var FloatCompanionObject_instance = kotlin_kotlin.$_$.a2;
+  var isFloatArray = kotlin_kotlin.$_$.p9;
+  var Companion_instance = kotlin_kotlin.$_$.k2;
+  var isLongArray = kotlin_kotlin.$_$.b8;
+  var Companion_getInstance_3 = kotlin_kotlin.$_$.o2;
+  var _ULongArray___get_size__impl__ju6dtr = kotlin_kotlin.$_$.k1;
+  var ULongArray = kotlin_kotlin.$_$.ac;
+  var _ULongArray___init__impl__twm1l3 = kotlin_kotlin.$_$.g1;
+  var _ULong___init__impl__c78o9k = kotlin_kotlin.$_$.d1;
+  var ULongArray__get_impl_pr71q9 = kotlin_kotlin.$_$.i1;
+  var _ULong___get_data__impl__fggpzb = kotlin_kotlin.$_$.e1;
+  var IntCompanionObject_instance = kotlin_kotlin.$_$.b2;
+  var isIntArray = kotlin_kotlin.$_$.q9;
+  var Companion_getInstance_4 = kotlin_kotlin.$_$.n2;
+  var _UIntArray___get_size__impl__r6l8ci = kotlin_kotlin.$_$.b1;
+  var UIntArray = kotlin_kotlin.$_$.yb;
+  var _UIntArray___init__impl__ghjpc6 = kotlin_kotlin.$_$.x;
+  var _UInt___init__impl__l7qpdl = kotlin_kotlin.$_$.u;
+  var UIntArray__get_impl_gp5kza = kotlin_kotlin.$_$.z;
+  var _UInt___get_data__impl__f0vqqw = kotlin_kotlin.$_$.v;
+  var ShortCompanionObject_instance = kotlin_kotlin.$_$.c2;
+  var isShortArray = kotlin_kotlin.$_$.s9;
+  var Companion_getInstance_5 = kotlin_kotlin.$_$.p2;
+  var _UShortArray___get_size__impl__jqto1b = kotlin_kotlin.$_$.t1;
+  var UShortArray = kotlin_kotlin.$_$.cc;
+  var _UShortArray___init__impl__9b26ef = kotlin_kotlin.$_$.p1;
+  var _UShort___init__impl__jigrne = kotlin_kotlin.$_$.m1;
+  var UShortArray__get_impl_fnbhmx = kotlin_kotlin.$_$.r1;
+  var _UShort___get_data__impl__g0245 = kotlin_kotlin.$_$.n1;
+  var ByteCompanionObject_instance = kotlin_kotlin.$_$.y1;
+  var isByteArray = kotlin_kotlin.$_$.l9;
+  var Companion_getInstance_6 = kotlin_kotlin.$_$.m2;
+  var _UByteArray___get_size__impl__h6pkdv = kotlin_kotlin.$_$.s;
+  var UByteArray = kotlin_kotlin.$_$.wb;
+  var _UByteArray___init__impl__ip4y9n = kotlin_kotlin.$_$.p;
+  var _UByte___init__impl__g9hnc4 = kotlin_kotlin.$_$.l;
+  var UByteArray__get_impl_t5f3hv = kotlin_kotlin.$_$.q;
+  var _UByte___get_data__impl__jof9qr = kotlin_kotlin.$_$.m;
+  var BooleanCompanionObject_instance = kotlin_kotlin.$_$.x1;
+  var isBooleanArray = kotlin_kotlin.$_$.k9;
+  var coerceAtLeast = kotlin_kotlin.$_$.ba;
   var copyOf = kotlin_kotlin.$_$.i5;
   var copyOf_0 = kotlin_kotlin.$_$.k5;
   var copyOf_1 = kotlin_kotlin.$_$.l5;
   var copyOf_2 = kotlin_kotlin.$_$.g5;
-  var _ULongArray___get_storage__impl__28e64j = kotlin_kotlin.$_$.u3;
-  var _ULongArray___init__impl__twm1l3_0 = kotlin_kotlin.$_$.q3;
-  var ULongArray__set_impl_z19mvh = kotlin_kotlin.$_$.s3;
+  var _ULongArray___get_storage__impl__28e64j = kotlin_kotlin.$_$.l1;
+  var _ULongArray___init__impl__twm1l3_0 = kotlin_kotlin.$_$.h1;
+  var ULongArray__set_impl_z19mvh = kotlin_kotlin.$_$.j1;
   var copyOf_3 = kotlin_kotlin.$_$.m5;
-  var _UIntArray___get_storage__impl__92a0v0 = kotlin_kotlin.$_$.l3;
-  var _UIntArray___init__impl__ghjpc6_0 = kotlin_kotlin.$_$.h3;
-  var UIntArray__set_impl_7f2zu2 = kotlin_kotlin.$_$.j3;
+  var _UIntArray___get_storage__impl__92a0v0 = kotlin_kotlin.$_$.c1;
+  var _UIntArray___init__impl__ghjpc6_0 = kotlin_kotlin.$_$.y;
+  var UIntArray__set_impl_7f2zu2 = kotlin_kotlin.$_$.a1;
   var copyOf_4 = kotlin_kotlin.$_$.f5;
-  var _UShortArray___get_storage__impl__t2jpv5 = kotlin_kotlin.$_$.d4;
-  var _UShortArray___init__impl__9b26ef_0 = kotlin_kotlin.$_$.z3;
-  var UShortArray__set_impl_6d8whp = kotlin_kotlin.$_$.b4;
+  var _UShortArray___get_storage__impl__t2jpv5 = kotlin_kotlin.$_$.u1;
+  var _UShortArray___init__impl__9b26ef_0 = kotlin_kotlin.$_$.q1;
+  var UShortArray__set_impl_6d8whp = kotlin_kotlin.$_$.s1;
   var copyOf_5 = kotlin_kotlin.$_$.j5;
-  var _UByteArray___get_storage__impl__d4kctt = kotlin_kotlin.$_$.c3;
-  var _UByteArray___init__impl__ip4y9n_0 = kotlin_kotlin.$_$.x2;
-  var UByteArray__set_impl_jvcicn = kotlin_kotlin.$_$.a3;
+  var _UByteArray___get_storage__impl__d4kctt = kotlin_kotlin.$_$.t;
+  var _UByteArray___init__impl__ip4y9n_0 = kotlin_kotlin.$_$.o;
+  var UByteArray__set_impl_jvcicn = kotlin_kotlin.$_$.r;
   var copyOf_6 = kotlin_kotlin.$_$.h5;
-  var Unit = kotlin_kotlin.$_$.dc;
-  var UInt = kotlin_kotlin.$_$.yb;
-  var ULong = kotlin_kotlin.$_$.ac;
-  var UByte = kotlin_kotlin.$_$.wb;
-  var UShort = kotlin_kotlin.$_$.cc;
+  var Unit = kotlin_kotlin.$_$.ec;
+  var UInt = kotlin_kotlin.$_$.zb;
+  var ULong = kotlin_kotlin.$_$.bc;
+  var UByte = kotlin_kotlin.$_$.xb;
+  var UShort = kotlin_kotlin.$_$.dc;
   var asSequence = kotlin_kotlin.$_$.x4;
-  var get_indices = kotlin_kotlin.$_$.w5;
-  var IndexOutOfBoundsException_init_$Create$ = kotlin_kotlin.$_$.f2;
-  var get_indices_0 = kotlin_kotlin.$_$.v5;
-  var PrimitiveClasses_getInstance = kotlin_kotlin.$_$.m;
-  var get_longArrayClass = kotlin_kotlin.$_$.a8;
-  var mapOf = kotlin_kotlin.$_$.e6;
-  var get_js = kotlin_kotlin.$_$.r9;
+  var get_indices = kotlin_kotlin.$_$.x5;
+  var IndexOutOfBoundsException_init_$Create$ = kotlin_kotlin.$_$.x3;
+  var get_indices_0 = kotlin_kotlin.$_$.w5;
+  var PrimitiveClasses_getInstance = kotlin_kotlin.$_$.e2;
+  var get_longArrayClass = kotlin_kotlin.$_$.c8;
+  var mapOf = kotlin_kotlin.$_$.g6;
+  var get_js = kotlin_kotlin.$_$.t9;
   var findAssociatedObject = kotlin_kotlin.$_$.a;
-  var Companion_instance_0 = kotlin_kotlin.$_$.t;
-  var _Result___init__impl__xyqfz8 = kotlin_kotlin.$_$.q2;
-  var createFailure = kotlin_kotlin.$_$.ic;
+  var Companion_instance_0 = kotlin_kotlin.$_$.l2;
+  var _Result___init__impl__xyqfz8 = kotlin_kotlin.$_$.h;
+  var createFailure = kotlin_kotlin.$_$.jc;
   //endregion
   //region block: pre-declaration
   initMetadataForInterface(SerializationStrategy, 'SerializationStrategy');
@@ -46413,9 +47045,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function PolymorphicSerializer$_get_descriptor_$ref_8tw9if() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.get_descriptor_wjt6a0_k$();
-    };
+    }, 1, 0, 2);
   }
   function PolymorphicSerializer(baseClass) {
     AbstractPolymorphicSerializer.call(this);
@@ -47161,9 +47793,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function SerialDescriptorImpl$_get__hashCode_$ref_2v7wzp() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return _get__hashCode__tgwhef(p0);
-    };
+    }, 1, 0, 3);
   }
   function SerialDescriptorImpl(serialName, kind, elementsCount, typeParameters, builder) {
     this.serialName_1 = serialName;
@@ -48650,9 +49282,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function EnumDescriptor$_get_elementDescriptors_$ref_5lvk4a() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return _get_elementDescriptors__y23q9p(p0);
-    };
+    }, 1, 0, 4);
   }
   function EnumDescriptor(name, elementsCount) {
     PluginGeneratedSerialDescriptor.call(this, name, VOID, elementsCount);
@@ -48730,9 +49362,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function EnumSerializer$_get_descriptor_$ref_j67dlw() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.get_descriptor_wjt6a0_k$();
-    };
+    }, 1, 0, 5);
   }
   function EnumSerializer(serialName, values) {
     this.values_1 = values;
@@ -49046,9 +49678,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function ObjectSerializer$_get_descriptor_$ref_7z4xb6() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.get_descriptor_wjt6a0_k$();
-    };
+    }, 1, 0, 6);
   }
   function ObjectSerializer(serialName, objectInstance) {
     this.objectInstance_1 = objectInstance;
@@ -49246,9 +49878,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function PluginGeneratedSerialDescriptor$_get_childSerializers_$ref_e7suca() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return _get_childSerializers__7vnyfa(p0);
-    };
+    }, 1, 0, 7);
   }
   function PluginGeneratedSerialDescriptor$typeParameterDescriptors$delegate$lambda(this$0) {
     return function () {
@@ -49275,9 +49907,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function PluginGeneratedSerialDescriptor$_get_typeParameterDescriptors_$ref_jk3pka() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return p0.get_typeParameterDescriptors_3o94ow_k$();
-    };
+    }, 1, 0, 8);
   }
   function PluginGeneratedSerialDescriptor$_hashCode$delegate$lambda(this$0) {
     return function () {
@@ -49285,9 +49917,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function PluginGeneratedSerialDescriptor$_get__hashCode_$ref_cmj4vz() {
-    return function (p0) {
+    return constructCallableReference(function (p0) {
       return _get__hashCode__tgwhef_0(p0);
-    };
+    }, 1, 0, 9);
   }
   function PluginGeneratedSerialDescriptor(serialName, generatedSerializer, elementsCount) {
     generatedSerializer = generatedSerializer === VOID ? null : generatedSerializer;
@@ -51078,7 +51710,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp = this;
     // Inline function 'kotlin.collections.mutableListOf' call
     tmp.subclasses_1 = ArrayList_init_$Create$_0();
-    this.defaultSerializerProvider_1 = null;
     this.defaultDeserializerProvider_1 = null;
   }
   protoOf(PolymorphicModuleBuilder).subclass_q8c0jj_k$ = function (subclass, serializer) {
@@ -51106,10 +51737,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       // Inline function 'kotlinx.serialization.internal.cast' call
       var tmp$ret$2 = isInterface(serializer, KSerializer) ? serializer : THROW_CCE();
       builder.registerPolymorphicSerializer$default_dys3h6_k$(this.baseClass_1, tmp, tmp$ret$2);
-    }
-    var defaultSerializer = this.defaultSerializerProvider_1;
-    if (!(defaultSerializer == null)) {
-      builder.registerDefaultPolymorphicSerializer_kh3b1o_k$(this.baseClass_1, defaultSerializer, false);
     }
     var defaultDeserializer = this.defaultDeserializerProvider_1;
     if (!(defaultDeserializer == null)) {
@@ -51235,14 +51862,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp = $super.registerSerializer_yku8cw_k$.call(this, forClass, provider, allowOverwrite);
     }
     return tmp;
-  };
-  protoOf(SerializersModuleBuilder).registerDefaultPolymorphicSerializer_kh3b1o_k$ = function (baseClass, defaultSerializerProvider, allowOverwrite) {
-    var previous = this.polyBase2DefaultSerializerProvider_1.get_wei43m_k$(baseClass);
-    if (!(previous == null) && !equals(previous, defaultSerializerProvider) && !allowOverwrite) {
-      throw IllegalArgumentException_init_$Create$('Default serializers provider for ' + toString(baseClass) + ' is already registered: ' + toString(previous));
-    }
-    // Inline function 'kotlin.collections.set' call
-    this.polyBase2DefaultSerializerProvider_1.put_4fpzoq_k$(baseClass, defaultSerializerProvider);
   };
   protoOf(SerializersModuleBuilder).registerDefaultPolymorphicDeserializer_941jaa_k$ = function (baseClass, defaultDeserializerProvider, allowOverwrite) {
     var previous = this.polyBase2DefaultDeserializerProvider_1.get_wei43m_k$(baseClass);
@@ -51573,11 +52192,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   _.$_$.l2 = ContextualSerializer;
   _.$_$.m2 = DeserializationStrategy;
   _.$_$.n2 = KSerializer;
-  _.$_$.o2 = SerializationException;
-  _.$_$.p2 = SerializationStrategy;
-  _.$_$.q2 = findPolymorphicSerializer;
-  _.$_$.r2 = serializer_1;
-  _.$_$.s2 = serializer_0;
+  _.$_$.o2 = SerializableWith;
+  _.$_$.p2 = SerializationException;
+  _.$_$.q2 = SerializationStrategy;
+  _.$_$.r2 = findPolymorphicSerializer;
+  _.$_$.s2 = serializer_1;
+  _.$_$.t2 = serializer_0;
   //endregion
   return _;
 }));
@@ -51605,79 +52225,78 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   'use strict';
   //region block: imports
   var EmptySerializersModule = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.i2;
-  var protoOf = kotlin_kotlin.$_$.v9;
-  var initMetadataForObject = kotlin_kotlin.$_$.g9;
+  var protoOf = kotlin_kotlin.$_$.x9;
+  var initMetadataForObject = kotlin_kotlin.$_$.i9;
   var VOID = kotlin_kotlin.$_$.c;
-  var Unit_instance = kotlin_kotlin.$_$.y;
-  var initMetadataForClass = kotlin_kotlin.$_$.c9;
-  var toString = kotlin_kotlin.$_$.qc;
-  var Enum = kotlin_kotlin.$_$.jb;
-  var StringCompanionObject_instance = kotlin_kotlin.$_$.l;
+  var Unit_instance = kotlin_kotlin.$_$.q2;
+  var initMetadataForClass = kotlin_kotlin.$_$.e9;
+  var toString = kotlin_kotlin.$_$.rc;
+  var Enum = kotlin_kotlin.$_$.kb;
+  var StringCompanionObject_instance = kotlin_kotlin.$_$.d2;
   var serializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.a1;
   var InlinePrimitiveDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.a2;
-  var fromInt = kotlin_kotlin.$_$.y7;
-  var _UInt___init__impl__l7qpdl = kotlin_kotlin.$_$.d3;
-  var UInt__toString_impl_dbgl21 = kotlin_kotlin.$_$.f3;
-  var _ULong___init__impl__c78o9k = kotlin_kotlin.$_$.m3;
-  var ULong__toString_impl_f9au7k = kotlin_kotlin.$_$.o3;
-  var _UByte___init__impl__g9hnc4 = kotlin_kotlin.$_$.u2;
-  var UByte__toString_impl_v72jg = kotlin_kotlin.$_$.w2;
-  var _UShort___init__impl__jigrne = kotlin_kotlin.$_$.v3;
-  var UShort__toString_impl_edaoee = kotlin_kotlin.$_$.x3;
-  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.n2;
-  var captureStack = kotlin_kotlin.$_$.l8;
-  var charSequenceLength = kotlin_kotlin.$_$.p8;
-  var charSequenceSubSequence = kotlin_kotlin.$_$.q8;
-  var toString_0 = kotlin_kotlin.$_$.y9;
-  var coerceAtLeast = kotlin_kotlin.$_$.z9;
-  var coerceAtMost = kotlin_kotlin.$_$.aa;
-  var SerializationException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.o2;
+  var captureStack = kotlin_kotlin.$_$.n8;
+  var SerializationException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p2;
   var SerializationException_init_$Init$ = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r;
+  var defineProp = kotlin_kotlin.$_$.u8;
+  var fromInt = kotlin_kotlin.$_$.a8;
+  var _UInt___init__impl__l7qpdl = kotlin_kotlin.$_$.u;
+  var UInt__toString_impl_dbgl21 = kotlin_kotlin.$_$.w;
+  var _ULong___init__impl__c78o9k = kotlin_kotlin.$_$.d1;
+  var ULong__toString_impl_f9au7k = kotlin_kotlin.$_$.f1;
+  var _UByte___init__impl__g9hnc4 = kotlin_kotlin.$_$.l;
+  var UByte__toString_impl_v72jg = kotlin_kotlin.$_$.n;
+  var _UShort___init__impl__jigrne = kotlin_kotlin.$_$.m1;
+  var UShort__toString_impl_edaoee = kotlin_kotlin.$_$.o1;
+  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.e;
+  var isBlank = kotlin_kotlin.$_$.sa;
+  var toString_0 = kotlin_kotlin.$_$.aa;
   var CLASS_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.f;
-  var equals = kotlin_kotlin.$_$.u8;
-  var toSet = kotlin_kotlin.$_$.x6;
+  var equals = kotlin_kotlin.$_$.w8;
+  var toSet = kotlin_kotlin.$_$.z6;
   var jsonCachedSerialNames = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.g2;
-  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.o1;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.d2;
+  var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.g3;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.v3;
   var ENUM = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h1;
   var PrimitiveKind = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.g1;
   var PolymorphicKind = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.f1;
-  var THROW_CCE = kotlin_kotlin.$_$.sb;
-  var objectCreate = kotlin_kotlin.$_$.u9;
+  var THROW_CCE = kotlin_kotlin.$_$.tb;
+  var objectCreate = kotlin_kotlin.$_$.w9;
   var AbstractEncoder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l1;
   var AbstractPolymorphicSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.u1;
   var OBJECT_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.i;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.oc;
-  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.b2;
-  var findPolymorphicSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.q2;
-  var SerializationStrategy = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p2;
-  var isInterface = kotlin_kotlin.$_$.p9;
-  var isFinite = kotlin_kotlin.$_$.lc;
-  var isFinite_0 = kotlin_kotlin.$_$.kc;
-  var toString_1 = kotlin_kotlin.$_$.p2;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.pc;
+  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.t3;
+  var findPolymorphicSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r2;
+  var SerializationStrategy = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.q2;
+  var isInterface = kotlin_kotlin.$_$.r9;
+  var isFinite = kotlin_kotlin.$_$.mc;
+  var isFinite_0 = kotlin_kotlin.$_$.lc;
+  var toString_1 = kotlin_kotlin.$_$.g;
   var Encoder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s1;
   var CompositeEncoder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p1;
-  var Companion_getInstance = kotlin_kotlin.$_$.v;
+  var Companion_getInstance = kotlin_kotlin.$_$.n2;
   var serializer_0 = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.c1;
-  var Companion_getInstance_0 = kotlin_kotlin.$_$.w;
+  var Companion_getInstance_0 = kotlin_kotlin.$_$.o2;
   var serializer_1 = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.e1;
-  var Companion_getInstance_1 = kotlin_kotlin.$_$.u;
+  var Companion_getInstance_1 = kotlin_kotlin.$_$.m2;
   var serializer_2 = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.d1;
-  var Companion_getInstance_2 = kotlin_kotlin.$_$.x;
+  var Companion_getInstance_2 = kotlin_kotlin.$_$.p2;
   var serializer_3 = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.b1;
-  var setOf = kotlin_kotlin.$_$.k6;
-  var Char__toInt_impl_vasixd = kotlin_kotlin.$_$.o2;
-  var numberToChar = kotlin_kotlin.$_$.s9;
-  var charCodeAt = kotlin_kotlin.$_$.o8;
-  var toByte = kotlin_kotlin.$_$.w9;
-  var enumEntries = kotlin_kotlin.$_$.u7;
+  var setOf = kotlin_kotlin.$_$.m6;
+  var Char__toInt_impl_vasixd = kotlin_kotlin.$_$.f;
+  var numberToChar = kotlin_kotlin.$_$.u9;
+  var charSequenceLength = kotlin_kotlin.$_$.r8;
+  var charCodeAt = kotlin_kotlin.$_$.q8;
+  var toByte = kotlin_kotlin.$_$.y9;
+  var enumEntries = kotlin_kotlin.$_$.w7;
   var ENUM_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.e;
   var MAP_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h;
   var LIST_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.g;
   var getContextualDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.j1;
   var CONTEXTUAL_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.d;
-  var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.t1;
-  var HashMap_init_$Create$ = kotlin_kotlin.$_$.e1;
+  var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.l3;
+  var HashMap_init_$Create$ = kotlin_kotlin.$_$.w2;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(Json, 'Json');
@@ -51685,12 +52304,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(JsonClassDiscriminator, 'JsonClassDiscriminator');
   initMetadataForClass(JsonConfiguration, 'JsonConfiguration');
   initMetadataForClass(ClassDiscriminatorMode, 'ClassDiscriminatorMode', VOID, Enum);
+  initMetadataForClass(JsonException, 'JsonException', VOID, SerializationException);
+  initMetadataForClass(JsonEncodingException, 'JsonEncodingException', VOID, JsonException);
   initMetadataForClass(Composer, 'Composer');
   initMetadataForClass(ComposerForUnsignedNumbers, 'ComposerForUnsignedNumbers', VOID, Composer);
   initMetadataForClass(ComposerForUnquotedLiterals, 'ComposerForUnquotedLiterals', VOID, Composer);
   initMetadataForClass(ComposerWithPrettyPrint, 'ComposerWithPrettyPrint', VOID, Composer);
-  initMetadataForClass(JsonException, 'JsonException', VOID, SerializationException);
-  initMetadataForClass(JsonEncodingException, 'JsonEncodingException', VOID, JsonException);
   initMetadataForClass(Key, 'Key', Key);
   initMetadataForClass(DescriptorSchemaCache, 'DescriptorSchemaCache', DescriptorSchemaCache);
   initMetadataForClass(StreamingJsonEncoder, 'StreamingJsonEncoder', VOID, AbstractEncoder, [Encoder, CompositeEncoder]);
@@ -51727,7 +52346,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function JsonClassDiscriminator() {
   }
-  function JsonConfiguration(encodeDefaults, ignoreUnknownKeys, isLenient, allowStructuredMapKeys, prettyPrint, explicitNulls, prettyPrintIndent, coerceInputValues, useArrayPolymorphism, classDiscriminator, allowSpecialFloatingPointValues, useAlternativeNames, namingStrategy, decodeEnumsCaseInsensitive, allowTrailingComma, allowComments, classDiscriminatorMode) {
+  function JsonConfiguration(encodeDefaults, ignoreUnknownKeys, isLenient, allowStructuredMapKeys, prettyPrint, explicitNulls, prettyPrintIndent, coerceInputValues, useArrayPolymorphism, classDiscriminator, allowSpecialFloatingPointValues, useAlternativeNames, namingStrategy, decodeEnumsCaseInsensitive, allowTrailingComma, allowComments, classDiscriminatorMode, exceptionsWithDebugInfo) {
     encodeDefaults = encodeDefaults === VOID ? false : encodeDefaults;
     ignoreUnknownKeys = ignoreUnknownKeys === VOID ? false : ignoreUnknownKeys;
     isLenient = isLenient === VOID ? false : isLenient;
@@ -51745,6 +52364,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     allowTrailingComma = allowTrailingComma === VOID ? false : allowTrailingComma;
     allowComments = allowComments === VOID ? false : allowComments;
     classDiscriminatorMode = classDiscriminatorMode === VOID ? ClassDiscriminatorMode_POLYMORPHIC_getInstance() : classDiscriminatorMode;
+    exceptionsWithDebugInfo = exceptionsWithDebugInfo === VOID ? true : exceptionsWithDebugInfo;
     this.encodeDefaults_1 = encodeDefaults;
     this.ignoreUnknownKeys_1 = ignoreUnknownKeys;
     this.isLenient_1 = isLenient;
@@ -51762,9 +52382,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.allowTrailingComma_1 = allowTrailingComma;
     this.allowComments_1 = allowComments;
     this.classDiscriminatorMode_1 = classDiscriminatorMode;
+    this.exceptionsWithDebugInfo_1 = exceptionsWithDebugInfo;
   }
   protoOf(JsonConfiguration).toString = function () {
-    return 'JsonConfiguration(encodeDefaults=' + this.encodeDefaults_1 + ', ignoreUnknownKeys=' + this.ignoreUnknownKeys_1 + ', isLenient=' + this.isLenient_1 + ', ' + ('allowStructuredMapKeys=' + this.allowStructuredMapKeys_1 + ', prettyPrint=' + this.prettyPrint_1 + ', explicitNulls=' + this.explicitNulls_1 + ', ') + ("prettyPrintIndent='" + this.prettyPrintIndent_1 + "', coerceInputValues=" + this.coerceInputValues_1 + ', useArrayPolymorphism=' + this.useArrayPolymorphism_1 + ', ') + ("classDiscriminator='" + this.classDiscriminator_1 + "', allowSpecialFloatingPointValues=" + this.allowSpecialFloatingPointValues_1 + ', ') + ('useAlternativeNames=' + this.useAlternativeNames_1 + ', namingStrategy=' + toString(this.namingStrategy_1) + ', decodeEnumsCaseInsensitive=' + this.decodeEnumsCaseInsensitive_1 + ', ') + ('allowTrailingComma=' + this.allowTrailingComma_1 + ', allowComments=' + this.allowComments_1 + ', classDiscriminatorMode=' + this.classDiscriminatorMode_1.toString() + ')');
+    return 'JsonConfiguration(encodeDefaults=' + this.encodeDefaults_1 + ', ignoreUnknownKeys=' + this.ignoreUnknownKeys_1 + ', isLenient=' + this.isLenient_1 + ', ' + ('allowStructuredMapKeys=' + this.allowStructuredMapKeys_1 + ', prettyPrint=' + this.prettyPrint_1 + ', explicitNulls=' + this.explicitNulls_1 + ', ') + ("prettyPrintIndent='" + this.prettyPrintIndent_1 + "', coerceInputValues=" + this.coerceInputValues_1 + ', useArrayPolymorphism=' + this.useArrayPolymorphism_1 + ', ') + ("classDiscriminator='" + this.classDiscriminator_1 + "', allowSpecialFloatingPointValues=" + this.allowSpecialFloatingPointValues_1 + ', ') + ('useAlternativeNames=' + this.useAlternativeNames_1 + ', namingStrategy=' + toString(this.namingStrategy_1) + ', decodeEnumsCaseInsensitive=' + this.decodeEnumsCaseInsensitive_1 + ', ') + ('allowTrailingComma=' + this.allowTrailingComma_1 + ', allowComments=' + this.allowComments_1 + ', classDiscriminatorMode=' + this.classDiscriminatorMode_1.toString() + ', exceptionsWithDebugInfo=' + this.exceptionsWithDebugInfo_1 + ')');
   };
   var ClassDiscriminatorMode_NONE_instance;
   var ClassDiscriminatorMode_ALL_JSON_OBJECTS_instance;
@@ -51805,6 +52426,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       jsonUnquotedLiteralDescriptor = InlinePrimitiveDescriptor('kotlinx.serialization.json.JsonUnquotedLiteral', serializer(StringCompanionObject_instance));
     }
   }
+  function JsonEncodingException(shortMessage, classSerialName, hint) {
+    classSerialName = classSerialName === VOID ? null : classSerialName;
+    hint = hint === VOID ? null : hint;
+    JsonException.call(this, formatEncodingException(shortMessage, hint));
+    captureStack(this, JsonEncodingException);
+    this.shortMessage_1 = shortMessage;
+    this.classSerialName_1 = classSerialName;
+    this.hint_1 = hint;
+  }
+  function JsonException(message) {
+    SerializationException_init_$Init$(message, this);
+    captureStack(this, JsonException);
+    this.message_1 = message;
+    delete this.message;
+  }
+  protoOf(JsonException).get_message_h23axq_k$ = function () {
+    return this.message_1;
+  };
   function Composer(writer) {
     this.writer_1 = writer;
     this.writingFirst_1 = true;
@@ -51952,40 +52591,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(ComposerWithPrettyPrint).space_po67ue_k$ = function () {
     this.print_49c4ow_k$(_Char___init__impl__6a9atx(32));
   };
-  function JsonEncodingException(message) {
-    JsonException.call(this, message);
-    captureStack(this, JsonEncodingException);
-  }
   function InvalidKeyKindException(keyDescriptor) {
-    return new JsonEncodingException("Value of type '" + keyDescriptor.get_serialName_u2rqhk_k$() + "' can't be used in JSON as a key in the map. " + ("It should have either primitive or enum kind, but its kind is '" + keyDescriptor.get_kind_wop7ml_k$().toString() + "'.\n") + "Use 'allowStructuredMapKeys = true' in 'Json {}' builder to convert such maps to [key1, value1, key2, value2,...] arrays.");
+    return new JsonEncodingException("Value of type '" + keyDescriptor.get_serialName_u2rqhk_k$() + "' can't be used in JSON as a key in the map. " + ("It should have either primitive or enum kind, but its kind is '" + keyDescriptor.get_kind_wop7ml_k$().toString() + "'"), keyDescriptor.get_serialName_u2rqhk_k$(), "Use 'allowStructuredMapKeys = true' in 'Json {}' builder to convert such maps to [key1, value1, key2, value2,...] arrays.");
   }
-  function minify(_this__u8e3s4, offset) {
-    offset = offset === VOID ? -1 : offset;
-    if (charSequenceLength(_this__u8e3s4) < 200)
-      return _this__u8e3s4;
-    if (offset === -1) {
-      var start = charSequenceLength(_this__u8e3s4) - 60 | 0;
-      if (start <= 0)
-        return _this__u8e3s4;
-      // Inline function 'kotlin.text.substring' call
-      var endIndex = charSequenceLength(_this__u8e3s4);
-      return '.....' + toString_0(charSequenceSubSequence(_this__u8e3s4, start, endIndex));
+  function InvalidFloatingPointEncoded(value, key) {
+    key = key === VOID ? null : key;
+    return new JsonEncodingException(nonFiniteFpMessage(value, key), VOID, "It is possible to deserialize them using 'JsonBuilder.allowSpecialFloatingPointValues = true'");
+  }
+  function formatEncodingException(shortMessage, hint) {
+    var tmp;
+    // Inline function 'kotlin.text.isNullOrBlank' call
+    if (hint == null || isBlank(hint)) {
+      tmp = '';
+    } else {
+      tmp = '\n' + hint;
     }
-    var start_0 = offset - 30 | 0;
-    var end = offset + 30 | 0;
-    var prefix = start_0 <= 0 ? '' : '.....';
-    var suffix = end >= charSequenceLength(_this__u8e3s4) ? '' : '.....';
-    var tmp2 = coerceAtLeast(start_0, 0);
-    // Inline function 'kotlin.text.substring' call
-    var endIndex_0 = coerceAtMost(end, charSequenceLength(_this__u8e3s4));
-    return prefix + toString_0(charSequenceSubSequence(_this__u8e3s4, tmp2, endIndex_0)) + suffix;
+    return shortMessage + tmp;
   }
-  function InvalidFloatingPointEncoded(value, output) {
-    return new JsonEncodingException('Unexpected special floating-point value ' + toString_0(value) + '. By default, ' + "non-finite floating point values are prohibited because they do not conform JSON specification. It is possible to deserialize them using 'JsonBuilder.allowSpecialFloatingPointValues = true'\n" + ('Current output: ' + toString_0(minify(output))));
-  }
-  function JsonException(message) {
-    SerializationException_init_$Init$(message, this);
-    captureStack(this, JsonException);
+  function nonFiniteFpMessage(value, key) {
+    return 'Unexpected special floating-point value ' + toString_0(value) + (!(key == null) ? ' with key ' + key + '. ' : '. ') + 'By default, ' + 'non-finite floating point values are prohibited because they do not conform JSON specification.';
   }
   var JsonDeserializationNamesKey;
   function get_JsonSerializationNamesKey() {
@@ -52026,7 +52650,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         var baseName = $this_serializationNamesIndices.getElementName_u4sqmf_k$(tmp_2);
         var name = $strategy.serialNameForJson_tclx3n_k$($this_serializationNamesIndices, tmp_2, baseName);
         if (!trackingSet.add_utx5q5_k$(name))
-          throw new JsonEncodingException("The transformed name '" + name + "' for property " + baseName + ' already exists ' + ('in ' + toString_0($this_serializationNamesIndices)));
+          throw new JsonEncodingException("The transformed name '" + name + "' for property " + baseName + ' already exists ' + ('in ' + toString_0($this_serializationNamesIndices)), $this_serializationNamesIndices.get_serialName_u2rqhk_k$());
         tmp_1[tmp_2] = name;
         tmp = tmp + 1 | 0;
       }
@@ -52083,7 +52707,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       var baseName = serializer.get_descriptor_wjt6a0_k$().get_serialName_u2rqhk_k$();
       var actualName = actualSerializer.get_descriptor_wjt6a0_k$().get_serialName_u2rqhk_k$();
       var text = _this__u8e3s4.configuration_1.classDiscriminatorMode_1.equals(ClassDiscriminatorMode_ALL_JSON_OBJECTS_getInstance()) && baseName === actualName ? 'in ALL_JSON_OBJECTS class discriminator mode' : "as base class '" + baseName + "'";
-      throw new JsonEncodingException("Class '" + actualName + "' cannot be serialized " + text + ' because' + (" it has property name that conflicts with JSON class discriminator '" + classDiscriminator + "'. ") + 'You can either change class discriminator in JsonConfiguration, or rename property with @SerialName annotation.');
+      var tmp0_shortMessage = "Class '" + actualName + "' cannot be serialized " + text + ' because' + (" it has property name that conflicts with JSON class discriminator '" + classDiscriminator + "'.");
+      var tmp1_hint = 'You can either change class discriminator in JsonConfiguration, or rename property with @SerialName annotation.';
+      throw new JsonEncodingException(tmp0_shortMessage, actualName, tmp1_hint);
     }
   }
   function Key() {
@@ -52404,7 +53030,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       this.composer_1.print_81xt5n_k$(value);
     }
     if (!this.configuration_1.allowSpecialFloatingPointValues_1 && !isFinite(value)) {
-      throw InvalidFloatingPointEncoded(value, toString_0(this.composer_1.writer_1));
+      throw InvalidFloatingPointEncoded(value);
     }
   };
   protoOf(StreamingJsonEncoder).encodeDouble_n270q9_k$ = function (value) {
@@ -52414,7 +53040,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       this.composer_1.print_3xddxz_k$(value);
     }
     if (!this.configuration_1.allowSpecialFloatingPointValues_1 && !isFinite_0(value)) {
-      throw InvalidFloatingPointEncoded(value, toString_0(this.composer_1.writer_1));
+      throw InvalidFloatingPointEncoded(value);
     }
   };
   protoOf(StreamingJsonEncoder).encodeChar_id8ngf_k$ = function (value) {
@@ -52710,6 +53336,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function createMapForCache(initialCapacity) {
     return HashMap_init_$Create$(initialCapacity);
   }
+  //region block: post-declaration
+  defineProp(protoOf(JsonException), 'message', function () {
+    return this.get_message_h23axq_k$();
+  });
+  //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};
   _.$_$.a = Default_getInstance;
@@ -52741,73 +53372,74 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   //region block: imports
   var imul = Math.imul;
   var EmptySerializersModule = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.i2;
-  var protoOf = kotlin_kotlin.$_$.v9;
-  var initMetadataForObject = kotlin_kotlin.$_$.g9;
+  var protoOf = kotlin_kotlin.$_$.x9;
+  var initMetadataForObject = kotlin_kotlin.$_$.i9;
   var VOID = kotlin_kotlin.$_$.c;
-  var initMetadataForClass = kotlin_kotlin.$_$.c9;
-  var THROW_CCE = kotlin_kotlin.$_$.sb;
-  var getStringHashCode = kotlin_kotlin.$_$.a9;
-  var Unit_instance = kotlin_kotlin.$_$.y;
-  var Enum = kotlin_kotlin.$_$.jb;
+  var initMetadataForClass = kotlin_kotlin.$_$.e9;
+  var THROW_CCE = kotlin_kotlin.$_$.tb;
+  var getStringHashCode = kotlin_kotlin.$_$.c9;
+  var Unit_instance = kotlin_kotlin.$_$.q2;
+  var Enum = kotlin_kotlin.$_$.kb;
   var STRING_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.c;
-  var equals = kotlin_kotlin.$_$.u8;
+  var equals = kotlin_kotlin.$_$.w8;
   var PrimitiveKind = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.g1;
-  var fromInt = kotlin_kotlin.$_$.y7;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.d9;
-  var enumEntries = kotlin_kotlin.$_$.u7;
-  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.b2;
+  var fromInt = kotlin_kotlin.$_$.a8;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.f9;
+  var enumEntries = kotlin_kotlin.$_$.w7;
+  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.t3;
   var get_elementDescriptors = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.i1;
-  var toList = kotlin_kotlin.$_$.s6;
+  var toList = kotlin_kotlin.$_$.u6;
   var SEALED_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.b;
   var getPolymorphicDescriptors = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.k1;
   var OPEN_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.a;
   var Collection = kotlin_kotlin.$_$.f4;
-  var isInterface = kotlin_kotlin.$_$.p9;
-  var SerializationException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.o2;
+  var isInterface = kotlin_kotlin.$_$.r9;
+  var SerializationException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p2;
   var SerializationException_init_$Init$ = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t;
-  var captureStack = kotlin_kotlin.$_$.l8;
-  var convertToInt = kotlin_kotlin.$_$.x7;
+  var captureStack = kotlin_kotlin.$_$.n8;
+  var convertToInt = kotlin_kotlin.$_$.z7;
   var SerializationException_init_$Create$ = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s;
-  var toString = kotlin_kotlin.$_$.y9;
-  var HashMap_init_$Create$ = kotlin_kotlin.$_$.h1;
+  var toString = kotlin_kotlin.$_$.aa;
+  var HashMap_init_$Create$ = kotlin_kotlin.$_$.z2;
   var collectionSizeOrDefault = kotlin_kotlin.$_$.z4;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.b1;
-  var ensureNotNull = kotlin_kotlin.$_$.jc;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.t2;
+  var ensureNotNull = kotlin_kotlin.$_$.kc;
   var primitiveArrayConcat = kotlin_kotlin.$_$.b;
   var MapLikeSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.b2;
   var MapEntrySerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.w;
   var KtMap = kotlin_kotlin.$_$.n4;
   var SetSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.x;
   var AbstractCollectionSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t1;
-  var mapCapacity = kotlin_kotlin.$_$.d6;
-  var coerceAtLeast = kotlin_kotlin.$_$.z9;
-  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.l1;
+  var mapCapacity = kotlin_kotlin.$_$.f6;
+  var coerceAtLeast = kotlin_kotlin.$_$.ba;
+  var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.d3;
   var MAP_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h;
   var LIST_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.g;
+  var constructCallableReference = kotlin_kotlin.$_$.t8;
   var ElementMarker = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.w1;
   var PolymorphicKind = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.f1;
   var OBJECT_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.i;
   var CLASS_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.f;
-  var toByte = kotlin_kotlin.$_$.w9;
-  var toShort = kotlin_kotlin.$_$.x9;
-  var numberToChar = kotlin_kotlin.$_$.s9;
-  var UByteArray = kotlin_kotlin.$_$.vb;
-  var _UByteArray___get_storage__impl__d4kctt = kotlin_kotlin.$_$.c3;
-  var _UByteArray___init__impl__ip4y9n = kotlin_kotlin.$_$.x2;
+  var toByte = kotlin_kotlin.$_$.y9;
+  var toShort = kotlin_kotlin.$_$.z9;
+  var numberToChar = kotlin_kotlin.$_$.u9;
+  var UByteArray = kotlin_kotlin.$_$.wb;
+  var _UByteArray___get_storage__impl__d4kctt = kotlin_kotlin.$_$.t;
+  var _UByteArray___init__impl__ip4y9n = kotlin_kotlin.$_$.o;
   var UByteArraySerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.y;
-  var isByteArray = kotlin_kotlin.$_$.j9;
+  var isByteArray = kotlin_kotlin.$_$.l9;
   var ByteArraySerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.v;
   var DeserializationStrategy = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.m2;
-  var negate = kotlin_kotlin.$_$.b8;
-  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.c1;
-  var singleOrNull = kotlin_kotlin.$_$.l6;
-  var shiftLeft = kotlin_kotlin.$_$.d8;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.oc;
-  var shiftRight = kotlin_kotlin.$_$.e8;
-  var FloatCompanionObject_instance = kotlin_kotlin.$_$.i;
-  var floatFromBits = kotlin_kotlin.$_$.v8;
-  var DoubleCompanionObject_instance = kotlin_kotlin.$_$.h;
-  var doubleFromBits = kotlin_kotlin.$_$.t8;
+  var negate = kotlin_kotlin.$_$.d8;
+  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.u2;
+  var singleOrNull = kotlin_kotlin.$_$.n6;
+  var shiftLeft = kotlin_kotlin.$_$.f8;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.pc;
+  var shiftRight = kotlin_kotlin.$_$.g8;
+  var FloatCompanionObject_instance = kotlin_kotlin.$_$.a2;
+  var floatFromBits = kotlin_kotlin.$_$.x8;
+  var DoubleCompanionObject_instance = kotlin_kotlin.$_$.z1;
+  var doubleFromBits = kotlin_kotlin.$_$.v8;
   var copyOf = kotlin_kotlin.$_$.g5;
   var decodeSerializableElement$default = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p;
   var decodeSerializableValue = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.q1;
@@ -52816,7 +53448,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var Decoder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r1;
   var CompositeDecoder = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.o1;
   var arrayCopy = kotlin_kotlin.$_$.u4;
-  var decodeToString = kotlin_kotlin.$_$.qa;
+  var decodeToString = kotlin_kotlin.$_$.ra;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(ProtoBuf, 'ProtoBuf');
@@ -53365,12 +53997,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return false;
   }
   function ProtobufDecoder$readIfAbsent$ref(p0) {
-    var l = function (_this__u8e3s4, p0_0) {
+    return constructCallableReference(function (p0_0, p1) {
       var tmp0 = p0;
-      return readIfAbsent(tmp0, _this__u8e3s4, p0_0);
-    };
-    l.callableName = 'readIfAbsent';
-    return l;
+      return readIfAbsent(tmp0, p0_0, p1);
+    }, 2, 0, 10, 'readIfAbsent', [p0]);
   }
   function ProtobufDecoder(proto, reader, descriptor) {
     ProtobufTaggedDecoder.call(this);

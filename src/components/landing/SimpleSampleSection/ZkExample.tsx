@@ -7,6 +7,33 @@ interface ZkExampleProps {
   onError: () => void;
 }
 
+function listActions(loaded: {
+  actions?: {
+    toArray?: () => readonly unknown[];
+    asJsReadonlyArrayView?: () => readonly unknown[];
+  } | null;
+}): any[] {
+  const actions = loaded.actions;
+  if (!actions) return [];
+  if (typeof actions.toArray === 'function') {
+    return actions.toArray().filter(Boolean);
+  }
+  if (typeof actions.asJsReadonlyArrayView === 'function') {
+    return Array.from(actions.asJsReadonlyArrayView()).filter(Boolean);
+  }
+  return [];
+}
+
+/** Prefer the Run clip for the landing hero; fall back to a mid/last clip. */
+function pickRunAction(actions: any[]): any | undefined {
+  const byName = actions.find((a) => {
+    const name = a?.name?.toString?.() ?? '';
+    return name.toLowerCase() === 'run';
+  });
+  if (byName) return byName;
+  return actions[2] ?? actions[actions.length - 1];
+}
+
 /**
  * Interactive 3D demo component using the Zernikalos engine.
  * Loads and displays an animated 3D model.
@@ -39,13 +66,9 @@ export default function ZkExample({ onError }: ZkExampleProps) {
     const player = new zernikalos.zernikalos.action.ZActionPlayer();
     playerRef.current = player;
 
-    function getMainObj(scene: zernikalos.zernikalos.objects.ZScene) {
-      return zernikalos.zernikalos.search.findFirstModel(scene);
-    }
-
     async function loadScene() {
-      // Models should be placed in the public folder
-      return await zernikalos.zernikalos.loader.loadFromUrl('/Fox.zko');
+      // Prefer the synced DemoApps asset (same source as /demos).
+      return await zernikalos.zernikalos.loader.loadFromUrl('/demos/zko/gltf/Fox.zko');
     }
 
     try {
@@ -64,41 +87,42 @@ export default function ZkExample({ onError }: ZkExampleProps) {
                 return;
               }
 
-              const g = loaded.root;
-              const action = loaded.actions?.asJsReadonlyArrayView()[2];
+              // Scene setup mirrors DemoApps/web/examples/fox.html, with a slightly
+              // elevated camera framing for the landing hero.
+              const root = loaded.root;
               const scene = new zernikalos.zernikalos.objects.ZScene();
               const camera = new zernikalos.zernikalos.objects.ZCamera();
 
               scene.viewport.clearColor.alpha = 0;
 
-              const ambientLight = zernikalos.zernikalos.objects.ZLight.Companion.createAmbientLight();
+              const ambientLight =
+                zernikalos.zernikalos.objects.ZLight.Companion.createAmbientLight();
               ambientLight.intensity = 0.1;
               const light = new zernikalos.zernikalos.objects.ZLight();
               light.lamp = new zernikalos.zernikalos.components.light.ZDirectionalLamp();
-              light.transform.rotation = zernikalos.zernikalos.math.ZQuaternion.initWithValues(0, 0, 0, 1);
-              light.intensity = 2.0;
 
-              scene.addChild(g);
-              scene.addChild(camera);
+              scene.addChild(root);
               scene.addChild(ambientLight);
               scene.addChild(light);
-
+              scene.addChild(camera);
               ctx.activeCamera = camera;
+              ctx.scene = scene;
 
-              camera?.transform?.rotate(180, 1, 0, 0);
-              camera?.transform?.rotate(180, 0, 1, 0);
+              const mainObj = zernikalos.zernikalos.search.findFirstModel(scene);
+              mainObj?.transform?.scaleByFactor?.(0.1);
 
-              const mainObj = getMainObj(scene);
-              if (mainObj && action) {
-                mainObj.transform.scaleByFactor(0.1);
-                player.setAction(mainObj, action);
+              // Base framing from fox.html (0, -5, -30), raised and pitched for a
+              // high three-quarter view of the running fox.
+              camera.transform.translate(1, -7, -21);
+              camera.transform.rotateDegrees(-45, 0, 1, 0);
+
+              const actions = listActions(loaded);
+              const runAction = pickRunAction(actions);
+              if (mainObj?.skeleton && runAction) {
+                player.setAction(mainObj.skeleton, runAction);
                 player.play(true);
               }
 
-              ctx.activeCamera?.transform?.translate(-1, -7, -21);
-              ctx.activeCamera?.transform?.rotate(-45, 0, 1, 0);
-
-              ctx.scene = scene;
               readyForDispose = true;
               done();
             })

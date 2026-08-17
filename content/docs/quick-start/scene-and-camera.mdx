@@ -68,7 +68,7 @@ Create a **`ZCamera`**, position it (and optionally configure lens near/far/FOV)
     camera.transform.position = ZVector3(0f, 2f, 5f)
     camera.lens.near = 0.1f
     camera.lens.far = 1000f
-    camera.lens.fov = 60f
+    camera.lens.setVerticalFovDegrees(60f)
     scene.addChild(camera)
 
     context.activeCamera = findFirstCamera(scene)
@@ -82,7 +82,7 @@ Create a **`ZCamera`**, position it (and optionally configure lens near/far/FOV)
     camera.transform.position = new ZVector3(0, 2, 5);
     camera.lens.near = 0.1;
     camera.lens.far = 1000;
-    camera.lens.fov = 60;
+    camera.lens.setVerticalFovDegrees(60);
     scene.addChild(camera);
 
     ctx.activeCamera = camera;
@@ -97,7 +97,7 @@ Create a **`ZCamera`**, position it (and optionally configure lens near/far/FOV)
   </Tab>
 </Tabs>
 
-On **iOS**, many samples call `context.activeCamera?.internalOnViewportResize(ctx:context, width:height:)` from `onResize` so the projection matches the drawable size—mirror that when you manage cameras yourself.
+On **iOS**, if you manage the camera yourself, call `camera.setViewportResize(width:height:)` from `onResize` so the projection matches the drawable size. The engine also propagates viewport size through `ZObject.onViewportResize`.
 
 ## Viewport
 
@@ -111,4 +111,5 @@ The scene owns a **viewport** (clear color, dimensions). On Kotlin you can adjus
 
 - [Scene Creation API](https://github.com/Zernikalos/Zernikalos/blob/main/docs/api-reference/scene-creation.md) (full detail, multi-language examples)
 - [Loading a model](/docs/quick-start/loading-a-model)
+- [Playing skeletal animations](/docs/quick-start/skeletal-animation)
 - [Integrating Zernikalos](/docs/quick-start/adding-zk-to-your-project)

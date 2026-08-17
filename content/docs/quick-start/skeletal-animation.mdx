@@ -1,0 +1,156 @@
+---
+title: Playing skeletal animations
+description: Bind clips from a .zko to a skeleton with ZActionPlayer, then drive playback from onUpdate.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+
+Skeletal clips ship inside the [loaded `.zko`](/docs/quick-start/loading-a-model) as `zko.actions`. Playback is a host-side loop: keep a [`ZActionPlayer`](/api/-zernikalos/zernikalos.action/-z-action-player/), bind it to a skeleton and a clip, then call `update()` once per frame.
+
+## Pieces
+
+| Piece | Type | Role |
+|-------|------|------|
+| Clip | [`ZSkeletalAction`](/api/-zernikalos/zernikalos.action/-z-skeletal-action/) | Named track data and `duration`. Does not advance time or write bones. |
+| Target | [`ZSkeleton`](/api/-zernikalos/zernikalos.objects/-z-skeleton/) | Bone hierarchy that receives the pose. Usually `model.skeleton`. |
+| Player | `ZActionPlayer` | Clock (time, speed, loop, play/pause) and pose commit inside `update()`. |
+
+<Callout type="info">
+  `setAction` takes a **skeleton**, not a `ZModel`. `update()` advances the clock **and** applies the sampled pose. You do not call `sampleAt` or write bone matrices yourself.
+</Callout>
+
+## Play a clip
+
+Keep the player across frames (a field on your activity, view controller, or module). After the scene is built and you have a skinned model:
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    ```kotlin
+    import zernikalos.action.ZActionPlayer
+    import zernikalos.search.findFirstModel
+
+    val player = ZActionPlayer()
+
+    val model = findFirstModel(scene)
+    val skeleton = model?.skeleton
+    val action = zko.actions?.firstOrNull()
+    if (skeleton != null && action != null) {
+        player.setAction(skeleton, action)
+        player.play(loop = true)
+    }
+    ```
+
+    In `onUpdate`:
+
+    ```kotlin
+    override fun onUpdate(context: ZContext, done: () -> Unit) {
+        player.update()
+        done()
+    }
+    ```
+  </Tab>
+  <Tab value="iOS">
+    ```swift
+    let player = ZActionPlayer()
+
+    let model = ZFinderKt.findFirstModel(root: scene)
+    if let skeleton = model?.skeleton, let action = zko?.actions?.first {
+        player.setAction(skeleton: skeleton, action: action)
+        player.play(loop: true)
+    }
+    ```
+
+    In `onUpdate`:
+
+    ```swift
+    func onUpdate(context: ZContext, done: @escaping () -> Void) {
+        player.update()
+        done()
+    }
+    ```
+  </Tab>
+  <Tab value="JavaScript">
+    ```javascript
+    const player = new zernikalos.action.ZActionPlayer();
+
+    const model = zernikalos.search.findFirstModel(scene);
+    const actions = zko.actions?.toArray?.()?.filter(Boolean) ?? [];
+    const skeleton = model?.skeleton;
+    const action = actions[0];
+
+    if (skeleton && action) {
+      player.setAction(skeleton, action);
+      player.play(true);
+    }
+    ```
+
+    In `onUpdate`:
+
+    ```javascript
+    onUpdate(ctx, done) {
+      player.update();
+      done();
+    }
+    ```
+  </Tab>
+</Tabs>
+
+`play(loop = true)` repeats when time passes the clip duration. Without looping, playback stops at the end of the clip.
+
+## Switching clips
+
+To change action (a UI picker, a state machine, and so on), stop the current clip, bind the new one to the **same** skeleton, then play again:
+
+<Tabs items={['Android', 'iOS', 'JavaScript']} groupId="platform">
+  <Tab value="Android">
+    ```kotlin
+    player.stop()
+    player.setAction(skeleton, nextAction)
+    player.play(loop = true)
+    ```
+  </Tab>
+  <Tab value="iOS">
+    ```swift
+    player.stop()
+    player.setAction(skeleton: skeleton, action: nextAction)
+    player.play(loop: true)
+    ```
+  </Tab>
+  <Tab value="JavaScript">
+    ```javascript
+    player.stop();
+    player.setAction(skeleton, nextAction);
+    player.play(true);
+    ```
+  </Tab>
+</Tabs>
+
+`setAction` resets time to zero and applies the pose at the start of the new clip immediately.
+
+## Playback controls
+
+| Method | What it does |
+|--------|----------------|
+| `play(loop)` | Starts (or resumes) playback. `loop` repeats past `duration`. |
+| `pause()` | Freezes time; the next `play` continues from `currentTime`. |
+| `stop()` | Pauses, seeks to `0`, and reapplies the start pose. |
+| `seek(time)` | Jumps to a time in seconds (clamped to the clip) and reapplies the pose. |
+| `setPlaybackSpeed(speed)` | Multiplier (`1` = normal, `2` = double). |
+| `getProgress()` | Normalized progress in `[0, 1]`. |
+| `resetTimer()` | Resets the wall-clock baseline used by parameterless `update()`, useful after a long pause. |
+
+Readable state: `currentTime`, `isPlaying`, `duration`.
+
+## Wall clock vs fixed step
+
+- **`update()`** — uses elapsed wall time since the last call. This is what most apps call from `onUpdate`.
+- **`update(deltaTimeSeconds)`** — inject a timestep (fixed-step or your own clock). In JavaScript this overload is exported as `updateWithDelta(dt)`.
+
+Both advance the clock (when playing) and commit the pose to the bound skeleton.
+
+## Related
+
+- [Loading a model (.zko)](/docs/quick-start/loading-a-model) — `zko.actions`, `findFirstModel`, attaching the root
+- [Integrating Zernikalos](/docs/quick-start/adding-zk-to-your-project) — `onReady` / `onUpdate` lifecycle
+- [`ZActionPlayer` API](/api/-zernikalos/zernikalos.action/-z-action-player/)

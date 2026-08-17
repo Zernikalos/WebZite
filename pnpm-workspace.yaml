@@ -1,0 +1,32 @@
+managePackageManagerVersions: true
+
+# Supply chain protection (pnpm 11 defaults; explicit for clarity)
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - '@zernikalos/*'
+
+# Transitive deps must resolve from registry / workspace / trusted sources only
+# (blocks git+, tarball URLs, etc. in subdependencies)
+blockExoticSubdeps: true
+strictDepBuilds: true
+
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - '@zernikalos/*'
+trustPolicyIgnoreAfter: 10080
+
+verifyDepsBeforeRun: install
+
+# Explicit lifecycle-script allowlist (prebuilt binaries; do not run postinstall)
+allowBuilds:
+  esbuild: false
+  unrs-resolver: false
+
+# Temporary: force patched transitive deps from cheerio / eslint trees.
+# Pin exact versions per major so ">=x" does not jump to the next breaking line.
+# Remove once upstream dependency trees no longer resolve vulnerable versions.
+overrides:
+  "undici@<8": "7.29.0"
+  "brace-expansion@<2": "1.1.18"
+  "brace-expansion@>=2 <4": "2.1.4"
+  "brace-expansion@>=4": "5.0.9"
