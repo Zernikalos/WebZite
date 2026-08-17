@@ -60,18 +60,15 @@
 
         const mainObj = zernikalos.search.findFirstModel(scene);
 
-        // Fox settings (ported from Samples/web/protosample.html)
-        ctx.activeCamera?.transform?.rotate(180, 1, 0, 0);
-        ctx.activeCamera?.transform?.rotate(180, 0, 1, 0);
         mainObj?.transform?.scaleByFactor?.(0.1);
-        ctx.activeCamera?.transform?.translate(-1, -7, -40);
-        ctx.activeCamera?.transform?.rotate(-45, 0, 1, 0);
+        ctx.activeCamera?.transform?.translate(0, -5, -30);
 
         const actions = loaded.actions?.toArray?.()?.filter(Boolean) ?? [];
         if (mainObj && actions.length > 0) {
           const playAction = (action) => {
             player.stop();
-            player.setAction(mainObj, action);
+            if (!mainObj.skeleton) return;
+            player.setAction(mainObj.skeleton, action);
             player.play(true);
           };
 
@@ -87,10 +84,10 @@
       onUpdate(ctx, done) {
         player.update();
         if (ctx.input.keyboard.isKeyPressed(zernikalos.events.keyboard.ZKeyCode.LeftArrow)) {
-          root.transform.rotate(-2, 0, 1, 0);
+          root.transform.rotateDegrees(-2, 0, 1, 0);
         }
         if (ctx.input.keyboard.isKeyPressed(zernikalos.events.keyboard.ZKeyCode.RightArrow)) {
-          root.transform.rotate(2, 0, 1, 0);
+          root.transform.rotateDegrees(2, 0, 1, 0);
         }
         done();
       },

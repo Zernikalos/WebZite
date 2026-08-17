@@ -50,15 +50,16 @@
 
         const mainObj = zernikalos.search.findFirstModel(scene);
 
-        // StormTrooper settings (ported from Samples/web/protosample.html)
-        ctx.activeCamera?.transform?.translate(0, 0, -10);
-        mainObj?.transform?.rotate?.(90, 0, 0, 1);
+          ctx.activeCamera?.transform?.rotateDegrees(180, 0, 0, 1);
+          ctx.activeCamera?.transform?.rotateDegrees(180, 0, 1, 0);
+          ctx.activeCamera?.transform?.translate(1, -1, -10);
 
         const actions = loaded.actions?.toArray?.()?.filter(Boolean) ?? [];
         if (mainObj && actions.length > 0) {
           const playAction = (action) => {
             player.stop();
-            player.setAction(mainObj, action);
+            if (!mainObj.skeleton) return;
+            player.setAction(mainObj.skeleton, action);
             player.play(true);
           };
 
@@ -74,10 +75,10 @@
       onUpdate(ctx, done) {
         player.update();
         if (root && ctx.input.keyboard.isKeyPressed(zernikalos.events.keyboard.ZKeyCode.LeftArrow)) {
-          root.transform.rotate(-2, 0, 0, 1);
+          root.transform.rotateDegrees(-2, 0, 0, 1);
         }
         if (root && ctx.input.keyboard.isKeyPressed(zernikalos.events.keyboard.ZKeyCode.RightArrow)) {
-          root.transform.rotate(2, 0, 0, 1);
+          root.transform.rotateDegrees(2, 0, 0, 1);
         }
         done();
       },
